@@ -1,0 +1,15 @@
+#################################
+# TAG/COSMETIC RELATED TRIGGERS #
+#################################
+
+zxe_is_zebrica_tag = {
+	OR = {
+		tag = MGY
+	}
+}
+
+zxe_is_maregypt_or_cosmetic_maregypt = {
+	OR = {
+		tag = MGY
+	}
+}

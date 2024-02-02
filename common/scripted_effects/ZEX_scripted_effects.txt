@@ -1,0 +1,17 @@
+##########################################
+# MAREGYPT DIET RELATED SCRIPTED EFFECTS #
+##########################################
+
+ZEX_activate_parliament = {
+	custom_effect_tooltip = ZEX_Activate_Parliament_tt
+	hidden_effect = {
+		set_country_flag = zex_has_maregypt_parliament
+	}
+}
+
+ZEX_deactivate_parliament = {
+	custom_effect_tooltip = ZEX_Deactivate_Parliament_tt
+	hidden_effect = {
+		clr_country_flag = zex_has_maregypt_parliament
+	}
+}

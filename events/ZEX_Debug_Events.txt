@@ -1,0 +1,10 @@
+add_namespace = ZEX_DEBUG
+
+country_event = {
+	id = ZEX_DEBUG.1
+	title = ZEX_DEBUG.1.title
+	desc = ZEX_DEBUG.1.desc
+	option = {
+		name = ZEX_DEBUG.1.a
+	}
+}

@@ -1,0 +1,26 @@
+ZEX_DEBUG_CATEGORY = {
+	allowed = {
+		always = yes
+	}
+	visible = {
+		is_debug = yes
+		is_ai = no
+		zxe_is_zebrica_tag = yes
+	}
+	priority = 1000
+	icon = GFX_decision_generic_decision
+	visible_when_empty = yes
+}
+
+ZEX_MAREGYPT_PARLIAMENT_CATEGORY = {
+	allowed = {
+		always = yes
+	}
+	visible = {
+		zxe_is_maregypt_or_cosmetic_maregypt = yes
+		has_country_flag = zex_has_maregypt_parliament
+	}
+	priority = 9000
+	icon = GFX_decision_SWI_support_humanitarian_efforts
+	visible_when_empty = yes
+}
