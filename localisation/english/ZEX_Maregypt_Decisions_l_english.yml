@@ -6,6 +6,6 @@
 
  #Maregyptian Diet
  ZEX_MAREGYPT_PARLIAMENT_CATEGORY:0 "The Royal Diet"
- ZEX_MAREGYPT_PARLIAMENT_CATEGORY_desc:0 ""
+ ZEX_MAREGYPT_PARLIAMENT_CATEGORY_desc:0 "Current £GFX_orthodox  §YMFA§! seats: [?ROOT.zex_royal_diet_harmony_seats]\n\nCurrent £GFX_neutrality_texticon  §YARM§! seats: [?ROOT.zex_royal_diet_unaligned_seats]\n\nCurrent £GFX_supremacy_texticon  §YYRP-RF§! seats: [?ROOT.zex_royal_diet_supremacy_seats]\n\nCurrent £GFX_communism_texticon  §YRP-SF§! seats: [?ROOT.zex_royal_diet_communist_seats]\n\nCurrent independent seats: [?ROOT.zex_royal_diet_independent_seats]"
  ZEX_Activate_Parliament_tt:0 "Activates the §YMaregyptian Royal Diet§! mechanic"
  ZEX_Deactivate_Parliament_tt:0 "Deactivates the §YMaregyptian Royal Diet§! mechanic"
