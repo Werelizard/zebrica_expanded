@@ -135,4 +135,28 @@ characters={
 		}
 		gender=female
 	}
+
+	## Zebrica Expanded
+
+	ZEX_MGY_Shaa_Doof = {
+		name = ZEX_MGY_Shaa_Doof
+		portraits = {
+			civilian = {
+				small = GFX_idea_unknown_advisor_donkey
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ZEX_MGY_Shaa_Doof
+			allowed = {
+				original_tag = MGY
+			}
+			available = {
+				has_government = democratic
+			}
+			traits = {
+				ZEX_Old_Vizier
+			}
+		}
+	}
 }

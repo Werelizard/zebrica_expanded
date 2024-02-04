@@ -1,9 +1,9 @@
 ﻿l_english:
- MGY_democratic_party:0 "MHA"
- MGY_democracy_party_long:0 "Maregypt Harmony Association"
- MGY_communism_party:0 "RP-SF"
- MGY_communism_party_long:0 "Republican Party - Socialist Faction"
- MGY_fascism_party:0 "RP-RF"
- MGY_fascism_party_long:0 "Republican Party - Republican Faction"
- MGY_neutrality_party:0 "ARM"
- MGY_neutrality_party_long:0 "Association for the Restoration of Maregypt"
+ #Ruler Traits
+ ZEX_MGY_Naive_Reformist:0 "Naive Reformist"
+ ZEX_MGY_Benevolent_Authoritarian:0 "Benevolent Authoritarian"
+ ZEX_MGY_Polarising_Figurehead:0 "Polarising Figurehead"
+
+ #Advisors
+ ZEX_MGY_Shaa_Doof:0 "Shaa Doof"
+ ZEX_Old_Vizier:0 "Old Vizier"

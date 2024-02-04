@@ -193,13 +193,8 @@ if = {
 #At the start, king Khefer is the leader for the unaligned as well
 create_country_leader = {
 	name = MGY_king_khefer
-	portraits = {
-		civilian = {
-			large = "gfx/leaders/MGY/King_kefir.tga"
-		}
-	}
-	country_leader = {
-		ideology = conservatism
+	picture = "gfx/leaders/MGY/King_kefir.tga"
+	ideology = conservatism
 		expire = "1111.1.1.1"
 		id = -1
 		traits = {
@@ -207,18 +202,11 @@ create_country_leader = {
 			ZEX_MGY_Naive_Reformist
 			ZEX_MGY_Polarising_Figurehead
 		}
-	}
 }
-
 create_country_leader = {
 	name = MGY_king_khefer
-	portraits = {
-		civilian = {
-			large = "gfx/leaders/MGY/King_kefir.tga"
-		}
-	}
-	country_leader = {
-		ideology = despotism
+	picture = "gfx/leaders/MGY/King_kefir.tga"
+	ideology = despotism
 		expire = "1111.1.1.1"
 		id = -1
 		traits = {
@@ -226,7 +214,6 @@ create_country_leader = {
 			ZEX_MGY_Naive_Reformist
 			ZEX_MGY_Polarising_Figurehead
 		}
-	}
 }
 
 set_popularities = {
@@ -241,4 +228,21 @@ set_politics = {
 	last_election = "1001.1.1"
 	election_frequency = 48
 	elections_allowed = no
+}
+
+# New Characters
+
+recruit_character = ZEX_MGY_Shaa_Doof
+add_advisor_role = {
+    character = ZEX_MGY_Shaa_Doof
+    activate = yes
+    advisor = {
+        slot = political_advisor
+        cost = 0
+        idea_token = ZEX_MGY_Shaa_Doof
+        traits = {
+            ZEX_Old_Vizier
+        }
+		can_be_fired = no
+    }
 }
