@@ -1,0 +1,39 @@
+##############################
+# The New Zebrica Focus Tree #
+##############################
+
+focus_tree = {
+	id = ZEX_MGY_focus
+	country = {
+		factor = 0
+
+		modifier = {
+			add = 100
+			tag = MGY
+		}
+	}
+
+	default = no
+	reset_on_civilwar = no
+
+	######################################
+	# Royal Diet / Political Reform Foci #
+	######################################
+
+	focus = {
+		id = ZEX_MGY_focus_convene_royal_diet
+		icon = GFX_focus_generic_treaty
+		cost = 5
+		x = 20
+		y = 1
+		allow_branch = {
+			
+		}
+		available = {
+			zex_no_scripted_maregypt_civil_war = yes
+		}
+		completion_reward = {
+
+		}
+	}
+}

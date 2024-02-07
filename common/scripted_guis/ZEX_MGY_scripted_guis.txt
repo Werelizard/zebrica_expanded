@@ -1,0 +1,41 @@
+scripted_gui = {
+	ZEX_MGY_royal_diet_ui = {
+		context_type = decision_category
+		window_name = "ZEX_MGY_royal_diet_decision_ui_window"
+
+		visible = {
+			has_country_flag = zex_has_maregypt_parliament
+		}
+
+		effects = {
+			
+		}
+		
+		triggers = {
+			
+		}
+
+		dynamic_lists = {
+			
+		}
+
+		properties = {
+			
+		}
+
+		ai_enabled = {
+			always = no
+		}
+
+		ai_test_interval = 290
+		ai_test_variance = 0.5
+
+		ai_check = {
+			
+		}
+
+		ai_weights = {
+			
+		}
+	}
+}

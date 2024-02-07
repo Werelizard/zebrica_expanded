@@ -1,0 +1,6 @@
+spriteTypes = {
+	spriteType = {
+		name = "ZEX_MGY_Harmonist_Faction_Icon"
+		textureFile = "gfx/interface/decisions/ZEX_MGY_harmonist_faction.dds"
+	}
+}

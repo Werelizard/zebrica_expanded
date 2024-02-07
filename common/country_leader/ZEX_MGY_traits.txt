@@ -7,6 +7,8 @@ leader_traits = {
 	ZEX_MGY_Benevolent_Authoritarian = {
 		political_power_cost = -0.1
 		political_advisor_cost_factor = -0.1
+		ai_focus_defense_factor = 0.25
+		ai_focus_peaceful_factor = 0.1
 	}
 	ZEX_Old_Vizier = {
 		stability_factor = 0.05

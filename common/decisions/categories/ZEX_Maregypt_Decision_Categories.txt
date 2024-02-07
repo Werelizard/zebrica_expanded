@@ -13,6 +13,7 @@ ZEX_DEBUG_CATEGORY = {
 }
 
 ZEX_MAREGYPT_PARLIAMENT_CATEGORY = {
+	scripted_gui = ZEX_MGY_royal_diet_ui
 	allowed = {
 		always = yes
 	}
