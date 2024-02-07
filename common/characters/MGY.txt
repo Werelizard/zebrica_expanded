@@ -13,7 +13,6 @@ characters={
 			traits = {
 				ZEX_MGY_Benevolent_Authoritarian
 				ZEX_MGY_Naive_Reformist
-				ZEX_MGY_Polarising_Figurehead
 			}
 		}
 		country_leader={
@@ -23,7 +22,6 @@ characters={
 			traits = {
 				ZEX_MGY_Benevolent_Authoritarian
 				ZEX_MGY_Naive_Reformist
-				ZEX_MGY_Polarising_Figurehead
 			}
 		}
 	}

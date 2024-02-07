@@ -6,4 +6,4 @@
 
  #Maregyptian Diet
  ZEX_MAREGYPT_PARLIAMENT_CATEGORY:0 "The Royal Diet"
- ZEX_MAREGYPT_PARLIAMENT_CATEGORY_desc:0 ""
+ ZEX_MAREGYPT_PARLIAMENT_CATEGORY_desc:0 "Harmony Support [?Root.zex_harmony_seats_support]/[?Root.zex_harmony_seats_total]\n\nSupremacy Support [?Root.zex_supremacy_seats_support]/[?Root.zex_supremacy_seats_total]\n\nSocialist Support [?Root.zex_socialist_seats_support]/[?Root.zex_socialist_seats_total]\n\nUnaligned Support [?Root.zex_unaligned_seats_support]/[?Root.zex_unaligned_seats_total]\n\nIndependent Support [?Root.zex_independent_seats_support]/[?Root.zex_independent_seats_total]"

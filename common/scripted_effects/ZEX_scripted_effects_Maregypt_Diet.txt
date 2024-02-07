@@ -1,9 +1,7 @@
 ##########################################
 # MAREGYPT DIET RELATED SCRIPTED EFFECTS #
 ##########################################
-
 # Mechanic Activation / Deactivation Effects
-
 ZEX_activate_parliament = {
 	custom_effect_tooltip = ZEX_Activate_Parliament_tt
 	hidden_effect = {
@@ -20,29 +18,12 @@ ZEX_deactivate_parliament = {
 }
 
 # Mechanic Setup
-
 ZEX_setup_royal_diet = {
 	ZEX_royal_diet_initial_seats_setup = yes
-	ZEX_royal_diet_calculate_total_harmony = yes
-	ZEX_royal_diet_calculate_total_supremacy = yes
-	ZEX_royal_diet_calculate_total_socialist = yes
-	ZEX_royal_diet_calculate_total_unaligned = yes
-	ZEX_royal_diet_calculate_total_independent = yes
-	ZEX_Royal_Diet_Var_Set = yes
+	ZEX_royal_diet_calulate_all = yes
 }
 
 # Mechanic Flow Control
-
-ZEX_Royal_Diet_Var_Set = {
-	set_variable = {
-		var = ZEX_royal_transfer_amount_diet_lower_bound
-		value = 1
-	}
-	set_variable = {
-		var = ZEX_royal_diet_transfer_amount_upper_bound
-		value = 5
-	}
-}
 
 ZEX_royal_diet_initial_seats_setup = {
 	# Define Baselines
@@ -138,11 +119,15 @@ ZEX_royal_diet_initial_seats_setup = {
 		max = 300
 	}
 }
-
 ZEX_royal_diet_calculate_total_harmony = {
 	set_variable = {
 		var = zex_harmony_seats_total
 		value = 0
+	}
+	clamp_variable = {
+		var = zex_harmony_seats_total
+		min = 0
+		max = 300
 	}
 	add_to_variable = {
 		var = zex_harmony_seats_total
@@ -159,6 +144,11 @@ ZEX_royal_diet_calculate_total_unaligned = {
 		var = zex_unaligned_seats_total
 		value = 0
 	}
+	clamp_variable = {
+		var = zex_unaligned_seats_total
+		min = 0
+		max = 300
+	}
 	add_to_variable = {
 		var = zex_unaligned_seats_total
 		value = zex_unaligned_seats_opposition
@@ -173,6 +163,11 @@ ZEX_royal_diet_calculate_total_supremacy = {
 	set_variable = {
 		var = zex_supremacy_seats_total
 		value = 0
+	}
+	clamp_variable = {
+		var = zex_supremacy_seats_total
+		min = 0
+		max = 300
 	}
 	add_to_variable = {
 		var = zex_supremacy_seats_total
@@ -189,6 +184,11 @@ ZEX_royal_diet_calculate_total_socialist = {
 		var = zex_socialist_seats_total
 		value = 0
 	}
+	clamp_variable = {
+		var = zex_socialist_seats_total
+		min = 0
+		max = 300
+	}
 	add_to_variable = {
 		var = zex_socialist_seats_total
 		value = zex_socialist_seats_opposition
@@ -204,6 +204,11 @@ ZEX_royal_diet_calculate_total_independent = {
 		var = zex_independent_seats_total
 		value = 0
 	}
+	clamp_variable = {
+		var = zex_independent_seats_total
+		min = 0
+		max = 300
+	}
 	add_to_variable = {
 		var = zex_independent_seats_total
 		value = zex_independent_seats_opposition
@@ -212,1067 +217,1766 @@ ZEX_royal_diet_calculate_total_independent = {
 		var = zex_independent_seats_total
 		value = zex_independent_seats_support
 	}
+	
 }
 
-# Faction transfer representatives effects
-
-ZEX_harmony_to_independent = {
-	set_variable_to_random = {
-		var = ZEX_temp_var_representatives_to_be_transfered
-		min = ZEX_royal_transfer_amount_diet_lower_bound
-		max = ZEX_royal_diet_transfer_amount_upper_bound
-		integer = yes
-	}
-	if = {
-		#Check if the number of senators to be transfered is greater than the source opposition
-		limit = {
-			check_variable = {
-				var = ZEX_temp_var_representatives_to_be_transfered
-				value = zex_harmony_seats_opposition
-				compare = greater_than
-			}
-		}
-		#Move the pooled opposition to the target opposition
-		subtract_from_variable = {
-			var = ZEX_temp_var_representatives_to_be_transfered
-			value = zex_harmony_seats_opposition
-		}
-		add_to_variable = {
-			var = zex_independent_seats_opposition
-			value = zex_harmony_seats_opposition
-		}
-		set_variable = {
-			var = zex_harmony_seats_opposition
-			value = 0
-		}
-		#Check if there's enough left in the harmony support
-		if= {
-			limit = {
-				check_variable = {
-					var = ZEX_temp_var_representatives_to_be_transfered
-					value = zex_harmony_seats_support
-					compare = greater_than
-				}
-			}
-			add_to_variable = {
-				var = zex_independent_seats_opposition
-				value = zex_harmony_seats_support
-			}
-			set_variable = {
-				var = zex_harmony_seats_support
-				value = 0
-			}
-		}
-		else = {
-			add_to_variable = {
-				var = zex_independent_seats_opposition
-				value = ZEX_temp_var_representatives_to_be_transfered
-			}
-			subtract_from_variable = {
-				var = zex_harmony_seats_support
-				value = ZEX_temp_var_representatives_to_be_transfered
-			}
-		}
-	}
-	else = {
-		add_to_variable = {
-			var = zex_independent_seats_opposition
-			value = ZEX_temp_var_representatives_to_be_transfered
-		}
-		subtract_from_variable = {
-			var = zex_harmony_seats_opposition
-			value = ZEX_temp_var_representatives_to_be_transfered
-		}
-	}
+ZEX_royal_diet_calulate_all = {
+	ZEX_royal_diet_calculate_total_harmony = yes
+	ZEX_royal_diet_calculate_total_supremacy = yes
+	ZEX_royal_diet_calculate_total_socialist = yes
+	ZEX_royal_diet_calculate_total_unaligned = yes
+	ZEX_royal_diet_calculate_total_independent = yes
 }
 
-ZEX_independent_to_harmony = {
-	set_variable_to_random = {
-		var = ZEX_temp_var_representatives_to_be_transfered
-		min = ZEX_royal_transfer_amount_diet_lower_bound
-		max = ZEX_royal_diet_transfer_amount_upper_bound
-		integer = yes
-	}
+# Transfter Representatives Effects - faction to faction
+
+ZEX_royal_diet_independent_to_harmony_small = { #5
+	custom_effect_tooltip = zex_increase_harmony_suspport_from_independent_by_5.tt
 	if = {
-		#Check if the number of senators to be transfered is greater than the source opposition
 		limit = {
 			check_variable = {
-				var = ZEX_temp_var_representatives_to_be_transfered
-				value = zex_independent_seats_opposition
-				compare = greater_than
-			}
-		}
-		#Move the pooled opposition to the target opposition
-		subtract_from_variable = {
-			var = ZEX_temp_var_representatives_to_be_transfered
-			value = zex_independent_seats_opposition
-		}
-		add_to_variable = {
-			var = zex_harmony_seats_opposition
-			value = zex_independent_seats_opposition
-		}
-		set_variable = {
-			var = zex_independent_seats_opposition
-			value = 0
-		}
-		#Check if there's enough left in the independent support
-		if= {
-			limit = {
-				check_variable = {
-					var = ZEX_temp_var_representatives_to_be_transfered
-					value = zex_independent_seats_support
-					compare = greater_than
-				}
-			}
-			add_to_variable = {
-				var = zex_harmony_seats_opposition
-				value = zex_independent_seats_support
-			}
-			set_variable = {
 				var = zex_independent_seats_support
-				value = 0
-			}
-		}
-		else = {
-			add_to_variable = {
-				var = zex_harmony_seats_opposition
-				value = ZEX_temp_var_representatives_to_be_transfered
-			}
-			subtract_from_variable = {
-				var = zex_independent_seats_support
-				value = ZEX_temp_var_representatives_to_be_transfered
-			}
-		}
-	}
-	else = {
-		add_to_variable = {
-			var = zex_harmony_seats_opposition
-			value = ZEX_temp_var_representatives_to_be_transfered
-		}
-		subtract_from_variable = {
-			var = zex_independent_seats_opposition
-			value = ZEX_temp_var_representatives_to_be_transfered
-		}
-	}
-}
-
-ZEX_independent_to_supremacy = {
-	set_variable_to_random = {
-		var = ZEX_temp_var_representatives_to_be_transfered
-		min = ZEX_royal_transfer_amount_diet_lower_bound
-		max = ZEX_royal_diet_transfer_amount_upper_bound
-		integer = yes
-	}
-	if = {
-		#Check if the number of senators to be transfered is greater than the source opposition
-		limit = {
-			check_variable = {
-				var = ZEX_temp_var_representatives_to_be_transfered
-				value = zex_independent_seats_opposition
-				compare = greater_than
-			}
-		}
-		#Move the pooled opposition to the target opposition
-		subtract_from_variable = {
-			var = ZEX_temp_var_representatives_to_be_transfered
-			value = zex_independent_seats_opposition
-		}
-		add_to_variable = {
-			var = zex_supremacy_seats_opposition
-			value = zex_independent_seats_opposition
-		}
-		set_variable = {
-			var = zex_independent_seats_opposition
-			value = 0
-		}
-		#Check if there's enough left in the independent support
-		if= {
-			limit = {
-				check_variable = {
-					var = ZEX_temp_var_representatives_to_be_transfered
-					value = zex_independent_seats_support
-					compare = greater_than
-				}
-			}
-			add_to_variable = {
-				var = zex_supremacy_seats_opposition
-				value = zex_independent_seats_support
-			}
-			set_variable = {
-				var = zex_independent_seats_support
-				value = 0
-			}
-		}
-		else = {
-			add_to_variable = {
-				var = zex_supremacy_seats_opposition
-				value = ZEX_temp_var_representatives_to_be_transfered
-			}
-			subtract_from_variable = {
-				var = zex_independent_seats_support
-				value = ZEX_temp_var_representatives_to_be_transfered
-			}
-		}
-	}
-	else = {
-		add_to_variable = {
-			var = zex_supremacy_seats_opposition
-			value = ZEX_temp_var_representatives_to_be_transfered
-		}
-		subtract_from_variable = {
-			var = zex_independent_seats_opposition
-			value = ZEX_temp_var_representatives_to_be_transfered
-		}
-	}
-}
-
-ZEX_independent_to_unaligned = {
-	set_variable_to_random = {
-		var = ZEX_temp_var_representatives_to_be_transfered
-		min = ZEX_royal_transfer_amount_diet_lower_bound
-		max = ZEX_royal_diet_transfer_amount_upper_bound
-		integer = yes
-	}
-	if = {
-		#Check if the number of senators to be transfered is greater than the source opposition
-		limit = {
-			check_variable = {
-				var = ZEX_temp_var_representatives_to_be_transfered
-				value = zex_independent_seats_opposition
-				compare = greater_than
-			}
-		}
-		#Move the pooled opposition to the target opposition
-		subtract_from_variable = {
-			var = ZEX_temp_var_representatives_to_be_transfered
-			value = zex_independent_seats_opposition
-		}
-		add_to_variable = {
-			var = zex_unaligned_seats_opposition
-			value = zex_independent_seats_opposition
-		}
-		set_variable = {
-			var = zex_independent_seats_opposition
-			value = 0
-		}
-		#Check if there's enough left in the independent support
-		if= {
-			limit = {
-				check_variable = {
-					var = ZEX_temp_var_representatives_to_be_transfered
-					value = zex_independent_seats_support
-					compare = greater_than
-				}
-			}
-			add_to_variable = {
-				var = zex_unaligned_seats_opposition
-				value = zex_independent_seats_support
-			}
-			set_variable = {
-				var = zex_independent_seats_support
-				value = 0
-			}
-		}
-		else = {
-			add_to_variable = {
-				var = zex_unaligned_seats_opposition
-				value = ZEX_temp_var_representatives_to_be_transfered
-			}
-			subtract_from_variable = {
-				var = zex_independent_seats_support
-				value = ZEX_temp_var_representatives_to_be_transfered
-			}
-		}
-	}
-	else = {
-		add_to_variable = {
-			var = zex_unaligned_seats_opposition
-			value = ZEX_temp_var_representatives_to_be_transfered
-		}
-		subtract_from_variable = {
-			var = zex_independent_seats_opposition
-			value = ZEX_temp_var_representatives_to_be_transfered
-		}
-	}
-}
-
-ZEX_independent_to_socialist = {
-	set_variable_to_random = {
-		var = ZEX_temp_var_representatives_to_be_transfered
-		min = ZEX_royal_transfer_amount_diet_lower_bound
-		max = ZEX_royal_diet_transfer_amount_upper_bound
-		integer = yes
-	}
-	if = {
-		#Check if the number of senators to be transfered is greater than the source opposition
-		limit = {
-			check_variable = {
-				var = ZEX_temp_var_representatives_to_be_transfered
-				value = zex_independent_seats_opposition
-				compare = greater_than
-			}
-		}
-		#Move the pooled opposition to the target opposition
-		subtract_from_variable = {
-			var = ZEX_temp_var_representatives_to_be_transfered
-			value = zex_independent_seats_opposition
-		}
-		add_to_variable = {
-			var = zex_socialist_seats_opposition
-			value = zex_independent_seats_opposition
-		}
-		set_variable = {
-			var = zex_independent_seats_opposition
-			value = 0
-		}
-		#Check if there's enough left in the independent support
-		if= {
-			limit = {
-				check_variable = {
-					var = ZEX_temp_var_representatives_to_be_transfered
-					value = zex_independent_seats_support
-					compare = greater_than
-				}
-			}
-			add_to_variable = {
-				var = zex_socialist_seats_opposition
-				value = zex_independent_seats_support
-			}
-			set_variable = {
-				var = zex_independent_seats_support
-				value = 0
-			}
-		}
-		else = {
-			add_to_variable = {
-				var = zex_socialist_seats_opposition
-				value = ZEX_temp_var_representatives_to_be_transfered
-			}
-			subtract_from_variable = {
-				var = zex_independent_seats_support
-				value = ZEX_temp_var_representatives_to_be_transfered
-			}
-		}
-	}
-	else = {
-		add_to_variable = {
-			var = zex_socialist_seats_opposition
-			value = ZEX_temp_var_representatives_to_be_transfered
-		}
-		subtract_from_variable = {
-			var = zex_independent_seats_opposition
-			value = ZEX_temp_var_representatives_to_be_transfered
-		}
-	}
-}
-
-ZEX_supremacy_to_independent = {
-	set_variable_to_random = {
-		var = ZEX_temp_var_representatives_to_be_transfered
-		min = ZEX_royal_transfer_amount_diet_lower_bound
-		max = ZEX_royal_diet_transfer_amount_upper_bound
-		integer = yes
-	}
-	if = {
-		#Check if the number of senators to be transfered is greater than the source opposition
-		limit = {
-			check_variable = {
-				var = ZEX_temp_var_representatives_to_be_transfered
-				value = zex_supremacy_seats_opposition
-				compare = greater_than
-			}
-		}
-		#Move the pooled opposition to the target opposition
-		subtract_from_variable = {
-			var = ZEX_temp_var_representatives_to_be_transfered
-			value = zex_supremacy_seats_opposition
-		}
-		add_to_variable = {
-			var = zex_independent_seats_opposition
-			value = zex_supremacy_seats_opposition
-		}
-		set_variable = {
-			var = zex_supremacy_seats_opposition
-			value = 0
-		}
-		#Check if there's enough left in the supremacy support
-		if= {
-			limit = {
-				check_variable = {
-					var = ZEX_temp_var_representatives_to_be_transfered
-					value = zex_supremacy_seats_support
-					compare = greater_than
-				}
-			}
-			add_to_variable = {
-				var = zex_independent_seats_opposition
-				value = zex_supremacy_seats_support
-			}
-			set_variable = {
-				var = zex_supremacy_seats_support
-				value = 0
-			}
-		}
-		else = {
-			add_to_variable = {
-				var = zex_independent_seats_opposition
-				value = ZEX_temp_var_representatives_to_be_transfered
-			}
-			subtract_from_variable = {
-				var = zex_supremacy_seats_support
-				value = ZEX_temp_var_representatives_to_be_transfered
-			}
-		}
-	}
-	else = {
-		add_to_variable = {
-			var = zex_independent_seats_opposition
-			value = ZEX_temp_var_representatives_to_be_transfered
-		}
-		subtract_from_variable = {
-			var = zex_supremacy_seats_opposition
-			value = ZEX_temp_var_representatives_to_be_transfered
-		}
-	}
-}
-
-ZEX_unaligned_to_independent = {
-	set_variable_to_random = {
-		var = ZEX_temp_var_representatives_to_be_transfered
-		min = ZEX_royal_transfer_amount_diet_lower_bound
-		max = ZEX_royal_diet_transfer_amount_upper_bound
-		integer = yes
-	}
-	if = {
-		#Check if the number of senators to be transfered is greater than the source opposition
-		limit = {
-			check_variable = {
-				var = ZEX_temp_var_representatives_to_be_transfered
-				value = zex_unaligned_seats_opposition
-				compare = greater_than
-			}
-		}
-		#Move the pooled opposition to the target opposition
-		subtract_from_variable = {
-			var = ZEX_temp_var_representatives_to_be_transfered
-			value = zex_unaligned_seats_opposition
-		}
-		add_to_variable = {
-			var = zex_independent_seats_opposition
-			value = zex_unaligned_seats_opposition
-		}
-		set_variable = {
-			var = zex_unaligned_seats_opposition
-			value = 0
-		}
-		#Check if there's enough left in the unaligned support
-		if= {
-			limit = {
-				check_variable = {
-					var = ZEX_temp_var_representatives_to_be_transfered
-					value = zex_unaligned_seats_support
-					compare = greater_than
-				}
-			}
-			add_to_variable = {
-				var = zex_independent_seats_opposition
-				value = zex_unaligned_seats_support
-			}
-			set_variable = {
-				var = zex_unaligned_seats_support
-				value = 0
-			}
-		}
-		else = {
-			add_to_variable = {
-				var = zex_independent_seats_opposition
-				value = ZEX_temp_var_representatives_to_be_transfered
-			}
-			subtract_from_variable = {
-				var = zex_unaligned_seats_support
-				value = ZEX_temp_var_representatives_to_be_transfered
-			}
-		}
-	}
-	else = {
-		add_to_variable = {
-			var = zex_independent_seats_opposition
-			value = ZEX_temp_var_representatives_to_be_transfered
-		}
-		subtract_from_variable = {
-			var = zex_unaligned_seats_opposition
-			value = ZEX_temp_var_representatives_to_be_transfered
-		}
-	}
-}
-
-ZEX_socialist_to_independent = {
-	set_variable_to_random = {
-		var = ZEX_temp_var_representatives_to_be_transfered
-		min = ZEX_royal_transfer_amount_diet_lower_bound
-		max = ZEX_royal_diet_transfer_amount_upper_bound
-		integer = yes
-	}
-	if = {
-		#Check if the number of senators to be transfered is greater than the source opposition
-		limit = {
-			check_variable = {
-				var = ZEX_temp_var_representatives_to_be_transfered
-				value = zex_socialist_seats_opposition
-				compare = greater_than
-			}
-		}
-		#Move the pooled opposition to the target opposition
-		subtract_from_variable = {
-			var = ZEX_temp_var_representatives_to_be_transfered
-			value = zex_socialist_seats_opposition
-		}
-		add_to_variable = {
-			var = zex_independent_seats_opposition
-			value = zex_socialist_seats_opposition
-		}
-		set_variable = {
-			var = zex_socialist_seats_opposition
-			value = 0
-		}
-		#Check if there's enough left in the socialist support
-		if= {
-			limit = {
-				check_variable = {
-					var = ZEX_temp_var_representatives_to_be_transfered
-					value = zex_socialist_seats_support
-					compare = greater_than
-				}
-			}
-			add_to_variable = {
-				var = zex_independent_seats_opposition
-				value = zex_socialist_seats_support
-			}
-			set_variable = {
-				var = zex_socialist_seats_support
-				value = 0
-			}
-		}
-		else = {
-			add_to_variable = {
-				var = zex_independent_seats_opposition
-				value = ZEX_temp_var_representatives_to_be_transfered
-			}
-			subtract_from_variable = {
-				var = zex_socialist_seats_support
-				value = ZEX_temp_var_representatives_to_be_transfered
-			}
-		}
-	}
-	else = {
-		add_to_variable = {
-			var = zex_independent_seats_opposition
-			value = ZEX_temp_var_representatives_to_be_transfered
-		}
-		subtract_from_variable = {
-			var = zex_socialist_seats_opposition
-			value = ZEX_temp_var_representatives_to_be_transfered
-		}
-	}
-}
-
-# Increase/Decrease Support - Faction Specific
-
-ZEX_harmony_increase_support = {
-	set_variable_to_random = {
-		var = ZEX_temp_var_support_increase_amount
-		min = 3
-		max = 10
-	}
-	if = {
-		limit = {
-			check_variable = {
-				var = ZEX_temp_var_support_increase_amount
-				value = zex_harmony_seats_opposition
-				compare = greater_than
-			}
-		}
-		add_to_variable = {
-			var = zex_harmony_seats_support
-			value = zex_harmony_seats_opposition
-		}
-		set_variable = {
-			var = zex_harmony_seats_opposition
-			value = 0
-		}
-	}
-	else = {
-		subtract_from_variable = {
-			var = zex_harmony_seats_opposition
-			value = ZEX_temp_var_support_decrease_amount
-		}
-		add_to_variable = {
-			var = zex_harmony_seats_support
-			value = ZEX_temp_var_support_decrease_amount
-		}
-	}
-}
-
-ZEX_harmony_decrease_support = {
-	set_variable_to_random = {
-		var = ZEX_temp_var_support_increase_amount
-		min = 3
-		max = 10
-	}
-	if = {
-		limit = {
-			check_variable = {
-				var = ZEX_temp_var_support_decrease_amount
-				value = zex_harmony_seats_support
-				compare = greater_than
+				value = 5
+				compare = greater_than_or_equals
 			}
 		}
 		add_to_variable = {
 			var = zex_harmony_seats_opposition
-			value = zex_harmony_seats_support
+			value = 5
 		}
-		set_variable = {
-			var = zex_harmony_seats_support
-			value = 0
-		}
-	}
-	else = {
 		subtract_from_variable = {
-			var = zex_harmony_seats_support
-			value = ZEX_temp_var_support_decrease_amount
-		}
-		add_to_variable = {
-			var = zex_harmony_seats_opposition
-			value = ZEX_temp_var_support_decrease_amount
-		}
-	}
-}
-
-ZEX_supremacy_increase_support = {
-	set_variable_to_random = {
-		var = ZEX_temp_var_support_increase_amount
-		min = 3
-		max = 10
-	}
-	if = {
-		limit = {
-			check_variable = {
-				var = ZEX_temp_var_support_increase_amount
-				value = zex_supremacy_seats_opposition
-				compare = greater_than
-			}
-		}
-		add_to_variable = {
-			var = zex_supremacy_seats_support
-			value = zex_supremacy_seats_opposition
-		}
-		set_variable = {
-			var = zex_supremacy_seats_opposition
-			value = 0
-		}
-	}
-	else = {
-		subtract_from_variable = {
-			var = zex_supremacy_seats_opposition
-			value = ZEX_temp_var_support_decrease_amount
-		}
-		add_to_variable = {
-			var = zex_supremacy_seats_support
-			value = ZEX_temp_var_support_decrease_amount
-		}
-	}
-}
-
-ZEX_supremacy_decrease_support = {
-	set_variable_to_random = {
-		var = ZEX_temp_var_support_increase_amount
-		min = 3
-		max = 10
-	}
-	if = {
-		limit = {
-			check_variable = {
-				var = ZEX_temp_var_support_decrease_amount
-				value = zex_supremacy_seats_support
-				compare = greater_than
-			}
-		}
-		add_to_variable = {
-			var = zex_supremacy_seats_opposition
-			value = zex_supremacy_seats_support
-		}
-		set_variable = {
-			var = zex_supremacy_seats_support
-			value = 0
-		}
-	}
-	else = {
-		subtract_from_variable = {
-			var = zex_supremacy_seats_support
-			value = ZEX_temp_var_support_decrease_amount
-		}
-		add_to_variable = {
-			var = zex_supremacy_seats_opposition
-			value = ZEX_temp_var_support_decrease_amount
-		}
-	}
-}
-
-ZEX_socialist_increase_support = {
-	set_variable_to_random = {
-		var = ZEX_temp_var_support_increase_amount
-		min = 3
-		max = 10
-	}
-	if = {
-		limit = {
-			check_variable = {
-				var = ZEX_temp_var_support_increase_amount
-				value = zex_socialist_seats_opposition
-				compare = greater_than
-			}
-		}
-		add_to_variable = {
-			var = zex_socialist_seats_support
-			value = zex_socialist_seats_opposition
-		}
-		set_variable = {
-			var = zex_socialist_seats_opposition
-			value = 0
-		}
-	}
-	else = {
-		subtract_from_variable = {
-			var = zex_socialist_seats_opposition
-			value = ZEX_temp_var_support_decrease_amount
-		}
-		add_to_variable = {
-			var = zex_socialist_seats_support
-			value = ZEX_temp_var_support_decrease_amount
-		}
-	}
-}
-
-ZEX_socialist_decrease_support = {
-	set_variable_to_random = {
-		var = ZEX_temp_var_support_increase_amount
-		min = 3
-		max = 10
-	}
-	if = {
-		limit = {
-			check_variable = {
-				var = ZEX_temp_var_support_decrease_amount
-				value = zex_socialist_seats_support
-				compare = greater_than
-			}
-		}
-		add_to_variable = {
-			var = zex_socialist_seats_opposition
-			value = zex_socialist_seats_support
-		}
-		set_variable = {
-			var = zex_socialist_seats_support
-			value = 0
-		}
-	}
-	else = {
-		subtract_from_variable = {
-			var = zex_socialist_seats_support
-			value = ZEX_temp_var_support_decrease_amount
-		}
-		add_to_variable = {
-			var = zex_socialist_seats_opposition
-			value = ZEX_temp_var_support_decrease_amount
-		}
-	}
-}
-
-ZEX_unaligned_increase_support = {
-	set_variable_to_random = {
-		var = ZEX_temp_var_support_increase_amount
-		min = 3
-		max = 10
-	}
-	if = {
-		limit = {
-			check_variable = {
-				var = ZEX_temp_var_support_increase_amount
-				value = zex_unaligned_seats_opposition
-				compare = greater_than
-			}
-		}
-		add_to_variable = {
-			var = zex_unaligned_seats_support
-			value = zex_unaligned_seats_opposition
-		}
-		set_variable = {
-			var = zex_unaligned_seats_opposition
-			value = 0
-		}
-	}
-	else = {
-		subtract_from_variable = {
-			var = zex_unaligned_seats_opposition
-			value = ZEX_temp_var_support_decrease_amount
-		}
-		add_to_variable = {
-			var = zex_unaligned_seats_support
-			value = ZEX_temp_var_support_decrease_amount
-		}
-	}
-}
-
-ZEX_unaligned_decrease_support = {
-	set_variable_to_random = {
-		var = ZEX_temp_var_support_increase_amount
-		min = 3
-		max = 10
-	}
-	if = {
-		limit = {
-			check_variable = {
-				var = ZEX_temp_var_support_decrease_amount
-				value = zex_unaligned_seats_support
-				compare = greater_than
-			}
-		}
-		add_to_variable = {
-			var = zex_unaligned_seats_opposition
-			value = zex_unaligned_seats_support
-		}
-		set_variable = {
-			var = zex_unaligned_seats_support
-			value = 0
-		}
-	}
-	else = {
-		subtract_from_variable = {
-			var = zex_unaligned_seats_support
-			value = ZEX_temp_var_support_decrease_amount
-		}
-		add_to_variable = {
-			var = zex_unaligned_seats_opposition
-			value = ZEX_temp_var_support_decrease_amount
-		}
-	}
-}
-
-ZEX_independent_increase_support = {
-	set_variable_to_random = {
-		var = ZEX_temp_var_support_increase_amount
-		min = 3
-		max = 10
-	}
-	if = {
-		limit = {
-			check_variable = {
-				var = ZEX_temp_var_support_increase_amount
-				value = zex_independent_seats_opposition
-				compare = greater_than
-			}
-		}
-		add_to_variable = {
 			var = zex_independent_seats_support
-			value = zex_independent_seats_opposition
-		}
-		set_variable = {
-			var = zex_independent_seats_opposition
-			value = 0
+			value = 5
 		}
 	}
 	else = {
-		subtract_from_variable = {
-			var = zex_independent_seats_opposition
-			value = ZEX_temp_var_support_decrease_amount
-		}
 		add_to_variable = {
-			var = zex_independent_seats_support
-			value = ZEX_temp_var_support_decrease_amount
+			var	= zex_harmony_seats_opposition
+			value = zex_independent_seats_support
 		}
-	}
-}
-
-ZEX_independent_decrease_support = {
-	set_variable_to_random = {
-		var = ZEX_temp_var_support_increase_amount
-		min = 3
-		max = 10
-	}
-	if = {
-		limit = {
-			check_variable = {
-				var = ZEX_temp_var_support_decrease_amount
-				value = zex_independent_seats_support
-				compare = greater_than
-			}
+		set_temp_variable = {
+			var	= zex_royal_diet_temp_var
+			value = 5
 		}
-		add_to_variable = {
-			var = zex_independent_seats_opposition
+		subtract_from_temp_variable = {
+			var	= zex_royal_diet_temp_var
 			value = zex_independent_seats_support
 		}
 		set_variable = {
 			var = zex_independent_seats_support
 			value = 0
 		}
-	}
-	else = {
-		subtract_from_variable = {
-			var = zex_independent_seats_support
-			value = ZEX_temp_var_support_decrease_amount
+		if = {
+			limit = {
+				check_variable = {
+					var = zex_independent_seats_opposition
+					value = zex_royal_diet_temp_var
+					compare = greater_than_or_equals
+				}
+			}
+			add_to_variable = {
+				var = zex_harmony_seats_opposition
+				value = zex_royal_diet_temp_var
+			}
+			subtract_from_temp_variable = {
+				var = zex_independent_seats_opposition
+				value = zex_royal_diet_temp_var
+			}
 		}
-		add_to_variable = {
-			var = zex_independent_seats_opposition
-			value = ZEX_temp_var_support_decrease_amount
+		else = {
+			add_to_variable = {
+				var = zex_harmony_seats_opposition
+				value = zex_independent_seats_opposition
+			}
+			set_variable = {
+				var = zex_independent_seats_opposition
+				value = 0
+			}
 		}
 	}
 }
 
-# Decrease Support all
-
-ZEX_decrease_diet_support_all = {
-	set_variable = {
-		var = ZEX_temp_var_opposition_increase
-		value = 0
-	}
-	#This will try to remove 120 seats from the support, begining with the opposition
-	while_loop_effect = {
+ZEX_royal_diet_independent_to_harmony_medium = { #10
+	custom_effect_tooltip = zex_increase_harmony_suspport_from_independent_by_10.tt
+	if = {
 		limit = {
-			check_variable = {
-				var = ZEX_temp_var_opposition_increase
-				value = 150
-				compare = less_than
-			}
-			check_variable = {
-				var = zex_supremacy_seats_support
-				value = 0
-				compare = greater_than
-			}
-			check_variable = {
-				var = zex_socialist_seats_support
-				value = 0
-				compare = greater_than
-			}
-			check_variable = {
-				var = zex_unaligned_seats_support
-				value = 0
-				compare = greater_than
-			}
-		}
-		if = {
-			limit = {
-				check_variable = {
-					var = zex_supremacy_seats_support
-					value = 0
-					compare = greater_than
-				}
-			}
-			subtract_from_variable = {
-				var = zex_supremacy_seats_support
-				value = 1
-			}
-			add_to_variable = {
-				var = zex_supremacy_seats_opposition
-				value = 1
-			}
-			add_to_variable = {
-				var = ZEX_temp_var_opposition_increase
-				value = 1
-			}
-		}
-		if = {
-			limit = {
-				check_variable = {
-					var = zex_socialist_seats_support
-					value = 0
-					compare = greater_than
-				}
-			}
-			subtract_from_variable = {
-				var = zex_socialist_seats_support
-				value = 1
-			}
-			add_to_variable = {
-				var = zex_socialist_seats_opposition
-				value = 1
-			}
-			add_to_variable = {
-				var = ZEX_temp_var_opposition_increase
-				value = 1
-			}
-		}
-		if = {
-			limit = {
-				check_variable = {
-					var = zex_unaligned_seats_support
-					value = 0
-					compare = greater_than
-				}
-			}
-			subtract_from_variable = {
-				var = zex_unaligned_seats_support
-				value = 1
-			}
-			add_to_variable = {
-				var = zex_unaligned_seats_opposition
-				value = 1
-			}
-			add_to_variable = {
-				var = ZEX_temp_var_opposition_increase
-				value = 1
-			}
-		}
-	}
-	while_loop_effect = {
-		limit = {
-			check_variable = {
-				var = ZEX_temp_var_opposition_increase
-				value = 150
-				compare = less_than
-			}
 			check_variable = {
 				var = zex_independent_seats_support
-				value = 0
-				compare = greater_than
+				value = 10
+				compare = greater_than_or_equals
 			}
-		}
-		subtract_from_variable = {
-			var = zex_independent_seats_support
-			value = 1
-		}
-		add_to_variable = {
-			var = zex_independent_seats_opposition
-			value = 1
-		}
-		add_to_variable = {
-			var = ZEX_temp_var_opposition_increase
-			value = 1
-		}
-	}
-	while_loop_effect = {
-		limit = {
-			check_variable = {
-				var = ZEX_temp_var_opposition_increase
-				value = 150
-				compare = less_than
-			}
-			check_variable = {
-				var = zex_harmony_seats_support
-				value = 0
-				compare = greater_than
-			}
-		}
-		subtract_from_variable = {
-			var = zex_harmony_seats_support
-			value = 1
 		}
 		add_to_variable = {
 			var = zex_harmony_seats_opposition
-			value = 1
+			value = 10
 		}
+		subtract_from_variable = {
+			var = zex_independent_seats_support
+			value = 10
+		}
+	}
+	else = {
 		add_to_variable = {
-			var = ZEX_temp_var_opposition_increase
-			value = 1
+			var	= zex_harmony_seats_opposition
+			value = zex_independent_seats_support
+		}
+		set_temp_variable = {
+			var	= zex_royal_diet_temp_var
+			value = 10
+		}
+		subtract_from_temp_variable = {
+			var	= zex_royal_diet_temp_var
+			value = zex_independent_seats_support
+		}
+		set_variable = {
+			var = zex_independent_seats_support
+			value = 0
+		}
+		if = {
+			limit = {
+				check_variable = {
+					var = zex_independent_seats_opposition
+					value = zex_royal_diet_temp_var
+					compare = greater_than_or_equals
+				}
+			}
+			add_to_variable = {
+				var = zex_harmony_seats_opposition
+				value = zex_royal_diet_temp_var
+			}
+			subtract_from_temp_variable = {
+				var = zex_independent_seats_opposition
+				value = zex_royal_diet_temp_var
+			}
+		}
+		else = {
+			add_to_variable = {
+				var = zex_harmony_seats_opposition
+				value = zex_independent_seats_opposition
+			}
+			set_variable = {
+				var = zex_independent_seats_opposition
+				value = 0
+			}
 		}
 	}
 }
+
+ZEX_royal_diet_independent_to_harmony_large = { #15
+	custom_effect_tooltip = zex_increase_harmony_suspport_from_independent_by_15.tt
+	if = {
+		limit = {
+			check_variable = {
+				var = zex_independent_seats_support
+				value = 15
+				compare = greater_than_or_equals
+			}
+		}
+		add_to_variable = {
+			var = zex_harmony_seats_opposition
+			value = 15
+		}
+		subtract_from_variable = {
+			var = zex_independent_seats_support
+			value = 15
+		}
+	}
+	else = {
+		add_to_variable = {
+			var	= zex_harmony_seats_opposition
+			value = zex_independent_seats_support
+		}
+		set_temp_variable = {
+			var	= zex_royal_diet_temp_var
+			value = 15
+		}
+		subtract_from_temp_variable = {
+			var	= zex_royal_diet_temp_var
+			value = zex_independent_seats_support
+		}
+		set_variable = {
+			var = zex_independent_seats_support
+			value = 0
+		}
+		if = {
+			limit = {
+				check_variable = {
+					var = zex_independent_seats_opposition
+					value = zex_royal_diet_temp_var
+					compare = greater_than_or_equals
+				}
+			}
+			add_to_variable = {
+				var = zex_harmony_seats_opposition
+				value = zex_royal_diet_temp_var
+			}
+			subtract_from_temp_variable = {
+				var = zex_independent_seats_opposition
+				value = zex_royal_diet_temp_var
+			}
+		}
+		else = {
+			add_to_variable = {
+				var = zex_harmony_seats_opposition
+				value = zex_independent_seats_opposition
+			}
+			set_variable = {
+				var = zex_independent_seats_opposition
+				value = 0
+			}
+		}
+	}
+}
+
+ZEX_royal_diet_independent_to_supremacy_small = { #5
+	custom_effect_tooltip = zex_increase_supremacy_suspport_from_independent_by_5.tt
+	if = {
+		limit = {
+			check_variable = {
+				var = zex_independent_seats_support
+				value = 5
+				compare = greater_than_or_equals
+			}
+		}
+		add_to_variable = {
+			var = zex_supremacy_seats_opposition
+			value = 5
+		}
+		subtract_from_variable = {
+			var = zex_independent_seats_support
+			value = 5
+		}
+	}
+	else = {
+		add_to_variable = {
+			var	= zex_supremacy_seats_opposition
+			value = zex_independent_seats_support
+		}
+		set_temp_variable = {
+			var	= zex_royal_diet_temp_var
+			value = 5
+		}
+		subtract_from_temp_variable = {
+			var	= zex_royal_diet_temp_var
+			value = zex_independent_seats_support
+		}
+		set_variable = {
+			var = zex_independent_seats_support
+			value = 0
+		}
+		if = {
+			limit = {
+				check_variable = {
+					var = zex_independent_seats_opposition
+					value = zex_royal_diet_temp_var
+					compare = greater_than_or_equals
+				}
+			}
+			add_to_variable = {
+				var = zex_supremacy_seats_opposition
+				value = zex_royal_diet_temp_var
+			}
+			subtract_from_temp_variable = {
+				var = zex_independent_seats_opposition
+				value = zex_royal_diet_temp_var
+			}
+		}
+		else = {
+			add_to_variable = {
+				var = zex_supremacy_seats_opposition
+				value = zex_independent_seats_opposition
+			}
+			set_variable = {
+				var = zex_independent_seats_opposition
+				value = 0
+			}
+		}
+	}
+}
+
+ZEX_royal_diet_independent_to_supremacy_medium = { #10
+	custom_effect_tooltip = zex_increase_supremacy_suspport_from_independent_by_10.tt
+	if = {
+		limit = {
+			check_variable = {
+				var = zex_independent_seats_support
+				value = 10
+				compare = greater_than_or_equals
+			}
+		}
+		add_to_variable = {
+			var = zex_supremacy_seats_opposition
+			value = 10
+		}
+		subtract_from_variable = {
+			var = zex_independent_seats_support
+			value = 10
+		}
+	}
+	else = {
+		add_to_variable = {
+			var	= zex_supremacy_seats_opposition
+			value = zex_independent_seats_support
+		}
+		set_temp_variable = {
+			var	= zex_royal_diet_temp_var
+			value = 10
+		}
+		subtract_from_temp_variable = {
+			var	= zex_royal_diet_temp_var
+			value = zex_independent_seats_support
+		}
+		set_variable = {
+			var = zex_independent_seats_support
+			value = 0
+		}
+		if = {
+			limit = {
+				check_variable = {
+					var = zex_independent_seats_opposition
+					value = zex_royal_diet_temp_var
+					compare = greater_than_or_equals
+				}
+			}
+			add_to_variable = {
+				var = zex_supremacy_seats_opposition
+				value = zex_royal_diet_temp_var
+			}
+			subtract_from_temp_variable = {
+				var = zex_independent_seats_opposition
+				value = zex_royal_diet_temp_var
+			}
+		}
+		else = {
+			add_to_variable = {
+				var = zex_supremacy_seats_opposition
+				value = zex_independent_seats_opposition
+			}
+			set_variable = {
+				var = zex_independent_seats_opposition
+				value = 0
+			}
+		}
+	}
+}
+
+ZEX_royal_diet_independent_to_supremacy_large = { #15
+	custom_effect_tooltip = zex_increase_supremacy_suspport_from_independent_by_15.tt
+	if = {
+		limit = {
+			check_variable = {
+				var = zex_independent_seats_support
+				value = 15
+				compare = greater_than_or_equals
+			}
+		}
+		add_to_variable = {
+			var = zex_supremacy_seats_opposition
+			value = 15
+		}
+		subtract_from_variable = {
+			var = zex_independent_seats_support
+			value = 15
+		}
+	}
+	else = {
+		add_to_variable = {
+			var	= zex_supremacy_seats_opposition
+			value = zex_independent_seats_support
+		}
+		set_temp_variable = {
+			var	= zex_royal_diet_temp_var
+			value = 15
+		}
+		subtract_from_temp_variable = {
+			var	= zex_royal_diet_temp_var
+			value = zex_independent_seats_support
+		}
+		set_variable = {
+			var = zex_independent_seats_support
+			value = 0
+		}
+		if = {
+			limit = {
+				check_variable = {
+					var = zex_independent_seats_opposition
+					value = zex_royal_diet_temp_var
+					compare = greater_than_or_equals
+				}
+			}
+			add_to_variable = {
+				var = zex_supremacy_seats_opposition
+				value = zex_royal_diet_temp_var
+			}
+			subtract_from_temp_variable = {
+				var = zex_independent_seats_opposition
+				value = zex_royal_diet_temp_var
+			}
+		}
+		else = {
+			add_to_variable = {
+				var = zex_supremacy_seats_opposition
+				value = zex_independent_seats_opposition
+			}
+			set_variable = {
+				var = zex_independent_seats_opposition
+				value = 0
+			}
+		}
+	}
+}
+
+ZEX_royal_diet_independent_to_socialist_small = { #5
+	custom_effect_tooltip = zex_increase_socialist_suspport_from_independent_by_5.tt
+	if = {
+		limit = {
+			check_variable = {
+				var = zex_independent_seats_support
+				value = 5
+				compare = greater_than_or_equals
+			}
+		}
+		add_to_variable = {
+			var = zex_socialist_seats_opposition
+			value = 5
+		}
+		subtract_from_variable = {
+			var = zex_independent_seats_support
+			value = 5
+		}
+	}
+	else = {
+		add_to_variable = {
+			var	= zex_socialist_seats_opposition
+			value = zex_independent_seats_support
+		}
+		set_temp_variable = {
+			var	= zex_royal_diet_temp_var
+			value = 5
+		}
+		subtract_from_temp_variable = {
+			var	= zex_royal_diet_temp_var
+			value = zex_independent_seats_support
+		}
+		set_variable = {
+			var = zex_independent_seats_support
+			value = 0
+		}
+		if = {
+			limit = {
+				check_variable = {
+					var = zex_independent_seats_opposition
+					value = zex_royal_diet_temp_var
+					compare = greater_than_or_equals
+				}
+			}
+			add_to_variable = {
+				var = zex_socialist_seats_opposition
+				value = zex_royal_diet_temp_var
+			}
+			subtract_from_temp_variable = {
+				var = zex_independent_seats_opposition
+				value = zex_royal_diet_temp_var
+			}
+		}
+		else = {
+			add_to_variable = {
+				var = zex_socialist_seats_opposition
+				value = zex_independent_seats_opposition
+			}
+			set_variable = {
+				var = zex_independent_seats_opposition
+				value = 0
+			}
+		}
+	}
+}
+
+ZEX_royal_diet_independent_to_socialist_medium = { #10
+	custom_effect_tooltip = zex_increase_socialist_suspport_from_independent_by_10.tt
+	if = {
+		limit = {
+			check_variable = {
+				var = zex_independent_seats_support
+				value = 10
+				compare = greater_than_or_equals
+			}
+		}
+		add_to_variable = {
+			var = zex_socialist_seats_opposition
+			value = 10
+		}
+		subtract_from_variable = {
+			var = zex_independent_seats_support
+			value = 10
+		}
+	}
+	else = {
+		add_to_variable = {
+			var	= zex_socialist_seats_opposition
+			value = zex_independent_seats_support
+		}
+		set_temp_variable = {
+			var	= zex_royal_diet_temp_var
+			value = 10
+		}
+		subtract_from_temp_variable = {
+			var	= zex_royal_diet_temp_var
+			value = zex_independent_seats_support
+		}
+		set_variable = {
+			var = zex_independent_seats_support
+			value = 0
+		}
+		if = {
+			limit = {
+				check_variable = {
+					var = zex_independent_seats_opposition
+					value = zex_royal_diet_temp_var
+					compare = greater_than_or_equals
+				}
+			}
+			add_to_variable = {
+				var = zex_socialist_seats_opposition
+				value = zex_royal_diet_temp_var
+			}
+			subtract_from_temp_variable = {
+				var = zex_independent_seats_opposition
+				value = zex_royal_diet_temp_var
+			}
+		}
+		else = {
+			add_to_variable = {
+				var = zex_socialist_seats_opposition
+				value = zex_independent_seats_opposition
+			}
+			set_variable = {
+				var = zex_independent_seats_opposition
+				value = 0
+			}
+		}
+	}
+}
+
+ZEX_royal_diet_independent_to_socialist_large = { #15
+	custom_effect_tooltip = zex_increase_socialist_suspport_from_independent_by_15.tt
+	if = {
+		limit = {
+			check_variable = {
+				var = zex_independent_seats_support
+				value = 15
+				compare = greater_than_or_equals
+			}
+		}
+		add_to_variable = {
+			var = zex_socialist_seats_opposition
+			value = 15
+		}
+		subtract_from_variable = {
+			var = zex_independent_seats_support
+			value = 15
+		}
+	}
+	else = {
+		add_to_variable = {
+			var	= zex_socialist_seats_opposition
+			value = zex_independent_seats_support
+		}
+		set_temp_variable = {
+			var	= zex_royal_diet_temp_var
+			value = 15
+		}
+		subtract_from_temp_variable = {
+			var	= zex_royal_diet_temp_var
+			value = zex_independent_seats_support
+		}
+		set_variable = {
+			var = zex_independent_seats_support
+			value = 0
+		}
+		if = {
+			limit = {
+				check_variable = {
+					var = zex_independent_seats_opposition
+					value = zex_royal_diet_temp_var
+					compare = greater_than_or_equals
+				}
+			}
+			add_to_variable = {
+				var = zex_socialist_seats_opposition
+				value = zex_royal_diet_temp_var
+			}
+			subtract_from_temp_variable = {
+				var = zex_independent_seats_opposition
+				value = zex_royal_diet_temp_var
+			}
+		}
+		else = {
+			add_to_variable = {
+				var = zex_socialist_seats_opposition
+				value = zex_independent_seats_opposition
+			}
+			set_variable = {
+				var = zex_independent_seats_opposition
+				value = 0
+			}
+		}
+	}
+}
+
+ZEX_royal_diet_independent_to_unaligned_small = { #5
+	custom_effect_tooltip = zex_increase_unaligned_suspport_from_independent_by_5.tt
+	if = {
+		limit = {
+			check_variable = {
+				var = zex_independent_seats_support
+				value = 5
+				compare = greater_than_or_equals
+			}
+		}
+		add_to_variable = {
+			var = zex_unaligned_seats_opposition
+			value = 5
+		}
+		subtract_from_variable = {
+			var = zex_independent_seats_support
+			value = 5
+		}
+	}
+	else = {
+		add_to_variable = {
+			var	= zex_unaligned_seats_opposition
+			value = zex_independent_seats_support
+		}
+		set_temp_variable = {
+			var	= zex_royal_diet_temp_var
+			value = 5
+		}
+		subtract_from_temp_variable = {
+			var	= zex_royal_diet_temp_var
+			value = zex_independent_seats_support
+		}
+		set_variable = {
+			var = zex_independent_seats_support
+			value = 0
+		}
+		if = {
+			limit = {
+				check_variable = {
+					var = zex_independent_seats_opposition
+					value = zex_royal_diet_temp_var
+					compare = greater_than_or_equals
+				}
+			}
+			add_to_variable = {
+				var = zex_unaligned_seats_opposition
+				value = zex_royal_diet_temp_var
+			}
+			subtract_from_temp_variable = {
+				var = zex_independent_seats_opposition
+				value = zex_royal_diet_temp_var
+			}
+		}
+		else = {
+			add_to_variable = {
+				var = zex_unaligned_seats_opposition
+				value = zex_independent_seats_opposition
+			}
+			set_variable = {
+				var = zex_independent_seats_opposition
+				value = 0
+			}
+		}
+	}
+}
+
+ZEX_royal_diet_independent_to_unaligned_medium = { #10
+	custom_effect_tooltip = zex_increase_unaligned_suspport_from_independent_by_10.tt
+	if = {
+		limit = {
+			check_variable = {
+				var = zex_independent_seats_support
+				value = 10
+				compare = greater_than_or_equals
+			}
+		}
+		add_to_variable = {
+			var = zex_unaligned_seats_opposition
+			value = 10
+		}
+		subtract_from_variable = {
+			var = zex_independent_seats_support
+			value = 10
+		}
+	}
+	else = {
+		add_to_variable = {
+			var	= zex_unaligned_seats_opposition
+			value = zex_independent_seats_support
+		}
+		set_temp_variable = {
+			var	= zex_royal_diet_temp_var
+			value = 10
+		}
+		subtract_from_temp_variable = {
+			var	= zex_royal_diet_temp_var
+			value = zex_independent_seats_support
+		}
+		set_variable = {
+			var = zex_independent_seats_support
+			value = 0
+		}
+		if = {
+			limit = {
+				check_variable = {
+					var = zex_independent_seats_opposition
+					value = zex_royal_diet_temp_var
+					compare = greater_than_or_equals
+				}
+			}
+			add_to_variable = {
+				var = zex_unaligned_seats_opposition
+				value = zex_royal_diet_temp_var
+			}
+			subtract_from_temp_variable = {
+				var = zex_independent_seats_opposition
+				value = zex_royal_diet_temp_var
+			}
+		}
+		else = {
+			add_to_variable = {
+				var = zex_unaligned_seats_opposition
+				value = zex_independent_seats_opposition
+			}
+			set_variable = {
+				var = zex_independent_seats_opposition
+				value = 0
+			}
+		}
+	}
+}
+
+ZEX_royal_diet_independent_to_unaligned_large = { #15
+	custom_effect_tooltip = zex_increase_unaligned_suspport_from_independent_by_15.tt
+	if = {
+		limit = {
+			check_variable = {
+				var = zex_independent_seats_support
+				value = 15
+				compare = greater_than_or_equals
+			}
+		}
+		add_to_variable = {
+			var = zex_unaligned_seats_opposition
+			value = 15
+		}
+		subtract_from_variable = {
+			var = zex_independent_seats_support
+			value = 15
+		}
+	}
+	else = {
+		add_to_variable = {
+			var	= zex_unaligned_seats_opposition
+			value = zex_independent_seats_support
+		}
+		set_temp_variable = {
+			var	= zex_royal_diet_temp_var
+			value = 15
+		}
+		subtract_from_temp_variable = {
+			var	= zex_royal_diet_temp_var
+			value = zex_independent_seats_support
+		}
+		set_variable = {
+			var = zex_independent_seats_support
+			value = 0
+		}
+		if = {
+			limit = {
+				check_variable = {
+					var = zex_independent_seats_opposition
+					value = zex_royal_diet_temp_var
+					compare = greater_than_or_equals
+				}
+			}
+			add_to_variable = {
+				var = zex_unaligned_seats_opposition
+				value = zex_royal_diet_temp_var
+			}
+			subtract_from_temp_variable = {
+				var = zex_independent_seats_opposition
+				value = zex_royal_diet_temp_var
+			}
+		}
+		else = {
+			add_to_variable = {
+				var = zex_unaligned_seats_opposition
+				value = zex_independent_seats_opposition
+			}
+			set_variable = {
+				var = zex_independent_seats_opposition
+				value = 0
+			}
+		}
+	}
+}
+
+ZEX_royal_diet_harmony_to_independent_small = { #5
+	custom_effect_tooltip = zex_increase_independent_suspport_from_harmony_by_5.tt
+	if = {
+		limit = {
+			check_variable = {
+				var = zex_harmony_seats_support
+				value = 5
+				compare = greater_than_or_equals
+			}
+		}
+		add_to_variable = {
+			var = zex_independent_seats_opposition
+			value = 5
+		}
+		subtract_from_variable = {
+			var = zex_harmony_seats_support
+			value = 5
+		}
+	}
+	else = {
+		add_to_variable = {
+			var	= zex_independent_seats_opposition
+			value = zex_harmony_seats_support
+		}
+		set_temp_variable = {
+			var	= zex_royal_diet_temp_var
+			value = 5
+		}
+		subtract_from_temp_variable = {
+			var	= zex_royal_diet_temp_var
+			value = zex_harmony_seats_support
+		}
+		set_variable = {
+			var = zex_harmony_seats_support
+			value = 0
+		}
+		if = {
+			limit = {
+				check_variable = {
+					var = zex_harmony_seats_opposition
+					value = zex_royal_diet_temp_var
+					compare = greater_than_or_equals
+				}
+			}
+			add_to_variable = {
+				var = zex_independent_seats_opposition
+				value = zex_royal_diet_temp_var
+			}
+			subtract_from_temp_variable = {
+				var = zex_harmony_seats_opposition
+				value = zex_royal_diet_temp_var
+			}
+		}
+		else = {
+			add_to_variable = {
+				var = zex_independent_seats_opposition
+				value = zex_harmony_seats_opposition
+			}
+			set_variable = {
+				var = zex_harmony_seats_opposition
+				value = 0
+			}
+		}
+	}
+}
+
+ZEX_royal_diet_harmony_to_independent_medium = { #10
+	custom_effect_tooltip = zex_increase_independent_suspport_from_harmony_by_10.tt
+	if = {
+		limit = {
+			check_variable = {
+				var = zex_harmony_seats_support
+				value = 10
+				compare = greater_than_or_equals
+			}
+		}
+		add_to_variable = {
+			var = zex_independent_seats_opposition
+			value = 10
+		}
+		subtract_from_variable = {
+			var = zex_harmony_seats_support
+			value = 10
+		}
+	}
+	else = {
+		add_to_variable = {
+			var	= zex_independent_seats_opposition
+			value = zex_harmony_seats_support
+		}
+		set_temp_variable = {
+			var	= zex_royal_diet_temp_var
+			value = 10
+		}
+		subtract_from_temp_variable = {
+			var	= zex_royal_diet_temp_var
+			value = zex_harmony_seats_support
+		}
+		set_variable = {
+			var = zex_harmony_seats_support
+			value = 0
+		}
+		if = {
+			limit = {
+				check_variable = {
+					var = zex_harmony_seats_opposition
+					value = zex_royal_diet_temp_var
+					compare = greater_than_or_equals
+				}
+			}
+			add_to_variable = {
+				var = zex_independent_seats_opposition
+				value = zex_royal_diet_temp_var
+			}
+			subtract_from_temp_variable = {
+				var = zex_harmony_seats_opposition
+				value = zex_royal_diet_temp_var
+			}
+		}
+		else = {
+			add_to_variable = {
+				var = zex_independent_seats_opposition
+				value = zex_harmony_seats_opposition
+			}
+			set_variable = {
+				var = zex_harmony_seats_opposition
+				value = 0
+			}
+		}
+	}
+}
+
+ZEX_royal_diet_harmony_to_independent_large = { #15
+	custom_effect_tooltip = zex_increase_independent_suspport_from_harmony_by_15.tt
+	if = {
+		limit = {
+			check_variable = {
+				var = zex_harmony_seats_support
+				value = 15
+				compare = greater_than_or_equals
+			}
+		}
+		add_to_variable = {
+			var = zex_independent_seats_opposition
+			value = 15
+		}
+		subtract_from_variable = {
+			var = zex_harmony_seats_support
+			value = 15
+		}
+	}
+	else = {
+		add_to_variable = {
+			var	= zex_independent_seats_opposition
+			value = zex_harmony_seats_support
+		}
+		set_temp_variable = {
+			var	= zex_royal_diet_temp_var
+			value = 15
+		}
+		subtract_from_temp_variable = {
+			var	= zex_royal_diet_temp_var
+			value = zex_harmony_seats_support
+		}
+		set_variable = {
+			var = zex_harmony_seats_support
+			value = 0
+		}
+		if = {
+			limit = {
+				check_variable = {
+					var = zex_harmony_seats_opposition
+					value = zex_royal_diet_temp_var
+					compare = greater_than_or_equals
+				}
+			}
+			add_to_variable = {
+				var = zex_independent_seats_opposition
+				value = zex_royal_diet_temp_var
+			}
+			subtract_from_temp_variable = {
+				var = zex_harmony_seats_opposition
+				value = zex_royal_diet_temp_var
+			}
+		}
+		else = {
+			add_to_variable = {
+				var = zex_independent_seats_opposition
+				value = zex_harmony_seats_opposition
+			}
+			set_variable = {
+				var = zex_harmony_seats_opposition
+				value = 0
+			}
+		}
+	}
+}
+
+ZEX_royal_diet_supremacy_to_independent_small = { #5
+	custom_effect_tooltip = zex_increase_independent_suspport_from_supremacy_by_5.tt
+	if = {
+		limit = {
+			check_variable = {
+				var = zex_supremacy_seats_support
+				value = 5
+				compare = greater_than_or_equals
+			}
+		}
+		add_to_variable = {
+			var = zex_independent_seats_opposition
+			value = 5
+		}
+		subtract_from_variable = {
+			var = zex_supremacy_seats_support
+			value = 5
+		}
+	}
+	else = {
+		add_to_variable = {
+			var	= zex_independent_seats_opposition
+			value = zex_supremacy_seats_support
+		}
+		set_temp_variable = {
+			var	= zex_royal_diet_temp_var
+			value = 5
+		}
+		subtract_from_temp_variable = {
+			var	= zex_royal_diet_temp_var
+			value = zex_supremacy_seats_support
+		}
+		set_variable = {
+			var = zex_supremacy_seats_support
+			value = 0
+		}
+		if = {
+			limit = {
+				check_variable = {
+					var = zex_supremacy_seats_opposition
+					value = zex_royal_diet_temp_var
+					compare = greater_than_or_equals
+				}
+			}
+			add_to_variable = {
+				var = zex_independent_seats_opposition
+				value = zex_royal_diet_temp_var
+			}
+			subtract_from_temp_variable = {
+				var = zex_supremacy_seats_opposition
+				value = zex_royal_diet_temp_var
+			}
+		}
+		else = {
+			add_to_variable = {
+				var = zex_independent_seats_opposition
+				value = zex_supremacy_seats_opposition
+			}
+			set_variable = {
+				var = zex_supremacy_seats_opposition
+				value = 0
+			}
+		}
+	}
+}
+
+ZEX_royal_diet_supremacy_to_independent_medium = { #10
+	custom_effect_tooltip = zex_increase_independent_suspport_from_supremacy_by_10.tt
+	if = {
+		limit = {
+			check_variable = {
+				var = zex_supremacy_seats_support
+				value = 10
+				compare = greater_than_or_equals
+			}
+		}
+		add_to_variable = {
+			var = zex_independent_seats_opposition
+			value = 10
+		}
+		subtract_from_variable = {
+			var = zex_supremacy_seats_support
+			value = 10
+		}
+	}
+	else = {
+		add_to_variable = {
+			var	= zex_independent_seats_opposition
+			value = zex_supremacy_seats_support
+		}
+		set_temp_variable = {
+			var	= zex_royal_diet_temp_var
+			value = 10
+		}
+		subtract_from_temp_variable = {
+			var	= zex_royal_diet_temp_var
+			value = zex_supremacy_seats_support
+		}
+		set_variable = {
+			var = zex_supremacy_seats_support
+			value = 0
+		}
+		if = {
+			limit = {
+				check_variable = {
+					var = zex_supremacy_seats_opposition
+					value = zex_royal_diet_temp_var
+					compare = greater_than_or_equals
+				}
+			}
+			add_to_variable = {
+				var = zex_independent_seats_opposition
+				value = zex_royal_diet_temp_var
+			}
+			subtract_from_temp_variable = {
+				var = zex_supremacy_seats_opposition
+				value = zex_royal_diet_temp_var
+			}
+		}
+		else = {
+			add_to_variable = {
+				var = zex_independent_seats_opposition
+				value = zex_supremacy_seats_opposition
+			}
+			set_variable = {
+				var = zex_supremacy_seats_opposition
+				value = 0
+			}
+		}
+	}
+}
+
+ZEX_royal_diet_supremacy_to_independent_large = { #15
+	custom_effect_tooltip = zex_increase_independent_suspport_from_supremacy_by_15.tt
+	if = {
+		limit = {
+			check_variable = {
+				var = zex_supremacy_seats_support
+				value = 15
+				compare = greater_than_or_equals
+			}
+		}
+		add_to_variable = {
+			var = zex_independent_seats_opposition
+			value = 15
+		}
+		subtract_from_variable = {
+			var = zex_supremacy_seats_support
+			value = 15
+		}
+	}
+	else = {
+		add_to_variable = {
+			var	= zex_independent_seats_opposition
+			value = zex_supremacy_seats_support
+		}
+		set_temp_variable = {
+			var	= zex_royal_diet_temp_var
+			value = 15
+		}
+		subtract_from_temp_variable = {
+			var	= zex_royal_diet_temp_var
+			value = zex_supremacy_seats_support
+		}
+		set_variable = {
+			var = zex_supremacy_seats_support
+			value = 0
+		}
+		if = {
+			limit = {
+				check_variable = {
+					var = zex_supremacy_seats_opposition
+					value = zex_royal_diet_temp_var
+					compare = greater_than_or_equals
+				}
+			}
+			add_to_variable = {
+				var = zex_independent_seats_opposition
+				value = zex_royal_diet_temp_var
+			}
+			subtract_from_temp_variable = {
+				var = zex_supremacy_seats_opposition
+				value = zex_royal_diet_temp_var
+			}
+		}
+		else = {
+			add_to_variable = {
+				var = zex_independent_seats_opposition
+				value = zex_supremacy_seats_opposition
+			}
+			set_variable = {
+				var = zex_supremacy_seats_opposition
+				value = 0
+			}
+		}
+	}
+}
+
+ZEX_royal_diet_socialist_to_independent_small = { #5
+	custom_effect_tooltip = zex_increase_independent_suspport_from_socialist_by_5.tt
+	if = {
+		limit = {
+			check_variable = {
+				var = zex_socialist_seats_support
+				value = 5
+				compare = greater_than_or_equals
+			}
+		}
+		add_to_variable = {
+			var = zex_independent_seats_opposition
+			value = 5
+		}
+		subtract_from_variable = {
+			var = zex_socialist_seats_support
+			value = 5
+		}
+	}
+	else = {
+		add_to_variable = {
+			var	= zex_independent_seats_opposition
+			value = zex_socialist_seats_support
+		}
+		set_temp_variable = {
+			var	= zex_royal_diet_temp_var
+			value = 5
+		}
+		subtract_from_temp_variable = {
+			var	= zex_royal_diet_temp_var
+			value = zex_socialist_seats_support
+		}
+		set_variable = {
+			var = zex_socialist_seats_support
+			value = 0
+		}
+		if = {
+			limit = {
+				check_variable = {
+					var = zex_socialist_seats_opposition
+					value = zex_royal_diet_temp_var
+					compare = greater_than_or_equals
+				}
+			}
+			add_to_variable = {
+				var = zex_independent_seats_opposition
+				value = zex_royal_diet_temp_var
+			}
+			subtract_from_temp_variable = {
+				var = zex_socialist_seats_opposition
+				value = zex_royal_diet_temp_var
+			}
+		}
+		else = {
+			add_to_variable = {
+				var = zex_independent_seats_opposition
+				value = zex_socialist_seats_opposition
+			}
+			set_variable = {
+				var = zex_socialist_seats_opposition
+				value = 0
+			}
+		}
+	}
+}
+
+ZEX_royal_diet_socialist_to_independent_medium = { #10
+	custom_effect_tooltip = zex_increase_independent_suspport_from_socialist_by_10.tt
+	if = {
+		limit = {
+			check_variable = {
+				var = zex_socialist_seats_support
+				value = 10
+				compare = greater_than_or_equals
+			}
+		}
+		add_to_variable = {
+			var = zex_independent_seats_opposition
+			value = 10
+		}
+		subtract_from_variable = {
+			var = zex_socialist_seats_support
+			value = 10
+		}
+	}
+	else = {
+		add_to_variable = {
+			var	= zex_independent_seats_opposition
+			value = zex_socialist_seats_support
+		}
+		set_temp_variable = {
+			var	= zex_royal_diet_temp_var
+			value = 10
+		}
+		subtract_from_temp_variable = {
+			var	= zex_royal_diet_temp_var
+			value = zex_socialist_seats_support
+		}
+		set_variable = {
+			var = zex_socialist_seats_support
+			value = 0
+		}
+		if = {
+			limit = {
+				check_variable = {
+					var = zex_socialist_seats_opposition
+					value = zex_royal_diet_temp_var
+					compare = greater_than_or_equals
+				}
+			}
+			add_to_variable = {
+				var = zex_independent_seats_opposition
+				value = zex_royal_diet_temp_var
+			}
+			subtract_from_temp_variable = {
+				var = zex_socialist_seats_opposition
+				value = zex_royal_diet_temp_var
+			}
+		}
+		else = {
+			add_to_variable = {
+				var = zex_independent_seats_opposition
+				value = zex_socialist_seats_opposition
+			}
+			set_variable = {
+				var = zex_socialist_seats_opposition
+				value = 0
+			}
+		}
+	}
+}
+
+ZEX_royal_diet_socialist_to_independent_large = { #15
+	custom_effect_tooltip = zex_increase_independent_suspport_from_socialist_by_15.tt
+	if = {
+		limit = {
+			check_variable = {
+				var = zex_socialist_seats_support
+				value = 15
+				compare = greater_than_or_equals
+			}
+		}
+		add_to_variable = {
+			var = zex_independent_seats_opposition
+			value = 15
+		}
+		subtract_from_variable = {
+			var = zex_socialist_seats_support
+			value = 15
+		}
+	}
+	else = {
+		add_to_variable = {
+			var	= zex_independent_seats_opposition
+			value = zex_socialist_seats_support
+		}
+		set_temp_variable = {
+			var	= zex_royal_diet_temp_var
+			value = 15
+		}
+		subtract_from_temp_variable = {
+			var	= zex_royal_diet_temp_var
+			value = zex_socialist_seats_support
+		}
+		set_variable = {
+			var = zex_socialist_seats_support
+			value = 0
+		}
+		if = {
+			limit = {
+				check_variable = {
+					var = zex_socialist_seats_opposition
+					value = zex_royal_diet_temp_var
+					compare = greater_than_or_equals
+				}
+			}
+			add_to_variable = {
+				var = zex_independent_seats_opposition
+				value = zex_royal_diet_temp_var
+			}
+			subtract_from_temp_variable = {
+				var = zex_socialist_seats_opposition
+				value = zex_royal_diet_temp_var
+			}
+		}
+		else = {
+			add_to_variable = {
+				var = zex_independent_seats_opposition
+				value = zex_socialist_seats_opposition
+			}
+			set_variable = {
+				var = zex_socialist_seats_opposition
+				value = 0
+			}
+		}
+	}
+}
+
+ZEX_royal_diet_unaligned_to_independent_small = { #5
+	custom_effect_tooltip = zex_increase_independent_suspport_from_unaligned_by_5.tt
+	if = {
+		limit = {
+			check_variable = {
+				var = zex_unaligned_seats_support
+				value = 5
+				compare = greater_than_or_equals
+			}
+		}
+		add_to_variable = {
+			var = zex_independent_seats_opposition
+			value = 5
+		}
+		subtract_from_variable = {
+			var = zex_unaligned_seats_support
+			value = 5
+		}
+	}
+	else = {
+		add_to_variable = {
+			var	= zex_independent_seats_opposition
+			value = zex_unaligned_seats_support
+		}
+		set_temp_variable = {
+			var	= zex_royal_diet_temp_var
+			value = 5
+		}
+		subtract_from_temp_variable = {
+			var	= zex_royal_diet_temp_var
+			value = zex_unaligned_seats_support
+		}
+		set_variable = {
+			var = zex_unaligned_seats_support
+			value = 0
+		}
+		if = {
+			limit = {
+				check_variable = {
+					var = zex_unaligned_seats_opposition
+					value = zex_royal_diet_temp_var
+					compare = greater_than_or_equals
+				}
+			}
+			add_to_variable = {
+				var = zex_independent_seats_opposition
+				value = zex_royal_diet_temp_var
+			}
+			subtract_from_temp_variable = {
+				var = zex_unaligned_seats_opposition
+				value = zex_royal_diet_temp_var
+			}
+		}
+		else = {
+			add_to_variable = {
+				var = zex_independent_seats_opposition
+				value = zex_unaligned_seats_opposition
+			}
+			set_variable = {
+				var = zex_unaligned_seats_opposition
+				value = 0
+			}
+		}
+	}
+}
+
+ZEX_royal_diet_unaligned_to_independent_medium = { #10
+	custom_effect_tooltip = zex_increase_independent_suspport_from_unaligned_by_10.tt
+	if = {
+		limit = {
+			check_variable = {
+				var = zex_unaligned_seats_support
+				value = 10
+				compare = greater_than_or_equals
+			}
+		}
+		add_to_variable = {
+			var = zex_independent_seats_opposition
+			value = 10
+		}
+		subtract_from_variable = {
+			var = zex_unaligned_seats_support
+			value = 10
+		}
+	}
+	else = {
+		add_to_variable = {
+			var	= zex_independent_seats_opposition
+			value = zex_unaligned_seats_support
+		}
+		set_temp_variable = {
+			var	= zex_royal_diet_temp_var
+			value = 10
+		}
+		subtract_from_temp_variable = {
+			var	= zex_royal_diet_temp_var
+			value = zex_unaligned_seats_support
+		}
+		set_variable = {
+			var = zex_unaligned_seats_support
+			value = 0
+		}
+		if = {
+			limit = {
+				check_variable = {
+					var = zex_unaligned_seats_opposition
+					value = zex_royal_diet_temp_var
+					compare = greater_than_or_equals
+				}
+			}
+			add_to_variable = {
+				var = zex_independent_seats_opposition
+				value = zex_royal_diet_temp_var
+			}
+			subtract_from_temp_variable = {
+				var = zex_unaligned_seats_opposition
+				value = zex_royal_diet_temp_var
+			}
+		}
+		else = {
+			add_to_variable = {
+				var = zex_independent_seats_opposition
+				value = zex_unaligned_seats_opposition
+			}
+			set_variable = {
+				var = zex_unaligned_seats_opposition
+				value = 0
+			}
+		}
+	}
+}
+
+ZEX_royal_diet_unaligned_to_independent_large = { #15
+	custom_effect_tooltip = zex_increase_independent_suspport_from_unaligned_by_15.tt
+	if = {
+		limit = {
+			check_variable = {
+				var = zex_unaligned_seats_support
+				value = 15
+				compare = greater_than_or_equals
+			}
+		}
+		add_to_variable = {
+			var = zex_independent_seats_opposition
+			value = 15
+		}
+		subtract_from_variable = {
+			var = zex_unaligned_seats_support
+			value = 15
+		}
+	}
+	else = {
+		add_to_variable = {
+			var	= zex_independent_seats_opposition
+			value = zex_unaligned_seats_support
+		}
+		set_temp_variable = {
+			var	= zex_royal_diet_temp_var
+			value = 15
+		}
+		subtract_from_temp_variable = {
+			var	= zex_royal_diet_temp_var
+			value = zex_unaligned_seats_support
+		}
+		set_variable = {
+			var = zex_unaligned_seats_support
+			value = 0
+		}
+		if = {
+			limit = {
+				check_variable = {
+					var = zex_unaligned_seats_opposition
+					value = zex_royal_diet_temp_var
+					compare = greater_than_or_equals
+				}
+			}
+			add_to_variable = {
+				var = zex_independent_seats_opposition
+				value = zex_royal_diet_temp_var
+			}
+			subtract_from_temp_variable = {
+				var = zex_unaligned_seats_opposition
+				value = zex_royal_diet_temp_var
+			}
+		}
+		else = {
+			add_to_variable = {
+				var = zex_independent_seats_opposition
+				value = zex_unaligned_seats_opposition
+			}
+			set_variable = {
+				var = zex_unaligned_seats_opposition
+				value = 0
+			}
+		}
+	}
+}
+
+#Master "screw your support" effect
+
+ZEX_royal_diet_remove_support_bulk = {
+	custom_effect_tooltip = ZEX_Royal_Diet_Lose_150_support.tt
+	set_temp_variable = {
+		var = ZEX_temp_var_total_support_shift
+		value = 0
+	}
+	if = {
+		limit = {
+			has_country_flag = ZEX_MGY_COALITION_WITH_SUPREMACY
+		}
+		#First loop, remove from opposing parties
+		while_loop_effect = {
+			limit = {
+				check_variable = {
+					var = ZEX_temp_var_total_support_shift
+					value = 150
+					compare = less_than
+				}
+				OR = {
+					check_variable = {
+						var = zex_socialist_seats_support
+						value = 0
+						compare = greater_than
+					}
+					check_variable = {
+						var = zex_unaligned_seats_support
+						value = 0
+						compare = greater_than
+					}
+				}
+			}
+			random_list = {
+				50 = {
+					add_to_variable = {
+						var = zex_unaligned_seats_opposition
+						value = 1
+					}
+					subtract_from_variable = {
+						var = zex_unaligned_seats_support
+						value = 1
+					}
+				}
+				50 = {
+					add_to_variable = {
+						var = zex_socialist_seats_opposition
+						value = 1
+					}
+					subtract_from_variable = {
+						var = zex_socialist_seats_support
+						value = 1
+					}
+				}
+			}
+		}
+		#Second loop, for the independents
+		while_loop_effect = {
+			limit = {
+				check_variable = {
+					var = ZEX_temp_var_total_support_shift
+					value = 150
+					compare = less_than
+				}
+				check_variable = {
+					var = zex_independent_seats_support
+					value = 0
+					compare = greater_than
+				}
+			}
+			add_to_variable = {
+				var = zex_independent_seats_opposition
+				value = 1
+			}
+			subtract_from_variable = {
+				var = zex_independent_seats_support
+				value = 1
+			}
+		}
+		#Third loop, take care of the coalition
+		while_loop_effect = {
+			limit = {
+				check_variable = {
+					var = ZEX_temp_var_total_support_shift
+					value = 150
+					compare = less_than
+				}
+				OR = {
+					check_variable = {
+						var = zex_harmony_seats_support
+						value = 0
+						compare = greater_than
+					}
+					check_variable = {
+						var = zex_supremacy_seats_support
+						value = 0
+						compare = greater_than
+					}
+				}
+			}
+			random_list = {
+				50 = {
+					add_to_variable = {
+						var = zex_supremacy_seats_support
+						value = 1
+					}
+					subtract_from_variable = {
+						var = zex_supremacy_seats_support
+						value = 1
+					}
+				}
+				50 = {
+					add_to_variable = {
+						var = zex_harmony_seats_opposition
+						value = 1
+					}
+					subtract_from_variable = {
+						var = zex_harmony_seats_support
+						value = 1
+					}
+				}
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_country_flag = ZEX_MGY_COALITION_WITH_SOCIALISTS
+		}
+		while_loop_effect = {
+			limit = {
+				check_variable = {
+					var = ZEX_temp_var_total_support_shift
+					value = 150
+					compare = less_than
+				}
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_country_flag = ZEX_MGY_COALITION_WITH_UNALIGNED
+		}
+		while_loop_effect = {
+			limit = {
+				check_variable = {
+					var = ZEX_temp_var_total_support_shift
+					value = 150
+					compare = less_than
+				}
+			}
+		}
+	}
+	else = {
+		while_loop_effect = {
+			limit = {
+				check_variable = {
+					var = ZEX_temp_var_total_support_shift
+					value = 150
+					compare = less_than
+				}
+			}
+		}
+	}
+}
+
+#Boost / Lose support, per faction 

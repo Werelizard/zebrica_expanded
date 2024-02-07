@@ -2,8 +2,19 @@
  #Ruler Traits
  ZEX_MGY_Naive_Reformist:0 "Naive Reformist"
  ZEX_MGY_Benevolent_Authoritarian:0 "Benevolent Authoritarian"
- ZEX_MGY_Polarising_Figurehead:0 "Polarising Figurehead"
+
+ #Description
+ ZEX_MGY_KHEFER_DESC:0 "§YBorn§!: February 11th 984\n\n§YBiography§!: a Pony of principle, Mardjed Nebe Khefer was born the third son to the late King Snefru. His older brother and sister were lost to the Storm King's rampage alongside with his mother, leaving him the heavy duty of guiding Maregypt throughout these difficult times. A close friend to Sha Doof, King Khefer came to power with hope in his heart, but found himself shackled by the country's spiralling poverty, increasing radicalism and a political crisis on the horizon. He quickly began vast and ambitious projects to modernise society but these were met with limited successes, with the only tangible results being more ammo landing in the republicans' hands. His characteristic naiveity - while charming to some - has led him to becoming ever so reliant on his ailing Vizier and members of the conservative ARM movement. King Khefer is, if anything, the proof that good ambitions alone too often amount to naught."
 
  #Advisors
  ZEX_MGY_Shaa_Doof:0 "Shaa Doof"
  ZEX_Old_Vizier:0 "Old Vizier"
+
+ #Ideas
+ ZEX_MGY_Breadbasket:0 "Breadbasket of Zebrica"
+ ZEX_Unfinished_Constitution:0 "A Constitution of Compromises"
+ ZEX_Mare_Mule_Divide:0 "The Mare-Mule Divide"
+
+ ZEX_MGY_Breadbasket_desc:0 "Maregypt is a country which has been defined by its agriculture. Food exports - such as wheat, olives, dates and raisins - for the backbone of the country's economy. This has naturally led to a heavy reliance on the agricultural sector, though problematic as that may be the royal household has always been able to judiciously put the profits from these sales to use.\n\n§RShould the harvests fail - or worse, a flood hit - the consequences would be disastrous.§!"
+ ZEX_Unfinished_Constitution_desc:0 "The constitution of February 1005, which some refer to as 'the Vizier's decree', is the brain child of the Vizier Sha Doof. Rather than being a properly legally binding document however, it is more aptly described as a list of promises and guarantees to both the populace and the ever more radical republican movement. Without the royal diet to ratify its passage it has sat - an ineffective piece of paper - for almost two years now."
+ ZEX_Mare_Mule_Divide_desc:0 "Donkeys have always been a minority within Maregypt. In recent years however, moreso since the Storm King's onslaught, their conditions within our nation have dramatically declined. This has led to rising political unrest as well as a steady increase in seperatism in our westernmost regions."

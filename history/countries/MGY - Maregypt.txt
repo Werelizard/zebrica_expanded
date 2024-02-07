@@ -74,6 +74,12 @@ add_ideas = {
 	outdated_industry
 	zebrica_legacy_of_storm1
 	poverty
+	
+	#Ideas
+
+	ZEX_MGY_Breadbasket
+	ZEX_Unfinished_Constitution
+	ZEX_Mare_Mule_Divide
 }
 
 set_convoys = 70
@@ -200,8 +206,11 @@ create_country_leader = {
 		traits = {
 			ZEX_MGY_Benevolent_Authoritarian
 			ZEX_MGY_Naive_Reformist
-			ZEX_MGY_Polarising_Figurehead
 		}
+}
+set_country_leader_description = {
+	ideology = democratic
+	desc = ZEX_MGY_KHEFER_DESC
 }
 create_country_leader = {
 	name = MGY_king_khefer
@@ -212,10 +221,12 @@ create_country_leader = {
 		traits = {
 			ZEX_MGY_Benevolent_Authoritarian
 			ZEX_MGY_Naive_Reformist
-			ZEX_MGY_Polarising_Figurehead
 		}
 }
-
+set_country_leader_description = {
+	ideology = neutrality
+	desc = ZEX_MGY_KHEFER_DESC
+}
 set_popularities = {
 	democratic = 67
 	fascism = 3
