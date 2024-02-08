@@ -1,9 +1,9 @@
 ﻿l_english:
  MGY_democratic_party:0 "MHA"
  MGY_democratic_party_long:0 "Maregypt Harmonic Association"
- MGY_communism_party:0 "RP-SF"
- MGY_communism_party_long:0 "Republican Party - Socialist Faction"
- MGY_fascism_party:0 "RP-RF"
- MGY_fascism_party_long:0 "Republican Party - Republican Faction"
+ MGY_communism_party:0 "MR-SF"
+ MGY_communism_party_long:0 "Maregypt Revival Party - Socialist Faction"
+ MGY_fascism_party:0 "MR-RF"
+ MGY_fascism_party_long:0 "Maregypt Revival Party - Republican Faction"
  MGY_neutrality_party:0 "ARM"
  MGY_neutrality_party_long:0 "Association for the Restoration of Maregypt"

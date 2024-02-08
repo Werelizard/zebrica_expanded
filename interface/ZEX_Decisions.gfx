@@ -1,6 +1,38 @@
 spriteTypes = {
 	spriteType = {
-		name = "ZEX_MGY_Harmonist_Faction_Icon"
+		name = "ZEX_MGY_Royal_Diet_Harmony_Icon"
 		textureFile = "gfx/interface/decisions/ZEX_MGY_harmonist_faction.dds"
+	}
+	spriteType = {
+		name = "ZEX_MGY_Royal_Diet_Republican_Icon"
+		textureFile = "gfx/interface/decisions/ZEX_MGY_republican_faction.dds"
+	}
+	spriteType = {
+		name = "ZEX_MGY_Royal_Diet_Traditionalists_Icon"
+		textureFile = "gfx/interface/decisions/ZEX_MGY_reformists_faction.dds"
+	}
+	spriteType = {
+		name = "ZEX_MGY_Royal_Diet_Loyalists_Icon"
+		textureFile = "gfx/interface/decisions/ZEX_MGY_loyalists_faction.dds"
+	}
+	spriteType = {
+		name = "ZEX_MGY_Royal_Diet_NoFaction_Icon"
+		textureFile = "gfx/interface/decisions/ZEX_MGY_no_faction.dds"
+	}
+	spriteType = {
+		name = "ZEX_GFX_Royal_Diet"
+		textureFile = "gfx/interface/decisions/ZEX_GFX_MGY_DIET_CAT.dds"
+	}
+	spriteType = {
+		name = "ZEX_GFX_royal_diet_appeal_to_monarchism"
+		textureFile = "gfx/interface/decisions/ZEX_GFX_royal_diet_appeal_to_monarchism.dds"
+	}
+	spriteType = {
+		name = "ZEX_GFX_royal_diet_promote_harmony_policy"
+		textureFile = "gfx/interface/decisions/ZEX_GFX_royal_diet_promote_harmony_policy.dds"
+	}
+	spriteType = {
+		name = "ZEX_GFX_royal_support_reformism"
+		textureFile = "gfx/interface/decisions/ZEX_GFX_royal_support_reformism.dds"
 	}
 }

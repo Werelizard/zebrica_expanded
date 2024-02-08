@@ -22,6 +22,6 @@ ZEX_MAREGYPT_PARLIAMENT_CATEGORY = {
 		has_country_flag = zex_has_maregypt_parliament
 	}
 	priority = 999
-	icon = GFX_decision_SWI_no_elected_president
+	icon = ZEX_GFX_Royal_Diet
 	visible_when_empty = yes
 }

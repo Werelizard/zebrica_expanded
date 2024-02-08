@@ -1,3 +1,109 @@
 ZEX_MAREGYPT_PARLIAMENT_CATEGORY = {
-	
+	#Initial Decisions
+	ZEX_royal_diet_promote_harmony_policy = {
+		icon = ZEX_GFX_royal_diet_promote_harmony_policy
+		visible = {
+			
+		}
+		complete_effect = {
+			ZEX_Increase_Monarchist_Loyalty_small = yes
+			ZEX_Increase_reformists_Loyalty_small = yes
+			ZEX_increase_republican_loyalty_small = yes
+			ZEX_decrease_independents_Loyalty_medium = yes
+			ZEX_decrease_loyalists_Loyalty_medium = yes
+		}
+	}
+	ZEX_royal_diet_appeal_to_monarchism = {
+		icon = ZEX_GFX_royal_diet_appeal_to_monarchism
+		visible = {
+			
+		}
+		complete_effect = {
+			ZEX_Increase_Monarchist_Loyalty_small = yes
+			ZEX_decrease_republican_loyalty_medium = yes
+			ZEX_increase_loyalists_Loyalty_small = yes
+			ZEX_reformists_to_independents_small = yes
+		}
+	}
+	ZEX_royal_support_reformism = {
+		icon = ZEX_GFX_royal_support_reformism
+		visible = {
+			
+		}
+		complete_effect = {
+			ZEX_decrease_Monarchist_Loyalty_small = yes
+			ZEX_increase_republican_loyalty_medium = yes
+			ZEX_decrease_loyalists_Loyalty_Big = yes
+			ZEX_independents_to_reformists_small = yes
+		}
+	}
+
+	#Debug Decisions
+	ZEX_royal_diet_debug_decrease_monarchist = {
+		visible = {
+			is_debug = yes
+		}
+		complete_effect = {
+			ZEX_Monarchist_to_independents_medium = yes
+		}
+	}
+	ZEX_royal_diet_debug_increase_monarchist = {
+		visible = {
+			is_debug = yes
+		}
+		complete_effect = {
+			ZEX_independents_to_Monarchist_small = yes
+		}
+	}
+
+	ZEX_royal_diet_debug_decrease_reformists = {
+		visible = {
+			is_debug = yes
+		}
+		complete_effect = {
+			ZEX_reformists_to_independents_small = yes
+		}
+	}
+	ZEX_royal_diet_debug_increase_reformists  = {
+		visible = {
+			is_debug = yes
+		}
+		complete_effect = {
+			ZEX_independents_to_reformists_large = yes
+		}
+	}
+
+	ZEX_royal_diet_debug_decrease_republicans = {
+		visible = {
+			is_debug = yes
+		}
+		complete_effect = {
+			ZEX_republican_to_independents_large = yes
+		}
+	}
+	ZEX_royal_diet_debug_increase_republicans = {
+		visible = {
+			is_debug = yes
+		}
+		complete_effect = {
+			ZEX_independents_to_republican_medium = yes
+		}
+	}
+
+	ZEX_royal_diet_debug_decrease_loyalists = {
+		visible = {
+			is_debug = yes
+		}
+		complete_effect = {
+			ZEX_loyalists_to_independents_small = yes
+		}
+	}
+	ZEX_royal_diet_debug_increase_loyalists  = {
+		visible = {
+			is_debug = yes
+		}
+		complete_effect = {
+			ZEX_independents_to_loyalists_medium = yes
+		}
+	}
 }

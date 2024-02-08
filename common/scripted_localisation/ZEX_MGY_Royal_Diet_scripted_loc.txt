@@ -1,0 +1,194 @@
+defined_text = {
+	name = ZEX_GetMonarchistLoyalty
+	text = {
+		trigger = {
+			check_variable = {
+				var = ZEX_royal_diet_monarchist_loyalty
+				value = 80
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = ZEX_loyal
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = ZEX_royal_diet_monarchist_loyalty
+				value = 40
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = ZEX_royal_diet_monarchist_loyalty
+				value = 80
+				compare = less_than
+			}
+		}
+		localization_key = ZEX_neutral
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = ZEX_royal_diet_monarchist_loyalty
+				value = 40
+				compare = less_than
+			}
+		}
+		localization_key = ZEX_opposed
+	}
+}
+
+defined_text = {
+	name = ZEX_GetRepublicansLoyalty
+	text = {
+		trigger = {
+			check_variable = {
+				var = ZEX_royal_diet_republican_loyalty
+				value = 80
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = ZEX_loyal
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = ZEX_royal_diet_republican_loyalty
+				value = 40
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = ZEX_royal_diet_republican_loyalty
+				value = 80
+				compare = less_than
+			}
+		}
+		localization_key = ZEX_neutral
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = ZEX_royal_diet_republican_loyalty
+				value = 40
+				compare = less_than
+			}
+		}
+		localization_key = ZEX_opposed
+	}
+}
+
+defined_text = {
+	name = ZEX_GetReformistsLoyalty
+	text = {
+		trigger = {
+			check_variable = {
+				var = ZEX_royal_diet_reformists_loyalty
+				value = 80
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = ZEX_loyal
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = ZEX_royal_diet_reformists_loyalty
+				value = 40
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = ZEX_royal_diet_reformists_loyalty
+				value = 80
+				compare = less_than
+			}
+		}
+		localization_key = ZEX_neutral
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = ZEX_royal_diet_reformists_loyalty
+				value = 40
+				compare = less_than
+			}
+		}
+		localization_key = ZEX_opposed
+	}
+}
+
+defined_text = {
+	name = ZEX_GetLoyalistsLoyalty
+	text = {
+		trigger = {
+			check_variable = {
+				var = ZEX_royal_diet_loyalists_loyalty
+				value = 80
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = ZEX_loyal
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = ZEX_royal_diet_loyalists_loyalty
+				value = 40
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = ZEX_royal_diet_loyalists_loyalty
+				value = 80
+				compare = less_than
+			}
+		}
+		localization_key = ZEX_neutral
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = ZEX_royal_diet_loyalists_loyalty
+				value = 40
+				compare = less_than
+			}
+		}
+		localization_key = ZEX_opposed
+	}
+}
+
+defined_text = {
+	name = ZEX_GetIndependentsLoyalty
+	text = {
+		trigger = {
+			check_variable = {
+				var = ZEX_royal_diet_independents_loyalty
+				value = 80
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = ZEX_loyal
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = ZEX_royal_diet_independents_loyalty
+				value = 40
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = ZEX_royal_diet_independents_loyalty
+				value = 80
+				compare = less_than
+			}
+		}
+		localization_key = ZEX_neutral
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = ZEX_royal_diet_independents_loyalty
+				value = 40
+				compare = less_than
+			}
+		}
+		localization_key = ZEX_opposed
+	}
+}
