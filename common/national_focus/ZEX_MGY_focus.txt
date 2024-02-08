@@ -21,11 +21,11 @@ focus_tree = {
 	######################################
 
 	focus = {
-		id = ZEX_MGY_focus_convene_royal_diet
-		icon = GFX_focus_generic_treaty
+		id = ZEX_MGY_focus_king_speech
+		icon = ZEX_MGY_Focus_Recall_Royal_Diet
 		cost = 5
-		x = 20
-		y = 1
+		x = 5
+		y = 0
 		allow_branch = {
 			
 		}

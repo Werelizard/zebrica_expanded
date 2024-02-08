@@ -21,17 +21,15 @@ zxe_is_maregypt_or_cosmetic_maregypt = {
 zex_no_scripted_maregypt_civil_war = {
 	custom_trigger_tooltip = {
 		tooltip = zex_no_scripted_maregypt_civil_war.tt
+		OR = {
+			zxe_is_zebrica_tag = yes
+			zxe_is_maregypt_or_cosmetic_maregypt = yes
+		}
 		NOT = {
-			OR = {
-				zxe_is_zebrica_tag = yes
-				zxe_is_maregypt_or_cosmetic_maregypt = yes
-			}
-			OR = {
-				has_civil_war = yes
-				NOT = {
-					has_country_flag = did_scripted_civil_war
-				}
-			}
+			has_civil_war = yes
+		}
+		NOT = {
+			has_country_flag = did_scripted_civil_war
 		}
 	}
 }

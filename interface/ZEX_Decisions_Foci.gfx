@@ -1,0 +1,36 @@
+spriteTypes = {
+	spriteType = {
+		name = "ZEX_MGY_Focus_Recall_Royal_Diet"
+		textureFile = "gfx/interface/goals/Focus_Royal_Diet.dds"
+	}
+	spriteType = {
+		name = "ZEX_MGY_Focus_Recall_Royal_Diet_shine"
+		textureFile = "gfx/interface/goals/Focus_Royal_Diet.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Focus_Royal_Diet.dds"			
+			animationtexturefile = "gfx/interface/goals/ZEX_MGY_SHINE_TALL.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Focus_Royal_Diet.dds"			
+			animationtexturefile = "gfx/interface/goals/ZEX_MGY_SHINE_TALL.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+}
