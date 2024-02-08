@@ -22,6 +22,7 @@ ZEX_setup_royal_diet = {
 	ZEX_royal_diet_initial_seats_setup = yes
 	ZEX_royal_diet_initial_loylty_setup = yes
 	ZEX_royal_diet_update_total_support = yes
+	set_country_flag = ZEX_royal_diet_monarchist_leadership
 }
 
 # Mechanic Flow Control
@@ -143,6 +144,108 @@ ZEX_royal_diet_update_total_support = {
 			var = zex_royal_diet_total_support
 			value = ZEX_royal_diet_independents_seats
 		}
+	}
+	#Evaluate and change diet leadership if need be
+	ZEX_royal_diet_evaluate_leadership = yes
+}
+
+ZEX_royal_diet_evaluate_leadership = {
+	if = {
+		limit = {
+			check_variable = {
+				var = ZEX_royal_diet_monarchist_seats
+				value = 150
+				compare = greater_than
+			}
+			NOT = {
+				has_country_flag = ZEX_royal_diet_monarchist_leadership
+			}
+		}
+		ZEX_royal_diet_remove_flags = yes
+		set_country_flag = ZEX_royal_diet_monarchist_leadership
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				var = ZEX_royal_diet_republican_seats
+				value = 150
+				compare = greater_than
+			}
+			NOT = {
+				has_country_flag = ZEX_royal_diet_republican_leadership
+			}
+		}
+		ZEX_royal_diet_remove_flags = yes
+		set_country_flag = ZEX_royal_diet_republican_leadership
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				var = ZEX_royal_diet_reformists_seats
+				value = 150
+				compare = greater_than
+			}
+			NOT = {
+				has_country_flag = ZEX_royal_diet_reformist_leadership
+			}
+		}
+		ZEX_royal_diet_remove_flags = yes
+		set_country_flag = ZEX_royal_diet_reformist_leadership
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				var = ZEX_royal_diet_loyalists_seats
+				value = 150
+				compare = greater_than
+			}
+			NOT = {
+				has_country_flag = ZEX_royal_diet_loyalist_leadership
+			}
+		}
+		ZEX_royal_diet_remove_flags = yes
+		set_country_flag = ZEX_royal_diet_loyalist_leadership
+	}
+	else = {
+		# ZEX_royal_diet_remove_flags = yes
+		# set_country_flag = ZEX_royal_diet_nopony_leadership
+	}
+}
+
+ZEX_royal_diet_remove_flags = {
+	clr_country_flag = ZEX_royal_diet_monarchist_leadership
+	clr_country_flag = ZEX_royal_diet_republican_leadership
+	clr_country_flag = ZEX_royal_diet_reformist_leadership
+	clr_country_flag = ZEX_royal_diet_loyalist_leadership
+	clr_country_flag = ZEX_royal_diet_nopony_leadership
+}
+
+ZEX_royaL_diet_clamp_loyalty_values = {
+	#Make sure loyalty can't go beyond bounds
+	clamp_variable = {
+		var = ZEX_royal_diet_monarchist_loyalty
+		min = 0
+		max = 100
+	}
+	clamp_variable = {
+		var = ZEX_royal_diet_republican_loyalty
+		min = 0
+		max = 100
+	}
+	clamp_variable = {
+		var = ZEX_royal_diet_reformists_loyalty
+		min = 0
+		max = 100
+	}
+	clamp_variable = {
+		var = ZEX_royal_diet_loyalists_loyalty
+		min = 0
+		max = 100
+	}
+	clamp_variable = {
+		var = ZEX_royal_diet_independents_loyalty
+		min = 0
+		max = 100
 	}
 }
 
@@ -1044,6 +1147,8 @@ ZEX_Increase_Monarchist_Loyalty_small = {
 		var = ZEX_royal_diet_monarchist_loyalty
 		value = 2
 	}
+	ZEX_royal_diet_update_total_support = yes
+	ZEX_royaL_diet_clamp_loyalty_values = yes
 }
 
 ZEX_Increase_Monarchist_Loyalty_medium = {
@@ -1052,6 +1157,8 @@ ZEX_Increase_Monarchist_Loyalty_medium = {
 		var = ZEX_royal_diet_monarchist_loyalty
 		value = 6
 	}
+	ZEX_royal_diet_update_total_support = yes
+	ZEX_royaL_diet_clamp_loyalty_values = yes
 }
 
 ZEX_decrease_Monarchist_Loyalty_small = {
@@ -1060,6 +1167,8 @@ ZEX_decrease_Monarchist_Loyalty_small = {
 		var = ZEX_royal_diet_monarchist_loyalty
 		value = 2
 	}
+	ZEX_royal_diet_update_total_support = yes
+	ZEX_royaL_diet_clamp_loyalty_values = yes
 }
 
 ZEX_decrease_Monarchist_Loyalty_medium = {
@@ -1068,6 +1177,8 @@ ZEX_decrease_Monarchist_Loyalty_medium = {
 		var = ZEX_royal_diet_monarchist_loyalty
 		value = 6
 	}
+	ZEX_royal_diet_update_total_support = yes
+	ZEX_royaL_diet_clamp_loyalty_values = yes
 }
 
 ZEX_decrease_Monarchist_Loyalty_Big = {
@@ -1076,6 +1187,8 @@ ZEX_decrease_Monarchist_Loyalty_Big = {
 		var = ZEX_royal_diet_monarchist_loyalty
 		value = 12
 	}
+	ZEX_royal_diet_update_total_support = yes
+	ZEX_royaL_diet_clamp_loyalty_values = yes
 }
 
 ZEX_Increase_republican_Loyalty_small = {
@@ -1084,6 +1197,8 @@ ZEX_Increase_republican_Loyalty_small = {
 		var = ZEX_royal_diet_republican_loyalty
 		value = 2
 	}
+	ZEX_royal_diet_update_total_support = yes
+	ZEX_royaL_diet_clamp_loyalty_values = yes
 }
 
 ZEX_Increase_republican_Loyalty_medium = {
@@ -1092,6 +1207,8 @@ ZEX_Increase_republican_Loyalty_medium = {
 		var = ZEX_royal_diet_republican_loyalty
 		value = 6
 	}
+	ZEX_royal_diet_update_total_support = yes
+	ZEX_royaL_diet_clamp_loyalty_values = yes
 }
 
 ZEX_decrease_republican_Loyalty_small = {
@@ -1100,6 +1217,8 @@ ZEX_decrease_republican_Loyalty_small = {
 		var = ZEX_royal_diet_republican_loyalty
 		value = 2
 	}
+	ZEX_royal_diet_update_total_support = yes
+	ZEX_royaL_diet_clamp_loyalty_values = yes
 }
 
 ZEX_decrease_republican_Loyalty_medium = {
@@ -1108,6 +1227,8 @@ ZEX_decrease_republican_Loyalty_medium = {
 		var = ZEX_royal_diet_republican_loyalty
 		value = 6
 	}
+	ZEX_royal_diet_update_total_support = yes
+	ZEX_royaL_diet_clamp_loyalty_values = yes
 }
 
 ZEX_decrease_republican_Loyalty_Big = {
@@ -1116,6 +1237,8 @@ ZEX_decrease_republican_Loyalty_Big = {
 		var = ZEX_royal_diet_republican_loyalty
 		value = 12
 	}
+	ZEX_royal_diet_update_total_support = yes
+	ZEX_royaL_diet_clamp_loyalty_values = yes
 }
 
 ZEX_Increase_reformists_Loyalty_small = {
@@ -1124,6 +1247,8 @@ ZEX_Increase_reformists_Loyalty_small = {
 		var = ZEX_royal_diet_reformists_loyalty
 		value = 2
 	}
+	ZEX_royal_diet_update_total_support = yes
+	ZEX_royaL_diet_clamp_loyalty_values = yes
 }
 
 ZEX_Increase_reformists_Loyalty_medium = {
@@ -1132,6 +1257,8 @@ ZEX_Increase_reformists_Loyalty_medium = {
 		var = ZEX_royal_diet_reformists_loyalty
 		value = 6
 	}
+	ZEX_royal_diet_update_total_support = yes
+	ZEX_royaL_diet_clamp_loyalty_values = yes
 }
 
 ZEX_decrease_reformists_Loyalty_small = {
@@ -1140,6 +1267,8 @@ ZEX_decrease_reformists_Loyalty_small = {
 		var = ZEX_royal_diet_reformists_loyalty
 		value = 2
 	}
+	ZEX_royal_diet_update_total_support = yes
+	ZEX_royaL_diet_clamp_loyalty_values = yes
 }
 
 ZEX_decrease_reformists_Loyalty_medium = {
@@ -1148,6 +1277,8 @@ ZEX_decrease_reformists_Loyalty_medium = {
 		var = ZEX_royal_diet_reformists_loyalty
 		value = 6
 	}
+	ZEX_royal_diet_update_total_support = yes
+	ZEX_royaL_diet_clamp_loyalty_values = yes
 }
 
 ZEX_decrease_reformists_Loyalty_Big = {
@@ -1156,6 +1287,8 @@ ZEX_decrease_reformists_Loyalty_Big = {
 		var = ZEX_royal_diet_reformists_loyalty
 		value = 12
 	}
+	ZEX_royal_diet_update_total_support = yes
+	ZEX_royaL_diet_clamp_loyalty_values = yes
 }
 
 ZEX_Increase_loyalists_Loyalty_small = {
@@ -1164,6 +1297,8 @@ ZEX_Increase_loyalists_Loyalty_small = {
 		var = ZEX_royal_diet_loyalists_loyalty
 		value = 2
 	}
+	ZEX_royal_diet_update_total_support = yes
+	ZEX_royaL_diet_clamp_loyalty_values = yes
 }
 
 ZEX_Increase_loyalists_Loyalty_medium = {
@@ -1172,6 +1307,8 @@ ZEX_Increase_loyalists_Loyalty_medium = {
 		var = ZEX_royal_diet_loyalists_loyalty
 		value = 6
 	}
+	ZEX_royal_diet_update_total_support = yes
+	ZEX_royaL_diet_clamp_loyalty_values = yes
 }
 
 ZEX_decrease_loyalists_Loyalty_small = {
@@ -1180,6 +1317,8 @@ ZEX_decrease_loyalists_Loyalty_small = {
 		var = ZEX_royal_diet_loyalists_loyalty
 		value = 2
 	}
+	ZEX_royal_diet_update_total_support = yes
+	ZEX_royaL_diet_clamp_loyalty_values = yes
 }
 
 ZEX_decrease_loyalists_Loyalty_medium = {
@@ -1188,6 +1327,8 @@ ZEX_decrease_loyalists_Loyalty_medium = {
 		var = ZEX_royal_diet_loyalists_loyalty
 		value = 6
 	}
+	ZEX_royal_diet_update_total_support = yes
+	ZEX_royaL_diet_clamp_loyalty_values = yes
 }
 
 ZEX_decrease_loyalists_Loyalty_Big = {
@@ -1196,6 +1337,8 @@ ZEX_decrease_loyalists_Loyalty_Big = {
 		var = ZEX_royal_diet_loyalists_loyalty
 		value = 12
 	}
+	ZEX_royal_diet_update_total_support = yes
+	ZEX_royaL_diet_clamp_loyalty_values = yes
 }
 
 ZEX_Increase_independents_Loyalty_small = {
@@ -1204,6 +1347,8 @@ ZEX_Increase_independents_Loyalty_small = {
 		var = ZEX_royal_diet_independents_loyalty
 		value = 2
 	}
+	ZEX_royal_diet_update_total_support = yes
+	ZEX_royaL_diet_clamp_loyalty_values = yes
 }
 
 ZEX_Increase_independents_Loyalty_medium = {
@@ -1212,6 +1357,8 @@ ZEX_Increase_independents_Loyalty_medium = {
 		var = ZEX_royal_diet_independents_loyalty
 		value = 6
 	}
+	ZEX_royal_diet_update_total_support = yes
+	ZEX_royaL_diet_clamp_loyalty_values = yes
 }
 
 ZEX_decrease_independents_Loyalty_small = {
@@ -1220,6 +1367,8 @@ ZEX_decrease_independents_Loyalty_small = {
 		var = ZEX_royal_diet_independents_loyalty
 		value = 2
 	}
+	ZEX_royal_diet_update_total_support = yes
+	ZEX_royaL_diet_clamp_loyalty_values = yes
 }
 
 ZEX_decrease_independents_Loyalty_medium = {
@@ -1228,6 +1377,8 @@ ZEX_decrease_independents_Loyalty_medium = {
 		var = ZEX_royal_diet_independents_loyalty
 		value = 6
 	}
+	ZEX_royal_diet_update_total_support = yes
+	ZEX_royaL_diet_clamp_loyalty_values = yes
 }
 
 ZEX_decrease_independents_Loyalty_Big = {
@@ -1236,4 +1387,6 @@ ZEX_decrease_independents_Loyalty_Big = {
 		var = ZEX_royal_diet_independents_loyalty
 		value = 12
 	}
+	ZEX_royal_diet_update_total_support = yes
+	ZEX_royaL_diet_clamp_loyalty_values = yes
 }

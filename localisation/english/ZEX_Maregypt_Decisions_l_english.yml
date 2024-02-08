@@ -6,13 +6,19 @@
 
  #Maregyptian Diet GUI
  ZEX_MAREGYPT_PARLIAMENT_CATEGORY:0 "The Royal Diet"
- ZEX_MAREGYPT_PARLIAMENT_CATEGORY_desc:0 "Throughout the history of Maregypt, the Kings and Queens have time and time again called upon the support of the Royal Diet; a legal body consisting of the governors - or Nomarchs - from all of the provinces of Maregypt.\n\nIn order to pass [Root.GetLeader]'s reforms, we will need to secure a majority in the Royal Diet, or a minimum of §g151§! seats. This will be no easy task however: the representatives have brought with them agendas of their own, and the emerging factions will seek to gain dominance over the diet - allowing them to dictate the direction of the reforms."
+ ZEX_MAREGYPT_PARLIAMENT_CATEGORY_desc:0 "Throughout the history of Maregypt, the Kings and Queens have time and time again called upon the support of the Royal Diet; a legal body consisting of the governors - or Nomarchs - from all of the provinces of Maregypt.\n\nIn order to pass [Root.GetLeader]'s reforms, we will need to secure a majority in the Royal Diet, or a minimum of §g151§! seats. This will be no easy task however: the representatives have brought with them agendas of their own, and the emerging factions will seek to gain dominance over the diet - allowing them to dictate the direction of the reforms.\n\nCurrently [ZEX_GetRoyalDietLeadership] the diet."
 
  ZEX_MGY_Royal_Diet_Harmony_Text:0 "§YRoyalists§!"
  ZEX_MGY_Royal_Diet_Republican_Text:0 "§YRepublicans§!"
  ZEX_MGY_Royal_Diet_Loyalists_Text:0 "§YReformists§!"
  ZEX_MGY_Royal_Diet_Traditionalists_Text:0 "§YLoyalists§!"
  ZEX_MGY_Royal_Diet_NoFaction_Text:0 "§YIndependents§!"
+
+ ZEX_royal_diet_monarchist_leadership:0 "the £monarchist_faction §0Royalists§! control"
+ ZEX_royal_diet_republican_leadership:0 "the £republican_faction §1Republicans§! control"
+ ZEX_royal_diet_reformist_leadership:0 "the £reformist_faction §2Reformists§! control"
+ ZEX_royal_diet_loyalist_leadership:0 "the £loyalist_faction §8Loyalists§! control"
+ ZEX_royal_diet_nopony_leadership:0 "nopony controls"
 
  ZEX_MGY_ROYAL_DIET_ATTITUDE:0 "Attitude"
  ZEX_MGY_ROYAL_DIET_SEATS_HEADER:0 "Seats"
@@ -67,12 +73,12 @@
  ZEX_reformists_to_independents_15.tt:0 "Up to §Y15§! representatives will leave the §2Reformists§! and become §gindependent§!."
  ZEX_independents_to_reformists_15.tt:0 "Up to §Y15§! representatives will leave the §gindependent§! and back the §2Reformists§!"
 
- ZEX_loyalists_to_independents_5.tt:0 "Up to §Y5§! representatives will leave the §8loyalists§! and become §gindependent§!."
- ZEX_independents_to_loyalists_5.tt:0 "Up to §Y5§! representatives will leave the §gindependent§! and back the §8loyalists§!."
- ZEX_loyalists_to_independents_10.tt:0 "Up to §Y10§! representatives will leave the §8loyalists§! and become §gindependent§!."
- ZEX_independents_to_loyalists_10.tt:0 "Up to §Y10§! representatives will leave the §gindependent§! and back the §8loyalists§!"
- ZEX_loyalists_to_independents_15.tt:0 "Up to §Y15§! representatives will leave the §8loyalists§! and become §gindependent§!."
- ZEX_independents_to_loyalists_15.tt:0 "Up to §Y15§! representatives will leave the §gindependent§! and back the §8loyalists§!"
+ ZEX_loyalists_to_independents_5.tt:0 "Up to §Y5§! representatives will leave the §8Loyalists§! and become §gindependent§!."
+ ZEX_independents_to_loyalists_5.tt:0 "Up to §Y5§! representatives will leave the §gindependent§! and back the §8Loyalists§!."
+ ZEX_loyalists_to_independents_10.tt:0 "Up to §Y10§! representatives will leave the §8Loyalists§! and become §gindependent§!."
+ ZEX_independents_to_loyalists_10.tt:0 "Up to §Y10§! representatives will leave the §gindependent§! and back the §8Loyalists§!"
+ ZEX_loyalists_to_independents_15.tt:0 "Up to §Y15§! representatives will leave the §8Loyalists§! and become §gindependent§!."
+ ZEX_independents_to_loyalists_15.tt:0 "Up to §Y15§! representatives will leave the §gindependent§! and back the §8Loyalists§!"
 
  ZEX_increase_Monarchist_loyalty_small.tt:0 "The loyalty of the §0Royalists§! will increase by a §Ysmall§! amount."
  ZEX_increase_Monarchist_loyalty_big.tt:0 "The loyalty of the §0Royalists§! will increase by a §Ymedium§! amount."
@@ -92,11 +98,11 @@
  ZEX_decrease_reformists_loyalty_big.tt:0 "The loyalty of the §2Reformists§! will decrease by a §Rmedium§! amount."
  ZEX_decrease_reformists_loyalty_huge.tt:0 "The loyalty of the §2Reformists§! will decrease by a §RLarge§! amount."
 
- ZEX_increase_loyalists_loyalty_small.tt:0 "The loyalty of the §8loyalists§! will increase by a §Ysmall§! amount."
- ZEX_increase_loyalists_loyalty_big.tt:0 "The loyalty of the §8loyalists§! will increase by a §Ymedium§! amount."
- ZEX_decrease_loyalists_loyalty_small.tt:0 "The loyalty of the §8loyalists§! will decrease by a §Rsmall§! amount."
- ZEX_decrease_loyalists_loyalty_big.tt:0 "The loyalty of the §8loyalists§! will decrease by a §Rmedium§! amount."
- ZEX_decrease_loyalists_loyalty_huge.tt:0 "The loyalty of the §8loyalists§! will decrease by a §RLarge§! amount."
+ ZEX_increase_loyalists_loyalty_small.tt:0 "The loyalty of the §8Loyalists§! will increase by a §Ysmall§! amount."
+ ZEX_increase_loyalists_loyalty_big.tt:0 "The loyalty of the §8Loyalists§! will increase by a §Ymedium§! amount."
+ ZEX_decrease_loyalists_loyalty_small.tt:0 "The loyalty of the §8Loyalists§! will decrease by a §Rsmall§! amount."
+ ZEX_decrease_loyalists_loyalty_big.tt:0 "The loyalty of the §8Loyalists§! will decrease by a §Rmedium§! amount."
+ ZEX_decrease_loyalists_loyalty_huge.tt:0 "The loyalty of the §8Loyalists§! will decrease by a §RLarge§! amount."
 
  ZEX_increase_independents_loyalty_small.tt:0 "The loyalty of the §gindependent§! will increase by a §Ysmall§! amount."
  ZEX_increase_independents_loyalty_big.tt:0 "The loyalty of the §gindependent§! will increase by a §Ymedium§! amount."

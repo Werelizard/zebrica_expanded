@@ -1,0 +1,22 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_monarchist_faction"
+		texturefile = "gfx/texticons/ZEX_MGY_monarchist_texticon.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_republican_faction"
+		texturefile = "gfx/texticons/ZEX_MGY_republican_texticon.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_reformist_faction"
+		texturefile = "gfx/texticons/ZEX_MGY_reformist_texticon.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_loyalist_faction"
+		texturefile = "gfx/texticons/ZEX_MGY_loyalist_texticon.dds"
+		legacy_lazy_load = no
+	}
+}

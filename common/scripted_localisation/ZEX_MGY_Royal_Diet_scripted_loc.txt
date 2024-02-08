@@ -192,3 +192,35 @@ defined_text = {
 		localization_key = ZEX_opposed
 	}
 }
+
+
+defined_text = {
+	name = ZEX_GetRoyalDietLeadership
+	text = {
+		trigger = {
+			has_country_flag = ZEX_royal_diet_monarchist_leadership
+		}
+		localization_key = ZEX_royal_diet_monarchist_leadership
+	}
+	text = {
+		trigger = {
+			has_country_flag = ZEX_royal_diet_republican_leadership
+		}
+		localization_key = ZEX_royal_diet_republican_leadership
+	}
+	text = {
+		trigger = {
+			has_country_flag = ZEX_royal_diet_reformist_leadership
+		}
+		localization_key = ZEX_royal_diet_reformist_leadership
+	}
+	text = {
+		trigger = {
+			has_country_flag = ZEX_royal_diet_loyalist_leadership
+		}
+		localization_key = ZEX_royal_diet_loyalist_leadership
+	}
+	text = {
+		localization_key = ZEX_royal_diet_nopony_leadership
+	}
+}
