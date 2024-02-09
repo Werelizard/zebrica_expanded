@@ -16,9 +16,9 @@ focus_tree = {
 	default = no
 	reset_on_civilwar = no
 
-	######################################
-	# Royal Diet / Political Reform Foci #
-	######################################
+	########################################
+	# Royal Diet / Political Reform Branch #
+	########################################
 
 	focus = {
 		id = ZEX_MGY_focus_king_speech
@@ -34,6 +34,876 @@ focus_tree = {
 		}
 		completion_reward = {
 
+		}
+	}
+
+	###
+	# Equestrian Debt Payment sub-branch
+	#####
+
+	focus = {
+		id = ZEX_MGY_focus_adress_debt_situation
+		icon = ZEX_MGY_Focus_Begin_Talks_Equestira
+		cost = 5
+
+		relative_position_id = ZEX_MGY_focus_king_speech
+		x = -10
+		y = 1
+		allow_branch = {
+			
+		}
+		available = {
+			zex_no_scripted_maregypt_civil_war = yes
+		}
+		completion_reward = {
+
+		}
+		prerequisite = {
+			focus = ZEX_MGY_focus_king_speech
+		}
+	}
+
+	focus = {
+		id = ZEX_MGY_focus_sever_equestrian_commerical_ties
+		icon = ZEX_MGY_focus_sever_equestrian_commerical_ties
+		cost = 5
+
+		relative_position_id = ZEX_MGY_focus_adress_debt_situation
+		x = 0
+		y = 1
+		allow_branch = {
+			
+		}
+		available = {
+			zex_no_scripted_maregypt_civil_war = yes
+		}
+		completion_reward = {
+
+		}
+		prerequisite = {
+			focus = ZEX_MGY_focus_adress_debt_situation
+		}
+		mutually_exclusive = {
+			focus = ZEX_MGY_focus_repayment_scheme
+		}
+	}
+
+	focus = {
+		id = ZEX_MGY_focus_repayment_scheme
+		icon = ZEX_MGY_focus_sever_equestrian_commerical_ties
+		cost = 5
+
+		relative_position_id = ZEX_MGY_focus_adress_debt_situation
+		x = -4
+		y = 1
+		allow_branch = {
+			
+		}
+		available = {
+			zex_no_scripted_maregypt_civil_war = yes
+		}
+		completion_reward = {
+
+		}
+		prerequisite = {
+			focus = ZEX_MGY_focus_adress_debt_situation
+		}
+		mutually_exclusive = {
+			focus = ZEX_MGY_focus_sever_equestrian_commerical_ties
+		}
+	}
+
+	focus = {
+		id = ZEX_MGY_restablish_trade_relationships
+		icon = ZEX_MGY_focus_sever_equestrian_commerical_ties
+		cost = 5
+
+		relative_position_id = ZEX_MGY_focus_adress_debt_situation
+		x = -2
+		y = 2
+		allow_branch = {
+			
+		}
+		available = {
+			zex_no_scripted_maregypt_civil_war = yes
+		}
+		completion_reward = {
+
+		}
+		prerequisite = {
+			focus = ZEX_MGY_focus_sever_equestrian_commerical_ties
+			focus = ZEX_MGY_focus_repayment_scheme
+		}
+		mutually_exclusive = {
+			focus = ZEX_MGY_focus_sever_equestrian_commerical_ties
+		}
+	}
+
+	focus = {
+		id = ZEX_MGY_seize_foreign_industries
+		icon = ZEX_MGY_focus_sever_equestrian_commerical_ties
+		cost = 5
+
+		relative_position_id = ZEX_MGY_focus_adress_debt_situation
+		x = -0
+		y = 3
+		allow_branch = {
+			
+		}
+		available = {
+			zex_no_scripted_maregypt_civil_war = yes
+		}
+		completion_reward = {
+
+		}
+		prerequisite = {
+			focus = ZEX_MGY_focus_sever_equestrian_commerical_ties
+		}
+		mutually_exclusive = {
+			focus = ZEX_MGY_focus_sever_equestrian_commerical_ties
+		}
+	}
+
+	focus = {
+		id = ZEX_MGY_new_tax_policies
+		icon = ZEX_MGY_focus_sever_equestrian_commerical_ties
+		cost = 5
+
+		relative_position_id = ZEX_MGY_focus_adress_debt_situation
+		x = -4
+		y = 3
+		allow_branch = {
+			
+		}
+		available = {
+			zex_no_scripted_maregypt_civil_war = yes
+		}
+		completion_reward = {
+
+		}
+		prerequisite = {
+			focus = ZEX_MGY_focus_repayment_scheme
+		}
+		mutually_exclusive = {
+			focus = ZEX_MGY_focus_sever_equestrian_commerical_ties
+		}
+	}
+
+	###
+	# MAre-Mule Divide Sub-branch
+	#####
+
+	focus = {
+		id = ZEX_MGY_focus_adress_mare_mule_divide
+		icon = ZEX_MGY_Focus_Mare_Mule_Divide_1
+		cost = 5
+
+		relative_position_id = ZEX_MGY_focus_king_speech
+		x = 10
+		y = 1
+		allow_branch = {
+			
+		}
+		available = {
+			zex_no_scripted_maregypt_civil_war = yes
+		}
+		completion_reward = {
+
+		}
+		prerequisite = {
+			focus = ZEX_MGY_focus_king_speech
+		}
+	}
+	focus = {
+		id = ZEX_MGY_focus_integrate_mules
+		icon = ZEX_MGY_focus_sever_equestrian_commerical_ties
+		cost = 5
+
+		relative_position_id = ZEX_MGY_focus_adress_mare_mule_divide
+		x = 0
+		y = 1
+		allow_branch = {
+			
+		}
+		available = {
+			zex_no_scripted_maregypt_civil_war = yes
+		}
+		completion_reward = {
+
+		}
+		prerequisite = {
+			focus = ZEX_MGY_focus_adress_mare_mule_divide
+		}
+		mutually_exclusive = {
+			focus = ZEX_MGY_focus_expell_mules
+		}
+	}
+	focus = {
+		id = ZEX_MGY_focus_expell_mules
+		icon = ZEX_MGY_focus_sever_equestrian_commerical_ties
+		cost = 5
+
+		relative_position_id = ZEX_MGY_focus_adress_mare_mule_divide
+		x = 4
+		y = 1
+		allow_branch = {
+			
+		}
+		available = {
+			zex_no_scripted_maregypt_civil_war = yes
+		}
+		completion_reward = {
+
+		}
+		prerequisite = {
+			focus = ZEX_MGY_focus_adress_mare_mule_divide
+		}
+		mutually_exclusive = {
+			focus = ZEX_MGY_focus_integrate_mules
+		}
+	}
+	focus = {
+		id = ZEX_MGY_focus_rebuild_trust_in_harmony
+		icon = ZEX_MGY_focus_sever_equestrian_commerical_ties
+		cost = 5
+
+		relative_position_id = ZEX_MGY_focus_adress_mare_mule_divide
+		x = 2
+		y = 2
+		allow_branch = {
+			
+		}
+		available = {
+			zex_no_scripted_maregypt_civil_war = yes
+		}
+		completion_reward = {
+
+		}
+		prerequisite = {
+			focus = ZEX_MGY_focus_expell_mules
+			focus = ZEX_MGY_focus_integrate_mules
+		}
+		mutually_exclusive = {
+			
+		}
+	}
+	focus = {
+		id = ZEX_MGY_focus_end_the_divide
+		icon = ZEX_MGY_focus_sever_equestrian_commerical_ties
+		cost = 5
+
+		relative_position_id = ZEX_MGY_focus_adress_mare_mule_divide
+		x = 0
+		y = 3
+		allow_branch = {
+			
+		}
+		available = {
+			zex_no_scripted_maregypt_civil_war = yes
+		}
+		completion_reward = {
+
+		}
+		prerequisite = {
+			focus = ZEX_MGY_focus_integrate_mules
+		}
+	}
+	focus = {
+		id = ZEX_MGY_focus_repossess_mule_properties
+		icon = ZEX_MGY_focus_sever_equestrian_commerical_ties
+		cost = 5
+
+		relative_position_id = ZEX_MGY_focus_adress_mare_mule_divide
+		x = 4
+		y = 3
+		allow_branch = {
+			
+		}
+		available = {
+			zex_no_scripted_maregypt_civil_war = yes
+		}
+		completion_reward = {
+
+		}
+		prerequisite = {
+			focus = ZEX_MGY_focus_expell_mules
+		}
+	}
+	###
+	# Royal Diet Sub-Branch
+	#####
+
+	focus = {
+		id = ZEX_MGY_focus_establish_the_diet
+		icon = ZEX_MGY_Focus_Establish_Diet
+		cost = 5
+
+		relative_position_id = ZEX_MGY_focus_king_speech
+		x = 0
+		y = 1
+		allow_branch = {
+			
+		}
+		available = {
+			zex_no_scripted_maregypt_civil_war = yes
+		}
+		completion_reward = {
+
+		}
+		prerequisite = {
+			focus = ZEX_MGY_focus_king_speech
+		}
+	}
+	focus = {
+		id = ZEX_MGY_focus_unlock_new_actions
+		icon = ZEX_MGY_focus_sever_equestrian_commerical_ties
+		cost = 5
+
+		relative_position_id = ZEX_MGY_focus_establish_the_diet
+		x = -8
+		y = 1
+		allow_branch = {
+			
+		}
+		available = {
+			zex_no_scripted_maregypt_civil_war = yes
+		}
+		completion_reward = {
+
+		}
+		prerequisite = {
+			focus = ZEX_MGY_focus_establish_the_diet
+		}
+	}
+	focus = {
+		id = ZEX_MGY_focus_unlock_king_speeches
+		icon = ZEX_MGY_focus_sever_equestrian_commerical_ties
+		cost = 5
+
+		relative_position_id = ZEX_MGY_focus_unlock_new_actions
+		x = 0
+		y = 2
+		allow_branch = {
+			
+		}
+		available = {
+			zex_no_scripted_maregypt_civil_war = yes
+		}
+		completion_reward = {
+
+		}
+		prerequisite = {
+			focus = ZEX_MGY_focus_unlock_new_actions
+		}
+	}
+	focus = {
+		id = ZEX_MGY_focus_unlock_somnambula_support
+		icon = ZEX_MGY_focus_sever_equestrian_commerical_ties
+		cost = 5
+
+		relative_position_id = ZEX_MGY_focus_unlock_new_actions
+		x = 2
+		y = 3
+		allow_branch = {
+			
+		}
+		available = {
+			zex_no_scripted_maregypt_civil_war = yes
+		}
+		completion_reward = {
+
+		}
+		prerequisite = {
+			focus = ZEX_MGY_focus_unlock_king_speeches
+		}
+	}
+	focus = {
+		id = ZEX_MGY_focus_rally_the_aristocrats
+		icon = ZEX_MGY_focus_sever_equestrian_commerical_ties
+		cost = 5
+
+		relative_position_id = ZEX_MGY_focus_unlock_new_actions
+		x = -2
+		y = 3
+		allow_branch = {
+			
+		}
+		available = {
+			zex_no_scripted_maregypt_civil_war = yes
+		}
+		completion_reward = {
+
+		}
+		prerequisite = {
+			focus = ZEX_MGY_focus_unlock_king_speeches
+		}
+	}
+	focus = {
+		id = ZEX_MGY_focus_redefine_harmony
+		icon = ZEX_MGY_focus_sever_equestrian_commerical_ties
+		cost = 5
+
+		relative_position_id = ZEX_MGY_focus_unlock_new_actions
+		x = 0
+		y = 4
+		allow_branch = {
+			
+		}
+		available = {
+			zex_no_scripted_maregypt_civil_war = yes
+		}
+		completion_reward = {
+
+		}
+		prerequisite = {
+			focus = ZEX_MGY_focus_unlock_king_speeches
+		}
+	}
+	focus = {
+		id = ZEX_MGY_focus_left_debate
+		icon = ZEX_MGY_focus_sever_equestrian_commerical_ties
+		cost = 5
+
+		relative_position_id = ZEX_MGY_focus_establish_the_diet
+		x = -4
+		y = 1
+		allow_branch = {
+			
+		}
+		available = {
+			zex_no_scripted_maregypt_civil_war = yes
+		}
+		completion_reward = {
+
+		}
+		prerequisite = {
+			focus = ZEX_MGY_focus_establish_the_diet
+		}
+	}
+	focus = {
+		id = ZEX_MGY_focus_third_debate
+		icon = ZEX_MGY_focus_sever_equestrian_commerical_ties
+		cost = 5
+
+		relative_position_id = ZEX_MGY_focus_establish_the_diet
+		x = -6
+		y = 2
+		allow_branch = {
+			
+		}
+		available = {
+			zex_no_scripted_maregypt_civil_war = yes
+		}
+		completion_reward = {
+
+		}
+		prerequisite = {
+			focus = ZEX_MGY_focus_left_debate
+		}
+	}
+	focus = {
+		id = ZEX_MGY_focus_fourth
+		icon = ZEX_MGY_focus_sever_equestrian_commerical_ties
+		cost = 5
+
+		relative_position_id = ZEX_MGY_focus_establish_the_diet
+		x = -2
+		y = 2
+		allow_branch = {
+			
+		}
+		available = {
+			zex_no_scripted_maregypt_civil_war = yes
+		}
+		completion_reward = {
+
+		}
+		prerequisite = {
+			focus = ZEX_MGY_focus_left_debate
+		}
+	}
+	focus = {
+		id = ZEX_MGY_focus_expand_cabinet
+		icon = ZEX_MGY_focus_sever_equestrian_commerical_ties
+		cost = 5
+
+		relative_position_id = ZEX_MGY_focus_establish_the_diet
+		x = 0
+		y = 1
+		allow_branch = {
+			
+		}
+		available = {
+			zex_no_scripted_maregypt_civil_war = yes
+		}
+		completion_reward = {
+
+		}
+		prerequisite = {
+			focus = ZEX_MGY_focus_establish_the_diet
+		}
+	}
+	focus = {
+		id = ZEX_MGY_focus_right_debate
+		icon = ZEX_MGY_focus_sever_equestrian_commerical_ties
+		cost = 5
+
+		relative_position_id = ZEX_MGY_focus_establish_the_diet
+		x = 4
+		y = 1
+		allow_branch = {
+			
+		}
+		available = {
+			zex_no_scripted_maregypt_civil_war = yes
+		}
+		completion_reward = {
+
+		}
+		prerequisite = {
+			focus = ZEX_MGY_focus_establish_the_diet
+		}
+	}
+	focus = {
+		id = ZEX_MGY_focus_fifth_debate
+		icon = ZEX_MGY_focus_sever_equestrian_commerical_ties
+		cost = 5
+
+		relative_position_id = ZEX_MGY_focus_establish_the_diet
+		x = 6
+		y = 2
+		allow_branch = {
+			
+		}
+		available = {
+			zex_no_scripted_maregypt_civil_war = yes
+		}
+		completion_reward = {
+
+		}
+		prerequisite = {
+			focus = ZEX_MGY_focus_right_debate
+		}
+	}
+	focus = {
+		id = ZEX_MGY_focus_fifth_debate
+		icon = ZEX_MGY_focus_sever_equestrian_commerical_ties
+		cost = 5
+
+		relative_position_id = ZEX_MGY_focus_establish_the_diet
+		x = 6
+		y = 2
+		allow_branch = {
+			
+		}
+		available = {
+			zex_no_scripted_maregypt_civil_war = yes
+		}
+		completion_reward = {
+
+		}
+		prerequisite = {
+			focus = ZEX_MGY_focus_right_debate
+		}
+	}
+	focus = {
+		id = ZEX_MGY_focus_seventh_debate
+		icon = ZEX_MGY_focus_sever_equestrian_commerical_ties
+		cost = 5
+
+		relative_position_id = ZEX_MGY_focus_establish_the_diet
+		x = -4
+		y = 3
+		allow_branch = {
+			
+		}
+		available = {
+			zex_no_scripted_maregypt_civil_war = yes
+		}
+		completion_reward = {
+
+		}
+		prerequisite = {
+			focus = ZEX_MGY_focus_fourth
+		}
+		prerequisite = {
+			focus = ZEX_MGY_focus_third_debate
+		}
+	}
+	focus = {
+		id = ZEX_MGY_focus_eight_debate
+		icon = ZEX_MGY_focus_sever_equestrian_commerical_ties
+		cost = 5
+
+		relative_position_id = ZEX_MGY_focus_establish_the_diet
+		x = 0
+		y = 3
+		allow_branch = {
+			
+		}
+		available = {
+			zex_no_scripted_maregypt_civil_war = yes
+		}
+		completion_reward = {
+
+		}
+		prerequisite = {
+			focus = ZEX_MGY_focus_fourth
+		}
+		prerequisite = {
+			focus = ZEX_MGY_focus_sixth_debate
+		}
+	}
+	focus = {
+		id = ZEX_MGY_focus_ninth_debate
+		icon = ZEX_MGY_focus_sever_equestrian_commerical_ties
+		cost = 5
+
+		relative_position_id = ZEX_MGY_focus_establish_the_diet
+		x = 4
+		y = 3
+		allow_branch = {
+			
+		}
+		available = {
+			zex_no_scripted_maregypt_civil_war = yes
+		}
+		completion_reward = {
+
+		}
+		prerequisite = {
+			focus = ZEX_MGY_focus_fifth_debate
+		}
+		prerequisite = {
+			focus = ZEX_MGY_focus_sixth_debate
+		}
+	}
+	focus = {
+		id = ZEX_MGY_focus_sixth_debate
+		icon = ZEX_MGY_focus_sever_equestrian_commerical_ties
+		cost = 5
+
+		relative_position_id = ZEX_MGY_focus_establish_the_diet
+		x = 2
+		y = 2
+		allow_branch = {
+			
+		}
+		available = {
+			zex_no_scripted_maregypt_civil_war = yes
+		}
+		completion_reward = {
+
+		}
+		prerequisite = {
+			focus = ZEX_MGY_focus_right_debate
+		}
+	}
+	focus = {
+		id = ZEX_MGY_focus_tenth_debate
+		icon = ZEX_MGY_focus_sever_equestrian_commerical_ties
+		cost = 5
+
+		relative_position_id = ZEX_MGY_focus_establish_the_diet
+		x = 0
+		y = 4
+		allow_branch = {
+			
+		}
+		available = {
+			zex_no_scripted_maregypt_civil_war = yes
+		}
+		completion_reward = {
+
+		}
+		prerequisite = {
+			focus = ZEX_MGY_focus_sixth_debate
+		}
+		prerequisite = {
+			focus = ZEX_MGY_focus_seventh_debate
+		}
+		prerequisite = {
+			focus = ZEX_MGY_focus_ninth_debate
+		}
+	}
+	focus = {
+		id = ZEX_MGY_focus_the_republican_takeover
+		icon = ZEX_MGY_focus_sever_equestrian_commerical_ties
+		cost = 5
+
+		relative_position_id = ZEX_MGY_focus_establish_the_diet
+		x = -4
+		y = 5
+		allow_branch = {
+			
+		}
+		available = {
+			zex_no_scripted_maregypt_civil_war = yes
+		}
+		completion_reward = {
+
+		}
+		prerequisite = {
+			focus = ZEX_MGY_focus_tenth_debate
+		}
+		mutually_exclusive = {
+			focus = ZEX_MGY_focus_the_new_harmonic_regime
+			focus = ZEX_MGY_focus_the_king_rules_alone
+		}
+	}
+	focus = {
+		id = ZEX_MGY_focus_the_new_harmonic_regime
+		icon = ZEX_MGY_focus_sever_equestrian_commerical_ties
+		cost = 5
+
+		relative_position_id = ZEX_MGY_focus_establish_the_diet
+		x = 0
+		y = 5
+		allow_branch = {
+			
+		}
+		available = {
+			zex_no_scripted_maregypt_civil_war = yes
+		}
+		completion_reward = {
+
+		}
+		prerequisite = {
+			focus = ZEX_MGY_focus_tenth_debate
+		}
+		mutually_exclusive = {
+			focus = ZEX_MGY_focus_the_king_rules_alone
+			focus = ZEX_MGY_focus_the_republican_takeover
+		}
+	}
+	focus = {
+		id = ZEX_MGY_focus_the_king_rules_alone
+		icon = ZEX_MGY_focus_sever_equestrian_commerical_ties
+		cost = 5
+
+		relative_position_id = ZEX_MGY_focus_establish_the_diet
+		x = 4
+		y = 5
+		allow_branch = {
+			
+		}
+		available = {
+			zex_no_scripted_maregypt_civil_war = yes
+		}
+		completion_reward = {
+
+		}
+		prerequisite = {
+			focus = ZEX_MGY_focus_tenth_debate
+		}
+		mutually_exclusive = {
+			focus = ZEX_MGY_focus_the_new_harmonic_regime
+			focus = ZEX_MGY_focus_the_republican_takeover
+		}
+	}
+	focus = {
+		id = ZEX_MGY_focus_unfiy_diet
+		icon = ZEX_MGY_focus_sever_equestrian_commerical_ties
+		cost = 5
+
+		relative_position_id = ZEX_MGY_focus_establish_the_diet
+		x = 8
+		y = 1
+		allow_branch = {
+			
+		}
+		available = {
+			zex_no_scripted_maregypt_civil_war = yes
+		}
+		completion_reward = {
+
+		}
+		prerequisite = {
+			focus = ZEX_MGY_focus_establish_the_diet
+		}
+	}
+	focus = {
+		id = ZEX_MGY_focus_consolidate_coalition
+		icon = ZEX_MGY_focus_sever_equestrian_commerical_ties
+		cost = 5
+
+		relative_position_id = ZEX_MGY_focus_unfiy_diet
+		x = 0
+		y = 2
+		allow_branch = {
+			
+		}
+		available = {
+			zex_no_scripted_maregypt_civil_war = yes
+		}
+		completion_reward = {
+
+		}
+		prerequisite = {
+			focus = ZEX_MGY_focus_unfiy_diet
+		}
+	}
+	focus = {
+		id = ZEX_MGY_focus_appeal_to_harmonists
+		icon = ZEX_MGY_focus_sever_equestrian_commerical_ties
+		cost = 5
+
+		relative_position_id = ZEX_MGY_focus_unfiy_diet
+		x = -2
+		y = 3
+		allow_branch = {
+			
+		}
+		available = {
+			zex_no_scripted_maregypt_civil_war = yes
+		}
+		completion_reward = {
+
+		}
+		prerequisite = {
+			focus = ZEX_MGY_focus_consolidate_coalition
+		}
+	}
+	focus = {
+		id = ZEX_MGY_focus_appeal_to_independents
+		icon = ZEX_MGY_focus_sever_equestrian_commerical_ties
+		cost = 5
+
+		relative_position_id = ZEX_MGY_focus_unfiy_diet
+		x = 2
+		y = 3
+		allow_branch = {
+			
+		}
+		available = {
+			zex_no_scripted_maregypt_civil_war = yes
+		}
+		completion_reward = {
+
+		}
+		prerequisite = {
+			focus = ZEX_MGY_focus_consolidate_coalition
+		}
+	}
+	focus = {
+		id = ZEX_MGY_focus_appeal_to_loyalists
+		icon = ZEX_MGY_focus_sever_equestrian_commerical_ties
+		cost = 5
+
+		relative_position_id = ZEX_MGY_focus_unfiy_diet
+		x = 0
+		y = 4
+		allow_branch = {
+			
+		}
+		available = {
+			zex_no_scripted_maregypt_civil_war = yes
+		}
+		completion_reward = {
+
+		}
+		prerequisite = {
+			focus = ZEX_MGY_focus_consolidate_coalition
 		}
 	}
 }

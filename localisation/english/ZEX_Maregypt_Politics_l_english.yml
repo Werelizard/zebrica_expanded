@@ -14,7 +14,11 @@
  ZEX_MGY_Breadbasket:0 "Breadbasket of Zebrica"
  ZEX_Unfinished_Constitution:0 "A Constitution of Compromises"
  ZEX_Mare_Mule_Divide:0 "The Mare-Mule Divide"
+ ZEX_MGY_Equestrian_Debts:0 "Equestrian Debts Repayment"
+ ZEX_MGY_Somnambula:0 "Somnambula"
 
  ZEX_MGY_Breadbasket_desc:0 "Maregypt is a country which has been defined by its agriculture. Food exports - such as wheat, olives, dates and raisins - for the backbone of the country's economy. This has naturally led to a heavy reliance on the agricultural sector, though problematic as that may be the royal household has always been able to judiciously put the profits from these sales to use.\n\n§RShould the harvests fail - or worse, a flood hit - the consequences would be disastrous.§!"
  ZEX_Unfinished_Constitution_desc:0 "The constitution of February 1005, which some refer to as 'the Vizier's decree', is the brain child of the Vizier Sha Doof. Rather than being a properly legally binding document however, it is more aptly described as a list of promises and guarantees to both the populace and the ever more radical republican movement. Without the royal diet to ratify its passage it has sat - an ineffective piece of paper - for almost two years now."
- ZEX_Mare_Mule_Divide_desc:0 "Donkeys have always been a minority within Maregypt. In recent years however, moreso since the Storm King's onslaught, their conditions within our nation have dramatically declined. This has led to rising political unrest as well as a steady increase in seperatism in our westernmost regions."
+ ZEX_Mare_Mule_Divide_desc:0 "Donkeys have always been a minority within Maregypt. In recent years however, moreso since the Storm King's onslaught, their conditions within our nation have dramatically declined. This has led to rising political unrest as well as a steady increase in seperatism in our westernmost regions." 
+ ZEX_MGY_Equestrian_Debts_desc:0 "In the wake of the Storm King's rise and fall, King Khefer negotiated an unpopular agreement with princess Celestia herself in order to salvage the country's economy. While this proved somewhat successfull in avoiding an immediate collapse of the Maregyptian economy, the payments for this assistance has now come due, driving the Maregyptian economy further towards bankruptcy."
+ ZEX_MGY_Somnambula_desc:0 "While she has not taken an active role in the political scene, Somnambula remains a beacon for Harmonist policies throughout the country - increasingly acting as a rallying point for Harmony supporters as the King's popularity falters and wanes."

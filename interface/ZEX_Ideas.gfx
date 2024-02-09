@@ -11,4 +11,12 @@ spriteTypes = {
 		name = "GFX_idea_ZEX_Unfinished_Constitution"
 		textureFile = "gfx/interface/ideas/ZEX_Unfinished_Constitution.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_ZEX_MGY_Somnambula"
+		textureFile = "gfx/interface/ideas/ZEX_MGY_Somnambula.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ZEX_MGY_Equestrian_Debts"
+		textureFile = "gfx/interface/ideas/ZEX_MGY_Equestrian_Debts.dds"
+	}
 }

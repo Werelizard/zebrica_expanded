@@ -72,19 +72,20 @@ add_ideas = {
 	civilian_economy
 	lack_of_scientists2
 	outdated_industry
-	zebrica_legacy_of_storm1
 	poverty
 	
 	#Ideas
-
+	
+	ZEX_MGY_Equestrian_Debts
 	ZEX_MGY_Breadbasket
 	ZEX_Unfinished_Constitution
 	ZEX_Mare_Mule_Divide
+	ZEX_MGY_Somnambula
 }
 
 set_convoys = 70
-set_stability = 0.75
-set_war_support = 0.35
+set_stability = 0.5
+set_war_support = 0.25
 if = {
 	limit = {
 		has_dlc = "Together for Victory"
