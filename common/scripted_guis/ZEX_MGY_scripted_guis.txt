@@ -38,4 +38,56 @@ scripted_gui = {
 			
 		}
 	}
+
+	ZEX_MGY_republican_agitation_ui = {
+		context_type = decision_category
+		window_name = "ZEX_MGY_republican_agitation_ui_window"
+
+		visible = {
+			has_country_flag = zex_has_republican_agitation
+		}
+
+		effects = {
+			
+		}
+		
+		triggers = {
+			
+		}
+
+		dynamic_lists = {
+			
+		}
+
+		properties = {
+			ZEX_MGY_sineighi_icon = {
+				image = "[ZEX_MGY_GetSineighiAlignment]"
+			}
+		}
+		properties = {
+			ZEX_MGY_maneisrata_icon = {
+				image = "[ZEX_MGY_GetManeisrataAlignment]"
+			}
+		}
+		properties = {
+			ZEX_MGY_kaneigh_icon = {
+				image = "[ZEX_MGY_GetKaneighAlignment]"
+			}
+		}
+
+		ai_enabled = {
+			always = no
+		}
+
+		ai_test_interval = 290
+		ai_test_variance = 0.5
+
+		ai_check = {
+			
+		}
+
+		ai_weights = {
+			
+		}
+	}
 }

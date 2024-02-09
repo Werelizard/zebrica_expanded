@@ -3,6 +3,10 @@
  ZEX_DEBUG_CATEGORY_desc:0 "Debug decisions for testing and setting up various mod-related features"
  ZEX_Activate_Parliament:0 "Enable the §YMaregyptian Royal Diet§!"
  ZEX_Deactivate_Parliament:0 "Disable the §YMaregyptian Royal Diet§!"
+ ZEX_Activate_Agitation:0 "Enable the §YRepublican Agitation§!"
+ ZEX_Deactivate_Agitation:0 "Disable the §YRepublican Agitation§!"
+
+ ZEX_DEBUG_Randomly_Change_Sineighi_Alignment_tt:0 "§YDebug§!: randomise Singeighi alignment ([?Root.ZEX_MGY_VAR_Sineighi_Alignment])"
 
  #Maregyptian Diet GUI
  ZEX_MAREGYPT_PARLIAMENT_CATEGORY:0 "The Royal Diet"
@@ -115,3 +119,36 @@
  ZEX_royal_diet_promote_harmony_policy:0 "Promote Harmonic Policies"
  ZEX_royal_diet_appeal_to_monarchism:0 "Appeal to Monarchism"
  ZEX_royal_support_reformism:0 "Support Broad Reforms"
+
+ #Republican agitation GUI
+
+ ZEX_MGY_COMMUNIST_SINEIGHI:0 "GFX_ZEX_MGY_Sineighi_Communist"
+ ZEX_MGY_HARMONIST_SINEIGHI:0 "GFX_ZEX_MGY_Sineighi_Harmonist"
+ ZEX_MGY_NEUTRAL_SINEIGHI:0 "GFX_ZEX_MGY_Sineighi_Neutral"
+ ZEX_MGY_sineighi_icon_tt:0 "[ZEX_MGY_GetSineighiAlignment_TOOLTIP]"
+ ZEX_MGY_COMMUNIST_SINEIGHI_TOOLTIP:0 "§YSineighi§! is currently §RCommunist-aligned§!. The current local unrest is £local_unrest [?ROOT.ZEX_MGY_VAR_Sineighi_Alignment]."
+ ZEX_MGY_NEUTRAL_SINEIGHI_TOOLTIP:0 "§YSineighi§! is currently §gneutral§!. The current local unrest is £local_unrest [?ROOT.ZEX_MGY_VAR_Sineighi_Alignment]."
+ ZEX_MGY_HARMONIST_SINEIGHI_TOOLTIP:0 "§YSineighi§! is currently §0Harmonist-aligned§!. The current local unrest is £local_unrest [?ROOT.ZEX_MGY_VAR_Sineighi_Alignment]."
+
+ ZEX_MGY_COMMUNIST_Maneisrata:0 "GFX_ZEX_MGY_Maneisrata_Communist"
+ ZEX_MGY_HARMONIST_Maneisrata:0 "GFX_ZEX_MGY_Maneisrata_Harmonist"
+ ZEX_MGY_NEUTRAL_Maneisrata:0 "GFX_ZEX_MGY_Maneisrata_Neutral"
+ ZEX_MGY_Maneisrata_icon_tt:0 "[ZEX_MGY_GetManeisrataAlignment_TOOLTIP]"
+ ZEX_MGY_COMMUNIST_Maneisrata_TOOLTIP:0 "§YManeisrata§! is currently §RCommunist-aligned§!. The current local unrest is £local_unrest [?ROOT.ZEX_MGY_VAR_Maneisrata_Alignment]."
+ ZEX_MGY_NEUTRAL_Maneisrata_TOOLTIP:0 "§YManeisrata§! is currently §gneutral§!. The current local unrest is £local_unrest [?ROOT.ZEX_MGY_VAR_Maneisrata_Alignment]."
+ ZEX_MGY_HARMONIST_Maneisrata_TOOLTIP:0 "§YManeisrata§! is currently §0Harmonist-aligned§!. The current local unrest is £local_unrest [?ROOT.ZEX_MGY_VAR_Maneisrata_Alignment]."
+
+ ZEX_MGY_COMMUNIST_Kaneigh:0 "GFX_ZEX_MGY_Kaneigh_Communist"
+ ZEX_MGY_HARMONIST_Kaneigh:0 "GFX_ZEX_MGY_Kaneigh_Harmonist"
+ ZEX_MGY_NEUTRAL_Kaneigh:0 "GFX_ZEX_MGY_Kaneigh_Neutral"
+ ZEX_MGY_Kaneigh_icon_tt:0 "[ZEX_MGY_GetKaneighAlignment_TOOLTIP]"
+ ZEX_MGY_COMMUNIST_Kaneigh_TOOLTIP:0 "§YKaneigh§! is currently §RCommunist-aligned§!. The current local unrest is £local_unrest [?ROOT.ZEX_MGY_VAR_Kaneigh_Alignment]."
+ ZEX_MGY_NEUTRAL_Kaneigh_TOOLTIP:0 "§YKaneigh§! is currently §gneutral§!. The current local unrest is £local_unrest [?ROOT.ZEX_MGY_VAR_Kaneigh_Alignment]."
+ ZEX_MGY_HARMONIST_Kaneigh_TOOLTIP:0 "§YKaneigh§! is currently §0Harmonist-aligned§!. The current local unrest is £local_unrest [?ROOT.ZEX_MGY_VAR_MKaneigh_Alignment]."
+
+ #Republican agitation decisions
+ ZEX_Activate_Agitation_tt:0 "Enables the §YRepublican Agitation§! mechanic."
+ ZEX_deactivate_republican_agitation:0 "Disables the §YRepublican Agitation§! mechanic."
+
+ ZEX_MAREGYPT_REPUBLICAN_AGITATION_CATEGORY:0 "National Unrest"
+ ZEX_MAREGYPT_REPUBLICAN_AGITATION_CATEGORY_desc:0 ""

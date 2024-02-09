@@ -1,0 +1,167 @@
+#Sineighi
+
+defined_text = {
+	name = ZEX_MGY_GetSineighiAlignment
+	text = {
+		trigger = {
+			check_variable = {
+				var = ZEX_MGY_VAR_Sineighi_Alignment
+				value = 8
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = ZEX_MGY_COMMUNIST_SINEIGHI
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = ZEX_MGY_VAR_Sineighi_Alignment
+				value = 2
+				compare = less_than_or_equals
+			}
+		}
+		localization_key = ZEX_MGY_HARMONIST_SINEIGHI
+	}
+	text = {
+		localization_key = ZEX_MGY_NEUTRAL_SINEIGHI
+	}
+}
+
+defined_text = {
+	name = ZEX_MGY_GetSineighiAlignment_TOOLTIP
+	text = {
+		trigger = {
+			check_variable = {
+				var = ZEX_MGY_VAR_Sineighi_Alignment
+				value = 8
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = ZEX_MGY_COMMUNIST_SINEIGHI_TOOLTIP
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = ZEX_MGY_VAR_Sineighi_Alignment
+				value = 2
+				compare = less_than_or_equals
+			}
+		}
+		localization_key = ZEX_MGY_HARMONIST_SINEIGHI_TOOLTIP
+	}
+	text = {
+		localization_key = ZEX_MGY_NEUTRAL_SINEIGHI_TOOLTIP
+	}
+}
+
+#Maneisrata
+
+defined_text = {
+	name = ZEX_MGY_GetManeisrataAlignment
+	text = {
+		trigger = {
+			check_variable = {
+				var = ZEX_MGY_VAR_Maneisrata_Alignment
+				value = 8
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = ZEX_MGY_COMMUNIST_Maneisrata
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = ZEX_MGY_VAR_Maneisrata_Alignment
+				value = 2
+				compare = less_than_or_equals
+			}
+		}
+		localization_key = ZEX_MGY_HARMONIST_Maneisrata
+	}
+	text = {
+		localization_key = ZEX_MGY_NEUTRAL_Maneisrata
+	}
+}
+
+defined_text = {
+	name = ZEX_MGY_GetManeisrataAlignment_TOOLTIP
+	text = {
+		trigger = {
+			check_variable = {
+				var = ZEX_MGY_VAR_Maneisrata_Alignment
+				value = 8
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = ZEX_MGY_COMMUNIST_Maneisrata_TOOLTIP
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = ZEX_MGY_VAR_Maneisrata_Alignment
+				value = 2
+				compare = less_than_or_equals
+			}
+		}
+		localization_key = ZEX_MGY_HARMONIST_Maneisrata_TOOLTIP
+	}
+	text = {
+		localization_key = ZEX_MGY_NEUTRAL_Maneisrata_TOOLTIP
+	}
+}
+
+# Kaneigh
+
+defined_text = {
+	name = ZEX_MGY_GetKaneighAlignment
+	text = {
+		trigger = {
+			check_variable = {
+				var = ZEX_MGY_VAR_Kaneigh_Alignment
+				value = 8
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = ZEX_MGY_COMMUNIST_Kaneigh
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = ZEX_MGY_VAR_Kaneigh_Alignment
+				value = 2
+				compare = less_than_or_equals
+			}
+		}
+		localization_key = ZEX_MGY_HARMONIST_Kaneigh
+	}
+	text = {
+		localization_key = ZEX_MGY_NEUTRAL_Kaneigh
+	}
+}
+
+defined_text = {
+	name = ZEX_MGY_GetKaneighAlignment_TOOLTIP
+	text = {
+		trigger = {
+			check_variable = {
+				var = ZEX_MGY_VAR_Kaneigh_Alignment
+				value = 8
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = ZEX_MGY_COMMUNIST_Kaneigh_TOOLTIP
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = ZEX_MGY_VAR_Kaneigh_Alignment
+				value = 2
+				compare = less_than_or_equals
+			}
+		}
+		localization_key = ZEX_MGY_HARMONIST_Kaneigh_TOOLTIP
+	}
+	text = {
+		localization_key = ZEX_MGY_NEUTRAL_Kaneigh_TOOLTIP
+	}
+}

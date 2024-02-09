@@ -1,0 +1,31 @@
+guiTypes = {
+	containerWindowType = {
+		name = "ZEX_MGY_republican_agitation_ui_window"
+		position = { x = 0 y = 0 }
+		size = { width = 100% height= 325 }
+
+		#Sineighi 
+		iconType = {
+			name = "ZEX_MGY_sineighi_icon"
+			position = { x = 18 y = 10 }
+			spriteType = "GFX_ZEX_MGY_Sineighi_Neutral"
+			pdx_tooltip = ZEX_MGY_sineighi_icon_tt
+		}
+		
+		#Maneisrata
+		iconType = {
+			name = "ZEX_MGY_maneisrata_icon"
+			position = { x = 33 y = 78 }
+			spriteType = "GFX_ZEX_MGY_Maneisrata_Neutral"
+			pdx_tooltip = ZEX_MGY_Maneisrata_icon_tt
+		}
+
+		#Kaneigh
+		iconType = {
+			name = "ZEX_MGY_kaneigh_icon"
+			position = { x = 10 y = 165 }
+			spriteType = "GFX_ZEX_MGY_Kaneigh_Neutral"
+			pdx_tooltip = ZEX_MGY_Kaneigh_icon_tt
+		}
+	}
+}

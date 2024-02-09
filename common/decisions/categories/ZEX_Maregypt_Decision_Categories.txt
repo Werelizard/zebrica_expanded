@@ -12,6 +12,26 @@ ZEX_DEBUG_CATEGORY = {
 	visible_when_empty = yes
 }
 
+ZEX_MAREGYPT_REPUBLICAN_AGITATION_CATEGORY = {
+	scripted_gui = ZEX_MGY_republican_agitation_ui
+	allowed = {
+		always = yes
+	}
+	visible = {
+		zxe_is_maregypt_or_cosmetic_maregypt = yes
+		has_country_flag = zex_has_republican_agitation
+		NOT = {
+			has_country_flag = zex_mgy_did_scripted_civil_war
+		}
+		NOT = {
+			has_civil_war = yes
+		}
+	}
+	priority = 999
+	icon = ZEX_GFX_republican_agitation_CAT
+	visible_when_empty = yes
+}
+
 ZEX_MAREGYPT_PARLIAMENT_CATEGORY = {
 	scripted_gui = ZEX_MGY_royal_diet_ui
 	allowed = {
@@ -21,7 +41,7 @@ ZEX_MAREGYPT_PARLIAMENT_CATEGORY = {
 		zxe_is_maregypt_or_cosmetic_maregypt = yes
 		has_country_flag = zex_has_maregypt_parliament
 	}
-	priority = 999
+	priority = 998
 	icon = ZEX_GFX_Royal_Diet
 	visible_when_empty = yes
 }

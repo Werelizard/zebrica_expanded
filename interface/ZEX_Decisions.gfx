@@ -35,4 +35,8 @@ spriteTypes = {
 		name = "ZEX_GFX_royal_support_reformism"
 		textureFile = "gfx/interface/decisions/ZEX_GFX_royal_support_reformism.dds"
 	}
+	spriteType = {
+		name = "ZEX_GFX_republican_agitation_CAT"
+		textureFile = "gfx/interface/decisions/ZEX_MGY_republican_agitation_CAT.dds"
+	}
 }

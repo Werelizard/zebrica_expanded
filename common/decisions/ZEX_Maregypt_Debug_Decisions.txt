@@ -31,4 +31,36 @@ ZEX_DEBUG_CATEGORY = {
 			ZEX_deactivate_parliament = yes
 		}
 	}
+	ZEX_Activate_Agitation = {
+		allowed = {
+			always = yes
+		}
+		visible = {
+			zxe_is_maregypt_or_cosmetic_maregypt = yes
+			NOT = {
+				has_country_flag = zex_has_republican_agitation
+			}
+		}
+		available = {
+			
+		}
+		complete_effect = {
+			ZEX_activate_republican_agitation = yes
+		}
+	}
+	ZEX_Deactivate_Agitation = {
+		allowed = {
+			always = yes
+		}
+		visible = {
+			zxe_is_maregypt_or_cosmetic_maregypt = yes
+			has_country_flag = zex_has_republican_agitation
+		}
+		available = {
+			
+		}
+		complete_effect = {
+			ZEX_deactivate_republican_agitation = yes
+		}
+	}
 }

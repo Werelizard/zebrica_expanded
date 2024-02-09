@@ -29,7 +29,7 @@ zex_no_scripted_maregypt_civil_war = {
 			has_civil_war = yes
 		}
 		NOT = {
-			has_country_flag = did_scripted_civil_war
+			has_country_flag = zex_mgy_did_scripted_civil_war
 		}
 	}
 }

@@ -1,0 +1,84 @@
+#################################################
+# MAREGYPT REPUBLICAN AGITATION RELATED EFFECTS #
+#################################################
+# start / end
+ZEX_activate_republican_agitation = {
+	custom_effect_tooltip = ZEX_Activate_Agitation_tt
+	hidden_effect = {
+		set_country_flag = zex_has_republican_agitation
+	}
+}
+
+ZEX_deactivate_republican_agitation = {
+	custom_effect_tooltip = ZEX_Deactivate_Agitation_tt
+	hidden_effect = {
+		clr_country_flag = zex_has_republican_agitation
+	}
+}
+
+#debug effect
+ZEX_MGY_agitation_set_random_variable = {
+	custom_effect_tooltip = ZEX_DEBUG_Randomly_Change_Sineighi_Alignment_tt
+	hidden_effect = {
+		random_list = {
+			33 = {
+				set_variable = {
+					var = ZEX_MGY_VAR_Sineighi_Alignment
+					value = 0
+				}
+			}
+			33 = {
+				set_variable = {
+					var = ZEX_MGY_VAR_Sineighi_Alignment
+					value = 5
+				}
+			}
+			33 = {
+				set_variable = {
+					var = ZEX_MGY_VAR_Sineighi_Alignment
+					value = 10
+				}
+			}
+		}
+		random_list = {
+			33 = {
+				set_variable = {
+					var = ZEX_MGY_VAR_Maneisrata_Alignment
+					value = 0
+				}
+			}
+			33 = {
+				set_variable = {
+					var = ZEX_MGY_VAR_Maneisrata_Alignment
+					value = 5
+				}
+			}
+			33 = {
+				set_variable = {
+					var = ZEX_MGY_VAR_Maneisrata_Alignment
+					value = 10
+				}
+			}
+		}
+		random_list = {
+			33 = {
+				set_variable = {
+					var = ZEX_MGY_VAR_Kaneigh_Alignment
+					value = 0
+				}
+			}
+			33 = {
+				set_variable = {
+					var = ZEX_MGY_VAR_Kaneigh_Alignment
+					value = 5
+				}
+			}
+			33 = {
+				set_variable = {
+					var = ZEX_MGY_VAR_Kaneigh_Alignment
+					value = 10
+				}
+			}
+		}
+	}
+}

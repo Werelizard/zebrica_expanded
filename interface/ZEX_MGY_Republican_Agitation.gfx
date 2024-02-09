@@ -1,0 +1,49 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_ZEX_MGY_Sineighi_Harmonist"
+		texturefile = "gfx/interface/republicanAgitation/ZEX_MGY_sineighi.dds"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_ZEX_MGY_Sineighi_Communist"
+		texturefile = "gfx/interface/republicanAgitation/ZEX_MGY_sineighi_communist.dds"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_ZEX_MGY_Sineighi_Neutral"
+		texturefile = "gfx/interface/republicanAgitation/ZEX_MGY_sineighi_neutral.dds"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_ZEX_MGY_Maneisrata_Harmonist"
+		texturefile = "gfx/interface/republicanAgitation/ZEX_MGY_Maneisrata.dds"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_ZEX_MGY_Maneisrata_Communist"
+		texturefile = "gfx/interface/republicanAgitation/ZEX_MGY_Maneisrata_communist.dds"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_ZEX_MGY_Maneisrata_Neutral"
+		texturefile = "gfx/interface/republicanAgitation/ZEX_MGY_Maneisrata_neutral.dds"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_ZEX_MGY_Kaneigh_Harmonist"
+		texturefile = "gfx/interface/republicanAgitation/ZEX_MGY_Kaneigh.dds"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_ZEX_MGY_Kaneigh_Communist"
+		texturefile = "gfx/interface/republicanAgitation/ZEX_MGY_Kaneigh_communist.dds"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_ZEX_MGY_Kaneigh_Neutral"
+		texturefile = "gfx/interface/republicanAgitation/ZEX_MGY_Kaneigh_neutral.dds"
+		transparencecheck = yes
+	}
+}

@@ -1,0 +1,11 @@
+ZEX_MAREGYPT_REPUBLICAN_AGITATION_CATEGORY = {
+	ZEX_MGY_DEBUG_ASSIGN_STATE_VAL = {
+		icon = ZEX_GFX_royal_diet_promote_harmony_policy
+		visible = {
+			
+		}
+		complete_effect = {
+			ZEX_MGY_agitation_set_random_variable = yes
+		}
+	}
+}
