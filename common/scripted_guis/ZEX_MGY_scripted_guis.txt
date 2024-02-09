@@ -74,6 +74,36 @@ scripted_gui = {
 				image = "[ZEX_MGY_GetKaneighAlignment]"
 			}
 		}
+		properties = {
+			ZEX_MGY_delta_icon = {
+				image = "[ZEX_MGY_GetDeltaAlignment]"
+			}
+		}
+		properties = {
+			ZEX_MGY_manephis_icon = {
+				image = "[ZEX_MGY_GetManephisAlignment]"
+			}
+		}
+		properties = {
+			ZEX_MGY_somnambula_icon = {
+				image = "[ZEX_MGY_GetSomnambulaAlignment]"
+			}
+		}
+		properties = {
+			ZEX_MGY_eastdesert_icon = {
+				image = "[ZEX_MGY_GetEastdesertAlignment]"
+			}
+		}
+		properties = {
+			ZEX_MGY_zush_icon = {
+				image = "[ZEX_MGY_GetUpperZushAlignment]"
+			}
+		}
+		properties = {
+			ZEX_MGY_uppermaregypt_icon = {
+				image = "[ZEX_MGY_GetUpperMaregyptAlignment]"
+			}
+		}
 
 		ai_enabled = {
 			always = no

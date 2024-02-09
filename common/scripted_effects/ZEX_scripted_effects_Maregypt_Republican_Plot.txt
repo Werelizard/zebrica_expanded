@@ -6,6 +6,7 @@ ZEX_activate_republican_agitation = {
 	custom_effect_tooltip = ZEX_Activate_Agitation_tt
 	hidden_effect = {
 		set_country_flag = zex_has_republican_agitation
+		ZEX_MGY_SET_BASE_ALIGNMENTS = yes
 	}
 }
 
@@ -16,6 +17,99 @@ ZEX_deactivate_republican_agitation = {
 	}
 }
 
+# Flow Control
+ZEX_MGY_SET_BASE_ALIGNMENTS = {
+	set_variable = {
+		var = ZEX_MGY_VAR_Sineighi_Alignment
+		value = 5
+	}
+	set_variable = {
+		var = ZEX_MGY_VAR_Kaneigh_Alignment
+		value = 3
+	}
+	set_variable = {
+		var = ZEX_MGY_VAR_Maneisrata_Alignment
+		value = 5
+	}
+	set_variable = {
+		var = ZEX_MGY_VAR_UpperMaregypt_Alignment
+		value = 3
+	}
+	set_variable = {
+		var = ZEX_MGY_VAR_Delta_Alignment
+		value = 4
+	}
+	set_variable = {
+		var = ZEX_MGY_VAR_Manephis_Alignment
+		value = 8
+	}
+	set_variable = {
+		var = ZEX_MGY_VAR_Somnambula_Alignment
+		value = 0
+	}
+	set_variable = {
+		var = ZEX_MGY_VAR_Eastdesert_Alignment
+		value = 1
+	}
+	set_variable = {
+		var = ZEX_MGY_VAR_Zush_Alignment
+		value = 3
+	}
+	ZEX_MGY_GET_AVERAGE_UNREST = yes
+}
+
+ZEX_MGY_GET_AVERAGE_UNREST = {
+	set_variable = {
+		var = ZEX_MGY_AVERAGE_UNREST
+		value = 0
+	}
+	add_to_variable = {
+		var = ZEX_MGY_AVERAGE_UNREST
+		value = ZEX_MGY_VAR_Sineighi_Alignment
+	}
+	add_to_variable = {
+		var = ZEX_MGY_AVERAGE_UNREST
+		value = ZEX_MGY_VAR_Kaneigh_Alignment
+	}
+	add_to_variable = {
+		var = ZEX_MGY_AVERAGE_UNREST
+		value = ZEX_MGY_VAR_Maneisrata_Alignment
+	}
+	add_to_variable = {
+		var = ZEX_MGY_AVERAGE_UNREST
+		value = ZEX_MGY_VAR_UpperMaregypt_Alignment
+	}
+	add_to_variable = {
+		var = ZEX_MGY_AVERAGE_UNREST
+		value = ZEX_MGY_VAR_Delta_Alignment
+	}
+	add_to_variable = {
+		var = ZEX_MGY_AVERAGE_UNREST
+		value = ZEX_MGY_VAR_Manephis_Alignment
+	}
+	add_to_variable = {
+		var = ZEX_MGY_AVERAGE_UNREST
+		value = ZEX_MGY_VAR_Somnambula_Alignment
+	}
+	add_to_variable = {
+		var = ZEX_MGY_AVERAGE_UNREST
+		value = ZEX_MGY_VAR_Eastdesert_Alignment
+	}
+	add_to_variable = {
+		var = ZEX_MGY_AVERAGE_UNREST
+		value = ZEX_MGY_VAR_Zush_Alignment
+	}
+	divide_variable = {
+		var = ZEX_MGY_AVERAGE_UNREST
+		value = 9
+	}
+	#extra to get current stab
+	set_variable = {
+		var = ZEX_MGY_CURRENT_STABILITY
+		value = stability
+	}
+}
+
 #debug effect
 ZEX_MGY_agitation_set_random_variable = {
 	custom_effect_tooltip = ZEX_DEBUG_Randomly_Change_Sineighi_Alignment_tt
@@ -23,59 +117,19 @@ ZEX_MGY_agitation_set_random_variable = {
 		random_list = {
 			33 = {
 				set_variable = {
-					var = ZEX_MGY_VAR_Sineighi_Alignment
+					var = ZEX_MGY_VAR_Zush_Alignment
 					value = 0
 				}
 			}
 			33 = {
 				set_variable = {
-					var = ZEX_MGY_VAR_Sineighi_Alignment
+					var = ZEX_MGY_VAR_Zush_Alignment
 					value = 5
 				}
 			}
 			33 = {
 				set_variable = {
-					var = ZEX_MGY_VAR_Sineighi_Alignment
-					value = 10
-				}
-			}
-		}
-		random_list = {
-			33 = {
-				set_variable = {
-					var = ZEX_MGY_VAR_Maneisrata_Alignment
-					value = 0
-				}
-			}
-			33 = {
-				set_variable = {
-					var = ZEX_MGY_VAR_Maneisrata_Alignment
-					value = 5
-				}
-			}
-			33 = {
-				set_variable = {
-					var = ZEX_MGY_VAR_Maneisrata_Alignment
-					value = 10
-				}
-			}
-		}
-		random_list = {
-			33 = {
-				set_variable = {
-					var = ZEX_MGY_VAR_Kaneigh_Alignment
-					value = 0
-				}
-			}
-			33 = {
-				set_variable = {
-					var = ZEX_MGY_VAR_Kaneigh_Alignment
-					value = 5
-				}
-			}
-			33 = {
-				set_variable = {
-					var = ZEX_MGY_VAR_Kaneigh_Alignment
+					var = ZEX_MGY_VAR_Zush_Alignment
 					value = 10
 				}
 			}

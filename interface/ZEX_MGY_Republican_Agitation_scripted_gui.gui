@@ -1,31 +1,106 @@
 guiTypes = {
 	containerWindowType = {
 		name = "ZEX_MGY_republican_agitation_ui_window"
-		position = { x = 0 y = 0 }
-		size = { width = 100% height= 325 }
+		position = { x = 0 y = 15 }
+		size = { width = 100% height= 340 }
 
-		#Sineighi 
-		iconType = {
-			name = "ZEX_MGY_sineighi_icon"
-			position = { x = 18 y = 10 }
-			spriteType = "GFX_ZEX_MGY_Sineighi_Neutral"
-			pdx_tooltip = ZEX_MGY_sineighi_icon_tt
-		}
-		
-		#Maneisrata
-		iconType = {
-			name = "ZEX_MGY_maneisrata_icon"
-			position = { x = 33 y = 78 }
-			spriteType = "GFX_ZEX_MGY_Maneisrata_Neutral"
-			pdx_tooltip = ZEX_MGY_Maneisrata_icon_tt
-		}
+		containerWindowType = {
+			name = "ZEX_MGY_republican_agitation_ui_window_inner"
+			position = { x = 130 y = 5 }
+			size = { width = 243 height= 327 }
+			
+			#Sineighi 
+			iconType = {
+				name = "ZEX_MGY_sineighi_icon"
+				position = { x = 8 y = 0 }
+				spriteType = "GFX_ZEX_MGY_Sineighi_Neutral"
+				pdx_tooltip = ZEX_MGY_sineighi_icon_tt
+			}
+			
+			#Maneisrata
+			iconType = {
+				name = "ZEX_MGY_maneisrata_icon"
+				position = { x = 23 y = 66 }
+				spriteType = "GFX_ZEX_MGY_Maneisrata_Neutral"
+				pdx_tooltip = ZEX_MGY_Maneisrata_icon_tt
+			}
 
-		#Kaneigh
-		iconType = {
-			name = "ZEX_MGY_kaneigh_icon"
-			position = { x = 10 y = 165 }
-			spriteType = "GFX_ZEX_MGY_Kaneigh_Neutral"
-			pdx_tooltip = ZEX_MGY_Kaneigh_icon_tt
+			#Kaneigh
+			iconType = {
+				name = "ZEX_MGY_kaneigh_icon"
+				position = { x = 0 y = 147 }
+				spriteType = "GFX_ZEX_MGY_Kaneigh_Neutral"
+				pdx_tooltip = ZEX_MGY_Kaneigh_icon_tt
+			}
+
+			#Delta
+			iconType = {
+				name = "ZEX_MGY_delta_icon"
+				position = { x = 63 y = 23 }
+				spriteType = "GFX_ZEX_MGY_Delta_Neutral"
+				pdx_tooltip = ZEX_MGY_Delta_icon_tt
+			}
+
+			#Manephis
+			iconType = {
+				name = "ZEX_MGY_manephis_icon"
+				position = { x = 93 y = 60 }
+				spriteType = "GFX_ZEX_MGY_Manephis_Neutral"
+				pdx_tooltip = ZEX_MGY_Manephis_icon_tt
+			}
+
+			#Somnambula
+			iconType = {
+				name = "ZEX_MGY_somnambula_icon"
+				position = { x = 122 y = 41 }
+				spriteType = "GFX_ZEX_MGY_Somnambula_Neutral"
+				pdx_tooltip = ZEX_MGY_Somnambula_icon_tt
+			}
+
+			#East desert
+			iconType = {
+				name = "ZEX_MGY_eastdesert_icon"
+				position = { x = 129 y = 33 }
+				spriteType = "GFX_ZEX_MGY_Eastdesert_Neutral"
+				pdx_tooltip = ZEX_MGY_Eastdesert_icon_tt
+			}
+
+			#Upper Maregypt
+			iconType = {
+				name = "ZEX_MGY_uppermaregypt_icon"
+				position = { x = 84 y = 140 }
+				spriteType = "GFX_ZEX_MGY_UpperMaregypt_Neutral"
+				pdx_tooltip = ZEX_MGY_UpperMaregypt_icon_tt
+			}
+
+			#Zush
+			iconType = {
+				name = "ZEX_MGY_zush_icon"
+				position = { x = 15 y = 220 }
+				spriteType = "GFX_ZEX_MGY_Zush_Neutral"
+				pdx_tooltip = ZEX_MGY_Zush_icon_tt
+			}
+
+			#Stab and Average Unrest
+			instantTextBoxType = {
+				name ="ZEX_MGY_REBELLION_UNREST"
+				position = { x = 165 y = 275 }
+				font = "hoi_18mbs"
+				text = "ZEX_MGY_AVERAGE_UNREST_TOOLTIP"
+				format = left
+				maxHeight = 24
+				maxwidth = 170
+			}
+
+			instantTextBoxType = {
+				name ="ZEX_MGY_REBELLION_STABILITY"
+				position = { x = 165 y = 299 }
+				font = "hoi_18mbs"
+				text = "ZEX_MGY_STABILITY_TOOLTIP"
+				format = left
+				maxHeight = 24
+				maxwidth = 170
+			}
 		}
 	}
 }

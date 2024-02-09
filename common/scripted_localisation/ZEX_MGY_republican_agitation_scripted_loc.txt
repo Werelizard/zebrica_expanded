@@ -165,3 +165,339 @@ defined_text = {
 		localization_key = ZEX_MGY_NEUTRAL_Kaneigh_TOOLTIP
 	}
 }
+
+# Delta
+
+defined_text = {
+	name = ZEX_MGY_GetDeltaAlignment
+	text = {
+		trigger = {
+			check_variable = {
+				var = ZEX_MGY_VAR_Delta_Alignment
+				value = 8
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = ZEX_MGY_COMMUNIST_Delta
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = ZEX_MGY_VAR_Delta_Alignment
+				value = 2
+				compare = less_than_or_equals
+			}
+		}
+		localization_key = ZEX_MGY_HARMONIST_Delta
+	}
+	text = {
+		localization_key = ZEX_MGY_NEUTRAL_Delta
+	}
+}
+
+defined_text = {
+	name = ZEX_MGY_GetDeltaAlignment_TOOLTIP
+	text = {
+		trigger = {
+			check_variable = {
+				var = ZEX_MGY_VAR_Delta_Alignment
+				value = 8
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = ZEX_MGY_COMMUNIST_Delta_TOOLTIP
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = ZEX_MGY_VAR_Delta_Alignment
+				value = 2
+				compare = less_than_or_equals
+			}
+		}
+		localization_key = ZEX_MGY_HARMONIST_Delta_TOOLTIP
+	}
+	text = {
+		localization_key = ZEX_MGY_NEUTRAL_Delta_TOOLTIP
+	}
+}
+
+# Manephis
+
+defined_text = {
+	name = ZEX_MGY_GetManephisAlignment
+	text = {
+		trigger = {
+			check_variable = {
+				var = ZEX_MGY_VAR_Manephis_Alignment
+				value = 8
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = ZEX_MGY_COMMUNIST_Manephis
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = ZEX_MGY_VAR_Manephis_Alignment
+				value = 2
+				compare = less_than_or_equals
+			}
+		}
+		localization_key = ZEX_MGY_HARMONIST_Manephis
+	}
+	text = {
+		localization_key = ZEX_MGY_NEUTRAL_Manephis
+	}
+}
+
+defined_text = {
+	name = ZEX_MGY_GetManephisAlignment_TOOLTIP
+	text = {
+		trigger = {
+			check_variable = {
+				var = ZEX_MGY_VAR_Manephis_Alignment
+				value = 8
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = ZEX_MGY_COMMUNIST_Manephis_TOOLTIP
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = ZEX_MGY_VAR_Manephis_Alignment
+				value = 2
+				compare = less_than_or_equals
+			}
+		}
+		localization_key = ZEX_MGY_HARMONIST_Manephis_TOOLTIP
+	}
+	text = {
+		localization_key = ZEX_MGY_NEUTRAL_Manephis_TOOLTIP
+	}
+}
+
+# Somnambula
+
+defined_text = {
+	name = ZEX_MGY_GetSomnambulaAlignment
+	text = {
+		trigger = {
+			check_variable = {
+				var = ZEX_MGY_VAR_Somnambula_Alignment
+				value = 8
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = ZEX_MGY_COMMUNIST_Somnambula
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = ZEX_MGY_VAR_Somnambula_Alignment
+				value = 2
+				compare = less_than_or_equals
+			}
+		}
+		localization_key = ZEX_MGY_HARMONIST_Somnambula
+	}
+	text = {
+		localization_key = ZEX_MGY_NEUTRAL_Somnambula
+	}
+}
+
+defined_text = {
+	name = ZEX_MGY_GetSomnambulaAlignment_TOOLTIP
+	text = {
+		trigger = {
+			check_variable = {
+				var = ZEX_MGY_VAR_Somnambula_Alignment
+				value = 8
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = ZEX_MGY_COMMUNIST_Somnambula_TOOLTIP
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = ZEX_MGY_VAR_Somnambula_Alignment
+				value = 2
+				compare = less_than_or_equals
+			}
+		}
+		localization_key = ZEX_MGY_HARMONIST_Somnambula_TOOLTIP
+	}
+	text = {
+		localization_key = ZEX_MGY_NEUTRAL_Somnambula_TOOLTIP
+	}
+}
+
+# Eastdesert
+
+defined_text = {
+	name = ZEX_MGY_GetEastdesertAlignment
+	text = {
+		trigger = {
+			check_variable = {
+				var = ZEX_MGY_VAR_Eastdesert_Alignment
+				value = 8
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = ZEX_MGY_COMMUNIST_Eastdesert
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = ZEX_MGY_VAR_Eastdesert_Alignment
+				value = 2
+				compare = less_than_or_equals
+			}
+		}
+		localization_key = ZEX_MGY_HARMONIST_Eastdesert
+	}
+	text = {
+		localization_key = ZEX_MGY_NEUTRAL_Eastdesert
+	}
+}
+
+defined_text = {
+	name = ZEX_MGY_GetEastdesertAlignment_TOOLTIP
+	text = {
+		trigger = {
+			check_variable = {
+				var = ZEX_MGY_VAR_Eastdesert_Alignment
+				value = 8
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = ZEX_MGY_COMMUNIST_Eastdesert_TOOLTIP
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = ZEX_MGY_VAR_Eastdesert_Alignment
+				value = 2
+				compare = less_than_or_equals
+			}
+		}
+		localization_key = ZEX_MGY_HARMONIST_Eastdesert_TOOLTIP
+	}
+	text = {
+		localization_key = ZEX_MGY_NEUTRAL_Eastdesert_TOOLTIP
+	}
+}
+
+# UpperMaregypt
+
+defined_text = {
+	name = ZEX_MGY_GetUpperMaregyptAlignment
+	text = {
+		trigger = {
+			check_variable = {
+				var = ZEX_MGY_VAR_UpperMaregypt_Alignment
+				value = 8
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = ZEX_MGY_COMMUNIST_UpperMaregypt
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = ZEX_MGY_VAR_UpperMaregypt_Alignment
+				value = 2
+				compare = less_than_or_equals
+			}
+		}
+		localization_key = ZEX_MGY_HARMONIST_UpperMaregypt
+	}
+	text = {
+		localization_key = ZEX_MGY_NEUTRAL_UpperMaregypt
+	}
+}
+
+defined_text = {
+	name = ZEX_MGY_GetUpperMaregyptAlignment_TOOLTIP
+	text = {
+		trigger = {
+			check_variable = {
+				var = ZEX_MGY_VAR_UpperMaregypt_Alignment
+				value = 8
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = ZEX_MGY_COMMUNIST_UpperMaregypt_TOOLTIP
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = ZEX_MGY_VAR_UpperMaregypt_Alignment
+				value = 2
+				compare = less_than_or_equals
+			}
+		}
+		localization_key = ZEX_MGY_HARMONIST_UpperMaregypt_TOOLTIP
+	}
+	text = {
+		localization_key = ZEX_MGY_NEUTRAL_UpperMaregypt_TOOLTIP
+	}
+}
+
+# Zush
+
+defined_text = {
+	name = ZEX_MGY_GetZushAlignment
+	text = {
+		trigger = {
+			check_variable = {
+				var = ZEX_MGY_VAR_Zush_Alignment
+				value = 8
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = ZEX_MGY_COMMUNIST_Zush
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = ZEX_MGY_VAR_Zush_Alignment
+				value = 2
+				compare = less_than_or_equals
+			}
+		}
+		localization_key = ZEX_MGY_HARMONIST_Zush
+	}
+	text = {
+		localization_key = ZEX_MGY_NEUTRAL_Zush
+	}
+}
+
+defined_text = {
+	name = ZEX_MGY_GetZushAlignment_TOOLTIP
+	text = {
+		trigger = {
+			check_variable = {
+				var = ZEX_MGY_VAR_Zush_Alignment
+				value = 8
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = ZEX_MGY_COMMUNIST_Zush_TOOLTIP
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = ZEX_MGY_VAR_Zush_Alignment
+				value = 2
+				compare = less_than_or_equals
+			}
+		}
+		localization_key = ZEX_MGY_HARMONIST_Zush_TOOLTIP
+	}
+	text = {
+		localization_key = ZEX_MGY_NEUTRAL_Zush_TOOLTIP
+	}
+}
