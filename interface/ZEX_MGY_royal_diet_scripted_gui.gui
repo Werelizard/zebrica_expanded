@@ -1,10 +1,10 @@
 @FACTION_TEXT_X = 55
 @ATTITUDE_TEXT_X = 160
-@STABILITY_TEXT_X = 275
-@STABILITY_ICON_X = 317
-@STABILITY_TT_X = 290
-@MANPOWER_TEXT_X = 385
-@MANPOWER_ICON_X = 432
+@STABILITY_TEXT_X = 255
+@STABILITY_ICON_X = 297
+@STABILITY_TT_X = 270
+@MANPOWER_TEXT_X = 380
+@MANPOWER_ICON_X = 380
 @MANPOWER_TT_X = 400
 @FACTION_ICONS_X = 10
 @FACTION_NAMES_X = 55
@@ -194,16 +194,6 @@ guiTypes = {
 			maxwidth = 110
 		}
 
-		#Tooltip
-		instantTextBoxType = {
-			name ="ZEX_MGY_ROYAL_DIET_ATTITUDE_TOOLTIP"
-			position = { x = @ATTITUDE_TEXT_X y = @HEADERS_Y }
-			format = center
-			maxwidth = 110
-			maxHeight = 205
-			pdx_tooltip = ZEX_MGY_ROYAL_DIET_ATTITUDE_TOOLTIP
-		}
-
 		#SEATS
 		instantTextBoxType = {
 			name ="ZEX_MGY_ROYAL_DIET_SEATS_HEADER"
@@ -259,7 +249,54 @@ guiTypes = {
 			maxwidth = 110
 		}
 
-		#Tooltip
+		#DIET INFLUENCE
+		
+		instantTextBoxType = {
+			name ="ZEX_MGY_ROYAL_DIET_INFLUENCE_HEADER"
+			position = { x = @MANPOWER_ICON_X y = @HEADERS_Y }
+			font = "hoi_18mbs"
+			text = "ZEX_MGY_ROYAL_DIET_INFLUENCE_HEADER"
+			format = center
+			maxwidth = 110
+		}
+
+		instantTextBoxType = {
+			name ="ZEX_MGY_ROYAL_DIET_HARMONY_INFLUENCE"
+			position = { x = @MANPOWER_TEXT_X y = 55 }
+			font = "hoi_18mbs"
+			text = "ZEX_MGY_ROYAL_DIET_HARMONY_INFLUENCE_VALUE"
+			format = center
+			maxwidth = 110
+		}
+
+		instantTextBoxType = {
+			name ="ZEX_MGY_ROYAL_DIET_REPUBLICAN_INFLUENCE"
+			position = { x = @MANPOWER_TEXT_X y = 100 }
+			font = "hoi_18mbs"
+			text = "ZEX_MGY_ROYAL_DIET_REPUBLICAN_INFLUENCE_VALUE"
+			format = center
+			maxwidth = 110
+		}
+
+		instantTextBoxType = {
+			name ="ZEX_MGY_ROYAL_DIET_LOYALISTS_INFLUENCE"
+			position = { x = @MANPOWER_TEXT_X y = 145 }
+			font = "hoi_18mbs"
+			text = "ZEX_MGY_ROYAL_DIET_LOYALISTS_INFLUENCE_VALUE"
+			format = center
+			maxwidth = 110
+		}
+
+		instantTextBoxType = {
+			name ="ZEX_MGY_ROYAL_DIET_TRADITIONALISTS_INFLUENCE"
+			position = { x = @MANPOWER_TEXT_X y = 190 }
+			font = "hoi_18mbs"
+			text = "ZEX_MGY_ROYAL_DIET_TRADITIONALISTS_INFLUENCE_VALUE"
+			format = center
+			maxwidth = 110
+		}
+
+		#Tooltips
 		instantTextBoxType = {
 			name ="ZEX_MGY_ROYAL_DIET_SEATS_TOOLTIP"
 			position = { x = @STABILITY_TT_X y = @HEADERS_Y }
@@ -268,11 +305,28 @@ guiTypes = {
 			maxHeight = 205
 			pdx_tooltip = ZEX_MGY_ROYAL_DIET_SEATS_TOOLTIP
 		}
+		instantTextBoxType = {
+			name ="ZEX_MGY_ROYAL_DIET_ATTITUDE_TOOLTIP"
+			position = { x = @ATTITUDE_TEXT_X y = @HEADERS_Y }
+			format = center
+			maxwidth = 110
+			maxHeight = 205
+			pdx_tooltip = ZEX_MGY_ROYAL_DIET_ATTITUDE_TOOLTIP
+		}
+		
+		instantTextBoxType = {
+			name ="ZEX_MGY_ROYAL_DIET_INFLUENCE_TOOLTIP"
+			position = { x = @MANPOWER_TEXT_X y = @HEADERS_Y }
+			format = center
+			maxwidth = 100
+			maxHeight = 205
+			pdx_tooltip = ZEX_MGY_ROYAL_DIET_INFLUENCE_TOOLTIP
+		}
 
 		#Total Opposition Calculator
 		instantTextBoxType = {
 			name ="ZEX_MGY_ROYAL_DIET_TOTAL_SUPPORT"
-			position = { x = 140 y = 280 }
+			position = { x = 120 y = 280 }
 			font = "hoi_18mbs"
 			text = "ZEX_MGY_ROYAL_DIET_TOTAL_SUPPORT"
 			format = center

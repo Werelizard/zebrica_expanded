@@ -1,3 +1,93 @@
 ﻿l_english:
- ZEX_MGY_focus_king_speech:0 "The King's Adress"
- ZEX_MGY_focus_king_speech_desc:0 ""
+ ZEX_MGY_kings_adress:0 "His Majesty's Address"
+ ZEX_MGY_kings_adress_desc:0 ""
+
+ ZEX_MGY_assemble_the_diet:0 "Assemble the Diet"
+ ZEX_MGY_assemble_the_diet_desc:0 ""
+
+ ZEX_MGY_diet_minority_rights:0 "The Matter of Individual Rights"
+ ZEX_MGY_diet_minority_rights_desc:0 ""
+
+ ZEX_MGY_diet_civil_rights:0 "The Question of Religious Freedom"
+ ZEX_MGY_diet_civil_rights_desc:0 ""
+
+ ZEX_MGY_diet_free_speech_question:0 "An Independent Judiciary?"
+ ZEX_MGY_diet_free_speech_question_desc:0 ""
+
+ ZEX_MGY_diet_land_reform:0 "The Challenge of a Land Reform"
+ ZEX_MGY_diet_land_reform_desc:0 ""
+
+ ZEX_MGY_diet_voting_rights:0 "The Right to One's Vote"
+ ZEX_MGY_diet_voting_rights_desc:0 ""
+
+ ZEX_MGY_diet_religion_and_the_state:0 "The Power of the Parliament"
+ ZEX_MGY_diet_religion_and_the_state_desc:0 ""
+
+ ZEX_MGY_diet_role_of_king:0 "The Power of the King"
+ ZEX_MGY_diet_role_of_king_desc:0 ""
+
+ ZEX_MGY_diet_end_reform_victory:0 "The Reformists Triumphant"
+ ZEX_MGY_diet_end_reform_victory_desc:0 ""
+ 
+ ZEX_MGY_diet_end_monarchist_victory:0 "The Monarchists Victorious"
+ ZEX_MGY_diet_end_reform_victory_desc_desc:0 ""
+
+ ZEX_MGY_diet_end_republican_victory:0 "The Republicans Prevail!"
+ ZEX_MGY_diet_end_republican_victory_desc:0 ""
+
+ ZEX_MGY_maintain_the_coalition_cabinet:0 "Preserve the Coalition Cabinet"
+ ZEX_MGY_maintain_the_coalition_cabinet_desc:0 ""
+
+ ZEX_MGY_expand_the_cabinet:0 "Expand the Cabinet"
+ ZEX_MGY_expand_the_cabinet_desc:0 ""
+
+ ZEX_MGY_Reach_out_to_far_hook:0 "Reach out to Far Hook"
+ ZEX_MGY_Reach_out_to_far_hook_desc:0 ""
+
+ ZEX_MGY_work_with_republican_faction:0 "The Republican Wing"
+ ZEX_MGY_work_with_republican_faction_desc:0 ""
+
+ ZEX_MGY_work_with_monarchists:0 "The King's Men"
+ ZEX_MGY_work_with_monarchists_desc:0 ""
+
+ ZEX_MGY_work_with_loyalists:0 "Approach the Artistocratic Bloc"
+ ZEX_MGY_work_with_loyalists_desc:0 ""
+
+ ZEX_MGY_consolidate_the_kings_image:0 "Reaffirm the King's Role"
+ ZEX_MGY_consolidate_the_kings_image_desc:0 ""
+
+ ZEX_MGY_utilise_somnambulas_legacy:0 "Utilise Somnambula's Legacy"
+ ZEX_MGY_utilise_somnambulas_legacy_desc:0 ""
+ 
+ ZEX_MGY_national_nostalgia:0 "Appeal to National Nostalgia"
+ ZEX_MGY_national_nostalgia_desc:0 ""
+ 
+ ZEX_MGY_pan_republican_coalition:0 "A Pan Republican Coalition?"
+ ZEX_MGY_pan_republican_coalition_desc:0 ""
+
+ ZEX_MGY_royal_society_for_harmony:0 "The Royal Harmony Society"
+ ZEX_MGY_royal_society_for_harmony_desc:0 ""
+
+ ZEX_MGY_promote_non_communist_harmony:0 "Harmony Without Socialist Characteristics"
+ ZEX_MGY_promote_non_communist_harmony_desc:0 ""
+
+ ZEX_MGY_necessary_repressions:0 "Uproot the Red Threat"
+ ZEX_MGY_necessary_repressions_desc:0 ""
+
+ ZEX_MGY_adress_the_donkeys:0 "A Show of Good Will"
+ ZEX_MGY_adress_the_donkeys_desc:0 ""
+
+ ZEX_MGY_appease_the_seperatists:0 "Concessions to the Seperatists"
+ ZEX_MGY_appease_the_seperatists_desc:0 ""
+
+ ZEX_MGY_clamp_down_on_seperatism:0 "Arrest Agitators"
+ ZEX_MGY_clamp_down_on_seperatism_desc:0 ""
+
+ ZEX_MGY_seize_donkey_properties:0 "Expel the Donkeys"
+ ZEX_MGY_seize_donkey_properties_desc:0 ""
+
+ ZEX_MGY_a_united_nation:0 "A United Nation"
+ ZEX_MGY_a_united_nation_desc:0 ""
+
+ ZEX_MGY_a_stabilised_nation:0 "The Scarab Spreads its Wings"
+ ZEX_MGY_a_stabilised_nation_desc:0 ""

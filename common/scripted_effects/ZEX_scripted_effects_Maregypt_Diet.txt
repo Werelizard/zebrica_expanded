@@ -22,7 +22,8 @@ ZEX_setup_royal_diet = {
 	ZEX_royal_diet_initial_seats_setup = yes
 	ZEX_royal_diet_initial_loylty_setup = yes
 	ZEX_royal_diet_update_total_support = yes
-	set_country_flag = ZEX_royal_diet_reformist_leadership
+	ZEX_royal_diet_initial_influence_setup = yes
+	ZEX_royal_diet_recalculate_factions = yes
 }
 
 # Mechanic Flow Control
@@ -72,6 +73,25 @@ ZEX_royal_diet_initial_loylty_setup = {
 	set_variable = {
 		var = ZEX_royal_diet_independents_loyalty
 		value = 40
+	}
+}
+
+ZEX_royal_diet_initial_influence_setup = {
+	set_variable = {
+		var = zex_royal_diet_monarchist_influence
+		value = 5
+	}
+	set_variable = {
+		var = zex_royal_diet_republicans_influence
+		value = 15
+	}
+	set_variable = {
+		var = zex_royal_diet_reformists_influence
+		value = 70
+	}
+	set_variable = {
+		var = zex_royal_diet_loyalists_influence
+		value = 10
 	}
 }
 
@@ -145,17 +165,32 @@ ZEX_royal_diet_update_total_support = {
 			value = ZEX_royal_diet_independents_seats
 		}
 	}
-	#Evaluate and change diet leadership if need be
-	ZEX_royal_diet_evaluate_leadership = yes
 }
 
-ZEX_royal_diet_evaluate_leadership = {
+ZEX_royal_diet_recalculate_factions = {
+	add_to_array = {
+		array = root.royal_diet_faction_influences
+		value = zex_royal_diet_monarchist_influence
+	}
+	add_to_array = {
+		array = root.royal_diet_faction_influences
+		value = zex_royal_diet_republicans_influence
+	}
+	add_to_array = {
+		array = root.royal_diet_faction_influences
+		value = zex_royal_diet_loyalists_influence
+	}
+	add_to_array = {
+		array = root.royal_diet_faction_influences
+		value = zex_royal_diet_loyalists_influence
+	}
+	find_highest_in_array = {
+		array = root.royal_diet_faction_influences
+	}
 	if = {
 		limit = {
 			check_variable = {
-				var = ZEX_royal_diet_monarchist_seats
-				value = 150
-				compare = greater_than
+				i = 0
 			}
 			NOT = {
 				has_country_flag = ZEX_royal_diet_monarchist_leadership
@@ -167,9 +202,7 @@ ZEX_royal_diet_evaluate_leadership = {
 	else_if = {
 		limit = {
 			check_variable = {
-				var = ZEX_royal_diet_republican_seats
-				value = 150
-				compare = greater_than
+				i = 1
 			}
 			NOT = {
 				has_country_flag = ZEX_royal_diet_republican_leadership
@@ -181,9 +214,7 @@ ZEX_royal_diet_evaluate_leadership = {
 	else_if = {
 		limit = {
 			check_variable = {
-				var = ZEX_royal_diet_reformists_seats
-				value = 150
-				compare = greater_than
+				i = 2
 			}
 			NOT = {
 				has_country_flag = ZEX_royal_diet_reformist_leadership
@@ -195,9 +226,7 @@ ZEX_royal_diet_evaluate_leadership = {
 	else_if = {
 		limit = {
 			check_variable = {
-				var = ZEX_royal_diet_loyalists_seats
-				value = 150
-				compare = greater_than
+				i = 3
 			}
 			NOT = {
 				has_country_flag = ZEX_royal_diet_loyalist_leadership
@@ -207,8 +236,7 @@ ZEX_royal_diet_evaluate_leadership = {
 		set_country_flag = ZEX_royal_diet_loyalist_leadership
 	}
 	else = {
-		# ZEX_royal_diet_remove_flags = yes
-		# set_country_flag = ZEX_royal_diet_nopony_leadership
+		
 	}
 }
 
@@ -1389,4 +1417,176 @@ ZEX_decrease_independents_Loyalty_Big = {
 	}
 	ZEX_royal_diet_update_total_support = yes
 	ZEX_royaL_diet_clamp_loyalty_values = yes
+}
+
+# Influence-Related Effects
+
+ZEX_increase_monarchist_influence_5 = {
+	custom_effect_tooltip = increase_monarchist_influence_5_tt
+	set_variable = {
+		var = ZEX_temp_var_royal_diet_influence_change
+		value = 5
+	}
+	while_loop_effect = {
+		limit = {
+			check_variable = {
+				zex_royal_diet_monarchist_influence < 100
+			}
+			check_variable = {
+				ZEX_temp_var_royal_diet_influence_change > 0
+			}
+			OR = {
+				check_variable = {
+					zex_royal_diet_republicans_influence > 0
+				}
+				check_variable = {
+					zex_royal_diet_reformists_influence > 0
+				}
+				check_variable = {
+					zex_royal_diet_loyalists_influence > 0
+				}
+			}
+		}
+		random_list = {
+			33 = {
+				modifier = {
+					factor = 0
+					zex_royal_diet_republicans_influence < 1
+				}
+				subtract_from_variable = {
+					var = ZEX_temp_var_royal_diet_influence_change
+					value = 1
+				}
+				subtract_from_variable = {
+					var = zex_royal_diet_republicans_influence
+					value = 1
+				}
+				add_to_variable = {
+					var = zex_royal_diet_monarchist_influence
+					value = 1
+				}
+			}
+			33 = {
+				modifier = {
+					factor = 0
+					zex_royal_diet_reformists_influence < 1
+				}
+				subtract_from_variable = {
+					var = ZEX_temp_var_royal_diet_influence_change
+					value = 1
+				}
+				subtract_from_variable = {
+					var = zex_royal_diet_reformists_influence
+					value = 1
+				}
+				add_to_variable = {
+					var = zex_royal_diet_monarchist_influence
+					value = 1
+				}
+			}
+			33 = {
+				modifier = {
+					factor = 0
+					zex_royal_diet_loyalists_influence < 1
+				}
+				subtract_from_variable = {
+					var = ZEX_temp_var_royal_diet_influence_change
+					value = 1
+				}
+				subtract_from_variable = {
+					var = zex_royal_diet_loyalists_influence
+					value = 1
+				}
+				add_to_variable = {
+					var = zex_royal_diet_monarchist_influence
+					value = 1
+				}
+			}
+		}
+	}
+}
+
+ZEX_decrease_monarchist_influence_5 = {
+	custom_effect_tooltip = decrease_monarchist_influence_5_tt
+	set_variable = {
+		var = ZEX_temp_var_royal_diet_influence_change
+		value = 5
+	}
+	while_loop_effect = {
+		limit = {
+			check_variable = {
+				zex_royal_diet_monarchist_influence > 0
+			}
+			check_variable = {
+				ZEX_temp_var_royal_diet_influence_change > 0
+			}
+			OR = {
+				check_variable = {
+					zex_royal_diet_republicans_influence < 100
+				}
+				check_variable = {
+					zex_royal_diet_reformists_influence < 100
+				}
+				check_variable = {
+					zex_royal_diet_loyalists_influence < 100
+				}
+			}
+		}
+		random_list = {
+			33 = {
+				modifier = {
+					factor = 0
+					zex_royal_diet_republicans_influence > 99
+				}
+				subtract_from_variable = {
+					var = ZEX_temp_var_royal_diet_influence_change
+					value = 1
+				}
+				subtract_from_variable = {
+					var = zex_royal_diet_monarchist_influence
+					value = 1
+				}
+				add_to_variable = {
+					var = zex_royal_diet_republicans_influence
+					value = 1
+				}
+			}
+			33 = {
+				modifier = {
+					factor = 0
+					zex_royal_diet_reformists_influence > 99
+				}
+				subtract_from_variable = {
+					var = ZEX_temp_var_royal_diet_influence_change
+					value = 1
+				}
+				subtract_from_variable = {
+					var = zex_royal_diet_monarchist_influence
+					value = 1
+				}
+				add_to_variable = {
+					var = zex_royal_diet_reformists_influence
+					value = 1
+				}
+			}
+			33 = {
+				modifier = {
+					factor = 0
+					zex_royal_diet_loyalists_influence > 99
+				}
+				subtract_from_variable = {
+					var = ZEX_temp_var_royal_diet_influence_change
+					value = 1
+				}
+				subtract_from_variable = {
+					var = zex_royal_diet_monarchist_influence
+					value = 1
+				}
+				add_to_variable = {
+					var = zex_royal_diet_loyalists_influence
+					value = 1
+				}
+			}
+		}
+	}
 }

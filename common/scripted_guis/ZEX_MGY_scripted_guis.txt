@@ -96,7 +96,7 @@ scripted_gui = {
 		}
 		properties = {
 			ZEX_MGY_zush_icon = {
-				image = "[ZEX_MGY_GetUpperZushAlignment]"
+				image = "[ZEX_MGY_GetZushAlignment]"
 			}
 		}
 		properties = {

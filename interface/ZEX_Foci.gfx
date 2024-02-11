@@ -1,15 +1,15 @@
 spriteTypes = {
 	spriteType = {
-		name = "ZEX_MGY_Focus_Recall_Royal_Diet"
-		textureFile = "gfx/interface/goals/Focus_Royal_Diet.dds"
+		name = "ZEX_MGY_kings_adress"
+		textureFile = "gfx/interface/goals/ZEX_MGY_focus_the_king_speech.dds"
 	}
 	spriteType = {
-		name = "ZEX_MGY_Focus_Recall_Royal_Diet_shine"
-		textureFile = "gfx/interface/goals/Focus_Royal_Diet.dds"
+		name = "ZEX_MGY_kings_adress_shine"
+		textureFile = "gfx/interface/goals/ZEX_MGY_focus_the_king_speech.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/Focus_Royal_Diet.dds"			
-			animationtexturefile = "gfx/interface/goals/ZEX_MGY_SHINE_TALL.dds" 	# <- the animated file
+			animationmaskfile = "gfx/interface/goals/ZEX_MGY_focus_the_king_speech.dds"			
+			animationtexturefile = "gfx/interface/goals/ZEX_MGY_shine_100x100.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
 			animationtime = 0.75				# in seconds
@@ -20,148 +20,8 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/Focus_Royal_Diet.dds"			
-			animationtexturefile = "gfx/interface/goals/ZEX_MGY_SHINE_TALL.dds" 	# <- the animated file
-			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
-			animationlooping = no			# yes or no ;)
-			animationtime = 0.75				# in seconds
-			animationdelay = 0			# in seconds
-			animationblendmode = "add"       #add, multiply, overlay
-			animationtype = "scrolling"      #scrolling, rotating, pulsing
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 } 
-		}
-		legacy_lazy_load = no
-	}
-
-	spriteType = {
-		name = "ZEX_MGY_Focus_Begin_Talks_Equestira"
-		textureFile = "gfx/interface/goals/Focus_Begin_Talks_Equestira.dds"
-	}
-	spriteType = {
-		name = "ZEX_MGY_Focus_Begin_Talks_Equestira_shine"
-		textureFile = "gfx/interface/goals/Focus_Begin_Talks_Equestira.dds"
-		effectFile = "gfx/FX/buttonstate.lua"
-		animation = {
-			animationmaskfile = "gfx/interface/goals/Focus_Begin_Talks_Equestira.dds"			
-			animationtexturefile = "gfx/interface/goals/ZEX_MGY_SHINE_TALL.dds" 	# <- the animated file
-			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
-			animationlooping = no			# yes or no ;)
-			animationtime = 0.75				# in seconds
-			animationdelay = 0			# in seconds
-			animationblendmode = "add"       #add, multiply, overlay
-			animationtype = "scrolling"      #scrolling, rotating, pulsing
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 } 
-		}
-		animation = {
-			animationmaskfile = "gfx/interface/goals/Focus_Begin_Talks_Equestira.dds"			
-			animationtexturefile = "gfx/interface/goals/ZEX_MGY_SHINE_TALL.dds" 	# <- the animated file
-			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
-			animationlooping = no			# yes or no ;)
-			animationtime = 0.75				# in seconds
-			animationdelay = 0			# in seconds
-			animationblendmode = "add"       #add, multiply, overlay
-			animationtype = "scrolling"      #scrolling, rotating, pulsing
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 } 
-		}
-		legacy_lazy_load = no
-	}
-
-	spriteType = {
-		name = "ZEX_MGY_Focus_Establish_Diet"
-		textureFile = "gfx/interface/goals/Focus_Establish_Diet.dds"
-	}
-	spriteType = {
-		name = "ZEX_MGY_Focus_Establish_Diet_shine"
-		textureFile = "gfx/interface/goals/Focus_Establish_Diet.dds"
-		effectFile = "gfx/FX/buttonstate.lua"
-		animation = {
-			animationmaskfile = "gfx/interface/goals/Focus_Establish_Diet.dds"			
-			animationtexturefile = "gfx/interface/goals/ZEX_MGY_SHINE_TALL.dds" 	# <- the animated file
-			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
-			animationlooping = no			# yes or no ;)
-			animationtime = 0.75				# in seconds
-			animationdelay = 0			# in seconds
-			animationblendmode = "add"       #add, multiply, overlay
-			animationtype = "scrolling"      #scrolling, rotating, pulsing
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 } 
-		}
-		animation = {
-			animationmaskfile = "gfx/interface/goals/Focus_Establish_Diet.dds"			
-			animationtexturefile = "gfx/interface/goals/ZEX_MGY_SHINE_TALL.dds" 	# <- the animated file
-			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
-			animationlooping = no			# yes or no ;)
-			animationtime = 0.75				# in seconds
-			animationdelay = 0			# in seconds
-			animationblendmode = "add"       #add, multiply, overlay
-			animationtype = "scrolling"      #scrolling, rotating, pulsing
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 } 
-		}
-		legacy_lazy_load = no
-	}
-
-	spriteType = {
-		name = "ZEX_MGY_Focus_Mare_Mule_Divide_1"
-		textureFile = "gfx/interface/goals/Focus_Mare_Mule_Divide_1.dds"
-	}
-	spriteType = {
-		name = "ZEX_MGY_Focus_Mare_Mule_Divide_1_shine"
-		textureFile = "gfx/interface/goals/Focus_Mare_Mule_Divide_1.dds"
-		effectFile = "gfx/FX/buttonstate.lua"
-		animation = {
-			animationmaskfile = "gfx/interface/goals/Focus_Mare_Mule_Divide_1.dds"			
-			animationtexturefile = "gfx/interface/goals/ZEX_MGY_SHINE_TALL.dds" 	# <- the animated file
-			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
-			animationlooping = no			# yes or no ;)
-			animationtime = 0.75				# in seconds
-			animationdelay = 0			# in seconds
-			animationblendmode = "add"       #add, multiply, overlay
-			animationtype = "scrolling"      #scrolling, rotating, pulsing
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 } 
-		}
-		animation = {
-			animationmaskfile = "gfx/interface/goals/Focus_Mare_Mule_Divide_1.dds"			
-			animationtexturefile = "gfx/interface/goals/ZEX_MGY_SHINE_TALL.dds" 	# <- the animated file
-			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
-			animationlooping = no			# yes or no ;)
-			animationtime = 0.75				# in seconds
-			animationdelay = 0			# in seconds
-			animationblendmode = "add"       #add, multiply, overlay
-			animationtype = "scrolling"      #scrolling, rotating, pulsing
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 } 
-		}
-		legacy_lazy_load = no
-	}
-
-	spriteType = {
-		name = "ZEX_MGY_focus_sever_equestrian_commerical_ties"
-		textureFile = "gfx/interface/goals/focus_sever_equestrian_commerical_ties.dds"
-	}
-	spriteType = {
-		name = "ZEX_MGY_focus_sever_equestrian_commerical_ties_shine"
-		textureFile = "gfx/interface/goals/focus_sever_equestrian_commerical_ties.dds"
-		effectFile = "gfx/FX/buttonstate.lua"
-		animation = {
-			animationmaskfile = "gfx/interface/goals/focus_sever_equestrian_commerical_ties.dds"			
-			animationtexturefile = "gfx/interface/goals/ZEX_MGY_SHINE_TALL.dds" 	# <- the animated file
-			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
-			animationlooping = no			# yes or no ;)
-			animationtime = 0.75				# in seconds
-			animationdelay = 0			# in seconds
-			animationblendmode = "add"       #add, multiply, overlay
-			animationtype = "scrolling"      #scrolling, rotating, pulsing
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 } 
-		}
-		animation = {
-			animationmaskfile = "gfx/interface/goals/focus_sever_equestrian_commerical_ties.dds"			
-			animationtexturefile = "gfx/interface/goals/ZEX_MGY_SHINE_TALL.dds" 	# <- the animated file
+			animationmaskfile = "gfx/interface/goals/ZEX_MGY_focus_the_king_speech.dds"			
+			animationtexturefile = "gfx/interface/goals/ZEX_MGY_shine_100x100.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
 			animationtime = 0.75				# in seconds
