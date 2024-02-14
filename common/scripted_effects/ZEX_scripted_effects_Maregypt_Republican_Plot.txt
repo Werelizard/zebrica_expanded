@@ -105,8 +105,123 @@ ZEX_MGY_GET_AVERAGE_UNREST = {
 	}
 	#extra to get current stab
 	set_variable = {
-		var = ZEX_MGY_CURRENT_STABILITY
+		var = ZEX_MGY_CURRENT_COMMUNIST_POP
+		value = party_popularity@communism
+	}
+}
+
+# Get stability to get the current increase factor
+
+ZEX_MGY_GET_UNREST_DECREASE_FACTOR = {
+	set_variable = {
+		var = ZEX_MGY_UNREST_FACTOR
 		value = stability
+	}
+	# divide_variable = {
+	# 	var = ZEX_MGY_UNREST_FACTOR
+	# 	value = 100
+	# }
+	add_to_variable = {
+		var = ZEX_MGY_UNREST_FACTOR
+		value = 1
+	}
+}
+
+ZEX_MGY_GET_UNREST_INCREASE_FACTOR = {
+	set_variable = {
+		var = ZEX_MGY_GET_STABILITY
+		value = stability
+	}
+	set_variable = {
+		var = ZEX_MGY_UNREST_FACTOR
+		value = 100
+	}
+	subtract_from_variable = {
+		var = ZEX_MGY_UNREST_FACTOR
+		value = ZEX_MGY_GET_STABILITY
+	}
+	divide_variable = {
+		var = ZEX_MGY_UNREST_FACTOR
+		value = 100
+	}
+	clamp_variable = {
+		var = ZEX_MGY_UNREST_FACTOR
+		min = 0
+		max = 1
+	}
+	add_to_variable = {
+		var = ZEX_MGY_UNREST_FACTOR
+		value = 1
+	}
+}
+
+ZEX_MGY_CALC_UNREST_TO_CLEAR = {
+	set_variable = {
+		var = ZEX_MGY_UNREST_DECREASE
+		value = 1
+	}
+	multiply_variable = {
+		var = ZEX_MGY_UNREST_DECREASE
+		value = ZEX_MGY_UNREST_FACTOR
+	}
+}
+
+ZEX_MGY_CALC_UNREST_TO_GROW = {
+	set_variable = {
+		var = ZEX_MGY_UNREST_DECREASE
+		value = 2
+	}
+	multiply_variable = {
+		var = ZEX_MGY_UNREST_DECREASE
+		value = ZEX_MGY_UNREST_FACTOR
+	}
+}
+
+#Lower / Increase unrest in provinces
+
+ZEX_MGY_DECREASE_UNREST_maneisrata = {
+	custom_effect_tooltip = decrease_maneisrata_unrest_tt
+	ZEX_MGY_GET_UNREST_DECREASE_FACTOR = yes
+	ZEX_MGY_CALC_UNREST_TO_CLEAR = yes
+	subtract_from_variable = {
+		var = ZEX_MGY_VAR_Maneisrata_Alignment
+		value = ZEX_MGY_UNREST_DECREASE
+	}
+	clamp_variable = {
+		var = ZEX_MGY_VAR_Maneisrata_Alignment
+		min = 0
+		max = 10
+	}
+}
+
+ZEX_MGY_INCREASE_UNREST_maneisrata = {
+	custom_effect_tooltip = increase_maneisrata_unrest_tt
+	ZEX_MGY_GET_UNREST_INCREASE_FACTOR = yes
+	ZEX_MGY_CALC_UNREST_TO_GROW = yes
+	subtract_from_variable = {
+		var = ZEX_MGY_VAR_Maneisrata_Alignment
+		value = ZEX_MGY_UNREST_DECREASE
+	}
+	clamp_variable = {
+		var = ZEX_MGY_VAR_Maneisrata_Alignment
+		min = 0
+		max = 10
+	}
+}
+
+# Button Clicking
+
+ZEX_MGY_REDUCE_UNREST_BUTTON_EFFECT = {
+	if = {
+		limit = {
+			MGY = {
+				has_political_power > 20
+			}
+		}
+		MGY = {
+			add_political_power = -20
+		}
+		ZEX_MGY_DECREASE_UNREST_maneisrata = yes
 	}
 }
 

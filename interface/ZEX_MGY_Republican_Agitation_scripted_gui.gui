@@ -18,7 +18,7 @@ guiTypes = {
 			}
 			
 			#Maneisrata
-			iconType = {
+			buttonType = {
 				name = "ZEX_MGY_maneisrata_icon"
 				position = { x = 23 y = 66 }
 				spriteType = "GFX_ZEX_MGY_Maneisrata_Neutral"
@@ -84,7 +84,7 @@ guiTypes = {
 			#Stab and Average Unrest
 			instantTextBoxType = {
 				name ="ZEX_MGY_REBELLION_UNREST"
-				position = { x = 165 y = 275 }
+				position = { x = 140 y = 275 }
 				font = "hoi_18mbs"
 				text = "ZEX_MGY_AVERAGE_UNREST_TOOLTIP"
 				format = left
@@ -94,7 +94,7 @@ guiTypes = {
 
 			instantTextBoxType = {
 				name ="ZEX_MGY_REBELLION_STABILITY"
-				position = { x = 165 y = 299 }
+				position = { x = 140 y = 299 }
 				font = "hoi_18mbs"
 				text = "ZEX_MGY_STABILITY_TOOLTIP"
 				format = left

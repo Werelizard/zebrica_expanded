@@ -10,7 +10,7 @@
 
  #Maregyptian Diet GUI
  ZEX_MAREGYPT_PARLIAMENT_CATEGORY:0 "The Royal Diet"
- ZEX_MAREGYPT_PARLIAMENT_CATEGORY_desc:0 "Throughout the history of Maregypt, the Kings and Queens have time and time again called upon the support of the Royal Diet; a legal body consisting of the governors - or Nomarchs - from all of the provinces of Maregypt.\n\nIn order to pass [Root.GetLeader]'s reforms, we will need to secure a majority in the Royal Diet, or a minimum of §g151§! seats. This will be no easy task however: the representatives have brought with them agendas of their own, and the emerging factions will seek to gain dominance over the diet - allowing them to dictate the direction of the reforms.\n\nCurrently [ZEX_GetRoyalDietLeadership] have the highest overall influence on the diet's reform plan."
+ ZEX_MAREGYPT_PARLIAMENT_CATEGORY_desc:0 "Throughout the history of Maregypt, the Kings and Queens have time and time again called upon the support of the Royal Diet; a legal body consisting of the governors - or Nomarchs - from all of the provinces of Maregypt.\n\nIn order to pass [Root.GetLeader]'s reforms, we will need to secure a majority in the Royal Diet, or a minimum of §g151§! seats. This will be no easy task however: the representatives have brought with them agendas of their own, and the emerging factions will seek to gain dominance over the diet - allowing them to dictate the direction of the reforms.\n\nCurrently [ZEX_GetRoyalDietLeadership]"
 
  ZEX_MGY_Royal_Diet_Harmony_Text:0 "§YRoyalists§!"
  ZEX_MGY_Royal_Diet_Republican_Text:0 "§YRepublicans§!"
@@ -18,10 +18,11 @@
  ZEX_MGY_Royal_Diet_Traditionalists_Text:0 "§YLoyalists§!"
  ZEX_MGY_Royal_Diet_NoFaction_Text:0 "§YIndependents§!"
 
- ZEX_royal_diet_monarchist_leadership:0 "the £monarchist_faction §0Royalists§!"
- ZEX_royal_diet_republican_leadership:0 "the £republican_faction §1Republicans§!"
- ZEX_royal_diet_reformist_leadership:0 "the £reformist_faction §2Reformists§!"
- ZEX_royal_diet_loyalist_leadership:0 "the £loyalist_faction §8Loyalists§! "
+ ZEX_royal_diet_monarchist_leadership:0 "the £monarchist_faction §0Royalists§! have the highest overall influence on the diet's reform plan."
+ ZEX_royal_diet_republican_leadership:0 "the £republican_faction §1Republicans§! have the highest overall influence on the diet's reform plan."
+ ZEX_royal_diet_reformist_leadership:0 "the £reformist_faction §2Reformists§! have the highest overall influence on the diet's reform plan."
+ ZEX_royal_diet_loyalist_leadership:0 "the £loyalist_faction §8Loyalists§! have the highest overall influence on the diet's reform plan."
+ ZEX_royal_diet_nopony_leadership:0 "§gNopony§! is considered in control of the diet's reform plan."
 
  ZEX_MGY_ROYAL_DIET_ATTITUDE:0 "Attitude"
  ZEX_MGY_ROYAL_DIET_SEATS_HEADER:0 "Seats"
@@ -140,9 +141,9 @@
  ZEX_MGY_HARMONIST_Maneisrata:0 "GFX_ZEX_MGY_Maneisrata_Harmonist"
  ZEX_MGY_NEUTRAL_Maneisrata:0 "GFX_ZEX_MGY_Maneisrata_Neutral"
  ZEX_MGY_Maneisrata_icon_tt:0 "[ZEX_MGY_GetManeisrataAlignment_TOOLTIP]"
- ZEX_MGY_COMMUNIST_Maneisrata_TOOLTIP:0 "§YManeisrata§! is currently §RCommunist-aligned§!. The current local unrest is £local_unrest [?ROOT.ZEX_MGY_VAR_Maneisrata_Alignment]."
- ZEX_MGY_NEUTRAL_Maneisrata_TOOLTIP:0 "§YManeisrata§! is currently §gneutral§!. The current local unrest is £local_unrest [?ROOT.ZEX_MGY_VAR_Maneisrata_Alignment]."
- ZEX_MGY_HARMONIST_Maneisrata_TOOLTIP:0 "§YManeisrata§! is currently §0Harmonist-aligned§!. The current local unrest is £local_unrest [?ROOT.ZEX_MGY_VAR_Maneisrata_Alignment]."
+ ZEX_MGY_COMMUNIST_Maneisrata_TOOLTIP:0 "§YManeisrata§! is currently §RCommunist-aligned§!. The current local unrest is £local_unrest [?ROOT.ZEX_MGY_VAR_Maneisrata_Alignment].\n\n§GLeft Click to spend§! £pol_power §Y10§! §Gpolitical power to decrease the province's unrest. This effect scales with our current stability§!"
+ ZEX_MGY_NEUTRAL_Maneisrata_TOOLTIP:0 "§YManeisrata§! is currently §gneutral§!. The current local unrest is £local_unrest [?ROOT.ZEX_MGY_VAR_Maneisrata_Alignment].\n\n§GLeft Click to spend§! £pol_power §Y10§! §Gpolitical power to decrease the province's unrest. This effect scales with our current stability§!"
+ ZEX_MGY_HARMONIST_Maneisrata_TOOLTIP:0 "§YManeisrata§! is currently §0Harmonist-aligned§!. The current local unrest is £local_unrest [?ROOT.ZEX_MGY_VAR_Maneisrata_Alignment].\n\n§GLeft Click to spend§! £pol_power §Y10§! §Gpolitical power to decrease the province's unrest. This effect scales with our current stability§!"
 
  ZEX_MGY_COMMUNIST_Kaneigh:0 "GFX_ZEX_MGY_Kaneigh_Communist"
  ZEX_MGY_HARMONIST_Kaneigh:0 "GFX_ZEX_MGY_Kaneigh_Harmonist"
@@ -201,11 +202,13 @@
  ZEX_MGY_HARMONIST_Zush_TOOLTIP:0 "§YZush§! is currently §0Harmonist-aligned§!. The current local unrest is £local_unrest [?ROOT.ZEX_MGY_VAR_Zush_Alignment]."
 
  ZEX_MGY_AVERAGE_UNREST_TOOLTIP:0 "§YAverage Unrest:§! £local_unrest  [?ROOT.ZEX_MGY_AVERAGE_UNREST|2]"
- ZEX_MGY_STABILITY_TOOLTIP:0 "§YStability:§! £stability_texticon  [?ROOT.ZEX_MGY_CURRENT_STABILITY|%]"
-
+ ZEX_MGY_STABILITY_TOOLTIP:0 "§YMR-SF Popularity:§! £communism_texticon  [?ROOT.ZEX_MGY_CURRENT_COMMUNIST_POP|%]"
+ 
  #Republican agitation decisions
  ZEX_Activate_Agitation_tt:0 "Enables the §YRepublican Agitation§! mechanic."
  ZEX_deactivate_republican_agitation:0 "Disables the §YRepublican Agitation§! mechanic."
 
  ZEX_MAREGYPT_REPUBLICAN_AGITATION_CATEGORY:0 "Republican Agitation"
- ZEX_MAREGYPT_REPUBLICAN_AGITATION_CATEGORY_desc:0 "As our nation descends further into chaos, communist militias - spearheaded by the §RMR-SF§! - and other republican movements have made their first moves towards §trevolution§!. Allarmingly, our intelligence services have reported some provinces have already become hubs of pro-republican activity.\n\nStates with a high unrest will grow increasingly likely to back the republicans, potentially leading to acts of industrial sabotage, strikes and outright open revolt.\n\nWe will enter a §Rcivil war§! shall the average £local_unrest unrest across all of our provinces become greater than §Y7§! and our stability fall below §Y20%§!.\n\n"
+ ZEX_MAREGYPT_REPUBLICAN_AGITATION_CATEGORY_desc:0 "As our nation descends further into chaos, communist militias - spearheaded by the §RMR-SF§! - and other republican movements have made their first moves towards §trevolution§!. Allarmingly, our intelligence services have reported some provinces have already become hubs of pro-republican activity.\n\nStates with a high unrest will grow increasingly likely to back insurrectionist movements, potentially leading to acts of industrial sabotage, strikes and outright open revolt.\n\nWe will enter a §Rcivil war§! shall the average £local_unrest unrest across all of our provinces or the communists' popularity grow too high. We can combat this by combatting republicans either through regional actions or nation-wide efforts as we race to stifle this nascent revolution. It is worth noting that a nigher stability will increase the effectivness of our efforts, whilst decreasing the agitator's own.\n\n"
+
+ 

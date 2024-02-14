@@ -105,6 +105,12 @@ scripted_gui = {
 			}
 		}
 
+		effects = {
+			ZEX_MGY_maneisrata_icon_click = {
+				ZEX_MGY_DECREASE_UNREST_maneisrata = yes
+			}
+		}
+
 		ai_enabled = {
 			always = no
 		}
