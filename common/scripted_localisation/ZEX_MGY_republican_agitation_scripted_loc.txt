@@ -5,108 +5,74 @@ defined_text = {
 	text = {
 		trigger = {
 			check_variable = {
-				var = ZEX_MGY_VAR_Sineighi_Alignment
-				value = 8
-				compare = greater_than_or_equals
+				ZEX_MGY_VAR_Sineighi_Alignment >75
 			}
 		}
-		localization_key = ZEX_MGY_COMMUNIST_SINEIGHI
+		localization_key = ZEX_MGY_HIGHUNREST_SINEIGHI
 	}
 	text = {
 		trigger = {
 			check_variable = {
-				var = ZEX_MGY_VAR_Sineighi_Alignment
-				value = 2
-				compare = less_than_or_equals
+				ZEX_MGY_VAR_Sineighi_Alignment > 50
+			}
+			check_variable = {
+				ZEX_MGY_VAR_Sineighi_Alignment <75
 			}
 		}
-		localization_key = ZEX_MGY_HARMONIST_SINEIGHI
+		localization_key = ZEX_MGY_MIDUNREST_SINEIGHI
 	}
 	text = {
-		localization_key = ZEX_MGY_NEUTRAL_SINEIGHI
+		trigger = {
+			check_variable = {
+				ZEX_MGY_VAR_Sineighi_Alignment > 25
+			}
+			check_variable = {
+				ZEX_MGY_VAR_Sineighi_Alignment < 50
+			}
+		}
+		localization_key = ZEX_MGY_LOWUNREST_SINEIGHI
+	}
+	text = {
+		localization_key = ZEX_MGY_NOUNREST_SINEIGHI
 	}
 }
 
-defined_text = {
-	name = ZEX_MGY_GetSineighiAlignment_TOOLTIP
-	text = {
-		trigger = {
-			check_variable = {
-				var = ZEX_MGY_VAR_Sineighi_Alignment
-				value = 8
-				compare = greater_than_or_equals
-			}
-		}
-		localization_key = ZEX_MGY_COMMUNIST_SINEIGHI_TOOLTIP
-	}
-	text = {
-		trigger = {
-			check_variable = {
-				var = ZEX_MGY_VAR_Sineighi_Alignment
-				value = 2
-				compare = less_than_or_equals
-			}
-		}
-		localization_key = ZEX_MGY_HARMONIST_SINEIGHI_TOOLTIP
-	}
-	text = {
-		localization_key = ZEX_MGY_NEUTRAL_SINEIGHI_TOOLTIP
-	}
-}
-
-#Maneisrata
+# Maneisrata
 
 defined_text = {
 	name = ZEX_MGY_GetManeisrataAlignment
 	text = {
 		trigger = {
 			check_variable = {
-				var = ZEX_MGY_VAR_Maneisrata_Alignment
-				value = 8
-				compare = greater_than_or_equals
+				ZEX_MGY_VAR_Maneisrata_Alignment >75
 			}
 		}
-		localization_key = ZEX_MGY_COMMUNIST_Maneisrata
+		localization_key = ZEX_MGY_HIGHUNREST_MANEISRATA
 	}
 	text = {
 		trigger = {
 			check_variable = {
-				var = ZEX_MGY_VAR_Maneisrata_Alignment
-				value = 2
-				compare = less_than_or_equals
+				ZEX_MGY_VAR_Maneisrata_Alignment > 50
 			}
-		}
-		localization_key = ZEX_MGY_HARMONIST_Maneisrata
-	}
-	text = {
-		localization_key = ZEX_MGY_NEUTRAL_Maneisrata
-	}
-}
-
-defined_text = {
-	name = ZEX_MGY_GetManeisrataAlignment_TOOLTIP
-	text = {
-		trigger = {
 			check_variable = {
-				var = ZEX_MGY_VAR_Maneisrata_Alignment
-				value = 8
-				compare = greater_than_or_equals
+				ZEX_MGY_VAR_Maneisrata_Alignment <75
 			}
 		}
-		localization_key = ZEX_MGY_COMMUNIST_Maneisrata_TOOLTIP
+		localization_key = ZEX_MGY_MIDUNREST_MANEISRATA
 	}
 	text = {
 		trigger = {
 			check_variable = {
-				var = ZEX_MGY_VAR_Maneisrata_Alignment
-				value = 2
-				compare = less_than_or_equals
+				ZEX_MGY_VAR_Maneisrata_Alignment > 25
+			}
+			check_variable = {
+				ZEX_MGY_VAR_Maneisrata_Alignment < 50
 			}
 		}
-		localization_key = ZEX_MGY_HARMONIST_Maneisrata_TOOLTIP
+		localization_key = ZEX_MGY_LOWUNREST_MANEISRATA
 	}
 	text = {
-		localization_key = ZEX_MGY_NEUTRAL_Maneisrata_TOOLTIP
+		localization_key = ZEX_MGY_NOUNREST_MANEISRATA
 	}
 }
 
@@ -117,52 +83,35 @@ defined_text = {
 	text = {
 		trigger = {
 			check_variable = {
-				var = ZEX_MGY_VAR_Kaneigh_Alignment
-				value = 8
-				compare = greater_than_or_equals
+				ZEX_MGY_VAR_Kaneigh_Alignment >75
 			}
 		}
-		localization_key = ZEX_MGY_COMMUNIST_Kaneigh
+		localization_key = ZEX_MGY_HIGHUNREST_KANEIGH
 	}
 	text = {
 		trigger = {
 			check_variable = {
-				var = ZEX_MGY_VAR_Kaneigh_Alignment
-				value = 2
-				compare = less_than_or_equals
+				ZEX_MGY_VAR_Kaneigh_Alignment > 50
 			}
-		}
-		localization_key = ZEX_MGY_HARMONIST_Kaneigh
-	}
-	text = {
-		localization_key = ZEX_MGY_NEUTRAL_Kaneigh
-	}
-}
-
-defined_text = {
-	name = ZEX_MGY_GetKaneighAlignment_TOOLTIP
-	text = {
-		trigger = {
 			check_variable = {
-				var = ZEX_MGY_VAR_Kaneigh_Alignment
-				value = 8
-				compare = greater_than_or_equals
+				ZEX_MGY_VAR_Kaneigh_Alignment <75
 			}
 		}
-		localization_key = ZEX_MGY_COMMUNIST_Kaneigh_TOOLTIP
+		localization_key = ZEX_MGY_MIDUNREST_KANEIGH
 	}
 	text = {
 		trigger = {
 			check_variable = {
-				var = ZEX_MGY_VAR_Kaneigh_Alignment
-				value = 2
-				compare = less_than_or_equals
+				ZEX_MGY_VAR_Kaneigh_Alignment > 25
+			}
+			check_variable = {
+				ZEX_MGY_VAR_Kaneigh_Alignment < 50
 			}
 		}
-		localization_key = ZEX_MGY_HARMONIST_Kaneigh_TOOLTIP
+		localization_key = ZEX_MGY_LOWUNREST_KANEIGH
 	}
 	text = {
-		localization_key = ZEX_MGY_NEUTRAL_Kaneigh_TOOLTIP
+		localization_key = ZEX_MGY_NOUNREST_KANEIGH
 	}
 }
 
@@ -173,52 +122,35 @@ defined_text = {
 	text = {
 		trigger = {
 			check_variable = {
-				var = ZEX_MGY_VAR_Delta_Alignment
-				value = 8
-				compare = greater_than_or_equals
+				ZEX_MGY_VAR_Delta_Alignment >75
 			}
 		}
-		localization_key = ZEX_MGY_COMMUNIST_Delta
+		localization_key = ZEX_MGY_HIGHUNREST_DELTA
 	}
 	text = {
 		trigger = {
 			check_variable = {
-				var = ZEX_MGY_VAR_Delta_Alignment
-				value = 2
-				compare = less_than_or_equals
+				ZEX_MGY_VAR_Delta_Alignment > 50
 			}
-		}
-		localization_key = ZEX_MGY_HARMONIST_Delta
-	}
-	text = {
-		localization_key = ZEX_MGY_NEUTRAL_Delta
-	}
-}
-
-defined_text = {
-	name = ZEX_MGY_GetDeltaAlignment_TOOLTIP
-	text = {
-		trigger = {
 			check_variable = {
-				var = ZEX_MGY_VAR_Delta_Alignment
-				value = 8
-				compare = greater_than_or_equals
+				ZEX_MGY_VAR_Delta_Alignment <75
 			}
 		}
-		localization_key = ZEX_MGY_COMMUNIST_Delta_TOOLTIP
+		localization_key = ZEX_MGY_MIDUNREST_DELTA
 	}
 	text = {
 		trigger = {
 			check_variable = {
-				var = ZEX_MGY_VAR_Delta_Alignment
-				value = 2
-				compare = less_than_or_equals
+				ZEX_MGY_VAR_Delta_Alignment > 25
+			}
+			check_variable = {
+				ZEX_MGY_VAR_Delta_Alignment < 50
 			}
 		}
-		localization_key = ZEX_MGY_HARMONIST_Delta_TOOLTIP
+		localization_key = ZEX_MGY_LOWUNREST_DELTA
 	}
 	text = {
-		localization_key = ZEX_MGY_NEUTRAL_Delta_TOOLTIP
+		localization_key = ZEX_MGY_NOUNREST_DELTA
 	}
 }
 
@@ -229,52 +161,35 @@ defined_text = {
 	text = {
 		trigger = {
 			check_variable = {
-				var = ZEX_MGY_VAR_Manephis_Alignment
-				value = 8
-				compare = greater_than_or_equals
+				ZEX_MGY_VAR_Manephis_Alignment >75
 			}
 		}
-		localization_key = ZEX_MGY_COMMUNIST_Manephis
+		localization_key = ZEX_MGY_HIGHUNREST_MANEPHIS
 	}
 	text = {
 		trigger = {
 			check_variable = {
-				var = ZEX_MGY_VAR_Manephis_Alignment
-				value = 2
-				compare = less_than_or_equals
+				ZEX_MGY_VAR_Manephis_Alignment > 50
 			}
-		}
-		localization_key = ZEX_MGY_HARMONIST_Manephis
-	}
-	text = {
-		localization_key = ZEX_MGY_NEUTRAL_Manephis
-	}
-}
-
-defined_text = {
-	name = ZEX_MGY_GetManephisAlignment_TOOLTIP
-	text = {
-		trigger = {
 			check_variable = {
-				var = ZEX_MGY_VAR_Manephis_Alignment
-				value = 8
-				compare = greater_than_or_equals
+				ZEX_MGY_VAR_Manephis_Alignment <75
 			}
 		}
-		localization_key = ZEX_MGY_COMMUNIST_Manephis_TOOLTIP
+		localization_key = ZEX_MGY_MIDUNREST_MANEPHIS
 	}
 	text = {
 		trigger = {
 			check_variable = {
-				var = ZEX_MGY_VAR_Manephis_Alignment
-				value = 2
-				compare = less_than_or_equals
+				ZEX_MGY_VAR_Manephis_Alignment > 25
+			}
+			check_variable = {
+				ZEX_MGY_VAR_Manephis_Alignment < 50
 			}
 		}
-		localization_key = ZEX_MGY_HARMONIST_Manephis_TOOLTIP
+		localization_key = ZEX_MGY_LOWUNREST_MANEPHIS
 	}
 	text = {
-		localization_key = ZEX_MGY_NEUTRAL_Manephis_TOOLTIP
+		localization_key = ZEX_MGY_NOUNREST_MANEPHIS
 	}
 }
 
@@ -285,164 +200,74 @@ defined_text = {
 	text = {
 		trigger = {
 			check_variable = {
-				var = ZEX_MGY_VAR_Somnambula_Alignment
-				value = 8
-				compare = greater_than_or_equals
+				ZEX_MGY_VAR_Somnambula_Alignment >75
 			}
 		}
-		localization_key = ZEX_MGY_COMMUNIST_Somnambula
+		localization_key = ZEX_MGY_HIGHUNREST_SOMNAMBULA
 	}
 	text = {
 		trigger = {
 			check_variable = {
-				var = ZEX_MGY_VAR_Somnambula_Alignment
-				value = 2
-				compare = less_than_or_equals
+				ZEX_MGY_VAR_Somnambula_Alignment > 50
+			}
+			check_variable = {
+				ZEX_MGY_VAR_Somnambula_Alignment <75
 			}
 		}
-		localization_key = ZEX_MGY_HARMONIST_Somnambula
+		localization_key = ZEX_MGY_MIDUNREST_SOMNAMBULA
 	}
 	text = {
-		localization_key = ZEX_MGY_NEUTRAL_Somnambula
+		trigger = {
+			check_variable = {
+				ZEX_MGY_VAR_Somnambula_Alignment > 25
+			}
+			check_variable = {
+				ZEX_MGY_VAR_Somnambula_Alignment < 50
+			}
+		}
+		localization_key = ZEX_MGY_LOWUNREST_SOMNAMBULA
+	}
+	text = {
+		localization_key = ZEX_MGY_NOUNREST_SOMNAMBULA
 	}
 }
 
-defined_text = {
-	name = ZEX_MGY_GetSomnambulaAlignment_TOOLTIP
-	text = {
-		trigger = {
-			check_variable = {
-				var = ZEX_MGY_VAR_Somnambula_Alignment
-				value = 8
-				compare = greater_than_or_equals
-			}
-		}
-		localization_key = ZEX_MGY_COMMUNIST_Somnambula_TOOLTIP
-	}
-	text = {
-		trigger = {
-			check_variable = {
-				var = ZEX_MGY_VAR_Somnambula_Alignment
-				value = 2
-				compare = less_than_or_equals
-			}
-		}
-		localization_key = ZEX_MGY_HARMONIST_Somnambula_TOOLTIP
-	}
-	text = {
-		localization_key = ZEX_MGY_NEUTRAL_Somnambula_TOOLTIP
-	}
-}
-
-# Eastdesert
+# Desert
 
 defined_text = {
 	name = ZEX_MGY_GetEastdesertAlignment
 	text = {
 		trigger = {
 			check_variable = {
-				var = ZEX_MGY_VAR_Eastdesert_Alignment
-				value = 8
-				compare = greater_than_or_equals
+				ZEX_MGY_VAR_Eastdesert_Alignment >75
 			}
 		}
-		localization_key = ZEX_MGY_COMMUNIST_Eastdesert
+		localization_key = ZEX_MGY_HIGHUNREST_DESERT
 	}
 	text = {
 		trigger = {
 			check_variable = {
-				var = ZEX_MGY_VAR_Eastdesert_Alignment
-				value = 2
-				compare = less_than_or_equals
+				ZEX_MGY_VAR_Eastdesert_Alignment > 50
 			}
-		}
-		localization_key = ZEX_MGY_HARMONIST_Eastdesert
-	}
-	text = {
-		localization_key = ZEX_MGY_NEUTRAL_Eastdesert
-	}
-}
-
-defined_text = {
-	name = ZEX_MGY_GetEastdesertAlignment_TOOLTIP
-	text = {
-		trigger = {
 			check_variable = {
-				var = ZEX_MGY_VAR_Eastdesert_Alignment
-				value = 8
-				compare = greater_than_or_equals
+				ZEX_MGY_VAR_Eastdesert_Alignment <75
 			}
 		}
-		localization_key = ZEX_MGY_COMMUNIST_Eastdesert_TOOLTIP
+		localization_key = ZEX_MGY_MIDUNREST_DESERT
 	}
 	text = {
 		trigger = {
 			check_variable = {
-				var = ZEX_MGY_VAR_Eastdesert_Alignment
-				value = 2
-				compare = less_than_or_equals
+				ZEX_MGY_VAR_Eastdesert_Alignment > 25
 			}
-		}
-		localization_key = ZEX_MGY_HARMONIST_Eastdesert_TOOLTIP
-	}
-	text = {
-		localization_key = ZEX_MGY_NEUTRAL_Eastdesert_TOOLTIP
-	}
-}
-
-# UpperMaregypt
-
-defined_text = {
-	name = ZEX_MGY_GetUpperMaregyptAlignment
-	text = {
-		trigger = {
 			check_variable = {
-				var = ZEX_MGY_VAR_UpperMaregypt_Alignment
-				value = 8
-				compare = greater_than_or_equals
+				ZEX_MGY_VAR_Eastdesert_Alignment < 50
 			}
 		}
-		localization_key = ZEX_MGY_COMMUNIST_UpperMaregypt
+		localization_key = ZEX_MGY_LOWUNREST_DESERT
 	}
 	text = {
-		trigger = {
-			check_variable = {
-				var = ZEX_MGY_VAR_UpperMaregypt_Alignment
-				value = 2
-				compare = less_than_or_equals
-			}
-		}
-		localization_key = ZEX_MGY_HARMONIST_UpperMaregypt
-	}
-	text = {
-		localization_key = ZEX_MGY_NEUTRAL_UpperMaregypt
-	}
-}
-
-defined_text = {
-	name = ZEX_MGY_GetUpperMaregyptAlignment_TOOLTIP
-	text = {
-		trigger = {
-			check_variable = {
-				var = ZEX_MGY_VAR_UpperMaregypt_Alignment
-				value = 8
-				compare = greater_than_or_equals
-			}
-		}
-		localization_key = ZEX_MGY_COMMUNIST_UpperMaregypt_TOOLTIP
-	}
-	text = {
-		trigger = {
-			check_variable = {
-				var = ZEX_MGY_VAR_UpperMaregypt_Alignment
-				value = 2
-				compare = less_than_or_equals
-			}
-		}
-		localization_key = ZEX_MGY_HARMONIST_UpperMaregypt_TOOLTIP
-	}
-	text = {
-		localization_key = ZEX_MGY_NEUTRAL_UpperMaregypt_TOOLTIP
+		localization_key = ZEX_MGY_NOUNREST_DESERT
 	}
 }
 
@@ -453,51 +278,73 @@ defined_text = {
 	text = {
 		trigger = {
 			check_variable = {
-				var = ZEX_MGY_VAR_Zush_Alignment
-				value = 8
-				compare = greater_than_or_equals
+				ZEX_MGY_VAR_Zush_Alignment >75
 			}
 		}
-		localization_key = ZEX_MGY_COMMUNIST_Zush
+		localization_key = ZEX_MGY_HIGHUNREST_ZUSH
 	}
 	text = {
 		trigger = {
 			check_variable = {
-				var = ZEX_MGY_VAR_Zush_Alignment
-				value = 2
-				compare = less_than_or_equals
+				ZEX_MGY_VAR_Zush_Alignment > 50
+			}
+			check_variable = {
+				ZEX_MGY_VAR_Zush_Alignment <75
 			}
 		}
-		localization_key = ZEX_MGY_HARMONIST_Zush
+		localization_key = ZEX_MGY_MIDUNREST_ZUSH
 	}
 	text = {
-		localization_key = ZEX_MGY_NEUTRAL_Zush
+		trigger = {
+			check_variable = {
+				ZEX_MGY_VAR_Zush_Alignment > 25
+			}
+			check_variable = {
+				ZEX_MGY_VAR_Zush_Alignment < 50
+			}
+		}
+		localization_key = ZEX_MGY_LOWUNREST_ZUSH
+	}
+	text = {
+		localization_key = ZEX_MGY_NOUNREST_ZUSH
 	}
 }
 
+# Upper Maregypt
+
 defined_text = {
-	name = ZEX_MGY_GetZushAlignment_TOOLTIP
+	name = ZEX_MGY_GetUpperMaregyptAlignment
 	text = {
 		trigger = {
 			check_variable = {
-				var = ZEX_MGY_VAR_Zush_Alignment
-				value = 8
-				compare = greater_than_or_equals
+				ZEX_MGY_VAR_UpperMaregypt_Alignment >75
 			}
 		}
-		localization_key = ZEX_MGY_COMMUNIST_Zush_TOOLTIP
+		localization_key = ZEX_MGY_HIGHUNREST_UPPERMAREGYPT
 	}
 	text = {
 		trigger = {
 			check_variable = {
-				var = ZEX_MGY_VAR_Zush_Alignment
-				value = 2
-				compare = less_than_or_equals
+				ZEX_MGY_VAR_UpperMaregypt_Alignment > 50
+			}
+			check_variable = {
+				ZEX_MGY_VAR_UpperMaregypt_Alignment <75
 			}
 		}
-		localization_key = ZEX_MGY_HARMONIST_Zush_TOOLTIP
+		localization_key = ZEX_MGY_MIDUNREST_UPPERMAREGYPT
 	}
 	text = {
-		localization_key = ZEX_MGY_NEUTRAL_Zush_TOOLTIP
+		trigger = {
+			check_variable = {
+				ZEX_MGY_VAR_UpperMaregypt_Alignment > 25
+			}
+			check_variable = {
+				ZEX_MGY_VAR_UpperMaregypt_Alignment < 50
+			}
+		}
+		localization_key = ZEX_MGY_LOWUNREST_UPPERMAREGYPT
+	}
+	text = {
+		localization_key = ZEX_MGY_NOUNREST_UPPERMAREGYPT
 	}
 }

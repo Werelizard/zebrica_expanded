@@ -4,10 +4,6 @@ spriteTypes = {
 		textureFile = "gfx/interface/ideas/ZEX_Breadbasket.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_ZEX_Mare_Mule_Divide"
-		textureFile = "gfx/interface/ideas/ZEX_Mare_Mule_Divide.dds"
-	}
-	spriteType = {
 		name = "GFX_idea_ZEX_Unfinished_Constitution"
 		textureFile = "gfx/interface/ideas/ZEX_Unfinished_Constitution.dds"
 	}

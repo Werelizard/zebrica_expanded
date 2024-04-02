@@ -5,8 +5,8 @@
 ZEX_activate_republican_agitation = {
 	custom_effect_tooltip = ZEX_Activate_Agitation_tt
 	hidden_effect = {
-		set_country_flag = zex_has_republican_agitation
 		ZEX_MGY_SET_BASE_ALIGNMENTS = yes
+		set_country_flag = zex_has_republican_agitation
 	}
 }
 
@@ -21,39 +21,39 @@ ZEX_deactivate_republican_agitation = {
 ZEX_MGY_SET_BASE_ALIGNMENTS = {
 	set_variable = {
 		var = ZEX_MGY_VAR_Sineighi_Alignment
-		value = 5
+		value = 10
 	}
 	set_variable = {
 		var = ZEX_MGY_VAR_Kaneigh_Alignment
-		value = 3
+		value = 9
 	}
 	set_variable = {
 		var = ZEX_MGY_VAR_Maneisrata_Alignment
-		value = 5
+		value = 10
 	}
 	set_variable = {
 		var = ZEX_MGY_VAR_UpperMaregypt_Alignment
-		value = 3
+		value = 10
 	}
 	set_variable = {
 		var = ZEX_MGY_VAR_Delta_Alignment
-		value = 4
+		value = 25
 	}
 	set_variable = {
 		var = ZEX_MGY_VAR_Manephis_Alignment
-		value = 8
+		value = 27
 	}
 	set_variable = {
 		var = ZEX_MGY_VAR_Somnambula_Alignment
-		value = 0
+		value = 2
 	}
 	set_variable = {
 		var = ZEX_MGY_VAR_Eastdesert_Alignment
-		value = 1
+		value = 5
 	}
 	set_variable = {
 		var = ZEX_MGY_VAR_Zush_Alignment
-		value = 3
+		value = 7
 	}
 	ZEX_MGY_GET_AVERAGE_UNREST = yes
 }
@@ -103,148 +103,49 @@ ZEX_MGY_GET_AVERAGE_UNREST = {
 		var = ZEX_MGY_AVERAGE_UNREST
 		value = 9
 	}
-	#extra to get current stab
-	set_variable = {
-		var = ZEX_MGY_CURRENT_COMMUNIST_POP
-		value = party_popularity@communism
-	}
-}
-
-# Get stability to get the current increase factor
-
-ZEX_MGY_GET_UNREST_DECREASE_FACTOR = {
-	set_variable = {
-		var = ZEX_MGY_UNREST_FACTOR
-		value = stability
-	}
-	# divide_variable = {
-	# 	var = ZEX_MGY_UNREST_FACTOR
-	# 	value = 100
-	# }
-	add_to_variable = {
-		var = ZEX_MGY_UNREST_FACTOR
-		value = 1
-	}
-}
-
-ZEX_MGY_GET_UNREST_INCREASE_FACTOR = {
-	set_variable = {
-		var = ZEX_MGY_GET_STABILITY
-		value = stability
-	}
-	set_variable = {
-		var = ZEX_MGY_UNREST_FACTOR
-		value = 100
-	}
-	subtract_from_variable = {
-		var = ZEX_MGY_UNREST_FACTOR
-		value = ZEX_MGY_GET_STABILITY
-	}
-	divide_variable = {
-		var = ZEX_MGY_UNREST_FACTOR
-		value = 100
-	}
-	clamp_variable = {
-		var = ZEX_MGY_UNREST_FACTOR
-		min = 0
-		max = 1
-	}
-	add_to_variable = {
-		var = ZEX_MGY_UNREST_FACTOR
-		value = 1
-	}
-}
-
-ZEX_MGY_CALC_UNREST_TO_CLEAR = {
-	set_variable = {
-		var = ZEX_MGY_UNREST_DECREASE
-		value = 1
-	}
-	multiply_variable = {
-		var = ZEX_MGY_UNREST_DECREASE
-		value = ZEX_MGY_UNREST_FACTOR
-	}
-}
-
-ZEX_MGY_CALC_UNREST_TO_GROW = {
-	set_variable = {
-		var = ZEX_MGY_UNREST_DECREASE
-		value = 2
-	}
-	multiply_variable = {
-		var = ZEX_MGY_UNREST_DECREASE
-		value = ZEX_MGY_UNREST_FACTOR
-	}
-}
-
-#Lower / Increase unrest in provinces
-
-ZEX_MGY_DECREASE_UNREST_maneisrata = {
-	custom_effect_tooltip = decrease_maneisrata_unrest_tt
-	ZEX_MGY_GET_UNREST_DECREASE_FACTOR = yes
-	ZEX_MGY_CALC_UNREST_TO_CLEAR = yes
-	subtract_from_variable = {
-		var = ZEX_MGY_VAR_Maneisrata_Alignment
-		value = ZEX_MGY_UNREST_DECREASE
-	}
-	clamp_variable = {
-		var = ZEX_MGY_VAR_Maneisrata_Alignment
-		min = 0
-		max = 10
-	}
-}
-
-ZEX_MGY_INCREASE_UNREST_maneisrata = {
-	custom_effect_tooltip = increase_maneisrata_unrest_tt
-	ZEX_MGY_GET_UNREST_INCREASE_FACTOR = yes
-	ZEX_MGY_CALC_UNREST_TO_GROW = yes
-	subtract_from_variable = {
-		var = ZEX_MGY_VAR_Maneisrata_Alignment
-		value = ZEX_MGY_UNREST_DECREASE
-	}
-	clamp_variable = {
-		var = ZEX_MGY_VAR_Maneisrata_Alignment
-		min = 0
-		max = 10
-	}
-}
-
-# Button Clicking
-
-ZEX_MGY_REDUCE_UNREST_BUTTON_EFFECT = {
-	if = {
-		limit = {
-			MGY = {
-				has_political_power > 20
-			}
-		}
-		MGY = {
-			add_political_power = -20
-		}
-		ZEX_MGY_DECREASE_UNREST_maneisrata = yes
-	}
 }
 
 #debug effect
 ZEX_MGY_agitation_set_random_variable = {
-	random_list = {
-		33 = {
-			set_variable = {
-				var = ZEX_MGY_VAR_Zush_Alignment
-				value = 0
-			}
-		}
-		33 = {
-			set_variable = {
-				var = ZEX_MGY_VAR_Zush_Alignment
-				value = 5
-			}
-		}
-		33 = {
-			set_variable = {
-				var = ZEX_MGY_VAR_Zush_Alignment
-				value = 10
-			}
-		}
+	set_variable_to_random = {
+		var = ZEX_MGY_VAR_Maneisrata_Alignment
+		max = 100
+		integer = yes
 	}
+	set_variable_to_random = {
+		var = ZEX_MGY_VAR_Delta_Alignment
+		max = 100
+		integer = yes
+	}
+	set_variable_to_random = {
+		var = ZEX_MGY_VAR_Kaneigh_Alignment
+		max = 100
+		integer = yes
+	}
+	set_variable_to_random = {
+		var = ZEX_MGY_VAR_Somnambula_Alignment
+		max = 100
+		integer = yes
+	}
+	set_variable_to_random = {
+		var = ZEX_MGY_VAR_Sineighi_Alignment
+		max = 100
+		integer = yes
+	}
+	set_variable_to_random = {
+		var = ZEX_MGY_VAR_Zush_Alignment
+		max = 100
+		integer = yes
+	}
+	set_variable_to_random = {
+		var = ZEX_MGY_VAR_Eastdesert_Alignment
+		max = 100
+		integer = yes
+	}
+	set_variable_to_random = {
+		var = ZEX_MGY_VAR_UpperMaregypt_Alignment
+		max = 100
+		integer = yes
+	}
+	ZEX_MGY_GET_AVERAGE_UNREST = yes
 }

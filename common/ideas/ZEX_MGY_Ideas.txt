@@ -27,7 +27,7 @@ ideas = {
 		ZEX_MGY_Breadbasket = {
 			picture = ZEX_MGY_Breadbasket
 			modifier = {
-				consumer_goods_factor = -0.2
+				consumer_goods_factor = -0.1
 				monthly_population = 0.1
 				industrial_capacity_factory = -0.05
 			}
@@ -36,25 +36,9 @@ ideas = {
 			picture = ZEX_Unfinished_Constitution
 			modifier = {
 				stability_factor = -0.05
-				political_power_factor = -0.035
-				surrender_limit = -0.35
+				political_power_factor = -0.03
+				surrender_limit = -0.5
 				custom_modifier_tooltip =  ZEX_Unfinished_Constitution_TT
-			}
-		}
-		ZEX_Mare_Mule_Divide = {
-			picture = ZEX_Mare_Mule_Divide
-			modifier = {
-				recruitable_population_factor = -0.25
-				war_support_factor = -0.1
-				stability_factor = -0.25
-			}
-		}
-		ZEX_Supremacist_Officers = {
-			picture = ZEX_MGY_Supremacist_Officer
-			modifier = {
-				fascism_drift = 0.1
-				army_org_factor = -0.1
-				local_intel_to_enemies = 0.25
 			}
 		}
 	}

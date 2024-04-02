@@ -52,7 +52,9 @@ scripted_gui = {
 		}
 		
 		triggers = {
-			
+			ZEX_MGY_sineighi_icon_cick = {
+				
+			}
 		}
 
 		dynamic_lists = {
@@ -102,12 +104,6 @@ scripted_gui = {
 		properties = {
 			ZEX_MGY_uppermaregypt_icon = {
 				image = "[ZEX_MGY_GetUpperMaregyptAlignment]"
-			}
-		}
-
-		effects = {
-			ZEX_MGY_maneisrata_icon_click = {
-				ZEX_MGY_DECREASE_UNREST_maneisrata = yes
 			}
 		}
 

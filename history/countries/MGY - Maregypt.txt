@@ -79,8 +79,6 @@ add_ideas = {
 	ZEX_MGY_Equestrian_Debts
 	ZEX_MGY_Breadbasket
 	ZEX_Unfinished_Constitution
-	ZEX_Supremacist_Officers
-	ZEX_Mare_Mule_Divide
 	ZEX_MGY_Somnambula
 }
 
