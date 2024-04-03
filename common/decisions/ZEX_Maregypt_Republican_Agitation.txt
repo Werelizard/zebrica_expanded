@@ -1,11 +1,329 @@
 ZEX_MAREGYPT_REPUBLICAN_AGITATION_CATEGORY = {
-	ZEX_MGY_DEBUG_ASSIGN_STATE_VAL = {
-		icon = ZEX_GFX_royal_diet_promote_harmony_policy
-		visible = {
+	# ZEX_MGY_DEBUG_ASSIGN_STATE_VAL = {
+	# 	icon = ZEX_GFX_royal_diet_promote_harmony_policy
+	# 	visible = {
 			
+	# 	}
+	# 	complete_effect = {
+	# 		ZEX_MGY_agitation_set_random_variable = yes
+	# 	}
+	# }
+	#Global Decisions
+	ZEX_MGY_TIMER_UNREST_INCREASE = { #Gradual timer that increases agitation in provinces
+		priority = 1000
+		#icon = 
+		available = {
+			always = no
+		}
+		
+		is_good = yes
+		activation = {
+			has_country_flag = zex_has_republican_agitation
+		}
+		days_mission_timeout = 14
+		timeout_effect = {
+			if = {
+				limit = {
+					has_country_flag = ZEX_MGY_MASS_UNREST
+				}
+				custom_effect_tooltip = ZEX_MGY_INCREASE_UNREST_IN_THREE_RANDOM_PROVINCES
+			}
+			else_if = {
+				limit = {
+					has_country_flag = ZEX_MGY_BIG_UNREST
+				}
+				custom_effect_tooltip = ZEX_MGY_INCREASE_UNREST_IN_TWO_RANDOM_PROVINCES
+			}
+			else = {
+				custom_effect_tooltip = ZEX_MGY_INCREASE_UNREST_IN_ONE_RANDOM_PROVINCE
+			}
 		}
 		complete_effect = {
-			ZEX_MGY_agitation_set_random_variable = yes
+
+		}
+	}
+	ZEX_MGY_GLOBAL_LOWER_UNREST = { #Trade poltical power to stall, but it gets more expensive :)
+		priority = 900
+		#icon = 
+		visible = {
+				
+		}
+		cost = ZEX_MGY_LOWER_UNREST_GLOBAL_COST
+		days_remove = 35
+		complete_effect = {
+			custom_effect_tooltip = ZEX_MGY_delays_unrest_by_35_days
+			hidden_effect = {
+				add_days_mission_timeout = {
+					mission = ZEX_MGY_TIMER_UNREST_INCREASE
+					days = 35
+				}
+			}
+		}
+		modifier = {
+			political_power_factor = -0.3
+		}
+		remove_effect = {
+			custom_effect_tooltip = zex_mgy_increase_cost_by_10_tt
+		}
+	}
+	ZEX_MGY_SECRET_POLICE = { #Use command power and spies
+		priority = 899
+		#icon = 
+		visible = {
+				
+		}
+		available = {
+			has_intelligence_agency = yes
+			has_done_agency_upgrade = upgrade_anti_partisan
+		}
+
+		custom_cost_trigger = {
+			command_power > 20
+		}
+		custom_cost_text = ZEX_MGY_HAS_20_CP
+
+		days_remove = 35
+		modifier = {	
+			political_power_factor = -0.3
+		}
+		remove_effect = {
+			custom_effect_tooltip = ZEX_MGY_ALL_PROVINCES_LOSE_5_UNREST
+			hidden_effect = {
+				add_to_variable = {
+					var = ZEX_MGY_VAR_Zush_Alignment
+					value = -5
+				}
+				clamp_variable = {
+					var = ZEX_MGY_VAR_Zush_Alignment
+					min = 0
+				}
+				add_to_variable = {
+					var = ZEX_MGY_VAR_Eastdesert_Alignment
+					value = -5
+				}
+				clamp_variable = {
+					var = ZEX_MGY_VAR_Eastdesert_Alignment
+					min = 0
+				}
+				add_to_variable = {
+					var = ZEX_MGY_VAR_Kaneigh_Alignment
+					value = -5
+				}
+				clamp_variable = {
+					var = ZEX_MGY_VAR_Kaneigh_Alignment
+					min = 0
+				}
+				add_to_variable = {
+					var = ZEX_MGY_VAR_Delta_Alignment
+					value = -5
+				}
+				clamp_variable = {
+					var = ZEX_MGY_VAR_Delta_Alignment
+					min = 0
+				}
+				add_to_variable = {
+					var = ZEX_MGY_VAR_Sineighi_Alignment
+					value = -5
+				}
+				clamp_variable = {
+					var = ZEX_MGY_VAR_Sineighi_Alignment
+					min = 0
+				}
+				add_to_variable = {
+					var = ZEX_MGY_VAR_Somnambula_Alignment
+					value = -5
+				}
+				clamp_variable = {
+					var = ZEX_MGY_VAR_Somnambula_Alignment
+					min = 0
+				}
+				add_to_variable = {
+					var = ZEX_MGY_VAR_Maneisrata_Alignment
+					value = -5
+				}
+				clamp_variable = {
+					var = ZEX_MGY_VAR_Maneisrata_Alignment
+					min = 0
+				}
+				add_to_variable = {
+					var = ZEX_MGY_VAR_Manephis_Alignment
+					value = -5
+				}
+				clamp_variable = {
+					var = ZEX_MGY_VAR_Manephis_Alignment
+					min = 0
+				}
+				add_to_variable = {
+					var = ZEX_MGY_VAR_UpperMaregypt_Alignment
+					value = -5
+				}
+				clamp_variable = {
+					var = ZEX_MGY_VAR_UpperMaregypt_Alignment
+					min = 0
+				}
+			}
+		}
+	}
+	#Delta Decisions
+	ZEX_MGY_DELTA_ROUTE_SOCIALISTS = { #Trade stability for unrest reduction and reducting socialists
+		#icon = ZEX_GFX_royal_diet_promote_harmony_policy
+		visible = {
+			OR = {
+				has_country_flag = ZEX_MGY_Delta_FOCUSED
+				has_country_flag = ZEX_MGY_DELTA_ROUTE_SOCIALISTS_ONGOING
+			}
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ZEX_MGY_NOT_ALREADY_FOCUSING_ON_STATE
+				NOT = {
+					has_country_flag = ZEX_MGY_CURRENTLY_DEALING_WITH_PROVINCE
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = ZEX_MGY_PROVINCE_UNREST_BIGGER_ZERO
+				check_variable = {
+					ZEX_MGY_VAR_Delta_Alignment > 0
+				}
+			}
+			
+		}
+		
+		
+		cost = 25
+
+		days_remove = 14
+
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = ZEX_MGY_CURRENTLY_DEALING_WITH_PROVINCE
+				set_country_flag = ZEX_MGY_DELTA_ROUTE_SOCIALISTS_ONGOING
+			}
+		}
+		remove_effect = {
+			hidden_effect = {
+				clr_country_flag = ZEX_MGY_CURRENTLY_DEALING_WITH_PROVINCE
+				clr_country_flag = ZEX_MGY_DELTA_ROUTE_SOCIALISTS_ONGOING
+			}
+			hidden_effect = {
+				set_temp_variable = {
+					var = zex_mgy_current_communist
+					value = party_popularity@communism
+				}
+				multiply_temp_variable = {
+					var = zex_mgy_current_communist
+					value = 0.1
+				}
+				multiply_temp_variable = {
+					var = zex_mgy_current_communist
+					value = -1
+				}
+			}
+			custom_effect_tooltip = ZEX_MGY_REMOVE_STAB_PROPORTIONAL_TO_COMMUNISM
+			add_stability = zex_mgy_current_communist
+			if = {
+				limit = {
+					has_country_flag = ZEX_MGY_enhanced_ZEX_MGY_DELTA_ROUTE_SOCIALISTS
+				}
+				custom_effect_tooltip = ZEX_MGY_LOWER_UNREST_IN_PROVINCE_BY_10
+				hidden_effect = {
+					add_to_variable = {
+						var = ZEX_MGY_VAR_Delta_Alignment
+						value = -10
+					}
+					clamp_variable = {
+						var = ZEX_MGY_VAR_Delta_Alignment
+						min = 0
+						max = 100
+					}
+				}
+			}
+			else = {
+				custom_effect_tooltip = ZEX_MGY_LOWER_UNREST_IN_PROVINCE_BY_5
+				hidden_effect = {
+					add_to_variable = {
+						var = ZEX_MGY_VAR_Delta_Alignment
+						value = -7
+					}
+					clamp_variable = {
+						var = ZEX_MGY_VAR_Delta_Alignment
+						min = 0
+						max = 100
+					}
+				}
+			}
+		}
+	}
+	ZEX_MGY_DELTA_ADDITIONAL_HELP = { #Trade factories for unrest reduction
+		visible = {
+			OR = {
+				has_country_flag = ZEX_MGY_Delta_FOCUSED
+				has_country_flag = ZEX_MGY_DELTA_ADDITIONAL_HELP_ONGOING
+			}
+		}
+		available = {
+			num_of_available_civilian_factories > 1
+			custom_trigger_tooltip = {
+				tooltip = ZEX_MGY_NOT_ALREADY_FOCUSING_ON_STATE
+				NOT = {
+					has_country_flag = ZEX_MGY_CURRENTLY_DEALING_WITH_PROVINCE
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = ZEX_MGY_PROVINCE_UNREST_BIGGER_ZERO
+				check_variable = {
+					ZEX_MGY_VAR_Delta_Alignment > 0
+				}
+			}
+		}
+
+		cost = 25
+		days_remove = 14
+		modifier = {
+			civilian_factory_use = 1
+		}
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = ZEX_MGY_CURRENTLY_DEALING_WITH_PROVINCE
+				set_country_flag = ZEX_MGY_DELTA_ADDITIONAL_HELP_ONGOING
+			}
+		}
+		remove_effect = {
+			hidden_effect = {
+				clr_country_flag = ZEX_MGY_CURRENTLY_DEALING_WITH_PROVINCE
+				clr_country_flag = ZEX_MGY_DELTA_ADDITIONAL_HELP_ONGOING
+			}
+			if = {
+				limit = {
+					has_country_flag = ZEX_MGY_enhanced_ZEX_MGY_DELTA_ADDITIONAL_HELP
+				}
+				custom_effect_tooltip = ZEX_MGY_LOWER_UNREST_IN_PROVINCE_BY_10
+				hidden_effect = {
+					add_to_variable = {
+						var = ZEX_MGY_VAR_Delta_Alignment
+						value = -10
+					}
+					clamp_variable = {
+						var = ZEX_MGY_VAR_Delta_Alignment
+						min = 0
+						max = 100
+					}
+				}
+			}
+			else = {
+				custom_effect_tooltip = ZEX_MGY_LOWER_UNREST_IN_PROVINCE_BY_5
+				hidden_effect = {
+					add_to_variable = {
+						var = ZEX_MGY_VAR_Delta_Alignment
+						value = -5
+					}
+					clamp_variable = {
+						var = ZEX_MGY_VAR_Delta_Alignment
+						min = 0
+						max = 100
+					}
+				}
+			}
 		}
 	}
 }

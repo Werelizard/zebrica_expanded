@@ -2,7 +2,7 @@ guiTypes = {
 	containerWindowType = {
 		name = "ZEX_MGY_republican_agitation_ui_window"
 		position = { x = 0 y = 15 }
-		size = { width = 100% height= 340 }
+		size = { width = 100% height= 375 }
 
 		containerWindowType = {
 			name = "ZEX_MGY_republican_agitation_ui_window_inner"
@@ -100,6 +100,16 @@ guiTypes = {
 				format = left
 				maxHeight = 24
 				maxwidth = 170
+			}
+
+			instantTextBoxType = {
+				name ="ZEX_MGY_REBELLION_CURRENT_FOCUS"
+				position = { x = -45 y = 340 }
+				font = "hoi_20b"
+				text = "ZEX_MGY_UI_GET_CURRENT_FOCUSED_STATE"
+				format = centre
+				maxHeight = 24
+				maxwidth = 310
 			}
 		}
 	}

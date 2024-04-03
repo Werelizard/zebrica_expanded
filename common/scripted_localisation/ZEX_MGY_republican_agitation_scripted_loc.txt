@@ -1,3 +1,7 @@
+#######################################
+# Get unrest states for the provinces #
+#######################################
+
 #Sineighi
 
 defined_text = {
@@ -346,5 +350,70 @@ defined_text = {
 	}
 	text = {
 		localization_key = ZEX_MGY_NOUNREST_UPPERMAREGYPT
+	}
+}
+
+#############################################
+# Determine what state is currently focused #
+#############################################
+
+defined_text = {
+	name = ZEX_MGY_focused_state
+	text = {
+		trigger = {
+			has_country_flag = ZEX_MGY_Zush_FOCUSED
+		}
+		localization_key = "Zush"
+	}
+	text = {
+		trigger = {
+			has_country_flag = ZEX_MGY_UpperMaregypt_FOCUSED
+		}
+		localization_key = "Upper Maregypt"
+	}
+	text = {
+		trigger = {
+			has_country_flag = ZEX_MGY_Desert_FOCUSED
+		}
+		localization_key = "Eastern Desert"
+	}
+	text = {
+		trigger = {
+			has_country_flag = ZEX_MGY_Somnambula_FOCUSED
+		}
+		localization_key = "Somnambula"
+	}
+	text = {
+		trigger = {
+			has_country_flag = ZEX_MGY_Manephis_FOCUSED
+		}
+		localization_key = "Manephis"
+	}
+	text = {
+		trigger = {
+			has_country_flag = ZEX_MGY_Delta_FOCUSED
+		}
+		localization_key = "The Delta"
+	}
+	text = {
+		trigger = {
+			has_country_flag = ZEX_MGY_Kaneigh_FOCUSED
+		}
+		localization_key = "Kaneigh"
+	}
+	text = {
+		trigger = {
+			has_country_flag = ZEX_MGY_Maneisrata_FOCUSED
+		}
+		localization_key = "Maneisrata"
+	}
+	text = {
+		trigger = {
+			has_country_flag = ZEX_MGY_Sineighi_FOCUSED
+		}
+		localization_key = "Sineighi"
+	}
+	text = {
+		localization_key = "Click on a province to bring it into focus"
 	}
 }

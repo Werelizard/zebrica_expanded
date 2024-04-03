@@ -1,7 +1,9 @@
 ﻿l_english:
  ZEX_DEBUG_CATEGORY:0 "§YZebrica Expanded§!: Debug Decisions"
  ZEX_DEBUG_CATEGORY_desc:0 "Debug decisions for testing and setting up various mod-related features"
+ ZEX_Activate_Parliament_tt:0 "Enables the §YMaregyptian Royal Diet§!"
  ZEX_Activate_Parliament:0 "Enable the §YMaregyptian Royal Diet§!"
+ ZEX_Deactivate_Parliament_tt:0 "Disables the §YMaregyptian Royal Diet§!"
  ZEX_Deactivate_Parliament:0 "Disable the §YMaregyptian Royal Diet§!"
  ZEX_Activate_Agitation:0 "Enable the §YRepublican Agitation§!"
  ZEX_Deactivate_Agitation:0 "Disable the §YRepublican Agitation§!"
@@ -132,6 +134,19 @@
  ZEX_MGY_AVERAGE_UNREST_TOOLTIP:0 "Average Unrest £local_unrest : §Y[?ROOT.ZEX_MGY_AVERAGE_UNREST|1]§!"
  ZEX_MGY_STABILITY_TOOLTIP:0 "Stability £stability_texticon : §Y[?ROOT.stability|%]§!"
 
+ ZEX_MGY_UI_GET_CURRENT_FOCUSED_STATE:0 "[?Root.ZEX_MGY_focused_state]"
+
+ ZEX_MGY_Zush_FOCUSED_TEXT:0 "§YZush§!"
+ ZEX_MGY_UpperMaregypt_FOCUSED_TEXT:0 "§YUpper Maregypt§!"
+ ZEX_MGY_Desert_FOCUSED_TEXT:0 "§YThe Eastern Desert§!"
+ ZEX_MGY_Somnambula_FOCUSED_TEXT:0 "§YSomnambula§!" 
+ ZEX_MGY_Manephis_FOCUSED_TEXT:0 "§YManephis§!"
+ ZEX_MGY_Delta_FOCUSED_TEXT:0 "§YThe Delta§!"
+ ZEX_MGY_Kaneigh_FOCUSED_TEXT:0 "§YKaneigh§!"
+ ZEX_MGY_Maneisrata_FOCUSED_TEXT:0 "§YManeistrata§!"
+ ZEX_MGY_Sineighi_FOCUSED_TEXT:0 "§YSineighi§!"
+ ZEX_MGY_NONE_FOCUSED_TEXT:0 "Click on a province to bring it into focus"
+
  ZEX_MGY_NOUNREST_SINEIGHI:0 "ZEX_MGY_NOUNREST_SINEIGHI"
  ZEX_MGY_LOWUNREST_SINEIGHI:0 "ZEX_MGY_LOWUNREST_SINEIGHI"
  ZEX_MGY_MIDUNREST_SINEIGHI:0 "ZEX_MGY_MIDUNREST_SINEIGHI"
@@ -184,13 +199,14 @@
  ZEX_MGY_LOWUNREST_UPPERMAREGYPT:0 "ZEX_MGY_LOWUNREST_UPPERMAREGYPT"
  ZEX_MGY_MIDUNREST_UPPERMAREGYPT:0 "ZEX_MGY_MIDUNREST_UPPERMAREGYPT"
  ZEX_MGY_HIGHUNREST_UPPERMAREGYPT:0 "ZEX_MGY_HIGHUNREST_UPPERMAREGYPT"
- ZEX_MGY_UpperMaregypt_icon_tt:0 "The current local unrest in Upper Maregypt is £local_unrest §Y[?ROOT.ZEX_MGY_VAR_UpperMaregypt_Alignment]§!"
+ ZEX_MGY_UpperMaregypt_icon_tt:0 "The current local unrest in §YUpper Maregypt§! is £local_unrest §Y[?ROOT.ZEX_MGY_VAR_UpperMaregypt_Alignment]§!"
  
  #Republican agitation decisions
  ZEX_Activate_Agitation_tt:0 "Enables the §YRepublican Agitation§! mechanic."
- ZEX_deactivate_republican_agitation:0 "Disables the §YRepublican Agitation§! mechanic."
+ ZEX_Deactivate_Agitation_tt:0 "Disables the §YRepublican Agitation§! mechanic."
 
  ZEX_MAREGYPT_REPUBLICAN_AGITATION_CATEGORY:0 "Republican Agitation"
  ZEX_MAREGYPT_REPUBLICAN_AGITATION_CATEGORY_desc:0 "Socialists, communists and various radicals, spearheaded by the §tMR-SF§!, have begun organising - capitalising on the growing public discontent with our government - in the hopes of toppling the king.\n\nShould the £local_unrest §Yaverage unrest§! exceed our £stability_texticon stability, or should we enter a war with another country, §twe may very well end up in a civil war§!. Curbing the unrest throughout our provinces can be accomplished through §Ydecisions§!, §Yfocuses§! or §Yevents§!.\n\n"
 
+ #Republican Unrest Decisions
  
