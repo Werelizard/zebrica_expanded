@@ -1,0 +1,6 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_autonomy_zex_mgy_viceroyalty_icon"
+		textureFile = "gfx/interface/autonomy/autonomy_zex_mgy_viceroyalty_icon.dds"
+	}
+}

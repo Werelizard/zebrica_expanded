@@ -190,6 +190,13 @@ if = {
 # ZEBRICA EXPANDED #
 ####################
 
+#Puppet AOL
+
+set_autonomy = {
+	target = ALO
+	autonomy_state = autonomy_zex_mgy_viceroyalty
+}
+
 #Initiate republican agitators
 ZEX_activate_republican_agitation = yes
 

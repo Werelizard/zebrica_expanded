@@ -26,5 +26,5 @@
 
  ZEX_MGY_STAB_IMPACT_tt:0 "£stability_texticon  Stability: §t[?ROOT.ZEX_MGY_AVERAGE_UNREST_NEGATIVE|%2]§!"
  ZEX_MGY_POL_IMPACT_tt:0 "£pol_power  Daily Political Power Gain: §t[?ROOT.ZEX_MGY_AVERAGE_POLITICAL_IMPACT_UNREST|%2]§!"
- ZEX_MGY_PoliticalUnrest_DynamicModifier_Update_tt:0 "\nThis modifier will dynamically update to reflect the unrest throughout our provinces, and will be removed once we complete the §YPeace within the Realm§! focus."
+ ZEX_MGY_PoliticalUnrest_DynamicModifier_Update_tt:0 "\nThis modifier will dynamically update to reflect the unrest throughout our provinces, and will be removed once we complete the §YPeace within the Realm§! focus.\n\n§tWe will enter a civil war if we find ourselves at war with another country!§!"
  ZEX_Unfinished_Constitution_No_Ministers_or_Laws_tt:0 "£trigger_no Can not assign ministers"
