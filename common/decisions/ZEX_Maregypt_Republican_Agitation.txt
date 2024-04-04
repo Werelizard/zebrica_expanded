@@ -11,8 +11,9 @@ ZEX_MAREGYPT_REPUBLICAN_AGITATION_CATEGORY = {
 		}
 
 		available = {
-			NOT = {
-				has_idea = ZEX_Unfinished_Constitution
+			custom_trigger_tooltip = {
+				tooltip = ZEX_MGY_COMPLETE_FOCUS_UNREST
+				always = no
 			}
 		}
 
@@ -109,10 +110,10 @@ ZEX_MAREGYPT_REPUBLICAN_AGITATION_CATEGORY = {
 
 		custom_cost_trigger = {
 			check_variable = {
-				ZEX_MGY_LEGITIMACY > 15
+				ZEX_MGY_LEGITIMACY > 10
 			}
 		}
-		custom_cost_text = ZEX_MGY_LEGITIMACY_15
+		custom_cost_text = ZEX_MGY_LEGITIMACY_10
 
 		priority = 900
 
@@ -133,7 +134,7 @@ ZEX_MAREGYPT_REPUBLICAN_AGITATION_CATEGORY = {
 
 		complete_effect = {
 			custom_effect_tooltip = ZEX_MGY_Decrease_Unrest_Everywhere
-			custom_effect_tooltip = ZEX_MGY_COST_15_LEGITIMACY
+			custom_effect_tooltip = ZEX_MGY_COST_10_LEGITIMACY
 			hidden_effect = {
 				set_country_flag = ZEX_MGY_Royal_Concessions
 				add_to_variable = {

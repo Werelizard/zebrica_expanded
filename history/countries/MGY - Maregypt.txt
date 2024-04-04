@@ -73,18 +73,10 @@ add_ideas = {
 	lack_of_scientists2
 	outdated_industry
 	poverty
-	
-	#Ideas
-	
-	ZEX_Unfinished_Constitution
-	ZEX_MGY_Equestrian_Debts
-	ZEX_MGY_Breadbasket
-	# ZEX_MGY_REPUBLICAN_AGITATION
-	ZEX_MGY_Somnambula
 }
 
 set_convoys = 70
-set_stability = 0.5
+set_stability = 0.8
 set_war_support = 0.25
 if = {
 	limit = {
@@ -258,7 +250,16 @@ add_advisor_role = {
         idea_token = ZEX_MGY_Shaa_Doof
         traits = {
             ZEX_Old_Vizier
+			ZEX_Sha_Doof_Reformist
         }
 		can_be_fired = no
     }
+}
+
+add_ideas = {
+	ZEX_Unfinished_Constitution
+	ZEX_MGY_Equestrian_Debts
+	ZEX_MGY_Breadbasket
+	ZEX_MGY_REPUBLICAN_AGITATION_IDEA
+	ZEX_MGY_Somnambula
 }

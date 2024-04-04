@@ -9,10 +9,10 @@ ZEX_activate_republican_agitation = {
 			ZEX_MGY_LOWER_UNREST_GLOBAL_COST = 15
 		}
 		set_variable = {
-			ZEX_MGY_LEGITIMACY = 90
+			ZEX_MGY_LEGITIMACY = 95
 		}
 		set_variable = {
-			ZEX_MGY_UNREST_EFFECTS_INTERVALLS = 28
+			ZEX_MGY_UNREST_EFFECTS_INTERVALLS = 21
 		}
 		set_variable = {
 			ZEX_MGY_UNREST_EFFECTS_IMPACT = 5

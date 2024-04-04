@@ -192,10 +192,12 @@
  ZEX_Activate_Agitation_tt:0 "Enables the §YRepublican Agitation§! mechanic."
  ZEX_Deactivate_Agitation_tt:0 "Disables the §YRepublican Agitation§! mechanic."
 
- ZEX_MAREGYPT_REPUBLICAN_AGITATION_CATEGORY:0 "Republican Agitation"
- ZEX_MAREGYPT_REPUBLICAN_AGITATION_CATEGORY_desc:0 "Socialists, communists and various radicals, spearheaded by the §tMR-SF§!, have begun organising - capitalising on the growing public discontent with our government - in the hopes of toppling the kingdom. High levels of unrest will affect both our £stability_texticon  §Ystability§! and our £pol_power  §Ypolitical power§! gain.\n\nShould the £local_unrest §Yaverage unrest§! exceed our £ZEX_legitimacy  §Ylegitimacy§!, or should we enter into an armed conflict with another country, §twe may very well end up in a civil war§!. Curbing the unrest throughout our provinces can be accomplished through §Ydecisions§!, §Yfocuses§! or §Yevents§!. In the long term we will need to adress our governmental paralysis so that we may deal with this situation permanently.\n\nEvery [?ROOT.ZEX_MGY_UNREST_EFFECTS_INTERVALLS] days, agitators will instigate unrest in our provinces, leaving us with limited options to counter their moves."
+ ZEX_MAREGYPT_REPUBLICAN_AGITATION_CATEGORY:0 "Political Unrest"
+ ZEX_MAREGYPT_REPUBLICAN_AGITATION_CATEGORY_desc:0 "Socialists, communists and various radicals, spearheaded by the §tMR-SF§!, have begun organising - capitalising on the growing public discontent with our government - in the hopes of toppling the kingdom. High levels of unrest will affect both our £stability_texticon  §Ystability§! and our £pol_power  §Ypolitical power§! gain.\n\nShould the £local_unrest §Yaverage unrest§! exceed our £ZEX_legitimacy  §Ylegitimacy§! §twe may very well end up in a civil war§!. Curbing the unrest throughout our provinces can be accomplished through §Ydecisions§!, §Yfocuses§! or §Yevents§!. In the long term we will need to adress our governmental paralysis so that we may deal with this situation permanently.\n\nEvery [?ROOT.ZEX_MGY_UNREST_EFFECTS_INTERVALLS] days, agitators will instigate unrest in our provinces, leaving us with limited options to counter their moves."
 
  #Republican Unrest Decisions
+
+ ZEX_MGY_COMPLETE_FOCUS_UNREST:0 "Has completed the §YPeace within the Realm§! focus."
 
  ZEX_MGY_ONLY_ONCE_PER_MOVE:0 "Not: has already taken this decision this round"
  ZEX_MGY_TWO_ACTIONS_AT_MOST_PER_MOVE:0 "Not: has already taken two decisions this round"
@@ -213,9 +215,9 @@
 
  ZEX_MGY_unrest_political_concessions:0 "Political Concessions"
  ZEX_MGY_Decrease_Unrest_Everywhere:0 "Unrest will §Gdecrease§! across all our provinces by §Y2§!"
- ZEX_MGY_COST_15_LEGITIMACY:0 "It costs £ZEX_legitimacy §t15§! to take this decision"
- ZEX_MGY_LEGITIMACY_15:0 "£ZEX_legitimacy  §Y15§!"
- ZEX_MGY_LEGITIMACY_15_blocked:0 "£ZEX_legitimacy  §t15§!"
+ ZEX_MGY_COST_10_LEGITIMACY:0 "It costs £ZEX_legitimacy §t10§! to take this decision"
+ ZEX_MGY_LEGITIMACY_10:0 "£ZEX_legitimacy  §Y10§!"
+ ZEX_MGY_LEGITIMACY_10_blocked:0 "£ZEX_legitimacy  §t10§!"
 
  ZEX_MGY_Protect_Delta:0 "Intervene in the Delta"
  ZEX_MGY_Protect_Sineighi:0 "Intervene in Sineighi"

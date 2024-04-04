@@ -9,20 +9,22 @@
  #Advisors
  ZEX_MGY_Shaa_Doof:0 "Shaa Doof"
  ZEX_Old_Vizier:0 "Old Vizier"
+ ZEX_Sha_Doof_Reformist:0 "The Great Compromiser"
 
  #Ideas
  ZEX_MGY_Breadbasket:0 "Breadbasket of Zebrica"
  ZEX_Unfinished_Constitution:0 "Constitutional Crisis"
  ZEX_MGY_Equestrian_Debts:0 "Equestrian Debts Repayment"
  ZEX_MGY_Somnambula:0 "Somnambula"
- ZEX_MGY_REPUBLICAN_AGITATION:0 "Political Unrest"
+ ZEX_MGY_REPUBLICAN_AGITATION_IDEA:0 "Political Unrest"
 
- ZEX_MGY_Breadbasket_desc:0 "Maregypt is a country which has been defined by its agriculture. Food exports - such as wheat, olives, dates and raisins - for the backbone of the country's economy. This has naturally led to a heavy reliance on the agricultural sector, though problematic as that may be the royal household has always been able to judiciously put the profits from these sales to use."
- ZEX_Unfinished_Constitution_desc:0 "§tOur government is currently experiencing a total paralysis, leading to widespread unrest. Our country tethers on the edge of a civil war, with only the vague promises of reform keeping it at bay.§!\n--------------\nThe constitution of February 1005, which some refer to as 'the Vizier's decree', is the brain child of the Vizier Sha Doof. Rather than being a properly legally binding document however, it is more aptly described as a list of promises and guarantees to both the populace and the ever more radical republican movement. Without the royal diet to ratify its passage it has sat - an ineffective piece of paper - for almost two years now."
+ ZEX_MGY_Breadbasket_desc:0 "Maregypt is a country which has been defined by its agriculture. Food exports - such as wheat, olives, dates and raisins - form the backbone of the country's economy. This has naturally led to a heavy reliance on the agricultural sector at the expense of the development of industrial capabilities. Problematic as that may be the royal household has always been able to judiciously put the profits from the yearly harvest to use."
+ ZEX_Unfinished_Constitution_desc:0 "§tOur government is currently experiencing a total paralysis, greatly diminishing our ability to act.§!\n--------------\nThe constitution of February 1005, which some refer to as 'the Vizier's decree', is the brain child of the Vizier Sha Doof. Rather than being a properly legally binding document however, it is more aptly described as a list of promises and guarantees to both the populace and the ever more radical republican movement. Without the royal diet to ratify its passage it has sat - an ineffective piece of paper - for almost two years now."
  ZEX_MGY_Equestrian_Debts_desc:0 "In the wake of the Storm King's rise and fall, King Khefer negotiated an unpopular agreement with princess Celestia herself in order to salvage the country's economy. While this proved somewhat successfull in avoiding an immediate collapse of the Maregyptian economy, the payments for this assistance has now come due, driving the Maregyptian economy further towards bankruptcy."
  ZEX_MGY_Somnambula_desc:0 "While she has not taken an active role in the political scene, Somnambula remains a beacon for Harmonist policies throughout the country - increasingly acting as a rallying point for Harmony supporters as the King's popularity falters and wanes."
- ZEX_MGY_REPUBLICAN_AGITATION_desc:0 ""
+ ZEX_MGY_REPUBLICAN_AGITATION_IDEA_desc:0 "Our nation is currently experiencing widespread unrest, tethering on the edge of a civil war, with only the vague promises of reform keeping it at bay."
 
- ZEX_Unfinished_Constitution_TT:0 "§tOur government is currently experiencing a total paralysis, leading to widespread unrest. Our country tethers on the edge of a civil war, with only the vague promises of reform keeping it at bay.§!"
- ZEX_MGY_STAB_IMPACT_tt:0 "£stability_texticon  Stability: §t-[?MGY.ZEX_MGY_AVERAGE_UNREST|%%2]§!\n\n§gThis modifier will dynamically update as the unrest in our provinces changes.§!"
- 
+ ZEX_MGY_STAB_IMPACT_tt:0 "£stability_texticon  Stability: §t[?ROOT.ZEX_MGY_AVERAGE_UNREST_NEGATIVE|%2]§!"
+ ZEX_MGY_POL_IMPACT_tt:0 "£pol_power  Daily Political Power Gain: §t[?ROOT.ZEX_MGY_AVERAGE_POLITICAL_IMPACT_UNREST|%2]§!"
+ ZEX_MGY_PoliticalUnrest_DynamicModifier_Update_tt:0 "\nThis modifier will dynamically update to reflect the unrest throughout our provinces, and will be removed once we complete the §YPeace within the Realm§! focus."
+ ZEX_Unfinished_Constitution_No_Ministers_or_Laws_tt:0 "£trigger_no Can not assign ministers"

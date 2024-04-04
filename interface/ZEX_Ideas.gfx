@@ -16,7 +16,7 @@ spriteTypes = {
 		textureFile = "gfx/interface/ideas/ZEX_MGY_Equestrian_Debts.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_ZEX_MGY_Supremacist_Officer"
-		textureFile = "gfx/interface/ideas/ZEX_Disorganised_Military.dds"
+		name = "GFX_idea_ZEX_MGY_REPUBLICAN_AGITATION_IDEA"
+		textureFile = "gfx/interface/ideas/ZEX_MGY_REPUBLICAN_AGITATION_IDEA.dds"
 	}
 }
