@@ -1,329 +1,525 @@
 ZEX_MAREGYPT_REPUBLICAN_AGITATION_CATEGORY = {
-	# ZEX_MGY_DEBUG_ASSIGN_STATE_VAL = {
-	# 	icon = ZEX_GFX_royal_diet_promote_harmony_policy
-	# 	visible = {
-			
-	# 	}
-	# 	complete_effect = {
-	# 		ZEX_MGY_agitation_set_random_variable = yes
-	# 	}
-	# }
-	#Global Decisions
-	ZEX_MGY_TIMER_UNREST_INCREASE = { #Gradual timer that increases agitation in provinces
+	ZEX_MGY_UNREST_INTERVAL = { #Republican agitation - every set of days, unrest rises
+		days_mission_timeout = ZEX_MGY_UNREST_EFFECTS_INTERVALLS
+
 		priority = 1000
-		#icon = 
-		available = {
-			always = no
-		}
-		
-		is_good = yes
+
+		fixed_random_seed = no
+
 		activation = {
 			has_country_flag = zex_has_republican_agitation
 		}
-		days_mission_timeout = 14
+
+		available = {
+			NOT = {
+				has_idea = ZEX_Unfinished_Constitution
+			}
+		}
+
+		is_good = no
+
+		remove_effect = {
+			
+		}
+
 		timeout_effect = {
 			if = {
 				limit = {
-					has_country_flag = ZEX_MGY_MASS_UNREST
+					NOT = {
+						has_country_flag = ZEX_MGY_LIMIT_UNREST_TARGETS
+					}
 				}
-				custom_effect_tooltip = ZEX_MGY_INCREASE_UNREST_IN_THREE_RANDOM_PROVINCES
-			}
-			else_if = {
-				limit = {
-					has_country_flag = ZEX_MGY_BIG_UNREST
-				}
-				custom_effect_tooltip = ZEX_MGY_INCREASE_UNREST_IN_TWO_RANDOM_PROVINCES
+				custom_effect_tooltip = zex_mgy_unrest_increase_in_provinces_tt
 			}
 			else = {
-				custom_effect_tooltip = ZEX_MGY_INCREASE_UNREST_IN_ONE_RANDOM_PROVINCE
+				custom_effect_tooltip = zex_mgy_unrest_increase_in_province_tt
+			}
+			hidden_effect = {
+				ZEX_MGY_Increase_Unrest = yes
+
+				#Remove Protection Status
+				clr_country_flag = ZEX_MGY_Sineighi_protected_flag
+				clr_country_flag = ZEX_MGY_Maneisrata_protected_flag
+				clr_country_flag = ZEX_MGY_Kaneigh_protected_flag
+				clr_country_flag = ZEX_MGY_Delta_protected_flag
+				clr_country_flag = ZEX_MGY_Manephis_protected_flag
+				clr_country_flag = ZEX_MGY_Somnambula_protected_flag
+				clr_country_flag = ZEX_MGY_Desert_protected_flag
+				clr_country_flag = ZEX_MGY_Zush_protected_flag
+				clr_country_flag = ZEX_MGY_UpperMaregypt_protected_flag
+
+				#Reset decisions
+				set_variable = {
+					ZEX_MGY_Actions_Taken = 0
+				}
+				
+				clr_country_flag = ZEX_MGY_Royal_Concessions
+				clr_country_flag = ZEX_MGY_Increased_Legitimacy
+
+				activate_mission = ZEX_MGY_UNREST_INTERVAL
 			}
 		}
-		complete_effect = {
-
-		}
 	}
-	ZEX_MGY_GLOBAL_LOWER_UNREST = { #Trade poltical power to stall, but it gets more expensive :)
+
+	# Increase Legitimacy / Concessions
+
+	ZEX_MGY_unrest_increase_legitimacy = {
+		icon = ZEX_GFX_increase_legitimacy
+		cost = 50
+
 		priority = 900
-		#icon = 
-		visible = {
-				
-		}
-		cost = ZEX_MGY_LOWER_UNREST_GLOBAL_COST
-		days_remove = 35
-		complete_effect = {
-			custom_effect_tooltip = ZEX_MGY_delays_unrest_by_35_days
-			hidden_effect = {
-				add_days_mission_timeout = {
-					mission = ZEX_MGY_TIMER_UNREST_INCREASE
-					days = 35
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ZEX_MGY_ONLY_ONCE_PER_MOVE
+				NOT = {
+					has_country_flag = ZEX_MGY_Increased_Legitimacy
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = ZEX_MGY_TWO_ACTIONS_AT_MOST_PER_MOVE
+				check_variable = {
+					ZEX_MGY_Actions_Taken < 2
 				}
 			}
 		}
-		modifier = {
-			political_power_factor = -0.3
-		}
-		remove_effect = {
-			custom_effect_tooltip = zex_mgy_increase_cost_by_10_tt
+
+		complete_effect = {
+			custom_effect_tooltip = ZEX_MGY_INCREASE_LEGITIMACY_10
+			hidden_effect = {
+				set_country_flag = ZEX_MGY_Increased_Legitimacy
+				add_to_variable = {
+					var = ZEX_MGY_Actions_Taken
+					value = 1
+				}
+				add_to_variable = {
+					var = ZEX_MGY_LEGITIMACY
+					value = 10
+				}
+				clamp_variable = {
+					var = ZEX_MGY_LEGITIMACY
+					max = 100
+				}
+			}
 		}
 	}
-	ZEX_MGY_SECRET_POLICE = { #Use command power and spies
-		priority = 899
-		#icon = 
-		visible = {
-				
-		}
-		available = {
-			has_intelligence_agency = yes
-			has_done_agency_upgrade = upgrade_anti_partisan
-		}
+
+	ZEX_MGY_unrest_political_concessions = {
+		icon = ZEX_GFX_Royal_Concessions
 
 		custom_cost_trigger = {
-			command_power > 20
+			check_variable = {
+				ZEX_MGY_LEGITIMACY > 15
+			}
 		}
-		custom_cost_text = ZEX_MGY_HAS_20_CP
+		custom_cost_text = ZEX_MGY_LEGITIMACY_15
 
-		days_remove = 35
-		modifier = {	
-			political_power_factor = -0.3
+		priority = 900
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ZEX_MGY_ONLY_ONCE_PER_MOVE
+				NOT = {
+					has_country_flag = ZEX_MGY_Royal_Concessions
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = ZEX_MGY_TWO_ACTIONS_AT_MOST_PER_MOVE
+				check_variable = {
+					ZEX_MGY_Actions_Taken < 2
+				}
+			}
 		}
-		remove_effect = {
-			custom_effect_tooltip = ZEX_MGY_ALL_PROVINCES_LOSE_5_UNREST
+
+		complete_effect = {
+			custom_effect_tooltip = ZEX_MGY_Decrease_Unrest_Everywhere
+			custom_effect_tooltip = ZEX_MGY_COST_15_LEGITIMACY
 			hidden_effect = {
+				set_country_flag = ZEX_MGY_Royal_Concessions
 				add_to_variable = {
+					var = ZEX_MGY_Actions_Taken
+					value = 1
+				}
+				add_to_variable = {
+					var = ZEX_MGY_LEGITIMACY
+					value = -15
+				}
+				clamp_variable = {
+					var = ZEX_MGY_LEGITIMACY
+					min = 0
+				}
+				subtract_from_variable = {
 					var = ZEX_MGY_VAR_Zush_Alignment
-					value = -5
+					value = 3
 				}
 				clamp_variable = {
 					var = ZEX_MGY_VAR_Zush_Alignment
 					min = 0
 				}
-				add_to_variable = {
-					var = ZEX_MGY_VAR_Eastdesert_Alignment
-					value = -5
-				}
-				clamp_variable = {
-					var = ZEX_MGY_VAR_Eastdesert_Alignment
-					min = 0
-				}
-				add_to_variable = {
+				subtract_from_variable = {
 					var = ZEX_MGY_VAR_Kaneigh_Alignment
-					value = -5
+					value = 3
 				}
 				clamp_variable = {
 					var = ZEX_MGY_VAR_Kaneigh_Alignment
 					min = 0
 				}
-				add_to_variable = {
-					var = ZEX_MGY_VAR_Delta_Alignment
-					value = -5
-				}
-				clamp_variable = {
-					var = ZEX_MGY_VAR_Delta_Alignment
-					min = 0
-				}
-				add_to_variable = {
+				subtract_from_variable = {
 					var = ZEX_MGY_VAR_Sineighi_Alignment
-					value = -5
+					value = 3
 				}
 				clamp_variable = {
 					var = ZEX_MGY_VAR_Sineighi_Alignment
 					min = 0
 				}
-				add_to_variable = {
+				subtract_from_variable = {
 					var = ZEX_MGY_VAR_Somnambula_Alignment
-					value = -5
+					value = 3
 				}
 				clamp_variable = {
 					var = ZEX_MGY_VAR_Somnambula_Alignment
 					min = 0
 				}
-				add_to_variable = {
-					var = ZEX_MGY_VAR_Maneisrata_Alignment
-					value = -5
+				subtract_from_variable = {
+					var = ZEX_MGY_VAR_Delta_Alignment
+					value = 3
 				}
 				clamp_variable = {
-					var = ZEX_MGY_VAR_Maneisrata_Alignment
+					var = ZEX_MGY_VAR_Delta_Alignment
 					min = 0
 				}
-				add_to_variable = {
-					var = ZEX_MGY_VAR_Manephis_Alignment
-					value = -5
-				}
-				clamp_variable = {
-					var = ZEX_MGY_VAR_Manephis_Alignment
-					min = 0
-				}
-				add_to_variable = {
+				subtract_from_variable = {
 					var = ZEX_MGY_VAR_UpperMaregypt_Alignment
-					value = -5
+					value = 3
 				}
 				clamp_variable = {
 					var = ZEX_MGY_VAR_UpperMaregypt_Alignment
 					min = 0
+				}
+				subtract_from_variable = {
+					var = ZEX_MGY_VAR_Manephis_Alignment
+					value = 3
+				}
+				clamp_variable = {
+					var = ZEX_MGY_VAR_Manephis_Alignment
+					min = 0
+				}
+				subtract_from_variable = {
+					var = ZEX_MGY_VAR_UpperMaregypt_Alignment
+					value = 3
+				}
+				clamp_variable = {
+					var = ZEX_MGY_VAR_UpperMaregypt_Alignment
+					min = 0
+				}
+				subtract_from_variable = {
+					var = ZEX_MGY_VAR_Maneisrata_Alignment
+					value = 3
+				}
+				clamp_variable = {
+					var = ZEX_MGY_VAR_Maneisrata_Alignment
+					min = 0
+				}
+				ZEX_MGY_GET_AVERAGE_UNREST = yes
+			}
+		}
+	}
+
+	#Protection Decisions
+
+	ZEX_MGY_Protect_Delta = {
+		icon = GFX_decision_eng_trade_unions_demand
+		cost = ZEX_MGY_UNREST_COUNTER_COST
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ZEX_MGY_ONLY_ONCE_PER_MOVE
+				NOT = {
+					has_country_flag = ZEX_MGY_Delta_protected_flag
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = ZEX_MGY_TWO_ACTIONS_AT_MOST_PER_MOVE
+				check_variable = {
+					ZEX_MGY_Actions_Taken < 2
+				}
+			}
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = ZEX_MGY_PROVINCE_PROTECTED_THIS_ROUND_tt
+			hidden_effect = {
+				set_country_flag = ZEX_MGY_Delta_protected_flag
+				add_to_variable = {
+					var = ZEX_MGY_Actions_Taken
+					value = 1
 				}
 			}
 		}
 	}
-	#Delta Decisions
-	ZEX_MGY_DELTA_ROUTE_SOCIALISTS = { #Trade stability for unrest reduction and reducting socialists
-		#icon = ZEX_GFX_royal_diet_promote_harmony_policy
-		visible = {
-			OR = {
-				has_country_flag = ZEX_MGY_Delta_FOCUSED
-				has_country_flag = ZEX_MGY_DELTA_ROUTE_SOCIALISTS_ONGOING
-			}
-		}
+
+	ZEX_MGY_Protect_Sineighi = {
+		icon = GFX_decision_eng_trade_unions_demand
+		cost = ZEX_MGY_UNREST_COUNTER_COST
+
 		available = {
 			custom_trigger_tooltip = {
-				tooltip = ZEX_MGY_NOT_ALREADY_FOCUSING_ON_STATE
+				tooltip = ZEX_MGY_ONLY_ONCE_PER_MOVE
 				NOT = {
-					has_country_flag = ZEX_MGY_CURRENTLY_DEALING_WITH_PROVINCE
+					has_country_flag = ZEX_MGY_Sineighi_protected_flag
 				}
 			}
 			custom_trigger_tooltip = {
-				tooltip = ZEX_MGY_PROVINCE_UNREST_BIGGER_ZERO
+				tooltip = ZEX_MGY_TWO_ACTIONS_AT_MOST_PER_MOVE
 				check_variable = {
-					ZEX_MGY_VAR_Delta_Alignment > 0
+					ZEX_MGY_Actions_Taken < 2
 				}
 			}
-			
 		}
-		
-		
-		cost = 25
-
-		days_remove = 14
 
 		complete_effect = {
+			custom_effect_tooltip = ZEX_MGY_PROVINCE_PROTECTED_THIS_ROUND_tt
 			hidden_effect = {
-				set_country_flag = ZEX_MGY_CURRENTLY_DEALING_WITH_PROVINCE
-				set_country_flag = ZEX_MGY_DELTA_ROUTE_SOCIALISTS_ONGOING
-			}
-		}
-		remove_effect = {
-			hidden_effect = {
-				clr_country_flag = ZEX_MGY_CURRENTLY_DEALING_WITH_PROVINCE
-				clr_country_flag = ZEX_MGY_DELTA_ROUTE_SOCIALISTS_ONGOING
-			}
-			hidden_effect = {
-				set_temp_variable = {
-					var = zex_mgy_current_communist
-					value = party_popularity@communism
-				}
-				multiply_temp_variable = {
-					var = zex_mgy_current_communist
-					value = 0.1
-				}
-				multiply_temp_variable = {
-					var = zex_mgy_current_communist
-					value = -1
-				}
-			}
-			custom_effect_tooltip = ZEX_MGY_REMOVE_STAB_PROPORTIONAL_TO_COMMUNISM
-			add_stability = zex_mgy_current_communist
-			if = {
-				limit = {
-					has_country_flag = ZEX_MGY_enhanced_ZEX_MGY_DELTA_ROUTE_SOCIALISTS
-				}
-				custom_effect_tooltip = ZEX_MGY_LOWER_UNREST_IN_PROVINCE_BY_10
-				hidden_effect = {
-					add_to_variable = {
-						var = ZEX_MGY_VAR_Delta_Alignment
-						value = -10
-					}
-					clamp_variable = {
-						var = ZEX_MGY_VAR_Delta_Alignment
-						min = 0
-						max = 100
-					}
-				}
-			}
-			else = {
-				custom_effect_tooltip = ZEX_MGY_LOWER_UNREST_IN_PROVINCE_BY_5
-				hidden_effect = {
-					add_to_variable = {
-						var = ZEX_MGY_VAR_Delta_Alignment
-						value = -7
-					}
-					clamp_variable = {
-						var = ZEX_MGY_VAR_Delta_Alignment
-						min = 0
-						max = 100
-					}
+				set_country_flag = ZEX_MGY_Sineighi_protected_flag
+				add_to_variable = {
+					var = ZEX_MGY_Actions_Taken
+					value = 1
 				}
 			}
 		}
 	}
-	ZEX_MGY_DELTA_ADDITIONAL_HELP = { #Trade factories for unrest reduction
-		visible = {
-			OR = {
-				has_country_flag = ZEX_MGY_Delta_FOCUSED
-				has_country_flag = ZEX_MGY_DELTA_ADDITIONAL_HELP_ONGOING
-			}
-		}
+
+	ZEX_MGY_Protect_Kaneigh = {
+		icon = GFX_decision_eng_trade_unions_demand
+		cost = ZEX_MGY_UNREST_COUNTER_COST
+
 		available = {
-			num_of_available_civilian_factories > 1
 			custom_trigger_tooltip = {
-				tooltip = ZEX_MGY_NOT_ALREADY_FOCUSING_ON_STATE
+				tooltip = ZEX_MGY_ONLY_ONCE_PER_MOVE
 				NOT = {
-					has_country_flag = ZEX_MGY_CURRENTLY_DEALING_WITH_PROVINCE
+					has_country_flag = ZEX_MGY_Kaneigh_protected_flag
 				}
 			}
 			custom_trigger_tooltip = {
-				tooltip = ZEX_MGY_PROVINCE_UNREST_BIGGER_ZERO
+				tooltip = ZEX_MGY_TWO_ACTIONS_AT_MOST_PER_MOVE
 				check_variable = {
-					ZEX_MGY_VAR_Delta_Alignment > 0
+					ZEX_MGY_Actions_Taken < 2
 				}
 			}
 		}
 
-		cost = 25
-		days_remove = 14
-		modifier = {
-			civilian_factory_use = 1
-		}
 		complete_effect = {
+			custom_effect_tooltip = ZEX_MGY_PROVINCE_PROTECTED_THIS_ROUND_tt
 			hidden_effect = {
-				set_country_flag = ZEX_MGY_CURRENTLY_DEALING_WITH_PROVINCE
-				set_country_flag = ZEX_MGY_DELTA_ADDITIONAL_HELP_ONGOING
+				set_country_flag = ZEX_MGY_Kaneigh_protected_flag
+				add_to_variable = {
+					var = ZEX_MGY_Actions_Taken
+					value = 1
+				}
 			}
 		}
-		remove_effect = {
+	}
+
+	ZEX_MGY_Protect_Manephis = {
+		icon = GFX_decision_eng_trade_unions_demand
+		cost = ZEX_MGY_UNREST_COUNTER_COST
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ZEX_MGY_ONLY_ONCE_PER_MOVE
+				NOT = {
+					has_country_flag = ZEX_MGY_Manephis_protected_flag
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = ZEX_MGY_TWO_ACTIONS_AT_MOST_PER_MOVE
+				check_variable = {
+					ZEX_MGY_Actions_Taken < 2
+				}
+			}
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = ZEX_MGY_PROVINCE_PROTECTED_THIS_ROUND_tt
 			hidden_effect = {
-				clr_country_flag = ZEX_MGY_CURRENTLY_DEALING_WITH_PROVINCE
-				clr_country_flag = ZEX_MGY_DELTA_ADDITIONAL_HELP_ONGOING
-			}
-			if = {
-				limit = {
-					has_country_flag = ZEX_MGY_enhanced_ZEX_MGY_DELTA_ADDITIONAL_HELP
-				}
-				custom_effect_tooltip = ZEX_MGY_LOWER_UNREST_IN_PROVINCE_BY_10
-				hidden_effect = {
-					add_to_variable = {
-						var = ZEX_MGY_VAR_Delta_Alignment
-						value = -10
-					}
-					clamp_variable = {
-						var = ZEX_MGY_VAR_Delta_Alignment
-						min = 0
-						max = 100
-					}
+				set_country_flag = ZEX_MGY_Manephis_protected_flag
+				add_to_variable = {
+					var = ZEX_MGY_Actions_Taken
+					value = 1
 				}
 			}
-			else = {
-				custom_effect_tooltip = ZEX_MGY_LOWER_UNREST_IN_PROVINCE_BY_5
-				hidden_effect = {
-					add_to_variable = {
-						var = ZEX_MGY_VAR_Delta_Alignment
-						value = -5
-					}
-					clamp_variable = {
-						var = ZEX_MGY_VAR_Delta_Alignment
-						min = 0
-						max = 100
-					}
+		}
+	}
+
+	ZEX_MGY_Protect_Maneisrata = {
+		icon = GFX_decision_eng_trade_unions_demand
+		cost = ZEX_MGY_UNREST_COUNTER_COST
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ZEX_MGY_ONLY_ONCE_PER_MOVE
+				NOT = {
+					has_country_flag = ZEX_MGY_Maneisrata_protected_flag
 				}
 			}
+			custom_trigger_tooltip = {
+				tooltip = ZEX_MGY_TWO_ACTIONS_AT_MOST_PER_MOVE
+				check_variable = {
+					ZEX_MGY_Actions_Taken < 2
+				}
+			}
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = ZEX_MGY_PROVINCE_PROTECTED_THIS_ROUND_tt
+			hidden_effect = {
+				set_country_flag = ZEX_MGY_Maneisrata_protected_flag
+				add_to_variable = {
+					var = ZEX_MGY_Actions_Taken
+					value = 1
+				}
+			}
+		}
+	}
+
+	ZEX_MGY_Protect_Somnambula = {
+		icon = GFX_decision_eng_trade_unions_demand
+		cost = ZEX_MGY_UNREST_COUNTER_COST
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ZEX_MGY_ONLY_ONCE_PER_MOVE
+				NOT = {
+					has_country_flag = ZEX_MGY_Somnambula_protected_flag
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = ZEX_MGY_TWO_ACTIONS_AT_MOST_PER_MOVE
+				check_variable = {
+					ZEX_MGY_Actions_Taken < 2
+				}
+			}
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = ZEX_MGY_PROVINCE_PROTECTED_THIS_ROUND_tt
+			hidden_effect = {
+				set_country_flag = ZEX_MGY_Somnambula_protected_flag
+				add_to_variable = {
+					var = ZEX_MGY_Actions_Taken
+					value = 1
+				}
+			}
+		}
+	}
+
+	ZEX_MGY_Protect_Desert = {
+		icon = GFX_decision_eng_trade_unions_demand
+		cost = ZEX_MGY_UNREST_COUNTER_COST
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ZEX_MGY_ONLY_ONCE_PER_MOVE
+				NOT = {
+					has_country_flag = ZEX_MGY_Desert_protected_flag
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = ZEX_MGY_TWO_ACTIONS_AT_MOST_PER_MOVE
+				check_variable = {
+					ZEX_MGY_Actions_Taken < 2
+				}
+			}
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = ZEX_MGY_PROVINCE_PROTECTED_THIS_ROUND_tt
+			hidden_effect = {
+				set_country_flag = ZEX_MGY_Desert_protected_flag
+				add_to_variable = {
+					var = ZEX_MGY_Actions_Taken
+					value = 1
+				}
+			}
+		}
+	}
+
+	ZEX_MGY_Protect_UpperMaregypt = {
+		icon = GFX_decision_eng_trade_unions_demand
+		cost = ZEX_MGY_UNREST_COUNTER_COST
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ZEX_MGY_ONLY_ONCE_PER_MOVE
+				NOT = {
+					has_country_flag = ZEX_MGY_UpperMaregypt_protected_flag
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = ZEX_MGY_TWO_ACTIONS_AT_MOST_PER_MOVE
+				check_variable = {
+					ZEX_MGY_Actions_Taken < 2
+				}
+			}
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = ZEX_MGY_PROVINCE_PROTECTED_THIS_ROUND_tt
+			hidden_effect = {
+				set_country_flag = ZEX_MGY_UpperMaregypt_protected_flag
+				add_to_variable = {
+					var = ZEX_MGY_Actions_Taken
+					value = 1
+				}
+			}
+		}
+	}
+
+	ZEX_MGY_Protect_Zush = {
+		icon = GFX_decision_eng_trade_unions_demand
+		cost = ZEX_MGY_UNREST_COUNTER_COST
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ZEX_MGY_ONLY_ONCE_PER_MOVE
+				NOT = {
+					has_country_flag = ZEX_MGY_Zush_protected_flag
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = ZEX_MGY_TWO_ACTIONS_AT_MOST_PER_MOVE
+				check_variable = {
+					ZEX_MGY_Actions_Taken < 2
+				}
+			}
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = ZEX_MGY_PROVINCE_PROTECTED_THIS_ROUND_tt
+			hidden_effect = {
+				set_country_flag = ZEX_MGY_Zush_protected_flag
+				add_to_variable = {
+					var = ZEX_MGY_Actions_Taken
+					value = 1
+				}
+			}
+		}
+	}
+
+	#Debug
+	ZEX_MGY_DEBUG_Toggle_Sineighi_State = {
+		visible = {
+			is_debug = yes
+		}
+
+		days_remove = 3
+
+		complete_effect = {
+			set_country_flag = ZEX_MGY_Sineighi_protected_flag
+		}
+	
+		remove_effect = {
+			clr_country_flag = ZEX_MGY_Sineighi_protected_flag
 		}
 	}
 }

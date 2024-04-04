@@ -132,20 +132,7 @@
  #Republican agitation GUI
 
  ZEX_MGY_AVERAGE_UNREST_TOOLTIP:0 "Average Unrest £local_unrest : §Y[?ROOT.ZEX_MGY_AVERAGE_UNREST|1]§!"
- ZEX_MGY_STABILITY_TOOLTIP:0 "Stability £stability_texticon : §Y[?ROOT.stability|%]§!"
-
- ZEX_MGY_UI_GET_CURRENT_FOCUSED_STATE:0 "[?Root.ZEX_MGY_focused_state]"
-
- ZEX_MGY_Zush_FOCUSED_TEXT:0 "§YZush§!"
- ZEX_MGY_UpperMaregypt_FOCUSED_TEXT:0 "§YUpper Maregypt§!"
- ZEX_MGY_Desert_FOCUSED_TEXT:0 "§YThe Eastern Desert§!"
- ZEX_MGY_Somnambula_FOCUSED_TEXT:0 "§YSomnambula§!" 
- ZEX_MGY_Manephis_FOCUSED_TEXT:0 "§YManephis§!"
- ZEX_MGY_Delta_FOCUSED_TEXT:0 "§YThe Delta§!"
- ZEX_MGY_Kaneigh_FOCUSED_TEXT:0 "§YKaneigh§!"
- ZEX_MGY_Maneisrata_FOCUSED_TEXT:0 "§YManeistrata§!"
- ZEX_MGY_Sineighi_FOCUSED_TEXT:0 "§YSineighi§!"
- ZEX_MGY_NONE_FOCUSED_TEXT:0 "Click on a province to bring it into focus"
+ ZEX_MGY_STABILITY_TOOLTIP:0 "Legitimacy £ZEX_legitimacy : §Y[?ROOT.ZEX_MGY_LEGITIMACY|1]§!"
 
  ZEX_MGY_NOUNREST_SINEIGHI:0 "ZEX_MGY_NOUNREST_SINEIGHI"
  ZEX_MGY_LOWUNREST_SINEIGHI:0 "ZEX_MGY_LOWUNREST_SINEIGHI"
@@ -200,13 +187,88 @@
  ZEX_MGY_MIDUNREST_UPPERMAREGYPT:0 "ZEX_MGY_MIDUNREST_UPPERMAREGYPT"
  ZEX_MGY_HIGHUNREST_UPPERMAREGYPT:0 "ZEX_MGY_HIGHUNREST_UPPERMAREGYPT"
  ZEX_MGY_UpperMaregypt_icon_tt:0 "The current local unrest in §YUpper Maregypt§! is £local_unrest §Y[?ROOT.ZEX_MGY_VAR_UpperMaregypt_Alignment]§!"
- 
+
  #Republican agitation decisions
  ZEX_Activate_Agitation_tt:0 "Enables the §YRepublican Agitation§! mechanic."
  ZEX_Deactivate_Agitation_tt:0 "Disables the §YRepublican Agitation§! mechanic."
 
  ZEX_MAREGYPT_REPUBLICAN_AGITATION_CATEGORY:0 "Republican Agitation"
- ZEX_MAREGYPT_REPUBLICAN_AGITATION_CATEGORY_desc:0 "Socialists, communists and various radicals, spearheaded by the §tMR-SF§!, have begun organising - capitalising on the growing public discontent with our government - in the hopes of toppling the king.\n\nShould the £local_unrest §Yaverage unrest§! exceed our £stability_texticon stability, or should we enter a war with another country, §twe may very well end up in a civil war§!. Curbing the unrest throughout our provinces can be accomplished through §Ydecisions§!, §Yfocuses§! or §Yevents§!.\n\n"
+ ZEX_MAREGYPT_REPUBLICAN_AGITATION_CATEGORY_desc:0 "Socialists, communists and various radicals, spearheaded by the §tMR-SF§!, have begun organising - capitalising on the growing public discontent with our government - in the hopes of toppling the kingdom. High levels of unrest will affect both our £stability_texticon  §Ystability§! and our £pol_power  §Ypolitical power§! gain.\n\nShould the £local_unrest §Yaverage unrest§! exceed our £ZEX_legitimacy  §Ylegitimacy§!, or should we enter into an armed conflict with another country, §twe may very well end up in a civil war§!. Curbing the unrest throughout our provinces can be accomplished through §Ydecisions§!, §Yfocuses§! or §Yevents§!. In the long term we will need to adress our governmental paralysis so that we may deal with this situation permanently.\n\nEvery [?ROOT.ZEX_MGY_UNREST_EFFECTS_INTERVALLS] days, agitators will instigate unrest in our provinces, leaving us with limited options to counter their moves."
 
  #Republican Unrest Decisions
+
+ ZEX_MGY_ONLY_ONCE_PER_MOVE:0 "Not: has already taken this decision this round"
+ ZEX_MGY_TWO_ACTIONS_AT_MOST_PER_MOVE:0 "Not: has already taken two decisions this round"
+ ZEX_MGY_PROVINCE_PROTECTED_THIS_ROUND_tt:0 "§4This province will be immune to agitators this round§!"
+
+ zex_mgy_unrest_increase_in_provinces_tt:0 "Up to two provinces will see their unrest increase by §t[?ROOT.ZEX_MGY_UNREST_EFFECTS_IMPACT]§!"
+ zex_mgy_unrest_increase_in_province_tt:0 "One province will have its unrest increase by §t[?ROOT.ZEX_MGY_UNREST_EFFECTS_IMPACT]§!"
+
+ ZEX_MGY_UNREST_INTERVAL:0 "§RThe agitators make their move...§!"
+ ZEX_MGY_UNREST_INTERVAL_desc:0 "§gEvery round ([?ROOT.ZEX_MGY_UNREST_EFFECTS_INTERVALLS] days) republicans, socialists and other dissidents will attempt to increase the unrest throughout our country."
+
+ ZEX_MGY_unrest_increase_legitimacy:0 "Royalist Propaganda"
+ ZEX_MGY_Increased_Legitimacy:0 "Increase our £ZEX_legitimacy §Ylegitimacy§! by §Y10§!"
+ ZEX_MGY_INCREASE_LEGITIMACY_10:0 "£ZEX_legitimacy Legitimacy: §G+10.0§!"
+
+ ZEX_MGY_unrest_political_concessions:0 "Political Concessions"
+ ZEX_MGY_Decrease_Unrest_Everywhere:0 "Unrest will §Gdecrease§! across all our provinces by §Y2§!"
+ ZEX_MGY_COST_15_LEGITIMACY:0 "It costs £ZEX_legitimacy §t15§! to take this decision"
+ ZEX_MGY_LEGITIMACY_15:0 "£ZEX_legitimacy  §Y15§!"
+ ZEX_MGY_LEGITIMACY_15_blocked:0 "£ZEX_legitimacy  §t15§!"
+
+ ZEX_MGY_Protect_Delta:0 "Intervene in the Delta"
+ ZEX_MGY_Protect_Sineighi:0 "Intervene in Sineighi"
+ ZEX_MGY_Protect_Kaneigh:0 "Intervene in Kaneigh"
+ ZEX_MGY_Protect_Manephis:0 "Intervene in Manephis"
+ ZEX_MGY_Protect_Maneisrata:0 "Intervene in Maneisrata"
+ ZEX_MGY_Protect_Somnambula:0 "Intervene in Somnambula"
+ ZEX_MGY_Protect_Desert:0 "Intervene in the Eastern Desert"
+ ZEX_MGY_Protect_UpperMaregypt:0 "Intervene in Upper Maregypt"
+ ZEX_MGY_Protect_Zush:0 "Intervene in Zush"
+
+ #Protected Variant of the Provinces for mini game
+ ZEX_MGY_NOUNREST_SINEIGHI_Protected:0 "ZEX_MGY_NOUNREST_SINEIGHI_Protected"
+ ZEX_MGY_LOWUNREST_SINEIGHI_Protected:0 "ZEX_MGY_LOWUNREST_SINEIGHI_Protected"
+ ZEX_MGY_MIDUNREST_SINEIGHI_Protected:0 "ZEX_MGY_MIDUNREST_SINEIGHI_Protected"
+ ZEX_MGY_HIGHUNREST_SINEIGHI_Protected:0 "ZEX_MGY_HIGHUNREST_SINEIGHI_Protected"
+
+ ZEX_MGY_NOUNREST_MANEISRATA_Protected:0 "ZEX_MGY_NOUNREST_MANEISRATA_Protected"
+ ZEX_MGY_LOWUNREST_MANEISRATA_Protected:0 "ZEX_MGY_LOWUNREST_MANEISRATA_Protected"
+ ZEX_MGY_MIDUNREST_MANEISRATA_Protected:0 "ZEX_MGY_MIDUNREST_MANEISRATA_Protected"
+ ZEX_MGY_HIGHUNREST_MANEISRATA_Protected:0 "ZEX_MGY_HIGHUNREST_MANEISRATA_Protected"
+
+ ZEX_MGY_NOUNREST_KANEIGH_Protected:0 "ZEX_MGY_NOUNREST_KANEIGH_Protected"
+ ZEX_MGY_LOWUNREST_KANEIGH_Protected:0 "ZEX_MGY_LOWUNREST_KANEIGH_Protected"
+ ZEX_MGY_MIDUNREST_KANEIGH_Protected:0 "ZEX_MGY_MIDUNREST_KANEIGH_Protected"
+ ZEX_MGY_HIGHUNREST_KANEIGH_Protected:0 "ZEX_MGY_HIGHUNREST_KANEIGH_Protected"
  
+ ZEX_MGY_NOUNREST_DELTA_Protected:0 "ZEX_MGY_NOUNREST_DELTA_Protected"
+ ZEX_MGY_LOWUNREST_DELTA_Protected:0 "ZEX_MGY_LOWUNREST_DELTA_Protected"
+ ZEX_MGY_MIDUNREST_DELTA_Protected:0 "ZEX_MGY_MIDUNREST_DELTA_Protected"
+ ZEX_MGY_HIGHUNREST_DELTA_Protected:0 "ZEX_MGY_HIGHUNREST_DELTA_Protected"
+
+ ZEX_MGY_NOUNREST_MANEPHIS_Protected:0 "ZEX_MGY_NOUNREST_MANEPHIS_Protected"
+ ZEX_MGY_LOWUNREST_MANEPHIS_Protected:0 "ZEX_MGY_LOWUNREST_MANEPHIS_Protected"
+ ZEX_MGY_MIDUNREST_MANEPHIS_Protected:0 "ZEX_MGY_MIDUNREST_MANEPHIS_Protected"
+ ZEX_MGY_HIGHUNREST_MANEPHIS_Protected:0 "ZEX_MGY_HIGHUNREST_MANEPHIS_Protected"
+
+ ZEX_MGY_NOUNREST_SOMNAMBULA_Protected:0 "ZEX_MGY_NOUNREST_SOMNAMBULA_Protected"
+ ZEX_MGY_LOWUNREST_SOMNAMBULA_Protected:0 "ZEX_MGY_LOWUNREST_SOMNAMBULA_Protected"
+ ZEX_MGY_MIDUNREST_SOMNAMBULA_Protected:0 "ZEX_MGY_MIDUNREST_SOMNAMBULA_Protected"
+ ZEX_MGY_HIGHUNREST_SOMNAMBULA_Protected:0 "ZEX_MGY_HIGHUNREST_SOMNAMBULA_Protected"
+
+ ZEX_MGY_NOUNREST_DESERT_Protected:0 "ZEX_MGY_NOUNREST_DESERT_Protected"
+ ZEX_MGY_LOWUNREST_DESERT_Protected:0 "ZEX_MGY_LOWUNREST_DESERT_Protected"
+ ZEX_MGY_MIDUNREST_DESERT_Protected:0 "ZEX_MGY_MIDUNREST_DESERT_Protected"
+ ZEX_MGY_HIGHUNREST_DESERT_Protected:0 "ZEX_MGY_HIGHUNREST_DESERT_Protected"
+
+ ZEX_MGY_NOUNREST_ZUSH_Protected:0 "ZEX_MGY_NOUNREST_ZUSH_Protected"
+ ZEX_MGY_LOWUNREST_ZUSH_Protected:0 "ZEX_MGY_LOWUNREST_ZUSH_Protected"
+ ZEX_MGY_MIDUNREST_ZUSH_Protected:0 "ZEX_MGY_MIDUNREST_ZUSH_Protected"
+ ZEX_MGY_HIGHUNREST_ZUSH_Protected:0 "ZEX_MGY_HIGHUNREST_ZUSH_Protected"
+
+ ZEX_MGY_NOUNREST_UPPERMAREGYPT_Protected:0 "ZEX_MGY_NOUNREST_UPPERMAREGYPT_Protected"
+ ZEX_MGY_LOWUNREST_UPPERMAREGYPT_Protected:0 "ZEX_MGY_LOWUNREST_UPPERMAREGYPT_Protected"
+ ZEX_MGY_MIDUNREST_UPPERMAREGYPT_Protected:0 "ZEX_MGY_MIDUNREST_UPPERMAREGYPT_Protected"
+ ZEX_MGY_HIGHUNREST_UPPERMAREGYPT_Protected:0 "ZEX_MGY_HIGHUNREST_UPPERMAREGYPT_Protected"

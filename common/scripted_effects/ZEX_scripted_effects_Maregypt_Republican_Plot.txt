@@ -8,8 +8,39 @@ ZEX_activate_republican_agitation = {
 		set_variable = {
 			ZEX_MGY_LOWER_UNREST_GLOBAL_COST = 15
 		}
+		set_variable = {
+			ZEX_MGY_LEGITIMACY = 90
+		}
+		set_variable = {
+			ZEX_MGY_UNREST_EFFECTS_INTERVALLS = 28
+		}
+		set_variable = {
+			ZEX_MGY_UNREST_EFFECTS_IMPACT = 5
+		}
+		set_variable = {
+			ZEX_MGY_UNREST_COUNTER_COST = 20
+		}
+		set_variable = {
+			ZEX_MGY_Actions_Taken = 0
+		}
+
 		ZEX_MGY_SET_BASE_ALIGNMENTS = yes
+
 		set_country_flag = zex_has_republican_agitation
+
+		add_dynamic_modifier = {
+			modifier = ZEX_MGY_republican_agitation_impact_dynmod
+		}
+		# if = {
+		# 	limit = {
+		# 		NOT = {
+		# 			has_idea = ZEX_MGY_REPUBLICAN_AGITATION
+		# 		}
+		# 	}
+		# 	add_ideas = {
+		# 		ZEX_MGY_REPUBLICAN_AGITATION
+		# 	}
+		# }
 	}
 }
 
@@ -17,6 +48,18 @@ ZEX_deactivate_republican_agitation = {
 	custom_effect_tooltip = ZEX_Deactivate_Agitation_tt
 	hidden_effect = {
 		clr_country_flag = zex_has_republican_agitation
+
+		remove_dynamic_modifier = {
+			modifier = ZEX_MGY_republican_agitation_impact_dynmod
+		}
+		# if = {
+		# 	limit = {
+		# 		has_idea = ZEX_MGY_REPUBLICAN_AGITATION
+		# 	}
+		# 	remove_ideas = {
+		# 		ZEX_MGY_REPUBLICAN_AGITATION
+		# 	}
+		# }
 	}
 }
 
@@ -106,18 +149,320 @@ ZEX_MGY_GET_AVERAGE_UNREST = {
 		var = ZEX_MGY_AVERAGE_UNREST
 		value = 9
 	}
+	ZEX_MGY_UPDATE_REPUBLICAN_MODIFIER = yes
 }
 
-ZEX_MGY_REMOVE_ALL_FOCUSED_STATES = {
-	clr_country_flag = ZEX_MGY_Sineighi_FOCUSED
-	clr_country_flag = ZEX_MGY_Maneisrata_FOCUSED
-	clr_country_flag = ZEX_MGY_Kaneigh_FOCUSED
-	clr_country_flag = ZEX_MGY_Delta_FOCUSED
-	clr_country_flag = ZEX_MGY_Manephis_FOCUSED
-	clr_country_flag = ZEX_MGY_Somnambula_FOCUSED
-	clr_country_flag = ZEX_MGY_Desert_FOCUSED
-	clr_country_flag = ZEX_MGY_UpperMaregypt_FOCUSED
-	clr_country_flag = ZEX_MGY_Zush_FOCUSED
+ZEX_MGY_UPDATE_REPUBLICAN_MODIFIER = {
+	set_variable = {
+		var = ZEX_MGY_AVERAGE_UNREST_NEGATIVE
+		value = ZEX_MGY_AVERAGE_UNREST
+	}
+	multiply_variable = {
+		var = ZEX_MGY_AVERAGE_UNREST_NEGATIVE
+		value = -0.01
+	}
+	set_variable = {
+		var = ZEX_MGY_AVERAGE_POLITICAL_IMPACT_UNREST
+		value = ZEX_MGY_AVERAGE_UNREST
+	}
+	multiply_variable = {
+		var = ZEX_MGY_AVERAGE_POLITICAL_IMPACT_UNREST
+		value = -0.01
+	}
+}
+
+ZEX_MGY_Increase_Unrest = {
+	random_list = {
+		10 = {
+			modifier = {
+				factor = 0
+				has_country_flag = ZEX_MGY_Delta_protected_flag
+			}
+			add_to_variable = {
+				ZEX_MGY_VAR_Delta_Alignment = ZEX_MGY_UNREST_EFFECTS_IMPACT
+			}
+			clamp_variable = {
+				var = ZEX_MGY_VAR_Delta_Alignment
+				max = 100
+			}
+			set_country_flag = zex_mgy_increased_delta_unrest
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				has_country_flag = ZEX_MGY_Sineighi_protected_flag
+			}
+			add_to_variable = {
+				ZEX_MGY_VAR_Sineighi_Alignment  = ZEX_MGY_UNREST_EFFECTS_IMPACT
+			}
+			clamp_variable = {
+				var = ZEX_MGY_VAR_Sineighi_Alignment
+				max = 100
+			}
+			set_country_flag = zex_mgy_increased_sineigh_unrest
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				has_country_flag = ZEX_MGY_Maneisrata_protected_flag
+			}
+			add_to_variable = {
+				ZEX_MGY_VAR_Maneisrata_Alignment = ZEX_MGY_UNREST_EFFECTS_IMPACT
+			}
+			clamp_variable = {
+				var = ZEX_MGY_VAR_Maneisrata_Alignment
+				max = 100
+			}
+			set_country_flag = zex_mgy_increased_maneisrata_unrest
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				has_country_flag = ZEX_MGY_Manephis_protected_flag
+			}
+			add_to_variable = {
+				ZEX_MGY_VAR_Manephis_Alignment = ZEX_MGY_UNREST_EFFECTS_IMPACT
+			}
+			clamp_variable = {
+				var = ZEX_MGY_VAR_Manephis_Alignment
+				max = 100
+			}
+			set_country_flag = zex_mgy_increased_manephis_unrest
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				has_country_flag = ZEX_MGY_Desert_protected_flag
+			}
+			add_to_variable = {
+				ZEX_MGY_VAR_Eastdesert_Alignment = ZEX_MGY_UNREST_EFFECTS_IMPACT
+			}
+			clamp_variable = {
+				var = ZEX_MGY_VAR_Eastdesert_Alignment
+				max = 100
+			}
+			set_country_flag = zex_mgy_increased_desert_unrest
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				has_country_flag = ZEX_MGY_Somnambula_protected_flag
+			}
+			add_to_variable = {
+				ZEX_MGY_VAR_Somnambula_Alignment = ZEX_MGY_UNREST_EFFECTS_IMPACT
+			}
+			clamp_variable = {
+				var = ZEX_MGY_VAR_Somnambula_Alignment
+				max = 100
+			}
+			set_country_flag = zex_mgy_increased_somnambula_unrest
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				has_country_flag = ZEX_MGY_UpperMaregypt_protected_flag
+			}
+			add_to_variable = {
+				ZEX_MGY_VAR_UpperMaregypt_Alignment = ZEX_MGY_UNREST_EFFECTS_IMPACT
+			}
+			clamp_variable = {
+				var = ZEX_MGY_VAR_UpperMaregypt_Alignment
+				max = 100
+			}
+			set_country_flag = zex_mgy_increased_uppermaregypt_unrest
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				has_country_flag = ZEX_MGY_Zush_protected_flag
+			}
+			add_to_variable = {
+				ZEX_MGY_VAR_Zush_Alignment = ZEX_MGY_UNREST_EFFECTS_IMPACT
+			}
+			clamp_variable = {
+				var = ZEX_MGY_VAR_Zush_Alignment
+				max = 100
+			}
+			set_country_flag = zex_mgy_increased_zush_unrest
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				has_country_flag = ZEX_MGY_Kaneigh_protected_flag
+			}
+			add_to_variable = {
+				ZEX_MGY_VAR_Kaneigh_Alignment = ZEX_MGY_UNREST_EFFECTS_IMPACT
+			}
+			clamp_variable = {
+				var = ZEX_MGY_VAR_Kaneigh_Alignment
+				max = 100
+			}
+			set_country_flag = zex_mgy_increased_kaneigh_unrest
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_country_flag = ZEX_MGY_LIMIT_UNREST_TARGETS
+			}
+		}
+		random_list = {
+			10 = {
+				modifier = {
+					factor = 0
+					OR = {
+						has_country_flag = zex_mgy_increased_delta_unrest
+						has_country_flag = ZEX_MGY_Delta_protected_flag
+					}
+				}
+				add_to_variable = {
+					ZEX_MGY_VAR_Delta_Alignment = ZEX_MGY_UNREST_EFFECTS_IMPACT
+				}
+				clamp_variable = {
+					var = ZEX_MGY_VAR_Delta_Alignment
+					max = 100
+				}
+			}
+			10 = {
+				modifier = {
+					factor = 0
+					OR = {
+						has_country_flag = zex_mgy_increased_sineigh_unrest
+						has_country_flag = ZEX_MGY_Sineighi_protected_flag
+					}
+				}
+				add_to_variable = {
+					ZEX_MGY_VAR_Sineighi_Alignment = ZEX_MGY_UNREST_EFFECTS_IMPACT
+				}
+				clamp_variable = {
+					var = ZEX_MGY_VAR_Sineighi_Alignment
+					max = 100
+				}
+			}
+			10 = {
+				modifier = {
+					factor = 0
+					OR = {
+						has_country_flag = ZEX_MGY_Maneisrata_protected_flag
+						has_country_flag = zex_mgy_increased_maneisrata_unrest
+					}
+				}
+				add_to_variable = {
+					ZEX_MGY_VAR_Maneisrata_Alignment = ZEX_MGY_UNREST_EFFECTS_IMPACT
+				}
+				clamp_variable = {
+					var = ZEX_MGY_VAR_Maneisrata_Alignment
+					max = 100
+				}
+			}
+			10 = {
+				modifier = {
+					factor = 0
+					OR = {
+						has_country_flag = ZEX_MGY_Manephis_protected_flag
+						has_country_flag = zex_mgy_increased_manephis_unrest
+					}
+				}
+				add_to_variable = {
+					ZEX_MGY_VAR_Manephis_Alignment = ZEX_MGY_UNREST_EFFECTS_IMPACT
+				}
+				clamp_variable = {
+					var = ZEX_MGY_VAR_Manephis_Alignment
+					max = 100
+				}
+			}
+			10 = {
+				modifier = {
+					factor = 0
+					OR = {
+						has_country_flag = zex_mgy_increased_desert_unrest
+						has_country_flag = ZEX_MGY_Desert_protected_flag
+					}
+				}
+				add_to_variable = {
+					ZEX_MGY_VAR_Eastdesert_Alignment = ZEX_MGY_UNREST_EFFECTS_IMPACT
+				}
+				clamp_variable = {
+					var = ZEX_MGY_VAR_Eastdesert_Alignment
+					max = 100
+				}
+			}
+			10 = {
+				modifier = {
+					factor = 0
+					OR = {
+						has_country_flag = ZEX_MGY_Somnambula_protected_flag
+						has_country_flag = zex_mgy_increased_somnambula_unrest
+					}
+				}
+				add_to_variable = {
+					ZEX_MGY_VAR_Somnambula_Alignment = ZEX_MGY_UNREST_EFFECTS_IMPACT
+				}
+				clamp_variable = {
+					var = ZEX_MGY_VAR_Somnambula_Alignment
+					max = 100
+				}
+			}
+			10 = {
+				modifier = {
+					factor = 0
+					OR = {
+						has_country_flag = ZEX_MGY_UpperMaregypt_protected_flag
+						has_country_flag = zex_mgy_increased_uppermaregypt_unrest
+					}
+				}
+				add_to_variable = {
+					ZEX_MGY_VAR_UpperMaregypt_Alignment = ZEX_MGY_UNREST_EFFECTS_IMPACT
+				}
+				clamp_variable = {
+					var = ZEX_MGY_VAR_UpperMaregypt_Alignment
+					max = 100
+				}
+			}
+			10 = {
+				modifier = {
+					factor = 0
+					OR = {
+						has_country_flag = ZEX_MGY_Zush_protected_flag					
+						has_country_flag = zex_mgy_increased_zush_unrest
+					}
+				}
+				add_to_variable = {
+					ZEX_MGY_VAR_Zush_Alignment = ZEX_MGY_UNREST_EFFECTS_IMPACT
+				}
+				clamp_variable = {
+					var = ZEX_MGY_VAR_Zush_Alignment
+					max = 100
+				}
+			}
+			10 = {
+				modifier = {
+					factor = 0
+					OR = {
+						has_country_flag = ZEX_MGY_Kaneigh_protected_flag
+						has_country_flag = zex_mgy_increased_kaneigh_unrest
+					}
+				}
+				add_to_variable = {
+					ZEX_MGY_VAR_Kaneigh_Alignment = ZEX_MGY_UNREST_EFFECTS_IMPACT
+				}
+				clamp_variable = {
+					var = ZEX_MGY_VAR_Kaneigh_Alignment
+					max = 100
+				}
+			}
+		}
+	}
+	clr_country_flag = zex_mgy_increased_kaneigh_unrest
+	clr_country_flag = zex_mgy_increased_delta_unrest
+	clr_country_flag = zex_mgy_increased_desert_unrest
+	clr_country_flag = zex_mgy_increased_somnambula_unrest
+	clr_country_flag = zex_mgy_increased_maneisrata_unrest
+	clr_country_flag = zex_mgy_increased_manephis_unrest
+	clr_country_flag = zex_mgy_increased_uppermaregypt_unrest
+	clr_country_flag = zex_mgy_increased_sineigh_unrest
+	clr_country_flag = zex_mgy_increased_zush_unrest
+	ZEX_MGY_GET_AVERAGE_UNREST = yes
 }
 
 #debug effect

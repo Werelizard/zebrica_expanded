@@ -48,92 +48,10 @@ scripted_gui = {
 		}
 
 		effects = {
-			ZEX_MGY_sineighi_icon_click = {
-				ROOT = {
-					ZEX_MGY_REMOVE_ALL_FOCUSED_STATES = yes
-					set_country_flag = ZEX_MGY_Sineighi_FOCUSED
-					scoped_sound_effect = click_province_01
-					scoped_sound_effect = "click_province_01"
-				}
-			}
-			ZEX_MGY_kaneigh_icon_click = {
-				ROOT = {
-					ZEX_MGY_REMOVE_ALL_FOCUSED_STATES = yes
-					set_country_flag = ZEX_MGY_Kaneigh_FOCUSED
-				}
-			}
-			ZEX_MGY_delta_icon_click = {
-				ROOT = {
-					ZEX_MGY_REMOVE_ALL_FOCUSED_STATES = yes
-					set_country_flag = ZEX_MGY_Delta_FOCUSED
-				}
-			}
-			ZEX_MGY_somnambula_icon_click = {
-				ROOT = {
-					ZEX_MGY_REMOVE_ALL_FOCUSED_STATES = yes
-					set_country_flag = ZEX_MGY_Somnambula_FOCUSED
-				}
-			}
-			ZEX_MGY_manephis_icon_click = {
-				ROOT = {
-					ZEX_MGY_REMOVE_ALL_FOCUSED_STATES = yes
-					set_country_flag = ZEX_MGY_Manephis_FOCUSED
-				}
-			}
-			ZEX_MGY_maneisrata_icon_click = {
-				ROOT = {
-					ZEX_MGY_REMOVE_ALL_FOCUSED_STATES = yes
-					set_country_flag = ZEX_MGY_Maneisrata_FOCUSED
-				}
-			}
-			ZEX_MGY_uppermaregypt_icon_click = {
-				ROOT = {
-					ZEX_MGY_REMOVE_ALL_FOCUSED_STATES = yes
-					set_country_flag = ZEX_MGY_UpperMaregypt_FOCUSED
-				}
-			}
-			ZEX_MGY_eastdesert_icon_click = {
-				ROOT = {
-					ZEX_MGY_REMOVE_ALL_FOCUSED_STATES = yes
-					set_country_flag = ZEX_MGY_Desert_FOCUSED
-				}
-			}
-			ZEX_MGY_zush_icon_click = {
-				ROOT = {
-					ZEX_MGY_REMOVE_ALL_FOCUSED_STATES = yes
-					set_country_flag = ZEX_MGY_Zush_FOCUSED
-				}
-			}
 		}
 		
 		triggers = {
-			ZEX_MGY_sineighi_icon_click = {
-				always = yes
-			}
-			ZEX_MGY_kaneigh_icon_click = {
-				always = yes
-			}
-			ZEX_MGY_delta_icon_click = {
-				always = yes
-			}
-			ZEX_MGY_somnambula_icon_click = {
-				always = yes
-			}
-			ZEX_MGY_manephis_icon_click = {
-				always = yes
-			}
-			ZEX_MGY_maneisrata_icon_click = {
-				always = yes
-			}
-			ZEX_MGY_uppermaregypt_icon_click = {
-				always = yes
-			}
-			ZEX_MGY_eastdesert_icon_click = {
-				always = yes
-			}
-			ZEX_MGY_zush_icon_click = {
-				always = yes
-			}
+			
 		}
 
 		dynamic_lists = {
@@ -180,9 +98,11 @@ scripted_gui = {
 				image = "[ZEX_MGY_GetZushAlignment]"
 			}
 		}
+
+		#Protection statis
 		properties = {
-			ZEX_MGY_uppermaregypt_icon = {
-				image = "[ZEX_MGY_GetUpperMaregyptAlignment]"
+			ZEX_MGY_delta_protected_status = {
+
 			}
 		}
 

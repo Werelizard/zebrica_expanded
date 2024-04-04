@@ -187,4 +187,195 @@ spriteTypes = {
 		texturefile = "gfx/interface/republicanAgitation/ZEX_MGY_HIGHUNREST_KANEIGH.dds"
 		transparencecheck = yes
 	}
+
+	#Protected Variants
+
+	spriteType = {
+		name = "ZEX_MGY_NOUNREST_SINEIGHI_Protected"
+		texturefile = "gfx/interface/republicanAgitation/ZEX_MGY_NOUNREST_SINEIGHI_Protected.dds"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "ZEX_MGY_LOWUNREST_SINEIGHI_Protected"
+		texturefile = "gfx/interface/republicanAgitation/ZEX_MGY_LOWUNREST_SINEIGHI_Protected.dds"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "ZEX_MGY_MIDUNREST_SINEIGHI_Protected"
+		texturefile = "gfx/interface/republicanAgitation/ZEX_MGY_MIDUNREST_SINEIGHI_Protected.dds"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "ZEX_MGY_HIGHUNREST_SINEIGHI_Protected"
+		texturefile = "gfx/interface/republicanAgitation/ZEX_MGY_HIGHUNREST_SINEIGHI_Protected.dds"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "ZEX_MGY_NOUNREST_MANEISRATA_Protected"
+		texturefile = "gfx/interface/republicanAgitation/ZEX_MGY_NOUNREST_MANEISRATA_Protected.dds"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "ZEX_MGY_LOWUNREST_MANEISRATA_Protected"
+		texturefile = "gfx/interface/republicanAgitation/ZEX_MGY_LOWUNREST_MANEISRATA_Protected.dds"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "ZEX_MGY_MIDUNREST_MANEISRATA_Protected"
+		texturefile = "gfx/interface/republicanAgitation/ZEX_MGY_MIDUNREST_MANEISRATA_Protected.dds"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "ZEX_MGY_HIGHUNREST_MANEISRATA_Protected"
+		texturefile = "gfx/interface/republicanAgitation/ZEX_MGY_HIGHUNREST_MANEISRATA_Protected.dds"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "ZEX_MGY_NOUNREST_DELTA_Protected"
+		texturefile = "gfx/interface/republicanAgitation/ZEX_MGY_NOUNREST_DELTA_Protected.dds"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "ZEX_MGY_LOWUNREST_DELTA_Protected"
+		texturefile = "gfx/interface/republicanAgitation/ZEX_MGY_LOWUNREST_DELTA_Protected.dds"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "ZEX_MGY_MIDUNREST_DELTA_Protected"
+		texturefile = "gfx/interface/republicanAgitation/ZEX_MGY_MIDUNREST_DELTA_Protected.dds"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "ZEX_MGY_HIGHUNREST_DELTA_Protected"
+		texturefile = "gfx/interface/republicanAgitation/ZEX_MGY_HIGHUNREST_DELTA_Protected.dds"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "ZEX_MGY_NOUNREST_MANEPHIS_Protected"
+		texturefile = "gfx/interface/republicanAgitation/ZEX_MGY_NOUNREST_MANEPHIS_Protected.dds"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "ZEX_MGY_LOWUNREST_MANEPHIS_Protected"
+		texturefile = "gfx/interface/republicanAgitation/ZEX_MGY_LOWUNREST_MANEPHIS_Protected.dds"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "ZEX_MGY_MIDUNREST_MANEPHIS_Protected"
+		texturefile = "gfx/interface/republicanAgitation/ZEX_MGY_MIDUNREST_MANEPHIS_Protected.dds"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "ZEX_MGY_HIGHUNREST_MANEPHIS_Protected"
+		texturefile = "gfx/interface/republicanAgitation/ZEX_MGY_HIGHUNREST_MANEPHIS_Protected.dds"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "ZEX_MGY_NOUNREST_DESERT_Protected"
+		texturefile = "gfx/interface/republicanAgitation/ZEX_MGY_NOUNREST_DESERT_Protected.dds"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "ZEX_MGY_LOWUNREST_DESERT_Protected"
+		texturefile = "gfx/interface/republicanAgitation/ZEX_MGY_LOWUNREST_DESERT_Protected.dds"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "ZEX_MGY_MIDUNREST_DESERT_Protected"
+		texturefile = "gfx/interface/republicanAgitation/ZEX_MGY_MIDUNREST_DESERT_Protected.dds"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "ZEX_MGY_HIGHUNREST_DESERT_Protected"
+		texturefile = "gfx/interface/republicanAgitation/ZEX_MGY_HIGHUNREST_DESERT_Protected.dds"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "ZEX_MGY_NOUNREST_SOMNAMBULA_Protected"
+		texturefile = "gfx/interface/republicanAgitation/ZEX_MGY_NOUNREST_SOMNAMBULA_Protected.dds"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "ZEX_MGY_LOWUNREST_SOMNAMBULA_Protected"
+		texturefile = "gfx/interface/republicanAgitation/ZEX_MGY_LOWUNREST_SOMNAMBULA_Protected.dds"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "ZEX_MGY_MIDUNREST_SOMNAMBULA_Protected"
+		texturefile = "gfx/interface/republicanAgitation/ZEX_MGY_MIDUNREST_SOMNAMBULA_Protected.dds"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "ZEX_MGY_HIGHUNREST_SOMNAMBULA_Protected"
+		texturefile = "gfx/interface/republicanAgitation/ZEX_MGY_HIGHUNREST_SOMNAMBULA_Protected.dds"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "ZEX_MGY_NOUNREST_UPPERMAREGYPT_Protected"
+		texturefile = "gfx/interface/republicanAgitation/ZEX_MGY_NOUNREST_UPPERMAREGYPT_Protected.dds"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "ZEX_MGY_LOWUNREST_UPPERMAREGYPT_Protected"
+		texturefile = "gfx/interface/republicanAgitation/ZEX_MGY_LOWUNREST_UPPERMAREGYPT_Protected.dds"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "ZEX_MGY_MIDUNREST_UPPERMAREGYPT_Protected"
+		texturefile = "gfx/interface/republicanAgitation/ZEX_MGY_MIDUNREST_UPPERMAREGYPT_Protected.dds"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "ZEX_MGY_HIGHUNREST_UPPERMAREGYPT_Protected"
+		texturefile = "gfx/interface/republicanAgitation/ZEX_MGY_HIGHUNREST_UPPERMAREGYPT_Protected.dds"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "ZEX_MGY_NOUNREST_ZUSH_Protected"
+		texturefile = "gfx/interface/republicanAgitation/ZEX_MGY_NOUNREST_ZUSH_Protected.dds"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "ZEX_MGY_LOWUNREST_ZUSH_Protected"
+		texturefile = "gfx/interface/republicanAgitation/ZEX_MGY_LOWUNREST_ZUSH_Protected.dds"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "ZEX_MGY_MIDUNREST_ZUSH_Protected"
+		texturefile = "gfx/interface/republicanAgitation/ZEX_MGY_MIDUNREST_ZUSH_Protected.dds"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "ZEX_MGY_HIGHUNREST_ZUSH_Protected"
+		texturefile = "gfx/interface/republicanAgitation/ZEX_MGY_HIGHUNREST_ZUSH_Protected.dds"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "ZEX_MGY_NOUNREST_KANEIGH_Protected"
+		texturefile = "gfx/interface/republicanAgitation/ZEX_MGY_NOUNREST_KANEIGH_Protected.dds"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "ZEX_MGY_LOWUNREST_KANEIGH_Protected"
+		texturefile = "gfx/interface/republicanAgitation/ZEX_MGY_LOWUNREST_KANEIGH_Protected.dds"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "ZEX_MGY_MIDUNREST_KANEIGH_Protected"
+		texturefile = "gfx/interface/republicanAgitation/ZEX_MGY_MIDUNREST_KANEIGH_Protected.dds"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "ZEX_MGY_HIGHUNREST_KANEIGH_Protected"
+		texturefile = "gfx/interface/republicanAgitation/ZEX_MGY_HIGHUNREST_KANEIGH_Protected.dds"
+		transparencecheck = yes
+	}
 }

@@ -9,10 +9,31 @@ defined_text = {
 	text = {
 		trigger = {
 			check_variable = {
-				ZEX_MGY_VAR_Sineighi_Alignment >75
+				ZEX_MGY_VAR_Sineighi_Alignment > 75
+			}
+			has_country_flag = ZEX_MGY_Sineighi_protected_flag
+		}
+		localization_key = ZEX_MGY_HIGHUNREST_SINEIGHI_Protected
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				ZEX_MGY_VAR_Sineighi_Alignment > 75
 			}
 		}
 		localization_key = ZEX_MGY_HIGHUNREST_SINEIGHI
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				ZEX_MGY_VAR_Sineighi_Alignment > 50
+			}
+			check_variable = {
+				ZEX_MGY_VAR_Sineighi_Alignment <75
+			}
+			has_country_flag = ZEX_MGY_Sineighi_protected_flag
+		}
+		localization_key = ZEX_MGY_MIDUNREST_SINEIGHI_Protected
 	}
 	text = {
 		trigger = {
@@ -33,8 +54,26 @@ defined_text = {
 			check_variable = {
 				ZEX_MGY_VAR_Sineighi_Alignment < 50
 			}
+			has_country_flag = ZEX_MGY_Sineighi_protected_flag
+		}
+		localization_key = ZEX_MGY_LOWUNREST_SINEIGHI_Protected
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				ZEX_MGY_VAR_Sineighi_Alignment > 25
+			}
+			check_variable = {
+				ZEX_MGY_VAR_Sineighi_Alignment < 50
+			}
 		}
 		localization_key = ZEX_MGY_LOWUNREST_SINEIGHI
+	}
+	text = {
+		trigger = {
+			has_country_flag = ZEX_MGY_Sineighi_protected_flag
+		}
+		localization_key = ZEX_MGY_NOUNREST_SINEIGHI_Protected
 	}
 	text = {
 		localization_key = ZEX_MGY_NOUNREST_SINEIGHI
@@ -50,8 +89,29 @@ defined_text = {
 			check_variable = {
 				ZEX_MGY_VAR_Maneisrata_Alignment >75
 			}
+			has_country_flag = ZEX_MGY_Maneisrata_protected_flag
+		}
+		localization_key = ZEX_MGY_HIGHUNREST_MANEISRATA_Protected
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				ZEX_MGY_VAR_Maneisrata_Alignment >75
+			}
 		}
 		localization_key = ZEX_MGY_HIGHUNREST_MANEISRATA
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				ZEX_MGY_VAR_Maneisrata_Alignment > 50
+			}
+			check_variable = {
+				ZEX_MGY_VAR_Maneisrata_Alignment <75
+			}
+			has_country_flag = ZEX_MGY_Maneisrata_protected_flag
+		}
+		localization_key = ZEX_MGY_MIDUNREST_MANEISRATA_Protected
 	}
 	text = {
 		trigger = {
@@ -72,8 +132,26 @@ defined_text = {
 			check_variable = {
 				ZEX_MGY_VAR_Maneisrata_Alignment < 50
 			}
+			has_country_flag = ZEX_MGY_Maneisrata_protected_flag
+		}
+		localization_key = ZEX_MGY_LOWUNREST_MANEISRATA_Protected
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				ZEX_MGY_VAR_Maneisrata_Alignment > 25
+			}
+			check_variable = {
+				ZEX_MGY_VAR_Maneisrata_Alignment < 50
+			}
 		}
 		localization_key = ZEX_MGY_LOWUNREST_MANEISRATA
+	}
+	text = {
+		trigger = {
+			has_country_flag = ZEX_MGY_Maneisrata_protected_flag
+		}
+		localization_key = ZEX_MGY_NOUNREST_MANEISRATA_Protected
 	}
 	text = {
 		localization_key = ZEX_MGY_NOUNREST_MANEISRATA
@@ -89,8 +167,29 @@ defined_text = {
 			check_variable = {
 				ZEX_MGY_VAR_Kaneigh_Alignment >75
 			}
+			has_country_flag = ZEX_MGY_Kaneigh_protected_flag
+		}
+		localization_key = ZEX_MGY_HIGHUNREST_KANEIGH_Protected
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				ZEX_MGY_VAR_Kaneigh_Alignment >75
+			}
 		}
 		localization_key = ZEX_MGY_HIGHUNREST_KANEIGH
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				ZEX_MGY_VAR_Kaneigh_Alignment > 50
+			}
+			check_variable = {
+				ZEX_MGY_VAR_Kaneigh_Alignment <75
+			}
+			has_country_flag = ZEX_MGY_Kaneigh_protected_flag
+		}
+		localization_key = ZEX_MGY_MIDUNREST_KANEIGH_Protected
 	}
 	text = {
 		trigger = {
@@ -111,8 +210,26 @@ defined_text = {
 			check_variable = {
 				ZEX_MGY_VAR_Kaneigh_Alignment < 50
 			}
+			has_country_flag = ZEX_MGY_Kaneigh_protected_flag
+		}
+		localization_key = ZEX_MGY_LOWUNREST_KANEIGH_Protected
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				ZEX_MGY_VAR_Kaneigh_Alignment > 25
+			}
+			check_variable = {
+				ZEX_MGY_VAR_Kaneigh_Alignment < 50
+			}
 		}
 		localization_key = ZEX_MGY_LOWUNREST_KANEIGH
+	}
+	text = {
+		trigger = {
+			has_country_flag = ZEX_MGY_Kaneigh_protected_flag
+		}
+		localization_key = ZEX_MGY_NOUNREST_KANEIGH_Protected
 	}
 	text = {
 		localization_key = ZEX_MGY_NOUNREST_KANEIGH
@@ -128,8 +245,29 @@ defined_text = {
 			check_variable = {
 				ZEX_MGY_VAR_Delta_Alignment >75
 			}
+			has_country_flag = ZEX_MGY_Delta_protected_flag
+		}
+		localization_key = ZEX_MGY_HIGHUNREST_DELTA_Protected
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				ZEX_MGY_VAR_Delta_Alignment >75
+			}
 		}
 		localization_key = ZEX_MGY_HIGHUNREST_DELTA
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				ZEX_MGY_VAR_Delta_Alignment > 50
+			}
+			check_variable = {
+				ZEX_MGY_VAR_Delta_Alignment <75
+			}
+			has_country_flag = ZEX_MGY_Delta_protected_flag
+		}
+		localization_key = ZEX_MGY_MIDUNREST_DELTA_Protected
 	}
 	text = {
 		trigger = {
@@ -150,8 +288,26 @@ defined_text = {
 			check_variable = {
 				ZEX_MGY_VAR_Delta_Alignment < 50
 			}
+			has_country_flag = ZEX_MGY_Delta_protected_flag
+		}
+		localization_key = ZEX_MGY_LOWUNREST_DELTA_Protected
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				ZEX_MGY_VAR_Delta_Alignment > 25
+			}
+			check_variable = {
+				ZEX_MGY_VAR_Delta_Alignment < 50
+			}
 		}
 		localization_key = ZEX_MGY_LOWUNREST_DELTA
+	}
+	text = {
+		trigger = {
+			has_country_flag = ZEX_MGY_Delta_protected_flag
+		}
+		localization_key = ZEX_MGY_NOUNREST_DELTA_Protected
 	}
 	text = {
 		localization_key = ZEX_MGY_NOUNREST_DELTA
@@ -167,8 +323,29 @@ defined_text = {
 			check_variable = {
 				ZEX_MGY_VAR_Manephis_Alignment >75
 			}
+			has_country_flag = ZEX_MGY_Manephis_protected_flag
+		}
+		localization_key = ZEX_MGY_HIGHUNREST_MANEPHIS_Protected
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				ZEX_MGY_VAR_Manephis_Alignment >75
+			}
 		}
 		localization_key = ZEX_MGY_HIGHUNREST_MANEPHIS
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				ZEX_MGY_VAR_Manephis_Alignment > 50
+			}
+			check_variable = {
+				ZEX_MGY_VAR_Manephis_Alignment <75
+			}
+			has_country_flag = ZEX_MGY_Manephis_protected_flag
+		}
+		localization_key = ZEX_MGY_MIDUNREST_MANEPHIS_Protected
 	}
 	text = {
 		trigger = {
@@ -189,8 +366,26 @@ defined_text = {
 			check_variable = {
 				ZEX_MGY_VAR_Manephis_Alignment < 50
 			}
+			has_country_flag = ZEX_MGY_Manephis_protected_flag
+		}
+		localization_key = ZEX_MGY_LOWUNREST_MANEPHIS_Protected
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				ZEX_MGY_VAR_Manephis_Alignment > 25
+			}
+			check_variable = {
+				ZEX_MGY_VAR_Manephis_Alignment < 50
+			}
 		}
 		localization_key = ZEX_MGY_LOWUNREST_MANEPHIS
+	}
+	text = {
+		trigger = {
+			has_country_flag = ZEX_MGY_Manephis_protected_flag
+		}
+		localization_key = ZEX_MGY_NOUNREST_MANEPHIS_Protected
 	}
 	text = {
 		localization_key = ZEX_MGY_NOUNREST_MANEPHIS
@@ -206,8 +401,29 @@ defined_text = {
 			check_variable = {
 				ZEX_MGY_VAR_Somnambula_Alignment >75
 			}
+			has_country_flag = ZEX_MGY_Somnambula_protected_flag
+		}
+		localization_key = ZEX_MGY_HIGHUNREST_SOMNAMBULA_Protected
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				ZEX_MGY_VAR_Somnambula_Alignment >75
+			}
 		}
 		localization_key = ZEX_MGY_HIGHUNREST_SOMNAMBULA
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				ZEX_MGY_VAR_Somnambula_Alignment > 50
+			}
+			check_variable = {
+				ZEX_MGY_VAR_Somnambula_Alignment <75
+			}
+			has_country_flag = ZEX_MGY_Somnambula_protected_flag
+		}
+		localization_key = ZEX_MGY_MIDUNREST_SOMNAMBULA_Protected
 	}
 	text = {
 		trigger = {
@@ -228,8 +444,26 @@ defined_text = {
 			check_variable = {
 				ZEX_MGY_VAR_Somnambula_Alignment < 50
 			}
+			has_country_flag = ZEX_MGY_Somnambula_protected_flag
+		}
+		localization_key = ZEX_MGY_LOWUNREST_SOMNAMBULA_Protected
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				ZEX_MGY_VAR_Somnambula_Alignment > 25
+			}
+			check_variable = {
+				ZEX_MGY_VAR_Somnambula_Alignment < 50
+			}
 		}
 		localization_key = ZEX_MGY_LOWUNREST_SOMNAMBULA
+	}
+	text = {
+		trigger = {
+			has_country_flag = ZEX_MGY_Somnambula_protected_flag
+		}
+		localization_key = ZEX_MGY_NOUNREST_SOMNAMBULA_Protected
 	}
 	text = {
 		localization_key = ZEX_MGY_NOUNREST_SOMNAMBULA
@@ -245,8 +479,29 @@ defined_text = {
 			check_variable = {
 				ZEX_MGY_VAR_Eastdesert_Alignment >75
 			}
+			has_country_flag = ZEX_MGY_Desert_protected_flag
+		}
+		localization_key = ZEX_MGY_HIGHUNREST_DESERT_Protected
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				ZEX_MGY_VAR_Eastdesert_Alignment >75
+			}
 		}
 		localization_key = ZEX_MGY_HIGHUNREST_DESERT
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				ZEX_MGY_VAR_Eastdesert_Alignment > 50
+			}
+			check_variable = {
+				ZEX_MGY_VAR_Eastdesert_Alignment <75
+			}
+			has_country_flag = ZEX_MGY_Desert_protected_flag
+		}
+		localization_key = ZEX_MGY_MIDUNREST_DESERT_Protected
 	}
 	text = {
 		trigger = {
@@ -267,8 +522,26 @@ defined_text = {
 			check_variable = {
 				ZEX_MGY_VAR_Eastdesert_Alignment < 50
 			}
+			has_country_flag = ZEX_MGY_Desert_protected_flag
+		}
+		localization_key = ZEX_MGY_LOWUNREST_DESERT_Protected
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				ZEX_MGY_VAR_Eastdesert_Alignment > 25
+			}
+			check_variable = {
+				ZEX_MGY_VAR_Eastdesert_Alignment < 50
+			}
 		}
 		localization_key = ZEX_MGY_LOWUNREST_DESERT
+	}
+	text = {
+		trigger = {
+			has_country_flag = ZEX_MGY_Desert_protected_flag
+		}
+		localization_key = ZEX_MGY_NOUNREST_DESERT_Protected
 	}
 	text = {
 		localization_key = ZEX_MGY_NOUNREST_DESERT
@@ -284,8 +557,29 @@ defined_text = {
 			check_variable = {
 				ZEX_MGY_VAR_Zush_Alignment >75
 			}
+			has_country_flag = ZEX_MGY_Zush_protected_flag
+		}
+		localization_key = ZEX_MGY_HIGHUNREST_ZUSH_Protected
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				ZEX_MGY_VAR_Zush_Alignment >75
+			}
 		}
 		localization_key = ZEX_MGY_HIGHUNREST_ZUSH
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				ZEX_MGY_VAR_Zush_Alignment > 50
+			}
+			check_variable = {
+				ZEX_MGY_VAR_Zush_Alignment <75
+			}
+			has_country_flag = ZEX_MGY_Zush_protected_flag
+		}
+		localization_key = ZEX_MGY_MIDUNREST_ZUSH_Protected
 	}
 	text = {
 		trigger = {
@@ -306,8 +600,26 @@ defined_text = {
 			check_variable = {
 				ZEX_MGY_VAR_Zush_Alignment < 50
 			}
+			has_country_flag = ZEX_MGY_Zush_protected_flag
+		}
+		localization_key = ZEX_MGY_LOWUNREST_ZUSH_Protected
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				ZEX_MGY_VAR_Zush_Alignment > 25
+			}
+			check_variable = {
+				ZEX_MGY_VAR_Zush_Alignment < 50
+			}
 		}
 		localization_key = ZEX_MGY_LOWUNREST_ZUSH
+	}
+	text = {
+		trigger = {
+			has_country_flag = ZEX_MGY_Zush_protected_flag
+		}
+		localization_key = ZEX_MGY_NOUNREST_ZUSH_Protected
 	}
 	text = {
 		localization_key = ZEX_MGY_NOUNREST_ZUSH
@@ -323,8 +635,29 @@ defined_text = {
 			check_variable = {
 				ZEX_MGY_VAR_UpperMaregypt_Alignment >75
 			}
+			has_country_flag = ZEX_MGY_UpperMaregypt_protected_flag
+		}
+		localization_key = ZEX_MGY_HIGHUNREST_UPPERMAREGYPT_Protected
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				ZEX_MGY_VAR_UpperMaregypt_Alignment >75
+			}
 		}
 		localization_key = ZEX_MGY_HIGHUNREST_UPPERMAREGYPT
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				ZEX_MGY_VAR_UpperMaregypt_Alignment > 50
+			}
+			check_variable = {
+				ZEX_MGY_VAR_UpperMaregypt_Alignment <75
+			}
+			has_country_flag = ZEX_MGY_UpperMaregypt_protected_flag
+		}
+		localization_key = ZEX_MGY_MIDUNREST_UPPERMAREGYPT_Protected
 	}
 	text = {
 		trigger = {
@@ -345,75 +678,28 @@ defined_text = {
 			check_variable = {
 				ZEX_MGY_VAR_UpperMaregypt_Alignment < 50
 			}
+			has_country_flag = ZEX_MGY_UpperMaregypt_protected_flag
+		}
+		localization_key = ZEX_MGY_LOWUNREST_UPPERMAREGYPT_Protected
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				ZEX_MGY_VAR_UpperMaregypt_Alignment > 25
+			}
+			check_variable = {
+				ZEX_MGY_VAR_UpperMaregypt_Alignment < 50
+			}
 		}
 		localization_key = ZEX_MGY_LOWUNREST_UPPERMAREGYPT
 	}
 	text = {
+		trigger = {
+			has_country_flag = ZEX_MGY_UpperMaregypt_protected_flag
+		}
+		localization_key = ZEX_MGY_NOUNREST_UPPERMAREGYPT_Protected
+	}
+	text = {
 		localization_key = ZEX_MGY_NOUNREST_UPPERMAREGYPT
-	}
-}
-
-#############################################
-# Determine what state is currently focused #
-#############################################
-
-defined_text = {
-	name = ZEX_MGY_focused_state
-	text = {
-		trigger = {
-			has_country_flag = ZEX_MGY_Zush_FOCUSED
-		}
-		localization_key = "Zush"
-	}
-	text = {
-		trigger = {
-			has_country_flag = ZEX_MGY_UpperMaregypt_FOCUSED
-		}
-		localization_key = "Upper Maregypt"
-	}
-	text = {
-		trigger = {
-			has_country_flag = ZEX_MGY_Desert_FOCUSED
-		}
-		localization_key = "Eastern Desert"
-	}
-	text = {
-		trigger = {
-			has_country_flag = ZEX_MGY_Somnambula_FOCUSED
-		}
-		localization_key = "Somnambula"
-	}
-	text = {
-		trigger = {
-			has_country_flag = ZEX_MGY_Manephis_FOCUSED
-		}
-		localization_key = "Manephis"
-	}
-	text = {
-		trigger = {
-			has_country_flag = ZEX_MGY_Delta_FOCUSED
-		}
-		localization_key = "The Delta"
-	}
-	text = {
-		trigger = {
-			has_country_flag = ZEX_MGY_Kaneigh_FOCUSED
-		}
-		localization_key = "Kaneigh"
-	}
-	text = {
-		trigger = {
-			has_country_flag = ZEX_MGY_Maneisrata_FOCUSED
-		}
-		localization_key = "Maneisrata"
-	}
-	text = {
-		trigger = {
-			has_country_flag = ZEX_MGY_Sineighi_FOCUSED
-		}
-		localization_key = "Sineighi"
-	}
-	text = {
-		localization_key = "Click on a province to bring it into focus"
 	}
 }

@@ -8,6 +8,8 @@ guiTypes = {
 			name = "ZEX_MGY_republican_agitation_ui_window_inner"
 			position = { x = 130 y = 5 }
 			size = { width = 243 height= 327 }
+
+			#Province Unrest
 			
 			#Sineighi 
 			iconType = {
@@ -81,7 +83,7 @@ guiTypes = {
 				pdx_tooltip = ZEX_MGY_Zush_icon_tt
 			}
 
-			#Stab and Average Unrest
+			#Unrest and Legitimacvy
 			instantTextBoxType = {
 				name ="ZEX_MGY_REBELLION_UNREST"
 				position = { x = 140 y = 275 }
@@ -100,16 +102,6 @@ guiTypes = {
 				format = left
 				maxHeight = 24
 				maxwidth = 170
-			}
-
-			instantTextBoxType = {
-				name ="ZEX_MGY_REBELLION_CURRENT_FOCUS"
-				position = { x = -45 y = 340 }
-				font = "hoi_20b"
-				text = "ZEX_MGY_UI_GET_CURRENT_FOCUSED_STATE"
-				format = centre
-				maxHeight = 24
-				maxwidth = 310
 			}
 		}
 	}

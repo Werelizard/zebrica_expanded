@@ -4,8 +4,8 @@ ideas = {
 			picture = ZEX_MGY_Somnambula
 			modifier = {
 				drift_defence_factor = 0.5
-				resistance_growth_on_our_occupied_states = 0.2
-				army_core_defence_factor = 0.15
+				resistance_growth_on_our_occupied_states = 0.1
+				army_core_defence_factor = 0.05
 			}
 			allowed = {
 				OR = {
@@ -22,7 +22,7 @@ ideas = {
 				production_speed_industrial_complex_factor = -0.1
 				production_speed_arms_factory_factor = -0.1
 			}
-			cancel = {
+			allowed = {
 				zxe_mgy_equestria_exists = yes
 			}
 			#TODO
@@ -33,6 +33,7 @@ ideas = {
 							has_country_flag = ZEX_MGY_Cleared_Equestria_Debts
 						}
 					}
+					#Add event for debt repayment
 				}
 			}
 		}
@@ -40,27 +41,30 @@ ideas = {
 			picture = ZEX_MGY_Breadbasket
 			modifier = {
 				consumer_goods_factor = -0.15
-				global_building_slots_factor = -0.2
+				monthly_population = 0.2
 				production_speed_buildings_factor = -0.05
 			}
 			research_bonus = {
-				industry = -0.15
+				industry = -0.1
 			}
 		}
 		ZEX_Unfinished_Constitution = {
 			picture = ZEX_Unfinished_Constitution
-			modifier = {
-				stability_factor = -0.25
-				political_power_factor = -0.05
-				democratic_drift = -0.2
-				custom_modifier_tooltip = newline_tt
-				custom_modifier_tooltip =  ZEX_Unfinished_Constitution_TT
-				custom_modifier_tooltip = newline_tt
-			}
 			rule = {
 				can_not_declare_war = yes
 			}
+			modifier = {
+				stability_factor = -0.10
+				political_power_factor = -0.1
+				democratic_drift = -0.15
+				# custom_modifier_tooltip =  ZEX_Unfinished_Constitution_TT
+			}
 		}
+		# ZEX_MGY_REPUBLICAN_AGITATION = {
+		# 	modifier = {
+		# 		custom_modifier_tooltip = ZEX_MGY_STAB_IMPACT_tt
+		# 	}
+		# }
 	}
 	hidden_ideas = {
 		

@@ -1,0 +1,12 @@
+ZEX_MGY_republican_agitation_impact_dynmod = {
+    enable = { 
+		has_country_flag = zex_has_republican_agitation
+	}
+    remove_trigger = {
+        NOT = {
+           has_country_flag = zex_has_republican_agitation
+        }
+    }
+    stability_factor = ZEX_MGY_AVERAGE_UNREST_NEGATIVE
+    political_power_factor = ZEX_MGY_AVERAGE_POLITICAL_IMPACT_UNREST
+}

@@ -39,4 +39,12 @@ spriteTypes = {
 		name = "ZEX_GFX_republican_agitation_CAT"
 		textureFile = "gfx/interface/decisions/ZEX_MGY_republican_agitation_CAT.dds"
 	}
+	spriteType = {
+		name = "ZEX_GFX_increase_legitimacy"
+		textureFile = "gfx/interface/decisions/ZEX_GFY_MGY_Assure_Legitimacy.dds"
+	}
+	spriteType = {
+		name = "ZEX_GFX_Royal_Concessions"
+		textureFile = "gfx/interface/decisions/ZEX_GFY_MGY_Criticise_Crown.dds"
+	}
 }

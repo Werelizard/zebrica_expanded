@@ -76,9 +76,10 @@ add_ideas = {
 	
 	#Ideas
 	
+	ZEX_Unfinished_Constitution
 	ZEX_MGY_Equestrian_Debts
 	ZEX_MGY_Breadbasket
-	ZEX_Unfinished_Constitution
+	# ZEX_MGY_REPUBLICAN_AGITATION
 	ZEX_MGY_Somnambula
 }
 
@@ -196,6 +197,10 @@ if = {
 ####################
 # ZEBRICA EXPANDED #
 ####################
+
+#Initiate republican agitators
+ZEX_activate_republican_agitation = yes
+
 #At the start, king Khefer is the leader for the unaligned as well
 create_country_leader = {
 	name = MGY_king_khefer
