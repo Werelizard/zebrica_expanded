@@ -1,4 +1,10 @@
 characters={
+	#
+	# ZEBRICA EXPANDED - Vanilla Characters #
+	# 
+
+	## Leaders
+
 	MGY_king_khefer={
 		name=MGY_king_khefer
 		portraits={
@@ -50,19 +56,6 @@ characters={
 			logistics_skill=2
 		}
 		gender=female
-	}
-	MGY_shepser_of_manephis={
-		name=MGY_shepser_of_manephis
-		portraits={
-			civilian={
-				large="gfx/leaders/MGY/Shepser.tga"
-			}
-		}
-		# country_leader={
-		# 	ideology=despotism
-		# 	expire="1111.1.1.1"
-		# 	id=-1
-		# }
 	}
 	MGY_butternut_squash={
 		name=MGY_butternut_squash
@@ -134,9 +127,13 @@ characters={
 		gender=female
 	}
 
-	## Zebrica Expanded
+	#
+	# ZEBRICA EXPANDED - NEW CHARACTERS #
+	# 
 
-	ZEX_MGY_Shaa_Doof = {
+	## Viziers
+
+	ZEX_MGY_Shaa_Doof = { #The Old Vizier
 		name = ZEX_MGY_Shaa_Doof
 		portraits = {
 			civilian = {
@@ -145,15 +142,125 @@ characters={
 		}
 		advisor = {
 			slot = political_advisor
-			idea_token = ZEX_MGY_Shaa_Doof
+			idea_token = ZEX_MGY_Vizier_Advisor
 			allowed = {
 				original_tag = MGY
-			}
-			available = {
-				has_government = democratic
+				NOT = {
+					is_country_leader = yes
+				}
 			}
 			traits = {
 				ZEX_Old_Vizier
+			}
+		}
+	}
+
+	ZEX_MGY_Aly_Neigher = { #The Conservative Harmonist
+		name = ZEX_MGY_Aly_Neigher
+		portraits = {
+			civilian = {
+				small = GFX_idea_unknown_advisor_donkey
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ZEX_MGY_Vizier_Advisor
+			allowed = {
+				original_tag = MGY
+				NOT = {
+					is_country_leader = yes
+				}
+			}
+			traits = {
+				ZEX_Aly_Neigher_trait
+			}
+		}
+	}
+
+	ZEX_MGY_Sala_Warmhoof = { #The Reformist
+		name = ZEX_MGY_Sala_Warmhoof
+		portraits = {
+			civilian = {
+				small = GFX_idea_unknown_advisor_donkey
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ZEX_MGY_Vizier_Advisor
+			allowed = {
+				original_tag = MGY
+				NOT = {
+					is_country_leader = yes
+				}
+			}
+			traits = {
+				ZEX_Sala_Warmhoof_trait
+			}
+		}
+	}
+
+	ZEX_MGY_Mostafa_Manesan = { #The Monarchist
+		name = ZEX_MGY_Mostafa_Manesan
+		portraits = {
+			civilian = {
+				small = GFX_idea_unknown_advisor_donkey
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ZEX_MGY_Vizier_Advisor
+			allowed = {
+				original_tag = MGY
+				NOT = {
+					is_country_leader = yes
+				}
+			}
+			traits = {
+				ZEX_Mostafa_Manesan_trait
+			}
+		}
+	}
+
+	ZEX_MGY_Hoofein_Ali = { #The Zebricanist - Moderate compromise
+		name = ZEX_MGY_Hoofein_Ali
+		portraits = {
+			civilian = {
+				small = GFX_idea_unknown_advisor_donkey
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ZEX_MGY_Vizier_Advisor
+			allowed = {
+				original_tag = MGY
+				NOT = {
+					is_country_leader = yes
+				}
+			}
+			traits = {
+				ZEX_Hoofein_Ali_trait
+			}
+		}
+	}
+
+	ZEX_MGY_Neigh_Ser = { #The Zebricanist - Republican
+		name = ZEX_MGY_Neigh_Ser
+		portraits = {
+			civilian = {
+				small = GFX_idea_unknown_advisor_donkey
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ZEX_MGY_Vizier_Advisor
+			allowed = {
+				original_tag = MGY
+				NOT = {
+					is_country_leader = yes
+				}
+			}
+			traits = {
+				ZEX_Neigh_Ser_trait
 			}
 		}
 	}

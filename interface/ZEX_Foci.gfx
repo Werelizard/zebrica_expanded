@@ -1,14 +1,14 @@
 spriteTypes = {
 	spriteType = {
-		name = "ZEX_MGY_kings_adress"
-		textureFile = "gfx/interface/goals/ZEX_MGY_focus_the_king_speech.dds"
+		name = "GFX_ZEX_Goal_King_Speech"
+		textureFile = "gfx/interface/goals/MGY/ZEX_MGY_focus_the_king_speech.dds"
 	}
 	spriteType = {
-		name = "ZEX_MGY_kings_adress_shine"
-		textureFile = "gfx/interface/goals/ZEX_MGY_focus_the_king_speech.dds"
+		name = "GFX_ZEX_Goal_King_Speech_shine"
+		textureFile = "gfx/interface/goals/MGY/ZEX_MGY_focus_the_king_speech.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/ZEX_MGY_focus_the_king_speech.dds"			
+			animationmaskfile = "gfx/interface/goals/MGY/ZEX_MGY_focus_the_king_speech.dds"			
 			animationtexturefile = "gfx/interface/goals/ZEX_MGY_shine_100x100.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -20,7 +20,112 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/ZEX_MGY_focus_the_king_speech.dds"			
+			animationmaskfile = "gfx/interface/goals/MGY/ZEX_MGY_focus_the_king_speech.dds"			
+			animationtexturefile = "gfx/interface/goals/ZEX_MGY_shine_100x100.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ZEX_Harmonic_Society"
+		textureFile = "gfx/interface/goals/MGY/GFX_ZEX_Harmonic_Society.dds"
+	}
+	spriteType = {
+		name = "GFX_ZEX_Harmonic_Society"
+		textureFile = "gfx/interface/goals/MGY/GFX_ZEX_Harmonic_Society.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/MGY/GFX_ZEX_Harmonic_Society.dds"			
+			animationtexturefile = "gfx/interface/goals/ZEX_MGY_shine_100x100.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/MGY/GFX_ZEX_Harmonic_Society.dds"			
+			animationtexturefile = "gfx/interface/goals/ZEX_MGY_shine_100x100.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ZEX_Goal_Harmonic_Benevolence"
+		textureFile = "gfx/interface/goals/MGY/GFX_ZEX_Goal_Harmonic_Benevolence.dds"
+	}
+	spriteType = {
+		name = "GFX_ZEX_Goal_Harmonic_Benevolence"
+		textureFile = "gfx/interface/goals/MGY/GFX_ZEX_Goal_Harmonic_Benevolence.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/MGY/GFX_ZEX_Goal_Harmonic_Benevolence.dds"			
+			animationtexturefile = "gfx/interface/goals/ZEX_MGY_shine_100x100.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/MGY/GFX_ZEX_Goal_Harmonic_Benevolence.dds"			
+			animationtexturefile = "gfx/interface/goals/ZEX_MGY_shine_100x100.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ZEX_Goal_Harmonic_Police"
+		textureFile = "gfx/interface/goals/MGY/GFX_ZEX_Goal_Harmonic_Police.dds"
+	}
+	spriteType = {
+		name = "GFX_ZEX_Goal_Harmonic_Police"
+		textureFile = "gfx/interface/goals/MGY/GFX_ZEX_Goal_Harmonic_Police.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/MGY/GFX_ZEX_Goal_Harmonic_Police.dds"			
+			animationtexturefile = "gfx/interface/goals/ZEX_MGY_shine_100x100.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/MGY/GFX_ZEX_Goal_Harmonic_Police.dds"			
 			animationtexturefile = "gfx/interface/goals/ZEX_MGY_shine_100x100.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)

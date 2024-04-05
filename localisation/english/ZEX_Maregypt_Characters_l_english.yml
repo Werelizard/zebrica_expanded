@@ -1,0 +1,18 @@
+﻿l_english:
+ #Advisors - token
+ ZEX_MGY_Vizier_Advisor:0 "Vizier"
+ 
+ #Advisors - names / traits
+ ZEX_MGY_Shaa_Doof:0 "Shaa Doof"
+ ZEX_MGY_Aly_Neigher:0 "Aly Neigher"
+ ZEX_MGY_Sala_Warmhoof:0 "Sala Warmhoof"
+ ZEX_MGY_Mostafa_Manesan:0 "Mostafa Manesan"
+ ZEX_MGY_Hoofein_Ali:0 "Hoofein Ali"
+ ZEX_MGY_Neigh_Ser:0 "Neigh Ser"
+
+ ZEX_Old_Vizier:0 "Old Vizier" 
+ ZEX_Sala_Warmhoof_trait:0 "Kind-Hearted Reformist"
+ ZEX_Aly_Neigher_trait:0 "Traditionalist"
+ ZEX_Mostafa_Manesan_trait:0 "Aristocrat"
+ ZEX_Hoofein_Ali_trait:0 "Masterful Political Maneuverer"
+ ZEX_Neigh_Ser_trait:0 "Republican Figurehead"

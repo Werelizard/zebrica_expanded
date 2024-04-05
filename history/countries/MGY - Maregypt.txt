@@ -248,6 +248,12 @@ set_politics = {
 # New Characters
 
 recruit_character = ZEX_MGY_Shaa_Doof
+# recruit_character = ZEX_MGY_Aly_Neigher
+# recruit_character = ZEX_MGY_Sala_Warmhoof
+# recruit_character = ZEX_MGY_Mostafa_Manesan
+# recruit_character = ZEX_MGY_Hoofein_Ali
+# recruit_character = ZEX_MGY_Neigh_Ser
+
 add_advisor_role = {
     character = ZEX_MGY_Shaa_Doof
     activate = yes
@@ -257,7 +263,6 @@ add_advisor_role = {
         idea_token = ZEX_MGY_Shaa_Doof
         traits = {
             ZEX_Old_Vizier
-			ZEX_Sha_Doof_Reformist
         }
 		can_be_fired = no
     }

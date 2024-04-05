@@ -1,0 +1,29 @@
+on_actions = {
+	on_startup = {
+		MGY = {
+			add_opinion_modifier = { target = THU modifier = distrustful_relations }
+			add_opinion_modifier = { target = GYZ modifier = distrustful_relations }
+			add_opinion_modifier = { target = STM modifier = distrustful_relations }
+			add_opinion_modifier = { target = SLC modifier = distrustful_relations }
+			add_opinion_modifier = { target = BLT modifier = distrustful_relations }
+			add_opinion_modifier = { target = CZR modifier = distrustful_relations }
+		}
+	}
+	on_weekly_MGY = {
+		effect = {
+			if = {
+				limit = {
+					has_idea = ZEX_MGY_goal_harmony_society_idea
+				}
+				add_to_variable = {
+					ZEX_MGY_LEGITIMACY = ZEX_MGY_LEGITIMACY_INCREASE
+				}
+				clamp_variable = {
+					var = ZEX_MGY_LEGITIMACY
+					min = 0
+					max = 100
+				}
+			}
+		}
+	}
+}

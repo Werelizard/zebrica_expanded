@@ -1,0 +1,1579 @@
+focus_tree = {
+	id = ZEX_MGY_focus_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 100
+			zxe_is_originally_maregypt_or_cosmetic_maregypt = yes
+			if = {
+				limit = {
+					has_civil_war = yes
+				}
+				NOT = {
+					has_government = communism
+				}
+			}
+		}
+	}
+
+	default = no
+
+	initial_show_position = {
+		focus = ZEX_Goal_King_Speech
+	}
+
+	continuous_focus_position = { x = 200 y = 2300 }
+
+	#
+	# The King Speaks!
+	#
+
+	focus = { #The King's Adress
+		id = ZEX_Goal_King_Speech
+		icon = GFX_ZEX_Goal_King_Speech
+
+		x = 0
+		y = 0
+
+		cost = 4
+		cancelable = no
+
+		#Prerequisites
+		prerequisite = {
+			
+		}
+	
+		#Triggers
+		available = {
+			
+		}
+
+		#Effects
+		select_effect = {
+			
+		}
+
+		cancel_effect = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	#
+	# SUB-BRANCH: Dealing with the country's rampant unrest
+	#
+
+	focus = { #The Harmonic Society
+		id = ZEX_Goal_Harmonic_Society
+		icon = GFX_ZEX_Harmonic_Society
+
+		relative_position_id = ZEX_Goal_King_Speech
+		x = -8
+		y = 1
+
+		cost = 2
+
+		#Prerequisites
+		prerequisite = {
+			focus = ZEX_Goal_King_Speech
+		}
+	
+		#Triggers
+		available = {
+			zex_mgy_has_republican_unrest = yes
+		}
+
+		#Effects
+		select_effect = {
+			
+		}
+
+		cancel_effect = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = { #Harmony Benevolence
+		id = ZEX_Goal_Harmonic_Benevolence
+		icon = GFX_ZEX_Goal_Harmonic_Benevolence
+
+		relative_position_id = ZEX_Goal_King_Speech
+		x = -6
+		y = 2
+
+		cost = 2
+
+		#Prerequisites
+		prerequisite = {
+			focus = ZEX_Goal_Harmonic_Society
+		}
+		mutually_exclusive = {
+			focus = ZEX_Goal_Harmonic_Police
+		}
+	
+		#Triggers
+		available = {
+			zex_mgy_has_republican_unrest = yes
+		}
+
+		#Effects
+		select_effect = {
+			
+		}
+
+		cancel_effect = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = { #Harmony Police
+		id = ZEX_Goal_Harmonic_Police
+		icon = GFX_ZEX_Goal_Harmonic_Police
+
+		relative_position_id = ZEX_Goal_King_Speech
+		x = -10
+		y = 2
+
+		cost = 2
+
+		#Prerequisites
+		prerequisite = {
+			focus = ZEX_Goal_Harmonic_Society
+		}
+		mutually_exclusive = {
+			focus = ZEX_Goal_Harmonic_Benevolence
+		}
+	
+		#Triggers
+		available = {
+			zex_mgy_has_republican_unrest = yes
+		}
+
+		#Effects
+		select_effect = {
+			
+		}
+
+		cancel_effect = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = { #Fight back time
+		id = ZEX_Goal_Fight_the_Agitators
+		icon = GFX_ZEX_Goal_Fight_the_Agitators
+
+		relative_position_id = ZEX_Goal_King_Speech
+		x = -12
+		y = 3
+
+		cost = 3
+
+		#Prerequisites
+		prerequisite = {
+			focus = ZEX_Goal_Harmonic_Benevolence
+			focus = ZEX_Goal_Harmonic_Police
+		}
+		mutually_exclusive = {
+			
+		}
+	
+		#Triggers
+		available = {
+			zex_mgy_has_republican_unrest = yes
+		}
+
+		#Effects
+		select_effect = {
+			
+		}
+
+		cancel_effect = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = { #Anti-Harmonic Commitee
+		id = ZEX_Goal_Anti_Harmony_Committee
+		icon = GFX_ZEX_Goal_Anti_Harmony_Committee
+
+		relative_position_id = ZEX_Goal_King_Speech
+		x = -8
+		y = 3
+
+		cost = 2
+
+		#Prerequisites
+		prerequisite = {
+			focus = ZEX_Goal_Harmonic_Benevolence
+			focus = ZEX_Goal_Harmonic_Police
+		}
+		mutually_exclusive = {
+			
+		}
+	
+		#Triggers
+		available = {
+			zex_mgy_has_republican_unrest = yes
+		}
+
+		#Effects
+		select_effect = {
+			
+		}
+
+		cancel_effect = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = { #In Harmony's Name
+		id = ZEX_Goal_in_Harmonys_name
+		icon = GFX_ZEX_Goal_in_Harmonys_name
+
+		relative_position_id = ZEX_Goal_King_Speech
+		x = -12
+		y = 4
+
+		cost = 3
+
+		#Prerequisites
+		prerequisite = {
+			focus = ZEX_Goal_Fight_the_Agitators
+		}
+		mutually_exclusive = {
+			
+		}
+	
+		#Triggers
+		available = {
+			zex_mgy_has_republican_unrest = yes
+		}
+
+		#Effects
+		select_effect = {
+			
+		}
+
+		cancel_effect = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = { #Expand Policing Efforts
+		id = ZEX_Goal_Expand_Secret_Police
+		icon = GFX_ZEX_Goal_Expand_Secret_Police
+
+		relative_position_id = ZEX_Goal_King_Speech
+		x = -10
+		y = 4
+
+		cost = 2
+
+		#Prerequisites
+		prerequisite = {
+			focus = ZEX_Goal_Harmonic_Police
+		}
+		prerequisite = {
+			focus = ZEX_Goal_Anti_Harmony_Committee
+		}
+	
+		#Triggers
+		available = {
+			zex_mgy_has_republican_unrest = yes
+		}
+
+		#Effects
+		select_effect = {
+			
+		}
+
+		cancel_effect = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = { #Harmonic Pacification
+		id = ZEX_Goal_Harmonic_Pacification
+		icon = GFX_ZEX_Goal_Harmonic_Pacification
+
+		relative_position_id = ZEX_Goal_King_Speech
+		x = -6
+		y = 4
+
+		cost = 2
+
+		#Prerequisites
+		prerequisite = {
+			focus = ZEX_Goal_Harmonic_Benevolence
+		}
+		prerequisite = {
+			focus = ZEX_Goal_Anti_Harmony_Committee
+		}
+	
+		#Triggers
+		available = {
+			zex_mgy_has_republican_unrest = yes
+		}
+
+		#Effects
+		select_effect = {
+			
+		}
+
+		cancel_effect = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = { #Peace in the Realm
+		id = ZEX_Goal_Pacify_the_Realm
+		icon = GFX_ZEX_Pacify_the_Realm
+
+		relative_position_id = ZEX_Goal_King_Speech
+		x = -8
+		y = 5
+
+		cost = 4
+
+		#Prerequisites
+		prerequisite = {
+			focus = ZEX_Goal_Expand_Secret_Police
+			focus = ZEX_Goal_Harmonic_Pacification
+		}
+	
+		#Triggers
+		available = {
+			zex_mgy_has_republican_unrest = yes
+		}
+
+		#Effects
+		select_effect = {
+			
+		}
+
+		cancel_effect = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	#
+	# SUB-BRANCH: Convening and managing the Diet
+	#
+
+	focus = { #Summon the Diet
+		id = ZEX_Goal_Convey_the_Diet
+		icon = GFX_ZEX_Goal_Convey_the_Diet
+
+		relative_position_id = ZEX_Goal_King_Speech
+		x = 0
+		y = 1
+
+		cost = 3
+
+		#Prerequisites
+		prerequisite = {
+			focus = ZEX_Goal_King_Speech
+		}
+	
+		#Triggers
+		available = {
+			zex_mgy_has_constitutional_crisis = yes
+		}
+
+		#Effects
+		select_effect = {
+			
+		}
+
+		cancel_effect = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = { #Zebrican-Coalition
+		id = ZEX_Goal_Diet_Zebrican_Led
+		icon = GFX_ZEX_Goal_Diet_Zebrican_Led
+
+		relative_position_id = ZEX_Goal_King_Speech
+		x = -4
+		y = 2
+
+		cost = 3
+
+		#Prerequisites
+		prerequisite = {
+			focus = ZEX_Goal_Convey_the_Diet
+		}
+		mutually_exclusive = {
+			
+		}
+	
+		#Triggers
+		available = {
+			zex_mgy_has_a_vizier = yes
+			zex_mgy_vizier_is_not_anti_zebrican = yes
+		}
+
+		#Effects
+		select_effect = {
+			
+		}
+
+		cancel_effect = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}	
+
+	focus = { #Harmonic-Coalition
+		id = ZEX_Goal_Diet_Harmony_Led
+		icon = GFX_ZEX_Goal_Diet_Harmony_Led
+
+		relative_position_id = ZEX_Goal_King_Speech
+		x = 0
+		y = 2
+
+		cost = 3
+
+		#Prerequisites
+		prerequisite = {
+			focus = ZEX_Goal_Convey_the_Diet
+		}
+		mutually_exclusive = {
+			
+		}
+	
+		#Triggers
+		available = {
+			zex_mgy_has_a_vizier = yes
+			zex_mgy_vizier_is_not_anti_harmonist = yes
+		}
+
+		#Effects
+		select_effect = {
+			
+		}
+
+		cancel_effect = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}	
+
+	focus = { #Monarchist-Coalition
+		id = ZEX_Goal_Diet_Monarchy_Led
+		icon = GFX_ZEX_Goal_Diet_Monarchy_Led
+
+		relative_position_id = ZEX_Goal_King_Speech
+		x = 4
+		y = 2
+
+		cost = 3
+
+		#Prerequisites
+		prerequisite = {
+			focus = ZEX_Goal_Convey_the_Diet
+		}
+		mutually_exclusive = {
+			
+		}
+	
+		#Triggers
+		available = {
+			zex_mgy_has_a_vizier = yes
+			zex_mgy_vizier_is_not_anti_monarchist = yes
+		}
+
+		#Effects
+		select_effect = {
+			
+		}
+
+		cancel_effect = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}	
+
+	#
+	# SUB-BRANCH: The Diet's Arguments
+	#zex_mgy_diet_is_supportive
+
+	focus = { # Restrict Crown
+		id = ZEX_Goal_Diet_Restrict_Royal_Agency
+		icon = GFX_ZEX_Goal_Diet_Restrict_Royal_Agency
+
+		relative_position_id = ZEX_Goal_King_Speech
+		x = -2
+		y = 3
+
+		cost = 3
+
+		#Prerequisites
+		prerequisite = {
+			focus = ZEX_Goal_Diet_Harmony_Led
+			focus = ZEX_Goal_Diet_Zebrican_Led
+		}
+		mutually_exclusive = {
+			focus = ZEX_Goal_Diet_Codify_Crown
+		}
+	
+		#Triggers
+		available = {
+			zex_mgy_has_a_vizier = yes
+			zex_mgy_diet_is_supportive = yes
+		}
+
+		#Effects
+		select_effect = {
+			
+		}
+
+		cancel_effect = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}	
+
+	focus = { # Restrict Crown
+		id = ZEX_Goal_Diet_Codify_Crown
+		icon = GFX_ZEX_Goal_Diet_Codify_Crown
+
+		relative_position_id = ZEX_Goal_King_Speech
+		x = 2
+		y = 3
+
+		cost = 3
+
+		#Prerequisites
+		prerequisite = {
+			focus = ZEX_Goal_Diet_Harmony_Led
+			focus = ZEX_Goal_Diet_Monarchy_Led
+		}
+		mutually_exclusive = {
+			focus = ZEX_Goal_Diet_Restrict_Royal_Agency
+		}
+	
+		#Triggers
+		available = {
+			zex_mgy_has_a_vizier = yes
+			zex_mgy_diet_is_supportive = yes
+		}
+
+		#Effects
+		select_effect = {
+			
+		}
+
+		cancel_effect = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}	
+
+	focus = { # Modernise Laws
+		id = ZEX_Goal_Diet_Modernise_Laws
+		icon = GFX_ZEX_Goal_Diet_Modernise_Laws
+
+		relative_position_id = ZEX_Goal_King_Speech
+		x = -4
+		y = 4
+
+		cost = 3
+
+		#Prerequisites
+		prerequisite = {
+			focus = ZEX_Goal_Diet_Zebrican_Led
+		}
+		prerequisite = {
+			focus = ZEX_Goal_Diet_Restrict_Royal_Agency
+		}
+	
+		#Triggers
+		available = {
+			zex_mgy_has_a_vizier = yes
+			zex_mgy_diet_is_supportive = yes
+		}
+
+		#Effects
+		select_effect = {
+			
+		}
+
+		cancel_effect = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}	
+
+	focus = { # Law Reform
+		id = ZEX_Goal_Diet_Judiciary_Reform
+		icon = GFX_ZEX_Goal_Diet_Judiciary_Reform
+
+		relative_position_id = ZEX_Goal_King_Speech
+		x = 0
+		y = 4
+
+		cost = 3
+
+		#Prerequisites
+		prerequisite = {
+			focus = ZEX_Goal_Diet_Codify_Crown
+			focus = ZEX_Goal_Diet_Restrict_Royal_Agency
+		}
+		#Triggers
+		available = {
+			zex_mgy_has_a_vizier = yes
+			zex_mgy_diet_is_supportive = yes
+		}
+
+		#Effects
+		select_effect = {
+			
+		}
+
+		cancel_effect = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}	
+
+	focus = { # Law Reform
+		id = ZEX_Goal_Diet_Nobility_Titles
+		icon = GFX_ZEX_Goal_Diet_Nobility_Titles
+
+		relative_position_id = ZEX_Goal_King_Speech
+		x = 4
+		y = 4
+
+		cost = 3
+
+		#Prerequisites
+		prerequisite = {
+			focus = ZEX_Goal_Diet_Codify_Crown
+		}
+		prerequisite = {
+			focus = ZEX_Goal_Diet_Monarchy_Led
+		}
+		#Triggers
+		available = {
+			zex_mgy_has_a_vizier = yes
+			zex_mgy_diet_is_supportive = yes
+		}
+
+		#Effects
+		select_effect = {
+			
+		}
+
+		cancel_effect = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}	
+
+	focus = { # Right to representation
+		id = ZEX_Goal_Diet_Right_To_Representation
+		icon = GFX_ZEX_Goal_Diet_Right_To_Representation
+
+		relative_position_id = ZEX_Goal_King_Speech
+		x = -2
+		y = 5
+
+		cost = 3
+
+		#Prerequisites
+		prerequisite = {
+			focus = ZEX_Goal_Diet_Modernise_Laws
+			focus = ZEX_Goal_Diet_Judiciary_Reform
+		}
+		#Triggers
+		available = {
+			zex_mgy_has_a_vizier = yes
+			zex_mgy_diet_is_supportive = yes
+		}
+
+		#Effects
+		select_effect = {
+			
+		}
+
+		cancel_effect = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}	
+
+	focus = { # Illusion of Democracy
+		id = ZEX_Goal_Diet_Illusion_of_Democracy
+		icon = GFX_ZEX_Goal_Diet_Illusion_of_Democracy
+
+		relative_position_id = ZEX_Goal_King_Speech
+		x = 2
+		y = 5
+
+		cost = 3
+
+		#Prerequisites
+		prerequisite = {
+			focus = ZEX_Goal_Diet_Nobility_Titles
+			focus = ZEX_Goal_Diet_Judiciary_Reform
+		}
+		#Triggers
+		available = {
+			zex_mgy_has_a_vizier = yes
+			zex_mgy_diet_is_supportive = yes
+		}
+
+		#Effects
+		select_effect = {
+			
+		}
+
+		cancel_effect = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}	
+
+	focus = { # Foundations of Modernstate
+		id = ZEX_Goal_Diet_Modern_Bureaucracy
+		icon = GFX_ZEX_Goal_Diet_Modern_Bureaucracy
+
+		relative_position_id = ZEX_Goal_King_Speech
+		x = -6
+		y = 6
+
+		cost = 3
+
+		#Prerequisites
+		prerequisite = {
+			focus = ZEX_Goal_Diet_Right_To_Representation
+		}
+		#Triggers
+		available = {
+			zex_mgy_has_a_vizier = yes
+			zex_mgy_diet_is_supportive = yes
+			has_completed_focus = ZEX_Goal_Diet_Zebrican_Led
+		}
+
+		#Effects
+		select_effect = {
+			
+		}
+
+		cancel_effect = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}	
+
+	focus = { # Remove governates
+		id = ZEX_Goal_Diet_Abolish_Governates
+		icon = GFX_ZEX_Goal_Diet_Abolish_Governates
+
+		relative_position_id = ZEX_Goal_King_Speech
+		x = -6
+		y = 8
+
+		cost = 3
+
+		#Prerequisites
+		prerequisite = {
+			focus = ZEX_Goal_Diet_Modern_Bureaucracy
+		}
+		#Triggers
+		available = {
+			zex_mgy_has_a_vizier = yes
+			zex_mgy_diet_is_supportive = yes
+			has_completed_focus = ZEX_Goal_Diet_Zebrican_Led
+		}
+
+		#Effects
+		select_effect = {
+			
+		}
+
+		cancel_effect = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}	
+
+
+	focus = { # Tackle Corruption
+		id = ZEX_Goal_Diet_Tackle_Corruption
+		icon = GFX_ZEX_Goal_Diet_Tackle_Corruption
+
+		relative_position_id = ZEX_Goal_King_Speech
+		x = -4
+		y = 7
+
+		cost = 3
+
+		#Prerequisites
+		prerequisite = {
+			focus = ZEX_Goal_Diet_Modern_Bureaucracy
+			focus = ZEX_Goal_Diet_Progressive_Policies
+		}
+		#Triggers
+		available = {
+			zex_mgy_has_a_vizier = yes
+			zex_mgy_diet_is_supportive = yes
+		}
+
+		#Effects
+		select_effect = {
+			
+		}
+
+		cancel_effect = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = { # Progessive Rights
+		id = ZEX_Goal_Diet_Progressive_Policies
+		icon = GFX_ZEX_Goal_Diet_Progressive_Policies
+
+		relative_position_id = ZEX_Goal_King_Speech
+		x = -2
+		y = 6
+
+		cost = 3
+
+		#Prerequisites
+		prerequisite = {
+			focus = ZEX_Goal_Diet_Right_To_Representation
+		}
+		mutually_exclusive = {
+			focus = ZEX_Goal_Diet_Codify_Harmony
+		}
+		#Triggers
+		available = {
+			zex_mgy_has_a_vizier = yes
+			zex_mgy_diet_is_supportive = yes
+			has_completed_focus = ZEX_Goal_Diet_Harmony_Led
+		}
+
+		#Effects
+		select_effect = {
+			
+		}
+
+		cancel_effect = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}	
+
+	focus = { # Abolish Council
+		id = ZEX_Goal_Diet_Abolish_Council
+		icon = GFX_ZEX_Goal_Diet_Abolish_Council
+
+		relative_position_id = ZEX_Goal_King_Speech
+		x = -2
+		y = 8
+
+		cost = 3
+
+		#Prerequisites
+		prerequisite = {
+			focus = ZEX_Goal_Diet_Progressive_Policies
+		}
+		#Triggers
+		available = {
+			zex_mgy_has_a_vizier = yes
+			zex_mgy_diet_is_supportive = yes
+			has_completed_focus = ZEX_Goal_Diet_Harmony_Led
+		}
+
+		#Effects
+		select_effect = {
+			
+		}
+
+		cancel_effect = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}	
+
+	focus = { # Harmony Only
+		id = ZEX_Goal_Diet_Codify_Harmony
+		icon = GFX_ZEX_Goal_Diet_Codify_Harmony
+
+		relative_position_id = ZEX_Goal_King_Speech
+		x = 2
+		y = 6
+
+		cost = 3
+
+		#Prerequisites
+		prerequisite = {
+			focus = ZEX_Goal_Diet_Illusion_of_Democracy
+		}
+		mutually_exclusive = {
+			focus = ZEX_Goal_Diet_Progressive_Policies
+		}
+		#Triggers
+		available = {
+			zex_mgy_has_a_vizier = yes
+			zex_mgy_diet_is_supportive = yes
+			has_completed_focus = ZEX_Goal_Diet_Harmony_Led
+		}
+
+		#Effects
+		select_effect = {
+			
+		}
+
+		cancel_effect = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = { # Charity State
+		id = ZEX_Goal_Diet_For_The_Needy
+		icon = GFX_ZEX_Goal_Diet_For_The_Needy
+
+		relative_position_id = ZEX_Goal_King_Speech
+		x = 2
+		y = 8
+
+		cost = 3
+
+		#Prerequisites
+		prerequisite = {
+			focus = ZEX_Goal_Diet_Codify_Harmony
+		}
+		#Triggers
+		available = {
+			zex_mgy_has_a_vizier = yes
+			zex_mgy_diet_is_supportive = yes
+			has_completed_focus = ZEX_Goal_Diet_Harmony_Led
+		}
+
+		#Effects
+		select_effect = {
+			
+		}
+
+		cancel_effect = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = { # Moral Values
+		id = ZEX_Goal_Diet_Moral_Values
+		icon = GFX_ZEX_Goal_Diet_Moral_Values
+
+		relative_position_id = ZEX_Goal_King_Speech
+		x = 4
+		y = 7
+
+		cost = 3
+
+		#Prerequisites
+		prerequisite = {
+			focus = ZEX_Goal_Diet_Codify_Harmony
+			focus = ZEX_Goal_Diet_Centralise_Rule
+		}
+		#Triggers
+		available = {
+			zex_mgy_has_a_vizier = yes
+			zex_mgy_diet_is_supportive = yes
+		}
+
+		#Effects
+		select_effect = {
+			
+		}
+
+		cancel_effect = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = { # Centralise Rule
+		id = ZEX_Goal_Diet_Centralise_Rule
+		icon = GFX_ZEX_Goal_Diet_Centralise_Rule
+
+		relative_position_id = ZEX_Goal_King_Speech
+		x = 6
+		y = 6
+
+		cost = 3
+
+		#Prerequisites
+		prerequisite = {
+			focus = ZEX_Goal_Diet_Illusion_of_Democracy
+		}
+		#Triggers
+		available = {
+			zex_mgy_has_a_vizier = yes
+			zex_mgy_diet_is_supportive = yes
+			has_completed_focus = ZEX_Goal_Diet_Monarchy_Led
+		}
+
+		#Effects
+		select_effect = {
+			
+		}
+
+		cancel_effect = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = { # Abolish Republicans
+		id = ZEX_Goal_Diet_Ban_Extremism
+		icon = GFX_ZEX_Goal_Diet_Ban_Extremism
+
+		relative_position_id = ZEX_Goal_King_Speech
+		x = 6
+		y = 8
+
+		cost = 3
+
+		#Prerequisites
+		prerequisite = {
+			focus = ZEX_Goal_Diet_Centralise_Rule
+		}
+		#Triggers
+		available = {
+			zex_mgy_has_a_vizier = yes
+			zex_mgy_diet_is_supportive = yes
+			has_completed_focus = ZEX_Goal_Diet_Monarchy_Led
+		}
+
+		#Effects
+		select_effect = {
+			
+		}
+
+		cancel_effect = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = { # Sign the Constitution
+		id = ZEX_Goal_Diet_Sign_Constitution
+		icon = GFX_ZEX_Goal_Diet_Sign_Constitution
+
+		relative_position_id = ZEX_Goal_King_Speech
+		x = 0
+		y = 9
+
+		cost = 3
+
+		#Prerequisites
+		prerequisite = {
+			focus = ZEX_Goal_Diet_Abolish_Governates
+			focus = ZEX_Goal_Diet_Abolish_Council
+			focus = ZEX_Goal_Diet_For_The_Needy
+			focus = ZEX_Goal_Diet_Ban_Extremism
+		}
+		#Triggers
+		available = {
+			zex_mgy_has_a_vizier = yes
+			zex_mgy_diet_is_supportive = yes
+			OR = {
+				custom_trigger_tooltip = {
+					tooltip = ZEX_MGY_republicans_caught_tt
+					has_country_flag = zex_mgy_republicans_defeated_flag
+				}
+				has_completed_focus = ZEX_Goal_Pacify_the_Realm
+			}
+		}
+
+		#Effects
+		select_effect = {
+			
+		}
+
+		cancel_effect = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	#
+	# SUB-BRANCH: Choosing a new Vizier for when Shaa Doof kicks the bucket (ha!)
+	#
+
+	focus = { # Choose a Zebrican Vizier
+		id = ZEX_Goal_Diet_A_Zebrican_Vizier
+		icon = GFX_ZEX_Goal_Diet_A_Zebrican_Vizier
+
+		relative_position_id = ZEX_Goal_King_Speech
+		x = 6
+		y = 1
+
+		cost = 3
+
+		#Prerequisites
+		prerequisite = {
+			focus = ZEX_Goal_King_Speech
+		}
+		mutually_exclusive = {
+			focus = ZEX_Goal_Diet_A_Harmonist_Vizier
+			focus = ZEX_Goal_Diet_A_Loyalist_Vizier
+		}
+		#Triggers
+		available = {
+			zex_mgy_shaa_doof_dead = yes
+			NOT = {
+				has_completed_focus = ZEX_Goal_Diet_Monarchy_Led
+			}
+		}
+
+		#Effects
+		select_effect = {
+			
+		}
+
+		cancel_effect = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = { # Choose a Harmonist Vizier
+		id = ZEX_Goal_Diet_A_Harmonist_Vizier
+		icon = GFX_ZEX_Goal_Diet_A_Harmonist_Vizier
+
+		relative_position_id = ZEX_Goal_King_Speech
+		x = 10
+		y = 1
+
+		cost = 3
+
+		#Prerequisites
+		prerequisite = {
+			focus = ZEX_Goal_King_Speech
+		}
+		mutually_exclusive = {
+			focus = ZEX_Goal_Diet_A_Zebrican_Vizier
+			focus = ZEX_Goal_Diet_A_Loyalist_Vizier
+		}
+		#Triggers
+		available = {
+			zex_mgy_shaa_doof_dead = yes
+		}
+
+		#Effects
+		select_effect = {
+			
+		}
+
+		cancel_effect = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = { # Choose a LOyalist Vizier
+		id = ZEX_Goal_Diet_A_Loyalist_Vizier
+		icon = GFX_ZEX_Goal_Diet_A_Loyalist_Vizier
+
+		relative_position_id = ZEX_Goal_King_Speech
+		x = 12
+		y = 1
+
+		cost = 3
+
+		#Prerequisites
+		prerequisite = {
+			focus = ZEX_Goal_King_Speech
+		}
+		mutually_exclusive = {
+			focus = ZEX_Goal_Diet_A_Zebrican_Vizier
+			focus = ZEX_Goal_Diet_A_Harmonist_Vizier
+		}
+		#Triggers
+		available = {
+			zex_mgy_shaa_doof_dead = yes
+			NOT = {
+				has_completed_focus = ZEX_Goal_Diet_Zebrican_Led
+			}
+		}
+
+		#Effects
+		select_effect = {
+			
+		}
+
+		cancel_effect = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = { # Push Zebrican Loyalty
+		id = ZEX_Goal_Diet_Promote_Zebricanism
+		icon = GFX_ZEX_Goal_Diet_Promote_Zebricanism
+
+		relative_position_id = ZEX_Goal_King_Speech
+		x = 6
+		y = 3
+
+		cost = 3
+
+		#Prerequisites
+		prerequisite = {
+			focus = ZEX_Goal_Diet_A_Zebrican_Vizier
+		}
+		mutually_exclusive = {
+		}
+		#Triggers
+		available = {
+		}
+
+		#Effects
+		select_effect = {
+			
+		}
+
+		cancel_effect = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = { # Push Zebrican Loyalty
+		id = ZEX_Goal_Diet_Zebrican_Integration
+		icon = GFX_ZEX_Goal_Diet_Zebrican_Integration
+
+		relative_position_id = ZEX_Goal_King_Speech
+		x = 6
+		y = 4
+
+		cost = 3
+
+		#Prerequisites
+		prerequisite = {
+			focus = ZEX_Goal_Diet_Promote_Zebricanism
+		}
+		mutually_exclusive = {
+		}
+		#Triggers
+		available = {
+		}
+
+		#Effects
+		select_effect = {
+			
+		}
+
+		cancel_effect = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = { # APpeal to peasants
+		id = ZEX_Goal_Diet_Agrarian_Outreach
+		icon = GFX_ZEX_Goal_Diet_Agrarian_Outreach
+
+		relative_position_id = ZEX_Goal_King_Speech
+		x = 8
+		y = 2
+
+		cost = 3
+
+		#Prerequisites
+		prerequisite = {
+			focus = ZEX_Goal_Diet_A_Zebrican_Vizier
+			focus = ZEX_Goal_Diet_A_Harmonist_Vizier
+			focus = ZEX_Goal_Diet_A_Loyalist_Vizier
+		}
+		mutually_exclusive = {
+		}
+		#Triggers
+		available = {
+		}
+
+		#Effects
+		select_effect = {
+			
+		}
+
+		cancel_effect = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = { # Petition Somnabmula
+		id = ZEX_Goal_Diet_Petition_Somnambula
+		icon = GFX_ZEX_Goal_Diet_Petition_Somnambula
+
+		relative_position_id = ZEX_Goal_King_Speech
+		x = 10
+		y = 3
+
+		cost = 3
+
+		#Prerequisites
+		prerequisite = {
+			focus = ZEX_Goal_Diet_A_Harmonist_Vizier
+		}
+		mutually_exclusive = {
+		}
+		#Triggers
+		available = {
+		}
+
+		#Effects
+		select_effect = {
+			
+		}
+
+		cancel_effect = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = { # Aristocratic Support
+		id = ZEX_Goal_Diet_Aristocratic_Support
+		icon = GFX_ZEX_Goal_Diet_Aristocratic_Support
+
+		relative_position_id = ZEX_Goal_King_Speech
+		x = 12
+		y = 3
+
+		cost = 3
+
+		#Prerequisites
+		prerequisite = {
+			focus = ZEX_Goal_Diet_A_Loyalist_Vizier
+		}
+		mutually_exclusive = {
+		}
+		#Triggers
+		available = {
+		}
+
+		#Effects
+		select_effect = {
+			
+		}
+
+		cancel_effect = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = { # Rally the Royalists
+		id = ZEX_Goal_Diet_Rally_Royalists
+		icon = GFX_ZEX_Goal_Diet_Rally_Royalists
+
+		relative_position_id = ZEX_Goal_King_Speech
+		x = 10
+		y = 4
+
+		cost = 3
+
+		#Prerequisites
+		prerequisite = {
+			focus = ZEX_Goal_Diet_Aristocratic_Support
+			focus = ZEX_Goal_Diet_Petition_Somnambula
+		}
+		mutually_exclusive = {
+		}
+		#Triggers
+		available = {
+		}
+
+		#Effects
+		select_effect = {
+			
+		}
+
+		cancel_effect = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = { # Restore the grand coalition
+		id = ZEX_Goal_Diet_New_Grand_Coalition
+		icon = GFX_ZEX_Goal_Diet_New_Grand_Coalition
+
+		relative_position_id = ZEX_Goal_King_Speech
+		x = 8
+		y = 5
+
+		cost = 3
+
+		#Prerequisites
+		prerequisite = {
+			focus = ZEX_Goal_Diet_Rally_Royalists
+			focus = ZEX_Goal_Diet_Zebrican_Integration
+		}
+		prerequisite = {
+			focus = ZEX_Goal_Diet_Agrarian_Outreach
+		}
+		mutually_exclusive = {
+		}
+		#Triggers
+		available = {
+		}
+
+		#Effects
+		select_effect = {
+			
+		}
+
+		cancel_effect = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}
+}

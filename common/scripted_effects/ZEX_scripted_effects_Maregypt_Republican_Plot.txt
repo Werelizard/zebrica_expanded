@@ -32,6 +32,9 @@ ZEX_activate_republican_agitation = {
 		set_variable = {
 			ZEX_MGY_UNREST_REBELS_ESCAPE = 25
 		}
+		set_variable = {
+			ZEX_MGY_LEGITIMACY_INCREASE = 0.5
+		}
 
 		ZEX_MGY_SET_BASE_ALIGNMENTS = yes
 

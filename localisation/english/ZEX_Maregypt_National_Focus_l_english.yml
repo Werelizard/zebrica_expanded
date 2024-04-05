@@ -1,93 +1,67 @@
 ﻿l_english:
- ZEX_MGY_kings_adress:0 "His Majesty's Address"
- ZEX_MGY_kings_adress_desc:0 ""
+ #
+ # Tooltips
+ #
 
- ZEX_MGY_assemble_the_diet:0 "Assemble the Diet"
- ZEX_MGY_assemble_the_diet_desc:0 ""
+ ZEX_MGY_republicans_caught_tt:0 "Not: Suffering from Political Unrest"
+ zex_no_scripted_maregypt_civil_war_tt:0 "Not: is in a civil war"
+ zex_has_republican_agitation_tt:0 "Suffering from Political Unrest"
+ zex_mgy_has_constitutional_crisis_tt:0 "A New Constitution has yet to be Ratified"
+ zex_mgy_shaa_doof_dead_tt:0 "Shaa Doof has died"
+ zex_mgy_has_a_vizier_tt:0 "Has a Vizier"
+ zex_mgy_vizier_is_not_anti_zebrican_tt:0 "The Vizier is not an Anti-Zebrican"
+ zex_mgy_vizier_is_not_anti_harmonist_tt:0 "The Vizier is not an Anti-Harmonist"
+ zex_mgy_vizier_is_not_anti_monarchist_tt:0 "The Vizier is not an Anti-Monarchist"
+ zex_mgy_diet_is_supportive_tt:0 "More than §Y151§! seats are supportive in the diet"
 
- ZEX_MGY_diet_minority_rights:0 "The Matter of Individual Rights"
- ZEX_MGY_diet_minority_rights_desc:0 ""
+ #
+ # Politics starter branch
+ #
+ ZEX_Goal_King_Speech:0 "His Majesty's Address"
 
- ZEX_MGY_diet_civil_rights:0 "The Question of Religious Freedom"
- ZEX_MGY_diet_civil_rights_desc:0 ""
+ #Unrest Sub Branch
+ ZEX_Goal_Harmonic_Society:0 "The Neighlotic Harmony Association"
+ ZEX_Goal_Harmonic_Benevolence:0 "Pro-Harmony Propaganda"
+ ZEX_Goal_Harmonic_Police:0 "Integrate the Gendarmeries"
+ ZEX_Goal_Fight_the_Agitators:0 "Take the Fight to Them!"
+ ZEX_Goal_Anti_Harmony_Committee:0 "The Anti-Harmony Activities Comittee"
+ ZEX_Goal_in_Harmonys_name:0 "In Harmony's Name"
+ ZEX_Goal_Expand_Secret_Police:0 "Expand the National Police"
+ ZEX_Goal_Harmonic_Pacification:0 "Promote Harmonic Trade Unions"
+ ZEX_Goal_Pacify_the_Realm:0 "Peace Within the Realm"
 
- ZEX_MGY_diet_free_speech_question:0 "An Independent Judiciary?"
- ZEX_MGY_diet_free_speech_question_desc:0 ""
+ #Diet Sub-Branch
+ ZEX_Goal_Convey_the_Diet:0 "Summon the Diet"
+ ZEX_Goal_Diet_Zebrican_Led:0 "Zebricanism's Rise"
+ ZEX_Goal_Diet_Harmony_Led:0 "Harmony's Ambition"
+ ZEX_Goal_Diet_Monarchy_Led:0 "The Loyalist Clique"
+ ZEX_Goal_Diet_Restrict_Royal_Agency:0 "Restrict Royal Agency"
+ ZEX_Goal_Diet_Codify_Crown:0 "Legitimise the Crown"
+ ZEX_Goal_Diet_Modernise_Laws:0 "Ratify the Lotus Act"
+ ZEX_Goal_Diet_Judiciary_Reform:0 "Judiciary Reform"
+ ZEX_Goal_Diet_Nobility_Titles:0 "The Nobility Question"
+ ZEX_Goal_Diet_Right_To_Representation:0 "Right to Representation"
+ ZEX_Goal_Diet_Illusion_of_Democracy:0 "The Illusion of Democracy"
+ ZEX_Goal_Diet_Modern_Bureaucracy:0 "Bureaucratic Overhaul"
+ ZEX_Goal_Diet_Abolish_Governates:0 "Dissolve the Nomarchy"
+ ZEX_Goal_Diet_Tackle_Corruption:0 "Crack down on Corruption"
+ ZEX_Goal_Diet_Progressive_Policies:0 "Codify Maregyptian Liberalism"
+ ZEX_Goal_Diet_Abolish_Council:0 "Dissolve the Royal Council"
+ ZEX_Goal_Diet_Codify_Harmony:0 "Enshrine Harmonic Principles"
+ ZEX_Goal_Diet_For_The_Needy:0 "Harmony's Revival"
+ ZEX_Goal_Diet_Moral_Values:0 "For a Just and Moral Society"
+ ZEX_Goal_Diet_Centralise_Rule:0 "Centralise Government Institutions"
+ ZEX_Goal_Diet_Ban_Extremism:0 "The National Safety Act"
+ ZEX_Goal_Diet_Sign_Constitution:0 "Ratify the New Constitution"
 
- ZEX_MGY_diet_land_reform:0 "The Challenge of a Land Reform"
- ZEX_MGY_diet_land_reform_desc:0 ""
-
- ZEX_MGY_diet_voting_rights:0 "The Right to One's Vote"
- ZEX_MGY_diet_voting_rights_desc:0 ""
-
- ZEX_MGY_diet_religion_and_the_state:0 "The Power of the Parliament"
- ZEX_MGY_diet_religion_and_the_state_desc:0 ""
-
- ZEX_MGY_diet_role_of_king:0 "The Power of the King"
- ZEX_MGY_diet_role_of_king_desc:0 ""
-
- ZEX_MGY_diet_end_reform_victory:0 "The Reformists Triumphant"
- ZEX_MGY_diet_end_reform_victory_desc:0 ""
- 
- ZEX_MGY_diet_end_monarchist_victory:0 "The Monarchists Victorious"
- ZEX_MGY_diet_end_reform_victory_desc_desc:0 ""
-
- ZEX_MGY_diet_end_republican_victory:0 "The Republicans Prevail!"
- ZEX_MGY_diet_end_republican_victory_desc:0 ""
-
- ZEX_MGY_maintain_the_coalition_cabinet:0 "Preserve the Coalition Cabinet"
- ZEX_MGY_maintain_the_coalition_cabinet_desc:0 ""
-
- ZEX_MGY_expand_the_cabinet:0 "Expand the Cabinet"
- ZEX_MGY_expand_the_cabinet_desc:0 ""
-
- ZEX_MGY_Reach_out_to_far_hook:0 "Reach out to Far Hook"
- ZEX_MGY_Reach_out_to_far_hook_desc:0 ""
-
- ZEX_MGY_work_with_republican_faction:0 "The Republican Wing"
- ZEX_MGY_work_with_republican_faction_desc:0 ""
-
- ZEX_MGY_work_with_monarchists:0 "The King's Men"
- ZEX_MGY_work_with_monarchists_desc:0 ""
-
- ZEX_MGY_work_with_loyalists:0 "Approach the Artistocratic Bloc"
- ZEX_MGY_work_with_loyalists_desc:0 ""
-
- ZEX_MGY_consolidate_the_kings_image:0 "Reaffirm the King's Role"
- ZEX_MGY_consolidate_the_kings_image_desc:0 ""
-
- ZEX_MGY_utilise_somnambulas_legacy:0 "Utilise Somnambula's Legacy"
- ZEX_MGY_utilise_somnambulas_legacy_desc:0 ""
- 
- ZEX_MGY_national_nostalgia:0 "Appeal to National Nostalgia"
- ZEX_MGY_national_nostalgia_desc:0 ""
- 
- ZEX_MGY_pan_republican_coalition:0 "A Pan Republican Coalition?"
- ZEX_MGY_pan_republican_coalition_desc:0 ""
-
- ZEX_MGY_royal_society_for_harmony:0 "The Royal Harmony Society"
- ZEX_MGY_royal_society_for_harmony_desc:0 ""
-
- ZEX_MGY_promote_non_communist_harmony:0 "Harmony Without Socialist Characteristics"
- ZEX_MGY_promote_non_communist_harmony_desc:0 ""
-
- ZEX_MGY_necessary_repressions:0 "Uproot the Red Threat"
- ZEX_MGY_necessary_repressions_desc:0 ""
-
- ZEX_MGY_adress_the_donkeys:0 "A Show of Good Will"
- ZEX_MGY_adress_the_donkeys_desc:0 ""
-
- ZEX_MGY_appease_the_seperatists:0 "Concessions to the Seperatists"
- ZEX_MGY_appease_the_seperatists_desc:0 ""
-
- ZEX_MGY_clamp_down_on_seperatism:0 "Arrest Agitators"
- ZEX_MGY_clamp_down_on_seperatism_desc:0 ""
-
- ZEX_MGY_seize_donkey_properties:0 "Expel the Donkeys"
- ZEX_MGY_seize_donkey_properties_desc:0 ""
-
- ZEX_MGY_a_united_nation:0 "A United Nation"
- ZEX_MGY_a_united_nation_desc:0 ""
-
- ZEX_MGY_a_stabilised_nation:0 "The Scarab Spreads its Wings"
- ZEX_MGY_a_stabilised_nation_desc:0 ""
+ #Cabinet Sub-Branch
+ ZEX_Goal_Diet_A_Zebrican_Vizier:0 "A Zebrican Vizier?"
+ ZEX_Goal_Diet_A_Harmonist_Vizier:0 "Sha Doof's Protégé"
+ ZEX_Goal_Diet_A_Loyalist_Vizier:0 "The King's Man"
+ ZEX_Goal_Diet_Promote_Zebricanism:0 "Promote Zebricanism in Government"
+ ZEX_Goal_Diet_Zebrican_Integration:0 "Merge the MHA and the Zebrican Movement"
+ ZEX_Goal_Diet_Agrarian_Outreach:0 "The Vizier's Speech"
+ ZEX_Goal_Diet_Petition_Somnambula:0 "Petition Somnambula"
+ ZEX_Goal_Diet_Aristocratic_Support:0 "Appeal to the Nobles"
+ ZEX_Goal_Diet_Rally_Royalists:0 "Rally the Monarchists"
+ ZEX_Goal_Diet_New_Grand_Coalition:0 "The New Grand Coalition"

@@ -1,4 +1,5 @@
 ideas = {
+	##BASE IDEAS
 	country = {
 		ZEX_MGY_Somnambula = {
 			picture = ZEX_MGY_Somnambula
@@ -19,8 +20,8 @@ ideas = {
 			modifier = {
 				consumer_goods_factor = 0.35
 				political_power_gain = -0.2
-				production_speed_industrial_complex_factor = -0.1
-				production_speed_arms_factory_factor = -0.1
+				# production_speed_industrial_complex_factor = -0.1
+				# production_speed_arms_factory_factor = -0.1
 			}
 			allowed = {
 				zxe_mgy_equestria_exists = yes
@@ -55,6 +56,7 @@ ideas = {
 				stability_factor = -0.15
 				war_support_factor = -0.15
 				political_power_factor = -0.1
+				democratic_drift = -0.1
 				custom_modifier_tooltip =  ZEX_Unfinished_Constitution_No_Ministers_or_Laws_tt
 			}
 		}
@@ -64,6 +66,20 @@ ideas = {
 				custom_modifier_tooltip = ZEX_MGY_STAB_IMPACT_tt
 				custom_modifier_tooltip = ZEX_MGY_POL_IMPACT_tt
 				custom_modifier_tooltip = ZEX_MGY_PoliticalUnrest_DynamicModifier_Update_tt
+			}
+		}
+	}
+	##FOCUS RELATED
+	country = {
+		ZEX_MGY_goal_harmony_society_idea = {
+			picture = GFX_idea_unknown
+			modifier = {
+				stability_factor = 0.05
+				resistance_damage_to_garrison = -0.15
+				custom_modifier_tooltip = ZEX_MGY_goal_harmony_society_idea_effects_tt
+			}
+			allowed = {
+				has_government = democratic
 			}
 		}
 	}

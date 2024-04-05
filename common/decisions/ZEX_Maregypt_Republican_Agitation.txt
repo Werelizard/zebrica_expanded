@@ -193,6 +193,10 @@ ZEX_MAREGYPT_REPUBLICAN_AGITATION_CATEGORY = {
 					var = ZEX_MGY_Actions_Taken
 					value = 1
 				}
+				subtract_from_variable = {
+					var = ZEX_MGY_LEGITIMACY
+					value = ZEX_MGY_UNREST_COUNTER_COST
+				}
 			}
 		}
 	}
@@ -229,6 +233,10 @@ ZEX_MAREGYPT_REPUBLICAN_AGITATION_CATEGORY = {
 				add_to_variable = {
 					var = ZEX_MGY_Actions_Taken
 					value = 1
+				}
+				subtract_from_variable = {
+					var = ZEX_MGY_LEGITIMACY
+					value = ZEX_MGY_UNREST_COUNTER_COST
 				}
 			}
 		}
@@ -267,6 +275,10 @@ ZEX_MAREGYPT_REPUBLICAN_AGITATION_CATEGORY = {
 					var = ZEX_MGY_Actions_Taken
 					value = 1
 				}
+				subtract_from_variable = {
+					var = ZEX_MGY_LEGITIMACY
+					value = ZEX_MGY_UNREST_COUNTER_COST
+				}
 			}
 		}
 	}
@@ -303,6 +315,10 @@ ZEX_MAREGYPT_REPUBLICAN_AGITATION_CATEGORY = {
 				add_to_variable = {
 					var = ZEX_MGY_Actions_Taken
 					value = 1
+				}
+				subtract_from_variable = {
+					var = ZEX_MGY_LEGITIMACY
+					value = ZEX_MGY_UNREST_COUNTER_COST
 				}
 			}
 		}
@@ -341,6 +357,10 @@ ZEX_MAREGYPT_REPUBLICAN_AGITATION_CATEGORY = {
 					var = ZEX_MGY_Actions_Taken
 					value = 1
 				}
+				subtract_from_variable = {
+					var = ZEX_MGY_LEGITIMACY
+					value = ZEX_MGY_UNREST_COUNTER_COST
+				}
 			}
 		}
 	}
@@ -377,6 +397,10 @@ ZEX_MAREGYPT_REPUBLICAN_AGITATION_CATEGORY = {
 				add_to_variable = {
 					var = ZEX_MGY_Actions_Taken
 					value = 1
+				}
+				subtract_from_variable = {
+					var = ZEX_MGY_LEGITIMACY
+					value = ZEX_MGY_UNREST_COUNTER_COST
 				}
 			}
 		}
@@ -415,6 +439,10 @@ ZEX_MAREGYPT_REPUBLICAN_AGITATION_CATEGORY = {
 					var = ZEX_MGY_Actions_Taken
 					value = 1
 				}
+				subtract_from_variable = {
+					var = ZEX_MGY_LEGITIMACY
+					value = ZEX_MGY_UNREST_COUNTER_COST
+				}
 			}
 		}
 	}
@@ -452,6 +480,10 @@ ZEX_MAREGYPT_REPUBLICAN_AGITATION_CATEGORY = {
 					var = ZEX_MGY_Actions_Taken
 					value = 1
 				}
+				subtract_from_variable = {
+					var = ZEX_MGY_LEGITIMACY
+					value = ZEX_MGY_UNREST_COUNTER_COST
+				}
 			}
 		}
 	}
@@ -488,6 +520,10 @@ ZEX_MAREGYPT_REPUBLICAN_AGITATION_CATEGORY = {
 				add_to_variable = {
 					var = ZEX_MGY_Actions_Taken
 					value = 1
+				}
+				subtract_from_variable = {
+					var = ZEX_MGY_LEGITIMACY
+					value = ZEX_MGY_UNREST_COUNTER_COST
 				}
 			}
 		}

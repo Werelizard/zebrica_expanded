@@ -1,0 +1,38 @@
+communism_on_the_rise = {
+	icon = generic_communism
+
+	allowed = {
+		NOT = { tag = DED }
+		NOT = { tag = KIR }
+		NOT = { tag = KIS }
+		NOT = { tag = KIC }
+		#Zebrica Expanded
+		NOT = { tag = MGY }
+	}
+}
+
+democratic_on_the_rise = {
+	icon = generic_democracy
+
+	allowed = {
+		NOT = { tag = DED }
+		NOT = { tag = KIR }
+		NOT = { tag = KIS }
+		NOT = { tag = KIC }
+		#Zebrica Expanded
+		NOT = { tag = MGY }
+	}
+}
+
+fascism_on_the_rise = {
+	icon = generic_fascism
+
+	allowed = {
+		NOT = { tag = DED }
+		NOT = { tag = KIR }
+		NOT = { tag = KIS }
+		NOT = { tag = KIC }
+		#Zebrica Expanded
+		NOT = { tag = MGY }
+	}
+}
