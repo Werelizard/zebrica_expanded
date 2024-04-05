@@ -17,8 +17,8 @@ ideas = {
 		ZEX_MGY_Equestrian_Debts = {
 			picture = ZEX_MGY_Equestrian_Debts
 			modifier = {
-				consumer_goods_factor = 0.40
-				political_power_gain = -0.25
+				consumer_goods_factor = 0.35
+				political_power_gain = -0.2
 				production_speed_industrial_complex_factor = -0.1
 				production_speed_arms_factory_factor = -0.1
 			}
@@ -52,9 +52,9 @@ ideas = {
 				can_not_declare_war = yes
 			}
 			modifier = {
-				stability_factor = -0.1
-				war_support_factor = -0.1
-				political_power_cost = 0.25
+				stability_factor = -0.15
+				war_support_factor = -0.15
+				political_power_factor = -0.1
 				custom_modifier_tooltip =  ZEX_Unfinished_Constitution_No_Ministers_or_Laws_tt
 			}
 		}

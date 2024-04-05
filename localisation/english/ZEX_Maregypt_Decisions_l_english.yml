@@ -15,13 +15,13 @@
  ZEX_MAREGYPT_PARLIAMENT_CATEGORY_desc:0 "Throughout the history of Maregypt, the Kings and Queens have time and time again called upon the support of the Royal Diet; a legal body consisting of the governors - or Nomarchs - from all of the provinces of Maregypt.\n\nIn order to pass [Root.GetLeader]'s reforms, we will need to secure a majority in the Royal Diet, or a minimum of §g151§! seats. This will be no easy task however: the representatives have brought with them agendas of their own, and the emerging factions will seek to gain dominance over the diet - allowing them to dictate the direction of the reforms.\n\nCurrently [ZEX_GetRoyalDietLeadership]"
 
  ZEX_MGY_Royal_Diet_Harmony_Text:0 "§YRoyalists§!"
- ZEX_MGY_Royal_Diet_Republican_Text:0 "§YRepublicans§!"
+ ZEX_MGY_Royal_Diet_Republican_Text:0 "§YZebricanists§!"
  ZEX_MGY_Royal_Diet_Loyalists_Text:0 "§YReformists§!"
  ZEX_MGY_Royal_Diet_Traditionalists_Text:0 "§YLoyalists§!"
  ZEX_MGY_Royal_Diet_NoFaction_Text:0 "§YIndependents§!"
 
  ZEX_royal_diet_monarchist_leadership:0 "the £monarchist_faction §0Royalists§! have the highest overall influence on the diet's reform plan."
- ZEX_royal_diet_republican_leadership:0 "the £republican_faction §1Republicans§! have the highest overall influence on the diet's reform plan."
+ ZEX_royal_diet_republican_leadership:0 "the £republican_faction §1Zebricanists§! have the highest overall influence on the diet's reform plan."
  ZEX_royal_diet_reformist_leadership:0 "the £reformist_faction §2Reformists§! have the highest overall influence on the diet's reform plan."
  ZEX_royal_diet_loyalist_leadership:0 "the £loyalist_faction §8Loyalists§! have the highest overall influence on the diet's reform plan."
  ZEX_royal_diet_nopony_leadership:0 "§gNopony§! is considered in control of the diet's reform plan."
@@ -52,9 +52,9 @@
  ZEX_MGY_ROYAL_DIET_INFLUENCE_TOOLTIP:0 "Every faction holds a certain §Yinfluence§! over the diet's reform plan. The resulting constitution and nature of our reforms will depend on which faction possess the highest influence at the end of the diet. A faction's influence can increased or decreased by our §gfoci§! as well as certain §gevents§!."
 
  ZEX_MGY_Royal_Diet_Harmony_TOOLTIP:0 "§gThe §!§YRoyalists§!§g comprise members of the Maregyptian Harmonic Association which support the current status quo and the rule of the monarch. Staunchly anti-communist and anti-supremacist, they believe that reforms should be kept at a minimum.§!"
- ZEX_MGY_Royal_Diet_Republican_TOOLTIP:0 "§gThe §!§YRepublicans§!§g are made up of the Maregyptian Harmonic Association's more radical members. Headed by Neigh Ser, they aim to establish a true Maregyptian republic - free from the shackles of what they percieve to be an antiquated political system.§!"
+ ZEX_MGY_Royal_Diet_Republican_TOOLTIP:0 "§gThe §!§YZebricanists§!§g are made up of the Maregyptian Harmonic Association's more radical members as well as numerous republican moderates. Headed by Neigh Ser, they aim to establish a true Zebrican - free from the shackles of what they percieve to be an antiquated political system.§!"
  ZEX_MGY_Royal_Diet_Loyalists_TOOLTIP:0 "§gThe §!§YReformists§!§g are the middleponies of the Harmonic Association, supporting political reforms as long as these are executed under the guidance of their beloved monarchy.§!"
- ZEX_MGY_Royal_Diet_Traditionalists_TOOLTIP:0 "§gThe §!§YLoyalists§!§g, representing the more moderate members of the Association for the Restoration of Maregyt, embody the agrarian, traditionalist and more conservative movements. Opposed to both the republican and other radical currents, they support the return to an absolute monarchy embodying the old days of glorious Maregypt.§!"
+ ZEX_MGY_Royal_Diet_Traditionalists_TOOLTIP:0 "§gThe §!§YLoyalists§!§g, representing the more moderate members of the Association for the Restoration of Maregyt, embody the agrarian, traditionalist and more conservative movements. Opposed to both republicans and other radical currents, they support the return to an absolute monarchy embodying the old days of glorious Maregypt.§!"
  ZEX_MGY_Royal_Diet_Independents_TOOLTIP:0 "§gIndependent representatives are not aligned with any other faction.§!"
 
  ZEX_loyal:0 "§GSupportive§!"
@@ -205,6 +205,8 @@
 
  zex_mgy_unrest_increase_in_provinces_tt:0 "Up to two provinces will see their unrest increase by §t[?ROOT.ZEX_MGY_UNREST_EFFECTS_IMPACT]§!"
  zex_mgy_unrest_increase_in_province_tt:0 "One province will have its unrest increase by §t[?ROOT.ZEX_MGY_UNREST_EFFECTS_IMPACT]§!"
+ zex_mgy_unrest_agitators_caught_tt:0 "The rebels are caught, lowering the unrest in one province by §G2§!"
+ zex_mgy_unrest_nothing_happens_tt:0 "Nothing happens"
 
  ZEX_MGY_UNREST_INTERVAL:0 "§RThe agitators make their move...§!"
  ZEX_MGY_UNREST_INTERVAL_desc:0 "§gEvery round ([?ROOT.ZEX_MGY_UNREST_EFFECTS_INTERVALLS] days) republicans, socialists and other dissidents will attempt to increase the unrest throughout our country."
@@ -213,8 +215,12 @@
  ZEX_MGY_Increased_Legitimacy:0 "Increase our £ZEX_legitimacy §Ylegitimacy§! by §Y10§!"
  ZEX_MGY_INCREASE_LEGITIMACY_10:0 "£ZEX_legitimacy Legitimacy: §G+10.0§!"
 
+ ZEX_MGY_LEGITIMACY_COST:0 "£ZEX_legitimacy  §Y[?ROOT.ZEX_MGY_UNREST_COUNTER_COST]§!"
+ ZEX_MGY_LEGITIMACY_COST_blocked:0 "£ZEX_legitimacy  §t[?ROOT.ZEX_MGY_UNREST_COUNTER_COST]§!"
+ ZEX_MGY_COST_LEGITIMACY:0 "It costs £ZEX_legitimacy §t[?ROOT.ZEX_MGY_UNREST_COUNTER_COST]§! to take this decision"
+
  ZEX_MGY_unrest_political_concessions:0 "Political Concessions"
- ZEX_MGY_Decrease_Unrest_Everywhere:0 "Unrest will §Gdecrease§! across all our provinces by §Y2§!"
+ ZEX_MGY_unrest_political_concessions_tt:0 "Extends the current turn by §Y[?ROOT.ZEX_MGY_UNREST_EFFECTS_INTERVALLS]§! days"
  ZEX_MGY_COST_10_LEGITIMACY:0 "It costs £ZEX_legitimacy §t10§! to take this decision"
  ZEX_MGY_LEGITIMACY_10:0 "£ZEX_legitimacy  §Y10§!"
  ZEX_MGY_LEGITIMACY_10_blocked:0 "£ZEX_legitimacy  §t10§!"
@@ -228,6 +234,16 @@
  ZEX_MGY_Protect_Desert:0 "Intervene in the Eastern Desert"
  ZEX_MGY_Protect_UpperMaregypt:0 "Intervene in Upper Maregypt"
  ZEX_MGY_Protect_Zush:0 "Intervene in Zush"
+
+ ZEX_MGY_Protect_Delta_desc:0 ""
+ ZEX_MGY_Protect_Sineighi_desc:0 ""
+ ZEX_MGY_Protect_Kaneigh_desc:0 ""
+ ZEX_MGY_Protect_Manephis_desc:0 ""
+ ZEX_MGY_Protect_Maneisrata_desc:0 ""
+ ZEX_MGY_Protect_Somnambula_desc:0 ""
+ ZEX_MGY_Protect_Desert_desc:0 "t"
+ ZEX_MGY_Protect_UpperMaregypt_desc:0 ""
+ ZEX_MGY_Protect_Zush_desc:0 ""
 
  #Protected Variant of the Provinces for mini game
  ZEX_MGY_NOUNREST_SINEIGHI_Protected:0 "ZEX_MGY_NOUNREST_SINEIGHI_Protected"

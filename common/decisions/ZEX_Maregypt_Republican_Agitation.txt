@@ -24,20 +24,35 @@ ZEX_MAREGYPT_REPUBLICAN_AGITATION_CATEGORY = {
 		}
 
 		timeout_effect = {
-			if = {
-				limit = {
-					NOT = {
-						has_country_flag = ZEX_MGY_LIMIT_UNREST_TARGETS
+			random_list = {
+				ZEX_MGY_UNREST_REBELS_SUCCESS = {
+					if = {
+						limit = {
+							NOT = {
+								has_country_flag = ZEX_MGY_LIMIT_UNREST_TARGETS
+							}
+						}
+						custom_effect_tooltip = zex_mgy_unrest_increase_in_provinces_tt
+					}
+					else = {
+						custom_effect_tooltip = zex_mgy_unrest_increase_in_province_tt
+						
+					}
+					hidden_effect = {
+						ZEX_MGY_Increase_Unrest = yes
 					}
 				}
-				custom_effect_tooltip = zex_mgy_unrest_increase_in_provinces_tt
-			}
-			else = {
-				custom_effect_tooltip = zex_mgy_unrest_increase_in_province_tt
+				ZEX_MGY_UNREST_REBELS_NOTHING = {
+					custom_effect_tooltip = zex_mgy_unrest_agitators_caught_tt
+					hidden_effect = {
+						ZEX_MGY_DECREASE_UNREST = yes
+					}
+				}
+				ZEX_MGY_UNREST_REBELS_ESCAPE = {
+					custom_effect_tooltip = zex_mgy_unrest_nothing_happens_tt
+				}
 			}
 			hidden_effect = {
-				ZEX_MGY_Increase_Unrest = yes
-
 				#Remove Protection Status
 				clr_country_flag = ZEX_MGY_Sineighi_protected_flag
 				clr_country_flag = ZEX_MGY_Maneisrata_protected_flag
@@ -66,7 +81,7 @@ ZEX_MAREGYPT_REPUBLICAN_AGITATION_CATEGORY = {
 
 	ZEX_MGY_unrest_increase_legitimacy = {
 		icon = ZEX_GFX_increase_legitimacy
-		cost = 50
+		cost = 45
 
 		priority = 900
 
@@ -108,12 +123,7 @@ ZEX_MAREGYPT_REPUBLICAN_AGITATION_CATEGORY = {
 	ZEX_MGY_unrest_political_concessions = {
 		icon = ZEX_GFX_Royal_Concessions
 
-		custom_cost_trigger = {
-			check_variable = {
-				ZEX_MGY_LEGITIMACY > 10
-			}
-		}
-		custom_cost_text = ZEX_MGY_LEGITIMACY_10
+		cost = 25
 
 		priority = 900
 
@@ -133,94 +143,13 @@ ZEX_MAREGYPT_REPUBLICAN_AGITATION_CATEGORY = {
 		}
 
 		complete_effect = {
-			custom_effect_tooltip = ZEX_MGY_Decrease_Unrest_Everywhere
-			custom_effect_tooltip = ZEX_MGY_COST_10_LEGITIMACY
+			custom_effect_tooltip = ZEX_MGY_unrest_political_concessions_tt
 			hidden_effect = {
+				add_days_mission_timeout = {
+					mission = ZEX_MGY_UNREST_INTERVAL
+					days = ZEX_MGY_UNREST_EFFECTS_INTERVALLS
+				}
 				set_country_flag = ZEX_MGY_Royal_Concessions
-				add_to_variable = {
-					var = ZEX_MGY_Actions_Taken
-					value = 1
-				}
-				add_to_variable = {
-					var = ZEX_MGY_LEGITIMACY
-					value = -15
-				}
-				clamp_variable = {
-					var = ZEX_MGY_LEGITIMACY
-					min = 0
-				}
-				subtract_from_variable = {
-					var = ZEX_MGY_VAR_Zush_Alignment
-					value = 3
-				}
-				clamp_variable = {
-					var = ZEX_MGY_VAR_Zush_Alignment
-					min = 0
-				}
-				subtract_from_variable = {
-					var = ZEX_MGY_VAR_Kaneigh_Alignment
-					value = 3
-				}
-				clamp_variable = {
-					var = ZEX_MGY_VAR_Kaneigh_Alignment
-					min = 0
-				}
-				subtract_from_variable = {
-					var = ZEX_MGY_VAR_Sineighi_Alignment
-					value = 3
-				}
-				clamp_variable = {
-					var = ZEX_MGY_VAR_Sineighi_Alignment
-					min = 0
-				}
-				subtract_from_variable = {
-					var = ZEX_MGY_VAR_Somnambula_Alignment
-					value = 3
-				}
-				clamp_variable = {
-					var = ZEX_MGY_VAR_Somnambula_Alignment
-					min = 0
-				}
-				subtract_from_variable = {
-					var = ZEX_MGY_VAR_Delta_Alignment
-					value = 3
-				}
-				clamp_variable = {
-					var = ZEX_MGY_VAR_Delta_Alignment
-					min = 0
-				}
-				subtract_from_variable = {
-					var = ZEX_MGY_VAR_UpperMaregypt_Alignment
-					value = 3
-				}
-				clamp_variable = {
-					var = ZEX_MGY_VAR_UpperMaregypt_Alignment
-					min = 0
-				}
-				subtract_from_variable = {
-					var = ZEX_MGY_VAR_Manephis_Alignment
-					value = 3
-				}
-				clamp_variable = {
-					var = ZEX_MGY_VAR_Manephis_Alignment
-					min = 0
-				}
-				subtract_from_variable = {
-					var = ZEX_MGY_VAR_UpperMaregypt_Alignment
-					value = 3
-				}
-				clamp_variable = {
-					var = ZEX_MGY_VAR_UpperMaregypt_Alignment
-					min = 0
-				}
-				subtract_from_variable = {
-					var = ZEX_MGY_VAR_Maneisrata_Alignment
-					value = 3
-				}
-				clamp_variable = {
-					var = ZEX_MGY_VAR_Maneisrata_Alignment
-					min = 0
-				}
 				ZEX_MGY_GET_AVERAGE_UNREST = yes
 			}
 		}
@@ -230,13 +159,21 @@ ZEX_MAREGYPT_REPUBLICAN_AGITATION_CATEGORY = {
 
 	ZEX_MGY_Protect_Delta = {
 		icon = GFX_decision_eng_trade_unions_demand
-		cost = ZEX_MGY_UNREST_COUNTER_COST
+
+		custom_cost_trigger = {
+			check_variable = {
+				ZEX_MGY_LEGITIMACY > ZEX_MGY_UNREST_COUNTER_COST
+			}
+		}
+		custom_cost_text = ZEX_MGY_LEGITIMACY_COST
+
+		priority = 900
 
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = ZEX_MGY_ONLY_ONCE_PER_MOVE
 				NOT = {
-					has_country_flag = ZEX_MGY_Delta_protected_flag
+					has_country_flag = ZEX_MGY_Royal_Concessions
 				}
 			}
 			custom_trigger_tooltip = {
@@ -249,6 +186,7 @@ ZEX_MAREGYPT_REPUBLICAN_AGITATION_CATEGORY = {
 
 		complete_effect = {
 			custom_effect_tooltip = ZEX_MGY_PROVINCE_PROTECTED_THIS_ROUND_tt
+			custom_effect_tooltip = ZEX_MGY_COST_LEGITIMACY
 			hidden_effect = {
 				set_country_flag = ZEX_MGY_Delta_protected_flag
 				add_to_variable = {
@@ -261,7 +199,12 @@ ZEX_MAREGYPT_REPUBLICAN_AGITATION_CATEGORY = {
 
 	ZEX_MGY_Protect_Sineighi = {
 		icon = GFX_decision_eng_trade_unions_demand
-		cost = ZEX_MGY_UNREST_COUNTER_COST
+		custom_cost_trigger = {
+			check_variable = {
+				ZEX_MGY_LEGITIMACY > ZEX_MGY_UNREST_COUNTER_COST
+			}
+		}
+		custom_cost_text = ZEX_MGY_LEGITIMACY_COST
 
 		available = {
 			custom_trigger_tooltip = {
@@ -280,6 +223,7 @@ ZEX_MAREGYPT_REPUBLICAN_AGITATION_CATEGORY = {
 
 		complete_effect = {
 			custom_effect_tooltip = ZEX_MGY_PROVINCE_PROTECTED_THIS_ROUND_tt
+			custom_effect_tooltip = ZEX_MGY_COST_LEGITIMACY
 			hidden_effect = {
 				set_country_flag = ZEX_MGY_Sineighi_protected_flag
 				add_to_variable = {
@@ -292,7 +236,12 @@ ZEX_MAREGYPT_REPUBLICAN_AGITATION_CATEGORY = {
 
 	ZEX_MGY_Protect_Kaneigh = {
 		icon = GFX_decision_eng_trade_unions_demand
-		cost = ZEX_MGY_UNREST_COUNTER_COST
+		custom_cost_trigger = {
+			check_variable = {
+				ZEX_MGY_LEGITIMACY > ZEX_MGY_UNREST_COUNTER_COST
+			}
+		}
+		custom_cost_text = ZEX_MGY_LEGITIMACY_COST
 
 		available = {
 			custom_trigger_tooltip = {
@@ -311,6 +260,7 @@ ZEX_MAREGYPT_REPUBLICAN_AGITATION_CATEGORY = {
 
 		complete_effect = {
 			custom_effect_tooltip = ZEX_MGY_PROVINCE_PROTECTED_THIS_ROUND_tt
+			custom_effect_tooltip = ZEX_MGY_COST_LEGITIMACY
 			hidden_effect = {
 				set_country_flag = ZEX_MGY_Kaneigh_protected_flag
 				add_to_variable = {
@@ -323,7 +273,12 @@ ZEX_MAREGYPT_REPUBLICAN_AGITATION_CATEGORY = {
 
 	ZEX_MGY_Protect_Manephis = {
 		icon = GFX_decision_eng_trade_unions_demand
-		cost = ZEX_MGY_UNREST_COUNTER_COST
+		custom_cost_trigger = {
+			check_variable = {
+				ZEX_MGY_LEGITIMACY > ZEX_MGY_UNREST_COUNTER_COST
+			}
+		}
+		custom_cost_text = ZEX_MGY_LEGITIMACY_COST
 
 		available = {
 			custom_trigger_tooltip = {
@@ -342,6 +297,7 @@ ZEX_MAREGYPT_REPUBLICAN_AGITATION_CATEGORY = {
 
 		complete_effect = {
 			custom_effect_tooltip = ZEX_MGY_PROVINCE_PROTECTED_THIS_ROUND_tt
+			custom_effect_tooltip = ZEX_MGY_COST_LEGITIMACY
 			hidden_effect = {
 				set_country_flag = ZEX_MGY_Manephis_protected_flag
 				add_to_variable = {
@@ -354,7 +310,12 @@ ZEX_MAREGYPT_REPUBLICAN_AGITATION_CATEGORY = {
 
 	ZEX_MGY_Protect_Maneisrata = {
 		icon = GFX_decision_eng_trade_unions_demand
-		cost = ZEX_MGY_UNREST_COUNTER_COST
+		custom_cost_trigger = {
+			check_variable = {
+				ZEX_MGY_LEGITIMACY > ZEX_MGY_UNREST_COUNTER_COST
+			}
+		}
+		custom_cost_text = ZEX_MGY_LEGITIMACY_COST
 
 		available = {
 			custom_trigger_tooltip = {
@@ -373,6 +334,7 @@ ZEX_MAREGYPT_REPUBLICAN_AGITATION_CATEGORY = {
 
 		complete_effect = {
 			custom_effect_tooltip = ZEX_MGY_PROVINCE_PROTECTED_THIS_ROUND_tt
+			custom_effect_tooltip = ZEX_MGY_COST_LEGITIMACY
 			hidden_effect = {
 				set_country_flag = ZEX_MGY_Maneisrata_protected_flag
 				add_to_variable = {
@@ -385,7 +347,12 @@ ZEX_MAREGYPT_REPUBLICAN_AGITATION_CATEGORY = {
 
 	ZEX_MGY_Protect_Somnambula = {
 		icon = GFX_decision_eng_trade_unions_demand
-		cost = ZEX_MGY_UNREST_COUNTER_COST
+		custom_cost_trigger = {
+			check_variable = {
+				ZEX_MGY_LEGITIMACY > ZEX_MGY_UNREST_COUNTER_COST
+			}
+		}
+		custom_cost_text = ZEX_MGY_LEGITIMACY_COST
 
 		available = {
 			custom_trigger_tooltip = {
@@ -404,6 +371,7 @@ ZEX_MAREGYPT_REPUBLICAN_AGITATION_CATEGORY = {
 
 		complete_effect = {
 			custom_effect_tooltip = ZEX_MGY_PROVINCE_PROTECTED_THIS_ROUND_tt
+			custom_effect_tooltip = ZEX_MGY_COST_LEGITIMACY
 			hidden_effect = {
 				set_country_flag = ZEX_MGY_Somnambula_protected_flag
 				add_to_variable = {
@@ -416,7 +384,12 @@ ZEX_MAREGYPT_REPUBLICAN_AGITATION_CATEGORY = {
 
 	ZEX_MGY_Protect_Desert = {
 		icon = GFX_decision_eng_trade_unions_demand
-		cost = ZEX_MGY_UNREST_COUNTER_COST
+		custom_cost_trigger = {
+			check_variable = {
+				ZEX_MGY_LEGITIMACY > ZEX_MGY_UNREST_COUNTER_COST
+			}
+		}
+		custom_cost_text = ZEX_MGY_LEGITIMACY_COST
 
 		available = {
 			custom_trigger_tooltip = {
@@ -435,6 +408,7 @@ ZEX_MAREGYPT_REPUBLICAN_AGITATION_CATEGORY = {
 
 		complete_effect = {
 			custom_effect_tooltip = ZEX_MGY_PROVINCE_PROTECTED_THIS_ROUND_tt
+			custom_effect_tooltip = ZEX_MGY_COST_LEGITIMACY
 			hidden_effect = {
 				set_country_flag = ZEX_MGY_Desert_protected_flag
 				add_to_variable = {
@@ -447,7 +421,12 @@ ZEX_MAREGYPT_REPUBLICAN_AGITATION_CATEGORY = {
 
 	ZEX_MGY_Protect_UpperMaregypt = {
 		icon = GFX_decision_eng_trade_unions_demand
-		cost = ZEX_MGY_UNREST_COUNTER_COST
+		custom_cost_trigger = {
+			check_variable = {
+				ZEX_MGY_LEGITIMACY > ZEX_MGY_UNREST_COUNTER_COST
+			}
+		}
+		custom_cost_text = ZEX_MGY_LEGITIMACY_COST
 
 		available = {
 			custom_trigger_tooltip = {
@@ -466,6 +445,7 @@ ZEX_MAREGYPT_REPUBLICAN_AGITATION_CATEGORY = {
 
 		complete_effect = {
 			custom_effect_tooltip = ZEX_MGY_PROVINCE_PROTECTED_THIS_ROUND_tt
+			custom_effect_tooltip = ZEX_MGY_COST_LEGITIMACY
 			hidden_effect = {
 				set_country_flag = ZEX_MGY_UpperMaregypt_protected_flag
 				add_to_variable = {
@@ -478,7 +458,12 @@ ZEX_MAREGYPT_REPUBLICAN_AGITATION_CATEGORY = {
 
 	ZEX_MGY_Protect_Zush = {
 		icon = GFX_decision_eng_trade_unions_demand
-		cost = ZEX_MGY_UNREST_COUNTER_COST
+		custom_cost_trigger = {
+			check_variable = {
+				ZEX_MGY_LEGITIMACY > ZEX_MGY_UNREST_COUNTER_COST
+			}
+		}
+		custom_cost_text = ZEX_MGY_LEGITIMACY_COST
 
 		available = {
 			custom_trigger_tooltip = {
@@ -497,6 +482,7 @@ ZEX_MAREGYPT_REPUBLICAN_AGITATION_CATEGORY = {
 
 		complete_effect = {
 			custom_effect_tooltip = ZEX_MGY_PROVINCE_PROTECTED_THIS_ROUND_tt
+			custom_effect_tooltip = ZEX_MGY_COST_LEGITIMACY
 			hidden_effect = {
 				set_country_flag = ZEX_MGY_Zush_protected_flag
 				add_to_variable = {
