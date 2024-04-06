@@ -3,9 +3,9 @@
  # Tooltips
  #
 
- ZEX_MGY_republicans_caught_tt:0 "Not: Suffering from Political Unrest"
+ ZEX_MGY_republicans_caught_tt:0 "Not: has Political Unrest"
  zex_no_scripted_maregypt_civil_war_tt:0 "Not: is in a civil war"
- zex_has_republican_agitation_tt:0 "Suffering from Political Unrest"
+ zex_has_republican_agitation_tt:0 "Political Unrest"
  zex_mgy_has_constitutional_crisis_tt:0 "A New Constitution has yet to be Ratified"
  zex_mgy_shaa_doof_dead_tt:0 "Shaa Doof has died"
  zex_mgy_has_a_vizier_tt:0 "Has a Vizier"
@@ -20,10 +20,10 @@
  ZEX_Goal_King_Speech:0 "His Majesty's Address"
 
  #Unrest Sub Branch
- ZEX_Goal_Harmonic_Society:0 "The Neighlotic Harmony Association"
+ ZEX_Goal_Harmonic_Society:0 "The Maregyptian Concordance Society"
  ZEX_Goal_Harmonic_Benevolence:0 "Pro-Harmony Propaganda"
  ZEX_Goal_Harmonic_Police:0 "Integrate the Gendarmeries"
- ZEX_Goal_Fight_the_Agitators:0 "Take the Fight to Them!"
+ ZEX_Goal_Fight_the_Agitators:0 "Operation Golden Beetle"
  ZEX_Goal_Anti_Harmony_Committee:0 "The Anti-Harmony Activities Comittee"
  ZEX_Goal_in_Harmonys_name:0 "In Harmony's Name"
  ZEX_Goal_Expand_Secret_Police:0 "Expand the National Police"
@@ -41,7 +41,7 @@
  ZEX_Goal_Diet_Judiciary_Reform:0 "Judiciary Reform"
  ZEX_Goal_Diet_Nobility_Titles:0 "The Nobility Question"
  ZEX_Goal_Diet_Right_To_Representation:0 "Right to Representation"
- ZEX_Goal_Diet_Illusion_of_Democracy:0 "The Illusion of Democracy"
+ ZEX_Goal_Diet_Illusion_of_Democracy:0 "Dismantle Factionalism"
  ZEX_Goal_Diet_Modern_Bureaucracy:0 "Bureaucratic Overhaul"
  ZEX_Goal_Diet_Abolish_Governates:0 "Dissolve the Nomarchy"
  ZEX_Goal_Diet_Tackle_Corruption:0 "Crack down on Corruption"

@@ -755,6 +755,9 @@ focus_tree = {
 			focus = ZEX_Goal_Diet_Modernise_Laws
 			focus = ZEX_Goal_Diet_Judiciary_Reform
 		}
+		mutually_exclusive = {
+			focus = ZEX_Goal_Diet_Illusion_of_Democracy
+		}
 		#Triggers
 		available = {
 			zex_mgy_has_a_vizier = yes
@@ -789,6 +792,9 @@ focus_tree = {
 		prerequisite = {
 			focus = ZEX_Goal_Diet_Nobility_Titles
 			focus = ZEX_Goal_Diet_Judiciary_Reform
+		}
+		mutually_exclusive = {
+			focus = ZEX_Goal_Diet_Right_To_Representation
 		}
 		#Triggers
 		available = {
@@ -930,9 +936,6 @@ focus_tree = {
 		prerequisite = {
 			focus = ZEX_Goal_Diet_Right_To_Representation
 		}
-		mutually_exclusive = {
-			focus = ZEX_Goal_Diet_Codify_Harmony
-		}
 		#Triggers
 		available = {
 			zex_mgy_has_a_vizier = yes
@@ -1002,9 +1005,6 @@ focus_tree = {
 		#Prerequisites
 		prerequisite = {
 			focus = ZEX_Goal_Diet_Illusion_of_Democracy
-		}
-		mutually_exclusive = {
-			focus = ZEX_Goal_Diet_Progressive_Policies
 		}
 		#Triggers
 		available = {
