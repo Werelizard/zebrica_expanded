@@ -3,16 +3,18 @@
  # Tooltips
  #
 
- ZEX_MGY_republicans_caught_tt:0 "Not: has Political Unrest"
+ ZEX_MGY_republicans_caught_tt:0 "Not: ongoing §tpolitical unrest§!"
  zex_no_scripted_maregypt_civil_war_tt:0 "Not: is in a civil war"
- zex_has_republican_agitation_tt:0 "Political Unrest"
+ zex_has_republican_agitation_tt:0 "Ongoing §tpolitical unrest§!"
  zex_mgy_has_constitutional_crisis_tt:0 "A New Constitution has yet to be Ratified"
- zex_mgy_shaa_doof_dead_tt:0 "Shaa Doof has died"
+ zex_mgy_shaa_doof_dead_tt:0 "§YShaa Doof§! has died"
  zex_mgy_has_a_vizier_tt:0 "Has a Vizier"
- zex_mgy_vizier_is_not_anti_zebrican_tt:0 "The Vizier is not an Anti-Zebrican"
- zex_mgy_vizier_is_not_anti_harmonist_tt:0 "The Vizier is not an Anti-Harmonist"
- zex_mgy_vizier_is_not_anti_monarchist_tt:0 "The Vizier is not an Anti-Monarchist"
+ zex_mgy_vizier_is_not_anti_zebrican_tt:0 "§YThe Vizier§! is not an Anti-Zebrican"
+ zex_mgy_vizier_is_not_anti_harmonist_tt:0 "§YThe Vizier§! is not an Anti-Harmonist"
+ zex_mgy_vizier_is_not_anti_monarchist_tt:0 "§YThe Vizier§! is not an Anti-Monarchist"
  zex_mgy_diet_is_supportive_tt:0 "More than §Y151§! seats are supportive in the diet"
+ zex_mgy_khefer_in_power_tt:0 "§YKing Khefer§! is in power"
+ zex_mgy_sha_doof_not_dead_tt:0 "Not: §YShaa Doof§! has died"
 
  #
  # Politics starter branch
@@ -21,6 +23,7 @@
 
  #Unrest Sub Branch
  ZEX_Goal_Harmonic_Society:0 "The Maregyptian Concordance Society"
+ ZEX_Goal_Emergency_Powers:0 "The Manephis Decree"
  ZEX_Goal_Harmonic_Benevolence:0 "Pro-Harmony Propaganda"
  ZEX_Goal_Harmonic_Police:0 "Integrate the Gendarmeries"
  ZEX_Goal_Fight_the_Agitators:0 "Operation Golden Beetle"
@@ -32,11 +35,11 @@
 
  #Diet Sub-Branch
  ZEX_Goal_Convey_the_Diet:0 "Summon the Diet"
- ZEX_Goal_Diet_Zebrican_Led:0 "Zebricanism's Rise"
- ZEX_Goal_Diet_Harmony_Led:0 "Harmony's Ambition"
+ ZEX_Goal_Diet_Zebrican_Led:0 "Hoofein's Gang of Four"
+ ZEX_Goal_Diet_Harmony_Led:0 "Harmony Holds"
  ZEX_Goal_Diet_Monarchy_Led:0 "The Loyalist Clique"
  ZEX_Goal_Diet_Restrict_Royal_Agency:0 "Restrict Royal Agency"
- ZEX_Goal_Diet_Codify_Crown:0 "Legitimise the Crown"
+ ZEX_Goal_Diet_Codify_Crown:0 "Emphasise Royal Primacy"
  ZEX_Goal_Diet_Modernise_Laws:0 "Ratify the Lotus Act"
  ZEX_Goal_Diet_Judiciary_Reform:0 "Judiciary Reform"
  ZEX_Goal_Diet_Nobility_Titles:0 "The Nobility Question"

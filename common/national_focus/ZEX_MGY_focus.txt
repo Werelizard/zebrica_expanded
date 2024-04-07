@@ -35,7 +35,7 @@ focus_tree = {
 		x = 0
 		y = 0
 
-		cost = 4
+		cost = 1.5	
 		cancelable = no
 
 		#Prerequisites
@@ -45,7 +45,7 @@ focus_tree = {
 	
 		#Triggers
 		available = {
-			
+			zex_mgy_khefer_in_power = yes
 		}
 
 		#Effects
@@ -84,6 +84,46 @@ focus_tree = {
 		#Triggers
 		available = {
 			zex_mgy_has_republican_unrest = yes
+		}
+
+		#Effects
+		select_effect = {
+			
+		}
+
+		cancel_effect = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = { #The Harmonic Society
+		id = ZEX_Goal_Emergency_Powers
+		icon = GFX_ZEX_Goal_Emergency_Powers
+
+		relative_position_id = ZEX_Goal_King_Speech
+		x = -5
+		y = 1
+
+		cost = 2
+
+		#Prerequisites
+		prerequisite = {
+			focus = ZEX_Goal_King_Speech
+		}
+	
+		#Triggers
+		available = {
+			zex_mgy_has_republican_unrest = yes
+			custom_trigger_tooltip = {
+				tooltip = zex_mgy_sha_doof_not_dead_tt
+				NOT = {
+					has_country_flag = zex_mgy_shaa_doof_dead_flag
+				}
+			}
 		}
 
 		#Effects
@@ -417,7 +457,7 @@ focus_tree = {
 	
 		#Triggers
 		available = {
-			zex_mgy_has_constitutional_crisis = yes
+			zex_mgy_khefer_in_power = yes
 		}
 
 		#Effects
@@ -449,13 +489,15 @@ focus_tree = {
 			focus = ZEX_Goal_Convey_the_Diet
 		}
 		mutually_exclusive = {
-			
+			focus = ZEX_Goal_Diet_Monarchy_Led
+			focus = ZEX_Goal_Diet_Harmony_Led
 		}
 	
 		#Triggers
 		available = {
 			zex_mgy_has_a_vizier = yes
-			zex_mgy_vizier_is_not_anti_zebrican = yes
+			zex_mgy_khefer_in_power = yes
+			zex_mgy_diet_is_supportive = yes
 		}
 
 		#Effects
@@ -487,13 +529,15 @@ focus_tree = {
 			focus = ZEX_Goal_Convey_the_Diet
 		}
 		mutually_exclusive = {
-			
+			focus = ZEX_Goal_Diet_Monarchy_Led
+			focus = ZEX_Goal_Diet_Zebrican_Led
 		}
 	
 		#Triggers
 		available = {
 			zex_mgy_has_a_vizier = yes
-			zex_mgy_vizier_is_not_anti_harmonist = yes
+			zex_mgy_khefer_in_power = yes
+			zex_mgy_diet_is_supportive = yes
 		}
 
 		#Effects
@@ -525,13 +569,15 @@ focus_tree = {
 			focus = ZEX_Goal_Convey_the_Diet
 		}
 		mutually_exclusive = {
-			
+			focus = ZEX_Goal_Diet_Zebrican_Led
+			focus = ZEX_Goal_Diet_Harmony_Led
 		}
 	
 		#Triggers
 		available = {
 			zex_mgy_has_a_vizier = yes
-			zex_mgy_vizier_is_not_anti_monarchist = yes
+			zex_mgy_khefer_in_power = yes
+			zex_mgy_diet_is_supportive = yes
 		}
 
 		#Effects
@@ -575,6 +621,7 @@ focus_tree = {
 		available = {
 			zex_mgy_has_a_vizier = yes
 			zex_mgy_diet_is_supportive = yes
+			zex_mgy_khefer_in_power = yes
 		}
 
 		#Effects
@@ -614,6 +661,7 @@ focus_tree = {
 		available = {
 			zex_mgy_has_a_vizier = yes
 			zex_mgy_diet_is_supportive = yes
+			zex_mgy_khefer_in_power = yes
 		}
 
 		#Effects
@@ -652,6 +700,7 @@ focus_tree = {
 		available = {
 			zex_mgy_has_a_vizier = yes
 			zex_mgy_diet_is_supportive = yes
+			zex_mgy_khefer_in_power = yes
 		}
 
 		#Effects
@@ -687,6 +736,7 @@ focus_tree = {
 		available = {
 			zex_mgy_has_a_vizier = yes
 			zex_mgy_diet_is_supportive = yes
+			zex_mgy_khefer_in_power = yes
 		}
 
 		#Effects
@@ -724,6 +774,7 @@ focus_tree = {
 		available = {
 			zex_mgy_has_a_vizier = yes
 			zex_mgy_diet_is_supportive = yes
+			zex_mgy_khefer_in_power = yes
 		}
 
 		#Effects
@@ -762,6 +813,7 @@ focus_tree = {
 		available = {
 			zex_mgy_has_a_vizier = yes
 			zex_mgy_diet_is_supportive = yes
+			zex_mgy_khefer_in_power = yes
 		}
 
 		#Effects
@@ -800,6 +852,7 @@ focus_tree = {
 		available = {
 			zex_mgy_has_a_vizier = yes
 			zex_mgy_diet_is_supportive = yes
+			zex_mgy_khefer_in_power = yes
 		}
 
 		#Effects
@@ -834,6 +887,7 @@ focus_tree = {
 		available = {
 			zex_mgy_has_a_vizier = yes
 			zex_mgy_diet_is_supportive = yes
+			zex_mgy_khefer_in_power = yes
 			has_completed_focus = ZEX_Goal_Diet_Zebrican_Led
 		}
 
@@ -869,6 +923,7 @@ focus_tree = {
 		available = {
 			zex_mgy_has_a_vizier = yes
 			zex_mgy_diet_is_supportive = yes
+			zex_mgy_khefer_in_power = yes
 			has_completed_focus = ZEX_Goal_Diet_Zebrican_Led
 		}
 
@@ -906,6 +961,7 @@ focus_tree = {
 		available = {
 			zex_mgy_has_a_vizier = yes
 			zex_mgy_diet_is_supportive = yes
+			zex_mgy_khefer_in_power = yes
 		}
 
 		#Effects
@@ -940,6 +996,7 @@ focus_tree = {
 		available = {
 			zex_mgy_has_a_vizier = yes
 			zex_mgy_diet_is_supportive = yes
+			zex_mgy_khefer_in_power = yes
 			has_completed_focus = ZEX_Goal_Diet_Harmony_Led
 		}
 
@@ -975,6 +1032,7 @@ focus_tree = {
 		available = {
 			zex_mgy_has_a_vizier = yes
 			zex_mgy_diet_is_supportive = yes
+			zex_mgy_khefer_in_power = yes
 			has_completed_focus = ZEX_Goal_Diet_Harmony_Led
 		}
 
@@ -1010,6 +1068,7 @@ focus_tree = {
 		available = {
 			zex_mgy_has_a_vizier = yes
 			zex_mgy_diet_is_supportive = yes
+			zex_mgy_khefer_in_power = yes
 			has_completed_focus = ZEX_Goal_Diet_Harmony_Led
 		}
 
@@ -1045,6 +1104,7 @@ focus_tree = {
 		available = {
 			zex_mgy_has_a_vizier = yes
 			zex_mgy_diet_is_supportive = yes
+			zex_mgy_khefer_in_power = yes
 			has_completed_focus = ZEX_Goal_Diet_Harmony_Led
 		}
 
@@ -1081,6 +1141,7 @@ focus_tree = {
 		available = {
 			zex_mgy_has_a_vizier = yes
 			zex_mgy_diet_is_supportive = yes
+			zex_mgy_khefer_in_power = yes
 		}
 
 		#Effects
@@ -1115,6 +1176,7 @@ focus_tree = {
 		available = {
 			zex_mgy_has_a_vizier = yes
 			zex_mgy_diet_is_supportive = yes
+			zex_mgy_khefer_in_power = yes
 			has_completed_focus = ZEX_Goal_Diet_Monarchy_Led
 		}
 
@@ -1150,6 +1212,7 @@ focus_tree = {
 		available = {
 			zex_mgy_has_a_vizier = yes
 			zex_mgy_diet_is_supportive = yes
+			zex_mgy_khefer_in_power = yes
 			has_completed_focus = ZEX_Goal_Diet_Monarchy_Led
 		}
 
@@ -1188,6 +1251,7 @@ focus_tree = {
 		available = {
 			zex_mgy_has_a_vizier = yes
 			zex_mgy_diet_is_supportive = yes
+			zex_mgy_khefer_in_power = yes
 			OR = {
 				custom_trigger_tooltip = {
 					tooltip = ZEX_MGY_republicans_caught_tt
@@ -1236,9 +1300,7 @@ focus_tree = {
 		#Triggers
 		available = {
 			zex_mgy_shaa_doof_dead = yes
-			NOT = {
-				has_completed_focus = ZEX_Goal_Diet_Monarchy_Led
-			}
+			zex_mgy_khefer_in_power = yes
 		}
 
 		#Effects
@@ -1276,6 +1338,7 @@ focus_tree = {
 		#Triggers
 		available = {
 			zex_mgy_shaa_doof_dead = yes
+			zex_mgy_khefer_in_power = yes
 		}
 
 		#Effects
@@ -1313,9 +1376,7 @@ focus_tree = {
 		#Triggers
 		available = {
 			zex_mgy_shaa_doof_dead = yes
-			NOT = {
-				has_completed_focus = ZEX_Goal_Diet_Zebrican_Led
-			}
+			zex_mgy_khefer_in_power = yes
 		}
 
 		#Effects
@@ -1350,6 +1411,7 @@ focus_tree = {
 		}
 		#Triggers
 		available = {
+			zex_mgy_khefer_in_power = yes
 		}
 
 		#Effects
@@ -1384,6 +1446,7 @@ focus_tree = {
 		}
 		#Triggers
 		available = {
+			zex_mgy_khefer_in_power = yes
 		}
 
 		#Effects
@@ -1420,6 +1483,7 @@ focus_tree = {
 		}
 		#Triggers
 		available = {
+			zex_mgy_khefer_in_power = yes
 		}
 
 		#Effects
@@ -1454,6 +1518,7 @@ focus_tree = {
 		}
 		#Triggers
 		available = {
+			zex_mgy_khefer_in_power = yes
 		}
 
 		#Effects
@@ -1488,6 +1553,7 @@ focus_tree = {
 		}
 		#Triggers
 		available = {
+			zex_mgy_khefer_in_power = yes
 		}
 
 		#Effects
@@ -1523,6 +1589,7 @@ focus_tree = {
 		}
 		#Triggers
 		available = {
+			zex_mgy_khefer_in_power = yes
 		}
 
 		#Effects
@@ -1561,6 +1628,7 @@ focus_tree = {
 		}
 		#Triggers
 		available = {
+			zex_mgy_khefer_in_power = yes
 		}
 
 		#Effects

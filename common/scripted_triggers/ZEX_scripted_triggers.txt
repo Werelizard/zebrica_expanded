@@ -157,3 +157,16 @@ zex_mgy_diet_is_supportive = {
 		}
 	}
 }
+
+zex_mgy_khefer_in_power = {
+	custom_trigger_tooltip = {
+		tooltip = zex_mgy_khefer_in_power_tt
+		OR = {
+			has_country_leader = {
+				ruling_only = yes 
+				name = "King Khefer"
+			}
+			has_idea = ZEX_MGY_king_khefer_idea
+		}
+	}
+}

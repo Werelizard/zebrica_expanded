@@ -1,4 +1,19 @@
 ﻿l_english:
+ #Leader
+ MGY_king_khefer:0 "King Khefer"
+ MGY_far_hook:0 "Far Hook"
+ MGY_shepser_of_manephis:0 "Shepser of Manephis"
+ MGY_butternut_squash:0 "Butternut Squash"
+ MGY_somnambula:0 "Somnambula"
+ MGY_corktantinople:0 "Corktantinople"
+
+ #Ruler Traits
+ ZEX_MGY_Naive_Reformist:0 "Naive Reformist"
+ ZEX_MGY_Benevolent_Authoritarian:0 "Benevolent Authoritarian"
+
+ #Bibliography
+ ZEX_MGY_KHEFER_DESC:0 "§YBorn§!: February 11th, 984\n\n§YBiography§!: a Pony of principle, Mardjed Nebe Khefer was born the third son to the late King Snefru. His older brother and sister were lost to the Storm King's rampage alongside with his mother, leaving him the heavy duty of guiding Maregypt throughout these difficult times. A close friend to Sha Doof, King Khefer came to power with hope in his heart, but found himself shackled by the country's spiralling poverty, increasing radicalism and a political crisis on the horizon. He quickly began vast and ambitious projects to modernise society but these were met with limited successes, with the only tangible results being more ammo landing in the republicans' hands. His characteristic naiveity - while charming to some - has led him to becoming ever so reliant on his ailing Vizier and members of the conservative ARM movement. King Khefer is, if anything, the proof that good ambitions alone too often amount to naught."
+
  #Advisors - token
  ZEX_MGY_Vizier_Advisor:0 "Vizier"
  

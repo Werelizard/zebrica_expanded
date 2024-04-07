@@ -83,7 +83,18 @@ ideas = {
 			}
 		}
 	}
-	hidden_ideas = {
-		
+	##OTHER
+	country = {
+		ZEX_MGY_king_khefer_idea = {
+			picture = GFX_ZEX_MGY_king_khefer_idea
+			modifier = {
+				stability_factor = 0.15
+			}
+			allowed = {
+				NOT = {
+					has_government = communism
+				}
+			}
+		}
 	}
 }

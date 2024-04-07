@@ -39,7 +39,7 @@ spriteTypes = {
 		textureFile = "gfx/interface/goals/MGY/GFX_ZEX_Harmonic_Society.dds"
 	}
 	spriteType = {
-		name = "GFX_ZEX_Harmonic_Society"
+		name = "GFX_ZEX_Harmonic_Society_shine"
 		textureFile = "gfx/interface/goals/MGY/GFX_ZEX_Harmonic_Society.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -74,7 +74,7 @@ spriteTypes = {
 		textureFile = "gfx/interface/goals/MGY/GFX_ZEX_Goal_Harmonic_Benevolence.dds"
 	}
 	spriteType = {
-		name = "GFX_ZEX_Goal_Harmonic_Benevolence"
+		name = "GFX_ZEX_Goal_Harmonic_Benevolence_shine"
 		textureFile = "gfx/interface/goals/MGY/GFX_ZEX_Goal_Harmonic_Benevolence.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -109,7 +109,7 @@ spriteTypes = {
 		textureFile = "gfx/interface/goals/MGY/GFX_ZEX_Goal_Harmonic_Police.dds"
 	}
 	spriteType = {
-		name = "GFX_ZEX_Goal_Harmonic_Police"
+		name = "GFX_ZEX_Goal_Harmonic_Police_shine"
 		textureFile = "gfx/interface/goals/MGY/GFX_ZEX_Goal_Harmonic_Police.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -140,12 +140,11 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_ZEX_Goal_Harmonic_Police"
-		textureFile = "gfx/interface/goals/MGY/GFX_ZEX_Goal_Harmonic_Police.dds"
-	}
-
-	spriteType = {
 		name = "GFX_ZEX_Goal_Fight_the_Agitators"
+		textureFile = "gfx/interface/goals/MGY/GFX_ZEX_Goal_Fight_the_Agitators.dds"
+	}
+	spriteType = {
+		name = "GFX_ZEX_Goal_Fight_the_Agitators_shine"
 		textureFile = "gfx/interface/goals/MGY/GFX_ZEX_Goal_Fight_the_Agitators.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -178,6 +177,10 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_ZEX_Goal_Anti_Harmony_Committee"
 		textureFile = "gfx/interface/goals/MGY/GFX_ZEX_Goal_Anti_Harmony_Committee.dds"
+	}
+	spriteType = {
+		name = "GFX_ZEX_Goal_Anti_Harmony_Committee_shine"
+		textureFile = "gfx/interface/goals/MGY/GFX_ZEX_Goal_Anti_Harmony_Committee.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/MGY/GFX_ZEX_Goal_Anti_Harmony_Committee.dds"			
@@ -208,6 +211,10 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_ZEX_Goal_in_Harmonys_name"
+		textureFile = "gfx/interface/goals/MGY/GFX_ZEX_Goal_in_Harmonys_name.dds"
+	}
+	spriteType = {
+		name = "GFX_ZEX_Goal_in_Harmonys_name_shine"
 		textureFile = "gfx/interface/goals/MGY/GFX_ZEX_Goal_in_Harmonys_name.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -240,6 +247,10 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_ZEX_Goal_Expand_Secret_Police"
 		textureFile = "gfx/interface/goals/MGY/ZEX_Goal_Expand_Secret_Police.dds"
+	}
+	spriteType = {
+		name = "GFX_ZEX_Goal_Expand_Secret_Police_shine"
+		textureFile = "gfx/interface/goals/MGY/ZEX_Goal_Expand_Secret_Police.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/MGY/ZEX_Goal_Expand_Secret_Police.dds"			
@@ -270,6 +281,10 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_ZEX_Goal_Harmonic_Pacification"
+		textureFile = "gfx/interface/goals/MGY/ZEX_Goal_Harmonic_Pacification.dds"
+	}
+	spriteType = {
+		name = "GFX_ZEX_Goal_Harmonic_Pacification_shine"
 		textureFile = "gfx/interface/goals/MGY/ZEX_Goal_Harmonic_Pacification.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -302,6 +317,10 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_ZEX_Goal_Pacify_the_Realm"
 		textureFile = "gfx/interface/goals/MGY/ZEX_Goal_Pacify_the_Realm.dds"
+	}
+	spriteType = {
+		name = "GFX_ZEX_Goal_Pacify_the_Realm_shine"
+		textureFile = "gfx/interface/goals/MGY/ZEX_Goal_Pacify_the_Realm.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/MGY/ZEX_Goal_Pacify_the_Realm.dds"			
@@ -330,4 +349,353 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}	
 	
+	spriteType = {
+		name = "GFX_ZEX_Goal_Convey_the_Diet"
+		textureFile = "gfx/interface/goals/MGY/GFX_ZEX_Goal_Convey_the_Diet.dds"
+	}
+	spriteType = {
+		name = "GFX_ZEX_Goal_Convey_the_Diet_shine"
+		textureFile = "gfx/interface/goals/MGY/GFX_ZEX_Goal_Convey_the_Diet.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/MGY/GFX_ZEX_Goal_Convey_the_Diet.dds"			
+			animationtexturefile = "gfx/interface/goals/ZEX_MGY_shine_100x100.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/MGY/GFX_ZEX_Goal_Convey_the_Diet.dds"			
+			animationtexturefile = "gfx/interface/goals/ZEX_MGY_shine_100x100.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}	
+
+	spriteType = {
+		name = "GFX_ZEX_Goal_Diet_Zebrican_Led"
+		textureFile = "gfx/interface/goals/MGY/GFX_ZEX_Goal_Diet_Zebrican_Led.dds"
+	}
+	spriteType = {
+		name = "GFX_ZEX_Goal_Diet_Zebrican_Led_shine"
+		textureFile = "gfx/interface/goals/MGY/GFX_ZEX_Goal_Diet_Zebrican_Led.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/MGY/GFX_ZEX_Goal_Diet_Zebrican_Led.dds"			
+			animationtexturefile = "gfx/interface/goals/ZEX_MGY_shine_100x100.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/MGY/GFX_ZEX_Goal_Diet_Zebrican_Led.dds"			
+			animationtexturefile = "gfx/interface/goals/ZEX_MGY_shine_100x100.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ZEX_Goal_Diet_Harmony_Led"
+		textureFile = "gfx/interface/goals/MGY/GFX_ZEX_Goal_Diet_Harmony_Led.dds"
+	}
+	spriteType = {
+		name = "GFX_ZEX_Goal_Diet_Harmony_Led_shine"
+		textureFile = "gfx/interface/goals/MGY/GFX_ZEX_Goal_Diet_Harmony_Led.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/MGY/GFX_ZEX_Goal_Diet_Harmony_Led.dds"			
+			animationtexturefile = "gfx/interface/goals/ZEX_MGY_shine_100x100.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/MGY/GFX_ZEX_Goal_Diet_Harmony_Led.dds"			
+			animationtexturefile = "gfx/interface/goals/ZEX_MGY_shine_100x100.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ZEX_Goal_Diet_Monarchy_Led"
+		textureFile = "gfx/interface/goals/MGY/GFX_ZEX_Goal_Diet_Monarchy_Led.dds"
+	}
+	spriteType = {
+		name = "GFX_ZEX_Goal_Diet_Monarchy_Led_shine"
+		textureFile = "gfx/interface/goals/MGY/GFX_ZEX_Goal_Diet_Monarchy_Led.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/MGY/GFX_ZEX_Goal_Diet_Monarchy_Led.dds"			
+			animationtexturefile = "gfx/interface/goals/ZEX_MGY_shine_100x100.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/MGY/GFX_ZEX_Goal_Diet_Monarchy_Led.dds"			
+			animationtexturefile = "gfx/interface/goals/ZEX_MGY_shine_100x100.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ZEX_Goal_Diet_Restrict_Royal_Agency"
+		textureFile = "gfx/interface/goals/MGY/GFX_ZEX_Goal_Diet_Restrict_Royal_Agency.dds"
+	}
+	spriteType = {
+		name = "GFX_ZEX_Goal_Diet_Restrict_Royal_Agency_shine"
+		textureFile = "gfx/interface/goals/MGY/GFX_ZEX_Goal_Diet_Restrict_Royal_Agency.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/MGY/GFX_ZEX_Goal_Diet_Restrict_Royal_Agency.dds"			
+			animationtexturefile = "gfx/interface/goals/ZEX_MGY_shine_100x100.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/MGY/GFX_ZEX_Goal_Diet_Restrict_Royal_Agency.dds"			
+			animationtexturefile = "gfx/interface/goals/ZEX_MGY_shine_100x100.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ZEX_Goal_Diet_Codify_Crown"
+		textureFile = "gfx/interface/goals/MGY/GFX_ZEX_Goal_Diet_Codify_Crown.dds"
+	}
+	spriteType = {
+		name = "GFX_ZEX_Goal_Diet_Codify_Crown_shine"
+		textureFile = "gfx/interface/goals/MGY/GFX_ZEX_Goal_Diet_Codify_Crown.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/MGY/GFX_ZEX_Goal_Diet_Codify_Crown.dds"			
+			animationtexturefile = "gfx/interface/goals/ZEX_MGY_shine_100x100.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/MGY/GFX_ZEX_Goal_Diet_Codify_Crown.dds"			
+			animationtexturefile = "gfx/interface/goals/ZEX_MGY_shine_100x100.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ZEX_Goal_Emergency_Powers"
+		textureFile = "gfx/interface/goals/MGY/GFX_ZEX_Goal_Emergency_Powers.dds"
+	}
+	spriteType = {
+		name = "GFX_ZEX_Goal_Emergency_Powers_shine"
+		textureFile = "gfx/interface/goals/MGY/GFX_ZEX_Goal_Emergency_Powers.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/MGY/GFX_ZEX_Goal_Emergency_Powers.dds"			
+			animationtexturefile = "gfx/interface/goals/ZEX_MGY_shine_100x100.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/MGY/GFX_ZEX_Goal_Emergency_Powers.dds"			
+			animationtexturefile = "gfx/interface/goals/ZEX_MGY_shine_100x100.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ZEX_Goal_Diet_Modernise_Laws"
+		textureFile = "gfx/interface/goals/MGY/GFX_ZEX_Goal_Diet_Modernise_Laws.dds"
+	}
+	spriteType = {
+		name = "GFX_ZEX_Goal_Diet_Modernise_Laws_shine"
+		textureFile = "gfx/interface/goals/MGY/GFX_ZEX_Goal_Diet_Modernise_Laws.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/MGY/GFX_ZEX_Goal_Diet_Modernise_Laws.dds"			
+			animationtexturefile = "gfx/interface/goals/ZEX_MGY_shine_100x100.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/MGY/GFX_ZEX_Goal_Diet_Modernise_Laws.dds"			
+			animationtexturefile = "gfx/interface/goals/ZEX_MGY_shine_100x100.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ZEX_Goal_Diet_Judiciary_Reform"
+		textureFile = "gfx/interface/goals/MGY/GFX_ZEX_Goal_Diet_Judiciary_Reform.dds"
+	}
+	spriteType = {
+		name = "GFX_ZEX_Goal_Diet_Judiciary_Reform_shine"
+		textureFile = "gfx/interface/goals/MGY/GFX_ZEX_Goal_Diet_Judiciary_Reform.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/MGY/GFX_ZEX_Goal_Diet_Judiciary_Reform.dds"			
+			animationtexturefile = "gfx/interface/goals/ZEX_MGY_shine_100x100.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/MGY/GFX_ZEX_Goal_Diet_Judiciary_Reform.dds"			
+			animationtexturefile = "gfx/interface/goals/ZEX_MGY_shine_100x100.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ZEX_Goal_Diet_Nobility_Titles"
+		textureFile = "gfx/interface/goals/MGY/GFX_ZEX_Goal_Diet_Nobility_Titles.dds"
+	}
+	spriteType = {
+		name = "GFX_ZEX_Goal_Diet_Nobility_Titles_shine"
+		textureFile = "gfx/interface/goals/MGY/GFX_ZEX_Goal_Diet_Nobility_Titles.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/MGY/GFX_ZEX_Goal_Diet_Nobility_Titles.dds"			
+			animationtexturefile = "gfx/interface/goals/ZEX_MGY_shine_100x100.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/MGY/GFX_ZEX_Goal_Diet_Nobility_Titles.dds"			
+			animationtexturefile = "gfx/interface/goals/ZEX_MGY_shine_100x100.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
 }
