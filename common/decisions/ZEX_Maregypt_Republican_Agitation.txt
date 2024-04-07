@@ -149,6 +149,10 @@ ZEX_MAREGYPT_REPUBLICAN_AGITATION_CATEGORY = {
 					mission = ZEX_MGY_UNREST_INTERVAL
 					days = ZEX_MGY_UNREST_EFFECTS_INTERVALLS
 				}
+				add_to_variable = {
+					var = ZEX_MGY_Actions_Taken
+					value = 1
+				}
 				set_country_flag = ZEX_MGY_Royal_Concessions
 				ZEX_MGY_GET_AVERAGE_UNREST = yes
 			}
@@ -173,7 +177,7 @@ ZEX_MAREGYPT_REPUBLICAN_AGITATION_CATEGORY = {
 			custom_trigger_tooltip = {
 				tooltip = ZEX_MGY_ONLY_ONCE_PER_MOVE
 				NOT = {
-					has_country_flag = ZEX_MGY_Royal_Concessions
+					has_country_flag = ZEX_MGY_Delta_protected_flag
 				}
 			}
 			custom_trigger_tooltip = {

@@ -13,6 +13,23 @@ set_technology = {
 	basic_train = 1
 	tech_trucks = 1
 	tech_support = 1
+	airship_airframes = 1
+}
+
+if = {
+	limit = {
+		has_dlc = "By Blood Alone"
+	}
+	set_technology = {	
+		iw_small_airframe = 1
+		iw_medium_airframe = 1
+	}
+}
+else = {
+	set_technology = {
+		fighter1 = 1
+		CAS1 = 1
+	}
 }
 
 actually_fix_weapon_techs = yes
@@ -67,12 +84,12 @@ if = {
 }
 
 add_ideas = {
-	limited_conscription
+	volunteer_only
 	free_trade
 	civilian_economy
 	lack_of_scientists2
 	outdated_industry
-	poverty
+	poverty2
 }
 
 set_convoys = 70
