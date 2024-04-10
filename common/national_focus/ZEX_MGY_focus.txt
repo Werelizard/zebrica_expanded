@@ -96,11 +96,11 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			add_ideas = ZEX_MGY_goal_harmony_society_idea
 		}
 	}
 
-	focus = { #The Harmonic Society
+	focus = { #The Manephis Decree
 		id = ZEX_Goal_Emergency_Powers
 		icon = GFX_ZEX_Goal_Emergency_Powers
 
@@ -173,7 +173,10 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			swap_ideas = {
+				remove_idea = ZEX_MGY_goal_harmony_society_idea
+				add_idea = ZEX_MGY_goal_harmony_society_idea_propaganda_1
+			}
 		}
 	}
 
@@ -210,7 +213,10 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			swap_ideas = {
+				remove_idea = ZEX_MGY_goal_harmony_society_idea
+				add_idea = ZEX_MGY_goal_harmony_society_idea_genderarmerie_1
+			}
 		}
 	}
 
@@ -286,7 +292,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			add_political_power = 150
 		}
 	}
 
@@ -360,7 +366,10 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			swap_ideas = {
+				remove_idea = ZEX_MGY_goal_harmony_society_idea_genderarmerie_1
+				add_idea = ZEX_MGY_goal_harmony_society_idea_genderarmerie_2
+			}
 		}
 	}
 
@@ -397,7 +406,10 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			swap_ideas = {
+				remove_idea = ZEX_MGY_goal_harmony_society_idea_propaganda_1
+				add_idea = ZEX_MGY_goal_harmony_society_idea_propaganda_2
+			}
 		}
 	}
 
@@ -432,7 +444,27 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			if = {
+				limit = {
+					has_idea = ZEX_MGY_goal_harmony_society_idea_propaganda_2
+				}
+				swap_ideas = {
+					remove_idea = ZEX_MGY_goal_harmony_society_idea_propaganda_2
+					add_idea = ZEX_MGY_goal_harmony_society_idea_propaganda_3
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = ZEX_MGY_goal_harmony_society_idea_genderarmerie_2
+				}
+				swap_ideas = {
+					remove_idea = ZEX_MGY_goal_harmony_society_idea_genderarmerie_2
+					add_idea = ZEX_MGY_goal_harmony_society_idea_genderarmerie_3
+				}
+			}
+			else = {
+				
+			}
 		}
 	}
 

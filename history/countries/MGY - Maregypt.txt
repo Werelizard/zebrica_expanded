@@ -214,8 +214,17 @@ set_autonomy = {
 	autonomy_state = autonomy_zex_mgy_viceroyalty
 }
 
+create_faction = ZEX_MGY_MANEPHIS_ACCORDS
+add_to_faction = ALO
+
 #Initiate republican agitators
 ZEX_activate_republican_agitation = yes
+
+#Enable Viziers
+set_country_flag = zex_mgy_vizier_enabled_flag
+add_dynamic_modifier = {
+	modifier = ZEX_MGY_no_vizier_impact_dynmod
+}
 
 #At the start, king Khefer is the leader for the unaligned as well
 create_country_leader = {
@@ -262,28 +271,7 @@ set_politics = {
 	elections_allowed = no
 }
 
-# New Characters
-
-recruit_character = ZEX_MGY_Shaa_Doof
-# recruit_character = ZEX_MGY_Aly_Neigher
-# recruit_character = ZEX_MGY_Sala_Warmhoof
-# recruit_character = ZEX_MGY_Mostafa_Manesan
-# recruit_character = ZEX_MGY_Hoofein_Ali
-# recruit_character = ZEX_MGY_Neigh_Ser
-
-add_advisor_role = {
-    character = ZEX_MGY_Shaa_Doof
-    activate = yes
-    advisor = {
-        slot = political_advisor
-        cost = 0
-        idea_token = ZEX_MGY_Shaa_Doof
-        traits = {
-            ZEX_Old_Vizier
-        }
-		can_be_fired = no
-    }
-}
+# Ideas
 
 add_ideas = {
 	ZEX_Unfinished_Constitution
@@ -291,4 +279,7 @@ add_ideas = {
 	ZEX_MGY_Breadbasket
 	ZEX_MGY_REPUBLICAN_AGITATION_IDEA
 	ZEX_MGY_Somnambula
+	##Viziers
+	ZEX_MGY_Shaa_Doof_idea
 }
+

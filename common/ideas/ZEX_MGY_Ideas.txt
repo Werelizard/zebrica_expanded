@@ -5,8 +5,8 @@ ideas = {
 			picture = ZEX_MGY_Somnambula
 			modifier = {
 				drift_defence_factor = 0.5
-				resistance_growth_on_our_occupied_states = 0.1
-				army_core_defence_factor = 0.05
+				resistance_growth_on_our_occupied_states = 0.25
+				army_core_defence_factor = 0.15
 			}
 			allowed = {
 				OR = {
@@ -18,10 +18,13 @@ ideas = {
 		ZEX_MGY_Equestrian_Debts = {
 			picture = ZEX_MGY_Equestrian_Debts
 			modifier = {
-				consumer_goods_factor = 0.45
-				political_power_gain = -0.2
+				political_power_gain = -0.25
 				production_speed_industrial_complex_factor = -0.1
 				production_speed_arms_factory_factor = -0.1
+			}
+			targeted_modifier = {
+				tag = EQS
+				cic_to_target_factor = 0.45
 			}
 			allowed = {
 				zxe_mgy_equestria_exists = yes
@@ -42,6 +45,9 @@ ideas = {
 			picture = ZEX_MGY_Breadbasket
 			modifier = {
 				consumer_goods_factor = -0.1
+			}
+			research_bonus = {
+				industry = -0.1
 			}
 		}
 		ZEX_Unfinished_Constitution = {
@@ -72,15 +78,68 @@ ideas = {
 			picture = GFX_idea_unknown
 			modifier = {
 				stability_factor = 0.05
-				resistance_damage_to_garrison = -0.15
 				custom_modifier_tooltip = ZEX_MGY_goal_harmony_society_idea_effects_tt
 			}
-			allowed = {
-				has_government = democratic
+		}
+		ZEX_MGY_goal_harmony_society_idea_genderarmerie_1 = {
+			picture = GFX_idea_unknown
+			modifier = {
+				stability_factor = 0.1
+				resistance_damage_to_garrison = -0.1
+				required_garrison_factor = -0.1
+				custom_modifier_tooltip = ZEX_MGY_goal_harmony_society_idea_effects_tt
+			}
+		}
+		ZEX_MGY_goal_harmony_society_idea_propaganda_1 = {
+			picture = GFX_idea_unknown
+			modifier = {
+				stability_factor = 0.05
+				democratic_drift = 0.1
+				political_power_gain = 0.1
+				custom_modifier_tooltip = ZEX_MGY_goal_harmony_society_idea_effects_tt
+			}
+		}
+		ZEX_MGY_goal_harmony_society_idea_genderarmerie_2 = {
+			picture = GFX_idea_unknown
+			modifier = {
+				stability_factor = 0.15
+				resistance_damage_to_garrison = -0.2
+				required_garrison_factor = -0.1
+				operative_slot = 1
+				custom_modifier_tooltip = ZEX_MGY_goal_harmony_society_idea_effects_tt
+			}
+		}
+		ZEX_MGY_goal_harmony_society_idea_propaganda_2 = {
+			picture = GFX_idea_unknown
+			modifier = {
+				stability_factor = 0.05
+				democratic_drift = 0.1
+				industrial_capacity_factory = 0.05
+				political_power_gain = 0.2
+				custom_modifier_tooltip = ZEX_MGY_goal_harmony_society_idea_effects_tt
+			}
+		}
+		ZEX_MGY_goal_harmony_society_idea_genderarmerie_3 = {
+			picture = GFX_idea_unknown
+			modifier = {
+				stability_factor = 0.15
+				resistance_damage_to_garrison = -0.2
+				required_garrison_factor = -0.1
+				root_out_resistance_effectiveness_factor = 0.2
+				operative_slot = 1
+			}
+		}
+		ZEX_MGY_goal_harmony_society_idea_propaganda_3 = {
+			picture = GFX_idea_unknown
+			modifier = {
+				stability_factor = 0.05
+				democratic_drift = 0.2
+				industrial_capacity_factory = 0.05
+				political_power_gain = 0.25
 			}
 		}
 	}
-	##OTHER
+	##Rulers / advisors as ideas
 	country = {
 		ZEX_MGY_king_khefer_idea = {
 			picture = GFX_ZEX_MGY_king_khefer_idea
@@ -91,6 +150,16 @@ ideas = {
 				NOT = {
 					has_government = communism
 				}
+			}
+		}
+	}
+	#Viziers
+	hidden_ideas = {
+		ZEX_MGY_Shaa_Doof_idea = {
+			modifier = {
+				drift_defence_factor = 0.1
+				political_power_factor = -0.1
+				stability_factor = 0.15
 			}
 		}
 	}

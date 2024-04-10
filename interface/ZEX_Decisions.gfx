@@ -47,4 +47,8 @@ spriteTypes = {
 		name = "ZEX_GFX_Royal_Concessions"
 		textureFile = "gfx/interface/decisions/ZEX_GFY_MGY_Criticise_Crown.dds"
 	}
+	spriteType = {
+		name = "GFX_ZEX_MGY_Vizier_Button"
+		textureFile = "gfx/interface/ZEX_GFX_Vizier_button.dds"
+	}
 }

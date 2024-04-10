@@ -99,7 +99,7 @@ scripted_gui = {
 			}
 		}
 
-		#Protection statis
+		#Protection status
 		properties = {
 			ZEX_MGY_delta_protected_status = {
 
@@ -119,6 +119,60 @@ scripted_gui = {
 
 		ai_weights = {
 			
+		}
+	}
+
+	ZEX_MGY_Vizier_Viw_ui = {
+		context_type = player_context
+		window_name = "ZEX_MGY_Vizier_Viw_ui_window"
+		parent_window_token = politics_tab
+
+		ai_check = {
+			always = no
+		}
+
+		visible = {
+			AND = {
+				zxe_is_maregypt_or_cosmetic_maregypt = yes #By button - is this active now?
+				has_country_flag = zex_mgy_vizier_enabled_flag #General contex - can this country hav the viier?
+			}
+		}
+
+		triggers = {
+			ZEX_MGY_Vizier_Frame_visible = {
+				has_country_flag = zex_mgy_vizier_highlight_flag
+			}
+			ZEX_MGY_Vizier_Button_visible = {
+				has_country_flag = zex_mgy_vizier_enabled_flag
+			}
+			ZEX_MGY_Vizier_name_visible = {
+				has_country_flag = zex_mgy_vizier_highlight_flag
+			}
+
+			#Per Viziers
+			ZEX_MGY_Shaa_Doof_visible = {
+				has_idea = ZEX_MGY_Shaa_Doof_idea
+				has_country_flag = zex_mgy_vizier_highlight_flag
+			}
+
+			ZEX_MGY_No_Vizier_visible = {
+				zex_mgy_no_vizier_check = yes
+				has_country_flag = zex_mgy_vizier_highlight_flag
+			}
+		}
+
+		effects = {
+			ZEX_MGY_Vizier_Button_click = {
+				if = {
+					limit = {
+						has_country_flag = zex_mgy_vizier_highlight_flag
+					}
+					clr_country_flag = zex_mgy_vizier_highlight_flag
+				}
+				else = {
+					set_country_flag = zex_mgy_vizier_highlight_flag
+				}				
+			}
 		}
 	}
 }

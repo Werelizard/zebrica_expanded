@@ -1,0 +1,52 @@
+guiTypes = {
+	containerWindowType = {
+		name = "ZEX_MGY_Vizier_Viw_ui_window"
+		position = { x = 10 y = 44 }
+		size = { width = 170 height = 260 }
+		orientation = upper_left
+
+		# Viziers
+
+		iconType = {
+			name = "ZEX_MGY_Shaa_Doof" 
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_ZEX_MGY_Shaa_Doof"
+			pdx_tooltip = ZEX_MGY_Shaa_Doof_tt
+		}
+
+		iconType = {
+			name = "ZEX_MGY_No_Vizier" 
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_ZEX_MGY_No_Vizier"
+		}
+
+		# Interface
+
+		iconType = {
+			name = "ZEX_MGY_Vizier_Frame" 
+			position = { x = 0 y = 0 }
+			spriteType = "GFX_ZEX_MGY_Vizier_Frame_Overlay"
+			pdx_tooltip = ZEX_MGY_Current_Vizier_Desc_tt
+			pdx_tooltip_delayed = ZEX_MGY_Current_Vizier_Bio_tt
+		}
+
+		instantTextBoxType = {
+			name ="ZEX_MGY_Vizier_name"
+			position = { x = -20 y = 228 }
+			font = "hoi_18mbs"
+			text = "ZEX_MGY_Vizier_current_name_tt"
+			format = center
+			maxHeight = 24
+			pdx_tooltip = ZEX_MGY_Current_Vizier_Desc_tt
+			pdx_tooltip_delayed = ZEX_MGY_Current_Vizier_Bio_tt
+		}
+
+		buttonType = {
+			name = "ZEX_MGY_Vizier_Button"
+			position = { x = 135 y = 226}
+			spriteType = "GFX_ZEX_MGY_Vizier_Button"
+			pdx_tooltip = "ZEX_MGY_Vizier_Button_tt"
+			pdx_tooltip_delayed = "ZEX_MGY_Vizier_Button_extra_tt"
+		}
+	}
+}

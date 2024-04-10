@@ -29,4 +29,9 @@ spriteTypes = {
 		texturefile = "gfx/texticons/ZEX_MGY_legitimacy_texticon.dds"
 		legacy_lazy_load = no
 	}
+	spriteType = {
+		name = "GFX_ZEX_driftdef"
+		texturefile = "gfx/texticons/ZEX_MGY_ideology_defence_texticon.dds"
+		legacy_lazy_load = no
+	}
 }

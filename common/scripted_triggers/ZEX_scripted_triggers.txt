@@ -30,6 +30,17 @@ zxe_mgy_equestria_exists = {
 }
 
 #################################
+# Vizier                        #
+#################################
+
+zex_mgy_no_vizier_check = {
+	NOT = {
+		has_idea = ZEX_MGY_Shaa_Doof_idea
+	}
+}
+
+
+#################################
 # Focus Tree Related            #
 #################################
 
@@ -75,76 +86,8 @@ zex_mgy_shaa_doof_dead = {
 zex_mgy_has_a_vizier = {
 	custom_trigger_tooltip = {
 		tooltip = zex_mgy_has_a_vizier_tt
-		OR = {
-			ZEX_MGY_Shaa_Doof = { #Shaa Doof
-				is_hired_as_advisor = yes
-			}
-			ZEX_MGY_Aly_Neigher = { #Aly Neigher, Conservative Harmonist
-				is_hired_as_advisor = yes
-			}
-			ZEX_MGY_Sala_Warmhoof = { #Sala Warmhoof, Reformist
-				is_hired_as_advisor = yes
-			}
-			ZEX_MGY_Mostafa_Manesan = { #Mostafa Maynesan, Monarchist
-				is_hired_as_advisor = yes
-			}
-			ZEX_MGY_Hoofein_Ali = { #Hooffein Ali - Zebricanist, moderate
-				is_hired_as_advisor = yes
-			}
-			ZEX_MGY_Neigh_Ser = { #Neigh Ser - Zebricanist, Republican
-				is_hired_as_advisor = yes
-			}
-		}
-	}
-}
-
-zex_mgy_vizier_is_not_anti_zebrican = {
-	custom_trigger_tooltip = {
-		tooltip = zex_mgy_vizier_is_not_anti_zebrican_tt
 		NOT = {
-			OR = {
-				ZEX_MGY_Aly_Neigher = { #Aly Neigher
-					is_hired_as_advisor = yes
-				}
-				ZEX_MGY_Mostafa_Manesan = { #Mostafa Maynesan
-					is_hired_as_advisor = yes
-				}
-			}
-		}
-	}
-}
-
-zex_mgy_vizier_is_not_anti_harmonist = {
-	custom_trigger_tooltip = {
-		tooltip = zex_mgy_vizier_is_not_anti_harmonist_tt
-		NOT = {
-			OR = {
-				ZEX_MGY_Mostafa_Manesan = { #Mostafa Maynesan
-					is_hired_as_advisor = yes
-				}
-				ZEX_MGY_Neigh_Ser = { #Neigh Ser
-					is_hired_as_advisor = yes
-				}
-			}
-		}
-	}
-}
-
-zex_mgy_vizier_is_not_anti_monarchist = {
-	custom_trigger_tooltip = {
-		tooltip = zex_mgy_vizier_is_not_anti_monarchist_tt
-		NOT = {
-			OR = {
-				ZEX_MGY_Sala_Warmhoof = { #Sala Warmhoof
-					is_hired_as_advisor = yes
-				}
-				ZEX_MGY_Neigh_Ser = { #Neigh Ser
-					is_hired_as_advisor = yes
-				}
-				ZEX_MGY_Hoofein_Ali = { #Hooffein Ali
-					is_hired_as_advisor = yes
-				}
-			}
+			zex_mgy_no_vizier_check = yes
 		}
 	}
 }

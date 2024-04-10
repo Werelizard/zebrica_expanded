@@ -31,3 +31,18 @@
  ZEX_Mostafa_Manesan_trait:0 "Aristocrat"
  ZEX_Hoofein_Ali_trait:0 "Masterful Political Maneuverer"
  ZEX_Neigh_Ser_trait:0 "Republican Figurehead"
+
+ #Viziers
+ ZEX_MGY_Vizier_Button_tt:0 "Toggle ruler view between the §YMonarch§! and the §YVizier§!" 
+ ZEX_MGY_Vizier_Button_extra_tt:0 "§LOur Kingdom's bureaucracy relies on its Vizier to operate, with the king traditionally appointing the select candiate of his choice to the position. §!§tShall we find ourselves without one, our country will suffer penalties.§!"
+ ZEX_MGY_Current_Vizier_Desc_tt:0 "[ZEX_MGY_GetVizier]"
+ ZEX_MGY_Vizier_current_name_tt:0 "[ZEX_MGY_GetVizier_Name]"
+ ZEX_MGY_Current_Vizier_Bio_tt:0 "[ZEX_MGY_GetVizier_Bio]"
+
+ ZEX_MGY_current_vizier_is_shaa_doof:0 "§YShaa Doof§!\n§YOld Vizier§!\n- £pol_power  Political Power Gain: §t-10%§!\n- £ZEX_driftdef  Ideology drift defence: §G+10.0%§!\n§YPopular Figurehead§!\n- £stability_texticon  Stability: §G+15.0%§!"
+ ZEX_MGY_Shaa_Doof_bio_tt:0 "§YBorn§!: §LAugust 7th, 923§!\n\n§YBiography§!: §Lfew ponies can atteset as to having had an life as eventful as Shaa Doof. Born Nefersu Shara Doof, Shaa Doof served as a police officer, as a journalist, as a secreterary, as an ambassador and as a politician. Careful by nature and pragmatic by necessity, he has been instrumental in keeping the kingdom together, from the Storm King's onslaught to the great famine of 996. Though now in his latter years he remains nonethless a beacon of stability, a guiding light for all, king included, even as increasingly louder voices call out for his resignation in the face of an ever pressing need for change and reform.§!"
+ ZEX_MGY_Shaa_Doof_idea:0 "Shaa Doof"
+ ZEX_MGY_Shaa_Doof_tt:0 "Shaa Doof"
+
+ ZEX_MGY_current_vizier_no_vizier:0 "No Vizier"
+ ZEX_MGY_current_vizier_no_vizier_bio:0 "§YEmpty Cabinet§!\n- £pol_power  Daily Political Power: §t-0.5§!\n- £ZEX_driftdef  Ideology drift defence: §t-75.0%§!"
