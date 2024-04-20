@@ -207,6 +207,9 @@ if = {
 # ZEBRICA EXPANDED #
 ####################
 
+# Add advisors / characters
+recruit_character = ZEX_MGY_Somnambula
+
 #Puppet AOL
 
 set_autonomy = {
@@ -219,6 +222,9 @@ add_to_faction = ALO
 
 #Initiate republican agitators
 ZEX_activate_republican_agitation = yes
+
+#Enable the breadbasket mechanics
+ZEX_MGY_ENABLE_BREADBASKET = yes
 
 #Enable Viziers
 set_country_flag = zex_mgy_vizier_enabled_flag
@@ -278,7 +284,7 @@ add_ideas = {
 	ZEX_MGY_Equestrian_Debts
 	ZEX_MGY_Breadbasket
 	ZEX_MGY_REPUBLICAN_AGITATION_IDEA
-	ZEX_MGY_Somnambula
+	ZEX_MGY_VIZIER_OFFICE_VIZIER_WEAK
 	##Viziers
 	ZEX_MGY_Shaa_Doof_idea
 }

@@ -14,29 +14,10 @@ leader_traits = {
 	}
 
 	#Advisors
-	ZEX_Old_Vizier = {
-		drift_defence_factor = 0.1
-		political_power_factor = -0.1
-		stability_factor = 0.025
-	}
-	ZEX_Sala_Warmhoof_trait = {
-		consumer_goods_factor = 0.05
-		stability_weekly = 0.015
-	}
-	ZEX_Aly_Neigher_trait = {
-		democratic_drift = 0.1
-		neutrality_drift = 0.1
-	}
-	ZEX_Mostafa_Manesan_trait = {
-		stability_factor = 0.1
-		neutrality_drift = 0.1
-	}
-	ZEX_Hoofein_Ali_trait = {
-		political_power_gain = -0.1
-		stability_factor = 0.2
-	}
-	ZEX_Neigh_Ser_trait = {
-		war_support_factor = 0.15
-		democratic_drift = -0.1
+	ZEX_MGY_Peacekeeper = {
+		stability_factor = 0.15
+		opinion_gain_monthly_same_ideology_factor = 0.25
+		war_support_weekly = -0.015
+		improve_relations_maintain_cost_factor = -0.3
 	}
 }

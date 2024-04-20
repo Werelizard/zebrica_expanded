@@ -14,3 +14,13 @@ ZEX_MGY_no_vizier_impact_dynmod  = {
     drift_defence_factor = -0.75
     political_power_gain = -0.5
 }
+
+ZEX_MGY_Breadbasket_of_Zebrica_dynmod = {
+    enable = {
+        
+    }
+    consumer_goods_factor = ZEX_MGY_agriculture_consumer_goods_effect
+    industrial_capacity_factory = ZEX_MGY_agriculture_factory_output_effect
+    industrial_capacity_dockyard = ZEX_MGY_agriculture_factory_output_effect
+    political_power_gain = ZEX_MGY_agriculture_poltical_power_gain
+}

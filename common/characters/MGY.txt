@@ -1,267 +1,190 @@
-characters={
+characters = {
 	#
 	# ZEBRICA EXPANDED - Vanilla Characters #
 	# 
-
 	## Leaders
-
-	MGY_king_khefer={
-		name=MGY_king_khefer
-		portraits={
-			civilian={
-				large="gfx/leaders/MGY/King_kefir.tga"
+	MGY_king_khefer = {
+		name = MGY_king_khefer
+		portraits = {
+			civilian = {
+				large = GFX_leader_ZEX_Khefer
 			}
 		}
-		country_leader={
-			ideology=conservatism
-			expire="1111.1.1.1"
-			id=-1
+		country_leader = {
+			ideology = conservatism
+			expire = "1111.1.1.1"
+			id = -1
 			traits = {
 				ZEX_MGY_Benevolent_Authoritarian
 				ZEX_MGY_Naive_Reformist
 			}
 		}
-		country_leader={
-			ideology=despotism
-			expire="1111.1.1.1"
-			id=-1
+		country_leader = {
+			ideology = despotism
+			expire = "1111.1.1.1"
+			id = -1
 			traits = {
 				ZEX_MGY_Benevolent_Authoritarian
 				ZEX_MGY_Naive_Reformist
 			}
 		}
 	}
-	MGY_far_hook={
-		name=MGY_far_hook
-		portraits={
-			civilian={
-				large="gfx/leaders/MGY/FarHook.tga"
+	MGY_far_hook = {
+		name = MGY_far_hook
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/MGY/FarHook.tga"
 			}
-			army={
-				small="gfx/interface/ideas/Advisors/MGY/MGY_far_hook.tga"
+			army = {
+				small = "gfx/interface/ideas/Advisors/MGY/MGY_far_hook.tga"
 			}
 		}
-		country_leader={
-			ideology=falangism
-			expire="1111.1.1.1"
-			id=-1
+		country_leader = {
+			ideology = falangism
+			expire = "1111.1.1.1"
+			id = -1
 		}
-		field_marshal={
-			traits={ pony_race_trait old_guard politically_connected infantry_officer }
-			skill=4
+		field_marshal = {
+			traits = {
+				pony_race_trait
+				old_guard
+				politically_connected
+				infantry_officer
+			}
+			skill = 4
 			desc = MGY_far_hook_desc
-			attack_skill=4
-			defense_skill=3
-			planning_skill=4
-			logistics_skill=2
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 2
 		}
-		gender=female
+		gender = female
 	}
-	MGY_butternut_squash={
-		name=MGY_butternut_squash
-		portraits={
-			civilian={
-				large="gfx/leaders/MGY/Squash.tga"
+	MGY_butternut_squash = {
+		name = MGY_butternut_squash
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/MGY/Squash.tga"
 			}
 		}
-		country_leader={
-			ideology=leninism
-			expire="1111.1.1.1"
-			id=-1
+		country_leader = {
+			ideology = leninism
+			expire = "1111.1.1.1"
+			id = -1
 		}
 	}
-	MGY_corktantinople={
-		name=MGY_corktantinople
-		portraits={
-			army={
-				large="gfx/leaders/MGY/Nile.tga"
-				small="gfx/interface/ideas/Advisors/MGY/MGY_nile.tga"
+	MGY_corktantinople = {
+		name = MGY_corktantinople
+		portraits = {
+			army = {
+				large = "gfx/leaders/MGY/Nile.tga"
+				small = "gfx/interface/ideas/Advisors/MGY/MGY_nile.tga"
 			}
 		}
-		corps_commander={
-			traits={ pony_race_trait promising_general desert_fox infantry_leader }
-			skill=3
-			attack_skill=3
-			defense_skill=2
-			planning_skill=2
-			logistics_skill=3
+		corps_commander = {
+			traits = {
+				pony_race_trait
+				promising_general
+				desert_fox
+				infantry_leader
+			}
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
 			desc = MGY_corktantinople_desc
 		}
-		gender=female
+		gender = female
 	}
-	MGY_annu={
-		name=MGY_annu
-		portraits={
-			army={
-				large="gfx/leaders/MGY/annu.tga"
-				small="gfx/interface/ideas/Advisors/MGY/MGY_annu.tga"
+	MGY_annu = {
+		name = MGY_annu
+		portraits = {
+			army = {
+				large = "gfx/leaders/MGY/annu.tga"
+				small = "gfx/interface/ideas/Advisors/MGY/MGY_annu.tga"
 			}
 		}
-		corps_commander={
-			traits={ pony_race_trait war_hero desert_fox }
-			skill=2
-			attack_skill=2
-			defense_skill=2
-			planning_skill=1
-			logistics_skill=2
+		corps_commander = {
+			traits = {
+				pony_race_trait
+				war_hero
+				desert_fox
+			}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
 			desc = MGY_annu_desc
 		}
 	}
-	MGY_violetta_locifer={
-		name=MGY_violetta_locifer
-		portraits={
-			army={
-				large="gfx/leaders/MGY/violetta_locifer.tga"
-				small="gfx/interface/ideas/Advisors/MGY/MGY_violetta_locifer.tga"
+	MGY_violetta_locifer = {
+		name = MGY_violetta_locifer
+		portraits = {
+			army = {
+				large = "gfx/leaders/MGY/violetta_locifer.tga"
+				small = "gfx/interface/ideas/Advisors/MGY/MGY_violetta_locifer.tga"
 			}
 		}
-		corps_commander={
-			traits={ pony_race_trait infantry_officer desert_fox }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
+		corps_commander = {
+			traits = {
+				pony_race_trait
+				infantry_officer
+				desert_fox
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
 			desc = MGY_violetta_locifer_desc
 		}
-		gender=female
+		gender = female
 	}
-
 	#
 	# ZEBRICA EXPANDED - NEW CHARACTERS #
 	# 
-
-	## Viziers
-
-	ZEX_MGY_Shaa_Doof = { #The Old Vizier
-		name = ZEX_MGY_Shaa_Doof
+	
+	ZEX_MGY_Somnambula = {
+		name = ZEX_MGY_Somnambula
 		portraits = {
 			civilian = {
-				small = GFX_idea_unknown_advisor_donkey
+				small = GFX_idea_ZEX_MGY_Somnambula_Small
+				large = GFX_leader_ZEX_Somnambula
 			}
 		}
 		advisor = {
 			slot = political_advisor
-			idea_token = ZEX_MGY_Vizier_Advisor
+			idea_token = ZEX_MGY_Harmony_Ambassador
 			allowed = {
 				original_tag = MGY
-				NOT = {
-					is_country_leader = yes
-				}
 			}
 			traits = {
-				ZEX_Old_Vizier
+				ZEX_MGY_Peacekeeper
 			}
-		}
-	}
-
-	ZEX_MGY_Aly_Neigher = { #The Conservative Harmonist
-		name = ZEX_MGY_Aly_Neigher
-		portraits = {
-			civilian = {
-				small = GFX_idea_unknown_advisor_donkey
-			}
-		}
-		advisor = {
-			slot = political_advisor
-			idea_token = ZEX_MGY_Vizier_Advisor
-			allowed = {
-				original_tag = MGY
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = ZEX_MGY_cannot_select_advisor_now_tt
+					NOT = {
+						has_idea = ZEX_Unfinished_Constitution
+					}
+				}
+				custom_trigger_tooltip = {
+					tooltip = ZEX_MGY_somnambula_has_not_been_removed_tt
+					NOT = {
+						has_country_flag = ZEX_MGY_Somnambula_Exiled
+					}
+				}
+				OR = {
+					has_government = democratic
+					has_government = neutrality
+				}
 				NOT = {
-					is_country_leader = yes
+					has_offensive_war = yes
 				}
 			}
-			traits = {
-				ZEX_Aly_Neigher_trait
-			}
-		}
-	}
-
-	ZEX_MGY_Sala_Warmhoof = { #The Reformist
-		name = ZEX_MGY_Sala_Warmhoof
-		portraits = {
-			civilian = {
-				small = GFX_idea_unknown_advisor_donkey
-			}
-		}
-		advisor = {
-			slot = political_advisor
-			idea_token = ZEX_MGY_Vizier_Advisor
-			allowed = {
-				original_tag = MGY
-				NOT = {
-					is_country_leader = yes
-				}
-			}
-			traits = {
-				ZEX_Sala_Warmhoof_trait
-			}
-		}
-	}
-
-	ZEX_MGY_Mostafa_Manesan = { #The Monarchist
-		name = ZEX_MGY_Mostafa_Manesan
-		portraits = {
-			civilian = {
-				small = GFX_idea_unknown_advisor_donkey
-			}
-		}
-		advisor = {
-			slot = political_advisor
-			idea_token = ZEX_MGY_Vizier_Advisor
-			allowed = {
-				original_tag = MGY
-				NOT = {
-					is_country_leader = yes
-				}
-			}
-			traits = {
-				ZEX_Mostafa_Manesan_trait
-			}
-		}
-	}
-
-	ZEX_MGY_Hoofein_Ali = { #The Zebricanist - Moderate compromise
-		name = ZEX_MGY_Hoofein_Ali
-		portraits = {
-			civilian = {
-				small = GFX_idea_unknown_advisor_donkey
-			}
-		}
-		advisor = {
-			slot = political_advisor
-			idea_token = ZEX_MGY_Vizier_Advisor
-			allowed = {
-				original_tag = MGY
-				NOT = {
-					is_country_leader = yes
-				}
-			}
-			traits = {
-				ZEX_Hoofein_Ali_trait
-			}
-		}
-	}
-
-	ZEX_MGY_Neigh_Ser = { #The Zebricanist - Republican
-		name = ZEX_MGY_Neigh_Ser
-		portraits = {
-			civilian = {
-				small = GFX_idea_unknown_advisor_donkey
-			}
-		}
-		advisor = {
-			slot = political_advisor
-			idea_token = ZEX_MGY_Vizier_Advisor
-			allowed = {
-				original_tag = MGY
-				NOT = {
-					is_country_leader = yes
-				}
-			}
-			traits = {
-				ZEX_Neigh_Ser_trait
-			}
+			desc = ZEX_MGY_Somnambula_Desc
 		}
 	}
 }

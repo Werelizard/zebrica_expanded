@@ -159,6 +159,13 @@ scripted_gui = {
 				zex_mgy_no_vizier_check = yes
 				has_country_flag = zex_mgy_vizier_highlight_flag
 			}
+
+			#Highlight
+			ZEX_MGY_Vizier_Button_HIGHLIGHT_visible = {
+				NOT = {
+					has_country_flag = ZEX_MGY_Vizier_Highlight_Hidden
+				}
+			}
 		}
 
 		effects = {
@@ -171,7 +178,16 @@ scripted_gui = {
 				}
 				else = {
 					set_country_flag = zex_mgy_vizier_highlight_flag
-				}				
+				}
+				
+				if = {
+					limit = {
+						NOT = {
+							has_country_flag = ZEX_MGY_Vizier_Highlight_Hidden
+						}
+					}
+					set_country_flag = ZEX_MGY_Vizier_Highlight_Hidden
+				}
 			}
 		}
 	}

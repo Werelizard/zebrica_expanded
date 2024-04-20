@@ -44,10 +44,13 @@ ideas = {
 		ZEX_MGY_Breadbasket = {
 			picture = ZEX_MGY_Breadbasket
 			modifier = {
-				consumer_goods_factor = -0.1
-			}
-			research_bonus = {
-				industry = -0.1
+				# consumer_goods_factor = -0.1
+				# production_speed_infrastructure_factor = -0.1
+				# global_building_slots_factor = -0.1
+				custom_modifier_tooltip = ZEX_MGY_consumer_impact_tt
+				custom_modifier_tooltip = ZEX_MGY_factory_impact_tt
+				custom_modifier_tooltip = ZEX_MGY_dock_impact_tt
+				custom_modifier_tooltip = ZEX_MGY_polpower_impact_tt
 			}
 		}
 		ZEX_Unfinished_Constitution = {
@@ -72,6 +75,7 @@ ideas = {
 			}
 		}
 	}
+
 	##FOCUS RELATED
 	country = {
 		ZEX_MGY_goal_harmony_society_idea = {
@@ -139,6 +143,7 @@ ideas = {
 			}
 		}
 	}
+
 	##Rulers / advisors as ideas
 	country = {
 		ZEX_MGY_king_khefer_idea = {
@@ -153,6 +158,86 @@ ideas = {
 			}
 		}
 	}
+
+	#Vizier-Monarch power balance
+	country = {
+		ZEX_MGY_VIZIER_OFFICE_BALANCED = {
+			picture = ZEX_MGY_Vizier_Office
+			modifier = {
+				political_power_factor = 0.025
+			}
+			allowed = {
+				has_country_flag = zex_mgy_vizier_enabled_flag
+			}
+		}
+		ZEX_MGY_VIZIER_OFFICE_KING_WEAK = {
+			picture = ZEX_MGY_Vizier_Office
+			modifier = {
+				stability_factor = 0.025
+				daily_popularity_drift = 0.01
+			}
+			allowed = {
+				has_country_flag = zex_mgy_vizier_enabled_flag
+			}
+		}
+		ZEX_MGY_VIZIER_OFFICE_KING_STRONG = {
+			picture = ZEX_MGY_Vizier_Office
+			modifier = {
+				political_power_factor = -0.03
+				stability_factor = 0.05
+				daily_popularity_drift = 0.015
+			}
+			allowed = {
+				has_country_flag = zex_mgy_vizier_enabled_flag
+			}
+		}
+		ZEX_MGY_VIZIER_OFFICE_KING_DOMINANT = {
+			picture = ZEX_MGY_Vizier_Office
+			modifier = {
+				political_power_factor = -0.1
+				stability_factor = 0.05
+				war_support_factor = 0.1
+				daily_popularity_drift = 0.02
+			}
+			allowed = {
+				has_country_flag = zex_mgy_vizier_enabled_flag
+			}
+		}
+		ZEX_MGY_VIZIER_OFFICE_VIZIER_WEAK = {
+			picture = ZEX_MGY_Vizier_Office
+			modifier = {
+				political_power_factor = 0.03
+				economy_cost_factor = -0.1
+				war_support_factor = -0.025
+			}
+			allowed = {
+				has_country_flag = zex_mgy_vizier_enabled_flag
+			}
+		}
+		ZEX_MGY_VIZIER_OFFICE_VIZIER_STRONG = {
+			picture = ZEX_MGY_Vizier_Office
+			modifier = {
+				political_power_factor = 0.05
+				economy_cost_factor = -0.15
+				war_support_factor = -0.05
+			}
+			allowed = {
+				has_country_flag = zex_mgy_vizier_enabled_flag
+			}
+		}
+		ZEX_MGY_VIZIER_OFFICE_VIZIER_DOMINANT = {
+			picture = ZEX_MGY_Vizier_Office
+			modifier = {
+				political_power_factor = 0.1
+				economy_cost_factor = -0.2
+				war_support_factor = -0.1
+			}
+			allowed = {
+				has_country_flag = zex_mgy_vizier_enabled_flag
+			}
+		}
+	}
+
 	#Viziers
 	hidden_ideas = {
 		ZEX_MGY_Shaa_Doof_idea = {

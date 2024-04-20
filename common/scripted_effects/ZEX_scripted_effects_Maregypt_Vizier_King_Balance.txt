@@ -1,0 +1,137 @@
+# Effects to manage the vizier balance
+
+increase_vizier_power = {
+	if = {
+		limit = {
+			NOT = {
+				has_idea = ZEX_MGY_VIZIER_OFFICE_VIZIER_DOMINANT
+			}
+		}
+		custom_effect_tooltip = increase_vizier_power_tt
+		if = {
+			limit = {
+				has_idea = ZEX_MGY_VIZIER_OFFICE_KING_DOMINANT
+			}
+			swap_ideas = {
+				remove_idea = ZEX_MGY_VIZIER_OFFICE_KING_DOMINANT
+				add_idea = ZEX_MGY_VIZIER_OFFICE_KING_STRONG
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = ZEX_MGY_VIZIER_OFFICE_KING_STRONG
+			}
+			swap_ideas = {
+				remove_idea = ZEX_MGY_VIZIER_OFFICE_KING_STRONG
+				add_idea = ZEX_MGY_VIZIER_OFFICE_KING_WEAK
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = ZEX_MGY_VIZIER_OFFICE_KING_WEAK
+			}
+			swap_ideas = {
+				remove_idea = ZEX_MGY_VIZIER_OFFICE_KING_WEAK
+				add_idea = ZEX_MGY_VIZIER_OFFICE_BALANCED
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = ZEX_MGY_VIZIER_OFFICE_BALANCED
+			}
+			swap_ideas = {
+				remove_idea = ZEX_MGY_VIZIER_OFFICE_BALANCED
+				add_idea = ZEX_MGY_VIZIER_OFFICE_VIZIER_WEAK
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = ZEX_MGY_VIZIER_OFFICE_VIZIER_WEAK
+			}
+			swap_ideas = {
+				remove_idea = ZEX_MGY_VIZIER_OFFICE_VIZIER_WEAK
+				add_idea = ZEX_MGY_VIZIER_OFFICE_VIZIER_STRONG
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = ZEX_MGY_VIZIER_OFFICE_VIZIER_STRONG
+			}
+			swap_ideas = {
+				remove_idea = ZEX_MGY_VIZIER_OFFICE_VIZIER_STRONG
+				add_idea = ZEX_MGY_VIZIER_OFFICE_VIZIER_DOMINANT
+			}
+		}
+		else = {
+			
+		}
+	}
+}
+
+decrease_vizier_power = {
+	if = {
+		limit = {
+			NOT = {
+				has_idea = ZEX_MGY_VIZIER_OFFICE_KING_DOMINANT
+			}
+		}
+		custom_effect_tooltip = increase_king_power_tt
+		if = {
+			limit = {
+				has_idea = ZEX_MGY_VIZIER_OFFICE_VIZIER_DOMINANT
+			}
+			swap_ideas = {
+				remove_idea = ZEX_MGY_VIZIER_OFFICE_VIZIER_DOMINANT
+				add_idea = ZEX_MGY_VIZIER_OFFICE_VIZIER_STRONG
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = ZEX_MGY_VIZIER_OFFICE_VIZIER_STRONG
+			}
+			swap_ideas = {
+				remove_idea = ZEX_MGY_VIZIER_OFFICE_VIZIER_STRONG
+				add_idea = ZEX_MGY_VIZIER_OFFICE_VIZIER_WEAK
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = ZEX_MGY_VIZIER_OFFICE_VIZIER_WEAK
+			}
+			swap_ideas = {
+				remove_idea = ZEX_MGY_VIZIER_OFFICE_VIZIER_WEAK
+				add_idea = ZEX_MGY_VIZIER_OFFICE_BALANCED
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = ZEX_MGY_VIZIER_OFFICE_BALANCED
+			}
+			swap_ideas = {
+				remove_idea = ZEX_MGY_VIZIER_OFFICE_BALANCED
+				add_idea = ZEX_MGY_VIZIER_OFFICE_KING_WEAK
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = ZEX_MGY_VIZIER_OFFICE_KING_WEAK
+			}
+			swap_ideas = {
+				remove_idea = ZEX_MGY_VIZIER_OFFICE_KING_WEAK
+				add_idea = ZEX_MGY_VIZIER_OFFICE_KING_STRONG
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = ZEX_MGY_VIZIER_OFFICE_KING_STRONG
+			}
+			swap_ideas = {
+				remove_idea = ZEX_MGY_VIZIER_OFFICE_KING_STRONG
+				add_idea = ZEX_MGY_VIZIER_OFFICE_KING_DOMINANT
+			}
+		}
+		else = {
+			
+		}
+	}
+}

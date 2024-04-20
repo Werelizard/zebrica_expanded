@@ -8,15 +8,29 @@ spriteTypes = {
 		textureFile = "gfx/interface/ideas/ZEX_Unfinished_Constitution.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_ZEX_MGY_Somnambula"
-		textureFile = "gfx/interface/ideas/ZEX_MGY_Somnambula.dds"
-	}
-	spriteType = {
 		name = "GFX_idea_ZEX_MGY_Equestrian_Debts"
 		textureFile = "gfx/interface/ideas/ZEX_MGY_Equestrian_Debts.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_ZEX_MGY_REPUBLICAN_AGITATION_IDEA"
 		textureFile = "gfx/interface/ideas/ZEX_MGY_REPUBLICAN_AGITATION_IDEA.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ZEX_MGY_Vizier_Office"
+		textureFile = "gfx/interface/ideas/ZEX_MGY_Viziers.dds"
+	}
+
+	#Leaders
+	spriteType = {
+		name = "GFX_leader_ZEX_Somnambula"
+		textureFile = "gfx/leaders/Somnambula.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_ZEX_MGY_Somnambula_Small"
+		textureFile = "gfx/interface/ideas/advisors/ZEX_MGY_somnambula_small.dds"
+	}
+	spriteType = {
+		name = "GFX_leader_ZEX_Khefer"
+		textureFile = "gfx/leaders/King_kefir.tga"
 	}
 }

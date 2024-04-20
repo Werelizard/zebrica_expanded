@@ -34,4 +34,24 @@ spriteTypes = {
 		texturefile = "gfx/texticons/ZEX_MGY_ideology_defence_texticon.dds"
 		legacy_lazy_load = no
 	}
+	spriteType = {
+		name = "GFX_ZEX_civilwartrigger"
+		texturefile = "gfx/texticons/ZEX_MGY_war_on_trigger_texticon.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_ZEX_miloutput"
+		texturefile = "gfx/texticons/ZEX_MGY_factoryout_texticon.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_ZEX_dockoutput"
+		texturefile = "gfx/texticons/ZEX_MGY_dockout_texticon.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_ZEX_tradegoods"
+		texturefile = "gfx/texticons/ZEX_MGY_consumergoods_texticon.dds"
+		legacy_lazy_load = no
+	}
 }

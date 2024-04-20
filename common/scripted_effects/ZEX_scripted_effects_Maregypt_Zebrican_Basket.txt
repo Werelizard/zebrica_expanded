@@ -1,0 +1,21 @@
+########################################
+# MAREGYPT AGRICULTURE RELATED EFFECTS #
+########################################
+
+ZEX_MGY_ENABLE_BREADBASKET = {
+	set_variable = {
+		var = ZEX_MGY_agriculture_consumer_goods_effect
+		value = -0.1
+	}
+	set_variable = {
+		var = ZEX_MGY_agriculture_factory_output_effect
+		value = -0.085
+	}
+	set_variable = {
+		var = ZEX_MGY_agriculture_poltical_power_gain
+		value = 0.1
+	}
+	add_dynamic_modifier = {
+		modifier = ZEX_MGY_Breadbasket_of_Zebrica_dynmod
+	}
+}
