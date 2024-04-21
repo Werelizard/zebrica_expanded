@@ -54,4 +54,9 @@ spriteTypes = {
 		texturefile = "gfx/texticons/ZEX_MGY_consumergoods_texticon.dds"
 		legacy_lazy_load = no
 	}
+	spriteType = {
+		name = "GFX_ZEX_vizier_bop"
+		texturefile = "gfx/texticons/ZEX_MGY_balance_vizier_texticon.dds"
+		legacy_lazy_load = no
+	}
 }
