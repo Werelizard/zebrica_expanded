@@ -55,5 +55,20 @@ spriteTypes = {
 		name = "GFX_ZEX_MGY_Vizier_Button_Highlight"
 		textureFile = "gfx/interface/ZEX_GFX_Vizier_button_highlight.dds"
 	}
-	
+	spriteType = {
+		name = "ZEX_GFX_grain_bag"
+		textureFile = "gfx/interface/decisions/ZEX_GFY_MGY_Agri_Sell_Goods.dds"
+	}
+	spriteType = {
+		name = "ZEX_GFX_tractor"
+		textureFile = "gfx/interface/decisions/ZEX_GFY_MGY_Agri_Modernise_Farms.dds"
+	}
+	spriteType = {
+		name = "ZEX_GFX_tools"
+		textureFile = "gfx/interface/decisions/ZEX_GFY_MGY_Agri_Encourage_Uraban_Migration.dds"
+	}
+	spriteType = {
+		name = "ZEX_GFX_agri_cat"
+		textureFile = "gfx/interface/decisions/ZEX_GFX_MGY_AGRICULTURE_CAT.dds"
+	}
 }

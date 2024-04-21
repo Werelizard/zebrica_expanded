@@ -1,0 +1,82 @@
+ZEX_MAREGYPT_AGRICULTURE_CATEGORY = {
+	ZEX_SELL_MORE_GOODS = {
+		icon = ZEX_GFX_grain_bag
+		allowed = {
+			always = yes
+		}
+		visible = {
+			
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = not_tempered_in_agriculture_last_30_days_tt
+				NOT = {
+					has_idea = ZEX_MGY_Agriculture_cooldown
+				}
+			}
+			custom_trigger_tooltip = { #Check if you're not already at max pp
+				tooltip = breadbasket_pp_effect_lower_than_max
+				check_variable = {
+					ZEX_MGY_agriculture_poltical_power_gain < 1
+				}
+			}
+			custom_trigger_tooltip = { #Check if you're not at max factory use
+				tooltip = breadbasket_goods_effect_lower_than_max
+				check_variable = {
+					ZEX_MGY_agriculture_consumer_goods_effect < 0.9
+				}
+			}
+		}
+		complete_effect = {
+			ZEX_MGY_Breadbasket_Increase_sales = yes
+			hidden_effect = {
+				add_timed_idea = {
+					idea = ZEX_MGY_Agriculture_cooldown
+					days = 30
+				}
+			}
+		}
+		
+		cost = 15
+	}
+	ZEX_SELL_LESS_GOODS = {
+		icon = ZEX_GFX_grain_bag
+		allowed = {
+			always = yes
+		}
+		visible = {
+			
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = not_tempered_in_agriculture_last_30_days_tt
+				NOT = {
+					has_idea = ZEX_MGY_Agriculture_cooldown
+				}
+			}
+			custom_trigger_tooltip = { #Check if you're not already at zero pp
+				tooltip = breadbasket_pp_effect_higher_than_min
+				check_variable = {
+					ZEX_MGY_agriculture_poltical_power_gain > 0
+				}
+			}
+			custom_trigger_tooltip = { #Check if you're not already getting the msot facotries
+				tooltip = breadbasket_goods_effect_higher_than_min
+				check_variable = {
+					ZEX_MGY_agriculture_consumer_goods_effect > -0.3
+				}
+			}
+		}
+		complete_effect = {
+			ZEX_MGY_Breadbasket_Decrease_sales = yes
+			hidden_effect = {
+				add_timed_idea = {
+					idea = ZEX_MGY_Agriculture_cooldown
+					days = 30
+				}
+			}
+		}
+
+		cost = 15
+	}
+}

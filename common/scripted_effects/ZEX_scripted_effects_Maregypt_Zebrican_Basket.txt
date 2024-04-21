@@ -19,3 +19,49 @@ ZEX_MGY_ENABLE_BREADBASKET = {
 		modifier = ZEX_MGY_Breadbasket_of_Zebrica_dynmod
 	}
 }
+
+ZEX_MGY_Breadbasket_Increase_sales = {
+	custom_effect_tooltip = zex_mgy_increase_pp_gain_breadbasket
+	custom_effect_tooltip =zex_mgy_increase_goods_use_breadbasket
+	hidden_effect = {
+		add_to_variable = {
+			var = ZEX_MGY_agriculture_poltical_power_gain
+			value = 0.1
+		}
+		add_to_variable = {
+			var = ZEX_MGY_agriculture_consumer_goods_effect
+			value = 0.05
+		}
+		clamp_variable = {
+			var = ZEX_MGY_agriculture_poltical_power_gain
+			max = 1
+		}
+		clamp_variable = {
+			var = ZEX_MGY_agriculture_consumer_goods_effect
+			max = 0.9
+		}
+	}
+}
+
+ZEX_MGY_Breadbasket_Decrease_sales = {
+	custom_effect_tooltip = zex_mgy_decrease_pp_gain_breadbasket
+	custom_effect_tooltip =zex_mgy_decrease_goods_gain_breadbasket
+	hidden_effect = {
+		subtract_from_variable = {
+			var = ZEX_MGY_agriculture_poltical_power_gain
+			value = 0.1
+		}
+		subtract_from_variable = {
+			var = ZEX_MGY_agriculture_consumer_goods_effect
+			value = 0.05
+		}
+		clamp_variable = {
+			var = ZEX_MGY_agriculture_poltical_power_gain
+			min = 0
+		}
+		clamp_variable = {
+			var = ZEX_MGY_agriculture_consumer_goods_effect
+			min = -0.3
+		}
+	}
+}

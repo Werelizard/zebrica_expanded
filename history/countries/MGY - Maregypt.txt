@@ -209,6 +209,7 @@ if = {
 
 # Add advisors / characters
 recruit_character = ZEX_MGY_Somnambula
+set_country_flag = ZEX_MGY_Somnambula_Exiled
 
 #Puppet AOL
 

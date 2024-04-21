@@ -17,7 +17,7 @@ leader_traits = {
 	ZEX_MGY_Peacekeeper = {
 		stability_factor = 0.15
 		opinion_gain_monthly_same_ideology_factor = 0.25
-		war_support_weekly = -0.015
+		war_support_weekly = -0.01
 		improve_relations_maintain_cost_factor = -0.3
 	}
 }

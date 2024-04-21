@@ -191,4 +191,46 @@ scripted_gui = {
 			}
 		}
 	}
+
+	ZEX_MGY_Breadbasket_of_Zebrica_ui = {
+		context_type = decision_category
+		window_name = "ZEX_MGY_Breadbasket_of_Zebrica_ui_window"
+
+		visible = {
+			has_dynamic_modifier = {
+				modifier = ZEX_MGY_Breadbasket_of_Zebrica_dynmod
+			}
+		}
+
+		effects = {
+			
+		}
+		
+		triggers = {
+			
+		}
+
+		dynamic_lists = {
+			
+		}
+
+		properties = {
+			
+		}
+
+		ai_enabled = {
+			always = no
+		}
+
+		ai_test_interval = 290
+		ai_test_variance = 0.5
+
+		ai_check = {
+			
+		}
+
+		ai_weights = {
+			
+		}
+	}
 }

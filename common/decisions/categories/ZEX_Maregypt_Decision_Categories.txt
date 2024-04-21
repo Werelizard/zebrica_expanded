@@ -12,6 +12,22 @@ ZEX_DEBUG_CATEGORY = {
 	visible_when_empty = yes
 }
 
+ZEX_MAREGYPT_AGRICULTURE_CATEGORY = {
+	scripted_gui = ZEX_MGY_Breadbasket_of_Zebrica_ui
+	allowed = {
+		always = yes
+	}
+	visible = {
+		zxe_is_maregypt_or_cosmetic_maregypt = yes
+		has_dynamic_modifier = {
+			modifier = ZEX_MGY_Breadbasket_of_Zebrica_dynmod
+		}
+	}
+	priority = 999
+	icon = ZEX_GFX_agri_cat
+	visible_when_empty = yes
+}
+
 ZEX_MAREGYPT_REPUBLICAN_AGITATION_CATEGORY = {
 	scripted_gui = ZEX_MGY_republican_agitation_ui
 	allowed = {

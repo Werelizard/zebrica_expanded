@@ -52,6 +52,11 @@ ideas = {
 				custom_modifier_tooltip = ZEX_MGY_dock_impact_tt
 				custom_modifier_tooltip = ZEX_MGY_polpower_impact_tt
 			}
+			allowed = {
+				has_dynamic_modifier = {
+					modifier = ZEX_MGY_Breadbasket_of_Zebrica_dynmod
+				}
+			}
 		}
 		ZEX_Unfinished_Constitution = {
 			picture = ZEX_Unfinished_Constitution
@@ -246,6 +251,13 @@ ideas = {
 				political_power_factor = -0.1
 				stability_factor = 0.15
 			}
+		}
+	}
+
+	#Hidden timers
+	hidden_ideas = {
+		ZEX_MGY_Agriculture_cooldown = {
+			
 		}
 	}
 }
