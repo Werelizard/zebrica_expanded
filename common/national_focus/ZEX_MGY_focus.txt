@@ -24,6 +24,10 @@ focus_tree = {
 
 	continuous_focus_position = { x = 200 y = 2300 }
 
+	####################################
+	##        POLITICAL BRANCH        ##
+	####################################
+
 	#
 	# The King Speaks!
 	#
@@ -71,7 +75,7 @@ focus_tree = {
 		icon = GFX_ZEX_Harmonic_Society
 
 		relative_position_id = ZEX_Goal_King_Speech
-		x = -8
+		x = -6
 		y = 1
 
 		cost = 2
@@ -105,7 +109,7 @@ focus_tree = {
 		icon = GFX_ZEX_Goal_Emergency_Powers
 
 		relative_position_id = ZEX_Goal_King_Speech
-		x = -5
+		x = -4
 		y = 1
 
 		cost = 2
@@ -145,7 +149,7 @@ focus_tree = {
 		icon = GFX_ZEX_Goal_Harmonic_Benevolence
 
 		relative_position_id = ZEX_Goal_King_Speech
-		x = -6
+		x = -5
 		y = 2
 
 		cost = 2
@@ -185,7 +189,7 @@ focus_tree = {
 		icon = GFX_ZEX_Goal_Harmonic_Police
 
 		relative_position_id = ZEX_Goal_King_Speech
-		x = -10
+		x = -7
 		y = 2
 
 		cost = 2
@@ -225,7 +229,7 @@ focus_tree = {
 		icon = GFX_ZEX_Goal_Fight_the_Agitators
 
 		relative_position_id = ZEX_Goal_King_Speech
-		x = -12
+		x = -9
 		y = 3
 
 		cost = 3
@@ -263,7 +267,7 @@ focus_tree = {
 		icon = GFX_ZEX_Goal_Anti_Harmony_Committee
 
 		relative_position_id = ZEX_Goal_King_Speech
-		x = -8
+		x = -6
 		y = 3
 
 		cost = 2
@@ -301,7 +305,7 @@ focus_tree = {
 		icon = GFX_ZEX_Goal_in_Harmonys_name
 
 		relative_position_id = ZEX_Goal_King_Speech
-		x = -12
+		x = -9
 		y = 4
 
 		cost = 3
@@ -338,7 +342,7 @@ focus_tree = {
 		icon = GFX_ZEX_Goal_Expand_Secret_Police
 
 		relative_position_id = ZEX_Goal_King_Speech
-		x = -10
+		x = -7
 		y = 4
 
 		cost = 2
@@ -378,7 +382,7 @@ focus_tree = {
 		icon = GFX_ZEX_Goal_Harmonic_Pacification
 
 		relative_position_id = ZEX_Goal_King_Speech
-		x = -6
+		x = -5
 		y = 4
 
 		cost = 2
@@ -418,7 +422,7 @@ focus_tree = {
 		icon = GFX_ZEX_Pacify_the_Realm
 
 		relative_position_id = ZEX_Goal_King_Speech
-		x = -8
+		x = -6
 		y = 5
 
 		cost = 4
@@ -511,7 +515,7 @@ focus_tree = {
 		icon = GFX_ZEX_Goal_Diet_Zebrican_Led
 
 		relative_position_id = ZEX_Goal_King_Speech
-		x = -4
+		x = -3
 		y = 2
 
 		cost = 3
@@ -591,7 +595,7 @@ focus_tree = {
 		icon = GFX_ZEX_Goal_Diet_Monarchy_Led
 
 		relative_position_id = ZEX_Goal_King_Speech
-		x = 4
+		x = 3
 		y = 2
 
 		cost = 3
@@ -635,7 +639,7 @@ focus_tree = {
 		icon = GFX_ZEX_Goal_Diet_Restrict_Royal_Agency
 
 		relative_position_id = ZEX_Goal_King_Speech
-		x = -2
+		x = -1
 		y = 3
 
 		cost = 3
@@ -675,7 +679,7 @@ focus_tree = {
 		icon = GFX_ZEX_Goal_Diet_Codify_Crown
 
 		relative_position_id = ZEX_Goal_King_Speech
-		x = 2
+		x = 1
 		y = 3
 
 		cost = 3
@@ -715,7 +719,7 @@ focus_tree = {
 		icon = GFX_ZEX_Goal_Diet_Modernise_Laws
 
 		relative_position_id = ZEX_Goal_King_Speech
-		x = -4
+		x = -3
 		y = 4
 
 		cost = 3
@@ -790,7 +794,7 @@ focus_tree = {
 		icon = GFX_ZEX_Goal_Diet_Nobility_Titles
 
 		relative_position_id = ZEX_Goal_King_Speech
-		x = 4
+		x = 3
 		y = 4
 
 		cost = 3
@@ -828,7 +832,7 @@ focus_tree = {
 		icon = GFX_ZEX_Goal_Diet_Right_To_Representation
 
 		relative_position_id = ZEX_Goal_King_Speech
-		x = -2
+		x = -1
 		y = 5
 
 		cost = 3
@@ -867,7 +871,7 @@ focus_tree = {
 		icon = GFX_ZEX_Goal_Diet_Illusion_of_Democracy
 
 		relative_position_id = ZEX_Goal_King_Speech
-		x = 2
+		x = 1
 		y = 5
 
 		cost = 3
@@ -906,7 +910,7 @@ focus_tree = {
 		icon = GFX_ZEX_Goal_Diet_Modern_Bureaucracy
 
 		relative_position_id = ZEX_Goal_King_Speech
-		x = -6
+		x = -4
 		y = 6
 
 		cost = 3
@@ -942,7 +946,7 @@ focus_tree = {
 		icon = GFX_ZEX_Goal_Diet_Abolish_Governates
 
 		relative_position_id = ZEX_Goal_King_Speech
-		x = -6
+		x = -4
 		y = 8
 
 		cost = 3
@@ -979,7 +983,7 @@ focus_tree = {
 		icon = GFX_ZEX_Goal_Diet_Tackle_Corruption
 
 		relative_position_id = ZEX_Goal_King_Speech
-		x = -4
+		x = -3
 		y = 7
 
 		cost = 3
@@ -1080,7 +1084,44 @@ focus_tree = {
 		completion_reward = {
 			
 		}
-	}	
+	}
+
+	focus = { # Modernise the diet?
+		id = ZEX_Goal_Diet_Fate_of_Diet
+		icon = GFX_ZEX_Goal_Diet_Fate_of_Diet
+
+		relative_position_id = ZEX_Goal_King_Speech
+		x = 0
+		y = 7
+
+		cost = 3
+
+		#Prerequisites
+		prerequisite = {
+			focus = ZEX_Goal_Diet_Right_To_Representation
+			focus = ZEX_Goal_Diet_Illusion_of_Democracy
+		}
+		#Triggers
+		available = {
+			zex_mgy_has_a_vizier = yes
+			zex_mgy_diet_is_supportive = yes
+			zex_mgy_khefer_in_power = yes
+			has_completed_focus = ZEX_Goal_Diet_Harmony_Led
+		}
+
+		#Effects
+		select_effect = {
+			
+		}
+
+		cancel_effect = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}
 
 	focus = { # Harmony Only
 		id = ZEX_Goal_Diet_Codify_Harmony
@@ -1159,7 +1200,7 @@ focus_tree = {
 		icon = GFX_ZEX_Goal_Diet_Moral_Values
 
 		relative_position_id = ZEX_Goal_King_Speech
-		x = 4
+		x = 3
 		y = 7
 
 		cost = 3
@@ -1195,7 +1236,7 @@ focus_tree = {
 		icon = GFX_ZEX_Goal_Diet_Centralise_Rule
 
 		relative_position_id = ZEX_Goal_King_Speech
-		x = 6
+		x = 4
 		y = 6
 
 		cost = 3
@@ -1231,7 +1272,7 @@ focus_tree = {
 		icon = GFX_ZEX_Goal_Diet_Ban_Extremism
 
 		relative_position_id = ZEX_Goal_King_Speech
-		x = 6
+		x = 4
 		y = 8
 
 		cost = 3
@@ -1279,6 +1320,9 @@ focus_tree = {
 			focus = ZEX_Goal_Diet_For_The_Needy
 			focus = ZEX_Goal_Diet_Ban_Extremism
 		}
+		prerequisite = {
+			focus = ZEX_Goal_Diet_Fate_of_Diet
+		}
 		#Triggers
 		available = {
 			zex_mgy_has_a_vizier = yes
@@ -1311,12 +1355,13 @@ focus_tree = {
 	# SUB-BRANCH: Choosing a new Vizier for when Shaa Doof kicks the bucket (ha!)
 	#
 
-	focus = { # Choose a Zebrican Vizier
-		id = ZEX_Goal_Diet_A_Zebrican_Vizier
-		icon = GFX_ZEX_Goal_Diet_A_Zebrican_Vizier
 
+	focus = {
+		id = ZEX_Goal_Vizier_Shaa_Doof_Dies
+		icon = GFX_ZEX_Goal_Vizier_Shaa_Doof_Dies
+		
 		relative_position_id = ZEX_Goal_King_Speech
-		x = 6
+		x = 7
 		y = 1
 
 		cost = 3
@@ -1326,8 +1371,45 @@ focus_tree = {
 			focus = ZEX_Goal_King_Speech
 		}
 		mutually_exclusive = {
-			focus = ZEX_Goal_Diet_A_Harmonist_Vizier
-			focus = ZEX_Goal_Diet_A_Loyalist_Vizier
+			
+		}
+		#Triggers
+		available = {
+			zex_mgy_shaa_doof_dead = yes
+			zex_mgy_khefer_in_power = yes
+		}
+
+		#Effects
+		select_effect = {
+			
+		}
+
+		cancel_effect = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = { # Choose a Zebrican Vizier
+		id = ZEX_Goal_Vizier_A_Zebrican_Vizier
+		icon = GFX_ZEX_Goal_Vizier_Diet_A_Zebrican_Vizier
+
+		relative_position_id = ZEX_Goal_King_Speech
+		x = 5
+		y = 2
+
+		cost = 3
+
+		#Prerequisites
+		prerequisite = {
+			focus = ZEX_Goal_Vizier_Shaa_Doof_Dies
+		}
+		mutually_exclusive = {
+			focus = ZEX_Goal_Vizier_A_Harmonist_Vizier
+			focus = ZEX_Goal_Vizier_A_Loyalist_Vizier
 		}
 		#Triggers
 		available = {
@@ -1350,22 +1432,22 @@ focus_tree = {
 	}
 
 	focus = { # Choose a Harmonist Vizier
-		id = ZEX_Goal_Diet_A_Harmonist_Vizier
-		icon = GFX_ZEX_Goal_Diet_A_Harmonist_Vizier
+		id = ZEX_Goal_Vizier_A_Harmonist_Vizier
+		icon = GFX_ZEX_Goal_Vizier_A_Harmonist_Vizier
 
 		relative_position_id = ZEX_Goal_King_Speech
-		x = 10
-		y = 1
+		x = 9
+		y = 2
 
 		cost = 3
 
 		#Prerequisites
 		prerequisite = {
-			focus = ZEX_Goal_King_Speech
+			focus = ZEX_Goal_Vizier_Shaa_Doof_Dies
 		}
 		mutually_exclusive = {
-			focus = ZEX_Goal_Diet_A_Zebrican_Vizier
-			focus = ZEX_Goal_Diet_A_Loyalist_Vizier
+			focus = ZEX_Goal_Vizier_A_Zebrican_Vizier
+			focus = ZEX_Goal_Vizier_A_Loyalist_Vizier
 		}
 		#Triggers
 		available = {
@@ -1388,22 +1470,22 @@ focus_tree = {
 	}
 
 	focus = { # Choose a LOyalist Vizier
-		id = ZEX_Goal_Diet_A_Loyalist_Vizier
-		icon = GFX_ZEX_Goal_Diet_A_Loyalist_Vizier
+		id = ZEX_Goal_Vizier_A_Loyalist_Vizier
+		icon = GFX_ZEX_Goal_Vizier_A_Loyalist_Vizier
 
 		relative_position_id = ZEX_Goal_King_Speech
-		x = 12
-		y = 1
+		x = 11
+		y = 2
 
 		cost = 3
 
 		#Prerequisites
 		prerequisite = {
-			focus = ZEX_Goal_King_Speech
+			focus = ZEX_Goal_Vizier_Shaa_Doof_Dies
 		}
 		mutually_exclusive = {
-			focus = ZEX_Goal_Diet_A_Zebrican_Vizier
-			focus = ZEX_Goal_Diet_A_Harmonist_Vizier
+			focus = ZEX_Goal_Vizier_A_Zebrican_Vizier
+			focus = ZEX_Goal_Vizier_A_Harmonist_Vizier
 		}
 		#Triggers
 		available = {
@@ -1426,18 +1508,18 @@ focus_tree = {
 	}
 
 	focus = { # Push Zebrican Loyalty
-		id = ZEX_Goal_Diet_Promote_Zebricanism
-		icon = GFX_ZEX_Goal_Diet_Promote_Zebricanism
+		id = ZEX_Goal_Vizier_Promote_Zebricanism
+		icon = GFX_ZEX_Goal_Vizier_Promote_Zebricanism
 
 		relative_position_id = ZEX_Goal_King_Speech
-		x = 6
-		y = 3
+		x = 5
+		y = 4
 
 		cost = 3
 
 		#Prerequisites
 		prerequisite = {
-			focus = ZEX_Goal_Diet_A_Zebrican_Vizier
+			focus = ZEX_Goal_Vizier_A_Zebrican_Vizier
 		}
 		mutually_exclusive = {
 		}
@@ -1461,18 +1543,18 @@ focus_tree = {
 	}
 
 	focus = { # Push Zebrican Loyalty
-		id = ZEX_Goal_Diet_Zebrican_Integration
-		icon = GFX_ZEX_Goal_Diet_Zebrican_Integration
+		id = ZEX_Goal_Vizier_Zebrican_Integration
+		icon = GFX_ZEX_Goal_Vizier_Zebrican_Integration
 
 		relative_position_id = ZEX_Goal_King_Speech
-		x = 6
-		y = 4
+		x = 5
+		y = 5
 
 		cost = 3
 
 		#Prerequisites
 		prerequisite = {
-			focus = ZEX_Goal_Diet_Promote_Zebricanism
+			focus = ZEX_Goal_Vizier_Promote_Zebricanism
 		}
 		mutually_exclusive = {
 		}
@@ -1496,20 +1578,20 @@ focus_tree = {
 	}
 
 	focus = { # APpeal to peasants
-		id = ZEX_Goal_Diet_Agrarian_Outreach
-		icon = GFX_ZEX_Goal_Diet_Agrarian_Outreach
+		id = ZEX_Goal_Vizier_Agrarian_Outreach
+		icon = GFX_ZEX_Goal_Vizier_Agrarian_Outreach
 
 		relative_position_id = ZEX_Goal_King_Speech
-		x = 8
-		y = 2
+		x = 7
+		y = 3
 
 		cost = 3
 
 		#Prerequisites
 		prerequisite = {
-			focus = ZEX_Goal_Diet_A_Zebrican_Vizier
-			focus = ZEX_Goal_Diet_A_Harmonist_Vizier
-			focus = ZEX_Goal_Diet_A_Loyalist_Vizier
+			focus = ZEX_Goal_Vizier_A_Zebrican_Vizier
+			focus = ZEX_Goal_Vizier_A_Harmonist_Vizier
+			focus = ZEX_Goal_Vizier_A_Loyalist_Vizier
 		}
 		mutually_exclusive = {
 		}
@@ -1533,18 +1615,18 @@ focus_tree = {
 	}
 
 	focus = { # Petition Somnabmula
-		id = ZEX_Goal_Diet_Petition_Somnambula
-		icon = GFX_ZEX_Goal_Diet_Petition_Somnambula
+		id = ZEX_Goal_Vizier_Petition_Somnambula
+		icon = GFX_ZEX_Goal_Vizier_Petition_Somnambula
 
 		relative_position_id = ZEX_Goal_King_Speech
-		x = 10
-		y = 3
+		x = 9
+		y = 4
 
 		cost = 3
 
 		#Prerequisites
 		prerequisite = {
-			focus = ZEX_Goal_Diet_A_Harmonist_Vizier
+			focus = ZEX_Goal_Vizier_A_Harmonist_Vizier
 		}
 		mutually_exclusive = {
 		}
@@ -1568,18 +1650,18 @@ focus_tree = {
 	}
 
 	focus = { # Aristocratic Support
-		id = ZEX_Goal_Diet_Aristocratic_Support
-		icon = GFX_ZEX_Goal_Diet_Aristocratic_Support
+		id = ZEX_Goal_Vizier_Aristocratic_Support
+		icon = GFX_ZEX_Goal_Vizier_Aristocratic_Support
 
 		relative_position_id = ZEX_Goal_King_Speech
-		x = 12
-		y = 3
+		x = 11
+		y = 4
 
 		cost = 3
 
 		#Prerequisites
 		prerequisite = {
-			focus = ZEX_Goal_Diet_A_Loyalist_Vizier
+			focus = ZEX_Goal_Vizier_A_Loyalist_Vizier
 		}
 		mutually_exclusive = {
 		}
@@ -1603,19 +1685,19 @@ focus_tree = {
 	}
 
 	focus = { # Rally the Royalists
-		id = ZEX_Goal_Diet_Rally_Royalists
-		icon = GFX_ZEX_Goal_Diet_Rally_Royalists
+		id = ZEX_Goal_Vizier_Rally_Royalists
+		icon = GFX_ZEX_Goal_Vizier_Rally_Royalists
 
 		relative_position_id = ZEX_Goal_King_Speech
-		x = 10
-		y = 4
+		x = 9
+		y = 5
 
 		cost = 3
 
 		#Prerequisites
 		prerequisite = {
-			focus = ZEX_Goal_Diet_Aristocratic_Support
-			focus = ZEX_Goal_Diet_Petition_Somnambula
+			focus = ZEX_Goal_Vizier_Aristocratic_Support
+			focus = ZEX_Goal_Vizier_Petition_Somnambula
 		}
 		mutually_exclusive = {
 		}
@@ -1639,28 +1721,1177 @@ focus_tree = {
 	}
 
 	focus = { # Restore the grand coalition
-		id = ZEX_Goal_Diet_New_Grand_Coalition
-		icon = GFX_ZEX_Goal_Diet_New_Grand_Coalition
+		id = ZEX_Goal_Vizier_New_Grand_Coalition
+		icon = GFX_ZEX_Goal_Vizier_New_Grand_Coalition
 
 		relative_position_id = ZEX_Goal_King_Speech
-		x = 8
-		y = 5
+		x = 7
+		y = 6
 
 		cost = 3
 
 		#Prerequisites
 		prerequisite = {
-			focus = ZEX_Goal_Diet_Rally_Royalists
-			focus = ZEX_Goal_Diet_Zebrican_Integration
+			focus = ZEX_Goal_Vizier_Rally_Royalists
+			focus = ZEX_Goal_Vizier_Zebrican_Integration
 		}
 		prerequisite = {
-			focus = ZEX_Goal_Diet_Agrarian_Outreach
+			focus = ZEX_Goal_Vizier_Agrarian_Outreach
 		}
 		mutually_exclusive = {
 		}
 		#Triggers
 		available = {
 			zex_mgy_khefer_in_power = yes
+		}
+
+		#Effects
+		select_effect = {
+			
+		}
+
+		cancel_effect = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	####################################
+	##    Maregyptian Re-Armement     ##
+	####################################
+
+	focus = { # Maregyptian Sphere
+		id = ZEX_Goal_Maregyptian_Sphere_Our_Domain
+		icon = GFX_ZEX_Goal_Maregyptian_Sphere_Our_Domain
+
+		relative_position_id = ZEX_Goal_King_Speech
+		x = 15
+		y = 0
+
+		cost = 3
+
+		#Prerequisites
+		prerequisite = {
+			
+		}
+		prerequisite = {
+			
+		}
+		mutually_exclusive = {
+		}
+		#Triggers
+		available = {
+			OR = {
+				zex_mgy_khefer_not_in_power = yes
+				has_completed_focus = ZEX_Goal_King_Speech
+			}
+		}
+
+		#Effects
+		select_effect = {
+			
+		}
+
+		cancel_effect = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = { # Sineighi Peninsula
+		id = ZEX_Goal_Maregyptian_Sphere_Western_Province
+		icon = GFX_ZEX_Goal_Maregyptian_Sphere_Western_Province
+
+		relative_position_id = ZEX_Goal_Maregyptian_Sphere_Our_Domain
+		x = -1
+		y = 2
+
+		cost = 3
+
+		#Prerequisites
+		prerequisite = {
+			focus = ZEX_Goal_Maregyptian_Sphere_Our_Domain
+		}
+		mutually_exclusive = {
+		}
+		#Triggers
+		available = {
+			
+		}
+
+		#Effects
+		select_effect = {
+			
+		}
+
+		cancel_effect = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = { # Sineighi Peninsula
+		id = ZEX_Goal_Maregyptian_Sphere_Southern_Province
+		icon = GFX_ZEX_Goal_Maregyptian_Sphere_Southern_Province
+
+		relative_position_id = ZEX_Goal_Maregyptian_Sphere_Our_Domain
+		x = 1
+		y = 2
+
+		cost = 3
+
+		#Prerequisites
+		prerequisite = {
+			focus = ZEX_Goal_Maregyptian_Sphere_Our_Domain
+		}
+		mutually_exclusive = {
+		}
+		#Triggers
+		available = {
+			
+		}
+
+		#Effects
+		select_effect = {
+			
+		}
+
+		cancel_effect = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = { # Eastern Diplomacy
+		id = ZEX_Goal_Maregyptian_Sphere_Eastern_Neighbours
+		icon = GFX_ZEX_Goal_Maregyptian_Eastern_Neighbours
+
+		relative_position_id = ZEX_Goal_Maregyptian_Sphere_Our_Domain
+		x = -1
+		y = 4
+
+		cost = 3
+
+		#Prerequisites
+		prerequisite = {
+			focus = ZEX_Goal_Maregyptian_Sphere_Western_Province
+		}
+		prerequisite = {
+			focus = ZEX_Goal_Maregyptian_Sphere_Southern_Province
+		}
+		mutually_exclusive = {
+		}
+		#Triggers
+		available = {
+			
+		}
+
+		#Effects
+		select_effect = {
+			
+		}
+
+		cancel_effect = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = { # Western Diploamcy
+		id = ZEX_Goal_Maregyptian_Western_Neighbours
+		icon = GFX_ZEX_Goal_Maregyptian_Western_Neighbours
+
+		relative_position_id = ZEX_Goal_Maregyptian_Sphere_Our_Domain
+		x = 1
+		y = 4
+
+		cost = 3
+
+		#Prerequisites
+		prerequisite = {
+			focus = ZEX_Goal_Maregyptian_Sphere_Western_Province
+		}
+		prerequisite = {
+			focus = ZEX_Goal_Maregyptian_Sphere_Southern_Province
+		}
+		mutually_exclusive = {
+		}
+		#Triggers
+		available = {
+			
+		}
+
+		#Effects
+		select_effect = {
+			
+		}
+
+		cancel_effect = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = { # The Coming Storm
+		id = ZEX_Goal_Maregyptian_Sphere_Coming_Storm
+		icon = GFX_ZEX_Goal_Maregyptian_Sphere_Coming_Storm
+
+		relative_position_id = ZEX_Goal_Maregyptian_Sphere_Our_Domain
+		x = 6
+		y = 1
+
+		cost = 3
+
+		#Prerequisites
+		prerequisite = {
+		}
+		prerequisite = {
+		}
+		mutually_exclusive = {
+		}
+		#Triggers
+		available = {
+			OR = {
+				zex_mgy_khefer_not_in_power = yes
+				has_completed_focus = ZEX_Goal_King_Speech
+			}
+		}
+
+		#Effects
+		select_effect = {
+			
+		}
+
+		cancel_effect = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = { # Limited Re-Armement
+		id = ZEX_Goal_Maregyptian_Sphere_Begin_Re_Armement
+		icon = GFX_ZEX_Goal_Maregyptian_Sphere_Begin_Re_Armement
+
+		relative_position_id = ZEX_Goal_Maregyptian_Sphere_Our_Domain
+		x = 5
+		y = 3
+
+		cost = 3
+
+		#Prerequisites
+		prerequisite = {
+			focus = ZEX_Goal_Maregyptian_Sphere_Coming_Storm
+		}
+		prerequisite = {
+		}
+		mutually_exclusive = {
+		}
+		#Triggers
+		available = {
+			
+		}
+
+		#Effects
+		select_effect = {
+			
+		}
+
+		cancel_effect = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = { # Emergency Conscriotpn
+		id = ZEX_Goal_Maregyptian_Sphere_Emergency_Conscription
+		icon = GFX_ZEX_Goal_Maregyptian_Sphere_Emergency_Conscription
+
+		relative_position_id = ZEX_Goal_Maregyptian_Sphere_Our_Domain
+		x = 3
+		y = 3
+
+		cost = 3
+
+		#Prerequisites
+		prerequisite = {
+			focus = ZEX_Goal_Maregyptian_Sphere_Coming_Storm
+		}
+		prerequisite = {
+		}
+		mutually_exclusive = {
+		}
+		#Triggers
+		available = {
+			
+		}
+
+		#Effects
+		select_effect = {
+			
+		}
+
+		cancel_effect = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = { # Rebuild Army
+		id = ZEX_Goal_Maregyptian_Sphere_Rebuild_Army
+		icon = GFX_ZEX_Goal_Maregyptian_Sphere_Rebuild_Army
+
+		relative_position_id = ZEX_Goal_Maregyptian_Sphere_Our_Domain
+		x = 4
+		y = 4
+
+		cost = 3
+
+		#Prerequisites
+		prerequisite = {
+			focus = ZEX_Goal_Maregyptian_Sphere_Begin_Re_Armement
+			focus = ZEX_Goal_Maregyptian_Sphere_Emergency_Conscription
+		}
+		prerequisite = {
+		}
+		mutually_exclusive = {
+		}
+		#Triggers
+		available = {
+			
+		}
+
+		#Effects
+		select_effect = {
+			
+		}
+
+		cancel_effect = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = { # The Beetle Springs its Wings once More
+		id = ZEX_Goal_Maregyptian_Sphere_The_Beetle_Rises
+		icon = GFX_ZEX_Goal_Maregyptian_Sphere_The_Beetle_Rises
+
+		relative_position_id = ZEX_Goal_Maregyptian_Sphere_Our_Domain
+		x = 0
+		y = 5
+
+		cost = 3
+
+		#Prerequisites
+		prerequisite = {
+			focus = ZEX_Goal_Maregyptian_Sphere_Rebuild_Army
+		}
+		prerequisite = {
+			focus = ZEX_Goal_Maregyptian_Western_Neighbours
+			focus = ZEX_Goal_Maregyptian_Sphere_Eastern_Neighbours
+		}
+		mutually_exclusive = {
+		}
+		#Triggers
+		available = {
+			
+		}
+
+		#Effects
+		select_effect = {
+			
+		}
+
+		cancel_effect = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = { # Comisisona  new navy
+		id = ZEX_Goal_Maregyptian_Sphere_Commission_New_navy
+		icon = GFX_ZEX_Goal_Maregyptian_Sphere_Commission_New_navy
+
+		relative_position_id = ZEX_Goal_Maregyptian_Sphere_Our_Domain
+		x = 4
+		y = 5
+
+		cost = 3
+
+		#Prerequisites
+		prerequisite = {
+			focus = ZEX_Goal_Maregyptian_Sphere_Rebuild_Army
+		}
+		prerequisite = {
+			
+		}
+		mutually_exclusive = {
+		}
+		#Triggers
+		available = {
+			
+		}
+
+		#Effects
+		select_effect = {
+			
+		}
+
+		cancel_effect = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+
+	focus = { # New War
+		id = ZEX_Goal_Maregyptian_Sphere_A_New_War
+		icon = GFX_ZEX_Goal_Maregyptian_Sphere_A_New_War
+
+		relative_position_id = ZEX_Goal_Maregyptian_Sphere_Coming_Storm
+		x = 3
+		y = 1
+
+		cost = 3
+
+		#Prerequisites
+		prerequisite = {
+			focus = ZEX_Goal_Maregyptian_Sphere_Coming_Storm
+		}
+		prerequisite = {
+			
+		}
+		mutually_exclusive = {
+		}
+		#Triggers
+		available = {
+			
+		}
+
+		#Effects
+		select_effect = {
+			
+		}
+
+		cancel_effect = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+
+	focus = { # Harmony Can't Fatt
+		id = ZEX_Goal_Maregyptian_Sphere_Support_Hip_Harmony
+		icon = GFX_ZEX_Goal_Maregyptian_Sphere_Support_Hip_Harmony
+
+		relative_position_id = ZEX_Goal_Maregyptian_Sphere_Coming_Storm
+		x = 1
+		y = 2
+
+		cost = 3
+
+		#Prerequisites
+		prerequisite = {
+			focus = ZEX_Goal_Maregyptian_Sphere_A_New_War
+		}
+		prerequisite = {
+			
+		}
+		mutually_exclusive = {
+			focus = ZEX_Goal_Maregyptian_Sphere_Armed_neutrality
+		}
+		#Triggers
+		available = {
+			
+		}
+
+		#Effects
+		select_effect = {
+			
+		}
+
+		cancel_effect = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = { # Neutralatiy in the Zebrican War
+		id = ZEX_Goal_Maregyptian_Sphere_Armed_neutrality
+		icon = GFX_ZEX_Goal_Maregyptian_Sphere_Armed_neutrality
+
+		relative_position_id = ZEX_Goal_Maregyptian_Sphere_Coming_Storm
+		x = 5
+		y = 2
+
+		cost = 3
+
+		#Prerequisites
+		prerequisite = {
+			focus = ZEX_Goal_Maregyptian_Sphere_A_New_War
+		}
+		prerequisite = {
+			
+		}
+		mutually_exclusive = {
+			focus = ZEX_Goal_Maregyptian_Sphere_Support_Hip_Harmony
+		}
+		#Triggers
+		available = {
+			
+		}
+
+		#Effects
+		select_effect = {
+			
+		}
+
+		cancel_effect = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = { # Somnambula Treaty
+		id = ZEX_Goal_Maregyptian_Sphere_Volunteers_for_Hip
+		icon = GFX_ZEX_Goal_Maregyptian_Sphere_Volunteers_for_Hip
+
+		relative_position_id = ZEX_Goal_Maregyptian_Sphere_Coming_Storm
+		x = 1
+		y = 4
+
+		cost = 3
+
+		#Prerequisites
+		prerequisite = {
+			focus = ZEX_Goal_Maregyptian_Sphere_Support_Hip_Harmony
+		}
+		prerequisite = {
+			
+		}
+		mutually_exclusive = {
+			
+		}
+		#Triggers
+		available = {
+			
+		}
+
+		#Effects
+		select_effect = {
+			
+		}
+
+		cancel_effect = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = { # HIppogriff Exiles
+		id = ZEX_Goal_Maregyptian_Sphere_Hippogriff_Exiles
+		icon = GFX_ZEX_Goal_Maregyptian_Sphere_Hippogriff_Exiles
+
+		relative_position_id = ZEX_Goal_Maregyptian_Sphere_Coming_Storm
+		x = 3
+		y = 3
+
+		cost = 3
+
+		#Prerequisites
+		prerequisite = {
+			focus = ZEX_Goal_Maregyptian_Sphere_Support_Hip_Harmony
+			focus = ZEX_Goal_Maregyptian_Sphere_Armed_neutrality
+		}
+		prerequisite = {
+			
+		}
+		mutually_exclusive = {
+			focus = ZEX_Goal_Maregyptian_Sphere_Colthaginian_Reapprochment
+		}
+		#Triggers
+		available = {
+			
+		}
+
+		#Effects
+		select_effect = {
+			
+		}
+
+		cancel_effect = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = { # Somnambula Treat
+		id = ZEX_Goal_Maregyptian_Sphere_Treaty_of_Somnambula
+		icon = GFX_ZEX_Goal_Maregyptian_Sphere_Treaty_of_Somnambula
+
+		relative_position_id = ZEX_Goal_Maregyptian_Sphere_Coming_Storm
+		x = 3
+		y = 5
+
+		cost = 3
+
+		#Prerequisites
+		prerequisite = {
+			focus = ZEX_Goal_Maregyptian_Sphere_Hippogriff_Exiles
+			focus = ZEX_Goal_Maregyptian_Sphere_Volunteers_for_Hip
+		}
+		prerequisite = {
+			
+		}
+		mutually_exclusive = {
+		}
+		#Triggers
+		available = {
+			
+		}
+
+		#Effects
+		select_effect = {
+			
+		}
+
+		cancel_effect = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = { # Colthaginian Reapprochment
+		id = ZEX_Goal_Maregyptian_Sphere_Colthaginian_Reapprochment
+		icon = GFX_ZEX_Goal_Maregyptian_Sphere_Colthaginian_Reapprochment
+
+		relative_position_id = ZEX_Goal_Maregyptian_Sphere_Coming_Storm
+		x = 5
+		y = 3
+
+		cost = 3
+
+		#Prerequisites
+		prerequisite = {
+			focus = ZEX_Goal_Maregyptian_Sphere_Armed_neutrality
+		}
+		prerequisite = {
+			
+		}
+		mutually_exclusive = {
+			focus = ZEX_Goal_Maregyptian_Sphere_Hippogriff_Exiles
+		}
+		#Triggers
+		available = {
+			
+		}
+
+		#Effects
+		select_effect = {
+			
+		}
+
+		cancel_effect = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = { # Denonunce Hippogrifian Communism
+		id = ZEX_Goal_Maregyptian_Sphere_Denounce_hip_Communism
+		icon = GFX_ZEX_Goal_Maregyptian_Sphere_Denounce_hip_Communism
+
+		relative_position_id = ZEX_Goal_Maregyptian_Sphere_Coming_Storm
+		x = 7
+		y = 1
+
+		cost = 3
+
+		#Prerequisites
+		prerequisite = {
+			focus = ZEX_Goal_Maregyptian_Sphere_Coming_Storm
+		}
+		prerequisite = {
+			
+		}
+		mutually_exclusive = {
+		}
+		#Triggers
+		available = {
+			
+		}
+
+		#Effects
+		select_effect = {
+			
+		}
+
+		cancel_effect = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = { # Denonunce Hippogrifian Communism
+		id = ZEX_Goal_Maregyptian_Sphere_Anti_Marksist_Pact
+		icon = GFX_ZEX_Goal_Maregyptian_Sphere_Anti_Marksist_Pact
+
+		relative_position_id = ZEX_Goal_Maregyptian_Sphere_Coming_Storm
+		x = 7
+		y = 4
+
+		cost = 3
+
+		#Prerequisites
+		prerequisite = {
+			focus = ZEX_Goal_Maregyptian_Sphere_Denounce_hip_Communism
+			focus = ZEX_Goal_Maregyptian_Sphere_Colthaginian_Reapprochment
+		}
+		prerequisite = {
+			
+		}
+		mutually_exclusive = {
+		}
+		#Triggers
+		available = {
+			
+		}
+
+		#Effects
+		select_effect = {
+			
+		}
+
+		cancel_effect = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = { # Denonunce Hippogrifian Communism
+		id = ZEX_Goal_Maregyptian_Sphere_Zebrican_Protectorates
+		icon = GFX_ZEX_Goal_Maregyptian_Sphere_Zebrican_Protectorates
+
+		relative_position_id = ZEX_Goal_Maregyptian_Sphere_Our_Domain
+		x = 2
+		y = 6
+
+		cost = 3
+
+		#Prerequisites
+		prerequisite = {
+			focus = ZEX_Goal_Maregyptian_Sphere_Commission_New_navy
+		}
+		prerequisite = {
+			focus = ZEX_Goal_Maregyptian_Sphere_The_Beetle_Rises
+		}
+		mutually_exclusive = {
+		}
+		#Triggers
+		available = {
+			
+		}
+
+		#Effects
+		select_effect = {
+			
+		}
+
+		cancel_effect = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	####################################
+	##        INTEGRATE ALWANI        ##
+	####################################
+	
+	focus = { # Establish_Relations
+		id = ZEX_Goal_Alwani_Integration_Appoint_New_Viceroy
+		icon = GFX_ZEX_Goal_Alwani_Integration_Appoint_New_Viceroy
+
+		relative_position_id = ZEX_Goal_King_Speech
+		x = 12
+		y = 6
+
+		cost = 3
+
+		#Prerequisites
+		prerequisite = {
+		}
+		prerequisite = {
+		}
+		mutually_exclusive = {
+		}
+		#Triggers
+		available = {
+			
+		}
+
+		#Effects
+		select_effect = {
+			
+		}
+
+		cancel_effect = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = { # Merge Administration
+		id = ZEX_Goal_Alwani_Integration_Merge_Administration
+		icon = GFX_ZEX_Goal_Alwani_Integration_Merge_Administration
+
+		relative_position_id = ZEX_Goal_Alwani_Integration_Appoint_New_Viceroy
+		x = 0
+		y = 2
+
+		cost = 3
+
+		#Prerequisites
+		prerequisite = {
+			focus = ZEX_Goal_Alwani_Integration_Appoint_New_Viceroy
+		}
+		prerequisite = {
+		}
+		mutually_exclusive = {
+		}
+		#Triggers
+		available = {
+			
+		}
+
+		#Effects
+		select_effect = {
+			
+		}
+
+		cancel_effect = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = { # Local Rule
+		id = ZEX_Goal_Alwani_Integration_Recognise_Local_Rule
+		icon = GFX_ZEX_Goal_Alwani_Integration_Recognise_Local_Rule
+
+		relative_position_id = ZEX_Goal_Alwani_Integration_Appoint_New_Viceroy
+		x = -2
+		y = 1
+
+		cost = 3
+
+		#Prerequisites
+		prerequisite = {
+			focus = ZEX_Goal_Alwani_Integration_Appoint_New_Viceroy
+		}
+		prerequisite = {
+		}
+		mutually_exclusive = {
+			focus = ZEX_Goal_Alwani_Integration_Consolidate_Governate
+		}
+		#Triggers
+		available = {
+			
+		}
+
+		#Effects
+		select_effect = {
+			
+		}
+
+		cancel_effect = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = { # Recruit Loyalists
+		id = ZEX_Goal_Alwani_Integration_Recruit_Loyalists
+		icon = GFX_ZEX_Goal_Alwani_Integration_Recruit_Loyalists
+
+		relative_position_id = ZEX_Goal_Alwani_Integration_Appoint_New_Viceroy
+		x = -4
+		y = 2
+
+		cost = 3
+
+		#Prerequisites
+		prerequisite = {
+			focus = ZEX_Goal_Alwani_Integration_Recognise_Local_Rule
+		}
+		mutually_exclusive = {
+		}
+		#Triggers
+		available = {
+			
+		}
+
+		#Effects
+		select_effect = {
+			
+		}
+
+		cancel_effect = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = { # Seperate Law
+		id = ZEX_Goal_Alwani_Integration_Seperate_Laws
+		icon = GFX_ZEX_Goal_Alwani_Integration_Seperate_Laws
+
+		relative_position_id = ZEX_Goal_Alwani_Integration_Appoint_New_Viceroy
+		x = -2
+		y = 3
+
+		cost = 3
+
+		#Prerequisites
+		prerequisite = {
+			focus = ZEX_Goal_Alwani_Integration_Merge_Administration
+		}
+		prerequisite = {
+			focus = ZEX_Goal_Alwani_Integration_Recognise_Local_Rule
+		}
+		mutually_exclusive = {
+		}
+		#Triggers
+		available = {
+			
+		}
+
+		#Effects
+		select_effect = {
+			
+		}
+
+		cancel_effect = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = { # Consolidate the Governate
+		id = ZEX_Goal_Alwani_Integration_Consolidate_Governate
+		icon = GFX_ZEX_Goal_Alwani_Integration_Consolidate_Governate
+
+		relative_position_id = ZEX_Goal_Alwani_Integration_Appoint_New_Viceroy
+		x = 2
+		y = 1
+
+		cost = 3
+
+		#Prerequisites
+		prerequisite = {
+			focus = ZEX_Goal_Alwani_Integration_Appoint_New_Viceroy
+		}
+		prerequisite = {
+		}
+		mutually_exclusive = {
+			focus = ZEX_Goal_Alwani_Integration_Recognise_Local_Rule
+		}
+		#Triggers
+		available = {
+			
+		}
+
+		#Effects
+		select_effect = {
+			
+		}
+
+		cancel_effect = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = { # Econ Integration
+		id = ZEX_Goal_Alwani_Integration_Economic_Integration
+		icon = GFX_ZEX_Goal_Alwani_Integration_Economic_Integration
+
+		relative_position_id = ZEX_Goal_Alwani_Integration_Appoint_New_Viceroy
+		x = 2
+		y = 3
+
+		cost = 3
+
+		#Prerequisites
+		prerequisite = {
+			focus = ZEX_Goal_Alwani_Integration_Merge_Administration
+		}
+		prerequisite = {
+			focus = ZEX_Goal_Alwani_Integration_Consolidate_Governate
+		}
+		mutually_exclusive = {
+		}
+		#Triggers
+		available = {
+			
+		}
+
+		#Effects
+		select_effect = {
+			
+		}
+
+		cancel_effect = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = { # Exploit the South
+		id = ZEX_Goal_Alwani_Integration_Southern_Exploitation
+		icon = GFX_ZEX_Goal_Alwani_Integration_Southern_Exploitation
+
+		relative_position_id = ZEX_Goal_Alwani_Integration_Appoint_New_Viceroy
+		x = 5
+		y = 2
+
+		cost = 3
+
+		#Prerequisites
+		prerequisite = {
+			focus = ZEX_Goal_Alwani_Integration_Consolidate_Governate
+		}
+		prerequisite = {
+			focus = ZEX_Goal_Maregyptian_Sphere_Zebrican_Protectorates
+		}
+		mutually_exclusive = {
+		}
+		#Triggers
+		available = {
+			
+		}
+
+		#Effects
+		select_effect = {
+			
+		}
+
+		cancel_effect = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = { # King in the South
+		id = ZEX_Goal_Alwani_Integration_King_of_Alwani
+		icon = GFX_ZEX_Goal_Alwani_Integration_King_of_Alwani
+
+		relative_position_id = ZEX_Goal_Alwani_Integration_Appoint_New_Viceroy
+		x = 0
+		y = 4
+
+		cost = 3
+
+		#Prerequisites
+		prerequisite = {
+			focus = ZEX_Goal_Alwani_Integration_Seperate_Laws
+			focus = ZEX_Goal_Alwani_Integration_Economic_Integration
+		}
+		prerequisite = {
+		}
+		mutually_exclusive = {
+		}
+		#Triggers
+		available = {
+			
 		}
 
 		#Effects

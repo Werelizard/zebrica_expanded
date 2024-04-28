@@ -1,27 +1,59 @@
 ﻿l_english:
- #Leaders
+ #Character names
+ ZEX_MGY_king_khefer:0 "King Khefer"
+ ZEX_MGY_far_hook:0 "Far Hook"
  ZEX_MGY_Somnambula:0 "Somnambula"
- ZEX_MGY_Somnambula_Desc:0 "While she has not taken an active role in the political scene, Somnambula remains a beacon for Harmonist policies throughout the country - increasingly acting as a rallying point for Harmony supporters as the King's popularity falters and wanes."
-
- #Ruler Traits
+ ZEX_MGY_Imanetep:0 "Imanetep"
+ ZEX_MGY_Mannea:0 "Mannea"
+ ZEX_MGY_Neighkt:0 "Neighkt"
+ ZEX_MGY_Horsemheb:0 "Horsemheb"
+ ZEX_MGY_Djehoofy:0 "Djehoofy"
+ ZEX_MGY_Amaneope:0 "Amaneope"
+ ZEX_MGY_Merryre:0 "Merryre"
+ ZEX_MGY_HaysyRa:0 "Haysy-Ra"
+ ZEX_MGY_Nebamane:0 "Nebamane"
+ ZEX_MGY_Thawhinny:0 "Thawhinny"
+ ZEX_MGY_Ramuleses:0 "Ramuleses"
+ ZEX_MGY_Ahmhoofes:0 "Ahmhoofes"
+ ZEX_MGY_Tutneighfer:0 "Tutneighfer"
+ ZEX_MGY_Bay:0 "Bay"
+ 
+ #Ruler/advisor/leader Traits
  ZEX_MGY_Naive_Reformist:0 "Naive Reformist"
  ZEX_MGY_Benevolent_Authoritarian:0 "Benevolent Authoritarian"
- ZEX_MGY_Peacekeeper:0 "Stalwart Pacifist"
 
  #Bibliography
  ZEX_MGY_KHEFER_DESC:0 "§YBorn§!: February 11th, 984\n\n§YBiography§!: a Pony of principle, Mardjed Nebe Khefer was born the third son to the late King Snefru. His older brother and sister were lost to the Storm King's rampage alongside with his mother, leaving him the heavy duty of guiding Maregypt throughout these difficult times. A close friend to Sha Doof, King Khefer came to power with hope in his heart, but found himself shackled by the country's spiralling poverty, increasing radicalism and a political crisis on the horizon. He quickly began vast and ambitious projects to modernise society but these were met with limited successes, with the only tangible results being more ammo landing in the republicans' hands. His characteristic naiveity - while charming to some - has led him to becoming ever so reliant on his ailing Vizier and members of the conservative ARM movement. King Khefer is, if anything, the proof that good ambitions alone too often amount to naught."
+ ZEX_MGY_Somnambula_Desc:0 "While she has not taken an active role in the political scene, Somnambula remains a beacon for Harmonist policies throughout the country - increasingly acting as a rallying point for Harmony supporters as the King's popularity falters and wanes."
 
  #Advisor Slots
  ZEX_MGY_Harmony_Ambassador:0 "Ambassador of Harmony"
  
  #Advisors - names / traits
  ZEX_MGY_Shaa_Doof:0 "Shaa Doof"
-
  ZEX_Old_Vizier:0 "Old Vizier"
+ ZEX_MGY_Peacekeeper:0 "Stalwart Pacifist"
+ ZEX_MGY_Nationalist_Agitator:0 "Nationalist Agitator"
+ ZEX_MGY_Architet:0 "Great Architect"
+ ZEX_MGY_Farmer_Lobbyist:0 "Rich Land Owner"
+ ZEX_MGY_Administrator:0 "Grand Administrator"
+ ZEX_MGY_Head_Of_Military_Staff:0 "Career Miltiary Officer"
+ ZEX_MGY_National_Security_Proponent:0 "Security Minister"
+ ZEX_MGY_Popular_Author:0 "Popular Author"
+ ZEX_MGY_Railroad_Mogul:0 "Railroad Mogul"
+ ZEX_MGY_Radio_Propagandist:0 "Propagandist"
+ ZEX_MGY_Compassionate_Gentlepony:0 "Compassionate Gentelmare"
+ ZEX_MGY_Trade_Union_Leader:0 "Trade Union Leader"
+ ZEX_MGY_Education_Reformer:0 "Education Reformer"
+ ZEX_MGY_Military_Organiser:0 "Armaments Organiser"
+ ZEX_MGY_War_Industrialist:0 "War Industrialist"
+ ZEX_MGY_Harmony_Lawyer:0 "Harmonic Lawyer"
 
  #Advisor Tooltip
  ZEX_MGY_cannot_select_advisor_now_tt:0 "Not: has the §YConstitutional Crisis§! national spirit."
  ZEX_MGY_somnambula_has_not_been_removed_tt:0 "Not: Somnambula is in exile."
+ ZEX_MGY_FarHook_Killed:0 "Not: Far Hook has been killed."
+ zex_mgy_farhook_not_in_power:0 "Not: Far Hook is in power."
 
  #Viziers
  ZEX_MGY_Vizier_Button_tt:0 "Toggle ruler view between the §YMonarch§! and the §YVizier§!" 

@@ -1,0 +1,179 @@
+﻿division_template = {
+	name = "Infantry Division"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+	priority = 0
+}
+
+division_template = {
+	name = "Lancers"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Medjay Guard"
+	regiments = {
+		pegasi = { x = 0 y = 0 }
+		pegasi = { x = 0 y = 1 }
+		pegasi = { x = 0 y = 2 }
+		pegasi = { x = 1 y = 0 }
+		pegasi = { x = 1 y = 1 }
+		pegasi = { x = 1 y = 2 }
+		artillery_brigade  = {
+			x = 2
+			y = 0
+		}
+		artillery_brigade  = {
+			x = 2
+			y = 1
+		}
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
+	is_locked = yes
+	division_cap = 4
+	priority = 2
+}
+
+units = {
+	division = {
+		name = "1st King's Guard"
+		location = 7321
+		division_template = "Medjay Guard"
+		start_experience_factor = 0.85
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "2nd King's Guard"
+		location = 7321
+		division_template = "Medjay Guard"
+		start_experience_factor = 0.85
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "1st Lancers"
+		location = 5195
+		division_template = "Lancers"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "2nd Lancers"
+		location = 7284
+		division_template = "Lancers"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "3rd Lancers"
+		location = 1379
+		division_template = "Lancers"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "4th Lancers"
+		location = 1379
+		division_template = "Lancers"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "1st Infantry"
+		location = 19273
+		division_template = "Infantry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.65
+	}
+	division = {
+		name = "1st Infantry"
+		location = 7321
+		division_template = "Infantry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "2nd Infantry"
+		location = 19169
+		division_template = "Infantry Division"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.65
+	}
+	division = {
+		name = "3rd Infantry"
+		location = 19183
+		division_template = "Infantry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "4th Infantry"
+		location = 19043
+		division_template = "Infantry Division"
+		start_experience_factor = 0
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "5th Infantry"
+		location = 19169
+		division_template = "Infantry Division"
+		start_experience_factor = 0
+		start_equipment_factor = 0.6
+	}
+	division = {
+		name = "6th Infantry"
+		location = 19107
+		division_template = "Infantry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "7th Infantry"
+		location = 19107
+		division_template = "Infantry Division"
+		start_experience_factor = 0
+		start_equipment_factor = 0.5
+	}
+}
+
+##### Starting Production #####
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "MGY"
+		}
+		requested_factories = 2
+		progress = 0.75
+		efficiency = 100
+	}
+	add_equipment_production = {
+	    equipment = {
+		    type = support_equipment_1
+		    creator = "MGY"
+	    }
+	    requested_factories = 1
+	    progress = 0.50
+	    efficiency = 60
+    }
+}

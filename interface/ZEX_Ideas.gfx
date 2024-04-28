@@ -33,4 +33,12 @@ spriteTypes = {
 		name = "GFX_leader_ZEX_Khefer"
 		textureFile = "gfx/leaders/King_kefir.tga"
 	}
+	spriteType = {
+		name = "GFX_idea_ZEX_MGY_FarHook_Small"
+		textureFile = "gfx/interface/ideas/advisors/ZEX_MGY_Farhook_Small.dds"
+	}
+	spriteType = {
+		name = "GFX_leader_ZEX_MGY_FarHook"
+		textureFile = "gfx/leaders/FarHook.tga"
+	}
 }

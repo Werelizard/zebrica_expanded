@@ -9,6 +9,10 @@ set_technology = {
 	melee_weapons1 = 1
 	pre_gw_artillery = 1
 	infantry_weapons = 1
+	tech_recon = 1
+	tech_military_police = 1
+	tech_engineers = 1
+	gw_artillery = 1
 	tech_pegasi = 1
 	basic_train = 1
 	tech_trucks = 1
@@ -102,11 +106,13 @@ if = {
 	add_to_tech_sharing_group = equestrian_research
 }
 
-recruit_character = MGY_king_khefer
-recruit_character = MGY_far_hook
-recruit_character = MGY_shepser_of_manephis
-recruit_character = MGY_butternut_squash
-recruit_character = MGY_corktantinople
+## ZEX CHANGE HERE
+# recruit_character = MGY_king_khefer
+# recruit_character = MGY_far_hook
+# recruit_character = MGY_shepser_of_manephis
+# recruit_character = MGY_butternut_squash
+# recruit_character = MGY_corktantinople
+
 set_rule = {
 	can_generate_female_aces = yes
 	can_generate_female_unit_leaders = yes
@@ -210,6 +216,22 @@ if = {
 # Add advisors / characters
 recruit_character = ZEX_MGY_Somnambula
 set_country_flag = ZEX_MGY_Somnambula_Exiled
+recruit_character = ZEX_MGY_king_khefer
+recruit_character = ZEX_MGY_far_hook
+recruit_character = ZEX_MGY_Imanetep
+recruit_character = ZEX_MGY_Mannea
+recruit_character = ZEX_MGY_Neighkt
+recruit_character = ZEX_MGY_Horsemheb
+recruit_character = ZEX_MGY_Djehoofy
+recruit_character = ZEX_MGY_Amaneope
+recruit_character = ZEX_MGY_Merryre
+recruit_character = ZEX_MGY_HaysyRa
+recruit_character = ZEX_MGY_Nebamane
+recruit_character = ZEX_MGY_Thawhinny
+recruit_character = ZEX_MGY_Ramuleses
+recruit_character = ZEX_MGY_Bay
+recruit_character = ZEX_MGY_Ahmhoofes
+recruit_character = ZEX_MGY_Tutneighfer
 
 #Puppet AOL
 
@@ -235,8 +257,8 @@ add_dynamic_modifier = {
 
 #At the start, king Khefer is the leader for the unaligned as well
 create_country_leader = {
-	name = MGY_king_khefer
-	picture = "gfx/leaders/MGY/King_kefir.tga"
+	name = ZEX_MGY_king_khefer
+	picture = GFX_leader_ZEX_Khefer
 	ideology = conservatism
 		expire = "1111.1.1.1"
 		id = -1
@@ -250,8 +272,8 @@ set_country_leader_description = {
 	desc = ZEX_MGY_KHEFER_DESC
 }
 create_country_leader = {
-	name = MGY_king_khefer
-	picture = "gfx/leaders/MGY/King_kefir.tga"
+	name = ZEX_MGY_king_khefer
+	picture = GFX_leader_ZEX_Khefer
 	ideology = despotism
 		expire = "1111.1.1.1"
 		id = -1
@@ -289,4 +311,3 @@ add_ideas = {
 	##Viziers
 	ZEX_MGY_Shaa_Doof_idea
 }
-

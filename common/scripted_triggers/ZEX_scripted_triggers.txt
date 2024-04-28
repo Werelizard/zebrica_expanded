@@ -113,3 +113,18 @@ zex_mgy_khefer_in_power = {
 		}
 	}
 }
+
+zex_mgy_khefer_not_in_power = {
+	custom_trigger_tooltip = {
+		tooltip = zex_mgy_khefer_not_in_power_tt
+		NOT = {
+			has_country_leader = {
+				ruling_only = yes 
+				name = "King Khefer"
+			}
+		}
+		NOT = {
+			has_idea = ZEX_MGY_king_khefer_idea
+		}
+	}
+}

@@ -15,10 +15,12 @@
  zex_mgy_diet_is_supportive_tt:0 "More than §Y151§! seats are supportive in the diet"
  zex_mgy_khefer_in_power_tt:0 "§YKing Khefer§! is in power"
  zex_mgy_sha_doof_not_dead_tt:0 "Not: §YShaa Doof§! has died"
+ zex_mgy_khefer_not_in_power_tt:0 "Not: §YKing Khefer§! is in power"
 
  #
  # Politics starter branch
  #
+
  ZEX_Goal_King_Speech:0 "His Majesty's Address"
 
  #Unrest Sub Branch
@@ -27,7 +29,7 @@
  ZEX_Goal_Harmonic_Benevolence:0 "Pro-Harmony Propaganda"
  ZEX_Goal_Harmonic_Police:0 "Integrate the Gendarmeries"
  ZEX_Goal_Fight_the_Agitators:0 "Operation Golden Beetle"
- ZEX_Goal_Anti_Harmony_Committee:0 "The Anti-Harmony Activities Comittee"
+ ZEX_Goal_Anti_Harmony_Committee:0 "The National Salvation Committee"
  ZEX_Goal_in_Harmonys_name:0 "In Harmony's Name"
  ZEX_Goal_Expand_Secret_Police:0 "Expand the National Police"
  ZEX_Goal_Harmonic_Pacification:0 "Promote Harmonic Trade Unions"
@@ -42,29 +44,73 @@
  ZEX_Goal_Diet_Codify_Crown:0 "Emphasise Royal Primacy"
  ZEX_Goal_Diet_Modernise_Laws:0 "Amnesty for Republican Moderates"
  ZEX_Goal_Diet_Judiciary_Reform:0 "Judiciary Reform"
- ZEX_Goal_Diet_Nobility_Titles:0 "Fate of the Aristocracy"
+ ZEX_Goal_Diet_Nobility_Titles:0 "And What of Those who Feast?"
  ZEX_Goal_Diet_Right_To_Representation:0 "Right to Representation"
  ZEX_Goal_Diet_Illusion_of_Democracy:0 "Harmony, not Democracy"
- ZEX_Goal_Diet_Modern_Bureaucracy:0 "Bureaucratic Overhaul"
+ ZEX_Goal_Diet_Modern_Bureaucracy:0 "This Land You Toil..."
  ZEX_Goal_Diet_Abolish_Governates:0 "Dissolve the Nomarchy"
- ZEX_Goal_Diet_Tackle_Corruption:0 "Crack down on Corruption"
+ ZEX_Goal_Diet_Tackle_Corruption:0 "To Everypony, Every Right"
  ZEX_Goal_Diet_Progressive_Policies:0 "Unshackle the Press"
  ZEX_Goal_Diet_Abolish_Council:0 "Contain the Royal Council"
- ZEX_Goal_Diet_Codify_Harmony:0 "Harmonic Primacy"
- ZEX_Goal_Diet_For_The_Needy:0 "Harmony's Revival"
+ ZEX_Goal_Diet_Codify_Harmony:0 "Codifying Harmony"
+ ZEX_Goal_Diet_For_The_Needy:0 "A Second Harmonic Mandate"
  ZEX_Goal_Diet_Moral_Values:0 "For a Just and Moral Society"
  ZEX_Goal_Diet_Centralise_Rule:0 "Ban Socialist Organisations"
  ZEX_Goal_Diet_Ban_Extremism:0 "Centralised Royal Rule"
- ZEX_Goal_Diet_Sign_Constitution:0 "The End of the Crisis"
+ ZEX_Goal_Diet_Sign_Constitution:0 "An End to the Diet"
+ ZEX_Goal_Diet_Fate_of_Diet:0 "The Fate of the Diet"
 
  #Cabinet Sub-Branch
- ZEX_Goal_Diet_A_Zebrican_Vizier:0 "A Zebrican Vizier?"
- ZEX_Goal_Diet_A_Harmonist_Vizier:0 "Sha Doof's Protégé"
- ZEX_Goal_Diet_A_Loyalist_Vizier:0 "The King's Man"
- ZEX_Goal_Diet_Promote_Zebricanism:0 "Promote Zebricanism in Government"
- ZEX_Goal_Diet_Zebrican_Integration:0 "Merge the MHA and the Zebrican Movement"
- ZEX_Goal_Diet_Agrarian_Outreach:0 "The Vizier's Speech"
- ZEX_Goal_Diet_Petition_Somnambula:0 "Petition Somnambula"
- ZEX_Goal_Diet_Aristocratic_Support:0 "Appeal to the Nobles"
- ZEX_Goal_Diet_Rally_Royalists:0 "Rally the Monarchists"
- ZEX_Goal_Diet_New_Grand_Coalition:0 "The New Grand Coalition"
+
+ ZEX_Goal_Vizier_Shaa_Doof_Dies:0 "The Passing of Shaa Doof"
+ ZEX_Goal_Vizier_A_Zebrican_Vizier:0 "A Zebrican Vizier?"
+ ZEX_Goal_Vizier_A_Harmonist_Vizier:0 "Shaa Doof's Protégé"
+ ZEX_Goal_Vizier_A_Loyalist_Vizier:0 "The King's Man"
+ ZEX_Goal_Vizier_Promote_Zebricanism:0 "Promote Zebricanist Policies"
+ ZEX_Goal_Vizier_Zebrican_Integration:0 "A New Cabinet"
+ ZEX_Goal_Vizier_Agrarian_Outreach:0 "The Vizier's Speech"
+ ZEX_Goal_Vizier_Petition_Somnambula:0 "Petition Somnambula"
+ ZEX_Goal_Vizier_Aristocratic_Support:0 "Appeal to the Nomarchs"
+ ZEX_Goal_Vizier_Rally_Royalists:0 "Rally the Monarchists"
+ ZEX_Goal_Vizier_New_Grand_Coalition:0 "The New Grand Coalition"
+
+ #
+ # Maregyptian Sphere
+ #
+
+ ZEX_Goal_Maregyptian_Sphere_Our_Domain:0 "The Fading Sun"
+ ZEX_Goal_Maregyptian_Sphere_Western_Province:0 "Deal with Sineigh Seperatists"
+ ZEX_Goal_Maregyptian_Sphere_Southern_Province:0 "Reign in Kaneigh"
+ ZEX_Goal_Maregyptian_Sphere_Eastern_Neighbours:0 "Our Nomadic Neighbours"
+ ZEX_Goal_Maregyptian_Western_Neighbours:0 "The Western Princelings"
+ ZEX_Goal_Maregyptian_Sphere_Coming_Storm:0 "The Coming Storm"
+ ZEX_Goal_Maregyptian_Sphere_Begin_Re_Armement:0 "Limited Re-Armement"
+ ZEX_Goal_Maregyptian_Sphere_Emergency_Conscription:0 "Emergency Conscription"
+ ZEX_Goal_Maregyptian_Sphere_Rebuild_Army:0 "Rebuild the Maregyptian Army"
+ ZEX_Goal_Maregyptian_Sphere_The_Beetle_Rises:0 "The Scarab Spreads its Wings Once More"
+ ZEX_Goal_Maregyptian_Sphere_Commission_New_navy:0 "Commission a New Navy"
+ ZEX_Goal_Maregyptian_Sphere_Support_Hip_Harmony:0 "Stand by Hippogrifia"
+ ZEX_Goal_Maregyptian_Sphere_Armed_neutrality:0 "Re-Affirm our Neutrality"
+ ZEX_Goal_Maregyptian_Sphere_Volunteers_for_Hip:0 "The Maregyptian Volunteer Corps"
+ ZEX_Goal_Maregyptian_Sphere_Hippogriff_Exiles:0 "Welcome Hippogriff Exiles"
+ ZEX_Goal_Maregyptian_Sphere_Colthaginian_Reapprochment:0 "Colthaginian Trade"
+ ZEX_Goal_Maregyptian_Sphere_Colthaginian_Trade:0 "Grain for the Northern Coast"
+ ZEX_Goal_Maregyptian_Sphere_Zebrican_Protectorates:0 "Restore the Protectorates"
+ ZEX_Goal_Maregyptian_Sphere_A_New_War:0 "The Zumidian Crisis"
+ ZEX_Goal_Maregyptian_Sphere_Denounce_hip_Communism:0 "Condemn Poseda"
+ ZEX_Goal_Maregyptian_Sphere_Anti_Marksist_Pact:0 "The Zebrican Anti-Marksist Pact"
+ ZEX_Goal_Maregyptian_Sphere_Treaty_of_Somnambula:0 "The Treaty of Somnambula"
+
+ #
+ # Alwani Integration
+ # 
+
+ ZEX_Goal_Alwani_Integration_Appoint_New_Viceroy:0 "Time for a New Viceroy?"
+ ZEX_Goal_Alwani_Integration_Merge_Administration:0 "Re-Affirm Maregyptian Primacy"
+ ZEX_Goal_Alwani_Integration_Recognise_Local_Rule:0 "Recognise Local Rule"
+ ZEX_Goal_Alwani_Integration_Recruit_Loyalists:0 "Integrate the Alwani Medjay"
+ ZEX_Goal_Alwani_Integration_Seperate_Laws:0 "One Country, Two Law Codes"
+ ZEX_Goal_Alwani_Integration_Consolidate_Governate:0 "Crush Alwani Nationalism"
+ ZEX_Goal_Alwani_Integration_Economic_Integration:0 "Economic Exploitation"
+ ZEX_Goal_Alwani_Integration_Southern_Exploitation:0 "Develop Zongola"
+ ZEX_Goal_Alwani_Integration_King_of_Alwani:0 "King of Maregypt and Alwani"
