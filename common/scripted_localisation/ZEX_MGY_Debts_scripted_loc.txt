@@ -1,0 +1,63 @@
+############################################
+# Toggle the tooltips for the debts effect #
+############################################
+
+defined_text = {
+	name = ZEX_MGY_Get_equestrian_debts_consumer_goods_effect_val
+	text = {
+		trigger = {
+			check_variable = {
+				ZEX_MGY_equestrian_debts_consumer_goods_effect > 0
+			}
+		}
+		localization_key = ZEX_MGY_equestrian_debts_consumer_goods_effect_active_tt
+	}
+	text = {
+		localization_key = ZEX_MGY_equestrian_debts_empty
+	}
+}
+
+defined_text = {
+	name = ZEX_MGY_Get_equestrian_debts_poltical_power_effect_val
+	text = {
+		trigger = {
+			check_variable = {
+				ZEX_MGY_equestrian_debts_poltical_power_gain < 0
+			}
+		}
+		localization_key = ZEX_MGY_equestrian_debts_poltical_power_gain_active_tt
+	}
+	text = {
+		localization_key = ZEX_MGY_equestrian_debts_empty
+	}
+}
+
+defined_text = {
+	name = ZEX_MGY_Get_equestrian_debts_factory_output_effect_val
+	text = {
+		trigger = {
+			check_variable = {
+				ZEX_MGY_equestrian_debts_factory_output_effect < 0
+			}
+		}
+		localization_key = ZEX_MGY_equestrian_debts_factory_output_effect_active_tt
+	}
+	text = {
+		localization_key = ZEX_MGY_equestrian_debts_empty
+	}
+}
+
+defined_text = {
+	name = ZEX_MGY_Get_equestrian_debts_dockyard_output_effect_val
+	text = {
+		trigger = {
+			check_variable = {
+				ZEX_MGY_equestrian_debts_dockyard_output_effect < 0
+			}
+		}
+		localization_key = ZEX_MGY_equestrian_debts_dockyard_output_effect_active_tt
+	}
+	text = {
+		localization_key = ZEX_MGY_equestrian_debts_empty
+	}
+}

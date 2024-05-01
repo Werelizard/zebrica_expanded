@@ -290,21 +290,16 @@
  ZEX_MGY_LOWUNREST_UPPERMAREGYPT_Protected:0 "ZEX_MGY_LOWUNREST_UPPERMAREGYPT_Protected"
  ZEX_MGY_MIDUNREST_UPPERMAREGYPT_Protected:0 "ZEX_MGY_MIDUNREST_UPPERMAREGYPT_Protected"
  ZEX_MGY_HIGHUNREST_UPPERMAREGYPT_Protected:0 "ZEX_MGY_HIGHUNREST_UPPERMAREGYPT_Protected"
- 
- #Agriculture
- ZEX_MAREGYPT_AGRICULTURE_CATEGORY:0 "The Breadbasket of Zebrica"
- ZEX_MAREGYPT_AGRICULTURE_CATEGORY_desc:0 "Maregypt is still - mostly - an agrarian society; as it has been through most of history, the Neighle valley has been but the granary of Zebrica and the lands beyond. It is both a formidable tool, and a hindrance. We should tread lightly shall we decide to intervene in its day-to-day function, for tempering with the lifeline of our nation will not be without consequences!"
- ZEX_SELL_MORE_GOODS:0 "Encourage Agricultural Sales"
- ZEX_SELL_LESS_GOODS:0 "Encourage Protectionism"
 
- not_tempered_in_agriculture_last_30_days_tt:0 "Not: has modified the agricultural policy in the last 30 days"
- breadbasket_pp_effect_lower_than_max:0 "Not: the §YBreadbasket of Zebrica§! national spirit already grants us £pol_power Daily Political Power Gain: §G+1.0§!"
- breadbasket_goods_effect_lower_than_max:0 "The §YBreadbasket of Zebrica§! national spirit uses less than £ZEX_tradegoods Consumer Goods Factories factor: §Y90.0%§!"
- breadbasket_pp_effect_higher_than_min:0 "The §YBreadbasket of Zebrica§! national spirit grants us more than £pol_power Daily Political Power Gain: §G+0.05§!"
- breadbasket_goods_effect_higher_than_min:0 "Not: the §YBreadbasket of Zebrica§! national spirit uses less than £ZEX_tradegoods Consumer Goods Factories factor: §Y-30.0%§!"
- zex_mgy_increase_pp_gain_breadbasket:0 "Increases the £pol_power Daily Political Power Gain granted by the §YBreadbasket of Zebrica§! by §G+0.1§!"
- zex_mgy_increase_goods_use_breadbasket:0 "Increases the £ZEX_tradegoods Consumer Goods used by the §YBreadbasket of Zebrica§! by §t+5.0%§!"
- zex_mgy_decrease_pp_gain_breadbasket:0 "Decreases the £pol_power Daily Political Power Gain granted by the §YBreadbasket of Zebrica§! by §t-0.1§!"
- zex_mgy_decrease_goods_gain_breadbasket:0 "Decreases the £ZEX_tradegoods Consumer Goods used by the §YBreadbasket of Zebrica§! by §G-5.0%§!"
+ #Debts
+ ZEX_MGY_equestrian_debts_empty:0 ""
 
- GFX_idea_ZEX_MGY_Breadbasket_tt:0 "§YBreadbasket of Zebrica§!\n£ZEX_tradegoods  Consumer Goods Factories factor: §Y[?ZEX_MGY_agriculture_consumer_goods_effect|%1]§!\n[ZEX_MGY_GetAgricultureMilOutSign]\n[ZEX_MGY_GetAgricultureDockOutSign]\n[ZEX_MGY_GetAgriculturePolPowerSign]"
+ ZEX_MGY_equestrian_debts_consumer_goods_effect_tt:0 "[ROOT.ZEX_MGY_Get_equestrian_debts_consumer_goods_effect_val]"
+ ZEX_MGY_equestrian_debts_poltical_power_gain_tt:0 "[ROOT.ZEX_MGY_Get_equestrian_debts_poltical_power_effect_val]"
+ ZEX_MGY_equestrian_debts_factory_output_effect_tt:0 "[ROOT.ZEX_MGY_Get_equestrian_debts_factory_output_effect_val]"
+ ZEX_MGY_equestrian_debts_dockyard_output_effect_tt:0 "[ROOT.ZEX_MGY_Get_equestrian_debts_dockyard_output_effect_val]"
+
+ ZEX_MGY_equestrian_debts_consumer_goods_effect_active_tt:0 "£ZEX_tradegoods  Consumer Goods Factories factor: §Y[?ROOT.ZEX_MGY_equestrian_debts_consumer_goods_effect|1%]§!"
+ ZEX_MGY_equestrian_debts_poltical_power_gain_active_tt:0 "£pol_power  Daily Political Power Gain: §t[?ROOT.ZEX_MGY_equestrian_debts_poltical_power_gain|2]§!"
+ ZEX_MGY_equestrian_debts_factory_output_effect_active_tt:0 "£ZEX_miloutput  Factory Output: §t[?ROOT.ZEX_MGY_equestrian_debts_factory_output_effect|1%]§!"
+ ZEX_MGY_equestrian_debts_dockyard_output_effect_active_tt:0 "£ZEX_dockoutput  Dockyard Output: §t[?ROOT.ZEX_MGY_equestrian_debts_dockyard_output_effect|1%]§!"

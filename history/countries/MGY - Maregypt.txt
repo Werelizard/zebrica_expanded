@@ -247,7 +247,7 @@ add_to_faction = ALO
 ZEX_activate_republican_agitation = yes
 
 #Enable the breadbasket mechanics
-ZEX_MGY_ENABLE_BREADBASKET = yes
+ZEX_MGY_DEBTS_ENABLED_TOOLTIP = yes
 
 #Enable Viziers
 set_country_flag = zex_mgy_vizier_enabled_flag

@@ -1,0 +1,21 @@
+########################################
+# MAREGYPT DEBTS RELATED EFFECTS #
+########################################
+
+ZEX_MGY_DEBTS_ENABLED_TOOLTIP = {
+	set_variable = {
+		ZEX_MGY_equestrian_debts_poltical_power_gain = -0.1
+	}
+	set_variable = {
+		ZEX_MGY_equestrian_debts_consumer_goods_effect = 0.5
+	}
+	set_variable = {
+		ZEX_MGY_equestrian_debts_factory_output_effect = -0.1
+	}
+	set_variable = {
+		ZEX_MGY_equestrian_debts_dockyard_output_effect = -0.1
+	}
+	add_dynamic_modifier = {
+		modifier = ZEX_MGY_Equestrian_Debts_dynmod
+	}
+}

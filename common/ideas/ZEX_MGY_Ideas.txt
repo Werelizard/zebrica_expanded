@@ -1,61 +1,26 @@
 ideas = {
 	##BASE IDEAS
 	country = {
-		ZEX_MGY_Somnambula = {
-			picture = ZEX_MGY_Somnambula
-			modifier = {
-				drift_defence_factor = 0.5
-				resistance_growth_on_our_occupied_states = 0.25
-				army_core_defence_factor = 0.15
-			}
-			allowed = {
-				OR = {
-					has_government = democratic
-					has_country_leader = MGY_king_khefer
-				}
-			}
-		}
 		ZEX_MGY_Equestrian_Debts = {
 			picture = ZEX_MGY_Equestrian_Debts
 			modifier = {
-				political_power_gain = -0.25
-				production_speed_industrial_complex_factor = -0.1
-				production_speed_arms_factory_factor = -0.1
-			}
-			targeted_modifier = {
-				tag = EQS
-				cic_to_target_factor = 0.45
-			}
-			allowed = {
-				zxe_mgy_equestria_exists = yes
-			}
-			#TODO
-			on_remove = {
-				if = {
-					limit = {
-						NOT = {
-							has_country_flag = ZEX_MGY_Cleared_Equestria_Debts
-						}
-					}
-					#Add event for debt repayment
-				}
+				production_speed_buildings_factor = -0.1
+				custom_modifier_tooltip = ZEX_MGY_equestrian_debts_consumer_goods_effect_tt
+				custom_modifier_tooltip = ZEX_MGY_equestrian_debts_poltical_power_gain_tt
+				custom_modifier_tooltip = ZEX_MGY_equestrian_debts_factory_output_effect_tt
+				custom_modifier_tooltip = ZEX_MGY_equestrian_debts_dockyard_output_effect_tt
 			}
 		}
 		ZEX_MGY_Breadbasket = {
 			picture = ZEX_MGY_Breadbasket
 			modifier = {
-				# consumer_goods_factor = -0.1
-				# production_speed_infrastructure_factor = -0.1
-				# global_building_slots_factor = -0.1
-				custom_modifier_tooltip = ZEX_MGY_consumer_impact_tt
-				custom_modifier_tooltip = ZEX_MGY_factory_impact_tt
-				custom_modifier_tooltip = ZEX_MGY_dock_impact_tt
-				custom_modifier_tooltip = ZEX_MGY_polpower_impact_tt
-			}
-			allowed = {
-				has_dynamic_modifier = {
-					modifier = ZEX_MGY_Breadbasket_of_Zebrica_dynmod
-				}
+				consumer_goods_factor = -0.1
+				global_building_slots_factor = -0.1
+				custom_modifier_tooltip = ZEX_MGY_Breadbasket_Sell_Goods_tt
+				# custom_modifier_tooltip = ZEX_MGY_consumer_impact_tt
+				# custom_modifier_tooltip = ZEX_MGY_factory_impact_tt
+				# custom_modifier_tooltip = ZEX_MGY_dock_impact_tt
+				# custom_modifier_tooltip = ZEX_MGY_polpower_impact_tt
 			}
 		}
 		ZEX_Unfinished_Constitution = {
@@ -65,8 +30,8 @@ ideas = {
 			}
 			modifier = {
 				stability_factor = -0.15
-				war_support_factor = -0.15
-				political_power_factor = -0.1
+				war_support_factor = -0.1
+				political_power_factor = -0.15
 				democratic_drift = -0.1
 				custom_modifier_tooltip =  ZEX_Unfinished_Constitution_No_Ministers_or_Laws_tt
 			}
@@ -169,7 +134,7 @@ ideas = {
 		ZEX_MGY_VIZIER_OFFICE_BALANCED = {
 			picture = ZEX_MGY_Vizier_Office
 			modifier = {
-				political_power_factor = 0.025
+				political_power_factor = 0.02
 			}
 			allowed = {
 				has_country_flag = zex_mgy_vizier_enabled_flag
@@ -188,7 +153,7 @@ ideas = {
 		ZEX_MGY_VIZIER_OFFICE_KING_STRONG = {
 			picture = ZEX_MGY_Vizier_Office
 			modifier = {
-				political_power_factor = -0.03
+				political_power_factor = -0.05
 				stability_factor = 0.05
 				daily_popularity_drift = 0.015
 			}
@@ -199,7 +164,7 @@ ideas = {
 		ZEX_MGY_VIZIER_OFFICE_KING_DOMINANT = {
 			picture = ZEX_MGY_Vizier_Office
 			modifier = {
-				political_power_factor = -0.1
+				political_power_factor = -0.15
 				stability_factor = 0.05
 				war_support_factor = 0.1
 				daily_popularity_drift = 0.02
@@ -211,8 +176,9 @@ ideas = {
 		ZEX_MGY_VIZIER_OFFICE_VIZIER_WEAK = {
 			picture = ZEX_MGY_Vizier_Office
 			modifier = {
-				political_power_factor = 0.03
 				economy_cost_factor = -0.1
+				political_advisor_cost_factor = -0.1
+				trade_laws_cost_factor = -0.1
 				war_support_factor = -0.025
 			}
 			allowed = {
@@ -222,8 +188,10 @@ ideas = {
 		ZEX_MGY_VIZIER_OFFICE_VIZIER_STRONG = {
 			picture = ZEX_MGY_Vizier_Office
 			modifier = {
-				political_power_factor = 0.05
+				political_power_factor = -0.05
 				economy_cost_factor = -0.15
+				political_advisor_cost_factor = -0.15
+				trade_laws_cost_factor = -0.15
 				war_support_factor = -0.05
 			}
 			allowed = {
@@ -233,8 +201,10 @@ ideas = {
 		ZEX_MGY_VIZIER_OFFICE_VIZIER_DOMINANT = {
 			picture = ZEX_MGY_Vizier_Office
 			modifier = {
-				political_power_factor = 0.1
+				political_power_factor = -0.15
 				economy_cost_factor = -0.2
+				political_advisor_cost_factor = -0.2
+				trade_laws_cost_factor = -0.2
 				war_support_factor = -0.1
 			}
 			allowed = {

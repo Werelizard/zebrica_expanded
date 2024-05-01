@@ -10,6 +10,7 @@
  ZEX_MGY_REPUBLICAN_AGITATION_IDEA:0 "Political Unrest"
  ZEX_MGY_king_khefer_idea:0 "King Khefer"
  ZEX_MGY_goal_harmony_society_idea:0 "The Lotus Society"
+
  ZEX_MGY_goal_harmony_society_idea_genderarmerie_1:0 "The Lotus Society"
  ZEX_MGY_goal_harmony_society_idea_propaganda_1:0 "The Lotus Society"
  ZEX_MGY_goal_harmony_society_idea_genderarmerie_2:0 "The Lotus Society"
@@ -22,6 +23,8 @@
  ZEX_MGY_Equestrian_Debts_desc:0 "In the wake of the Storm King's rise and fall, King Khefer negotiated an unpopular agreement with princess Celestia herself in order to salvage the country's economy. While this proved somewhat successfull in avoiding an immediate collapse of the Maregyptian economy, the payments for this assistance has now come due, driving the Maregyptian economy further towards bankruptcy."
  ZEX_MGY_REPUBLICAN_AGITATION_IDEA_desc:0 "§LThis is a §gdynamic§! modifier. It will update to reflect the rising £local_unrest §Yunrest§!§L throughout the nation§!.§T\n--------------\n§!Our nation is currently experiencing widespread unrest, tethering on the edge of a civil war, with only the vague promises of reform keeping it at bay."
  ZEX_MGY_goal_harmony_society_idea_desc:0 ""
+
+ ZEX_MGY_Breadbasket_Sell_Goods_tt:0 "£trigger_yes  Can sell agricultural trade goods"
 
  ZEX_MGY_consumer_impact_tt:0 "£ZEX_tradegoods  Consumer Goods Factories factor: §Y[?ROOT.ZEX_MGY_agriculture_consumer_goods_effect|%1]§!"
  ZEX_MGY_factory_impact_tt:0 "[ZEX_MGY_GetAgricultureMilOutSign]"

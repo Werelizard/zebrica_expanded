@@ -35,8 +35,9 @@ focus_tree = {
 	focus = { #The King's Adress
 		id = ZEX_Goal_King_Speech
 		icon = GFX_ZEX_Goal_King_Speech
+		relative_position_id = ZEX_Goal_Maregyptian_Sphere_Our_Domain
 
-		x = 0
+		x = -15
 		y = 0
 
 		cost = 1.5	
@@ -1767,8 +1768,7 @@ focus_tree = {
 		id = ZEX_Goal_Maregyptian_Sphere_Our_Domain
 		icon = GFX_ZEX_Goal_Maregyptian_Sphere_Our_Domain
 
-		relative_position_id = ZEX_Goal_King_Speech
-		x = 15
+		x = 0
 		y = 0
 
 		cost = 3
@@ -2576,8 +2576,8 @@ focus_tree = {
 		id = ZEX_Goal_Alwani_Integration_Appoint_New_Viceroy
 		icon = GFX_ZEX_Goal_Alwani_Integration_Appoint_New_Viceroy
 
-		relative_position_id = ZEX_Goal_King_Speech
-		x = 12
+		relative_position_id = ZEX_Goal_Maregyptian_Sphere_Our_Domain
+		x = -3
 		y = 6
 
 		cost = 3
@@ -2620,7 +2620,8 @@ focus_tree = {
 
 		#Prerequisites
 		prerequisite = {
-			focus = ZEX_Goal_Alwani_Integration_Appoint_New_Viceroy
+			focus = ZEX_Goal_Alwani_Integration_Recognise_Local_Rule
+			focus = ZEX_Goal_Alwani_Integration_Consolidate_Governate
 		}
 		prerequisite = {
 		}
@@ -2683,41 +2684,6 @@ focus_tree = {
 		}
 	}
 
-	focus = { # Recruit Loyalists
-		id = ZEX_Goal_Alwani_Integration_Recruit_Loyalists
-		icon = GFX_ZEX_Goal_Alwani_Integration_Recruit_Loyalists
-
-		relative_position_id = ZEX_Goal_Alwani_Integration_Appoint_New_Viceroy
-		x = -4
-		y = 2
-
-		cost = 3
-
-		#Prerequisites
-		prerequisite = {
-			focus = ZEX_Goal_Alwani_Integration_Recognise_Local_Rule
-		}
-		mutually_exclusive = {
-		}
-		#Triggers
-		available = {
-			
-		}
-
-		#Effects
-		select_effect = {
-			
-		}
-
-		cancel_effect = {
-			
-		}
-
-		completion_reward = {
-			
-		}
-	}
-
 	focus = { # Seperate Law
 		id = ZEX_Goal_Alwani_Integration_Seperate_Laws
 		icon = GFX_ZEX_Goal_Alwani_Integration_Seperate_Laws
@@ -2730,7 +2696,6 @@ focus_tree = {
 
 		#Prerequisites
 		prerequisite = {
-			focus = ZEX_Goal_Alwani_Integration_Merge_Administration
 		}
 		prerequisite = {
 			focus = ZEX_Goal_Alwani_Integration_Recognise_Local_Rule
@@ -2806,48 +2771,9 @@ focus_tree = {
 
 		#Prerequisites
 		prerequisite = {
-			focus = ZEX_Goal_Alwani_Integration_Merge_Administration
 		}
 		prerequisite = {
 			focus = ZEX_Goal_Alwani_Integration_Consolidate_Governate
-		}
-		mutually_exclusive = {
-		}
-		#Triggers
-		available = {
-			
-		}
-
-		#Effects
-		select_effect = {
-			
-		}
-
-		cancel_effect = {
-			
-		}
-
-		completion_reward = {
-			
-		}
-	}
-
-	focus = { # Exploit the South
-		id = ZEX_Goal_Alwani_Integration_Southern_Exploitation
-		icon = GFX_ZEX_Goal_Alwani_Integration_Southern_Exploitation
-
-		relative_position_id = ZEX_Goal_Alwani_Integration_Appoint_New_Viceroy
-		x = 5
-		y = 2
-
-		cost = 3
-
-		#Prerequisites
-		prerequisite = {
-			focus = ZEX_Goal_Alwani_Integration_Consolidate_Governate
-		}
-		prerequisite = {
-			focus = ZEX_Goal_Maregyptian_Sphere_Zebrican_Protectorates
 		}
 		mutually_exclusive = {
 		}
@@ -2886,6 +2812,7 @@ focus_tree = {
 			focus = ZEX_Goal_Alwani_Integration_Economic_Integration
 		}
 		prerequisite = {
+			focus = ZEX_Goal_Alwani_Integration_Merge_Administration
 		}
 		mutually_exclusive = {
 		}
