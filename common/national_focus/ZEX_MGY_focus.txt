@@ -19,7 +19,7 @@ focus_tree = {
 	default = no
 
 	initial_show_position = {
-		focus = ZEX_Goal_King_Speech
+		focus = ZEX_Goal_Maregyptian_Sphere_Our_Domain
 	}
 
 	continuous_focus_position = { x = 200 y = 2300 }
@@ -65,6 +65,13 @@ focus_tree = {
 		completion_reward = {
 			
 		}
+
+		#only available if no oopsie - only for the political branch
+		allow_branch = {
+			NOT = {
+				has_country_flag = ZEX_MGY_Civil_War_Triggered
+			}
+		}
 	}
 
 	#
@@ -102,6 +109,13 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = ZEX_MGY_goal_harmony_society_idea
+		}
+
+		#only available if no oopsie - only for the political branch
+		allow_branch = {
+			NOT = {
+				has_country_flag = ZEX_MGY_Civil_War_Triggered
+			}
 		}
 	}
 
@@ -143,6 +157,13 @@ focus_tree = {
 		completion_reward = {
 			
 		}
+		
+		#only available if no oopsie - only for the political branch
+		allow_branch = {
+			NOT = {
+				has_country_flag = ZEX_MGY_Civil_War_Triggered
+			}
+		}
 	}
 
 	focus = { #Harmony Benevolence
@@ -181,6 +202,13 @@ focus_tree = {
 			swap_ideas = {
 				remove_idea = ZEX_MGY_goal_harmony_society_idea
 				add_idea = ZEX_MGY_goal_harmony_society_idea_propaganda_1
+			}
+		}
+		
+		#only available if no oopsie - only for the political branch
+		allow_branch = {
+			NOT = {
+				has_country_flag = ZEX_MGY_Civil_War_Triggered
 			}
 		}
 	}
@@ -223,6 +251,13 @@ focus_tree = {
 				add_idea = ZEX_MGY_goal_harmony_society_idea_genderarmerie_1
 			}
 		}
+		
+		#only available if no oopsie - only for the political branch
+		allow_branch = {
+			NOT = {
+				has_country_flag = ZEX_MGY_Civil_War_Triggered
+			}
+		}
 	}
 
 	focus = { #Fight back time
@@ -260,6 +295,13 @@ focus_tree = {
 
 		completion_reward = {
 			
+		}
+		
+		#only available if no oopsie - only for the political branch
+		allow_branch = {
+			NOT = {
+				has_country_flag = ZEX_MGY_Civil_War_Triggered
+			}
 		}
 	}
 
@@ -299,6 +341,13 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 150
 		}
+		
+		#only available if no oopsie - only for the political branch
+		allow_branch = {
+			NOT = {
+				has_country_flag = ZEX_MGY_Civil_War_Triggered
+			}
+		}
 	}
 
 	focus = { #In Harmony's Name
@@ -335,6 +384,13 @@ focus_tree = {
 
 		completion_reward = {
 			
+		}
+		
+		#only available if no oopsie - only for the political branch
+		allow_branch = {
+			NOT = {
+				has_country_flag = ZEX_MGY_Civil_War_Triggered
+			}
 		}
 	}
 
@@ -376,6 +432,13 @@ focus_tree = {
 				add_idea = ZEX_MGY_goal_harmony_society_idea_genderarmerie_2
 			}
 		}
+		
+		#only available if no oopsie - only for the political branch
+		allow_branch = {
+			NOT = {
+				has_country_flag = ZEX_MGY_Civil_War_Triggered
+			}
+		}
 	}
 
 	focus = { #Harmonic Pacification
@@ -414,6 +477,13 @@ focus_tree = {
 			swap_ideas = {
 				remove_idea = ZEX_MGY_goal_harmony_society_idea_propaganda_1
 				add_idea = ZEX_MGY_goal_harmony_society_idea_propaganda_2
+			}
+		}
+		
+		#only available if no oopsie - only for the political branch
+		allow_branch = {
+			NOT = {
+				has_country_flag = ZEX_MGY_Civil_War_Triggered
 			}
 		}
 	}
@@ -471,6 +541,13 @@ focus_tree = {
 				
 			}
 		}
+		
+		#only available if no oopsie - only for the political branch
+		allow_branch = {
+			NOT = {
+				has_country_flag = ZEX_MGY_Civil_War_Triggered
+			}
+		}
 	}
 
 	#
@@ -508,6 +585,13 @@ focus_tree = {
 
 		completion_reward = {
 			
+		}
+		
+		#only available if no oopsie - only for the political branch
+		allow_branch = {
+			NOT = {
+				has_country_flag = ZEX_MGY_Civil_War_Triggered
+			}
 		}
 	}
 
@@ -549,6 +633,13 @@ focus_tree = {
 		completion_reward = {
 			
 		}
+		
+		#only available if no oopsie - only for the political branch
+		allow_branch = {
+			NOT = {
+				has_country_flag = ZEX_MGY_Civil_War_Triggered
+			}
+		}
 	}	
 
 	focus = { #Harmonic-Coalition
@@ -589,6 +680,13 @@ focus_tree = {
 		completion_reward = {
 			
 		}
+		
+		#only available if no oopsie - only for the political branch
+		allow_branch = {
+			NOT = {
+				has_country_flag = ZEX_MGY_Civil_War_Triggered
+			}
+		}
 	}	
 
 	focus = { #Monarchist-Coalition
@@ -628,6 +726,13 @@ focus_tree = {
 
 		completion_reward = {
 			
+		}
+		
+		#only available if no oopsie - only for the political branch
+		allow_branch = {
+			NOT = {
+				has_country_flag = ZEX_MGY_Civil_War_Triggered
+			}
 		}
 	}	
 
@@ -673,6 +778,13 @@ focus_tree = {
 		completion_reward = {
 			
 		}
+		
+		#only available if no oopsie - only for the political branch
+		allow_branch = {
+			NOT = {
+				has_country_flag = ZEX_MGY_Civil_War_Triggered
+			}
+		}
 	}	
 
 	focus = { # Restrict Crown
@@ -713,6 +825,13 @@ focus_tree = {
 		completion_reward = {
 			
 		}
+		
+		#only available if no oopsie - only for the political branch
+		allow_branch = {
+			NOT = {
+				has_country_flag = ZEX_MGY_Civil_War_Triggered
+			}
+		}
 	}	
 
 	focus = { # Modernise Laws
@@ -752,6 +871,13 @@ focus_tree = {
 		completion_reward = {
 			
 		}
+		
+		#only available if no oopsie - only for the political branch
+		allow_branch = {
+			NOT = {
+				has_country_flag = ZEX_MGY_Civil_War_Triggered
+			}
+		}
 	}	
 
 	focus = { # Law Reform
@@ -787,6 +913,13 @@ focus_tree = {
 
 		completion_reward = {
 			
+		}
+		
+		#only available if no oopsie - only for the political branch
+		allow_branch = {
+			NOT = {
+				has_country_flag = ZEX_MGY_Civil_War_Triggered
+			}
 		}
 	}	
 
@@ -825,6 +958,13 @@ focus_tree = {
 
 		completion_reward = {
 			
+		}
+		
+		#only available if no oopsie - only for the political branch
+		allow_branch = {
+			NOT = {
+				has_country_flag = ZEX_MGY_Civil_War_Triggered
+			}
 		}
 	}	
 
@@ -865,6 +1005,13 @@ focus_tree = {
 		completion_reward = {
 			
 		}
+		
+		#only available if no oopsie - only for the political branch
+		allow_branch = {
+			NOT = {
+				has_country_flag = ZEX_MGY_Civil_War_Triggered
+			}
+		}
 	}	
 
 	focus = { # Illusion of Democracy
@@ -904,6 +1051,13 @@ focus_tree = {
 		completion_reward = {
 			
 		}
+		
+		#only available if no oopsie - only for the political branch
+		allow_branch = {
+			NOT = {
+				has_country_flag = ZEX_MGY_Civil_War_Triggered
+			}
+		}
 	}	
 
 	focus = { # Foundations of Modernstate
@@ -940,6 +1094,13 @@ focus_tree = {
 		completion_reward = {
 			
 		}
+		
+		#only available if no oopsie - only for the political branch
+		allow_branch = {
+			NOT = {
+				has_country_flag = ZEX_MGY_Civil_War_Triggered
+			}
+		}
 	}	
 
 	focus = { # Remove governates
@@ -975,6 +1136,13 @@ focus_tree = {
 
 		completion_reward = {
 			
+		}
+		
+		#only available if no oopsie - only for the political branch
+		allow_branch = {
+			NOT = {
+				has_country_flag = ZEX_MGY_Civil_War_Triggered
+			}
 		}
 	}	
 
@@ -1013,6 +1181,13 @@ focus_tree = {
 		completion_reward = {
 			
 		}
+		
+		#only available if no oopsie - only for the political branch
+		allow_branch = {
+			NOT = {
+				has_country_flag = ZEX_MGY_Civil_War_Triggered
+			}
+		}
 	}
 
 	focus = { # Progessive Rights
@@ -1049,6 +1224,13 @@ focus_tree = {
 		completion_reward = {
 			
 		}
+		
+		#only available if no oopsie - only for the political branch
+		allow_branch = {
+			NOT = {
+				has_country_flag = ZEX_MGY_Civil_War_Triggered
+			}
+		}
 	}	
 
 	focus = { # Abolish Council
@@ -1084,6 +1266,13 @@ focus_tree = {
 
 		completion_reward = {
 			
+		}
+		
+		#only available if no oopsie - only for the political branch
+		allow_branch = {
+			NOT = {
+				has_country_flag = ZEX_MGY_Civil_War_Triggered
+			}
 		}
 	}
 
@@ -1122,6 +1311,13 @@ focus_tree = {
 		completion_reward = {
 			
 		}
+		
+		#only available if no oopsie - only for the political branch
+		allow_branch = {
+			NOT = {
+				has_country_flag = ZEX_MGY_Civil_War_Triggered
+			}
+		}
 	}
 
 	focus = { # Harmony Only
@@ -1157,6 +1353,13 @@ focus_tree = {
 
 		completion_reward = {
 			
+		}
+		
+		#only available if no oopsie - only for the political branch
+		allow_branch = {
+			NOT = {
+				has_country_flag = ZEX_MGY_Civil_War_Triggered
+			}
 		}
 	}
 	
@@ -1194,6 +1397,13 @@ focus_tree = {
 		completion_reward = {
 			
 		}
+		
+		#only available if no oopsie - only for the political branch
+		allow_branch = {
+			NOT = {
+				has_country_flag = ZEX_MGY_Civil_War_Triggered
+			}
+		}
 	}
 
 	focus = { # Moral Values
@@ -1229,6 +1439,13 @@ focus_tree = {
 
 		completion_reward = {
 			
+		}
+		
+		#only available if no oopsie - only for the political branch
+		allow_branch = {
+			NOT = {
+				has_country_flag = ZEX_MGY_Civil_War_Triggered
+			}
 		}
 	}
 
@@ -1266,6 +1483,13 @@ focus_tree = {
 		completion_reward = {
 			
 		}
+		
+		#only available if no oopsie - only for the political branch
+		allow_branch = {
+			NOT = {
+				has_country_flag = ZEX_MGY_Civil_War_Triggered
+			}
+		}
 	}
 
 	focus = { # Abolish Republicans
@@ -1301,6 +1525,13 @@ focus_tree = {
 
 		completion_reward = {
 			
+		}
+		
+		#only available if no oopsie - only for the political branch
+		allow_branch = {
+			NOT = {
+				has_country_flag = ZEX_MGY_Civil_War_Triggered
+			}
 		}
 	}
 
@@ -1350,6 +1581,13 @@ focus_tree = {
 		completion_reward = {
 			
 		}
+		
+		#only available if no oopsie - only for the political branch
+		allow_branch = {
+			NOT = {
+				has_country_flag = ZEX_MGY_Civil_War_Triggered
+			}
+		}
 	}
 
 	#
@@ -1392,6 +1630,13 @@ focus_tree = {
 		completion_reward = {
 			
 		}
+		
+		#only available if no oopsie - only for the political branch
+		allow_branch = {
+			NOT = {
+				has_country_flag = ZEX_MGY_Civil_War_Triggered
+			}
+		}
 	}
 
 	focus = { # Choose a Zebrican Vizier
@@ -1429,6 +1674,13 @@ focus_tree = {
 
 		completion_reward = {
 			
+		}
+		
+		#only available if no oopsie - only for the political branch
+		allow_branch = {
+			NOT = {
+				has_country_flag = ZEX_MGY_Civil_War_Triggered
+			}
 		}
 	}
 
@@ -1468,6 +1720,13 @@ focus_tree = {
 		completion_reward = {
 			
 		}
+		
+		#only available if no oopsie - only for the political branch
+		allow_branch = {
+			NOT = {
+				has_country_flag = ZEX_MGY_Civil_War_Triggered
+			}
+		}
 	}
 
 	focus = { # Choose a LOyalist Vizier
@@ -1506,6 +1765,13 @@ focus_tree = {
 		completion_reward = {
 			
 		}
+		
+		#only available if no oopsie - only for the political branch
+		allow_branch = {
+			NOT = {
+				has_country_flag = ZEX_MGY_Civil_War_Triggered
+			}
+		}
 	}
 
 	focus = { # Push Zebrican Loyalty
@@ -1541,6 +1807,13 @@ focus_tree = {
 		completion_reward = {
 			
 		}
+		
+		#only available if no oopsie - only for the political branch
+		allow_branch = {
+			NOT = {
+				has_country_flag = ZEX_MGY_Civil_War_Triggered
+			}
+		}
 	}
 
 	focus = { # Push Zebrican Loyalty
@@ -1575,6 +1848,13 @@ focus_tree = {
 
 		completion_reward = {
 			
+		}
+		
+		#only available if no oopsie - only for the political branch
+		allow_branch = {
+			NOT = {
+				has_country_flag = ZEX_MGY_Civil_War_Triggered
+			}
 		}
 	}
 
@@ -1613,6 +1893,13 @@ focus_tree = {
 		completion_reward = {
 			
 		}
+		
+		#only available if no oopsie - only for the political branch
+		allow_branch = {
+			NOT = {
+				has_country_flag = ZEX_MGY_Civil_War_Triggered
+			}
+		}
 	}
 
 	focus = { # Petition Somnabmula
@@ -1647,6 +1934,13 @@ focus_tree = {
 
 		completion_reward = {
 			
+		}
+		
+		#only available if no oopsie - only for the political branch
+		allow_branch = {
+			NOT = {
+				has_country_flag = ZEX_MGY_Civil_War_Triggered
+			}
 		}
 	}
 
@@ -1683,6 +1977,13 @@ focus_tree = {
 		completion_reward = {
 			
 		}
+		
+		#only available if no oopsie - only for the political branch
+		allow_branch = {
+			NOT = {
+				has_country_flag = ZEX_MGY_Civil_War_Triggered
+			}
+		}
 	}
 
 	focus = { # Rally the Royalists
@@ -1718,6 +2019,13 @@ focus_tree = {
 
 		completion_reward = {
 			
+		}
+		
+		#only available if no oopsie - only for the political branch
+		allow_branch = {
+			NOT = {
+				has_country_flag = ZEX_MGY_Civil_War_Triggered
+			}
 		}
 	}
 
@@ -1757,6 +2065,13 @@ focus_tree = {
 
 		completion_reward = {
 			
+		}
+		
+		#only available if no oopsie - only for the political branch
+		allow_branch = {
+			NOT = {
+				has_country_flag = ZEX_MGY_Civil_War_Triggered
+			}
 		}
 	}
 
@@ -2813,6 +3128,1348 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = ZEX_Goal_Alwani_Integration_Merge_Administration
+		}
+		mutually_exclusive = {
+		}
+		#Triggers
+		available = {
+			
+		}
+
+		#Effects
+		select_effect = {
+			
+		}
+
+		cancel_effect = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	####################################
+	##       ECONOMY BRANCH           ##
+	####################################
+
+	focus = { # Year of the Locust
+		id = ZEX_Goal_MGY_ECONOMY_Year_of_The_Locust
+		icon = GFX_ZEX_Goal_MGY_ECONOMY_Year_of_The_Locust
+
+		relative_position_id = ZEX_Goal_Maregyptian_Sphere_Our_Domain
+		x = -35
+		y = 1
+
+		offset = {
+			x = 0
+			y = 0
+			trigger = {
+				has_country_flag = ZEX_MGY_Civil_War_Triggered
+			}
+		}
+
+		cost = 3
+
+		#Prerequisites
+		prerequisite = {
+			
+		}
+		prerequisite = {
+			
+		}
+		mutually_exclusive = {
+		}
+		#Triggers
+		available = {
+			
+		}
+
+		#Effects
+		select_effect = {
+			
+		}
+
+		cancel_effect = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	#
+	# Debt Sub-Branch
+	#
+
+	focus = { # Embrace Austerity
+		id = ZEX_Goal_MGY_ECONOMY_Austerity
+		icon = GFX_ZEX_Goal_MGY_ECONOMY_Austerity
+
+		relative_position_id = ZEX_Goal_MGY_ECONOMY_Year_of_The_Locust
+		x = 6
+		y = 1
+		cost = 3
+
+		#Prerequisites
+		prerequisite = {
+			focus = ZEX_Goal_MGY_ECONOMY_Year_of_The_Locust
+		}
+		prerequisite = {
+			
+		}
+		mutually_exclusive = {
+			focus = ZEX_Goal_MGY_ECONOMY_Debt_Default
+		}
+		#Triggers
+		available = {
+			
+		}
+
+		#Effects
+		select_effect = {
+			
+		}
+
+		cancel_effect = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = { # Default
+		id = ZEX_Goal_MGY_ECONOMY_Debt_Default
+		icon = GFX_ZEX_Goal_MGY_ECONOMY_Debt_Default
+
+		relative_position_id = ZEX_Goal_MGY_ECONOMY_Year_of_The_Locust
+		x = 3
+		y = 1
+
+		cost = 3
+
+		#Prerequisites
+		prerequisite = {
+			focus = ZEX_Goal_MGY_ECONOMY_Year_of_The_Locust
+		}
+		prerequisite = {
+			
+		}
+		mutually_exclusive = {
+			focus = ZEX_Goal_MGY_ECONOMY_Austerity
+		}
+		#Triggers
+		available = {
+			
+		}
+
+		#Effects
+		select_effect = {
+			
+		}
+
+		cancel_effect = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = { # Bank of Maregypt
+		id = ZEX_Goal_MGY_ECONOMY_Bank_Maregypt
+		icon = GFX_ZEX_Goal_MGY_ECONOMY_Bank_Maregypt
+
+		relative_position_id = ZEX_Goal_MGY_ECONOMY_Year_of_The_Locust
+		x = 5
+		y = 2
+
+		cost = 3
+
+		#Prerequisites
+		prerequisite = {
+			focus = ZEX_Goal_MGY_ECONOMY_Debt_Default
+			focus = ZEX_Goal_MGY_ECONOMY_Austerity
+		}
+		prerequisite = {
+			
+		}
+		mutually_exclusive = {
+		}
+		#Triggers
+		available = {
+			
+		}
+
+		#Effects
+		select_effect = {
+			
+		}
+
+		cancel_effect = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = { # Seell off assets
+		id = ZEX_Goal_MGY_ECONOMY_Dissolve_Assets
+		icon = GFX_ZEX_Goal_MGY_ECONOMY_Dissolve_Assets
+
+		relative_position_id = ZEX_Goal_MGY_ECONOMY_Year_of_The_Locust
+		x = 9
+		y = 2
+
+		cost = 3
+
+		#Prerequisites
+		prerequisite = {
+			focus = ZEX_Goal_MGY_ECONOMY_Austerity
+		}
+		prerequisite = {
+			
+		}
+		mutually_exclusive = {
+		}
+		#Triggers
+		available = {
+			
+		}
+
+		#Effects
+		select_effect = {
+			
+		}
+
+		cancel_effect = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = { # Dealue deneb
+		id = ZEX_Goal_MGY_ECONOMY_Devalue_Deneb
+		icon = GFX_ZEX_Goal_MGY_ECONOMY_Devalue_Deneb
+
+		relative_position_id = ZEX_Goal_MGY_ECONOMY_Year_of_The_Locust
+		x = 7
+		y = 2
+
+		cost = 3
+
+		#Prerequisites
+		prerequisite = {
+			focus = ZEX_Goal_MGY_ECONOMY_Austerity
+		}
+		prerequisite = {
+			
+		}
+		mutually_exclusive = {
+		}
+		#Triggers
+		available = {
+			
+		}
+
+		#Effects
+		select_effect = {
+			
+		}
+
+		cancel_effect = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = { # R>eopen Banks
+		id = ZEX_Goal_MGY_ECONOMY_Open_Market
+		icon = GFX_ZEX_Goal_MGY_ECONOMY_Open_Market
+
+		relative_position_id = ZEX_Goal_MGY_ECONOMY_Year_of_The_Locust
+		x = 8
+		y = 3
+
+		cost = 3
+
+		#Prerequisites
+		prerequisite = {
+			focus = ZEX_Goal_MGY_ECONOMY_Devalue_Deneb
+		}
+		prerequisite = {
+			focus = ZEX_Goal_MGY_ECONOMY_Dissolve_Assets
+		}
+		mutually_exclusive = {
+		}
+		#Triggers
+		available = {
+			
+		}
+
+		#Effects
+		select_effect = {
+			
+		}
+
+		cancel_effect = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = { # Nationalise foreign assets
+		id = ZEX_Goal_MGY_ECONOMY_Naitonalise_Foreign_Businesses
+		icon = GFX_ZEX_Goal_MGY_ECONOMY_Naitonalise_Foreign_Businesses
+
+		relative_position_id = ZEX_Goal_MGY_ECONOMY_Year_of_The_Locust
+		x = 3
+		y = 3
+
+		cost = 3
+
+		#Prerequisites
+		prerequisite = {
+			focus = ZEX_Goal_MGY_ECONOMY_Debt_Default
+		}
+		prerequisite = {
+			focus = ZEX_Goal_MGY_ECONOMY_Bank_Maregypt
+		}
+		mutually_exclusive = {
+		}
+		#Triggers
+		available = {
+			
+		}
+
+		#Effects
+		select_effect = {
+			
+		}
+
+		cancel_effect = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = { # 
+		id = ZEX_Goal_MGY_ECONOMY_Economic_Stability
+		icon = GFX_ZEX_Goal_MGY_ECONOMY_Economic_Stability
+
+		relative_position_id = ZEX_Goal_MGY_ECONOMY_Year_of_The_Locust
+		x = 5
+		y = 4
+
+		cost = 3
+
+		#Prerequisites
+		prerequisite = {
+			focus = ZEX_Goal_MGY_ECONOMY_Bank_Maregypt
+		}
+		prerequisite = {
+			
+		}
+		mutually_exclusive = {
+		}
+		#Triggers
+		available = {
+			
+		}
+
+		#Effects
+		select_effect = {
+			
+		}
+
+		cancel_effect = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = ZEX_Goal_MGY_ECONOMY_Import_tractors
+		icon = GFX_ZEX_Goal_MGY_ECONOMY_Import_tractors
+
+		relative_position_id = ZEX_Goal_MGY_ECONOMY_Year_of_The_Locust
+		x = 0
+		y = 1
+
+		cost = 3
+
+		#Prerequisites
+		prerequisite = {
+			focus = ZEX_Goal_MGY_ECONOMY_Year_of_The_Locust
+		}
+		prerequisite = {
+			
+		}
+		mutually_exclusive = {
+		}
+		#Triggers
+		available = {
+			
+		}
+
+		#Effects
+		select_effect = {
+			
+		}
+
+		cancel_effect = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = ZEX_Goal_MGY_ECONOMY_Economic_Modernisation
+		icon = GFX_ZEX_Goal_MGY_ECONOMY_Economic_Modernisation
+
+		relative_position_id = ZEX_Goal_MGY_ECONOMY_Year_of_The_Locust
+		x = -4
+		y = 1
+
+		cost = 3
+
+		#Prerequisites
+		prerequisite = {
+			focus = ZEX_Goal_MGY_ECONOMY_Year_of_The_Locust
+		}
+		prerequisite = {
+			
+		}
+		mutually_exclusive = {
+		}
+		#Triggers
+		available = {
+			
+		}
+
+		#Effects
+		select_effect = {
+			
+		}
+
+		cancel_effect = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = { # Reform the Breadbasket
+		id = ZEX_Goal_MGY_ECONOMY_Reform_breadbasket
+		icon = GFX_ZEX_Goal_MGY_ECONOMY_Reform_breadbasket
+
+		relative_position_id = ZEX_Goal_MGY_ECONOMY_Year_of_The_Locust
+		x = -2
+		y = 2
+
+		cost = 3
+
+		#Prerequisites
+		prerequisite = {
+			focus = ZEX_Goal_MGY_ECONOMY_Import_tractors
+		}
+		prerequisite = {
+			focus = ZEX_Goal_MGY_ECONOMY_Economic_Modernisation
+		}
+		mutually_exclusive = {
+		}
+		#Triggers
+		available = {
+			
+		}
+
+		#Effects
+		select_effect = {
+			
+		}
+
+		cancel_effect = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = ZEX_Goal_MGY_ECONOMY_Modern_Agrarian
+		icon = GFX_ZEX_Goal_MGY_ECONOMY_Modern_Agrarian
+
+		relative_position_id = ZEX_Goal_MGY_ECONOMY_Year_of_The_Locust
+		x = 0
+		y = 3
+
+		cost = 3
+
+		#Prerequisites
+		prerequisite = {
+			focus = ZEX_Goal_MGY_ECONOMY_Import_tractors
+		}
+		prerequisite = {
+			
+		}
+		mutually_exclusive = {
+			focus = ZEX_Goal_MGY_ECONOMY_Economic_Modernisation
+		}
+		#Triggers
+		available = {
+			
+		}
+
+		#Effects
+		select_effect = {
+			
+		}
+
+		cancel_effect = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = ZEX_Goal_MGY_ECONOMY_Continue_Industrial_Investments
+		icon = GFX_ZEX_Goal_MGY_ECONOMY_Continue_Industrial_Investments
+
+		relative_position_id = ZEX_Goal_MGY_ECONOMY_Year_of_The_Locust
+		x = -4
+		y = 3
+
+		cost = 3
+
+		#Prerequisites
+		prerequisite = {
+			focus = ZEX_Goal_MGY_ECONOMY_Economic_Modernisation
+		}
+		prerequisite = {
+			
+		}
+		mutually_exclusive = {
+			focus = ZEX_Goal_MGY_ECONOMY_Modern_Agrarian
+		}
+		#Triggers
+		available = {
+			
+		}
+
+		#Effects
+		select_effect = {
+			
+		}
+
+		cancel_effect = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = ZEX_Goal_MGY_ECONOMY_Build_Rails
+		icon = GFX_ZEX_Goal_MGY_ECONOMY_Build_Rails
+
+		relative_position_id = ZEX_Goal_MGY_ECONOMY_Year_of_The_Locust
+		x = -2
+		y = 4
+
+		cost = 3
+
+		#Prerequisites
+		prerequisite = {
+			focus = ZEX_Goal_MGY_ECONOMY_Continue_Industrial_Investments
+			focus = ZEX_Goal_MGY_ECONOMY_Modern_Agrarian
+		}
+		prerequisite = {
+			
+		}
+		mutually_exclusive = {
+		}
+		#Triggers
+		available = {
+			
+		}
+
+		#Effects
+		select_effect = {
+			
+		}
+
+		cancel_effect = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = ZEX_Goal_MGY_ECONOMY_Rural_Infrastructure
+		icon = GFX_ZEX_Goal_MGY_ECONOMY_Rural_Infrastructure
+
+		relative_position_id = ZEX_Goal_MGY_ECONOMY_Year_of_The_Locust
+		x = 0
+		y = 5
+
+		cost = 3
+
+		#Prerequisites
+		prerequisite = {
+			focus = ZEX_Goal_MGY_ECONOMY_Modern_Agrarian
+		}
+		prerequisite = {
+			
+		}
+		mutually_exclusive = {
+		}
+		#Triggers
+		available = {
+			
+		}
+
+		#Effects
+		select_effect = {
+			
+		}
+
+		cancel_effect = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = ZEX_Goal_MGY_ECONOMY_Rescue_Farmers
+		icon = GFX_ZEX_Goal_MGY_ECONOMY_Rescue_Farmers
+
+		relative_position_id = ZEX_Goal_MGY_ECONOMY_Year_of_The_Locust
+		x = 2
+		y = 5
+
+		cost = 3
+
+		#Prerequisites
+		prerequisite = {
+			focus = ZEX_Goal_MGY_ECONOMY_Modern_Agrarian
+		}
+		prerequisite = {
+			
+		}
+		mutually_exclusive = {
+		}
+		#Triggers
+		available = {
+			
+		}
+
+		#Effects
+		select_effect = {
+			
+		}
+
+		cancel_effect = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = ZEX_Goal_MGY_ECONOMY_Agrarian_Communities
+		icon = GFX_ZEX_Goal_MGY_ECONOMY_Agrarian_Communities
+
+		relative_position_id = ZEX_Goal_MGY_ECONOMY_Year_of_The_Locust
+		x = 2
+		y = 7
+
+		cost = 3
+
+		#Prerequisites
+		prerequisite = {
+			focus = ZEX_Goal_MGY_ECONOMY_Rescue_Farmers
+		}
+		prerequisite = {
+			focus = ZEX_Goal_MGY_ECONOMY_Drain_Swamps
+		}
+		mutually_exclusive = {
+		}
+		#Triggers
+		available = {
+			
+		}
+
+		#Effects
+		select_effect = {
+			
+		}
+
+		cancel_effect = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = ZEX_Goal_MGY_ECONOMY_Drain_Swamps
+		icon = GFX_ZEX_Goal_MGY_ECONOMY_Drain_Swamps
+
+		relative_position_id = ZEX_Goal_MGY_ECONOMY_Year_of_The_Locust
+		x = 0
+		y = 6
+
+		cost = 3
+
+		#Prerequisites
+		prerequisite = {
+			focus = ZEX_Goal_MGY_ECONOMY_Rural_Infrastructure
+		}
+		prerequisite = {
+			
+		}
+		mutually_exclusive = {
+		}
+		#Triggers
+		available = {
+			
+		}
+
+		#Effects
+		select_effect = {
+			
+		}
+
+		cancel_effect = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = ZEX_Goal_MGY_ECONOMY_Internal_Market
+		icon = GFX_ZEX_Goal_MGY_ECONOMY_Internal_Market
+
+		relative_position_id = ZEX_Goal_MGY_ECONOMY_Year_of_The_Locust
+		x = 4
+		y = 6
+
+		cost = 3
+
+		#Prerequisites
+		prerequisite = {
+			focus = ZEX_Goal_MGY_ECONOMY_Rescue_Farmers
+		}
+		prerequisite = {
+			
+		}
+		mutually_exclusive = {
+		}
+		#Triggers
+		available = {
+			
+		}
+
+		#Effects
+		select_effect = {
+			
+		}
+
+		cancel_effect = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = ZEX_Goal_MGY_ECONOMY_Finance_the_guilds
+		icon = GFX_ZEX_Goal_MGY_ECONOMY_Finance_the_guilds
+
+		relative_position_id = ZEX_Goal_MGY_ECONOMY_Year_of_The_Locust
+		x = 4
+		y = 7
+
+		cost = 3
+
+		#Prerequisites
+		prerequisite = {
+			focus = ZEX_Goal_MGY_ECONOMY_Internal_Market
+		}
+		prerequisite = {
+			
+		}
+		mutually_exclusive = {
+		}
+		#Triggers
+		available = {
+			
+		}
+
+		#Effects
+		select_effect = {
+			
+		}
+
+		cancel_effect = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = ZEX_Goal_MGY_ECONOMY_Heavy_Industry_Development
+		icon = GFX_ZEX_Goal_MGY_ECONOMY_Heavy_Industry_Development
+
+		relative_position_id = ZEX_Goal_MGY_ECONOMY_Year_of_The_Locust
+		x = -4
+		y = 5
+
+		cost = 3
+
+		#Prerequisites
+		prerequisite = {
+			focus = ZEX_Goal_MGY_ECONOMY_Continue_Industrial_Investments
+		}
+		prerequisite = {
+			
+		}
+		mutually_exclusive = {
+		}
+		#Triggers
+		available = {
+			
+		}
+
+		#Effects
+		select_effect = {
+			
+		}
+
+		cancel_effect = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = ZEX_Goal_MGY_ECONOMY_Maregyptian_Miracle
+		icon = GFX_ZEX_Goal_MGY_ECONOMY_Maregyptian_Miracle
+
+		relative_position_id = ZEX_Goal_MGY_ECONOMY_Year_of_The_Locust
+		x = -2
+		y = 6
+
+		cost = 3
+
+		#Prerequisites
+		prerequisite = {
+			focus = ZEX_Goal_MGY_ECONOMY_Heavy_Industry_Development
+			focus = ZEX_Goal_MGY_ECONOMY_Rural_Infrastructure
+		}
+		prerequisite = {
+			focus = ZEX_Goal_MGY_ECONOMY_Build_Rails
+		}
+		mutually_exclusive = {
+		}
+		#Triggers
+		available = {
+			
+		}
+
+		#Effects
+		select_effect = {
+			
+		}
+
+		cancel_effect = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = ZEX_Goal_MGY_ECONOMY_Cement_Industry
+		icon = GFX_ZEX_Goal_MGY_ECONOMY_Cement_Industry
+
+		relative_position_id = ZEX_Goal_MGY_ECONOMY_Year_of_The_Locust
+		x = -4
+		y = 6
+
+		cost = 3
+
+		#Prerequisites
+		prerequisite = {
+			focus = ZEX_Goal_MGY_ECONOMY_Heavy_Industry_Development
+		}
+		prerequisite = {
+		}
+		mutually_exclusive = {
+		}
+		#Triggers
+		available = {
+			
+		}
+
+		#Effects
+		select_effect = {
+			
+		}
+
+		cancel_effect = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = ZEX_Goal_MGY_ECONOMY_Steelworks
+		icon = GFX_ZEX_Goal_MGY_ECONOMY_Steelworks
+
+		relative_position_id = ZEX_Goal_MGY_ECONOMY_Year_of_The_Locust
+		x = -6
+		y = 5
+
+		cost = 3
+
+		#Prerequisites
+		prerequisite = {
+			focus = ZEX_Goal_MGY_ECONOMY_Continue_Industrial_Investments
+		}
+		prerequisite = {
+		}
+		mutually_exclusive = {
+		}
+		#Triggers
+		available = {
+			
+		}
+
+		#Effects
+		select_effect = {
+			
+		}
+
+		cancel_effect = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = ZEX_Goal_MGY_ECONOMY_Wealth_of_Sands
+		icon = GFX_ZEX_Goal_MGY_ECONOMY_Wealth_of_Sands
+
+		relative_position_id = ZEX_Goal_MGY_ECONOMY_Year_of_The_Locust
+		x = -6
+		y = 7
+
+		cost = 3
+
+		#Prerequisites
+		prerequisite = {
+			focus = ZEX_Goal_MGY_ECONOMY_Steelworks
+		}
+		prerequisite = {
+			focus = ZEX_Goal_MGY_ECONOMY_Cement_Industry
+		}
+		mutually_exclusive = {
+		}
+		#Triggers
+		available = {
+			
+		}
+
+		#Effects
+		select_effect = {
+			
+		}
+
+		cancel_effect = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = ZEX_Goal_MGY_ECONOMY_Great_Shipyards
+		icon = GFX_ZEX_Goal_MGY_ECONOMY_Great_Shipyards
+
+		relative_position_id = ZEX_Goal_MGY_ECONOMY_Year_of_The_Locust
+		x = -8
+		y = 6
+
+		cost = 3
+
+		#Prerequisites
+		prerequisite = {
+			focus = ZEX_Goal_MGY_ECONOMY_Steelworks
+		}
+		prerequisite = {
+		}
+		mutually_exclusive = {
+		}
+		#Triggers
+		available = {
+			
+		}
+
+		#Effects
+		select_effect = {
+			
+		}
+
+		cancel_effect = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = ZEX_Goal_MGY_ECONOMY_Naitonalise_Companies
+		icon = GFX_ZEX_Goal_MGY_ECONOMY_Naitonalise_Companies
+
+		relative_position_id = ZEX_Goal_MGY_ECONOMY_Year_of_The_Locust
+		x = -8
+		y = 7
+
+		cost = 3
+
+		#Prerequisites
+		prerequisite = {
+			focus = ZEX_Goal_MGY_ECONOMY_Great_Shipyards
+		}
+		prerequisite = {
+		}
+		mutually_exclusive = {
+		}
+		#Triggers
+		available = {
+			
+		}
+
+		#Effects
+		select_effect = {
+			
+		}
+
+		cancel_effect = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = ZEX_Goal_MGY_ECONOMY_Electrification_Efforts
+		icon = GFX_ZEX_Goal_MGY_ECONOMY_Electrification_Efforts
+
+		relative_position_id = ZEX_Goal_MGY_ECONOMY_Year_of_The_Locust
+		x = -8
+		y = 1
+
+		cost = 3
+
+		#Prerequisites
+		prerequisite = {
+			focus = ZEX_Goal_MGY_ECONOMY_Year_of_The_Locust
+		}
+		prerequisite = {
+		}
+		mutually_exclusive = {
+		}
+		#Triggers
+		available = {
+			
+		}
+
+		#Effects
+		select_effect = {
+			
+		}
+
+		cancel_effect = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = ZEX_Goal_MGY_ECONOMY_Experimental_Research
+		icon = GFX_ZEX_Goal_MGY_ECONOMY_Experimental_Research
+
+		relative_position_id = ZEX_Goal_MGY_ECONOMY_Year_of_The_Locust
+		x = -6
+		y = 2
+
+		cost = 3
+
+		#Prerequisites
+		prerequisite = {
+			focus = ZEX_Goal_MGY_ECONOMY_Electrification_Efforts
+		}
+		prerequisite = {
+		}
+		mutually_exclusive = {
+		}
+		#Triggers
+		available = {
+			
+		}
+
+		#Effects
+		select_effect = {
+			
+		}
+
+		cancel_effect = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = ZEX_Goal_MGY_ECONOMY_Litteracy_Campaigns
+		icon = GFX_ZEX_Goal_MGY_ECONOMY_Litteracy_Campaigns
+
+		relative_position_id = ZEX_Goal_MGY_ECONOMY_Year_of_The_Locust
+		x = -8
+		y = 3
+
+		cost = 3
+
+		#Prerequisites
+		prerequisite = {
+			focus = ZEX_Goal_MGY_ECONOMY_Electrification_Efforts
+		}
+		prerequisite = {
+		}
+		mutually_exclusive = {
+		}
+		#Triggers
+		available = {
+			
+		}
+
+		#Effects
+		select_effect = {
+			
+		}
+
+		cancel_effect = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = ZEX_Goal_MGY_ECONOMY_Renovate_University
+		icon = GFX_ZEX_Goal_MGY_ECONOMY_Renovate_University
+
+		relative_position_id = ZEX_Goal_MGY_ECONOMY_Year_of_The_Locust
+		x = -10
+		y = 2
+
+		cost = 3
+
+		#Prerequisites
+		prerequisite = {
+			focus = ZEX_Goal_MGY_ECONOMY_Electrification_Efforts
+		}
+		prerequisite = {
+		}
+		mutually_exclusive = {
+		}
+		#Triggers
+		available = {
+			
+		}
+
+		#Effects
+		select_effect = {
+			
+		}
+
+		cancel_effect = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = ZEX_Goal_MGY_ECONOMY_Radio_on_The_Neighle
+		icon = GFX_ZEX_Goal_MGY_ECONOMY_Radio_on_The_Neighle
+
+		relative_position_id = ZEX_Goal_MGY_ECONOMY_Year_of_The_Locust
+		x = -12
+		y = 2
+
+		cost = 3
+
+		#Prerequisites
+		prerequisite = {
+			focus = ZEX_Goal_MGY_ECONOMY_Electrification_Efforts
+		}
+		prerequisite = {
+		}
+		mutually_exclusive = {
+		}
+		#Triggers
+		available = {
+			
+		}
+
+		#Effects
+		select_effect = {
+			
+		}
+
+		cancel_effect = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = ZEX_Goal_MGY_ECONOMY_Enineering_Program
+		icon = GFX_ZEX_Goal_MGY_ECONOMY_Enineering_Program
+
+		relative_position_id = ZEX_Goal_MGY_ECONOMY_Year_of_The_Locust
+		x = -10
+		y = 4
+
+		cost = 3
+
+		#Prerequisites
+		prerequisite = {
+			focus = ZEX_Goal_MGY_ECONOMY_Renovate_University
+		}
+		prerequisite = {
+			focus = ZEX_Goal_MGY_ECONOMY_Litteracy_Campaigns
+		}
+		mutually_exclusive = {
+		}
+		#Triggers
+		available = {
+			
+		}
+
+		#Effects
+		select_effect = {
+			
+		}
+
+		cancel_effect = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = ZEX_Goal_MGY_ECONOMY_Special_Project
+		icon = GFX_ZEX_Goal_MGY_ECONOMY_Special_Project
+
+		relative_position_id = ZEX_Goal_MGY_ECONOMY_Year_of_The_Locust
+		x = -10
+		y = 5
+
+		cost = 3
+
+		#Prerequisites
+		prerequisite = {
+			focus = ZEX_Goal_MGY_ECONOMY_Enineering_Program
+		}
+		prerequisite = {
 		}
 		mutually_exclusive = {
 		}
