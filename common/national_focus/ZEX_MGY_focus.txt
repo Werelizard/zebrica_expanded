@@ -490,7 +490,7 @@ focus_tree = {
 
 	focus = { #Peace in the Realm
 		id = ZEX_Goal_Pacify_the_Realm
-		icon = GFX_ZEX_Pacify_the_Realm
+		icon = GFX_ZEX_Goal_Pacify_the_Realm
 
 		relative_position_id = ZEX_Goal_King_Speech
 		x = -6
@@ -2533,7 +2533,7 @@ focus_tree = {
 	}
 
 
-	focus = { # Harmony Can't Fatt
+	focus = { # Harmony Can't Fall
 		id = ZEX_Goal_Maregyptian_Sphere_Support_Hip_Harmony
 		icon = GFX_ZEX_Goal_Maregyptian_Sphere_Support_Hip_Harmony
 
@@ -2748,121 +2748,6 @@ focus_tree = {
 		}
 		mutually_exclusive = {
 			focus = ZEX_Goal_Maregyptian_Sphere_Hippogriff_Exiles
-		}
-		#Triggers
-		available = {
-			
-		}
-
-		#Effects
-		select_effect = {
-			
-		}
-
-		cancel_effect = {
-			
-		}
-
-		completion_reward = {
-			
-		}
-	}
-
-	focus = { # Denonunce Hippogrifian Communism
-		id = ZEX_Goal_Maregyptian_Sphere_Denounce_hip_Communism
-		icon = GFX_ZEX_Goal_Maregyptian_Sphere_Denounce_hip_Communism
-
-		relative_position_id = ZEX_Goal_Maregyptian_Sphere_Coming_Storm
-		x = 7
-		y = 1
-
-		cost = 3
-
-		#Prerequisites
-		prerequisite = {
-			focus = ZEX_Goal_Maregyptian_Sphere_Coming_Storm
-		}
-		prerequisite = {
-			
-		}
-		mutually_exclusive = {
-		}
-		#Triggers
-		available = {
-			
-		}
-
-		#Effects
-		select_effect = {
-			
-		}
-
-		cancel_effect = {
-			
-		}
-
-		completion_reward = {
-			
-		}
-	}
-
-	focus = { # Denonunce Hippogrifian Communism
-		id = ZEX_Goal_Maregyptian_Sphere_Anti_Marksist_Pact
-		icon = GFX_ZEX_Goal_Maregyptian_Sphere_Anti_Marksist_Pact
-
-		relative_position_id = ZEX_Goal_Maregyptian_Sphere_Coming_Storm
-		x = 7
-		y = 4
-
-		cost = 3
-
-		#Prerequisites
-		prerequisite = {
-			focus = ZEX_Goal_Maregyptian_Sphere_Denounce_hip_Communism
-			focus = ZEX_Goal_Maregyptian_Sphere_Colthaginian_Reapprochment
-		}
-		prerequisite = {
-			
-		}
-		mutually_exclusive = {
-		}
-		#Triggers
-		available = {
-			
-		}
-
-		#Effects
-		select_effect = {
-			
-		}
-
-		cancel_effect = {
-			
-		}
-
-		completion_reward = {
-			
-		}
-	}
-
-	focus = { # Denonunce Hippogrifian Communism
-		id = ZEX_Goal_Maregyptian_Sphere_Zebrican_Protectorates
-		icon = GFX_ZEX_Goal_Maregyptian_Sphere_Zebrican_Protectorates
-
-		relative_position_id = ZEX_Goal_Maregyptian_Sphere_Our_Domain
-		x = 2
-		y = 6
-
-		cost = 3
-
-		#Prerequisites
-		prerequisite = {
-			focus = ZEX_Goal_Maregyptian_Sphere_Commission_New_navy
-		}
-		prerequisite = {
-			focus = ZEX_Goal_Maregyptian_Sphere_The_Beetle_Rises
-		}
-		mutually_exclusive = {
 		}
 		#Triggers
 		available = {
@@ -3396,7 +3281,7 @@ focus_tree = {
 		}
 	}
 
-	focus = { # R>eopen Banks
+	focus = { # Reopen Banks
 		id = ZEX_Goal_MGY_ECONOMY_Open_Market
 		icon = GFX_ZEX_Goal_MGY_ECONOMY_Open_Market
 
