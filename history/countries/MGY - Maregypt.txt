@@ -250,10 +250,7 @@ ZEX_activate_republican_agitation = yes
 ZEX_MGY_DEBTS_ENABLED_TOOLTIP = yes
 
 #Enable Viziers
-set_country_flag = zex_mgy_vizier_enabled_flag
-add_dynamic_modifier = {
-	modifier = ZEX_MGY_no_vizier_impact_dynmod
-}
+ZEX_MGY_Enable_Vizier_SETUP = yes
 
 #At the start, king Khefer is the leader for the unaligned as well
 create_country_leader = {
@@ -303,11 +300,10 @@ set_politics = {
 # Ideas
 
 add_ideas = {
+	ZEX_MGY_Breadbasket
 	ZEX_Unfinished_Constitution
 	ZEX_MGY_Equestrian_Debts
-	ZEX_MGY_Breadbasket
 	ZEX_MGY_REPUBLICAN_AGITATION_IDEA
-	ZEX_MGY_VIZIER_OFFICE_VIZIER_STRONG
 	##Viziers
 	ZEX_MGY_Shaa_Doof_idea
 }

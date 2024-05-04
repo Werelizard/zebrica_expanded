@@ -1,0 +1,205 @@
+#
+# Various Vizier effects
+#
+
+#Setup / Recalculate the variable and upadte modifier
+
+ZEX_MGY_Enable_Vizier = {
+	set_variable = {
+		ZEX_MGY_vizier_King_Balance = 0
+	}
+	ZEX_MGY_UPDATE_VIZIER_KING_VARIABLE = yes
+	set_country_flag = zex_mgy_vizier_enabled_flag
+	if = {
+		limit = {
+			NOT = {
+				has_idea = ZEX_MGY_VIZIER_OFFICE
+			}
+		}
+		add_ideas = ZEX_MGY_VIZIER_OFFICE
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_dynamic_modifier = {
+					modifier = ZEX_MGY_no_vizier_impact_dynmod
+				}
+			}
+		}
+		add_dynamic_modifier = {
+			modifier = ZEX_MGY_no_vizier_impact_dynmod
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_dynamic_modifier = {
+					modifier = ZEX_MGY_vizier_balance_dynmod
+				}
+			}
+		}
+		add_dynamic_modifier = {
+			modifier = ZEX_MGY_vizier_balance_dynmod
+		}
+	}
+}
+
+ZEX_MGY_Enable_Vizier_SETUP = {
+	add_dynamic_modifier = {
+		modifier = ZEX_MGY_vizier_balance_dynmod
+	}
+	set_variable = {
+		ZEX_MGY_vizier_King_Balance = -60
+	}
+	ZEX_MGY_UPDATE_VIZIER_KING_VARIABLE = yes
+	set_country_flag = zex_mgy_vizier_enabled_flag
+	if = {
+		limit = {
+			NOT = {
+				has_idea = ZEX_MGY_VIZIER_OFFICE
+			}
+		}
+		add_ideas = ZEX_MGY_VIZIER_OFFICE
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_dynamic_modifier = {
+					modifier = ZEX_MGY_no_vizier_impact_dynmod
+				}
+			}
+		}
+		add_dynamic_modifier = {
+			modifier = ZEX_MGY_no_vizier_impact_dynmod
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_dynamic_modifier = {
+					modifier = ZEX_MGY_vizier_balance_dynmod
+				}
+			}
+		}
+		add_dynamic_modifier = {
+			modifier = ZEX_MGY_vizier_balance_dynmod
+		}
+	}
+}
+
+ZEX_MGY_UPDATE_VIZIER_KING_VARIABLE = {
+	clamp_variable = {
+		var = ZEX_MGY_vizier_King_Balance
+		min = -100
+		max = 100
+	}
+	set_variable = {
+		ZEX_MGY_VIZIER_INFLUENCE_20 = ZEX_MGY_vizier_King_Balance
+	}
+	multiply_variable = {
+		var = ZEX_MGY_VIZIER_INFLUENCE_20
+		value = 2
+	}
+	divide_variable = {
+		var = ZEX_MGY_VIZIER_INFLUENCE_20
+		value = 1000
+	}
+	set_variable = {
+		ZEX_MGY_VIZIER_INFLUENCE_15 = ZEX_MGY_vizier_King_Balance
+	}
+	multiply_variable = {
+		var = ZEX_MGY_VIZIER_INFLUENCE_15
+		value = 1.5
+	}
+	divide_variable = {
+		var = ZEX_MGY_VIZIER_INFLUENCE_15
+		value = 1000
+	}
+	set_variable = {
+		ZEX_MGY_VIZIER_INFLUENCE_NEGATIVE_15 = ZEX_MGY_vizier_King_Balance
+	}
+	multiply_variable = {
+		var = ZEX_MGY_VIZIER_INFLUENCE_NEGATIVE_15
+		value = -2.5
+	}
+	divide_variable = {
+		var = ZEX_MGY_VIZIER_INFLUENCE_NEGATIVE_15
+		value = 1000
+	}
+	#absolute display
+	set_variable = {
+		ZEX_MGY_vizier_King_Balance_DISPLAY = ZEX_MGY_vizier_King_Balance
+	}
+	if = {
+		limit = {
+			check_variable = {
+				ZEX_MGY_vizier_King_Balance < 0
+			}
+		}
+		multiply_variable = {
+			ZEX_MGY_vizier_King_Balance_DISPLAY = -1
+		}
+	}
+}
+
+# Grow / Lower king's influence
+
+ZEX_MGY_LOWER_KING_INFLUENCE_40 = {
+	hidden_effect = {
+		subtract_from_variable = {
+			ZEX_MGY_vizier_King_Balance = 40
+		}
+		ZEX_MGY_UPDATE_VIZIER_KING_VARIABLE = yes
+	}
+	custom_effect_tooltip = ZEX_MGY_LOWER_KING_INFLUENCE_40_TT
+}
+
+ZEX_MGY_LOWER_KING_INFLUENCE_20 = {
+	hidden_effect = {
+		subtract_from_variable = {
+			ZEX_MGY_vizier_King_Balance = 20
+		}
+		ZEX_MGY_UPDATE_VIZIER_KING_VARIABLE = yes
+	}
+	custom_effect_tooltip = ZEX_MGY_LOWER_KING_INFLUENCE_20_TT
+}
+
+ZEX_MGY_LOWER_KING_INFLUENCE_10 = {
+	hidden_effect = {
+		subtract_from_variable = {
+			ZEX_MGY_vizier_King_Balance = 10
+		}
+		ZEX_MGY_UPDATE_VIZIER_KING_VARIABLE = yes
+	}
+	custom_effect_tooltip = ZEX_MGY_LOWER_KING_INFLUENCE_10_TT
+}
+
+ZEX_MGY_INCREASE_KING_INFLUENCE_40 = {
+	hidden_effect = {
+		add_to_variable = {
+			ZEX_MGY_vizier_King_Balance = 40
+		}
+		ZEX_MGY_UPDATE_VIZIER_KING_VARIABLE = yes
+	}
+	custom_effect_tooltip = ZEX_MGY_INCREASE_KING_INFLUENCE_40_TT
+}
+
+ZEX_MGY_INCREASE_KING_INFLUENCE_20 = {
+	hidden_effect = {
+		add_to_variable = {
+			ZEX_MGY_vizier_King_Balance = 20
+		}
+		ZEX_MGY_UPDATE_VIZIER_KING_VARIABLE = yes
+	}
+	custom_effect_tooltip = ZEX_MGY_INCREASE_KING_INFLUENCE_20_TT
+}
+
+ZEX_MGY_INCREASE_KING_INFLUENCE_10 = {
+	hidden_effect = {
+		add_to_variable = {
+			ZEX_MGY_vizier_King_Balance = 10
+		}
+		ZEX_MGY_UPDATE_VIZIER_KING_VARIABLE = yes
+	}
+	custom_effect_tooltip = ZEX_MGY_INCREASE_KING_INFLUENCE_10_TT
+}

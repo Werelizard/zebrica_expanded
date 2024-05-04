@@ -1,34 +1,64 @@
 ZEX_DEBUG_CATEGORY = {
-	ZEX_Activate_Parliament = {
+	# ZEX_Activate_Parliament = {
+	# 	allowed = {
+	# 		always = yes
+	# 	}
+	# 	visible = {
+	# 		zxe_is_maregypt_or_cosmetic_maregypt = yes
+	# 		NOT = {
+	# 			has_country_flag = zex_has_maregypt_parliament
+	# 		}
+	# 	}
+	# 	available = {
+			
+	# 	}
+	# 	complete_effect = {
+	# 		ZEX_activate_parliament = yes
+	# 	}
+	# }
+	# ZEX_Deactivate_Parliament = {
+	# 	allowed = {
+	# 		always = yes
+	# 	}
+	# 	visible = {
+	# 		zxe_is_maregypt_or_cosmetic_maregypt = yes
+	# 		has_country_flag = zex_has_maregypt_parliament
+	# 	}
+	# 	available = {
+			
+	# 	}
+	# 	complete_effect = {
+	# 		ZEX_deactivate_parliament = yes
+	# 	}
+	# }
+	ZEX_INCREASE_VIZIER_INFLUENCE = {
 		allowed = {
 			always = yes
 		}
 		visible = {
 			zxe_is_maregypt_or_cosmetic_maregypt = yes
-			NOT = {
-				has_country_flag = zex_has_maregypt_parliament
-			}
+			has_country_flag = zex_mgy_vizier_enabled_flag
 		}
 		available = {
 			
 		}
 		complete_effect = {
-			ZEX_activate_parliament = yes
+			ZEX_MGY_LOWER_KING_INFLUENCE_20 = yes
 		}
 	}
-	ZEX_Deactivate_Parliament = {
+	ZEX_DECREASE_VIZIER_INFLUENCE = {
 		allowed = {
 			always = yes
 		}
 		visible = {
 			zxe_is_maregypt_or_cosmetic_maregypt = yes
-			has_country_flag = zex_has_maregypt_parliament
+			has_country_flag = zex_mgy_vizier_enabled_flag
 		}
 		available = {
 			
 		}
 		complete_effect = {
-			ZEX_deactivate_parliament = yes
+			ZEX_MGY_INCREASE_KING_INFLUENCE_20 = yes
 		}
 	}
 	ZEX_Activate_Agitation = {

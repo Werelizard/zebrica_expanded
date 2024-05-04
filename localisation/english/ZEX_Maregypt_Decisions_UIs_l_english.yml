@@ -7,6 +7,10 @@
  ZEX_Deactivate_Parliament:0 "Disable the §YMaregyptian Royal Diet§!"
  ZEX_Activate_Agitation:0 "Enable the §YRepublican Agitation§!"
  ZEX_Deactivate_Agitation:0 "Disable the §YRepublican Agitation§!"
+ ZEX_INCREASE_VIZIER_INFLUENCE:0 "Increase the Vizier's influence"
+ ZEX_INCREASE_VIZIER_INFLUENCE_desc:0 ""
+ ZEX_DECREASE_VIZIER_INFLUENCE:0 "Decrease the Vizier's influence"
+ ZEX_DECREASE_VIZIER_INFLUENCE_desc:0 ""
 
  ZEX_DEBUG_Randomly_Change_Sineighi_Alignment_tt:0 "§YDebug§!: randomise Singeighi alignment ([?Root.ZEX_MGY_VAR_Sineighi_Alignment])"
 
@@ -291,15 +295,10 @@
  ZEX_MGY_MIDUNREST_UPPERMAREGYPT_Protected:0 "ZEX_MGY_MIDUNREST_UPPERMAREGYPT_Protected"
  ZEX_MGY_HIGHUNREST_UPPERMAREGYPT_Protected:0 "ZEX_MGY_HIGHUNREST_UPPERMAREGYPT_Protected"
 
- #Debts
- ZEX_MGY_equestrian_debts_empty:0 ""
-
- ZEX_MGY_equestrian_debts_consumer_goods_effect_tt:0 "[ROOT.ZEX_MGY_Get_equestrian_debts_consumer_goods_effect_val]"
- ZEX_MGY_equestrian_debts_poltical_power_gain_tt:0 "[ROOT.ZEX_MGY_Get_equestrian_debts_poltical_power_effect_val]"
- ZEX_MGY_equestrian_debts_factory_output_effect_tt:0 "[ROOT.ZEX_MGY_Get_equestrian_debts_factory_output_effect_val]"
- ZEX_MGY_equestrian_debts_dockyard_output_effect_tt:0 "[ROOT.ZEX_MGY_Get_equestrian_debts_dockyard_output_effect_val]"
-
- ZEX_MGY_equestrian_debts_consumer_goods_effect_active_tt:0 "£ZEX_tradegoods  Consumer Goods Factories factor: §Y[?ROOT.ZEX_MGY_equestrian_debts_consumer_goods_effect|1%]§!"
- ZEX_MGY_equestrian_debts_poltical_power_gain_active_tt:0 "£pol_power  Daily Political Power Gain: §t[?ROOT.ZEX_MGY_equestrian_debts_poltical_power_gain|2]§!"
- ZEX_MGY_equestrian_debts_factory_output_effect_active_tt:0 "£ZEX_miloutput  Factory Output: §t[?ROOT.ZEX_MGY_equestrian_debts_factory_output_effect|1%]§!"
- ZEX_MGY_equestrian_debts_dockyard_output_effect_active_tt:0 "£ZEX_dockoutput  Dockyard Output: §t[?ROOT.ZEX_MGY_equestrian_debts_dockyard_output_effect|1%]§!"
+ #Lower / Increase King Influence
+ ZEX_MGY_LOWER_KING_INFLUENCE_40_TT:0 "Pushes the balance of power £BoP_left_texticon §Y40§! towards the Vizier's side, §4decreasing§! the §YKing's§! influence."
+ ZEX_MGY_LOWER_KING_INFLUENCE_20_TT:0 "Pushes the balance of power £BoP_left_texticon §Y20§! towards the Vizier's side, §4decreasing§! the §YKing's§! influence."
+ ZEX_MGY_LOWER_KING_INFLUENCE_10_TT:0 "Pushes the balance of power £BoP_left_texticon §Y10§! towards the Vizier's side, §4decreasing§! the §YKing's§! influence."
+ ZEX_MGY_INCREASE_KING_INFLUENCE_40_TT:0 "Pushes the balance of power £BoP_right_texticon §Y40§! towards the King's side, §Yincreasing§! the §YKing's§! influence."
+ ZEX_MGY_INCREASE_KING_INFLUENCE_20_TT:0 "Pushes the balance of power £BoP_right_texticon §Y20§! towards the King's side, §Yincreasing§! the §YKing's§! influence."
+ ZEX_MGY_INCREASE_KING_INFLUENCE_10_TT:0 "Pushes the balance of power £BoP_right_texticon §Y10§! towards the King's side, §Yincreasing§! the §YKing's§! influence."

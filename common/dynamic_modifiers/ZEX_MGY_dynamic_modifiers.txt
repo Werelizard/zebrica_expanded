@@ -1,3 +1,7 @@
+#
+# Unrest
+#
+
 ZEX_MGY_republican_agitation_impact_dynmod = {
     enable = { 
 		has_country_flag = zex_has_republican_agitation
@@ -5,6 +9,10 @@ ZEX_MGY_republican_agitation_impact_dynmod = {
     stability_factor = ZEX_MGY_AVERAGE_UNREST_NEGATIVE
     political_power_factor = ZEX_MGY_AVERAGE_POLITICAL_IMPACT_UNREST
 }
+
+#
+# Vizier
+#
 
 ZEX_MGY_no_vizier_impact_dynmod  = {
     enable = {
@@ -15,6 +23,21 @@ ZEX_MGY_no_vizier_impact_dynmod  = {
     political_power_gain = -0.5
 }
 
+ZEX_MGY_vizier_balance_dynmod = {
+    enable = {
+        has_country_flag = zex_mgy_vizier_enabled_flag
+    }
+    war_support_factor = ZEX_MGY_VIZIER_INFLUENCE_15
+    justify_war_goal_time = ZEX_MGY_VIZIER_INFLUENCE_NEGATIVE_15
+    political_advisor_cost_factor = ZEX_MGY_VIZIER_INFLUENCE_20
+    economy_cost_factor = ZEX_MGY_VIZIER_INFLUENCE_20
+    trade_laws_cost_factor = ZEX_MGY_VIZIER_INFLUENCE_20
+    mobilization_laws_cost_factor = ZEX_MGY_VIZIER_INFLUENCE_20
+}
+
+#
+# Debts
+#
 
 ZEX_MGY_Equestrian_Debts_dynmod = {
     enable = {
