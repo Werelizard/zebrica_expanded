@@ -3,8 +3,9 @@
 #################################################
 # start / end
 ZEX_activate_republican_agitation = {
-	custom_effect_tooltip = ZEX_Activate_Agitation_tt
+	custom_effect_tooltip = ZEX_Activate_Agitation_tt #Only for decision contexts
 	hidden_effect = {
+		# Control variables
 		set_variable = {
 			ZEX_MGY_LOWER_UNREST_GLOBAL_COST = 15
 		}
@@ -36,23 +37,13 @@ ZEX_activate_republican_agitation = {
 			ZEX_MGY_LEGITIMACY_INCREASE = 0.5
 		}
 
-		ZEX_MGY_SET_BASE_ALIGNMENTS = yes
-
+		# Other defines
 		set_country_flag = zex_has_republican_agitation
-
+		ZEX_MGY_SET_BASE_ALIGNMENTS = yes
+		ZEX_MGY_enable_state_unrest = yes
 		add_dynamic_modifier = {
 			modifier = ZEX_MGY_republican_agitation_impact_dynmod
 		}
-		# if = {
-		# 	limit = {
-		# 		NOT = {
-		# 			has_idea = ZEX_MGY_REPUBLICAN_AGITATION
-		# 		}
-		# 	}
-		# 	add_ideas = {
-		# 		ZEX_MGY_REPUBLICAN_AGITATION
-		# 	}
-		# }
 	}
 }
 
@@ -64,14 +55,6 @@ ZEX_deactivate_republican_agitation = {
 		remove_dynamic_modifier = {
 			modifier = ZEX_MGY_republican_agitation_impact_dynmod
 		}
-		# if = {
-		# 	limit = {
-		# 		has_idea = ZEX_MGY_REPUBLICAN_AGITATION
-		# 	}
-		# 	remove_ideas = {
-		# 		ZEX_MGY_REPUBLICAN_AGITATION
-		# 	}
-		# }
 	}
 }
 
@@ -79,15 +62,15 @@ ZEX_deactivate_republican_agitation = {
 ZEX_MGY_SET_BASE_ALIGNMENTS = {
 	set_variable = {
 		var = ZEX_MGY_VAR_Sineighi_Alignment
-		value = 10
+		value = 52
 	}
 	set_variable = {
 		var = ZEX_MGY_VAR_Kaneigh_Alignment
-		value = 9
+		value = 42
 	}
 	set_variable = {
 		var = ZEX_MGY_VAR_Maneisrata_Alignment
-		value = 10
+		value = 30
 	}
 	set_variable = {
 		var = ZEX_MGY_VAR_UpperMaregypt_Alignment
@@ -95,25 +78,119 @@ ZEX_MGY_SET_BASE_ALIGNMENTS = {
 	}
 	set_variable = {
 		var = ZEX_MGY_VAR_Delta_Alignment
-		value = 27
-	}
-	set_variable = {
-		var = ZEX_MGY_VAR_Manephis_Alignment
-		value = 35
-	}
-	set_variable = {
-		var = ZEX_MGY_VAR_Somnambula_Alignment
-		value = 2
-	}
-	set_variable = {
-		var = ZEX_MGY_VAR_Eastdesert_Alignment
 		value = 5
 	}
 	set_variable = {
+		var = ZEX_MGY_VAR_Manephis_Alignment
+		value = 26
+	}
+	set_variable = {
+		var = ZEX_MGY_VAR_Somnambula_Alignment
+		value = 1
+	}
+	set_variable = {
+		var = ZEX_MGY_VAR_Eastdesert_Alignment
+		value = 2
+	}
+	set_variable = {
 		var = ZEX_MGY_VAR_Zush_Alignment
-		value = 7
+		value = 12
 	}
 	ZEX_MGY_GET_AVERAGE_UNREST = yes
+	ZEX_MGY_UPDATE_LOCAL_UNREST_IMPACT = yes
+}
+
+ZEX_MGY_enable_state_unrest = {
+	## Adds the state modifiers - SIneighi
+	738 = {
+		add_dynamic_modifier = {
+			modifier = ZEX_MGY_republican_agitation_sineighi_dynmod
+		}
+	}
+	## Adds the state modifiers - Mineisrata
+	740 = {
+		add_dynamic_modifier = {
+			modifier = ZEX_MGY_republican_agitation_maneisrata_dynmod
+		}
+	}
+	## Adds the state modifiers - Delta
+	737 = {
+		add_dynamic_modifier = {
+			modifier = ZEX_MGY_republican_agitation_delta_dynmod
+		}
+	}
+	744 = {
+		add_dynamic_modifier = {
+			modifier = ZEX_MGY_republican_agitation_delta_dynmod
+		}
+	}
+	## Adds the state modifiers - Somnambula
+	733 = {
+		add_dynamic_modifier = {
+			modifier = ZEX_MGY_republican_agitation_somnambula_dynmod
+		}
+	}
+	## Adds the state modifiers - Desert
+	731 = {
+		add_dynamic_modifier = {
+			modifier = ZEX_MGY_republican_agitation_eastdesert_dynmod
+		}
+	}
+	732 = {
+		add_dynamic_modifier = {
+			modifier = ZEX_MGY_republican_agitation_eastdesert_dynmod
+		}
+	}
+	## Adds the state modifiers - Manephis
+	735 = {
+		add_dynamic_modifier = {
+			modifier = ZEX_MGY_republican_agitation_manephis_dynmod
+		}
+	}
+	736 = {
+		add_dynamic_modifier = {
+			modifier = ZEX_MGY_republican_agitation_manephis_dynmod
+		}
+	}
+	## Adds the state modifiers -  Upper Maregypt
+	758 = { 
+		add_dynamic_modifier = {
+			modifier = ZEX_MGY_republican_agitation_uppermaregypt_dynmod
+		}
+	}
+	759 = {
+		add_dynamic_modifier = {
+			modifier = ZEX_MGY_republican_agitation_uppermaregypt_dynmod
+		}
+	}
+	760 = {
+		add_dynamic_modifier = {
+			modifier = ZEX_MGY_republican_agitation_uppermaregypt_dynmod
+		}
+	}
+	761 = {
+		add_dynamic_modifier = {
+			modifier = ZEX_MGY_republican_agitation_uppermaregypt_dynmod
+		}
+	}
+	## Adds the state modifiers - Zush
+	766 = {
+		add_dynamic_modifier = {
+			modifier = ZEX_MGY_republican_agitation_zush_dynmod
+		}
+	}
+	770 = {
+		add_dynamic_modifier = {
+			modifier = ZEX_MGY_republican_agitation_zush_dynmod
+		}
+	}
+	## Adds the state modifiers - Kaneigh
+	763 = {
+		add_dynamic_modifier = {
+			modifier = ZEX_MGY_republican_agitation_kaneigh_dynmod
+		}
+	}	
+	ZEX_MGY_UPDATE_LOCAL_UNREST_IMPACT = yes
 }
 
 ZEX_MGY_GET_AVERAGE_UNREST = {
@@ -162,6 +239,81 @@ ZEX_MGY_GET_AVERAGE_UNREST = {
 		value = 9
 	}
 	ZEX_MGY_UPDATE_REPUBLICAN_MODIFIER = yes
+}
+
+ZEX_MGY_UPDATE_LOCAL_UNREST_IMPACT = {
+	set_variable = {
+		var = ZEX_MGY_VAR_Sineighi_Alignment_negative
+		value = ZEX_MGY_VAR_Sineighi_Alignment
+	}
+	multiply_variable = {
+		var = ZEX_MGY_VAR_Sineighi_Alignment_negative
+		value = -0.01
+	}
+	set_variable = {
+		var = ZEX_MGY_VAR_Kaneigh_Alignment_negative
+		value = ZEX_MGY_VAR_Kaneigh_Alignment
+	}
+	multiply_variable = {
+		var = ZEX_MGY_VAR_Kaneigh_Alignment_negative
+		value = -0.01
+	}
+	set_variable = {
+		var = ZEX_MGY_VAR_Maneisrata_Alignment_negative
+		value = ZEX_MGY_VAR_Maneisrata_Alignment
+	}
+	multiply_variable = {
+		var = ZEX_MGY_VAR_Maneisrata_Alignment_negative
+		value = -0.01
+	}
+	set_variable = {
+		var = ZEX_MGY_VAR_UpperMaregypt_Alignment_negative
+		value = ZEX_MGY_VAR_UpperMaregypt_Alignment
+	}
+	multiply_variable = {
+		var = ZEX_MGY_VAR_UpperMaregypt_Alignment_negative
+		value = -0.01
+	}
+	set_variable = {
+		var = ZEX_MGY_VAR_Delta_Alignment_negative
+		value = ZEX_MGY_VAR_Delta_Alignment
+	}
+	multiply_variable = {
+		var = ZEX_MGY_VAR_Delta_Alignment_negative
+		value = -0.01
+	}
+	set_variable = {
+		var = ZEX_MGY_VAR_Manephis_Alignment_negative
+		value = ZEX_MGY_VAR_Manephis_Alignment
+	}
+	multiply_variable = {
+		var = ZEX_MGY_VAR_Manephis_Alignment_negative
+		value = -0.01
+	}
+	set_variable = {
+		var = ZEX_MGY_VAR_Somnambula_Alignment_negative
+		value = ZEX_MGY_VAR_Somnambula_Alignment
+	}
+	multiply_variable = {
+		var = ZEX_MGY_VAR_Somnambula_Alignment_negative
+		value = -0.01
+	}
+	set_variable = {
+		var = ZEX_MGY_VAR_Eastdesert_Alignment_negative
+		value = ZEX_MGY_VAR_Eastdesert_Alignment
+	}
+	multiply_variable = {
+		var = ZEX_MGY_VAR_Eastdesert_Alignment_negative
+		value = -0.01
+	}
+	set_variable = {
+		var = ZEX_MGY_VAR_Zush_Alignment_negative
+		value = ZEX_MGY_VAR_Eastdesert_Alignment
+	}
+	multiply_variable = {
+		var = ZEX_MGY_VAR_Zush_Alignment_negative
+		value = -0.01
+	}
 }
 
 ZEX_MGY_UPDATE_REPUBLICAN_MODIFIER = {
@@ -547,6 +699,7 @@ ZEX_MGY_Increase_Unrest = {
 	clr_country_flag = zex_mgy_increased_sineigh_unrest
 	clr_country_flag = zex_mgy_increased_zush_unrest
 	ZEX_MGY_GET_AVERAGE_UNREST = yes
+	ZEX_MGY_UPDATE_LOCAL_UNREST_IMPACT = yes
 }
 
 ZEX_MGY_DECREASE_UNREST = {
@@ -688,6 +841,7 @@ ZEX_MGY_DECREASE_UNREST = {
 		}
 	}
 	ZEX_MGY_GET_AVERAGE_UNREST = yes
+	ZEX_MGY_UPDATE_LOCAL_UNREST_IMPACT = yes
 }
 
 #debug effect
@@ -733,4 +887,5 @@ ZEX_MGY_agitation_set_random_variable = {
 		integer = yes
 	}
 	ZEX_MGY_GET_AVERAGE_UNREST = yes
+	ZEX_MGY_UPDATE_LOCAL_UNREST_IMPACT = yes
 }

@@ -135,8 +135,13 @@
 
  #Republican agitation GUI
 
- ZEX_MGY_AVERAGE_UNREST_TOOLTIP:0 "Average Unrest £local_unrest : §Y[?ROOT.ZEX_MGY_AVERAGE_UNREST|1]§!"
- ZEX_MGY_STABILITY_TOOLTIP:0 "Legitimacy £ZEX_legitimacy : §Y[?ROOT.ZEX_MGY_LEGITIMACY|2]§!"
+ ZEX_MGY_Rebellion_Help_tt:0 "The §Opolitical unrest§! mechanic represents the inner turmoil currently ravaging our nation.\n\nAt a country-wide level the mechanic comprises of two variables: the §Yaverage unrest§! and §Ylegitimacy§!. The first affects both our §Ypolitical power gain§! and our §Ystability§!, whilst the second has no effect. It is of extreme importance that the §Yaverage unrest§! does not exceed our §Ylegitimacy§!. Shall the unrest grow out of control, it will trigger a §tcivil war§!. Going to §Ywar§! will also initiate a revolt. At the state level, the different provinces' §Ylocal unrest§! will affect local §8compliance growth§!, §8construction speed§! and §8recruitable population§!.\n\nEvery 'turn' (or every §Y[?ROOT.ZEX_MGY_UNREST_EFFECTS_INTERVALLS]§! days) a certain ammount of provinces will see their unrest increase. It is thus paramount to not only keep track of the increasing unrest throughout the different provinces, but also to be proactive by choosing to intervene in key states and completing certain focuses in time."
+
+ ZEX_MGY_AVERAGE_UNREST_BOX_VAL:0 "§Y[?ROOT.ZEX_MGY_AVERAGE_UNREST|1]§!"
+ ZEX_MGY_LEGITIMACY_BOX_VAL:0 "§Y[?ROOT.ZEX_MGY_LEGITIMACY|2]§!"
+
+ ZEX_MGY_AVERAGE_UNREST_TOOLTIP:0 "Our current £local_unrest  §Yaverage unrest§! represents the mean of all of our provinces' local unrest. At the national level, it will directly affect our country's £stability_texticon  §Ystability§! and £pol_power  §Ypolitical power§! gain."
+ ZEX_MGY_REBELLION_LEGITIMACY:0 "Our current £ZEX_legitimacy  §Ylegitimacy§! represents how well our current monarchs holds up in the eyes of our citizens. Unlike the £local_unrest  §Yaverage unrest§! value, it has no effect on our country."
 
  ZEX_MGY_NOUNREST_SINEIGHI:0 "ZEX_MGY_NOUNREST_SINEIGHI"
  ZEX_MGY_LOWUNREST_SINEIGHI:0 "ZEX_MGY_LOWUNREST_SINEIGHI"
@@ -192,12 +197,22 @@
  ZEX_MGY_HIGHUNREST_UPPERMAREGYPT:0 "ZEX_MGY_HIGHUNREST_UPPERMAREGYPT"
  ZEX_MGY_UpperMaregypt_icon_tt:0 "The current local unrest in §YUpper Maregypt§! is £local_unrest §Y[?ROOT.ZEX_MGY_VAR_UpperMaregypt_Alignment]§!"
 
+ ZEX_MGY_republican_agitation_zush_dynmod:0 "Local Unrest"
+ ZEX_MGY_republican_agitation_eastdesert_dynmod:0 "Local Unrest"
+ ZEX_MGY_republican_agitation_somnambula_dynmod:0 "Local Unrest"
+ ZEX_MGY_republican_agitation_manephis_dynmod:0 "Local Unrest"
+ ZEX_MGY_republican_agitation_delta_dynmod:0 "Local Unrest"
+ ZEX_MGY_republican_agitation_uppermaregypt_dynmod:0 "Local Unrest"
+ ZEX_MGY_republican_agitation_maneisrata_dynmod:0 "Local Unrest"
+ ZEX_MGY_republican_agitation_kaneigh_dynmod:0 "Local Unrest"
+ ZEX_MGY_republican_agitation_sineighi_dynmod:0 "Local Unrest"
+
  #Republican agitation decisions
  ZEX_Activate_Agitation_tt:0 "Enables the §YRepublican Agitation§! mechanic."
  ZEX_Deactivate_Agitation_tt:0 "Disables the §YRepublican Agitation§! mechanic."
 
  ZEX_MAREGYPT_REPUBLICAN_AGITATION_CATEGORY:0 "Political Unrest"
- ZEX_MAREGYPT_REPUBLICAN_AGITATION_CATEGORY_desc:0 "Socialists, communists and various radicals, spearheaded by the §tMR-SF§!, have begun organising - capitalising on the growing public discontent with our government - in the hopes of toppling the kingdom. High levels of unrest will affect both our £stability_texticon  §Ystability§! and our £pol_power  §Ypolitical power§! gain.\n\nShould the £local_unrest §Yaverage unrest§! exceed our £ZEX_legitimacy  §Ylegitimacy§! §twe may very well end up in a civil war§!. Curbing the unrest throughout our provinces can be accomplished through §Ydecisions§!, §Yfocuses§! or §Yevents§!. In the long term we will need to adress our governmental paralysis so that we may deal with this situation permanently.\n\nEvery [?ROOT.ZEX_MGY_UNREST_EFFECTS_INTERVALLS] days, agitators will instigate unrest in our provinces, leaving us with limited options to counter their moves."
+ ZEX_MAREGYPT_REPUBLICAN_AGITATION_CATEGORY_desc:0 "Our country is currently experiencing profound unrest. §YPro-republican militias§!, §Yreactionaries§!, bandits and even our §Yown undisciplined soldiers§! have taken up arms against our kingdom - leading to windespread chaos and §Rpolitical violence§!. Some even say that Harmony has failed the Neighle and its people...has friendship really been withered away and beaten by the implacable sun?\n\nWe cannot let the unrest consume us, lest our country burst into flames. Should the £local_unrest §Yaverage unrest§! exceed our £ZEX_legitimacy  §Ylegitimacy§! we will be plunged into a §tcivil war§!."
 
  #Republican Unrest Decisions
 
@@ -205,14 +220,14 @@
 
  ZEX_MGY_ONLY_ONCE_PER_MOVE:0 "Not: has already taken this decision this round"
  ZEX_MGY_TWO_ACTIONS_AT_MOST_PER_MOVE:0 "Not: has already taken two decisions this round"
- ZEX_MGY_PROVINCE_PROTECTED_THIS_ROUND_tt:0 "§4This province will be immune to agitators this round§!"
+ ZEX_MGY_PROVINCE_PROTECTED_THIS_ROUND_tt:0 "§4This province will be immune to unrest increase this round§!"
 
  zex_mgy_unrest_increase_in_provinces_tt:0 "Up to two provinces will see their unrest increase by §t[?ROOT.ZEX_MGY_UNREST_EFFECTS_IMPACT]§!"
  zex_mgy_unrest_increase_in_province_tt:0 "One province will have its unrest increase by §t[?ROOT.ZEX_MGY_UNREST_EFFECTS_IMPACT]§!"
  zex_mgy_unrest_agitators_caught_tt:0 "The rebels are caught, lowering the unrest in one province by §G2§!"
  zex_mgy_unrest_nothing_happens_tt:0 "Nothing happens"
 
- ZEX_MGY_UNREST_INTERVAL:0 "§RThe agitators make their move...§!"
+ ZEX_MGY_UNREST_INTERVAL:0 "§RThe Republicans make their move...§!"
  ZEX_MGY_UNREST_INTERVAL_desc:0 "§gEvery round ([?ROOT.ZEX_MGY_UNREST_EFFECTS_INTERVALLS] days) republicans, socialists and other dissidents will attempt to increase the unrest throughout our country."
 
  ZEX_MGY_unrest_increase_legitimacy:0 "Royalist Propaganda"

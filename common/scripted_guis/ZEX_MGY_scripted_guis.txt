@@ -51,7 +51,7 @@ scripted_gui = {
 		}
 		
 		triggers = {
-			
+
 		}
 
 		dynamic_lists = {
@@ -96,6 +96,11 @@ scripted_gui = {
 		properties = {
 			ZEX_MGY_zush_icon = {
 				image = "[ZEX_MGY_GetZushAlignment]"
+			}
+		}
+		properties = {
+			ZEX_MGY_uppermaregypt_icon = {
+				image = "[ZEX_MGY_GetUpperMaregyptAlignment]"
 			}
 		}
 

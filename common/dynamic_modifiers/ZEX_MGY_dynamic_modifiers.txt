@@ -10,6 +10,116 @@ ZEX_MGY_republican_agitation_impact_dynmod = {
     political_power_factor = ZEX_MGY_AVERAGE_POLITICAL_IMPACT_UNREST
 }
 
+# Unrest - by province
+
+ZEX_MGY_republican_agitation_sineighi_dynmod = {
+	icon = GFX_ZEX_MGY_Local_Unrest
+    enable = { 
+		owner = {
+            has_country_flag = zex_has_republican_agitation
+        }
+	}
+    compliance_growth = MGY.ZEX_MGY_VAR_Sineighi_Alignment_negative
+    recruitable_population_factor = MGY.ZEX_MGY_VAR_Sineighi_Alignment_negative
+    state_production_speed_buildings_factor = MGY.ZEX_MGY_VAR_Sineighi_Alignment_negative
+}
+
+ZEX_MGY_republican_agitation_kaneigh_dynmod = {
+    icon = GFX_ZEX_MGY_Local_Unrest
+    enable = { 
+		owner = {
+            has_country_flag = zex_has_republican_agitation
+        }
+	}
+    compliance_growth = MGY.ZEX_MGY_VAR_Kaneigh_Alignment_negative
+    recruitable_population_factor = MGY.ZEX_MGY_VAR_Kaneigh_Alignment_negative
+    state_production_speed_buildings_factor = MGY.ZEX_MGY_VAR_Kaneigh_Alignment_negative
+}
+
+ZEX_MGY_republican_agitation_maneisrata_dynmod = {
+    icon = GFX_ZEX_MGY_Local_Unrest
+    enable = { 
+		owner = {
+            has_country_flag = zex_has_republican_agitation
+        }
+	}
+    compliance_growth = MGY.ZEX_MGY_VAR_Maneisrata_Alignment_negative
+    recruitable_population_factor = MGY.ZEX_MGY_VAR_Maneisrata_Alignment_negative
+    state_production_speed_buildings_factor = MGY.ZEX_MGY_VAR_Maneisrata_Alignment_negative
+}
+
+ZEX_MGY_republican_agitation_uppermaregypt_dynmod = {
+    icon = GFX_ZEX_MGY_Local_Unrest
+    enable = { 
+		owner = {
+            has_country_flag = zex_has_republican_agitation
+        }
+	}
+    compliance_growth = MGY.ZEX_MGY_VAR_UpperMaregypt_Alignment_negative
+    recruitable_population_factor = MGY.ZEX_MGY_VAR_UpperMaregypt_Alignment_negative
+    state_production_speed_buildings_factor = MGY.ZEX_MGY_VAR_UpperMaregypt_Alignment_negative
+}
+
+ZEX_MGY_republican_agitation_delta_dynmod = {
+    icon = GFX_ZEX_MGY_Local_Unrest
+    enable = { 
+		owner = {
+            has_country_flag = zex_has_republican_agitation
+        }
+	}
+    compliance_growth = MGY.ZEX_MGY_VAR_Delta_Alignment_negative
+    recruitable_population_factor = MGY.ZEX_MGY_VAR_Delta_Alignment_negative
+    state_production_speed_buildings_factor = MGY.ZEX_MGY_VAR_Delta_Alignment_negative
+}
+
+ZEX_MGY_republican_agitation_manephis_dynmod = {
+    icon = GFX_ZEX_MGY_Local_Unrest
+    enable = { 
+		owner = {
+            has_country_flag = zex_has_republican_agitation
+        }
+	}
+    compliance_growth = MGY.ZEX_MGY_VAR_Manephis_Alignment_negative
+    recruitable_population_factor = MGY.ZEX_MGY_VAR_Manephis_Alignment_negative
+    state_production_speed_buildings_factor = MGY.ZEX_MGY_VAR_Manephis_Alignment_negative
+}
+
+ZEX_MGY_republican_agitation_somnambula_dynmod = {
+    icon = GFX_ZEX_MGY_Local_Unrest
+    enable = { 
+		owner = {
+            has_country_flag = zex_has_republican_agitation
+        }
+	}
+    compliance_growth = MGY.ZEX_MGY_VAR_Somnambula_Alignment_negative
+    recruitable_population_factor = MGY.ZEX_MGY_VAR_Somnambula_Alignment_negative
+    state_production_speed_buildings_factor = MGY.ZEX_MGY_VAR_Somnambula_Alignment_negative
+}
+
+ZEX_MGY_republican_agitation_eastdesert_dynmod = {
+    icon = GFX_ZEX_MGY_Local_Unrest
+    enable = { 
+		owner = {
+            has_country_flag = zex_has_republican_agitation
+        }
+	}
+    compliance_growth = MGY.ZEX_MGY_VAR_Eastdesert_Alignment_negative
+    recruitable_population_factor = MGY.ZEX_MGY_VAR_Eastdesert_Alignment_negative
+    state_production_speed_buildings_factor = MGY.ZEX_MGY_VAR_Eastdesert_Alignment_negative
+}
+
+ZEX_MGY_republican_agitation_zush_dynmod = {
+    icon = GFX_ZEX_MGY_Local_Unrest
+    enable = { 
+		owner = {
+            has_country_flag = zex_has_republican_agitation
+        }
+	}
+    compliance_growth = MGY.ZEX_MGY_VAR_Zush_Alignment_negative
+    recruitable_population_factor = MGY.ZEX_MGY_VAR_Zush_Alignment_negative
+    state_production_speed_buildings_factor = MGY.ZEX_MGY_VAR_Zush_Alignment_negative
+}
+
 #
 # Vizier
 #

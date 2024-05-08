@@ -378,4 +378,29 @@ spriteTypes = {
 		texturefile = "gfx/interface/republicanAgitation/ZEX_MGY_HIGHUNREST_KANEIGH_Protected.dds"
 		transparencecheck = yes
 	}
+
+	# UI elements
+
+	spriteType = {
+		name = "ZEX_MGY_Legitimacy_Counter"
+		texturefile = "gfx/interface/ZEX_MGY_legitimacy_counter.dds"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "ZEX_MGY_Unrest_Counter"
+		texturefile = "gfx/interface/ZEX_MGY_unrest_counter.dds"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "ZEX_MGY_Unrest_BG"
+		texturefile = "gfx/interface/ZEX_MGY_REPUBLICAN_UNREST_BG.dds"
+		transparencecheck = yes
+	}
+
+	#Province modifier
+	spriteType = {
+		name = "GFX_ZEX_MGY_Local_Unrest"
+		texturefile = "gfx/interface/ZEX_MGY_Local_Unrest.dds"
+		transparencecheck = yes
+	}
 }
