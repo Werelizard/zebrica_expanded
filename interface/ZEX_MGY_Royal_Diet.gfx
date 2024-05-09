@@ -1,0 +1,43 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_ZEX_MGY_royal_diet_party_icon"
+		texturefile = "gfx/interface/parliament_parties.dds"
+		noOfFrames = 4 # number of parties you have in the gfx file
+	}
+	spriteType = {
+		name = "GFX_ZEX_MGY_royal_diet_empty_button"
+		texturefile = "gfx/interface/parliament_empty_button.dds"
+	}
+	spriteType = {
+		name = "GFX_ZEX_MGY_ROYAL_DIET_BG"
+		texturefile = "gfx/interface/ZEX_MGY_ROYAL_DIET_BG.dds"
+	}
+	spriteType = {
+		name = "GFX_ZEX_MGY_royal_diet_faction_counter"
+		texturefile = "gfx/interface/ZEX_MGY_royal_diet_faction_counter.dds"
+	}
+	spriteType = {
+		name = "GFX_ZEX_MGY_royal_diet_faction_dummy"
+		texturefile = "gfx/interface/ZEX_MGY_royal_diet_faction_icon_empty.dds"
+	}
+	spriteType = {
+		name = "GFX_ZEX_MGY_royal_diet_total_counter"
+		texturefile = "gfx/interface/ZEX_MGY_royal_diet_total_counter.dds"
+	}
+	spriteType = {
+		name = "GFX_ZEX_MGY_royal_diet_faction_zebricans"
+		texturefile = "gfx/interface/ZEX_MGY_royal_diet_faction_icon_zebricans.dds"
+	}
+	spriteType = {
+		name = "GFX_ZEX_MGY_royal_diet_faction_harmonists"
+		texturefile = "gfx/interface/ZEX_MGY_royal_diet_faction_icon_harmonists.dds"
+	}
+	spriteType = {
+		name = "GFX_ZEX_MGY_royal_diet_faction_loyalists"
+		texturefile = "gfx/interface/ZEX_MGY_royal_diet_faction_icon_loyalists.dds"
+	}
+	spriteType = {
+		name = "GFX_ZEX_MGY_royal_diet_faction_independent"
+		texturefile = "gfx/interface/ZEX_MGY_royal_diet_faction_icon_Independents.dds"
+	}
+}

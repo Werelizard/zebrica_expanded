@@ -235,6 +235,8 @@ recruit_character = ZEX_MGY_Tutneighfer
 
 #Puppet AOL
 
+ZEX_MGY_Royal_Diet_Start_Diet = yes
+
 set_autonomy = {
 	target = ALO
 	autonomy_state = autonomy_zex_mgy_viceroyalty

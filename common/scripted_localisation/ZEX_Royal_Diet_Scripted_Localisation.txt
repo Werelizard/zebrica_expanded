@@ -1,0 +1,108 @@
+# Gets the loc to be displayed based on what the current v (value) of the element in the array is (the value corresponds to the party id set in the scripted effect).
+defined_text = {
+	name = ZEX_MGY_Get_diet_Faction_Name
+	text = {
+		trigger = {
+			check_variable = { v = 1 }
+		}
+		localization_key = zex_royal_diet_party_1_text
+	}
+	text = {
+		trigger = {
+			check_variable = { v = 2 }
+		}
+		localization_key = zex_royal_diet_party_2_text
+	}
+	text = {
+		trigger = {
+			check_variable = { v = 3 }
+		}
+		localization_key = zex_royal_diet_party_3_text
+	}
+	text = {
+		trigger = {
+			check_variable = { v = 4 }
+		}
+		localization_key = zex_royal_diet_party_4_text
+	}
+	text = {
+		localization_key = "Error"
+	}
+}
+
+# Gets the right text display for the factions' loyalties
+defined_text = {
+	name = ZEX_MGY_Get_Zebrican_Loyalty
+	text = {
+		trigger = {
+			check_variable = { ZEX_MGY_Royal_Diet_Zebrican_Loyalty > 70 }
+		}
+		localization_key = ZEX_MGY_Diet_Loyal_Faction
+	}
+	text = {
+		trigger = {
+			check_variable = { ZEX_MGY_Royal_Diet_Zebrican_Loyalty > 30 }
+		}
+		localization_key = ZEX_MGY_Diet_Neutral_Faction
+	}
+	text = {
+		localization_key = ZEX_MGY_Diet_Disloyal_Faction
+	}
+}
+
+defined_text = {
+	name = ZEX_MGY_Get_Harmonist_Loyalty
+	text = {
+		trigger = {
+			check_variable = { ZEX_MGY_Royal_Diet_Harmonist_Loyalty > 70 }
+		}
+		localization_key = ZEX_MGY_Diet_Loyal_Faction
+	}
+	text = {
+		trigger = {
+			check_variable = { ZEX_MGY_Royal_Diet_Harmonist_Loyalty > 30 }
+		}
+		localization_key = ZEX_MGY_Diet_Neutral_Faction
+	}
+	text = {
+		localization_key = ZEX_MGY_Diet_Disloyal_Faction
+	}
+}
+
+defined_text = {
+	name = ZEX_MGY_Get_Loyalists_Loyalty
+	text = {
+		trigger = {
+			check_variable = { ZEX_MGY_Royal_Diet_Loyalists_Loyalty > 70 }
+		}
+		localization_key = ZEX_MGY_Diet_Loyal_Faction
+	}
+	text = {
+		trigger = {
+			check_variable = { ZEX_MGY_Royal_Diet_Loyalists_Loyalty > 30 }
+		}
+		localization_key = ZEX_MGY_Diet_Neutral_Faction
+	}
+	text = {
+		localization_key = ZEX_MGY_Diet_Disloyal_Faction
+	}
+}
+
+defined_text = {
+	name = ZEX_MGY_Get_Independent_Loyalty
+	text = {
+		trigger = {
+			check_variable = { ZEX_MGY_Royal_Diet_Independent_Loyalty > 70 }
+		}
+		localization_key = ZEX_MGY_Diet_Loyal_Faction
+	}
+	text = {
+		trigger = {
+			check_variable = { ZEX_MGY_Royal_Diet_Independent_Loyalty > 30 }
+		}
+		localization_key = ZEX_MGY_Diet_Neutral_Faction
+	}
+	text = {
+		localization_key = ZEX_MGY_Diet_Disloyal_Faction
+	}
+}

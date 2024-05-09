@@ -96,7 +96,7 @@ zex_mgy_diet_is_supportive = {
 	custom_trigger_tooltip = {
 		tooltip = zex_mgy_diet_is_supportive_tt
 		check_variable = {
-			zex_royal_diet_total_support = 151
+			zex_royal_diet_total_support >= 101
 		}
 	}
 }

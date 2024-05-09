@@ -26,38 +26,4 @@ on_actions = {
 			}
 		}
 	}
-	on_daily_MGY = {
-		effect = {
-			if = {
-				limit = {
-					has_idea = ZEX_MGY_VIZIER_OFFICE_KING_WEAK
-				}
-				add_popularity = {
-					ideology = root
-					popularity = 0.01
-				}
-			}
-			else_if = {
-				limit = {
-					has_idea = ZEX_MGY_VIZIER_OFFICE_KING_STRONG
-				}
-				add_popularity = {
-					ideology = root
-					popularity = 0.015
-				}
-			}
-			else_if = {
-				limit = {
-					has_idea = ZEX_MGY_VIZIER_OFFICE_KING_DOMINANT
-				}
-				add_popularity = {
-					ideology = root
-					popularity = 0.02
-				}
-			}
-			else = {
-				
-			}
-		}
-	}
 }

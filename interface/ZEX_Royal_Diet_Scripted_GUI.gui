@@ -1,0 +1,264 @@
+guiTypes = {
+	containerWindowType = {
+        name = "ZEX_MGY_royal_diet_gui_container"
+        position = { x = 0 y = 0 }
+		size = { width = 400 height = 450 }
+
+		# Header
+		instantTextBoxType = {
+			name = "ZEX_MGY_royal_diet_total_title"
+			position = { x = 35 y = 0 } 
+			text = ZEX_MGY_royal_diet_total_title_text
+			font = "hoi_24header"
+			format = center
+			maxHeight = 20
+			maxwidth = 445
+		}
+
+		# Tooltip Button
+
+		iconType = {
+			name = "ZEX_MGY_royal_diet_Help"
+			position = { x = 430 y = 0 }
+			spriteType = "ZEX_MGY_Help_Tooltip"
+			pdx_tooltip = ZEX_MGY_royal_diet_Help_tt
+		}
+
+		# Zebrican Faction Displays
+
+		iconType = {
+			name = "ZEX_MGY_Zebrican_Faction_Background"
+			position = { x = 35 y = 122 }
+			spriteType = "GFX_ZEX_MGY_royal_diet_faction_counter"
+			pdx_tooltip = ZEX_MGY_Faction_Values_tt
+			pdx_tooltip_delayed = ZEX_MGY_Zebrican_Faction_values_tt
+		}
+
+		instantTextBoxType = { # increase x by 15, y by 1
+			name = "ZEX_MGY_Zebrican_Faction_Loyalty_Display"
+			position = { x = 50 y = 123 } 
+			text = ZEX_MGY_Zebrican_Faction_Loyalty_Display_text
+			font = "hoi_18b"
+			format = center
+			maxHeight = 19
+			maxwidth = 54
+			pdx_tooltip = ZEX_MGY_Faction_Values_tt
+			pdx_tooltip_delayed = ZEX_MGY_Zebrican_Faction_values_tt
+		}
+
+		instantTextBoxType = { # increase x by 15, y by 21
+			name = "ZEX_MGY_Zebrican_Faction_Seats_Display"
+			position = { x = 50 y = 143 } 
+			text = ZEX_MGY_Zebrican_Faction_Seats_Display_text
+			font = "hoi_18b"
+			format = center
+			maxHeight = 19
+			maxwidth = 54
+			pdx_tooltip = ZEX_MGY_Faction_Values_tt
+			pdx_tooltip_delayed = ZEX_MGY_Zebrican_Faction_values_tt
+		}
+
+		iconType = {
+			name = "GFX_ZEX_MGY_royal_diet_faction_zebricans_icon"
+			position = { x = 38 y = 40 }
+			spriteType = "GFX_ZEX_MGY_royal_diet_faction_zebricans"
+			pdx_tooltip = zex_mgy_royal_diet_faction_lore_zebricans
+		}
+
+		# Harmonist Faction Displays		
+
+		iconType = {
+			name = "ZEX_MGY_Harmonist_Faction_Background"
+			position = { x = 150 y = 122 }
+			spriteType = "GFX_ZEX_MGY_royal_diet_faction_counter"
+			pdx_tooltip = ZEX_MGY_Faction_Values_tt
+			pdx_tooltip_delayed = ZEX_MGY_Harmonist_Faction_values_tt
+		}
+
+		instantTextBoxType = { # increase x by 15, y by 1
+			name = "ZEX_MGY_Harmonist_Faction_Loyalty_Display"
+			position = { x = 165 y = 123 } 
+			text = ZEX_MGY_Harmonist_Faction_Loyalty_Display_text
+			font = "hoi_18b"
+			format = center
+			maxHeight = 19
+			maxwidth = 54
+			pdx_tooltip = ZEX_MGY_Faction_Values_tt
+			pdx_tooltip_delayed = ZEX_MGY_Harmonist_Faction_values_tt	
+		}
+
+		instantTextBoxType = { # increase x by 15, y by 21
+			name = "ZEX_MGY_Harmonist_Faction_Seats_Display"
+			position = { x = 165 y = 143 } 
+			text = ZEX_MGY_Harmonist_Faction_Seats_Display_text
+			font = "hoi_18b"
+			format = center
+			maxHeight = 19
+			maxwidth = 54
+			pdx_tooltip = ZEX_MGY_Faction_Values_tt
+			pdx_tooltip_delayed = ZEX_MGY_Harmonist_Faction_values_tt
+		}
+
+		iconType = {
+			name = "GFX_ZEX_MGY_royal_diet_faction_harmonists_icon"
+			position = { x = 153 y = 40 }
+			spriteType = "GFX_ZEX_MGY_royal_diet_faction_harmonists"
+			pdx_tooltip = zex_mgy_royal_diet_faction_lore_harmonists
+		}
+
+		# Loyalist Faction Displays	
+
+		iconType = {
+			name = "ZEX_MGY_Loyalists_Faction_Background"
+			position = { x = 265 y = 122 }
+			spriteType = "GFX_ZEX_MGY_royal_diet_faction_counter"
+			pdx_tooltip = ZEX_MGY_Faction_Values_tt
+			pdx_tooltip_delayed = ZEX_MGY_Loyalists_Faction_values_tt
+		}
+
+		instantTextBoxType = { # increase x by 15, y by 1
+			name = "ZEX_MGY_Loyalists_Faction_Loyalty_Display"
+			position = { x = 280 y = 123 } 
+			text = ZEX_MGY_Loyalists_Faction_Loyalty_Display_text
+			font = "hoi_18b"
+			format = center
+			maxHeight = 19
+			maxwidth = 54
+			pdx_tooltip = ZEX_MGY_Faction_Values_tt
+			pdx_tooltip_delayed = ZEX_MGY_Loyalists_Faction_values_tt
+		}
+
+		instantTextBoxType = { # increase x by 15, y by 21
+			name = "ZEX_MGY_Loyalists_Faction_Seats_Display"
+			position = { x = 280 y = 143 } 
+			text = ZEX_MGY_Loyalists_Faction_Seats_Display_text
+			font = "hoi_18b"
+			format = center
+			maxHeight = 19
+			maxwidth = 54
+			pdx_tooltip = ZEX_MGY_Faction_Values_tt
+			pdx_tooltip_delayed = ZEX_MGY_Loyalists_Faction_values_tt
+		}
+
+		iconType = {
+			name = "GFX_ZEX_MGY_royal_diet_faction_loyalists_icon"
+			position = { x = 268 y = 40 }
+			spriteType = "GFX_ZEX_MGY_royal_diet_faction_loyalists"
+			pdx_tooltip = zex_mgy_royal_diet_faction_lore_loyalists
+		}
+
+		# Independent Seats Displays	
+
+		iconType = {
+			name = "ZEX_MGY_Independent_Faction_Background"
+			position = { x = 380 y = 122 }
+			spriteType = "GFX_ZEX_MGY_royal_diet_faction_counter"
+			pdx_tooltip = ZEX_MGY_Faction_Values_tt
+			pdx_tooltip_delayed = ZEX_MGY_Independent_Faction_values_tt
+		}
+
+		instantTextBoxType = { # increase x by 15, y by 1
+			name = "ZEX_MGY_Independent_Faction_Loyalty_Display"
+			position = { x = 395 y = 123 } 
+			text = ZEX_MGY_Independent_Faction_Loyalty_Display_text
+			font = "hoi_18b"
+			format = center
+			maxHeight = 19
+			maxwidth = 54
+			pdx_tooltip = ZEX_MGY_Faction_Values_tt
+			pdx_tooltip_delayed = ZEX_MGY_Independent_Faction_values_tt
+		}
+
+		instantTextBoxType = { # increase x by 15, y by 21
+			name = "ZEX_MGY_Independent_Faction_Seats_Display"
+			position = { x = 395 y = 143 } 
+			text = ZEX_MGY_Independent_Faction_Seats_Display_text
+			font = "hoi_18b"
+			format = center
+			maxHeight = 19
+			maxwidth = 54
+			pdx_tooltip = ZEX_MGY_Faction_Values_tt
+			pdx_tooltip_delayed = ZEX_MGY_Independent_Faction_values_tt
+		}
+
+		iconType = {
+			name = "GFX_ZEX_MGY_royal_diet_faction_independent_icon"
+			position = { x = 383 y = 40 }
+			spriteType = "GFX_ZEX_MGY_royal_diet_faction_independent"
+			pdx_tooltip = zex_mgy_royal_diet_faction_lore_independents
+		}
+
+		# Seats Display
+
+		containerWindowType = {
+			name = "ZEX_MGY_royal_diet_main_container"
+			position = { x = 0 y = 177 } 
+			size = { width = 490 height = 225 }
+
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_ZEX_MGY_ROYAL_DIET_BG"
+			}
+
+			gridboxtype = {
+				name = "ZEX_MGY_royal_diet_main_grid"
+				position = { x = 25 y = 25 }
+				size = { width = 100%% height = 100%% }
+				slotsize = { width = 100%% height = 0 }
+				max_slots_horizontal = 1
+				add_horizontal = no
+			}
+		}
+
+		gridboxtype = {
+			name = "ZEX_MGY_royal_diet_member_grid"
+			position = { x = -150 y = 525 }
+			size = { width = 100%% height = 100%% }
+			slotsize = { width = 200 height = 18 }
+			max_slots_vertical = 8
+			add_horizontal = no
+		}
+
+		# Total Support Display
+
+		instantTextBoxType = {
+			name = "ZEX_MGY_royal_diet_total_support_current"
+			position = { x = 35 y = 412 } 
+			text = ZEX_MGY_royal_diet_total_support_current_text
+			font = "hoi_24header"
+			format = left
+			maxHeight = 20
+			maxwidth = 345
+			pdx_tooltip = ZEX_MGY_royal_diet_total_support_current_tt
+		}
+
+		iconType = {
+			name = "ZEX_MGY_royal_diet_total_counter"
+			position = { x = 345 y = 412 }
+			spriteType = "GFX_ZEX_MGY_royal_diet_total_counter"
+		}
+
+		instantTextBoxType = {
+			name = "ZEX_MGY_royal_diet_total_support_current_value"
+			position = { x = 350 y = 417 } 
+			text = ZEX_MGY_royal_diet_total_support_current_value_text
+			font = "hoi_18b"
+			format = center
+			maxHeight = 20
+			maxwidth = 110
+			pdx_tooltip = ZEX_MGY_royal_diet_total_support_current_value_tt
+		}
+    }
+
+	containerWindowType = {
+        name = "ZEX_MGY_royal_diet_main_entry"
+        position = { x = 25 y = 0 }
+
+		iconType = {
+			name = "ZEX_MGY_royal_diet_main_icon"
+			spriteType = "GFX_ZEX_MGY_royal_diet_party_icon"
+			position = { x = 0 y = 0 }
+			pdx_tooltip = "ZEX_MGY_royal_diet_main_icon_tt"
+		}
+    }
+}

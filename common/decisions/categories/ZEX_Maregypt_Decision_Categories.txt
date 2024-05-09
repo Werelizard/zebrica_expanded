@@ -32,16 +32,16 @@ ZEX_MAREGYPT_REPUBLICAN_AGITATION_CATEGORY = {
 	visible_when_empty = yes
 }
 
-ZEX_MAREGYPT_PARLIAMENT_CATEGORY = {
+ZEX_MAREGYPT_ROYAL_DIET_CATEGORY = {
+	icon = ZEX_GFX_Royal_Diet
 	scripted_gui = ZEX_MGY_royal_diet_ui
 	allowed = {
 		always = yes
 	}
 	visible = {
 		zxe_is_maregypt_or_cosmetic_maregypt = yes
-		has_country_flag = zex_has_maregypt_parliament
+		has_country_flag = zex_mgy_royal_diet_ongoing
 	}
 	priority = 998
-	icon = ZEX_GFX_Royal_Diet
 	visible_when_empty = yes
 }
