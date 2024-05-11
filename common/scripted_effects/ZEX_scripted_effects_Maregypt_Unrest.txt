@@ -3,14 +3,14 @@
 #################################################
 # start / end
 ZEX_activate_republican_agitation = {
-	custom_effect_tooltip = ZEX_Activate_Agitation_tt #Only for decision contexts
+	custom_effect_tooltip = ZEX_Activate_Agitation_tt	#Only for decision contexts
 	hidden_effect = {
 		# Control variables
 		set_variable = {
 			ZEX_MGY_LOWER_UNREST_GLOBAL_COST = 15
 		}
 		set_variable = {
-			ZEX_MGY_LEGITIMACY = 95
+			ZEX_MGY_LEGITIMACY = 55
 		}
 		set_variable = {
 			ZEX_MGY_UNREST_EFFECTS_INTERVALLS = 28
@@ -25,18 +25,26 @@ ZEX_activate_republican_agitation = {
 			ZEX_MGY_Actions_Taken = 0
 		}
 		set_variable = {
-			ZEX_MGY_UNREST_REBELS_SUCCESS = 65
+			ZEX_MGY_MAX_Actions_Taken = 0
 		}
 		set_variable = {
-			ZEX_MGY_UNREST_REBELS_NOTHING = 10
+			ZEX_MGY_DAY_REMAINING_IN_TURN = 28
 		}
 		set_variable = {
-			ZEX_MGY_UNREST_REBELS_ESCAPE = 25
+			ZEX_MGY_UNREST_LEGITIMACY_REGAIN = 0
 		}
+		# set_variable = {
+		# 	ZEX_MGY_UNREST_REBELS_SUCCESS = 65
+		# }
+		# set_variable = {
+		# 	ZEX_MGY_UNREST_REBELS_NOTHING = 10
+		# }
+		# set_variable = {
+		# 	ZEX_MGY_UNREST_REBELS_ESCAPE = 25
+		# }
 		set_variable = {
-			ZEX_MGY_LEGITIMACY_INCREASE = 0.5
+			ZEX_MGY_LEGITIMACY_INCREASE_DAILY = 0.125
 		}
-
 		# Other defines
 		set_country_flag = zex_has_republican_agitation
 		ZEX_MGY_SET_BASE_ALIGNMENTS = yes
@@ -51,7 +59,6 @@ ZEX_deactivate_republican_agitation = {
 	custom_effect_tooltip = ZEX_Deactivate_Agitation_tt
 	hidden_effect = {
 		clr_country_flag = zex_has_republican_agitation
-
 		remove_dynamic_modifier = {
 			modifier = ZEX_MGY_republican_agitation_impact_dynmod
 		}
@@ -153,7 +160,7 @@ ZEX_MGY_enable_state_unrest = {
 		}
 	}
 	## Adds the state modifiers -  Upper Maregypt
-	758 = { 
+	758 = {
 		add_dynamic_modifier = {
 			modifier = ZEX_MGY_republican_agitation_uppermaregypt_dynmod
 		}
@@ -189,7 +196,7 @@ ZEX_MGY_enable_state_unrest = {
 		add_dynamic_modifier = {
 			modifier = ZEX_MGY_republican_agitation_kaneigh_dynmod
 		}
-	}	
+	}
 	ZEX_MGY_UPDATE_LOCAL_UNREST_IMPACT = yes
 }
 
@@ -367,7 +374,7 @@ ZEX_MGY_Increase_Unrest = {
 				}
 			}
 			add_to_variable = {
-				ZEX_MGY_VAR_Sineighi_Alignment  = ZEX_MGY_UNREST_EFFECTS_IMPACT
+				ZEX_MGY_VAR_Sineighi_Alignment = ZEX_MGY_UNREST_EFFECTS_IMPACT
 			}
 			clamp_variable = {
 				var = ZEX_MGY_VAR_Sineighi_Alignment
@@ -653,7 +660,7 @@ ZEX_MGY_Increase_Unrest = {
 				modifier = {
 					factor = 0
 					OR = {
-						has_country_flag = ZEX_MGY_Zush_protected_flag					
+						has_country_flag = ZEX_MGY_Zush_protected_flag
 						has_country_flag = zex_mgy_increased_zush_unrest
 						check_variable = {
 							ZEX_MGY_VAR_Zush_Alignment > 99
@@ -891,7 +898,6 @@ ZEX_MGY_agitation_set_random_variable = {
 }
 
 # GUI-specific effects to show / hide the decisions
-
 ZEX_MGY_unrest_gui_clear_state_selection_flags = {
 	clr_country_flag = zex_mgy_unrest_selected_sineighi
 	clr_country_flag = zex_mgy_unrest_selected_delta
@@ -902,4 +908,63 @@ ZEX_MGY_unrest_gui_clear_state_selection_flags = {
 	clr_country_flag = zex_mgy_unrest_selected_easterndesert
 	clr_country_flag = zex_mgy_unrest_selected_uppermaregypt
 	clr_country_flag = zex_mgy_unrest_selected_zush
+}
+
+# Update the timer on day
+ZEX_MGY_unrest_end_turn_effect = {
+	add_to_variable = {
+		#Update the legitimacy with any new regains, if necessary
+		var = ZEX_MGY_LEGITIMACY
+		value = ZEX_MGY_UNREST_LEGITIMACY_REGAIN
+	}
+
+	# Increase unrest in states
+	ZEX_MGY_Increase_Unrest = yes
+
+	#Reset everything
+	clr_country_flag = ZEX_MGY_Sineighi_protected_flag
+	clr_country_flag = ZEX_MGY_Maneisrata_protected_flag
+	clr_country_flag = ZEX_MGY_Kaneigh_protected_flag
+	clr_country_flag = ZEX_MGY_Delta_protected_flag
+	clr_country_flag = ZEX_MGY_Manephis_protected_flag
+	clr_country_flag = ZEX_MGY_Somnambula_protected_flag
+	clr_country_flag = ZEX_MGY_Desert_protected_flag
+	clr_country_flag = ZEX_MGY_Zush_protected_flag
+	clr_country_flag = ZEX_MGY_UpperMaregypt_protected_flag
+	clr_country_flag = ZEX_MGY_Sineighi_arrests_flag
+	clr_country_flag = ZEX_MGY_Maneisrata_arrests_flag
+	clr_country_flag = ZEX_MGY_Kaneigh_arrests_flag
+	clr_country_flag = ZEX_MGY_Delta_arrests_flag
+	clr_country_flag = ZEX_MGY_Manephis_arrests_flag
+	clr_country_flag = ZEX_MGY_Somnambula_arrests_flag
+	clr_country_flag = ZEX_MGY_Desert_arrests_flag
+	clr_country_flag = ZEX_MGY_Zush_arrests_flag
+	clr_country_flag = ZEX_MGY_UpperMaregypt_arrests_flag
+	clr_country_flag = ZEX_MGY_Sineighi_propaganda_flag
+	clr_country_flag = ZEX_MGY_Maneisrata_propaganda_flag
+	clr_country_flag = ZEX_MGY_Kaneigh_propaganda_flag
+	clr_country_flag = ZEX_MGY_Delta_propaganda_flag
+	clr_country_flag = ZEX_MGY_Manephis_propaganda_flag
+	clr_country_flag = ZEX_MGY_Somnambula_propaganda_flag
+	clr_country_flag = ZEX_MGY_Desert_propaganda_flag
+	clr_country_flag = ZEX_MGY_Zush_propaganda_flag
+	clr_country_flag = ZEX_MGY_UpperMaregypt_propaganda_flag
+	set_variable = {
+		ZEX_MGY_Actions_Taken = 0
+	}
+	set_variable = {
+		ZEX_MGY_UNREST_LEGITIMACY_REGAIN = 0
+	}
+}
+
+#For the timer display
+ZEX_MGY_unrest_update_days_left = {
+	set_variable = {
+		var = ZEX_MGY_UNREST_DAYS_CURRENT
+		value = ZEX_MGY_DAY_REMAINING_IN_TURN
+	}
+	divide_variable = {
+		var = ZEX_MGY_UNREST_DAYS_CURRENT
+		value = ZEX_MGY_UNREST_EFFECTS_INTERVALLS
+	}
 }

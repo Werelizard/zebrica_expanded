@@ -53,7 +53,7 @@ guiTypes = {
 
 		instantTextBoxType = { # increase x by 15, y by 21
 			name = "ZEX_MGY_Zebrican_Faction_Seats_Display"
-			position = { x = 50 y = 133 } 
+			position = { x = 50 y = 153 } 
 			text = ZEX_MGY_Zebrican_Faction_Seats_Display_text
 			font = "hoi_18b"
 			format = center

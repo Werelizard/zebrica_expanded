@@ -1,0 +1,563 @@
+#######################################
+# Get unrest states for the provinces #
+#######################################
+
+#Sineighi
+
+defined_text = {
+	name = ZEX_MGY_GetSineighiAlignment
+	text = {
+		trigger = {
+			check_variable = {
+				ZEX_MGY_VAR_Sineighi_Alignment > 75
+			}
+		}
+		localization_key = ZEX_MGY_HIGHUNREST_SINEIGHI
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				ZEX_MGY_VAR_Sineighi_Alignment > 50
+			}
+			check_variable = {
+				ZEX_MGY_VAR_Sineighi_Alignment <75
+			}
+		}
+		localization_key = ZEX_MGY_MIDUNREST_SINEIGHI
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				ZEX_MGY_VAR_Sineighi_Alignment > 25
+			}
+			check_variable = {
+				ZEX_MGY_VAR_Sineighi_Alignment < 50
+			}
+		}
+		localization_key = ZEX_MGY_LOWUNREST_SINEIGHI
+	}
+	text = {
+		localization_key = ZEX_MGY_NOUNREST_SINEIGHI
+	}
+}
+
+# Maneisrata
+
+defined_text = {
+	name = ZEX_MGY_GetManeisrataAlignment
+	text = {
+		trigger = {
+			check_variable = {
+				ZEX_MGY_VAR_Maneisrata_Alignment >75
+			}
+		}
+		localization_key = ZEX_MGY_HIGHUNREST_MANEISRATA
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				ZEX_MGY_VAR_Maneisrata_Alignment > 50
+			}
+			check_variable = {
+				ZEX_MGY_VAR_Maneisrata_Alignment <75
+			}
+		}
+		localization_key = ZEX_MGY_MIDUNREST_MANEISRATA
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				ZEX_MGY_VAR_Maneisrata_Alignment > 25
+			}
+			check_variable = {
+				ZEX_MGY_VAR_Maneisrata_Alignment < 50
+			}
+		}
+		localization_key = ZEX_MGY_LOWUNREST_MANEISRATA
+	}
+
+	text = {
+		localization_key = ZEX_MGY_NOUNREST_MANEISRATA
+	}
+}
+
+# Kaneigh
+
+defined_text = {
+	name = ZEX_MGY_GetKaneighAlignment
+	text = {
+		trigger = {
+			check_variable = {
+				ZEX_MGY_VAR_Kaneigh_Alignment >75
+			}
+		}
+		localization_key = ZEX_MGY_HIGHUNREST_KANEIGH
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				ZEX_MGY_VAR_Kaneigh_Alignment > 50
+			}
+			check_variable = {
+				ZEX_MGY_VAR_Kaneigh_Alignment <75
+			}
+		}
+		localization_key = ZEX_MGY_MIDUNREST_KANEIGH
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				ZEX_MGY_VAR_Kaneigh_Alignment > 25
+			}
+			check_variable = {
+				ZEX_MGY_VAR_Kaneigh_Alignment < 50
+			}
+		}
+		localization_key = ZEX_MGY_LOWUNREST_KANEIGH
+	}
+	text = {
+		localization_key = ZEX_MGY_NOUNREST_KANEIGH
+	}
+}
+
+# Delta
+
+defined_text = {
+	name = ZEX_MGY_GetDeltaAlignment
+	text = {
+		trigger = {
+			check_variable = {
+				ZEX_MGY_VAR_Delta_Alignment >75
+			}
+		}
+		localization_key = ZEX_MGY_HIGHUNREST_DELTA
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				ZEX_MGY_VAR_Delta_Alignment > 50
+			}
+			check_variable = {
+				ZEX_MGY_VAR_Delta_Alignment <75
+			}
+		}
+		localization_key = ZEX_MGY_MIDUNREST_DELTA
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				ZEX_MGY_VAR_Delta_Alignment > 25
+			}
+			check_variable = {
+				ZEX_MGY_VAR_Delta_Alignment < 50
+			}
+		}
+		localization_key = ZEX_MGY_LOWUNREST_DELTA
+	}
+	text = {
+		localization_key = ZEX_MGY_NOUNREST_DELTA
+	}
+}
+
+# Manephis
+
+defined_text = {
+	name = ZEX_MGY_GetManephisAlignment
+	text = {
+		trigger = {
+			check_variable = {
+				ZEX_MGY_VAR_Manephis_Alignment >75
+			}
+		}
+		localization_key = ZEX_MGY_HIGHUNREST_MANEPHIS
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				ZEX_MGY_VAR_Manephis_Alignment > 50
+			}
+			check_variable = {
+				ZEX_MGY_VAR_Manephis_Alignment <75
+			}
+		}
+		localization_key = ZEX_MGY_MIDUNREST_MANEPHIS
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				ZEX_MGY_VAR_Manephis_Alignment > 25
+			}
+			check_variable = {
+				ZEX_MGY_VAR_Manephis_Alignment < 50
+			}
+		}
+		localization_key = ZEX_MGY_LOWUNREST_MANEPHIS
+	}
+	text = {
+		localization_key = ZEX_MGY_NOUNREST_MANEPHIS
+	}
+}
+
+# Somnambula
+
+defined_text = {
+	name = ZEX_MGY_GetSomnambulaAlignment
+	text = {
+		trigger = {
+			check_variable = {
+				ZEX_MGY_VAR_Somnambula_Alignment >75
+			}
+		}
+		localization_key = ZEX_MGY_HIGHUNREST_SOMNAMBULA
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				ZEX_MGY_VAR_Somnambula_Alignment > 50
+			}
+			check_variable = {
+				ZEX_MGY_VAR_Somnambula_Alignment <75
+			}
+		}
+		localization_key = ZEX_MGY_MIDUNREST_SOMNAMBULA
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				ZEX_MGY_VAR_Somnambula_Alignment > 25
+			}
+			check_variable = {
+				ZEX_MGY_VAR_Somnambula_Alignment < 50
+			}
+		}
+		localization_key = ZEX_MGY_LOWUNREST_SOMNAMBULA
+	}
+	text = {
+		localization_key = ZEX_MGY_NOUNREST_SOMNAMBULA
+	}
+}
+
+# Desert
+
+defined_text = {
+	name = ZEX_MGY_GetEastdesertAlignment
+	text = {
+		trigger = {
+			check_variable = {
+				ZEX_MGY_VAR_Eastdesert_Alignment >75
+			}
+		}
+		localization_key = ZEX_MGY_HIGHUNREST_DESERT
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				ZEX_MGY_VAR_Eastdesert_Alignment > 50
+			}
+			check_variable = {
+				ZEX_MGY_VAR_Eastdesert_Alignment <75
+			}
+		}
+		localization_key = ZEX_MGY_MIDUNREST_DESERT
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				ZEX_MGY_VAR_Eastdesert_Alignment > 25
+			}
+			check_variable = {
+				ZEX_MGY_VAR_Eastdesert_Alignment < 50
+			}
+		}
+		localization_key = ZEX_MGY_LOWUNREST_DESERT
+	}
+	text = {
+		localization_key = ZEX_MGY_NOUNREST_DESERT
+	}
+}
+
+# Zush
+
+defined_text = {
+	name = ZEX_MGY_GetZushAlignment
+	text = {
+		trigger = {
+			check_variable = {
+				ZEX_MGY_VAR_Zush_Alignment >75
+			}
+		}
+		localization_key = ZEX_MGY_HIGHUNREST_ZUSH
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				ZEX_MGY_VAR_Zush_Alignment > 50
+			}
+			check_variable = {
+				ZEX_MGY_VAR_Zush_Alignment <75
+			}
+		}
+		localization_key = ZEX_MGY_MIDUNREST_ZUSH
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				ZEX_MGY_VAR_Zush_Alignment > 25
+			}
+			check_variable = {
+				ZEX_MGY_VAR_Zush_Alignment < 50
+			}
+		}
+		localization_key = ZEX_MGY_LOWUNREST_ZUSH
+	}
+	text = {
+		localization_key = ZEX_MGY_NOUNREST_ZUSH
+	}
+}
+
+# Upper Maregypt
+
+defined_text = {
+	name = ZEX_MGY_GetUpperMaregyptAlignment
+	text = {
+		trigger = {
+			check_variable = {
+				ZEX_MGY_VAR_UpperMaregypt_Alignment >75
+			}
+		}
+		localization_key = ZEX_MGY_HIGHUNREST_UPPERMAREGYPT
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				ZEX_MGY_VAR_UpperMaregypt_Alignment > 50
+			}
+			check_variable = {
+				ZEX_MGY_VAR_UpperMaregypt_Alignment <75
+			}
+		}
+		localization_key = ZEX_MGY_MIDUNREST_UPPERMAREGYPT
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				ZEX_MGY_VAR_UpperMaregypt_Alignment > 25
+			}
+			check_variable = {
+				ZEX_MGY_VAR_UpperMaregypt_Alignment < 50
+			}
+		}
+		localization_key = ZEX_MGY_LOWUNREST_UPPERMAREGYPT
+	}
+	text = {
+		localization_key = ZEX_MGY_NOUNREST_UPPERMAREGYPT
+	}
+}
+
+#
+#
+# Markers for state effects, by state
+#
+#
+
+
+
+#
+#
+# State Selection Loc
+#
+#
+
+defined_text = {
+	name = ZEX_MGY_GetIsNoStateSelected
+	text = {
+		trigger = {
+			OR = {
+				has_country_flag = zex_mgy_unrest_selected_sineighi
+				has_country_flag = zex_mgy_unrest_selected_delta
+				has_country_flag = zex_mgy_unrest_selected_kaneigh
+				has_country_flag = zex_mgy_unrest_selected_maneisrata
+				has_country_flag = zex_mgy_unrest_selected_manephis
+				has_country_flag = zex_mgy_unrest_selected_somnambula
+				has_country_flag = zex_mgy_unrest_selected_easterndesert
+				has_country_flag = zex_mgy_unrest_selected_uppermaregypt
+				has_country_flag = zex_mgy_unrest_selected_zush
+			}
+		}
+		localization_key = ZEX_MGY_NO_LOCALISATION
+	}
+	text = {
+		localization_key = ZEX_MGY_state_empty
+	}
+}
+
+defined_text = {
+	name = ZEX_MGY_GetFocusedState_Title
+	text = {
+		trigger = {
+			has_country_flag = zex_mgy_unrest_selected_kaneigh
+		}
+		localization_key = ZEX_MGY_republican_agitation_state_kaneigh_title
+	}
+	text = {
+		localization_key = ZEX_MGY_NO_LOCALISATION
+	}
+}
+
+defined_text = {
+	name = ZEX_MGY_GetFocusedLore
+	text = {
+		trigger = {
+			has_country_flag = zex_mgy_unrest_selected_kaneigh
+		}
+		localization_key = ZEX_MGY_republican_agitation_kaneigh_text
+	}
+	text = {
+		localization_key = ZEX_MGY_NO_LOCALISATION
+	}
+}
+
+defined_text = {
+	name = ZEX_MGY_GetFocusedState
+	text = {
+		trigger = {
+			has_country_flag = zex_mgy_unrest_selected_kaneigh
+		}
+		localization_key = ZEX_MGY_kaneigh_cartouche_icon
+	}
+	text = {
+		localization_key = ZEX_MGY_empty_cartouche_icon
+	}
+}
+
+# For the timer's background
+defined_text = {
+	name = ZEX_MGY_Get_Unrest_Timer_Progression
+	text = {
+		trigger = {
+			check_variable = { ZEX_MGY_UNREST_DAYS_CURRENT < 0.2 }
+		}
+		localization_key = ZEX_MGY_Turn_Timer_6
+	}
+	text = {
+		trigger = {
+			check_variable = { ZEX_MGY_UNREST_DAYS_CURRENT < 0.4 }
+		}
+		localization_key = ZEX_MGY_Turn_Timer_5
+	}
+	text = {
+		trigger = {
+			check_variable = { ZEX_MGY_UNREST_DAYS_CURRENT < 0.6 }
+		}
+		localization_key = ZEX_MGY_Turn_Timer_4
+	}
+	text = {
+		trigger = {
+			check_variable = { ZEX_MGY_UNREST_DAYS_CURRENT < 0.7 }
+		}
+		localization_key = ZEX_MGY_Turn_Timer_3
+	}
+	text = {
+		trigger = {
+			check_variable = { ZEX_MGY_UNREST_DAYS_CURRENT < 0.9 }
+		}
+		localization_key = ZEX_MGY_Turn_Timer_2
+	}
+	text = {
+		localization_key = ZEX_MGY_Turn_Timer_1
+	}
+}
+
+# State buttons texture
+
+defined_text = {
+	name = ZEX_MGY_GetIsUnrestPropagandaButtonActive
+	text = {
+		trigger = {
+			OR = {
+				has_country_flag = zex_mgy_unrest_selected_sineighi
+				has_country_flag = zex_mgy_unrest_selected_delta
+				has_country_flag = zex_mgy_unrest_selected_kaneigh
+				has_country_flag = zex_mgy_unrest_selected_maneisrata
+				has_country_flag = zex_mgy_unrest_selected_manephis
+				has_country_flag = zex_mgy_unrest_selected_somnambula
+				has_country_flag = zex_mgy_unrest_selected_easterndesert
+				has_country_flag = zex_mgy_unrest_selected_uppermaregypt
+				has_country_flag = zex_mgy_unrest_selected_zush
+			}
+		}
+		localization_key = ZEX_MGY_Political_Unrest_Propaganda_Button
+	}
+	text = {
+		localization_key = ZEX_MGY_Button_Hidden
+	}
+}
+
+defined_text = {
+	name = ZEX_MGY_GetIsUnrestArrestsButtonActive
+	text = {
+		trigger = {
+			OR = {
+				has_country_flag = zex_mgy_unrest_selected_sineighi
+				has_country_flag = zex_mgy_unrest_selected_delta
+				has_country_flag = zex_mgy_unrest_selected_kaneigh
+				has_country_flag = zex_mgy_unrest_selected_maneisrata
+				has_country_flag = zex_mgy_unrest_selected_manephis
+				has_country_flag = zex_mgy_unrest_selected_somnambula
+				has_country_flag = zex_mgy_unrest_selected_easterndesert
+				has_country_flag = zex_mgy_unrest_selected_uppermaregypt
+				has_country_flag = zex_mgy_unrest_selected_zush
+			}
+		}
+		localization_key = ZEX_MGY_Political_Unrest_Arrest_Button
+	}
+	text = {
+		localization_key = ZEX_MGY_Button_Hidden
+	}
+}
+
+defined_text = {
+	name = ZEX_MGY_GetIsUnrestPoliceButtonActive
+	text = {
+		trigger = {
+			OR = {
+				has_country_flag = zex_mgy_unrest_selected_sineighi
+				has_country_flag = zex_mgy_unrest_selected_delta
+				has_country_flag = zex_mgy_unrest_selected_kaneigh
+				has_country_flag = zex_mgy_unrest_selected_maneisrata
+				has_country_flag = zex_mgy_unrest_selected_manephis
+				has_country_flag = zex_mgy_unrest_selected_somnambula
+				has_country_flag = zex_mgy_unrest_selected_easterndesert
+				has_country_flag = zex_mgy_unrest_selected_uppermaregypt
+				has_country_flag = zex_mgy_unrest_selected_zush
+			}
+		}
+		localization_key = ZEX_MGY_Political_Unrest_Police_Button
+	}
+	text = {
+		localization_key = ZEX_MGY_Button_Hidden
+	}
+}
+
+defined_text = {
+	name = ZEX_MGY_GetIsUnrestButtonBackgroundActive
+	text = {
+		trigger = {
+			OR = {
+				has_country_flag = zex_mgy_unrest_selected_sineighi
+				has_country_flag = zex_mgy_unrest_selected_delta
+				has_country_flag = zex_mgy_unrest_selected_kaneigh
+				has_country_flag = zex_mgy_unrest_selected_maneisrata
+				has_country_flag = zex_mgy_unrest_selected_manephis
+				has_country_flag = zex_mgy_unrest_selected_somnambula
+				has_country_flag = zex_mgy_unrest_selected_easterndesert
+				has_country_flag = zex_mgy_unrest_selected_uppermaregypt
+				has_country_flag = zex_mgy_unrest_selected_zush
+			}
+		}
+		localization_key = ZEX_MGY_Political_Button_Background
+	}
+	text = {
+		localization_key = ZEX_MGY_Button_Hidden
+	}
+}

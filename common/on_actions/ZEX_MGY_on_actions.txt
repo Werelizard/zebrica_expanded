@@ -1,27 +1,67 @@
 on_actions = {
 	on_startup = {
 		MGY = {
-			add_opinion_modifier = { target = THU modifier = distrustful_relations }
-			add_opinion_modifier = { target = GYZ modifier = distrustful_relations }
-			add_opinion_modifier = { target = STM modifier = distrustful_relations }
-			add_opinion_modifier = { target = SLC modifier = distrustful_relations }
-			add_opinion_modifier = { target = BLT modifier = distrustful_relations }
-			add_opinion_modifier = { target = CZR modifier = distrustful_relations }
+			add_opinion_modifier = {
+				target = THU
+				modifier = distrustful_relations
+			}
+			add_opinion_modifier = {
+				target = GYZ
+				modifier = distrustful_relations
+			}
+			add_opinion_modifier = {
+				target = STM
+				modifier = distrustful_relations
+			}
+			add_opinion_modifier = {
+				target = SLC
+				modifier = distrustful_relations
+			}
+			add_opinion_modifier = {
+				target = BLT
+				modifier = distrustful_relations
+			}
+			add_opinion_modifier = {
+				target = CZR
+				modifier = distrustful_relations
+			}
 		}
 	}
-	on_weekly_MGY = {
+	on_daily_MGY = {
 		effect = {
+			# Effect for daily calculations for the unrest system
 			if = {
 				limit = {
-					has_idea = ZEX_MGY_goal_harmony_society_idea
+					has_country_flag = zex_has_republican_agitation
 				}
+				# Update the legitimacy variable every day
 				add_to_variable = {
-					ZEX_MGY_LEGITIMACY = ZEX_MGY_LEGITIMACY_INCREASE
+					var = ZEX_MGY_LEGITIMACY
+					value = ZEX_MGY_LEGITIMACY_INCREASE_DAILY
 				}
 				clamp_variable = {
 					var = ZEX_MGY_LEGITIMACY
 					min = 0
 					max = 100
+				}
+				#Update how many days are left
+				subtract_from_variable = {
+					var = ZEX_MGY_DAY_REMAINING_IN_TURN
+					value = 1
+				}
+				#For the timer Display
+				ZEX_MGY_unrest_update_days_left = yes
+				#On End Turn only		
+				if = {
+					limit = {
+						check_variable = {
+							ZEX_MGY_DAY_REMAINING_IN_TURN < 1
+						}
+					}
+					set_variable = {
+						ZEX_MGY_DAY_REMAINING_IN_TURN = ZEX_MGY_UNREST_EFFECTS_INTERVALLS
+					}
+					ZEX_MGY_unrest_end_turn_effect = yes					#End the turn effects
 				}
 			}
 		}

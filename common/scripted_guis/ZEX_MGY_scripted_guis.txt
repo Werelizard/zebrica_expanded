@@ -11,38 +11,47 @@ scripted_gui = {
 			ZEX_MGY_sineighi_icon_click = {
 				ZEX_MGY_unrest_gui_clear_state_selection_flags = yes
 				set_country_flag = zex_mgy_unrest_selected_sineighi
+				scoped_sound_effect = click_ok
 			}
 			ZEX_MGY_maneisrata_icon_click = {
 				ZEX_MGY_unrest_gui_clear_state_selection_flags = yes
 				set_country_flag = zex_mgy_unrest_selected_maneisrata
+				scoped_sound_effect = click_ok
 			}
 			ZEX_MGY_kaneigh_icon_click = {
 				ZEX_MGY_unrest_gui_clear_state_selection_flags = yes
 				set_country_flag = zex_mgy_unrest_selected_kaneigh
+				scoped_sound_effect = click_ok
 			}
 			ZEX_MGY_delta_icon_click = {
 				ZEX_MGY_unrest_gui_clear_state_selection_flags = yes
 				set_country_flag = zex_mgy_unrest_selected_delta
+				scoped_sound_effect = click_ok
 			}
 			ZEX_MGY_manephis_icon_click = {
 				ZEX_MGY_unrest_gui_clear_state_selection_flags = yes
 				set_country_flag = zex_mgy_unrest_selected_manephis
+				scoped_sound_effect = click_ok
 			}
 			ZEX_MGY_somnambula_icon_click = {
 				ZEX_MGY_unrest_gui_clear_state_selection_flags = yes
 				set_country_flag = zex_mgy_unrest_selected_somnambula
+				scoped_sound_effect = click_ok
 			}
 			ZEX_MGY_eastdesert_icon_click = {
 				ZEX_MGY_unrest_gui_clear_state_selection_flags = yes
 				set_country_flag = zex_mgy_unrest_selected_easterndesert
+				scoped_sound_effect = click_ok
 			}
 			ZEX_MGY_zush_icon_click = {
 				ZEX_MGY_unrest_gui_clear_state_selection_flags = yes
 				set_country_flag = zex_mgy_unrest_selected_zush
+				scoped_sound_effect = click_ok
 			}
 			ZEX_MGY_uppermaregypt_icon_click = {
 				ZEX_MGY_unrest_gui_clear_state_selection_flags = yes
 				set_country_flag = zex_mgy_unrest_selected_uppermaregypt
+				scoped_sound_effect = click_ok
 			}
 		}
 		
@@ -131,6 +140,25 @@ scripted_gui = {
 				image = "[ZEX_MGY_GetFocusedState]"
 			}
 		}
+		properties = {
+			ZEX_MGY_Turn_Timer = {
+				image = "[ZEX_MGY_Get_Unrest_Timer_Progression]"
+			}
+		}
+		properties = {
+			ZEX_MGY_republican_agitation_propaganda_button_icon = {
+				image = "[ZEX_MGY_GetIsUnrestPropagandaButtonActive]"
+			}
+			ZEX_MGY_republican_agitation_arrest_button_icon = {
+				image = "[ZEX_MGY_GetIsUnrestArrestsButtonActive]"
+			}
+			ZEX_MGY_republican_agitation_police_button_icon = {
+				image = "[ZEX_MGY_GetIsUnrestPoliceButtonActive]"
+			}
+			ZEX_MGY_republican_agitation_buttons_background = {
+				image = "[ZEX_MGY_GetIsUnrestButtonBackgroundActive]"
+			}
+		}
 
 		visible = {
 			
@@ -189,13 +217,6 @@ scripted_gui = {
 				zex_mgy_no_vizier_check = yes
 				has_country_flag = zex_mgy_vizier_highlight_flag
 			}
-
-			#Highlight
-			ZEX_MGY_Vizier_Button_HIGHLIGHT_visible = {
-				NOT = {
-					has_country_flag = ZEX_MGY_Vizier_Highlight_Hidden
-				}
-			}
 		}
 
 		effects = {
@@ -208,15 +229,6 @@ scripted_gui = {
 				}
 				else = {
 					set_country_flag = zex_mgy_vizier_highlight_flag
-				}
-				
-				if = {
-					limit = {
-						NOT = {
-							has_country_flag = ZEX_MGY_Vizier_Highlight_Hidden
-						}
-					}
-					set_country_flag = ZEX_MGY_Vizier_Highlight_Hidden
 				}
 			}
 		}

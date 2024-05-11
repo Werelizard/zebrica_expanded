@@ -61,6 +61,17 @@
  ZEX_MGY_AVERAGE_UNREST_TOOLTIP:0 "Our current £local_unrest  §Yaverage unrest§! represents the mean of all of our provinces' local unrest. At the national level, it will directly affect our country's £stability_texticon  §Ystability§! and £pol_power  §Ypolitical power§! gain."
  ZEX_MGY_REBELLION_LEGITIMACY:0 "Our current £ZEX_legitimacy  §Ylegitimacy§! represents how well our current monarchs holds up in the eyes of our citizens. Unlike the £local_unrest  §Yaverage unrest§! value, it has no effect on our country."
 
+ zex_mgy_less_than_actions_threshold_tt:0 "Not: has already taken §Y[?ZEX_MGY_MAX_Actions_Taken]§! actions this turn"
+ zex_mgy_no_action_in_kaneig_tt:0 "Not: has already intervened in §YKaneigh§!"
+ zex_mgy_no_action_in_maneisrata_tt:0 "Not: has already intervened in §YManeisrata§!"
+ zex_mgy_no_action_in_zush_tt:0 "Not: has already intervened in §YZush§!"
+ zex_mgy_no_action_in_uppermaregypt_tt:0 "Not: has already intervened in §YUpper Maregypt§!"
+ zex_mgy_no_action_in_sineighi_tt:0 "Not: has already intervened in §YSineighi§!"
+ zex_mgy_no_action_in_manephis_tt:0 "Not: has already intervened in §YManephis§!"
+ zex_mgy_no_action_in_delta_tt:0 "Not: has already intervened in the §YDelta§!"
+ zex_mgy_no_action_in_somnambula_tt:0 "Not: has already intervened in §YSomnambula§!"
+ zex_mgy_no_action_in_eastdesert_tt:0 "Not: has already intervened in the §YEastern Desert§!"
+
  ZEX_MGY_NOUNREST_SINEIGHI:0 "ZEX_MGY_NOUNREST_SINEIGHI"
  ZEX_MGY_LOWUNREST_SINEIGHI:0 "ZEX_MGY_LOWUNREST_SINEIGHI"
  ZEX_MGY_MIDUNREST_SINEIGHI:0 "ZEX_MGY_MIDUNREST_SINEIGHI"
@@ -125,17 +136,34 @@
  ZEX_MGY_republican_agitation_kaneigh_dynmod:0 "Local Unrest"
  ZEX_MGY_republican_agitation_sineighi_dynmod:0 "Local Unrest"
 
+ ZEX_MGY_Turn_Timer_Label:0 "Days Left"
+ ZEX_MGY_Turn_Timer_Days:0 "[?ZEX_MGY_DAY_REMAINING_IN_TURN]"
+ ZEX_MGY_Turn_Timer_Days_TOOLTIP:0 ""
+
+ ZEX_MGY_Turn_Timer_1:0 "ZEX_MGY_Turn_Timer_1"
+ ZEX_MGY_Turn_Timer_2:0 "ZEX_MGY_Turn_Timer_2"
+ ZEX_MGY_Turn_Timer_3:0 "ZEX_MGY_Turn_Timer_3"
+ ZEX_MGY_Turn_Timer_4:0 "ZEX_MGY_Turn_Timer_4"
+ ZEX_MGY_Turn_Timer_5:0 "ZEX_MGY_Turn_Timer_5"
+ ZEX_MGY_Turn_Timer_6:0 "ZEX_MGY_Turn_Timer_6"
+
+ ZEX_MGY_Button_Hidden:0 "ZEX_MGY_Unrest_Button_Empty"
+ ZEX_MGY_Political_Unrest_Propaganda_Button:0 "ZEX_MGY_Unrest_Button_Propaganda"
+ ZEX_MGY_Political_Unrest_Arrest_Button:0 "ZEX_MGY_Unrest_Button_Arrest"
+ ZEX_MGY_Political_Unrest_Police_Button:0 "ZEX_MGY_Unrest_Button_Police"
+ ZEX_MGY_Political_Button_Background:0 "ZEX_MGY_Unrest_Button_Background"
+
  ZEX_MGY_NO_LOCALISATION:0 ""
  ZEX_MGY_empty_cartouche_icon:0 "ZEX_MGY_Empty_Cartouche"
  ZEX_MGY_kaneigh_cartouche_icon:0 "ZEX_MGY_Cartouche_Kaneigh"
  
  ZEX_MGY_republican_agitation_state_UNSELECTED:0 "[ZEX_MGY_GetIsNoStateSelected]"
- ZEX_MGY_state_empty:0 "Click a Province to Show the Relevant Interactions!"
+ ZEX_MGY_state_empty:0 "Click a Province to Bring it Into Focus"
  ZEX_MGY_republican_agitation_state_title:0 "[ZEX_MGY_GetFocusedState_Title]"
  ZEX_MGY_republican_agitation_state_text:0 "[ZEX_MGY_GetFocusedLore]"
 
  ZEX_MGY_republican_agitation_state_kaneigh_title:0 "Kaneigh"
- ZEX_MGY_republican_agitation_kaneigh_text:0 "Located to the south-western tip of our kingdom, §YKaneigh§! is a sparsely populated, pastoral province nestled between the §YSouthwestern Desert§!, §YAnseruk§!, §YAbyssinia§! and §YKlugetown§!. The province is only nominally under our control, with §tSeperatists§! currently running amok through it - though any rebellion remains as of now quelled."
+ ZEX_MGY_republican_agitation_kaneigh_text:0 "§YKaneigh§! is a sparsely populated, pastoral province nestled between the §YSouthwestern Desert§!, §YAnseruk§!, §YAbyssinia§! and §YKlugetown§!. §tSeperatists§! currently run amok through it - though any rebellion remains as of now quelled."
 
  #Republican agitation decisions
  ZEX_Activate_Agitation_tt:0 "Enables the §YRepublican Agitation§! mechanic."

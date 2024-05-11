@@ -52,10 +52,6 @@ spriteTypes = {
 		textureFile = "gfx/interface/ZEX_GFX_Vizier_button.dds"
 	}
 	spriteType = {
-		name = "GFX_ZEX_MGY_Vizier_Button_Highlight"
-		textureFile = "gfx/interface/ZEX_GFX_Vizier_button_highlight.dds"
-	}
-	spriteType = {
 		name = "ZEX_GFX_grain_bag"
 		textureFile = "gfx/interface/decisions/ZEX_GFY_MGY_Agri_Sell_Goods.dds"
 	}

@@ -128,3 +128,133 @@ zex_mgy_khefer_not_in_power = {
 		}
 	}
 }
+
+#################################
+# Political Unrest Related      #
+#################################
+
+zex_mgy_less_than_actions_threshold = {
+	custom_trigger_tooltip = {
+		tooltip = zex_mgy_less_than_actions_threshold_tt
+		check_variable = {
+			ZEX_MGY_Actions_Taken < ZEX_MGY_MAX_Actions_Taken
+		}
+	}
+}
+
+zex_mgy_no_action_in_kaneigh = {
+	custom_trigger_tooltip = {
+		tooltip = zex_mgy_no_action_in_kaneigh_tt
+		NOT = {
+			OR = {
+				has_country_flag = ZEX_MGY_Kaneigh_protected_flag
+				has_country_flag = ZEX_MGY_Kaneigh_arrests_flag
+				has_country_flag = ZEX_MGY_Kaneigh_propaganda_flag
+			}
+		}
+	}
+}
+
+zex_mgy_no_action_in_maneisrata = {
+	custom_trigger_tooltip = {
+		tooltip = zex_mgy_no_action_in_maneisrata_tt
+		NOT = {
+			OR = {
+				has_country_flag = ZEX_MGY_Maneisrata_protected_flag
+				has_country_flag = ZEX_MGY_Maneisrata_arrests_flag
+				has_country_flag = ZEX_MGY_Maneisrata_propaganda_flag
+			}
+		}
+	}
+}
+
+zex_mgy_no_action_in_zush = {
+	custom_trigger_tooltip = {
+		tooltip = zex_mgy_no_action_in_zush_tt
+		NOT = {
+			OR = {
+				has_country_flag = ZEX_MGY_Zush_protected_flag
+				has_country_flag = ZEX_MGY_Zush_arrests_flag
+				has_country_flag = ZEX_MGY_Zush_propaganda_flag
+			}
+		}
+	}
+}
+
+zex_mgy_no_action_in_uppermaregypt = {
+	custom_trigger_tooltip = {
+		tooltip = zex_mgy_no_action_in_uppermaregypt_tt
+		NOT = {
+			OR = {
+				has_country_flag = ZEX_MGY_UpperMaregypt_protected_flag
+				has_country_flag = ZEX_MGY_UpperMaregypt_arrests_flag
+				has_country_flag = ZEX_MGY_UpperMaregypt_propaganda_flag
+			}
+		}
+	}
+}
+
+zex_mgy_no_action_in_sineighi = {
+	custom_trigger_tooltip = {
+		tooltip = zex_mgy_no_action_in_sineighi_tt
+		NOT = {
+			OR = {
+				has_country_flag = ZEX_MGY_Sineighi_protected_flag
+				has_country_flag = ZEX_MGY_Sineighi_arrests_flag
+				has_country_flag = ZEX_MGY_Sineighi_propaganda_flag
+			}
+		}
+	}
+}
+
+zex_mgy_no_action_in_manephis = {
+	custom_trigger_tooltip = {
+		tooltip = zex_mgy_no_action_in_manephis_tt
+		NOT = {
+			OR = {
+				has_country_flag = ZEX_MGY_Manephis_propaganda_flag
+				has_country_flag = ZEX_MGY_Manephis_arrests_flag
+				has_country_flag = ZEX_MGY_Manephis_propaganda_flag
+			}
+		}
+	}
+}
+
+zex_mgy_no_action_in_delta = {
+	custom_trigger_tooltip = {
+		tooltip = zex_mgy_no_action_in_delta_tt
+		NOT = {
+			OR = {
+				has_country_flag = ZEX_MGY_Delta_protected_flag
+				has_country_flag = ZEX_MGY_Delta_arrests_flag
+				has_country_flag = ZEX_MGY_Delta_propaganda_flag
+			}
+		}
+	}
+}
+
+zex_mgy_no_action_in_somnambula = {
+	custom_trigger_tooltip = {
+		tooltip = zex_mgy_no_action_in_somnambula_tt
+		NOT = {
+			OR = {
+				has_country_flag = ZEX_MGY_Somnambula_protected_flag
+				has_country_flag = ZEX_MGY_Somnambula_arrests_flag
+				has_country_flag = ZEX_MGY_Somnambula_propaganda_flag
+			}
+		}
+	}
+}
+
+zex_mgy_no_action_in_eastdesert = {
+	custom_trigger_tooltip = {
+		tooltip = zex_mgy_no_action_in_eastdesert_tt
+		NOT = {
+			OR = {
+				has_country_flag = ZEX_MGY_Desert_protected_flag
+				has_country_flag = ZEX_MGY_Desert_arrests_flag
+				has_country_flag = ZEX_MGY_Desert_propaganda_flag
+			}
+		}
+	}
+}

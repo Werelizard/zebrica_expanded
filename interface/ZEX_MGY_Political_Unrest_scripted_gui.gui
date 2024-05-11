@@ -93,6 +93,35 @@ guiTypes = {
 				spriteType = "ZEX_MGY_NOUNREST_ZUSH"
 				pdx_tooltip = ZEX_MGY_Zush_icon_tt
 			}
+		
+			#Days until turn ends Counter
+			iconType = {
+				name = "ZEX_MGY_Turn_Timer"
+				position = { x = 403 y = 315 }
+				spriteType = "ZEX_MGY_Turn_Timer"
+			}
+
+			instantTextBoxType = {
+				name ="ZEX_MGY_Turn_Timer_Label"
+				position = { x = 398 y = 288 }
+				font = "hoi_20b"
+				text = "ZEX_MGY_Turn_Timer_Label"
+				format = center
+				maxHeight = 32
+				maxwidth = 78
+				pdx_tooltip = ZEX_MGY_Turn_Timer_Days_TOOLTIP
+			}
+
+			instantTextBoxType = {
+				name ="ZEX_MGY_Turn_Timer_Days"
+				position = { x = 416 y = 328 }
+				font = "hoi_36header"
+				text = "ZEX_MGY_Turn_Timer_Days"
+				format = center
+				maxHeight = 32
+				maxwidth = 43
+				pdx_tooltip = ZEX_MGY_Turn_Timer_Days_TOOLTIP
+			}
 
 			#Unrest and Legitimacvy
 			
@@ -131,6 +160,8 @@ guiTypes = {
 				pdx_tooltip = ZEX_MGY_REBELLION_LEGITIMACY
 			}
 
+			# Title and help tooltip
+
 			iconType = {
 				name = "ZEX_MGY_Rebellion_Help"
 				position = { x = 430 y = 20 }
@@ -147,7 +178,6 @@ guiTypes = {
 				maxHeight = 20
 				maxwidth = 200
 			}
-			
 		}
 
 		#State focus sub-window
@@ -164,7 +194,7 @@ guiTypes = {
 
 			instantTextBoxType = {
 				name = "ZEX_MGY_republican_agitation_state_UNSELECTED"
-				position = { x = 10 y = 50 }
+				position = { x = 10 y = 80 }
 				font = "hoi_24header"
 				format = centre
 				text = "ZEX_MGY_republican_agitation_state_UNSELECTED"
@@ -187,17 +217,40 @@ guiTypes = {
 				format = centre
 				text = "ZEX_MGY_republican_agitation_state_title"
 				maxHeight = 20
-				maxwidth = 394
+				maxwidth = 306
 			}
 
 			instantTextBoxType = {
 				name = "ZEX_MGY_republican_agitation_state_text"
-				position = { x = 86 y = 35 }
-				font = "hoi_18mbs"
+				position = { x = 86 y = 40 }
+				font = "hoi_18b"
 				text = "ZEX_MGY_republican_agitation_state_text"
 				format = left
 				maxHeight = 135
-				maxwidth = 394
+				maxwidth = 306
+			}
+
+			#Buttons for available actions
+			iconType = {
+				name = "ZEX_MGY_republican_agitation_buttons_background"
+				position = { x = 396 y = 12 }
+				size = { width = 56 height = 156  }
+				spriteType = "GFX_tiled_window_thin_border2"
+			}
+			iconType = {
+				name = "ZEX_MGY_republican_agitation_propaganda_button_icon"
+				position = { x = 403 y = 19 }
+				spriteType = "ZEX_MGY_Unrest_Button_Police"
+			}
+			iconType = {
+				name = "ZEX_MGY_republican_agitation_arrest_button_icon"
+				position = { x = 403 y = 70 }
+				spriteType = "ZEX_MGY_Unrest_Button_Police"
+			}
+			iconType = {
+				name = "ZEX_MGY_republican_agitation_police_button_icon"
+				position = { x = 403 y = 121 }
+				spriteType = "ZEX_MGY_Unrest_Button_Police"
 			}
 		}
 	}

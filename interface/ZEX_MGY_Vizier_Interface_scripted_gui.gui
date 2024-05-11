@@ -41,12 +41,6 @@ guiTypes = {
 			pdx_tooltip_delayed = ZEX_MGY_Current_Vizier_Bio_tt
 		}
 
-		iconType = {
-			name = "ZEX_MGY_Vizier_Button_HIGHLIGHT"
-			position = { x = 133 y = 223}
-			spriteType = "GFX_ZEX_MGY_Vizier_Button_Highlight"
-		}
-
 		buttonType = {
 			name = "ZEX_MGY_Vizier_Button"
 			position = { x = 135 y = 226}
