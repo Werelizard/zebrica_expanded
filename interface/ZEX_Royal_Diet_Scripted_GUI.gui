@@ -2,12 +2,17 @@ guiTypes = {
 	containerWindowType = {
         name = "ZEX_MGY_royal_diet_gui_container"
         position = { x = 0 y = 0 }
-		size = { width = 400 height = 450 }
+		size = { width = 490 height = 470 }
+		background = {
+			size = { width = 490 height = 470 }
+			name = "zex_mgy_unrest_background"
+			quadTextureSprite = "GFX_tiled_window_thin_border2"
+		}
 
 		# Header
 		instantTextBoxType = {
 			name = "ZEX_MGY_royal_diet_total_title"
-			position = { x = 35 y = 0 } 
+			position = { x = 35 y = 10 } 
 			text = ZEX_MGY_royal_diet_total_title_text
 			font = "hoi_24header"
 			format = center
@@ -19,7 +24,7 @@ guiTypes = {
 
 		iconType = {
 			name = "ZEX_MGY_royal_diet_Help"
-			position = { x = 430 y = 0 }
+			position = { x = 430 y = 10 }
 			spriteType = "ZEX_MGY_Help_Tooltip"
 			pdx_tooltip = ZEX_MGY_royal_diet_Help_tt
 		}
@@ -28,39 +33,39 @@ guiTypes = {
 
 		iconType = {
 			name = "ZEX_MGY_Zebrican_Faction_Background"
-			position = { x = 35 y = 122 }
+			position = { x = 35 y = 132 }
 			spriteType = "GFX_ZEX_MGY_royal_diet_faction_counter"
-			pdx_tooltip = ZEX_MGY_Faction_Values_tt
-			pdx_tooltip_delayed = ZEX_MGY_Zebrican_Faction_values_tt
+			pdx_tooltip = ZEX_MGY_Zebrican_Faction_values_tt
+			pdx_tooltip_delayed = ZEX_MGY_Faction_Values_tt
 		}
 
 		instantTextBoxType = { # increase x by 15, y by 1
 			name = "ZEX_MGY_Zebrican_Faction_Loyalty_Display"
-			position = { x = 50 y = 123 } 
+			position = { x = 50 y = 133 } 
 			text = ZEX_MGY_Zebrican_Faction_Loyalty_Display_text
 			font = "hoi_18b"
 			format = center
 			maxHeight = 19
 			maxwidth = 54
-			pdx_tooltip = ZEX_MGY_Faction_Values_tt
-			pdx_tooltip_delayed = ZEX_MGY_Zebrican_Faction_values_tt
+			pdx_tooltip = ZEX_MGY_Zebrican_Faction_values_tt
+			pdx_tooltip_delayed = ZEX_MGY_Faction_Values_tt
 		}
 
 		instantTextBoxType = { # increase x by 15, y by 21
 			name = "ZEX_MGY_Zebrican_Faction_Seats_Display"
-			position = { x = 50 y = 143 } 
+			position = { x = 50 y = 133 } 
 			text = ZEX_MGY_Zebrican_Faction_Seats_Display_text
 			font = "hoi_18b"
 			format = center
 			maxHeight = 19
 			maxwidth = 54
-			pdx_tooltip = ZEX_MGY_Faction_Values_tt
-			pdx_tooltip_delayed = ZEX_MGY_Zebrican_Faction_values_tt
+			pdx_tooltip = ZEX_MGY_Zebrican_Faction_values_tt
+			pdx_tooltip_delayed = ZEX_MGY_Faction_Values_tt
 		}
 
 		iconType = {
 			name = "GFX_ZEX_MGY_royal_diet_faction_zebricans_icon"
-			position = { x = 38 y = 40 }
+			position = { x = 38 y = 50 }
 			spriteType = "GFX_ZEX_MGY_royal_diet_faction_zebricans"
 			pdx_tooltip = zex_mgy_royal_diet_faction_lore_zebricans
 		}
@@ -69,39 +74,39 @@ guiTypes = {
 
 		iconType = {
 			name = "ZEX_MGY_Harmonist_Faction_Background"
-			position = { x = 150 y = 122 }
+			position = { x = 150 y = 132 }
 			spriteType = "GFX_ZEX_MGY_royal_diet_faction_counter"
-			pdx_tooltip = ZEX_MGY_Faction_Values_tt
-			pdx_tooltip_delayed = ZEX_MGY_Harmonist_Faction_values_tt
+			pdx_tooltip = ZEX_MGY_Harmonist_Faction_values_tt
+			pdx_tooltip_delayed = ZEX_MGY_Faction_Values_tt	
 		}
 
 		instantTextBoxType = { # increase x by 15, y by 1
 			name = "ZEX_MGY_Harmonist_Faction_Loyalty_Display"
-			position = { x = 165 y = 123 } 
+			position = { x = 165 y = 133 } 
 			text = ZEX_MGY_Harmonist_Faction_Loyalty_Display_text
 			font = "hoi_18b"
 			format = center
 			maxHeight = 19
 			maxwidth = 54
-			pdx_tooltip = ZEX_MGY_Faction_Values_tt
-			pdx_tooltip_delayed = ZEX_MGY_Harmonist_Faction_values_tt	
+			pdx_tooltip = ZEX_MGY_Harmonist_Faction_values_tt
+			pdx_tooltip_delayed = ZEX_MGY_Faction_Values_tt	
 		}
 
 		instantTextBoxType = { # increase x by 15, y by 21
 			name = "ZEX_MGY_Harmonist_Faction_Seats_Display"
-			position = { x = 165 y = 143 } 
+			position = { x = 165 y = 153 } 
 			text = ZEX_MGY_Harmonist_Faction_Seats_Display_text
 			font = "hoi_18b"
 			format = center
 			maxHeight = 19
 			maxwidth = 54
-			pdx_tooltip = ZEX_MGY_Faction_Values_tt
-			pdx_tooltip_delayed = ZEX_MGY_Harmonist_Faction_values_tt
+			pdx_tooltip = ZEX_MGY_Harmonist_Faction_values_tt
+			pdx_tooltip_delayed = ZEX_MGY_Faction_Values_tt	
 		}
 
 		iconType = {
 			name = "GFX_ZEX_MGY_royal_diet_faction_harmonists_icon"
-			position = { x = 153 y = 40 }
+			position = { x = 153 y = 50 }
 			spriteType = "GFX_ZEX_MGY_royal_diet_faction_harmonists"
 			pdx_tooltip = zex_mgy_royal_diet_faction_lore_harmonists
 		}
@@ -110,39 +115,39 @@ guiTypes = {
 
 		iconType = {
 			name = "ZEX_MGY_Loyalists_Faction_Background"
-			position = { x = 265 y = 122 }
+			position = { x = 265 y = 132 }
 			spriteType = "GFX_ZEX_MGY_royal_diet_faction_counter"
-			pdx_tooltip = ZEX_MGY_Faction_Values_tt
-			pdx_tooltip_delayed = ZEX_MGY_Loyalists_Faction_values_tt
+			pdx_tooltip = ZEX_MGY_Loyalists_Faction_values_tt
+			pdx_tooltip_delayed = ZEX_MGY_Faction_Values_tt
 		}
 
 		instantTextBoxType = { # increase x by 15, y by 1
 			name = "ZEX_MGY_Loyalists_Faction_Loyalty_Display"
-			position = { x = 280 y = 123 } 
+			position = { x = 280 y = 133 } 
 			text = ZEX_MGY_Loyalists_Faction_Loyalty_Display_text
 			font = "hoi_18b"
 			format = center
 			maxHeight = 19
 			maxwidth = 54
-			pdx_tooltip = ZEX_MGY_Faction_Values_tt
-			pdx_tooltip_delayed = ZEX_MGY_Loyalists_Faction_values_tt
+			pdx_tooltip = ZEX_MGY_Loyalists_Faction_values_tt
+			pdx_tooltip_delayed = ZEX_MGY_Faction_Values_tt
 		}
 
 		instantTextBoxType = { # increase x by 15, y by 21
 			name = "ZEX_MGY_Loyalists_Faction_Seats_Display"
-			position = { x = 280 y = 143 } 
+			position = { x = 280 y = 153 } 
 			text = ZEX_MGY_Loyalists_Faction_Seats_Display_text
 			font = "hoi_18b"
 			format = center
 			maxHeight = 19
 			maxwidth = 54
-			pdx_tooltip = ZEX_MGY_Faction_Values_tt
-			pdx_tooltip_delayed = ZEX_MGY_Loyalists_Faction_values_tt
+			pdx_tooltip = ZEX_MGY_Loyalists_Faction_values_tt
+			pdx_tooltip_delayed = ZEX_MGY_Faction_Values_tt
 		}
 
 		iconType = {
 			name = "GFX_ZEX_MGY_royal_diet_faction_loyalists_icon"
-			position = { x = 268 y = 40 }
+			position = { x = 268 y = 50 }
 			spriteType = "GFX_ZEX_MGY_royal_diet_faction_loyalists"
 			pdx_tooltip = zex_mgy_royal_diet_faction_lore_loyalists
 		}
@@ -151,39 +156,39 @@ guiTypes = {
 
 		iconType = {
 			name = "ZEX_MGY_Independent_Faction_Background"
-			position = { x = 380 y = 122 }
+			position = { x = 380 y = 132 }
 			spriteType = "GFX_ZEX_MGY_royal_diet_faction_counter"
-			pdx_tooltip = ZEX_MGY_Faction_Values_tt
-			pdx_tooltip_delayed = ZEX_MGY_Independent_Faction_values_tt
+			pdx_tooltip = ZEX_MGY_Independent_Faction_values_tt
+			pdx_tooltip_delayed = ZEX_MGY_Faction_Values_tt
 		}
 
 		instantTextBoxType = { # increase x by 15, y by 1
 			name = "ZEX_MGY_Independent_Faction_Loyalty_Display"
-			position = { x = 395 y = 123 } 
+			position = { x = 395 y = 133 } 
 			text = ZEX_MGY_Independent_Faction_Loyalty_Display_text
 			font = "hoi_18b"
 			format = center
 			maxHeight = 19
 			maxwidth = 54
-			pdx_tooltip = ZEX_MGY_Faction_Values_tt
-			pdx_tooltip_delayed = ZEX_MGY_Independent_Faction_values_tt
+			pdx_tooltip = ZEX_MGY_Independent_Faction_values_tt
+			pdx_tooltip_delayed = ZEX_MGY_Faction_Values_tt
 		}
 
 		instantTextBoxType = { # increase x by 15, y by 21
 			name = "ZEX_MGY_Independent_Faction_Seats_Display"
-			position = { x = 395 y = 143 } 
+			position = { x = 395 y = 153 } 
 			text = ZEX_MGY_Independent_Faction_Seats_Display_text
 			font = "hoi_18b"
 			format = center
 			maxHeight = 19
 			maxwidth = 54
-			pdx_tooltip = ZEX_MGY_Faction_Values_tt
-			pdx_tooltip_delayed = ZEX_MGY_Independent_Faction_values_tt
+			pdx_tooltip = ZEX_MGY_Independent_Faction_values_tt
+			pdx_tooltip_delayed = ZEX_MGY_Faction_Values_tt
 		}
 
 		iconType = {
 			name = "GFX_ZEX_MGY_royal_diet_faction_independent_icon"
-			position = { x = 383 y = 40 }
+			position = { x = 383 y = 50 }
 			spriteType = "GFX_ZEX_MGY_royal_diet_faction_independent"
 			pdx_tooltip = zex_mgy_royal_diet_faction_lore_independents
 		}
@@ -192,7 +197,7 @@ guiTypes = {
 
 		containerWindowType = {
 			name = "ZEX_MGY_royal_diet_main_container"
-			position = { x = 0 y = 177 } 
+			position = { x = 0 y = 187 } 
 			size = { width = 490 height = 225 }
 
 			background = {
@@ -212,7 +217,7 @@ guiTypes = {
 
 		gridboxtype = {
 			name = "ZEX_MGY_royal_diet_member_grid"
-			position = { x = -150 y = 525 }
+			position = { x = -150 y = 535 }
 			size = { width = 100%% height = 100%% }
 			slotsize = { width = 200 height = 18 }
 			max_slots_vertical = 8
@@ -223,7 +228,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "ZEX_MGY_royal_diet_total_support_current"
-			position = { x = 35 y = 412 } 
+			position = { x = 35 y = 422 } 
 			text = ZEX_MGY_royal_diet_total_support_current_text
 			font = "hoi_24header"
 			format = left
@@ -234,13 +239,13 @@ guiTypes = {
 
 		iconType = {
 			name = "ZEX_MGY_royal_diet_total_counter"
-			position = { x = 345 y = 412 }
+			position = { x = 345 y = 422 }
 			spriteType = "GFX_ZEX_MGY_royal_diet_total_counter"
 		}
 
 		instantTextBoxType = {
 			name = "ZEX_MGY_royal_diet_total_support_current_value"
-			position = { x = 350 y = 417 } 
+			position = { x = 350 y = 427 } 
 			text = ZEX_MGY_royal_diet_total_support_current_value_text
 			font = "hoi_18b"
 			format = center

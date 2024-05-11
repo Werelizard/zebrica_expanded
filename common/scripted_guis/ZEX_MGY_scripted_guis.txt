@@ -8,10 +8,72 @@ scripted_gui = {
 		}
 
 		effects = {
+			ZEX_MGY_sineighi_icon_click = {
+				ZEX_MGY_unrest_gui_clear_state_selection_flags = yes
+				set_country_flag = zex_mgy_unrest_selected_sineighi
+			}
+			ZEX_MGY_maneisrata_icon_click = {
+				ZEX_MGY_unrest_gui_clear_state_selection_flags = yes
+				set_country_flag = zex_mgy_unrest_selected_maneisrata
+			}
+			ZEX_MGY_kaneigh_icon_click = {
+				ZEX_MGY_unrest_gui_clear_state_selection_flags = yes
+				set_country_flag = zex_mgy_unrest_selected_kaneigh
+			}
+			ZEX_MGY_delta_icon_click = {
+				ZEX_MGY_unrest_gui_clear_state_selection_flags = yes
+				set_country_flag = zex_mgy_unrest_selected_delta
+			}
+			ZEX_MGY_manephis_icon_click = {
+				ZEX_MGY_unrest_gui_clear_state_selection_flags = yes
+				set_country_flag = zex_mgy_unrest_selected_manephis
+			}
+			ZEX_MGY_somnambula_icon_click = {
+				ZEX_MGY_unrest_gui_clear_state_selection_flags = yes
+				set_country_flag = zex_mgy_unrest_selected_somnambula
+			}
+			ZEX_MGY_eastdesert_icon_click = {
+				ZEX_MGY_unrest_gui_clear_state_selection_flags = yes
+				set_country_flag = zex_mgy_unrest_selected_easterndesert
+			}
+			ZEX_MGY_zush_icon_click = {
+				ZEX_MGY_unrest_gui_clear_state_selection_flags = yes
+				set_country_flag = zex_mgy_unrest_selected_zush
+			}
+			ZEX_MGY_uppermaregypt_icon_click = {
+				ZEX_MGY_unrest_gui_clear_state_selection_flags = yes
+				set_country_flag = zex_mgy_unrest_selected_uppermaregypt
+			}
 		}
 		
 		triggers = {
-
+			ZEX_MGY_sineighi_icon_click = {
+				always = yes
+			}
+			ZEX_MGY_maneisrata_icon_click = {
+				always = yes
+			}
+			ZEX_MGY_kaneigh_icon_click = {
+				always = yes
+			}
+			ZEX_MGY_delta_icon_click = {
+				always = yes
+			}
+			ZEX_MGY_manephis_icon_click = {
+				always = yes
+			}
+			ZEX_MGY_somnambula_icon_click = {
+				always = yes
+			}
+			ZEX_MGY_eastdesert_icon_click = {
+				always = yes
+			}
+			ZEX_MGY_zush_icon_click = {
+				always = yes
+			}
+			ZEX_MGY_uppermaregypt_icon_click = {
+				always = yes
+			}
 		}
 
 		dynamic_lists = {
@@ -64,11 +126,14 @@ scripted_gui = {
 			}
 		}
 
-		#Protection status
 		properties = {
-			ZEX_MGY_delta_protected_status = {
-
+			ZEX_MGY_republican_agitation_state_icon = {
+				image = "[ZEX_MGY_GetFocusedState]"
 			}
+		}
+
+		visible = {
+			
 		}
 
 		ai_enabled = {

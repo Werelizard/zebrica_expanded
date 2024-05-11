@@ -392,8 +392,13 @@ spriteTypes = {
 		transparencecheck = yes
 	}
 	spriteType = {
-		name = "ZEX_MGY_Unrest_BG"
-		texturefile = "gfx/interface/ZEX_MGY_REPUBLICAN_UNREST_BG.dds"
+		name = "ZEX_MGY_Empty_Cartouche"
+		texturefile = "gfx/interface/Cartouches/ZEX_MGY_cartouche_empty.dds"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "ZEX_MGY_Cartouche_Kaneigh"
+		texturefile = "gfx/interface/Cartouches/ZEX_MGY_cartouche_kaneigh.dds"
 		transparencecheck = yes
 	}
 

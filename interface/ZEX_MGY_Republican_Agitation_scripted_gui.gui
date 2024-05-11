@@ -2,23 +2,30 @@ guiTypes = {
 	containerWindowType = {
 		name = "ZEX_MGY_republican_agitation_ui_window"
 		position = { x = 0 y = 0 }
-		size = { width = 100% height= 405 }
+		size = { width = 490 height= 610 }
 		# background = {
+		# 	size = { width = 490 height= 405 }
 		# 	name = "zex_mgy_unrest_background"
-		# 	quadTextureSprite = "ZEX_MGY_Unrest_BG"
+		# 	quadTextureSprite = "GFX_tiled_window_thin_border2"
 		# }
 
 		containerWindowType = {
 			name = "ZEX_MGY_republican_agitation_ui_window_inner"
-			position = { x = 130 y = 20 }
-			size = { width = 100% height= 405 }
+			position = { x = 0 y = 0 }
+			# position = { x = 130 y = 20 }
+			size = { width = 490 height= 405 }
+			background = {
+				size = { width = 490 height= 405 }
+				name = "zex_mgy_unrest_background"
+				quadTextureSprite = "GFX_tiled_window_thin_border2"
+			}
 			
 			#Province Unrest
 			
 			#Sineighi 
 			iconType = {
 				name = "ZEX_MGY_sineighi_icon"
-				position = { x = 8 y = 40 }
+				position = { x = 138 y = 60 }
 				spriteType = "ZEX_MGY_NOUNREST_SINEIGHI"
 				pdx_tooltip = ZEX_MGY_sineighi_icon_tt
 			}
@@ -26,7 +33,7 @@ guiTypes = {
 			#Maneisrata
 			iconType = {
 				name = "ZEX_MGY_maneisrata_icon"
-				position = { x = 23 y = 106 }
+				position = { x = 153 y = 126 }
 				spriteType = "ZEX_MGY_NOUNREST_MANEISRATA"
 				pdx_tooltip = ZEX_MGY_Maneisrata_icon_tt
 			}
@@ -34,7 +41,7 @@ guiTypes = {
 			#Kaneigh
 			iconType = {
 				name = "ZEX_MGY_kaneigh_icon"
-				position = { x = 0 y = 187 }
+				position = { x = 130 y = 207 }
 				spriteType = "ZEX_MGY_NOUNREST_KANEIGH"
 				pdx_tooltip = ZEX_MGY_Kaneigh_icon_tt
 			}
@@ -42,7 +49,7 @@ guiTypes = {
 			#Delta
 			iconType = {
 				name = "ZEX_MGY_delta_icon"
-				position = { x = 63 y = 63 }
+				position = { x = 193 y = 83 }
 				spriteType = "ZEX_MGY_NOUNREST_DELTA"
 				pdx_tooltip = ZEX_MGY_Delta_icon_tt
 			}
@@ -50,7 +57,7 @@ guiTypes = {
 			#Manephis
 			iconType = {
 				name = "ZEX_MGY_manephis_icon"
-				position = { x = 93 y = 100 }
+				position = { x = 223 y = 120 }
 				spriteType = "ZEX_MGY_NOUNREST_MANEPHIS"
 				pdx_tooltip = ZEX_MGY_Manephis_icon_tt
 			}
@@ -58,7 +65,7 @@ guiTypes = {
 			#Somnambula
 			iconType = {
 				name = "ZEX_MGY_somnambula_icon"
-				position = { x = 122 y = 81 }
+				position = { x = 252 y = 101 }
 				spriteType = "ZEX_MGY_NOUNREST_SOMNAMBULA"
 				pdx_tooltip = ZEX_MGY_Somnambula_icon_tt
 			}
@@ -66,7 +73,7 @@ guiTypes = {
 			#East desert
 			iconType = {
 				name = "ZEX_MGY_eastdesert_icon"
-				position = { x = 129 y = 73 }
+				position = { x = 259 y = 93 }
 				spriteType = "ZEX_MGY_NOUNREST_DESERT"
 				pdx_tooltip = ZEX_MGY_Eastdesert_icon_tt
 			}
@@ -74,7 +81,7 @@ guiTypes = {
 			#Upper Maregypt
 			iconType = {
 				name = "ZEX_MGY_uppermaregypt_icon"
-				position = { x = 84 y = 180 }
+				position = { x = 214 y = 200 }
 				spriteType = "ZEX_MGY_NOUNREST_UPPERMAREGYPT"
 				pdx_tooltip = ZEX_MGY_UpperMaregypt_icon_tt
 			}
@@ -82,7 +89,7 @@ guiTypes = {
 			#Zush
 			iconType = {
 				name = "ZEX_MGY_zush_icon"
-				position = { x = 15 y = 260 }
+				position = { x = 145 y = 280 }
 				spriteType = "ZEX_MGY_NOUNREST_ZUSH"
 				pdx_tooltip = ZEX_MGY_Zush_icon_tt
 			}
@@ -91,20 +98,20 @@ guiTypes = {
 			
 			iconType = {
 				name = "ZEX_MGY_unrest_counter"
-				position = { x = 165 y = 305 }
+				position = { x = 305 y = 325 }
 				spriteType = "ZEX_MGY_Unrest_Counter"
 				pdx_tooltip = ZEX_MGY_AVERAGE_UNREST_TOOLTIP
 			}
 			iconType = {
 				name = "ZEX_MGY_Legitimacy_Counter"
-				position = { x = 165 y = 333 }
+				position = { x = 305 y = 353 }
 				spriteType = "ZEX_MGY_Legitimacy_Counter"
 				pdx_tooltip = ZEX_MGY_REBELLION_LEGITIMACY
 			}
 
 			instantTextBoxType = {
 				name ="ZEX_MGY_REBELLION_UNREST"
-				position = { x = 190 y = 305 }
+				position = { x = 328 y = 325 }
 				font = "hoi_18mbs"
 				text = "ZEX_MGY_AVERAGE_UNREST_BOX_VAL"
 				format = center
@@ -115,7 +122,7 @@ guiTypes = {
 			
 			instantTextBoxType = {
 				name ="ZEX_MGY_REBELLION_LEGITIMACY"
-				position = { x = 190 y = 333 }
+				position = { x = 328 y = 353 }
 				font = "hoi_18mbs"
 				text = "ZEX_MGY_LEGITIMACY_BOX_VAL"
 				format = center
@@ -126,19 +133,71 @@ guiTypes = {
 
 			iconType = {
 				name = "ZEX_MGY_Rebellion_Help"
-				position = { x = 300 y = 0 }
+				position = { x = 430 y = 20 }
 				spriteType = "ZEX_MGY_Help_Tooltip"
 				pdx_tooltip = ZEX_MGY_Rebellion_Help_tt
 			}
 			
 			instantTextBoxType = {
 				name = "ZEX_MGY_internal_unrest_title"
-				position = { x = 25 y = 0 }
+				position = { x = 155 y = 20 }
 				text = ZEX_MGY_internal_unrest_title_text
 				font = "hoi_24header"
 				format = left
 				maxHeight = 20
 				maxwidth = 200
+			}
+			
+		}
+
+		#State focus sub-window
+
+		containerWindowType = {
+			name = "ZEX_MGY_republican_agitation_state_focus"
+			position = { x = 0 y = 415 }
+			size = { width = 490 height = 180 }
+			background = {
+				size = { width = 490 height = 180  }
+				name = "zex_mgy_unrest_state_background"
+				quadTextureSprite = "GFX_tiled_window_thin_border2"
+			}
+
+			instantTextBoxType = {
+				name = "ZEX_MGY_republican_agitation_state_UNSELECTED"
+				position = { x = 10 y = 50 }
+				font = "hoi_24header"
+				format = centre
+				text = "ZEX_MGY_republican_agitation_state_UNSELECTED"
+				maxHeight = 80
+				maxwidth = 470
+			}
+
+			#Disply state info when a state is slected
+
+			iconType = {
+				name = "ZEX_MGY_republican_agitation_state_icon"
+				position = { x = 10 y = 10 }
+				spriteType = "ZEX_MGY_Empty_Cartouche"
+			}
+
+			instantTextBoxType = {
+				name = "ZEX_MGY_republican_agitation_state_title"
+				position = { x = 86 y = 10 }
+				font = "hoi_24header"
+				format = centre
+				text = "ZEX_MGY_republican_agitation_state_title"
+				maxHeight = 20
+				maxwidth = 394
+			}
+
+			instantTextBoxType = {
+				name = "ZEX_MGY_republican_agitation_state_text"
+				position = { x = 86 y = 35 }
+				font = "hoi_18mbs"
+				text = "ZEX_MGY_republican_agitation_state_text"
+				format = left
+				maxHeight = 135
+				maxwidth = 394
 			}
 		}
 	}

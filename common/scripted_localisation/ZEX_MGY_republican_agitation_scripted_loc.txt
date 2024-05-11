@@ -703,3 +703,71 @@ defined_text = {
 		localization_key = ZEX_MGY_NOUNREST_UPPERMAREGYPT
 	}
 }
+
+#
+#
+# State Selection Loc
+#
+#
+
+defined_text = {
+	name = ZEX_MGY_GetIsNoStateSelected
+	text = {
+		trigger = {
+			OR = {
+				has_country_flag = zex_mgy_unrest_selected_sineighi
+				has_country_flag = zex_mgy_unrest_selected_delta
+				has_country_flag = zex_mgy_unrest_selected_kaneigh
+				has_country_flag = zex_mgy_unrest_selected_maneisrata
+				has_country_flag = zex_mgy_unrest_selected_manephis
+				has_country_flag = zex_mgy_unrest_selected_somnambula
+				has_country_flag = zex_mgy_unrest_selected_easterndesert
+				has_country_flag = zex_mgy_unrest_selected_uppermaregypt
+				has_country_flag = zex_mgy_unrest_selected_zush
+			}
+		}
+		localization_key = ZEX_MGY_NO_LOCALISATION
+	}
+	text = {
+		localization_key = ZEX_MGY_state_empty
+	}
+}
+
+defined_text = {
+	name = ZEX_MGY_GetFocusedState_Title
+	text = {
+		trigger = {
+			has_country_flag = zex_mgy_unrest_selected_kaneigh
+		}
+		localization_key = ZEX_MGY_republican_agitation_state_kaneigh_title
+	}
+	text = {
+		localization_key = ZEX_MGY_NO_LOCALISATION
+	}
+}
+
+defined_text = {
+	name = ZEX_MGY_GetFocusedLore
+	text = {
+		trigger = {
+			has_country_flag = zex_mgy_unrest_selected_kaneigh
+		}
+		localization_key = ZEX_MGY_republican_agitation_kaneigh_text
+	}
+	text = {
+		localization_key = ZEX_MGY_NO_LOCALISATION
+	}
+}
+
+defined_text = {
+	name = ZEX_MGY_GetFocusedState
+	text = {
+		trigger = {
+			has_country_flag = zex_mgy_unrest_selected_kaneigh
+		}
+		localization_key = ZEX_MGY_kaneigh_cartouche_icon
+	}
+	text = {
+		localization_key = ZEX_MGY_empty_cartouche_icon
+	}
+}
