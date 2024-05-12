@@ -82,13 +82,29 @@
   zex_mgy_uppermaregypt:0 "§YUpper Maregypt§!"
   zex_mgy_zush:0 "§YZush§!"
 
+  zex_mgy_sineighi_unrest:0 "[?ZEX_MGY_VAR_Sineighi_Alignment|2]"
+  zex_mgy_delta_unrest:0 "[?ZEX_MGY_VAR_Delta_Alignment|2]"
+  zex_mgy_kaneigh_unrest:0 "[?ZEX_MGY_VAR_Kaneigh_Alignment|2]"
+  zex_mgy_maneisrata_unrest:0 "[?ZEX_MGY_VAR_Maneisrata_Alignment|2]"
+  zex_mgy_manephis_unrest:0 "[?ZEX_MGY_VAR_Manephis_Alignment|2]"
+  zex_mgy_somnambula_unrest:0 "[?ZEX_MGY_VAR_Somnambula_Alignment|2]"
+  zex_mgy_easterndesert_unrest:0 "[?ZEX_MGY_VAR_Eastdesert_Alignment|2]"
+  zex_mgy_uppermaregypt_unrest:0 "[?ZEX_MGY_VAR_UpperMaregypt_Alignment|2]"
+  zex_mgy_zush_unrest:0 "[?ZEX_MGY_VAR_Zush_Alignment|2]"
+
  ZEX_MGY_BUTTON_PROPAGANDA_TOOLTIP:0 "§YPromote Royalist Propaganda§!\n\n§YPrerequisites:§!\n[ZEX_MGY_GET_ALREADY_TOOK_TWO_ACTIONS]  Not: has already taken §Y[?ZEX_MGY_MAX_Actions_Taken]§! actions this round\n[ZEX_MGY_GET_ALREADY_TOOK_ACTION_ON_STATE]  Not: has already intervened in [ZEX_MGY_GET_FOCUSED_STATE_NAME] this round\n\n§YEffects:§!\n§LRegain §!§G2§!§L £ZEX_legitimacy   legitimacy at the end of this round§!\n\nIt costs £pol_power  §t[?ZEX_MGY_UNREST_POLITICALPOWER_COUNTER_COST]§! to take this action"
  ZEX_MGY_BUTTON_ARRESTS_TOOLTIP:0 "§YArrest Agitators§!\n\n§YPrerequisites:§!\n[ZEX_MGY_GET_ALREADY_TOOK_TWO_ACTIONS]  Not: has already taken §Y[?ZEX_MGY_MAX_Actions_Taken]§! actions this round\n[ZEX_MGY_GET_ALREADY_TOOK_ACTION_ON_STATE]  Not: has already intervened in [ZEX_MGY_GET_FOCUSED_STATE_NAME] this round\n\n§YEffects:§!\n§LDecreases £local_unrest local unrest in §![ZEX_MGY_GET_FOCUSED_STATE_NAME]§L by §!§G[?ZEX_MGY_UNREST_EFFECTS_IMPACT]§!\n\nIt costs £ZEX_legitimacy  §t[?ZEX_MGY_UNREST_LEGITIMACY_COUNTER_COST]§! to take this action"
- ZEX_MGY_BUTTON_POLICE_TOOLTIP:0 "§YDeploy the Medjay§!\n\n§YPrerequisites:§!\n[ZEX_MGY_GET_ALREADY_TOOK_TWO_ACTIONS]  Not: has already taken §Y[?ZEX_MGY_MAX_Actions_Taken]§! actions this round\n[ZEX_MGY_GET_ALREADY_TOOK_ACTION_ON_STATE]  Not: has already intervened in [ZEX_MGY_GET_FOCUSED_STATE_NAME] this round\n\n§YEffects:§!\n§LUnrest will not increase in §![ZEX_MGY_GET_FOCUSED_STATE_NAME]§L this round§!\n\nIt costs £pol_power  §t[?ZEX_MGY_UNREST_POLITICALPOWER_COUNTER_COST]§! to take this action"
+ ZEX_MGY_BUTTON_POLICE_TOOLTIP:0 "§YDeploy the Medjay§!\n\n§YPrerequisites:§!\n[ZEX_MGY_GET_IF_STATE_PACIFIED]  The province is not already pacified\n[ZEX_MGY_GET_ALREADY_TOOK_TWO_ACTIONS]  Not: has already taken §Y[?ZEX_MGY_MAX_Actions_Taken]§! actions this round\n[ZEX_MGY_GET_ALREADY_TOOK_ACTION_ON_STATE]  Not: has already intervened in [ZEX_MGY_GET_FOCUSED_STATE_NAME] this round\n\n§YEffects:§!\n§LUnrest will not increase in §![ZEX_MGY_GET_FOCUSED_STATE_NAME]§L this round§!\n\nIt costs £pol_power  §t[?ZEX_MGY_UNREST_POLITICALPOWER_COUNTER_COST]§! to take this action"
+ ZEX_MGY_republican_agitation_reintegrate_state_button_empty:0 ""
+ ZEX_MGY_republican_agitation_reintegrate_state_button_completed:0 "§GPacified§!"
+ ZEX_MGY_republican_agitation_reintegrate_state_button:0 "Pacify [ZEX_MGY_GET_FOCUSED_STATE_NAME]"
+
+ ZEX_MGY_republican_agitation_reintegrate_state_button_click_enabled_tt:0 "Pacifies the province, smothering any rebellion within it permanently\n\n§YPrerequisites:§!\n[ZEX_MGY_GET_IF_STATE_PACIFIED]  The province is not already pacified\n[ZEX_MGY_GET_REINTEGRATE_STATE_FOCUS_COMPLETED]  Has completed the §Y"Peace Within the Realm"§! focus\n[ZEX_MGY_GET_REINTEGRATE_STATE_STABILITY_HIGHER_THAN_STATE_UNREST]  Stability §Y([?MGY.stability|%0])§! must be higher than the province's local unrest §Y([ZEX_MGY_GET_FOCUSED_STATE_UNREST])§!\n\n§YEffects:§!\nUnrest will no longer increase in §Y[ZEX_MGY_GET_FOCUSED_STATE_NAME]§!"
 
  ZEX_MGY_PROPAGANDA_MARKER:0 "ZEX_MGY_PROPAGANDA_MARKER"
  ZEX_MGY_ARRESTS_MARKER:0 "ZEX_MGY_ARRESTS_MARKER"
  ZEX_MGY_POLICE_MARKER:0 "ZEX_MGY_POLICE_MARKER"
+ ZEX_MGY_REINTEGRATE_STATE:0 "ZEX_MGY_reintegrate_state_button"
   
  ZEX_MGY_Tooltip_Yes_Check:0 "£trigger_yes"
  ZEX_MGY_Tooltip_No_Check:0 "£trigger_no"

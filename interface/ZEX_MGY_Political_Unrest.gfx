@@ -232,6 +232,11 @@ spriteTypes = {
 		texturefile = "gfx/interface/ZEX_MGY_royal_unrest_counter.dds"
 		transparencecheck = yes
 	}
+	spriteType = {
+		name = "ZEX_MGY_reintegrate_state_button"
+		texturefile = "gfx/interface/ZEX_MGY_reintegrate_state_button.dds"
+		transparencecheck = yes
+	}
 
 	#Timer backgrounds
 	spriteType = {

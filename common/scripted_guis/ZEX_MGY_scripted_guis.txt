@@ -56,6 +56,7 @@ scripted_gui = {
 			}
 			ZEX_MGY_republican_agitation_police_button_icon_click_enabled = {
 				AND = {
+					zex_mgy_unrest_state_not_pacified = yes
 					zex_mgy_can_use_state_action = yes
 					check_variable = {
 						var = political_power
@@ -64,52 +65,57 @@ scripted_gui = {
 					}
 				}
 			}
+			ZEX_MGY_republican_agitation_reintegrate_state_button_click_enabled = {
+				has_completed_focus = ZEX_Goal_Pacify_the_Realm
+				zex_mgy_stability_higher_than_unrest = yes
+				zex_mgy_unrest_state_not_pacified = yes
+			}
 		}
 		effects = {
 			ZEX_MGY_sineighi_icon_click = {
 				ZEX_MGY_unrest_gui_clear_state_selection_flags = yes
 				set_country_flag = zex_mgy_unrest_selected_sineighi
-				scoped_sound_effect = click_ok
+				scoped_sound_effect = click_expand
 			}
 			ZEX_MGY_maneisrata_icon_click = {
 				ZEX_MGY_unrest_gui_clear_state_selection_flags = yes
 				set_country_flag = zex_mgy_unrest_selected_maneisrata
-				scoped_sound_effect = click_ok
+				scoped_sound_effect = click_expand
 			}
 			ZEX_MGY_kaneigh_icon_click = {
 				ZEX_MGY_unrest_gui_clear_state_selection_flags = yes
 				set_country_flag = zex_mgy_unrest_selected_kaneigh
-				scoped_sound_effect = click_ok
+				scoped_sound_effect = click_expand
 			}
 			ZEX_MGY_delta_icon_click = {
 				ZEX_MGY_unrest_gui_clear_state_selection_flags = yes
 				set_country_flag = zex_mgy_unrest_selected_delta
-				scoped_sound_effect = click_ok
+				scoped_sound_effect = click_expand
 			}
 			ZEX_MGY_manephis_icon_click = {
 				ZEX_MGY_unrest_gui_clear_state_selection_flags = yes
 				set_country_flag = zex_mgy_unrest_selected_manephis
-				scoped_sound_effect = click_ok
+				scoped_sound_effect = click_expand
 			}
 			ZEX_MGY_somnambula_icon_click = {
 				ZEX_MGY_unrest_gui_clear_state_selection_flags = yes
 				set_country_flag = zex_mgy_unrest_selected_somnambula
-				scoped_sound_effect = click_ok
+				scoped_sound_effect = click_expand
 			}
 			ZEX_MGY_eastdesert_icon_click = {
 				ZEX_MGY_unrest_gui_clear_state_selection_flags = yes
 				set_country_flag = zex_mgy_unrest_selected_easterndesert
-				scoped_sound_effect = click_ok
+				scoped_sound_effect = click_expand
 			}
 			ZEX_MGY_zush_icon_click = {
 				ZEX_MGY_unrest_gui_clear_state_selection_flags = yes
 				set_country_flag = zex_mgy_unrest_selected_zush
-				scoped_sound_effect = click_ok
+				scoped_sound_effect = click_expand
 			}
 			ZEX_MGY_uppermaregypt_icon_click = {
 				ZEX_MGY_unrest_gui_clear_state_selection_flags = yes
 				set_country_flag = zex_mgy_unrest_selected_uppermaregypt
-				scoped_sound_effect = click_ok
+				scoped_sound_effect = click_expand
 			}
 			# Buttons effects
 			ZEX_MGY_republican_agitation_propaganda_button_icon_click = {
@@ -117,21 +123,24 @@ scripted_gui = {
 					var = political_power
 					value = ZEX_MGY_UNREST_POLITICALPOWER_COUNTER_COST
 				}
-				scoped_sound_effect = click_ok
+				scoped_sound_effect = menu_close_window
 			}
 			ZEX_MGY_republican_agitation_arrest_button_icon_click = {
 				subtract_from_variable = {
 					var = ZEX_MGY_LEGITIMACY
 					value = ZEX_MGY_UNREST_LEGITIMACY_COUNTER_COST
 				}
-				scoped_sound_effect = click_ok
+				scoped_sound_effect = menu_close_window
 			}
 			ZEX_MGY_republican_agitation_police_button_icon_click = {
 				subtract_from_variable = {
 					var = political_power
 					value = ZEX_MGY_UNREST_POLITICALPOWER_COUNTER_COST
 				}
-				scoped_sound_effect = click_ok
+				scoped_sound_effect = menu_close_window
+			}
+			ZEX_MGY_republican_agitation_reintegrate_state_button_click = {
+				add_political_power = 100
 			}
 		}
 		properties = {
@@ -179,6 +188,9 @@ scripted_gui = {
 			}
 			ZEX_MGY_republican_agitation_buttons_background = {
 				image = "[ZEX_MGY_GetIsUnrestButtonBackgroundActive]"
+			}
+			ZEX_MGY_republican_agitation_reintegrate_state_button = {
+				image = "[ZEX_MGY_GetIsUnrestButtonReintegrateActive]"
 			}
 		}
 		visible = {

@@ -217,7 +217,7 @@ guiTypes = {
 				format = centre
 				text = "ZEX_MGY_republican_agitation_state_title"
 				maxHeight = 20
-				maxwidth = 306
+				maxwidth = 326
 			}
 
 			instantTextBoxType = {
@@ -226,38 +226,52 @@ guiTypes = {
 				font = "hoi_18b"
 				text = "ZEX_MGY_republican_agitation_state_text"
 				format = left
-				maxHeight = 135
-				maxwidth = 306
+				maxHeight = 90
+				maxwidth = 326
 			}
 
 			#Buttons for available actions
 			iconType = {
 				name = "ZEX_MGY_republican_agitation_buttons_background"
-				position = { x = 396 y = 12 }
+				position = { x = 416 y = 12 }
 				size = { width = 56 height = 156  }
 				spriteType = "GFX_tiled_window_thin_border2"
 			}
 			iconType = {
 				name = "ZEX_MGY_republican_agitation_propaganda_button_icon"
-				position = { x = 403 y = 19 }
+				position = { x = 423 y = 19 }
 				spriteType = "ZEX_MGY_Unrest_Button_Police"
 				pdx_tooltip = ZEX_MGY_BUTTON_PROPAGANDA_TOOLTIP
 				pdx_disabled_tooltip = ZEX_MGY_BUTTON_PROPAGANDA_TOOLTIP
 			}
 			iconType = {
 				name = "ZEX_MGY_republican_agitation_arrest_button_icon"
-				position = { x = 403 y = 70 }
+				position = { x = 423 y = 70 }
 				spriteType = "ZEX_MGY_Unrest_Button_Police"
 				pdx_tooltip = ZEX_MGY_BUTTON_ARRESTS_TOOLTIP
 				pdx_disabled_tooltip = ZEX_MGY_BUTTON_ARRESTS_TOOLTIP
 			}
 			iconType = {
 				name = "ZEX_MGY_republican_agitation_police_button_icon"
-				position = { x = 403 y = 121 }
+				position = { x = 423 y = 121 }
 				spriteType = "ZEX_MGY_Unrest_Button_Police"
 				pdx_tooltip = ZEX_MGY_BUTTON_POLICE_TOOLTIP
 				pdx_disabled_tooltip = ZEX_MGY_BUTTON_POLICE_TOOLTIP
 			}
+
+			buttonType = {
+				name = "ZEX_MGY_republican_agitation_reintegrate_state_button"
+				position = { x = 144 y = 135 }
+				font = "hoi_18b"
+				buttonfont = "hoi_18b"
+				buttonText = "[ZEX_MGY_GetIsUnrestButtonReintegrateActive_text]"
+				spriteType = "ZEX_MGY_reintegrate_state_button"
+				format = center
+				orientation = LEFT
+				pdx_tooltip = ZEX_MGY_republican_agitation_reintegrate_state_button_click_enabled_tt
+				clicksound = assign_unit_frontline
+			}
+
 		}
 	}
 }

@@ -45,6 +45,7 @@ ZEX_activate_republican_agitation = {
 		# Other defines
 		set_country_flag = zex_has_republican_agitation
 		ZEX_MGY_SET_BASE_ALIGNMENTS = yes
+		ZEX_MGY_CALCULATE_PERCENTILE_VALUES = yes
 		ZEX_MGY_enable_state_unrest = yes
 		add_dynamic_modifier = {
 			modifier = ZEX_MGY_republican_agitation_impact_dynmod
@@ -102,6 +103,78 @@ ZEX_MGY_SET_BASE_ALIGNMENTS = {
 	}
 	ZEX_MGY_GET_AVERAGE_UNREST = yes
 	ZEX_MGY_UPDATE_LOCAL_UNREST_IMPACT = yes
+}
+
+ZEX_MGY_CALCULATE_PERCENTILE_VALUES = {
+	# NEcessary to compare against other values such as stability
+	set_variable = {
+		var = ZEX_MGY_VAR_Sineighi_Alignment_percentile
+		value = ZEX_MGY_VAR_Sineighi_Alignment
+	}
+	set_variable = {
+		var = ZEX_MGY_VAR_Kaneigh_Alignment_percentile
+		value = ZEX_MGY_VAR_Kaneigh_Alignment
+	}
+	set_variable = {
+		var = ZEX_MGY_VAR_Maneisrata_Alignment_percentile
+		value = ZEX_MGY_VAR_Maneisrata_Alignment
+	}
+	set_variable = {
+		var = ZEX_MGY_VAR_UpperMaregypt_Alignment_percentile
+		value = ZEX_MGY_VAR_UpperMaregypt_Alignment
+	}
+	set_variable = {
+		var = ZEX_MGY_VAR_Delta_Alignment_percentile
+		value = ZEX_MGY_VAR_Delta_Alignment
+	}
+	set_variable = {
+		var = ZEX_MGY_VAR_Manephis_Alignment_percentile
+		value = ZEX_MGY_VAR_Manephis_Alignment
+	}
+	set_variable = {
+		var = ZEX_MGY_VAR_Somnambula_Alignment_percentile
+		value = ZEX_MGY_VAR_Somnambula_Alignment
+	}
+	set_variable = {
+		var = ZEX_MGY_VAR_Eastdesert_Alignment_percentile
+		value = ZEX_MGY_VAR_Eastdesert_Alignment
+	}
+	divide_variable = {
+		var = ZEX_MGY_VAR_Sineighi_Alignment_percentile
+		value = 100
+	}
+	divide_variable = {
+		var = ZEX_MGY_VAR_Kaneigh_Alignment_percentile
+		value = 100
+	}
+	divide_variable = {
+		var = ZEX_MGY_VAR_Maneisrata_Alignment_percentile
+		value = 100
+	}
+	divide_variable = {
+		var = ZEX_MGY_VAR_UpperMaregypt_Alignment_percentile
+		value = 100
+	}
+	divide_variable = {
+		var = ZEX_MGY_VAR_Delta_Alignment_percentile
+		value = 100
+	}
+	divide_variable = {
+		var = ZEX_MGY_VAR_Manephis_Alignment_percentile
+		value = 100
+	}
+	divide_variable = {
+		var = ZEX_MGY_VAR_Somnambula_Alignment_percentile
+		value = 100
+	}
+	divide_variable = {
+		var = ZEX_MGY_VAR_Eastdesert_Alignment_percentile
+		value = 100
+	}
+	divide_variable = {
+		var = ZEX_MGY_VAR_Zush_Alignment_percentile
+		value = 100
+	}
 }
 
 ZEX_MGY_enable_state_unrest = {
@@ -848,50 +921,44 @@ ZEX_MGY_DECREASE_UNREST = {
 	ZEX_MGY_UPDATE_LOCAL_UNREST_IMPACT = yes
 }
 
-#debug effect
-ZEX_MGY_agitation_set_random_variable = {
-	set_variable_to_random = {
-		var = ZEX_MGY_VAR_Maneisrata_Alignment
-		max = 100
-		integer = yes
+#End of day effect
+ZEX_MGY_Daily_Unrest_Update = {
+	if = {
+		limit = {
+			has_country_flag = zex_has_republican_agitation
+		}
+		# Update the legitimacy variable every day
+		add_to_variable = {
+			var = ZEX_MGY_LEGITIMACY
+			value = ZEX_MGY_LEGITIMACY_INCREASE_DAILY
+		}
+		clamp_variable = {
+			var = ZEX_MGY_LEGITIMACY
+			min = 0
+			max = 100
+		}
+		#Get the percentile (For comaprators)
+		ZEX_MGY_CALCULATE_PERCENTILE_VALUES = yes
+		#Update how many days are left
+		subtract_from_variable = {
+			var = ZEX_MGY_DAY_REMAINING_IN_TURN
+			value = 1
+		}
+		#For the timer Display
+		ZEX_MGY_unrest_update_days_left = yes
+		#On End Turn only		
+		if = {
+			limit = {
+				check_variable = {
+					ZEX_MGY_DAY_REMAINING_IN_TURN < 1
+				}
+			}
+			set_variable = {
+				ZEX_MGY_DAY_REMAINING_IN_TURN = ZEX_MGY_UNREST_EFFECTS_INTERVALLS
+			}
+			ZEX_MGY_unrest_end_turn_effect = yes					#End the turn effects
+		}
 	}
-	set_variable_to_random = {
-		var = ZEX_MGY_VAR_Delta_Alignment
-		max = 100
-		integer = yes
-	}
-	set_variable_to_random = {
-		var = ZEX_MGY_VAR_Kaneigh_Alignment
-		max = 100
-		integer = yes
-	}
-	set_variable_to_random = {
-		var = ZEX_MGY_VAR_Somnambula_Alignment
-		max = 100
-		integer = yes
-	}
-	set_variable_to_random = {
-		var = ZEX_MGY_VAR_Sineighi_Alignment
-		max = 100
-		integer = yes
-	}
-	set_variable_to_random = {
-		var = ZEX_MGY_VAR_Zush_Alignment
-		max = 100
-		integer = yes
-	}
-	set_variable_to_random = {
-		var = ZEX_MGY_VAR_Eastdesert_Alignment
-		max = 100
-		integer = yes
-	}
-	set_variable_to_random = {
-		var = ZEX_MGY_VAR_UpperMaregypt_Alignment
-		max = 100
-		integer = yes
-	}
-	ZEX_MGY_GET_AVERAGE_UNREST = yes
-	ZEX_MGY_UPDATE_LOCAL_UNREST_IMPACT = yes
 }
 
 # GUI-specific effects to show / hide the decisions
@@ -914,10 +981,8 @@ ZEX_MGY_unrest_end_turn_effect = {
 		var = ZEX_MGY_LEGITIMACY
 		value = ZEX_MGY_UNREST_LEGITIMACY_REGAIN
 	}
-
 	# Increase unrest in states
 	ZEX_MGY_Increase_Unrest = yes
-
 	#Reset everything
 	clr_country_flag = ZEX_MGY_Sineighi_protected_flag
 	clr_country_flag = ZEX_MGY_Maneisrata_protected_flag
