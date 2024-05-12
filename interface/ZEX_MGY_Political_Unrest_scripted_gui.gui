@@ -241,16 +241,22 @@ guiTypes = {
 				name = "ZEX_MGY_republican_agitation_propaganda_button_icon"
 				position = { x = 403 y = 19 }
 				spriteType = "ZEX_MGY_Unrest_Button_Police"
+				pdx_tooltip = ZEX_MGY_BUTTON_PROPAGANDA_TOOLTIP
+				pdx_disabled_tooltip = ZEX_MGY_BUTTON_PROPAGANDA_TOOLTIP
 			}
 			iconType = {
 				name = "ZEX_MGY_republican_agitation_arrest_button_icon"
 				position = { x = 403 y = 70 }
 				spriteType = "ZEX_MGY_Unrest_Button_Police"
+				pdx_tooltip = ZEX_MGY_BUTTON_ARRESTS_TOOLTIP
+				pdx_disabled_tooltip = ZEX_MGY_BUTTON_ARRESTS_TOOLTIP
 			}
 			iconType = {
 				name = "ZEX_MGY_republican_agitation_police_button_icon"
 				position = { x = 403 y = 121 }
 				spriteType = "ZEX_MGY_Unrest_Button_Police"
+				pdx_tooltip = ZEX_MGY_BUTTON_POLICE_TOOLTIP
+				pdx_disabled_tooltip = ZEX_MGY_BUTTON_POLICE_TOOLTIP
 			}
 		}
 	}

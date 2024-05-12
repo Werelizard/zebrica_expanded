@@ -1,7 +1,6 @@
 #################################
 # TAG/COSMETIC RELATED TRIGGERS #
 #################################
-
 zxe_is_zebrica_tag = {
 	OR = {
 		tag = MGY
@@ -32,18 +31,15 @@ zxe_mgy_equestria_exists = {
 #################################
 # Vizier                        #
 #################################
-
 zex_mgy_no_vizier_check = {
 	NOT = {
 		has_idea = ZEX_MGY_Shaa_Doof_idea
 	}
 }
 
-
 #################################
 # Focus Tree Related            #
 #################################
-
 zex_no_scripted_maregypt_civil_war = {
 	custom_trigger_tooltip = {
 		tooltip = zex_no_scripted_maregypt_civil_war_tt
@@ -106,7 +102,7 @@ zex_mgy_khefer_in_power = {
 		tooltip = zex_mgy_khefer_in_power_tt
 		OR = {
 			has_country_leader = {
-				ruling_only = yes 
+				ruling_only = yes
 				name = "King Khefer"
 			}
 			has_idea = ZEX_MGY_king_khefer_idea
@@ -119,7 +115,7 @@ zex_mgy_khefer_not_in_power = {
 		tooltip = zex_mgy_khefer_not_in_power_tt
 		NOT = {
 			has_country_leader = {
-				ruling_only = yes 
+				ruling_only = yes
 				name = "King Khefer"
 			}
 		}
@@ -132,7 +128,6 @@ zex_mgy_khefer_not_in_power = {
 #################################
 # Political Unrest Related      #
 #################################
-
 zex_mgy_less_than_actions_threshold = {
 	custom_trigger_tooltip = {
 		tooltip = zex_mgy_less_than_actions_threshold_tt
@@ -256,5 +251,67 @@ zex_mgy_no_action_in_eastdesert = {
 				has_country_flag = ZEX_MGY_Desert_propaganda_flag
 			}
 		}
+	}
+}
+
+zex_mgy_can_use_state_action = {
+	check_variable = {
+		var = ZEX_MGY_Actions_Taken
+		value = ZEX_MGY_MAX_Actions_Taken
+		compare = less_than
+	}
+	if = {
+		limit = {
+			has_country_flag = zex_mgy_unrest_selected_sineighi
+		}
+		zex_mgy_no_action_in_sineighi = yes
+	}
+	if = {
+		limit = {
+			has_country_flag = zex_mgy_unrest_selected_maneisrata
+		}
+		zex_mgy_no_action_in_maneisrata = yes
+	}
+	if = {
+		limit = {
+			has_country_flag = zex_mgy_unrest_selected_delta
+		}
+		zex_mgy_no_action_in_delta = yes
+	}
+	if = {
+		limit = {
+			has_country_flag = zex_mgy_unrest_selected_manephis
+		}
+		zex_mgy_no_action_in_manephis = yes
+	}
+	if = {
+		limit = {
+			has_country_flag = zex_mgy_unrest_selected_somnambula
+		}
+		zex_mgy_no_action_in_somnambula = yes
+	}
+	if = {
+		limit = {
+			has_country_flag = zex_mgy_unrest_selected_easterndesert
+		}
+		zex_mgy_no_action_in_eastdesert = yes
+	}
+	if = {
+		limit = {
+			has_country_flag = zex_mgy_unrest_selected_uppermaregypt
+		}
+		zex_mgy_no_action_in_uppermaregypt = yes
+	}
+	if = {
+		limit = {
+			has_country_flag = zex_mgy_unrest_selected_zush
+		}
+		zex_mgy_no_action_in_zush = yes
+	}
+	if = {
+		limit = {
+			has_country_flag = zex_mgy_unrest_selected_kaneigh
+		}
+		zex_mgy_no_action_in_kaneigh = yes
 	}
 }

@@ -58,10 +58,6 @@ focus_tree = {
 			
 		}
 
-		cancel_effect = {
-			
-		}
-
 		completion_reward = {
 			
 		}
@@ -100,10 +96,6 @@ focus_tree = {
 
 		#Effects
 		select_effect = {
-			
-		}
-
-		cancel_effect = {
 			
 		}
 
@@ -150,10 +142,6 @@ focus_tree = {
 			
 		}
 
-		cancel_effect = {
-			
-		}
-
 		completion_reward = {
 			
 		}
@@ -191,10 +179,6 @@ focus_tree = {
 
 		#Effects
 		select_effect = {
-			
-		}
-
-		cancel_effect = {
 			
 		}
 
@@ -238,10 +222,6 @@ focus_tree = {
 
 		#Effects
 		select_effect = {
-			
-		}
-
-		cancel_effect = {
 			
 		}
 
@@ -289,10 +269,6 @@ focus_tree = {
 			
 		}
 
-		cancel_effect = {
-			
-		}
-
 		completion_reward = {
 			
 		}
@@ -331,10 +307,6 @@ focus_tree = {
 
 		#Effects
 		select_effect = {
-			
-		}
-
-		cancel_effect = {
 			
 		}
 
@@ -378,10 +350,6 @@ focus_tree = {
 			
 		}
 
-		cancel_effect = {
-			
-		}
-
 		completion_reward = {
 			
 		}
@@ -419,10 +387,6 @@ focus_tree = {
 
 		#Effects
 		select_effect = {
-			
-		}
-
-		cancel_effect = {
 			
 		}
 
@@ -469,10 +433,6 @@ focus_tree = {
 			
 		}
 
-		cancel_effect = {
-			
-		}
-
 		completion_reward = {
 			swap_ideas = {
 				remove_idea = ZEX_MGY_goal_harmony_society_idea_propaganda_1
@@ -511,10 +471,6 @@ focus_tree = {
 
 		#Effects
 		select_effect = {
-			
-		}
-
-		cancel_effect = {
 			
 		}
 
@@ -579,10 +535,6 @@ focus_tree = {
 			
 		}
 
-		cancel_effect = {
-			
-		}
-
 		completion_reward = {
 			
 		}
@@ -623,10 +575,6 @@ focus_tree = {
 
 		#Effects
 		select_effect = {
-			
-		}
-
-		cancel_effect = {
 			
 		}
 
@@ -673,10 +621,6 @@ focus_tree = {
 			
 		}
 
-		cancel_effect = {
-			
-		}
-
 		completion_reward = {
 			
 		}
@@ -717,10 +661,6 @@ focus_tree = {
 
 		#Effects
 		select_effect = {
-			
-		}
-
-		cancel_effect = {
 			
 		}
 
@@ -771,10 +711,6 @@ focus_tree = {
 			
 		}
 
-		cancel_effect = {
-			
-		}
-
 		completion_reward = {
 			
 		}
@@ -815,10 +751,6 @@ focus_tree = {
 
 		#Effects
 		select_effect = {
-			
-		}
-
-		cancel_effect = {
 			
 		}
 
@@ -864,10 +796,6 @@ focus_tree = {
 			
 		}
 
-		cancel_effect = {
-			
-		}
-
 		completion_reward = {
 			
 		}
@@ -904,10 +832,6 @@ focus_tree = {
 
 		#Effects
 		select_effect = {
-			
-		}
-
-		cancel_effect = {
 			
 		}
 
@@ -949,10 +873,6 @@ focus_tree = {
 
 		#Effects
 		select_effect = {
-			
-		}
-
-		cancel_effect = {
 			
 		}
 
@@ -998,10 +918,6 @@ focus_tree = {
 			
 		}
 
-		cancel_effect = {
-			
-		}
-
 		completion_reward = {
 			
 		}
@@ -1044,10 +960,6 @@ focus_tree = {
 			
 		}
 
-		cancel_effect = {
-			
-		}
-
 		completion_reward = {
 			
 		}
@@ -1087,10 +999,6 @@ focus_tree = {
 			
 		}
 
-		cancel_effect = {
-			
-		}
-
 		completion_reward = {
 			
 		}
@@ -1127,10 +1035,6 @@ focus_tree = {
 
 		#Effects
 		select_effect = {
-			
-		}
-
-		cancel_effect = {
 			
 		}
 
@@ -1174,10 +1078,6 @@ focus_tree = {
 			
 		}
 
-		cancel_effect = {
-			
-		}
-
 		completion_reward = {
 			
 		}
@@ -1217,10 +1117,6 @@ focus_tree = {
 			
 		}
 
-		cancel_effect = {
-			
-		}
-
 		completion_reward = {
 			
 		}
@@ -1257,10 +1153,6 @@ focus_tree = {
 
 		#Effects
 		select_effect = {
-			
-		}
-
-		cancel_effect = {
 			
 		}
 
@@ -1304,10 +1196,6 @@ focus_tree = {
 			
 		}
 
-		cancel_effect = {
-			
-		}
-
 		completion_reward = {
 			
 		}
@@ -1344,10 +1232,6 @@ focus_tree = {
 
 		#Effects
 		select_effect = {
-			
-		}
-
-		cancel_effect = {
 			
 		}
 
@@ -1390,10 +1274,6 @@ focus_tree = {
 			
 		}
 
-		cancel_effect = {
-			
-		}
-
 		completion_reward = {
 			
 		}
@@ -1430,10 +1310,6 @@ focus_tree = {
 
 		#Effects
 		select_effect = {
-			
-		}
-
-		cancel_effect = {
 			
 		}
 
@@ -1476,10 +1352,6 @@ focus_tree = {
 			
 		}
 
-		cancel_effect = {
-			
-		}
-
 		completion_reward = {
 			
 		}
@@ -1516,10 +1388,6 @@ focus_tree = {
 
 		#Effects
 		select_effect = {
-			
-		}
-
-		cancel_effect = {
 			
 		}
 
@@ -1574,10 +1442,6 @@ focus_tree = {
 			
 		}
 
-		cancel_effect = {
-			
-		}
-
 		completion_reward = {
 			
 		}
@@ -1623,10 +1487,6 @@ focus_tree = {
 			
 		}
 
-		cancel_effect = {
-			
-		}
-
 		completion_reward = {
 			
 		}
@@ -1665,10 +1525,6 @@ focus_tree = {
 
 		#Effects
 		select_effect = {
-			
-		}
-
-		cancel_effect = {
 			
 		}
 
@@ -1713,10 +1569,6 @@ focus_tree = {
 			
 		}
 
-		cancel_effect = {
-			
-		}
-
 		completion_reward = {
 			
 		}
@@ -1758,10 +1610,6 @@ focus_tree = {
 			
 		}
 
-		cancel_effect = {
-			
-		}
-
 		completion_reward = {
 			
 		}
@@ -1800,10 +1648,6 @@ focus_tree = {
 			
 		}
 
-		cancel_effect = {
-			
-		}
-
 		completion_reward = {
 			
 		}
@@ -1839,10 +1683,6 @@ focus_tree = {
 
 		#Effects
 		select_effect = {
-			
-		}
-
-		cancel_effect = {
 			
 		}
 
@@ -1886,10 +1726,6 @@ focus_tree = {
 			
 		}
 
-		cancel_effect = {
-			
-		}
-
 		completion_reward = {
 			
 		}
@@ -1928,10 +1764,6 @@ focus_tree = {
 			
 		}
 
-		cancel_effect = {
-			
-		}
-
 		completion_reward = {
 			
 		}
@@ -1967,10 +1799,6 @@ focus_tree = {
 
 		#Effects
 		select_effect = {
-			
-		}
-
-		cancel_effect = {
 			
 		}
 
@@ -2013,10 +1841,6 @@ focus_tree = {
 			
 		}
 
-		cancel_effect = {
-			
-		}
-
 		completion_reward = {
 			
 		}
@@ -2056,10 +1880,6 @@ focus_tree = {
 
 		#Effects
 		select_effect = {
-			
-		}
-
-		cancel_effect = {
 			
 		}
 
@@ -2110,10 +1930,6 @@ focus_tree = {
 			
 		}
 
-		cancel_effect = {
-			
-		}
-
 		completion_reward = {
 			
 		}
@@ -2145,10 +1961,6 @@ focus_tree = {
 			
 		}
 
-		cancel_effect = {
-			
-		}
-
 		completion_reward = {
 			
 		}
@@ -2177,10 +1989,6 @@ focus_tree = {
 
 		#Effects
 		select_effect = {
-			
-		}
-
-		cancel_effect = {
 			
 		}
 
@@ -2218,10 +2026,6 @@ focus_tree = {
 			
 		}
 
-		cancel_effect = {
-			
-		}
-
 		completion_reward = {
 			
 		}
@@ -2253,10 +2057,6 @@ focus_tree = {
 
 		#Effects
 		select_effect = {
-			
-		}
-
-		cancel_effect = {
 			
 		}
 
@@ -2295,10 +2095,6 @@ focus_tree = {
 			
 		}
 
-		cancel_effect = {
-			
-		}
-
 		completion_reward = {
 			
 		}
@@ -2329,10 +2125,6 @@ focus_tree = {
 
 		#Effects
 		select_effect = {
-			
-		}
-
-		cancel_effect = {
 			
 		}
 
@@ -2369,10 +2161,6 @@ focus_tree = {
 			
 		}
 
-		cancel_effect = {
-			
-		}
-
 		completion_reward = {
 			
 		}
@@ -2404,10 +2192,6 @@ focus_tree = {
 
 		#Effects
 		select_effect = {
-			
-		}
-
-		cancel_effect = {
 			
 		}
 
@@ -2446,10 +2230,6 @@ focus_tree = {
 			
 		}
 
-		cancel_effect = {
-			
-		}
-
 		completion_reward = {
 			
 		}
@@ -2481,10 +2261,6 @@ focus_tree = {
 
 		#Effects
 		select_effect = {
-			
-		}
-
-		cancel_effect = {
 			
 		}
 
@@ -2520,10 +2296,6 @@ focus_tree = {
 
 		#Effects
 		select_effect = {
-			
-		}
-
-		cancel_effect = {
 			
 		}
 
@@ -2563,10 +2335,6 @@ focus_tree = {
 			
 		}
 
-		cancel_effect = {
-			
-		}
-
 		completion_reward = {
 			
 		}
@@ -2602,10 +2370,6 @@ focus_tree = {
 			
 		}
 
-		cancel_effect = {
-			
-		}
-
 		completion_reward = {
 			
 		}
@@ -2638,10 +2402,6 @@ focus_tree = {
 
 		#Effects
 		select_effect = {
-			
-		}
-
-		cancel_effect = {
 			
 		}
 
@@ -2681,10 +2441,6 @@ focus_tree = {
 			
 		}
 
-		cancel_effect = {
-			
-		}
-
 		completion_reward = {
 			
 		}
@@ -2720,10 +2476,6 @@ focus_tree = {
 			
 		}
 
-		cancel_effect = {
-			
-		}
-
 		completion_reward = {
 			
 		}
@@ -2756,10 +2508,6 @@ focus_tree = {
 
 		#Effects
 		select_effect = {
-			
-		}
-
-		cancel_effect = {
 			
 		}
 
@@ -2799,10 +2547,6 @@ focus_tree = {
 			
 		}
 
-		cancel_effect = {
-			
-		}
-
 		completion_reward = {
 			
 		}
@@ -2834,10 +2578,6 @@ focus_tree = {
 
 		#Effects
 		select_effect = {
-			
-		}
-
-		cancel_effect = {
 			
 		}
 
@@ -2875,10 +2615,6 @@ focus_tree = {
 			
 		}
 
-		cancel_effect = {
-			
-		}
-
 		completion_reward = {
 			
 		}
@@ -2909,10 +2645,6 @@ focus_tree = {
 
 		#Effects
 		select_effect = {
-			
-		}
-
-		cancel_effect = {
 			
 		}
 
@@ -2950,10 +2682,6 @@ focus_tree = {
 			
 		}
 
-		cancel_effect = {
-			
-		}
-
 		completion_reward = {
 			
 		}
@@ -2984,10 +2712,6 @@ focus_tree = {
 
 		#Effects
 		select_effect = {
-			
-		}
-
-		cancel_effect = {
 			
 		}
 
@@ -3023,10 +2747,6 @@ focus_tree = {
 
 		#Effects
 		select_effect = {
-			
-		}
-
-		cancel_effect = {
 			
 		}
 
@@ -3076,10 +2796,6 @@ focus_tree = {
 			
 		}
 
-		cancel_effect = {
-			
-		}
-
 		completion_reward = {
 			
 		}
@@ -3118,10 +2834,6 @@ focus_tree = {
 			
 		}
 
-		cancel_effect = {
-			
-		}
-
 		completion_reward = {
 			
 		}
@@ -3154,10 +2866,6 @@ focus_tree = {
 
 		#Effects
 		select_effect = {
-			
-		}
-
-		cancel_effect = {
 			
 		}
 
@@ -3196,10 +2904,6 @@ focus_tree = {
 			
 		}
 
-		cancel_effect = {
-			
-		}
-
 		completion_reward = {
 			
 		}
@@ -3231,10 +2935,6 @@ focus_tree = {
 
 		#Effects
 		select_effect = {
-			
-		}
-
-		cancel_effect = {
 			
 		}
 
@@ -3272,10 +2972,6 @@ focus_tree = {
 			
 		}
 
-		cancel_effect = {
-			
-		}
-
 		completion_reward = {
 			
 		}
@@ -3307,10 +3003,6 @@ focus_tree = {
 
 		#Effects
 		select_effect = {
-			
-		}
-
-		cancel_effect = {
 			
 		}
 
@@ -3348,10 +3040,6 @@ focus_tree = {
 			
 		}
 
-		cancel_effect = {
-			
-		}
-
 		completion_reward = {
 			
 		}
@@ -3383,10 +3071,6 @@ focus_tree = {
 
 		#Effects
 		select_effect = {
-			
-		}
-
-		cancel_effect = {
 			
 		}
 
@@ -3424,10 +3108,6 @@ focus_tree = {
 			
 		}
 
-		cancel_effect = {
-			
-		}
-
 		completion_reward = {
 			
 		}
@@ -3462,10 +3142,6 @@ focus_tree = {
 			
 		}
 
-		cancel_effect = {
-			
-		}
-
 		completion_reward = {
 			
 		}
@@ -3497,10 +3173,6 @@ focus_tree = {
 
 		#Effects
 		select_effect = {
-			
-		}
-
-		cancel_effect = {
 			
 		}
 
@@ -3539,10 +3211,6 @@ focus_tree = {
 			
 		}
 
-		cancel_effect = {
-			
-		}
-
 		completion_reward = {
 			
 		}
@@ -3575,10 +3243,6 @@ focus_tree = {
 
 		#Effects
 		select_effect = {
-			
-		}
-
-		cancel_effect = {
 			
 		}
 
@@ -3617,10 +3281,6 @@ focus_tree = {
 			
 		}
 
-		cancel_effect = {
-			
-		}
-
 		completion_reward = {
 			
 		}
@@ -3652,10 +3312,6 @@ focus_tree = {
 
 		#Effects
 		select_effect = {
-			
-		}
-
-		cancel_effect = {
 			
 		}
 
@@ -3693,10 +3349,6 @@ focus_tree = {
 			
 		}
 
-		cancel_effect = {
-			
-		}
-
 		completion_reward = {
 			
 		}
@@ -3728,10 +3380,6 @@ focus_tree = {
 
 		#Effects
 		select_effect = {
-			
-		}
-
-		cancel_effect = {
 			
 		}
 
@@ -3769,10 +3417,6 @@ focus_tree = {
 			
 		}
 
-		cancel_effect = {
-			
-		}
-
 		completion_reward = {
 			
 		}
@@ -3804,10 +3448,6 @@ focus_tree = {
 
 		#Effects
 		select_effect = {
-			
-		}
-
-		cancel_effect = {
 			
 		}
 
@@ -3845,10 +3485,6 @@ focus_tree = {
 			
 		}
 
-		cancel_effect = {
-			
-		}
-
 		completion_reward = {
 			
 		}
@@ -3880,10 +3516,6 @@ focus_tree = {
 
 		#Effects
 		select_effect = {
-			
-		}
-
-		cancel_effect = {
 			
 		}
 
@@ -3922,10 +3554,6 @@ focus_tree = {
 			
 		}
 
-		cancel_effect = {
-			
-		}
-
 		completion_reward = {
 			
 		}
@@ -3959,10 +3587,6 @@ focus_tree = {
 			
 		}
 
-		cancel_effect = {
-			
-		}
-
 		completion_reward = {
 			
 		}
@@ -3993,10 +3617,6 @@ focus_tree = {
 
 		#Effects
 		select_effect = {
-			
-		}
-
-		cancel_effect = {
 			
 		}
 
@@ -4034,10 +3654,6 @@ focus_tree = {
 			
 		}
 
-		cancel_effect = {
-			
-		}
-
 		completion_reward = {
 			
 		}
@@ -4068,10 +3684,6 @@ focus_tree = {
 
 		#Effects
 		select_effect = {
-			
-		}
-
-		cancel_effect = {
 			
 		}
 
@@ -4108,10 +3720,6 @@ focus_tree = {
 			
 		}
 
-		cancel_effect = {
-			
-		}
-
 		completion_reward = {
 			
 		}
@@ -4142,10 +3750,6 @@ focus_tree = {
 
 		#Effects
 		select_effect = {
-			
-		}
-
-		cancel_effect = {
 			
 		}
 
@@ -4182,10 +3786,6 @@ focus_tree = {
 			
 		}
 
-		cancel_effect = {
-			
-		}
-
 		completion_reward = {
 			
 		}
@@ -4216,10 +3816,6 @@ focus_tree = {
 
 		#Effects
 		select_effect = {
-			
-		}
-
-		cancel_effect = {
 			
 		}
 
@@ -4256,10 +3852,6 @@ focus_tree = {
 			
 		}
 
-		cancel_effect = {
-			
-		}
-
 		completion_reward = {
 			
 		}
@@ -4290,10 +3882,6 @@ focus_tree = {
 
 		#Effects
 		select_effect = {
-			
-		}
-
-		cancel_effect = {
 			
 		}
 
@@ -4331,10 +3919,6 @@ focus_tree = {
 			
 		}
 
-		cancel_effect = {
-			
-		}
-
 		completion_reward = {
 			
 		}
@@ -4365,10 +3949,6 @@ focus_tree = {
 
 		#Effects
 		select_effect = {
-			
-		}
-
-		cancel_effect = {
 			
 		}
 

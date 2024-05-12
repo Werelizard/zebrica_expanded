@@ -561,3 +561,182 @@ defined_text = {
 		localization_key = ZEX_MGY_Button_Hidden
 	}
 }
+
+# Tooltip for the buttons
+
+# Displays a "yes" or "no" sign for the tooltip if action taken in the state
+
+defined_text = {
+	name = ZEX_MGY_GET_ALREADY_TOOK_ACTION_ON_STATE
+	text = {
+		trigger = {
+			if = {
+				limit = {
+					has_country_flag = zex_mgy_unrest_selected_sineighi
+				}
+				zex_mgy_no_action_in_sineighi = yes
+			}
+			else_if = {
+				limit = {
+					has_country_flag = zex_mgy_unrest_selected_maneisrata
+				}
+				zex_mgy_no_action_in_maneisrata = yes
+			}
+			else_if = {
+				limit = {
+					has_country_flag = zex_mgy_unrest_selected_delta
+				}
+				zex_mgy_no_action_in_delta = yes
+			}
+			else_if = {
+				limit = {
+					has_country_flag = zex_mgy_unrest_selected_somnambula
+				}
+				zex_mgy_no_action_in_somnambula = yes
+			}
+			else_if = {
+				limit = {
+					has_country_flag = zex_mgy_unrest_selected_easterndesert
+				}
+				zex_mgy_no_action_in_eastdesert = yes
+			}
+			else_if = {
+				limit = {
+					has_country_flag = zex_mgy_unrest_selected_manephis
+				}
+				zex_mgy_no_action_in_manephis = yes
+			}
+			else_if = {
+				limit = {
+					has_country_flag = zex_mgy_unrest_selected_uppermaregypt
+				}
+				zex_mgy_no_action_in_uppermaregypt = yes
+			}
+			else_if = {
+				limit = {
+					has_country_flag = zex_mgy_unrest_selected_zush
+				}
+				zex_mgy_no_action_in_zush = yes
+			}
+			else_if = {
+				limit = {
+					has_country_flag = zex_mgy_unrest_selected_kaneigh
+				}
+				zex_mgy_no_action_in_kaneigh = yes
+			}
+		}
+		localization_key = ZEX_MGY_Tooltip_Yes_Check
+	}
+	text = {
+		localization_key = ZEX_MGY_Tooltip_No_Check
+	}
+}
+
+defined_text = {
+	name = ZEX_MGY_GET_ALREADY_TOOK_TWO_ACTIONS
+	text = {
+		trigger = {
+			check_variable = {
+				var = ZEX_MGY_Actions_Taken
+				value = ZEX_MGY_MAX_Actions_Taken
+				compare = less_than
+			}
+		}
+		localization_key = ZEX_MGY_Tooltip_Yes_Check
+	}
+	text = {
+		localization_key = ZEX_MGY_Tooltip_No_Check
+	}
+}
+
+defined_text = {
+	name = ZEX_MGY_GET_FOCUSED_STATE_NAME
+	text = {
+		trigger = {
+			has_country_flag = zex_mgy_unrest_selected_sineighi
+		}
+		localization_key = zex_mgy_sineighi
+	}
+	text = {
+		trigger = {
+			has_country_flag = zex_mgy_unrest_selected_delta
+		}
+		localization_key = zex_mgy_delta
+	}
+	text = {
+		trigger = {
+			has_country_flag = zex_mgy_unrest_selected_kaneigh
+		}
+		localization_key = zex_mgy_kaneigh
+	}
+	text = {
+		trigger = {
+			has_country_flag = zex_mgy_unrest_selected_maneisrata
+		}
+		localization_key = zex_mgy_maneisrata
+	}
+	text = {
+		trigger = {
+			has_country_flag = zex_mgy_unrest_selected_manephis
+		}
+		localization_key = zex_mgy_manephis
+	}
+	text = {
+		trigger = {
+			has_country_flag = zex_mgy_unrest_selected_somnambula
+		}
+		localization_key = zex_mgy_somnambula
+	}
+	text = {
+		trigger = {
+			has_country_flag = zex_mgy_unrest_selected_easterndesert
+		}
+		localization_key = zex_mgy_easterndesert
+	}
+	text = {
+		trigger = {
+			has_country_flag = zex_mgy_unrest_selected_uppermaregypt
+		}
+		localization_key = zex_mgy_uppermaregypt
+	}
+	text = {
+		trigger = {
+			has_country_flag = zex_mgy_unrest_selected_zush
+		}
+		localization_key = zex_mgy_zush
+	}
+}
+
+defined_text = {
+	name = ZEX_MGY_GET_HAS_ENOUGH_LEGITIMACY_FOR_BUTTON_CHECK
+	text = {
+		trigger = {
+			check_variable = {
+				var = ZEX_MGY_LEGITIMACY
+				value = ZEX_MGY_UNREST_LEGITIMACY_COUNTER_COST
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = ZEX_MGY_Tooltip_Yes_Check
+	}
+	text = {
+		localization_key = ZEX_MGY_Tooltip_No_Check
+	}
+}
+
+defined_text = {
+	name = ZEX_MGY_GET_HAS_ENOUGH_POLPOWER_FOR_BUTTON_CHECK
+	text = {
+		trigger = {
+			check_variable = {
+				var = political_power
+				value = ZEX_MGY_UNREST_POLITICALPOWER_COUNTER_COST
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = ZEX_MGY_Tooltip_Yes_Check
+	}
+	text = {
+		localization_key = ZEX_MGY_Tooltip_No_Check
+	}
+}

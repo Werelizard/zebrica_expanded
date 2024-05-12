@@ -72,6 +72,27 @@
  zex_mgy_no_action_in_somnambula_tt:0 "Not: has already intervened in §YSomnambula§!"
  zex_mgy_no_action_in_eastdesert_tt:0 "Not: has already intervened in the §YEastern Desert§!"
 
+  zex_mgy_sineighi:0 "§YSineighi§!"
+  zex_mgy_delta:0 "the §YDelta§!"
+  zex_mgy_kaneigh:0 "§YKaneigh§!"
+  zex_mgy_maneisrata:0 "§YManeisrata§!"
+  zex_mgy_manephis:0 "§YManephis§!"
+  zex_mgy_somnambula:0 "§YSomnambula§!"
+  zex_mgy_easterndesert:0 "the §YEastern Desert§!"
+  zex_mgy_uppermaregypt:0 "§YUpper Maregypt§!"
+  zex_mgy_zush:0 "§YZush§!"
+
+ ZEX_MGY_BUTTON_PROPAGANDA_TOOLTIP:0 "§YPromote Royalist Propaganda§!\n\n§YPrerequisites:§!\n[ZEX_MGY_GET_ALREADY_TOOK_TWO_ACTIONS]  Not: has already taken §Y[?ZEX_MGY_MAX_Actions_Taken]§! actions this round\n[ZEX_MGY_GET_ALREADY_TOOK_ACTION_ON_STATE]  Not: has already intervened in [ZEX_MGY_GET_FOCUSED_STATE_NAME] this round\n\n§YEffects:§!\n§LRegain §!§G2§!§L £ZEX_legitimacy   legitimacy at the end of this round§!\n\nIt costs £pol_power  §t[?ZEX_MGY_UNREST_POLITICALPOWER_COUNTER_COST]§! to take this action"
+ ZEX_MGY_BUTTON_ARRESTS_TOOLTIP:0 "§YArrest Agitators§!\n\n§YPrerequisites:§!\n[ZEX_MGY_GET_ALREADY_TOOK_TWO_ACTIONS]  Not: has already taken §Y[?ZEX_MGY_MAX_Actions_Taken]§! actions this round\n[ZEX_MGY_GET_ALREADY_TOOK_ACTION_ON_STATE]  Not: has already intervened in [ZEX_MGY_GET_FOCUSED_STATE_NAME] this round\n\n§YEffects:§!\n§LDecreases £local_unrest local unrest in §![ZEX_MGY_GET_FOCUSED_STATE_NAME]§L by §!§G[?ZEX_MGY_UNREST_EFFECTS_IMPACT]§!\n\nIt costs £ZEX_legitimacy  §t[?ZEX_MGY_UNREST_LEGITIMACY_COUNTER_COST]§! to take this action"
+ ZEX_MGY_BUTTON_POLICE_TOOLTIP:0 "§YDeploy the Medjay§!\n\n§YPrerequisites:§!\n[ZEX_MGY_GET_ALREADY_TOOK_TWO_ACTIONS]  Not: has already taken §Y[?ZEX_MGY_MAX_Actions_Taken]§! actions this round\n[ZEX_MGY_GET_ALREADY_TOOK_ACTION_ON_STATE]  Not: has already intervened in [ZEX_MGY_GET_FOCUSED_STATE_NAME] this round\n\n§YEffects:§!\n§LUnrest will not increase in §![ZEX_MGY_GET_FOCUSED_STATE_NAME]§L this round§!\n\nIt costs £pol_power  §t[?ZEX_MGY_UNREST_POLITICALPOWER_COUNTER_COST]§! to take this action"
+
+ ZEX_MGY_PROPAGANDA_MARKER:0 "ZEX_MGY_PROPAGANDA_MARKER"
+ ZEX_MGY_ARRESTS_MARKER:0 "ZEX_MGY_ARRESTS_MARKER"
+ ZEX_MGY_POLICE_MARKER:0 "ZEX_MGY_POLICE_MARKER"
+  
+ ZEX_MGY_Tooltip_Yes_Check:0 "£trigger_yes"
+ ZEX_MGY_Tooltip_No_Check:0 "£trigger_no"
+
  ZEX_MGY_NOUNREST_SINEIGHI:0 "ZEX_MGY_NOUNREST_SINEIGHI"
  ZEX_MGY_LOWUNREST_SINEIGHI:0 "ZEX_MGY_LOWUNREST_SINEIGHI"
  ZEX_MGY_MIDUNREST_SINEIGHI:0 "ZEX_MGY_MIDUNREST_SINEIGHI"

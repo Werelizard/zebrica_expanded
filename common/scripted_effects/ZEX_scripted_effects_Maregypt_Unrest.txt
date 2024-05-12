@@ -16,7 +16,13 @@ ZEX_activate_republican_agitation = {
 			ZEX_MGY_UNREST_EFFECTS_INTERVALLS = 28
 		}
 		set_variable = {
-			ZEX_MGY_UNREST_EFFECTS_IMPACT = 5
+			ZEX_MGY_UNREST_EFFECTS_IMPACT = 2
+		}
+		set_variable = {
+			ZEX_MGY_UNREST_LEGITIMACY_COUNTER_COST = 5
+		}
+		set_variable = {
+			ZEX_MGY_UNREST_POLITICALPOWER_COUNTER_COST = 15
 		}
 		set_variable = {
 			ZEX_MGY_UNREST_COUNTER_COST = 5
@@ -25,7 +31,7 @@ ZEX_activate_republican_agitation = {
 			ZEX_MGY_Actions_Taken = 0
 		}
 		set_variable = {
-			ZEX_MGY_MAX_Actions_Taken = 0
+			ZEX_MGY_MAX_Actions_Taken = 2
 		}
 		set_variable = {
 			ZEX_MGY_DAY_REMAINING_IN_TURN = 28
@@ -33,15 +39,6 @@ ZEX_activate_republican_agitation = {
 		set_variable = {
 			ZEX_MGY_UNREST_LEGITIMACY_REGAIN = 0
 		}
-		# set_variable = {
-		# 	ZEX_MGY_UNREST_REBELS_SUCCESS = 65
-		# }
-		# set_variable = {
-		# 	ZEX_MGY_UNREST_REBELS_NOTHING = 10
-		# }
-		# set_variable = {
-		# 	ZEX_MGY_UNREST_REBELS_ESCAPE = 25
-		# }
 		set_variable = {
 			ZEX_MGY_LEGITIMACY_INCREASE_DAILY = 0.125
 		}
