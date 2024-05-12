@@ -129,13 +129,15 @@ guiTypes = {
 				name = "ZEX_MGY_unrest_counter"
 				position = { x = 305 y = 325 }
 				spriteType = "ZEX_MGY_Unrest_Counter"
-				pdx_tooltip = ZEX_MGY_AVERAGE_UNREST_TOOLTIP
+				pdx_tooltip = ZEX_MGY_AVERAGE_UNREST_EFFECT_TOOLTIP
+				pdx_tooltip_delayed = ZEX_MGY_AVERAGE_UNREST_TOOLTIP
 			}
 			iconType = {
 				name = "ZEX_MGY_Legitimacy_Counter"
 				position = { x = 305 y = 353 }
 				spriteType = "ZEX_MGY_Legitimacy_Counter"
-				pdx_tooltip = ZEX_MGY_REBELLION_LEGITIMACY
+				pdx_tooltip = ZEX_MGY_REBELLION_LEGITIMACY_EFFECT_TOOLTIP
+				pdx_tooltip_delayed = ZEX_MGY_REBELLION_LEGITIMACY_TOOLTIP
 			}
 
 			instantTextBoxType = {
@@ -146,7 +148,8 @@ guiTypes = {
 				format = center
 				maxHeight = 21
 				maxwidth = 54
-				pdx_tooltip = ZEX_MGY_AVERAGE_UNREST_TOOLTIP
+				pdx_tooltip = ZEX_MGY_AVERAGE_UNREST_EFFECT_TOOLTIP
+				pdx_tooltip_delayed = ZEX_MGY_AVERAGE_UNREST_TOOLTIP
 			}
 			
 			instantTextBoxType = {
@@ -157,7 +160,8 @@ guiTypes = {
 				format = center
 				maxHeight = 21
 				maxwidth = 54
-				pdx_tooltip = ZEX_MGY_REBELLION_LEGITIMACY
+				pdx_tooltip = ZEX_MGY_REBELLION_LEGITIMACY_EFFECT_TOOLTIP
+				pdx_tooltip_delayed = ZEX_MGY_REBELLION_LEGITIMACY_TOOLTIP
 			}
 
 			# Title and help tooltip

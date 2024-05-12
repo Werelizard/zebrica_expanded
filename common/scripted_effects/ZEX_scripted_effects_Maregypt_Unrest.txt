@@ -22,6 +22,9 @@ ZEX_activate_republican_agitation = {
 			ZEX_MGY_UNREST_LEGITIMACY_COUNTER_COST = 5
 		}
 		set_variable = {
+			ZEX_MGY_max_provinces_targeted = 2
+		}
+		set_variable = {
 			ZEX_MGY_UNREST_POLITICALPOWER_COUNTER_COST = 15
 		}
 		set_variable = {
@@ -83,11 +86,11 @@ ZEX_MGY_SET_BASE_ALIGNMENTS = {
 	}
 	set_variable = {
 		var = ZEX_MGY_VAR_Delta_Alignment
-		value = 5
+		value = 3
 	}
 	set_variable = {
 		var = ZEX_MGY_VAR_Manephis_Alignment
-		value = 26
+		value = 11
 	}
 	set_variable = {
 		var = ZEX_MGY_VAR_Somnambula_Alignment

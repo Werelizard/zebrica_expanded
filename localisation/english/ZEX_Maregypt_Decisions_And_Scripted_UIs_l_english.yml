@@ -58,8 +58,11 @@
  ZEX_MGY_AVERAGE_UNREST_BOX_VAL:0 "§Y[?ROOT.ZEX_MGY_AVERAGE_UNREST|1]§!"
  ZEX_MGY_LEGITIMACY_BOX_VAL:0 "§Y[?ROOT.ZEX_MGY_LEGITIMACY|2]§!"
 
+ ZEX_MGY_AVERAGE_UNREST_EFFECT_TOOLTIP:0 "Current Effects:\n\nStability: §t[?ROOT.ZEX_MGY_AVERAGE_UNREST_NEGATIVE|%2]§!\nPolitical Power Gain: §t[?ROOT.ZEX_MGY_AVERAGE_POLITICAL_IMPACT_UNREST|%2]§!"
+ ZEX_MGY_REBELLION_LEGITIMACY_EFFECT_TOOLTIP:0 "Daily Legitimacy Gain: [?ROOT.ZEX_MGY_LEGITIMACY_INCREASE_DAILY|=+]"
+
  ZEX_MGY_AVERAGE_UNREST_TOOLTIP:0 "Our current £local_unrest  §Yaverage unrest§! represents the mean of all of our provinces' local unrest. At the national level, it will directly affect our country's £stability_texticon  §Ystability§! and £pol_power  §Ypolitical power§! gain."
- ZEX_MGY_REBELLION_LEGITIMACY:0 "Our current £ZEX_legitimacy  §Ylegitimacy§! represents how well our current monarchs holds up in the eyes of our citizens. Unlike the £local_unrest  §Yaverage unrest§! value, it has no effect on our country."
+ ZEX_MGY_REBELLION_LEGITIMACY_TOOLTIP:0 "Our current £ZEX_legitimacy  §Ylegitimacy§! represents how well our current monarchs holds up in the eyes of our citizens. Unlike the £local_unrest  §Yaverage unrest§! value, it has no effect on our country."
 
  zex_mgy_less_than_actions_threshold_tt:0 "Not: has already taken §Y[?ZEX_MGY_MAX_Actions_Taken]§! actions this turn"
  zex_mgy_no_action_in_kaneig_tt:0 "Not: has already intervened in §YKaneigh§!"
@@ -175,7 +178,8 @@
 
  ZEX_MGY_Turn_Timer_Label:0 "Days Left"
  ZEX_MGY_Turn_Timer_Days:0 "[?ZEX_MGY_DAY_REMAINING_IN_TURN]"
- ZEX_MGY_Turn_Timer_Days_TOOLTIP:0 ""
+
+ ZEX_MGY_Turn_Timer_Days_TOOLTIP:0 "Every §Y[?ZEX_MGY_UNREST_EFFECTS_INTERVALLS]§! days, the round will §tend§! and up to §Y[?ZEX_MGY_max_provinces_targeted]§! provinces will see their £local_unrest §Ylocal unrest§! rise by §t2§!."
 
  ZEX_MGY_Turn_Timer_1:0 "ZEX_MGY_Turn_Timer_1"
  ZEX_MGY_Turn_Timer_2:0 "ZEX_MGY_Turn_Timer_2"
