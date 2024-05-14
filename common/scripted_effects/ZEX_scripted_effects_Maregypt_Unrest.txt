@@ -13,7 +13,7 @@ ZEX_activate_republican_agitation = {
 			ZEX_MGY_LEGITIMACY = 55
 		}
 		set_variable = {
-			ZEX_MGY_UNREST_EFFECTS_INTERVALLS = 28
+			ZEX_MGY_UNREST_EFFECTS_INTERVALLS = 21
 		}
 		set_variable = {
 			ZEX_MGY_UNREST_EFFECTS_IMPACT = 2
@@ -22,7 +22,7 @@ ZEX_activate_republican_agitation = {
 			ZEX_MGY_UNREST_LEGITIMACY_COUNTER_COST = 5
 		}
 		set_variable = {
-			ZEX_MGY_max_provinces_targeted = 2
+			ZEX_MGY_max_provinces_targeted = 3
 		}
 		set_variable = {
 			ZEX_MGY_UNREST_POLITICALPOWER_COUNTER_COST = 15
@@ -34,7 +34,7 @@ ZEX_activate_republican_agitation = {
 			ZEX_MGY_MAX_Actions_Taken = 2
 		}
 		set_variable = {
-			ZEX_MGY_DAY_REMAINING_IN_TURN = 28
+			ZEX_MGY_DAY_REMAINING_IN_TURN = ZEX_MGY_UNREST_EFFECTS_INTERVALLS #We do this so that the counters always start right
 		}
 		set_variable = {
 			ZEX_MGY_UNREST_LEGITIMACY_REGAIN = 0
@@ -43,16 +43,27 @@ ZEX_activate_republican_agitation = {
 			ZEX_MGY_LEGITIMACY_INCREASE_DAILY = 0.125
 		}
 		set_variable = {
-			ZEX_MGY_UNREST_INCREASE_AT_END_TURN = 5
+			ZEX_MGY_UNREST_INCREASE_AT_END_TURN = 6
+		}
+		set_variable = {
+			zey_mgy_unrest_num_pacified_provinces = 0
 		}
 		# Other defines
-		set_country_flag = zex_has_republican_agitation
-		ZEX_MGY_SET_BASE_ALIGNMENTS = yes
-		ZEX_MGY_CALCULATE_PERCENTILE_VALUES = yes
-		ZEX_MGY_enable_state_unrest = yes
+		if = {
+			limit = {
+				NOT = {
+					has_idea = ZEX_MGY_REPUBLICAN_AGITATION_IDEA
+				}
+			}
+			add_ideas = ZEX_MGY_REPUBLICAN_AGITATION_IDEA
+		}
 		add_dynamic_modifier = {
 			modifier = ZEX_MGY_republican_agitation_impact_dynmod
 		}
+		# Other defines
+		ZEX_MGY_SET_BASE_ALIGNMENTS = yes
+		ZEX_MGY_CALCULATE_PERCENTILE_VALUES = yes
+		ZEX_MGY_enable_state_unrest = yes
 	}
 }
 
@@ -436,6 +447,9 @@ ZEX_MGY_Increase_Unrest = {
 					NOT = {
 						has_country_flag = ZEX_MGY_Sineighi_protected_flag
 					}
+					NOT = {
+						has_country_flag = zex_mgy_unrest_sineighi_pacified
+					}
 				}
 				AND = {
 					check_variable = {
@@ -443,6 +457,9 @@ ZEX_MGY_Increase_Unrest = {
 					}
 					NOT = {
 						has_country_flag = ZEX_MGY_Maneisrata_protected_flag
+					}
+					NOT = {
+						has_country_flag = zex_mgy_unrest_maneisrata_pacified
 					}
 				}
 				AND = {
@@ -452,6 +469,9 @@ ZEX_MGY_Increase_Unrest = {
 					NOT = {
 						has_country_flag = ZEX_MGY_Delta_protected_flag
 					}
+					NOT = {
+						has_country_flag = zex_mgy_unrest_delta_pacified
+					}
 				}
 				AND = {
 					check_variable = {
@@ -459,6 +479,9 @@ ZEX_MGY_Increase_Unrest = {
 					}
 					NOT = {
 						has_country_flag = ZEX_MGY_Somnambula_protected_flag
+					}
+					NOT = {
+						has_country_flag = zex_mgy_unrest_somnambula_pacified
 					}
 				}
 				AND = {
@@ -468,6 +491,9 @@ ZEX_MGY_Increase_Unrest = {
 					NOT = {
 						has_country_flag = ZEX_MGY_Desert_protected_flag
 					}
+					NOT = {
+						has_country_flag = zex_mgy_unrest_easterndesert_pacified
+					}
 				}
 				AND = {
 					check_variable = {
@@ -475,6 +501,9 @@ ZEX_MGY_Increase_Unrest = {
 					}
 					NOT = {
 						has_country_flag = ZEX_MGY_Manephis_protected_flag
+					}
+					NOT = {
+						has_country_flag = zex_mgy_unrest_manephis_pacified
 					}
 				}
 				AND = {
@@ -484,6 +513,9 @@ ZEX_MGY_Increase_Unrest = {
 					NOT = {
 						has_country_flag = ZEX_MGY_UpperMaregypt_arrests_flag
 					}
+					NOT = {
+						has_country_flag = zex_mgy_unrest_uppermaregypt_pacified
+					}
 				}
 				AND = {
 					check_variable = {
@@ -492,6 +524,9 @@ ZEX_MGY_Increase_Unrest = {
 					NOT = {
 						has_country_flag = ZEX_MGY_Zush_protected_flag
 					}
+					NOT = {
+						has_country_flag = zex_mgy_unrest_zush_pacified
+					}
 				}
 				AND = {
 					check_variable = {
@@ -499,6 +534,9 @@ ZEX_MGY_Increase_Unrest = {
 					}
 					NOT = {
 						has_country_flag = ZEX_MGY_Kaneigh_protected_flag
+					}
+					NOT = {
+						has_country_flag = zex_mgy_unrest_kaneigh_pacified
 					}
 				}
 			}
@@ -515,6 +553,7 @@ ZEX_MGY_Increase_Unrest = {
 							compare = greater_than_or_equals
 						}
 						has_country_flag = ZEX_MGY_Sineighi_protected_flag
+						has_country_flag = zex_mgy_unrest_sineighi_pacified
 					}
 				}
 				add_to_variable = {
@@ -536,6 +575,7 @@ ZEX_MGY_Increase_Unrest = {
 							compare = greater_than_or_equals
 						}
 						has_country_flag = ZEX_MGY_Maneisrata_protected_flag
+						has_country_flag = zex_mgy_unrest_maneisrata_pacified
 					}
 				}
 				add_to_variable = {
@@ -557,6 +597,7 @@ ZEX_MGY_Increase_Unrest = {
 							compare = greater_than_or_equals
 						}
 						has_country_flag = ZEX_MGY_Desert_protected_flag
+						has_country_flag = zex_mgy_unrest_easterndesert_pacified
 					}
 				}
 				add_to_variable = {
@@ -578,6 +619,7 @@ ZEX_MGY_Increase_Unrest = {
 							compare = greater_than_or_equals
 						}
 						has_country_flag = ZEX_MGY_Somnambula_protected_flag
+						has_country_flag = zex_mgy_unrest_somnambula_pacified
 					}
 				}
 				add_to_variable = {
@@ -599,6 +641,7 @@ ZEX_MGY_Increase_Unrest = {
 							compare = greater_than_or_equals
 						}
 						has_country_flag = ZEX_MGY_Delta_protected_flag
+						has_country_flag = zex_mgy_unrest_delta_pacified
 					}
 				}
 				add_to_variable = {
@@ -620,6 +663,7 @@ ZEX_MGY_Increase_Unrest = {
 							compare = greater_than_or_equals
 						}
 						has_country_flag = ZEX_MGY_Maneisrata_protected_flag
+						has_country_flag = zex_mgy_unrest_manephis_pacified
 					}
 				}
 				add_to_variable = {
@@ -641,6 +685,7 @@ ZEX_MGY_Increase_Unrest = {
 							compare = greater_than_or_equals
 						}
 						has_country_flag = ZEX_MGY_UpperMaregypt_protected_flag
+						has_country_flag = zex_mgy_unrest_uppermaregypt_pacified
 					}
 				}
 				add_to_variable = {
@@ -662,6 +707,7 @@ ZEX_MGY_Increase_Unrest = {
 							compare = greater_than_or_equals
 						}
 						has_country_flag = ZEX_MGY_Kaneigh_protected_flag
+						has_country_flag = zex_mgy_unrest_kaneigh_pacified
 					}
 				}
 				add_to_variable = {
@@ -683,6 +729,7 @@ ZEX_MGY_Increase_Unrest = {
 							compare = greater_than_or_equals
 						}
 						has_country_flag = ZEX_MGY_Zush_protected_flag
+						has_country_flag = zex_mgy_unrest_zush_pacified
 					}
 				}
 				add_to_variable = {
@@ -696,7 +743,7 @@ ZEX_MGY_Increase_Unrest = {
 			}
 		}
 		#Increment counter by one
-		add_to_variable = {
+		add_to_temp_variable = {
 			var = zey_mgy_province_unrest_check
 			value = 1
 		}
@@ -710,7 +757,7 @@ ZEX_MGY_Increase_Unrest = {
 ZEX_MGY_Daily_Unrest_Update = {
 	if = {
 		limit = {
-			has_country_flag = zex_has_republican_agitation
+			has_idea = ZEX_MGY_REPUBLICAN_AGITATION_IDEA
 		}
 		# Update the legitimacy variable every day
 		add_to_variable = {
@@ -1079,5 +1126,68 @@ ZEX_MGY_Political_Unrest_Police_Button = {
 			has_country_flag = zex_mgy_unrest_selected_kaneigh
 		}
 		set_country_flag = ZEX_MGY_Kaneigh_protected_flag
+	}
+}
+
+ZEX_MGY_Political_Unrest_Pacify_Button = {
+	#Add the corresponding flag
+	if = {
+		limit = {
+			has_country_flag = zex_mgy_unrest_selected_sineighi
+		}
+		set_country_flag = zex_mgy_unrest_sineighi_pacified
+	}
+	else_if = {
+		limit = {
+			has_country_flag = zex_mgy_unrest_selected_maneisrata
+		}
+		set_country_flag = zex_mgy_unrest_maneisrata_pacified
+	}
+	else_if = {
+		limit = {
+			has_country_flag = zex_mgy_unrest_selected_delta
+		}
+		set_country_flag = zex_mgy_unrest_delta_pacified
+	}
+	else_if = {
+		limit = {
+			has_country_flag = zex_mgy_unrest_selected_somnambula
+		}
+		set_country_flag = zex_mgy_unrest_somnambula_pacified
+	}
+	else_if = {
+		limit = {
+			has_country_flag = zex_mgy_unrest_selected_easterndesert
+		}
+		set_country_flag = zex_mgy_unrest_easterndesert_pacified
+	}
+	else_if = {
+		limit = {
+			has_country_flag = zex_mgy_unrest_selected_manephis
+		}
+		set_country_flag = zex_mgy_unrest_manephis_pacified
+	}
+	else_if = {
+		limit = {
+			has_country_flag = zex_mgy_unrest_selected_uppermaregypt
+		}
+		set_country_flag = zex_mgy_unrest_uppermaregypt_pacified
+	}
+	else_if = {
+		limit = {
+			has_country_flag = zex_mgy_unrest_selected_zush
+		}
+		set_country_flag = zex_mgy_unrest_zush_pacified
+	}
+	else_if = {
+		limit = {
+			has_country_flag = zex_mgy_unrest_selected_kaneigh
+		}
+		set_country_flag = zex_mgy_unrest_kaneigh_pacified
+	}
+	# Create  / update the variable for number of pacified states
+	add_to_variable = {
+		var = zey_mgy_unrest_num_pacified_provinces
+		value = 1
 	}
 }

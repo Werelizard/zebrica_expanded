@@ -102,7 +102,7 @@
  ZEX_MGY_republican_agitation_reintegrate_state_button_completed:0 "§GPacified§!"
  ZEX_MGY_republican_agitation_reintegrate_state_button:0 "Pacify [ZEX_MGY_GET_FOCUSED_STATE_NAME]"
 
- ZEX_MGY_republican_agitation_reintegrate_state_button_click_enabled_tt:0 "Pacifies the province, smothering any rebellion within it permanently\n\n§YPrerequisites:§!\n[ZEX_MGY_GET_IF_STATE_PACIFIED]  The province is not already pacified\n[ZEX_MGY_GET_REINTEGRATE_STATE_FOCUS_COMPLETED]  Has completed the §Y"Peace Within the Realm"§! focus\n[ZEX_MGY_GET_REINTEGRATE_STATE_STABILITY_HIGHER_THAN_STATE_UNREST]  Stability §Y([?MGY.stability|%0])§! must be higher than the province's local unrest §Y([ZEX_MGY_GET_FOCUSED_STATE_UNREST])§!\n\n§YEffects:§!\nUnrest will no longer increase in §Y[ZEX_MGY_GET_FOCUSED_STATE_NAME]§!"
+ ZEX_MGY_republican_agitation_reintegrate_state_button_click_enabled_tt:0 "Pacifies the province, smothering any rebellion within it permanently\n\n§YPrerequisites:§!\n[ZEX_MGY_GET_IF_STATE_PACIFIED]  The province is not already pacified\n[ZEX_MGY_GET_REINTEGRATE_STATE_FOCUS_COMPLETED]  Has completed the §Y"In Harmony's Name"§! focus\n[ZEX_MGY_GET_REINTEGRATE_STATE_STABILITY_HIGHER_THAN_STATE_UNREST]  Stability §Y([?MGY.stability|%0])§! must be higher than the province's local unrest §Y([ZEX_MGY_GET_FOCUSED_STATE_UNREST])§!\n\n§YEffects:§!\nUnrest will no longer increase in §Y[ZEX_MGY_GET_FOCUSED_STATE_NAME]§!\n\nIt costs £pol_power  §t20§! to take this action"
 
  ZEX_MGY_PROPAGANDA_MARKER:0 "ZEX_MGY_PROPAGANDA_MARKER"
  ZEX_MGY_ARRESTS_MARKER:0 "ZEX_MGY_ARRESTS_MARKER"

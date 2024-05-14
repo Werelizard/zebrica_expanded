@@ -19,7 +19,7 @@ ZEX_MAREGYPT_REPUBLICAN_AGITATION_CATEGORY = {
 	}
 	visible = {
 		zxe_is_maregypt_or_cosmetic_maregypt = yes
-		has_country_flag = zex_has_republican_agitation
+		has_idea = ZEX_MGY_REPUBLICAN_AGITATION_IDEA
 		NOT = {
 			has_country_flag = zex_mgy_did_scripted_civil_war
 		}

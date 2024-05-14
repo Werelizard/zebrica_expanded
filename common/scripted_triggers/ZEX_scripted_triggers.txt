@@ -59,7 +59,7 @@ zex_no_scripted_maregypt_civil_war = {
 zex_mgy_has_republican_unrest = {
 	custom_trigger_tooltip = {
 		tooltip = zex_has_republican_agitation_tt
-		has_country_flag = zex_has_republican_agitation
+		has_idea = ZEX_MGY_REPUBLICAN_AGITATION_IDEA
 	}
 }
 

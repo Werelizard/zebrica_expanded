@@ -3,7 +3,7 @@ scripted_gui = {
 		context_type = decision_category
 		window_name = "ZEX_MGY_republican_agitation_ui_window"
 		visible = {
-			has_country_flag = zex_has_republican_agitation
+			has_idea = ZEX_MGY_REPUBLICAN_AGITATION_IDEA
 		}
 		triggers = {
 			ZEX_MGY_sineighi_icon_click_enabled = {
@@ -66,9 +66,12 @@ scripted_gui = {
 				}
 			}
 			ZEX_MGY_republican_agitation_reintegrate_state_button_click_enabled = {
-				has_completed_focus = ZEX_Goal_Pacify_the_Realm
-				zex_mgy_stability_higher_than_unrest = yes
-				zex_mgy_unrest_state_not_pacified = yes
+				AND = {
+					has_completed_focus = ZEX_Goal_in_Harmonys_name
+					zex_mgy_stability_higher_than_unrest = yes
+					zex_mgy_unrest_state_not_pacified = yes
+					has_political_power = 20
+				}
 			}
 		}
 		effects = {
@@ -143,7 +146,8 @@ scripted_gui = {
 				scoped_sound_effect = menu_close_window
 			}
 			ZEX_MGY_republican_agitation_reintegrate_state_button_click = {
-				
+				ZEX_MGY_Political_Unrest_Pacify_Button = yes
+				add_political_power = -20
 			}
 		}
 		properties = {
