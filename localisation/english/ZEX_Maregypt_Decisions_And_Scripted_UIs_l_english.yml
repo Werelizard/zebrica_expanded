@@ -179,7 +179,7 @@
  ZEX_MGY_Turn_Timer_Label:0 "Days Left"
  ZEX_MGY_Turn_Timer_Days:0 "[?ZEX_MGY_DAY_REMAINING_IN_TURN]"
 
- ZEX_MGY_Turn_Timer_Days_TOOLTIP:0 "Every §Y[?ZEX_MGY_UNREST_EFFECTS_INTERVALLS]§! days, the round will §tend§! and up to §Y[?ZEX_MGY_max_provinces_targeted]§! provinces will see their £local_unrest §Ylocal unrest§! rise by §t2§!."
+ ZEX_MGY_Turn_Timer_Days_TOOLTIP:0 "Every §Y[?ZEX_MGY_UNREST_EFFECTS_INTERVALLS]§! days, the round will §tend§! and up to §Y[?ZEX_MGY_max_provinces_targeted]§! provinces will see their £local_unrest §Ylocal unrest§! rise by §t[?ZEX_MGY_UNREST_INCREASE_AT_END_TURN]§!."
 
  ZEX_MGY_Turn_Timer_1:0 "ZEX_MGY_Turn_Timer_1"
  ZEX_MGY_Turn_Timer_2:0 "ZEX_MGY_Turn_Timer_2"
@@ -212,56 +212,6 @@
 
  ZEX_MAREGYPT_REPUBLICAN_AGITATION_CATEGORY:0 "Political Unrest"
  ZEX_MAREGYPT_REPUBLICAN_AGITATION_CATEGORY_desc:0 "Our country is currently experiencing profound unrest. §YPro-republican militias§!, §Yreactionaries§!, bandits and even our §Yown undisciplined soldiers§! have taken up arms against our kingdom - leading to windespread chaos and §Rpolitical violence§!. Some even say that Harmony has failed the Neighle and its people...has friendship really been withered away and beaten by the implacable sun?\n\nWe cannot let the unrest consume us, lest our country burst into flames. Should the £local_unrest §Yaverage unrest§! exceed our £ZEX_legitimacy  §Ylegitimacy§! we will be plunged into a §tcivil war§!."
-
- #Republican Unrest Decisions
-
- ZEX_MGY_COMPLETE_FOCUS_UNREST:0 "Has completed the §YPeace within the Realm§! focus."
-
- ZEX_MGY_ONLY_ONCE_PER_MOVE:0 "Not: has already taken this decision this round"
- ZEX_MGY_TWO_ACTIONS_AT_MOST_PER_MOVE:0 "Not: has already taken two decisions this round"
- ZEX_MGY_PROVINCE_PROTECTED_THIS_ROUND_tt:0 "§4This province will be immune to unrest increase this round§!"
-
- zex_mgy_unrest_increase_in_provinces_tt:0 "Up to two provinces will see their unrest increase by §t[?ROOT.ZEX_MGY_UNREST_EFFECTS_IMPACT]§!"
- zex_mgy_unrest_increase_in_province_tt:0 "One province will have its unrest increase by §t[?ROOT.ZEX_MGY_UNREST_EFFECTS_IMPACT]§!"
- zex_mgy_unrest_agitators_caught_tt:0 "The rebels are caught, lowering the unrest in one province by §G2§!"
- zex_mgy_unrest_nothing_happens_tt:0 "Nothing happens"
-
- ZEX_MGY_UNREST_INTERVAL:0 "§RThe Republicans make their move...§!"
- ZEX_MGY_UNREST_INTERVAL_desc:0 "§gEvery round ([?ROOT.ZEX_MGY_UNREST_EFFECTS_INTERVALLS] days) republicans, socialists and other dissidents will attempt to increase the unrest throughout our country."
-
- ZEX_MGY_unrest_increase_legitimacy:0 "Royalist Propaganda"
- ZEX_MGY_Increased_Legitimacy:0 "Increase our £ZEX_legitimacy §Ylegitimacy§! by §Y10§!"
- ZEX_MGY_INCREASE_LEGITIMACY_10:0 "£ZEX_legitimacy Legitimacy: §G+10.0§!"
-
- ZEX_MGY_LEGITIMACY_COST:0 "£ZEX_legitimacy  §Y[?ROOT.ZEX_MGY_UNREST_COUNTER_COST]§!"
- ZEX_MGY_LEGITIMACY_COST_blocked:0 "£ZEX_legitimacy  §t[?ROOT.ZEX_MGY_UNREST_COUNTER_COST]§!"
- ZEX_MGY_COST_LEGITIMACY:0 "It costs £ZEX_legitimacy §t[?ROOT.ZEX_MGY_UNREST_COUNTER_COST]§! to take this decision"
-
- ZEX_MGY_unrest_political_concessions:0 "Political Concessions"
- ZEX_MGY_unrest_political_concessions_tt:0 "Extends the current turn by §Y[?ROOT.ZEX_MGY_UNREST_EFFECTS_INTERVALLS]§! days"
- ZEX_MGY_COST_10_LEGITIMACY:0 "It costs £ZEX_legitimacy §t10§! to take this decision"
- ZEX_MGY_LEGITIMACY_10:0 "£ZEX_legitimacy  §Y10§!"
- ZEX_MGY_LEGITIMACY_10_blocked:0 "£ZEX_legitimacy  §t10§!"
-
- ZEX_MGY_Protect_Delta:0 "Intervene in the Delta"
- ZEX_MGY_Protect_Sineighi:0 "Intervene in Sineighi"
- ZEX_MGY_Protect_Kaneigh:0 "Intervene in Kaneigh"
- ZEX_MGY_Protect_Manephis:0 "Intervene in Manephis"
- ZEX_MGY_Protect_Maneisrata:0 "Intervene in Maneisrata"
- ZEX_MGY_Protect_Somnambula:0 "Intervene in Somnambula"
- ZEX_MGY_Protect_Desert:0 "Intervene in the Eastern Desert"
- ZEX_MGY_Protect_UpperMaregypt:0 "Intervene in Upper Maregypt"
- ZEX_MGY_Protect_Zush:0 "Intervene in Zush"
-
- ZEX_MGY_Protect_Delta_desc:0 ""
- ZEX_MGY_Protect_Sineighi_desc:0 ""
- ZEX_MGY_Protect_Kaneigh_desc:0 ""
- ZEX_MGY_Protect_Manephis_desc:0 ""
- ZEX_MGY_Protect_Maneisrata_desc:0 ""
- ZEX_MGY_Protect_Somnambula_desc:0 ""
- ZEX_MGY_Protect_Desert_desc:0 "t"
- ZEX_MGY_Protect_UpperMaregypt_desc:0 ""
- ZEX_MGY_Protect_Zush_desc:0 ""
 
  #Protected Variant of the Provinces for mini game
  ZEX_MGY_NOUNREST_SINEIGHI_Protected:0 "ZEX_MGY_NOUNREST_SINEIGHI_Protected"

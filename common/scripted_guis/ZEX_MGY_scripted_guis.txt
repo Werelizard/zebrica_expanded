@@ -123,6 +123,7 @@ scripted_gui = {
 					var = political_power
 					value = ZEX_MGY_UNREST_POLITICALPOWER_COUNTER_COST
 				}
+				ZEX_MGY_Political_Unrest_Propaganda_Button = yes
 				scoped_sound_effect = menu_close_window
 			}
 			ZEX_MGY_republican_agitation_arrest_button_icon_click = {
@@ -130,6 +131,7 @@ scripted_gui = {
 					var = ZEX_MGY_LEGITIMACY
 					value = ZEX_MGY_UNREST_LEGITIMACY_COUNTER_COST
 				}
+				ZEX_MGY_Political_Unrest_Arrest_Button = yes
 				scoped_sound_effect = menu_close_window
 			}
 			ZEX_MGY_republican_agitation_police_button_icon_click = {
@@ -137,10 +139,11 @@ scripted_gui = {
 					var = political_power
 					value = ZEX_MGY_UNREST_POLITICALPOWER_COUNTER_COST
 				}
+				ZEX_MGY_Political_Unrest_Police_Button = yes
 				scoped_sound_effect = menu_close_window
 			}
 			ZEX_MGY_republican_agitation_reintegrate_state_button_click = {
-				add_political_power = 100
+				
 			}
 		}
 		properties = {

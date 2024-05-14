@@ -28,9 +28,6 @@ ZEX_activate_republican_agitation = {
 			ZEX_MGY_UNREST_POLITICALPOWER_COUNTER_COST = 15
 		}
 		set_variable = {
-			ZEX_MGY_UNREST_COUNTER_COST = 5
-		}
-		set_variable = {
 			ZEX_MGY_Actions_Taken = 0
 		}
 		set_variable = {
@@ -44,6 +41,9 @@ ZEX_activate_republican_agitation = {
 		}
 		set_variable = {
 			ZEX_MGY_LEGITIMACY_INCREASE_DAILY = 0.125
+		}
+		set_variable = {
+			ZEX_MGY_UNREST_INCREASE_AT_END_TURN = 5
 		}
 		# Other defines
 		set_country_flag = zex_has_republican_agitation
@@ -416,218 +416,110 @@ ZEX_MGY_UPDATE_REPUBLICAN_MODIFIER = {
 }
 
 ZEX_MGY_Increase_Unrest = {
-	random_list = {
-		10 = {
-			modifier = {
-				factor = 0
-				OR = {
-					has_country_flag = ZEX_MGY_Delta_protected_flag
-					check_variable = {
-						ZEX_MGY_VAR_Delta_Alignment > 99
-					}
-				}
-			}
-			add_to_variable = {
-				ZEX_MGY_VAR_Delta_Alignment = ZEX_MGY_UNREST_EFFECTS_IMPACT
-			}
-			clamp_variable = {
-				var = ZEX_MGY_VAR_Delta_Alignment
-				max = 100
-			}
-			set_country_flag = zex_mgy_increased_delta_unrest
-		}
-		10 = {
-			modifier = {
-				factor = 0
-				OR = {
-					has_country_flag = ZEX_MGY_Sineighi_protected_flag
-					check_variable = {
-						ZEX_MGY_VAR_Sineighi_Alignment > 99
-					}
-				}
-			}
-			add_to_variable = {
-				ZEX_MGY_VAR_Sineighi_Alignment = ZEX_MGY_UNREST_EFFECTS_IMPACT
-			}
-			clamp_variable = {
-				var = ZEX_MGY_VAR_Sineighi_Alignment
-				max = 100
-			}
-			set_country_flag = zex_mgy_increased_sineigh_unrest
-		}
-		10 = {
-			modifier = {
-				factor = 0
-				OR = {
-					has_country_flag = ZEX_MGY_Maneisrata_protected_flag
-					check_variable = {
-						ZEX_MGY_VAR_Maneisrata_Alignment > 99
-					}
-				}
-			}
-			add_to_variable = {
-				ZEX_MGY_VAR_Maneisrata_Alignment = ZEX_MGY_UNREST_EFFECTS_IMPACT
-			}
-			clamp_variable = {
-				var = ZEX_MGY_VAR_Maneisrata_Alignment
-				max = 100
-			}
-			set_country_flag = zex_mgy_increased_maneisrata_unrest
-		}
-		10 = {
-			modifier = {
-				factor = 0
-				OR = {
-					has_country_flag = ZEX_MGY_Manephis_protected_flag
-					check_variable = {
-						ZEX_MGY_VAR_Manephis_Alignment > 99
-					}
-				}
-			}
-			add_to_variable = {
-				ZEX_MGY_VAR_Manephis_Alignment = ZEX_MGY_UNREST_EFFECTS_IMPACT
-			}
-			clamp_variable = {
-				var = ZEX_MGY_VAR_Manephis_Alignment
-				max = 100
-			}
-			set_country_flag = zex_mgy_increased_manephis_unrest
-		}
-		10 = {
-			modifier = {
-				factor = 0
-				OR = {
-					has_country_flag = ZEX_MGY_Desert_protected_flag
-					check_variable = {
-						ZEX_MGY_VAR_Eastdesert_Alignment > 99
-					}
-				}
-			}
-			add_to_variable = {
-				ZEX_MGY_VAR_Eastdesert_Alignment = ZEX_MGY_UNREST_EFFECTS_IMPACT
-			}
-			clamp_variable = {
-				var = ZEX_MGY_VAR_Eastdesert_Alignment
-				max = 100
-			}
-			set_country_flag = zex_mgy_increased_desert_unrest
-		}
-		10 = {
-			modifier = {
-				factor = 0
-				OR = {
-					has_country_flag = ZEX_MGY_Somnambula_protected_flag
-					check_variable = {
-						ZEX_MGY_VAR_Somnambula_Alignment > 99
-					}
-				}
-			}
-			add_to_variable = {
-				ZEX_MGY_VAR_Somnambula_Alignment = ZEX_MGY_UNREST_EFFECTS_IMPACT
-			}
-			clamp_variable = {
-				var = ZEX_MGY_VAR_Somnambula_Alignment
-				max = 100
-			}
-			set_country_flag = zex_mgy_increased_somnambula_unrest
-		}
-		10 = {
-			modifier = {
-				factor = 0
-				OR = {
-					has_country_flag = ZEX_MGY_UpperMaregypt_protected_flag
-					check_variable = {
-						ZEX_MGY_VAR_UpperMaregypt_Alignment > 99
-					}
-				}
-			}
-			add_to_variable = {
-				ZEX_MGY_VAR_UpperMaregypt_Alignment = ZEX_MGY_UNREST_EFFECTS_IMPACT
-			}
-			clamp_variable = {
-				var = ZEX_MGY_VAR_UpperMaregypt_Alignment
-				max = 100
-			}
-			set_country_flag = zex_mgy_increased_uppermaregypt_unrest
-		}
-		10 = {
-			modifier = {
-				factor = 0
-				OR = {
-					has_country_flag = ZEX_MGY_Zush_protected_flag
-					check_variable = {
-						ZEX_MGY_VAR_Zush_Alignment > 99
-					}
-				}
-			}
-			add_to_variable = {
-				ZEX_MGY_VAR_Zush_Alignment = ZEX_MGY_UNREST_EFFECTS_IMPACT
-			}
-			clamp_variable = {
-				var = ZEX_MGY_VAR_Zush_Alignment
-				max = 100
-			}
-			set_country_flag = zex_mgy_increased_zush_unrest
-		}
-		10 = {
-			modifier = {
-				factor = 0
-				OR = {
-					has_country_flag = ZEX_MGY_Kaneigh_protected_flag
-					check_variable = {
-						ZEX_MGY_VAR_Kaneigh_Alignment > 99
-					}
-				}
-			}
-			add_to_variable = {
-				ZEX_MGY_VAR_Kaneigh_Alignment = ZEX_MGY_UNREST_EFFECTS_IMPACT
-			}
-			clamp_variable = {
-				var = ZEX_MGY_VAR_Kaneigh_Alignment
-				max = 100
-			}
-			set_country_flag = zex_mgy_increased_kaneigh_unrest
-		}
+	#Initiate an empty variable
+	set_temp_variable = {
+		var = zey_mgy_province_unrest_check
+		value = 0
 	}
-	if = {
+	while_loop_effect = {
 		limit = {
-			NOT = {
-				has_country_flag = ZEX_MGY_LIMIT_UNREST_TARGETS
+			#As long as the maximum isn't hit, continue...
+			check_variable = {
+				zey_mgy_province_unrest_check < ZEX_MGY_max_provinces_targeted
+			}
+			#As long as one province has LESS than 100 unrest AND the state isn't protected
+			OR = {
+				AND = {
+					check_variable = {
+						ZEX_MGY_VAR_Sineighi_Alignment < 100
+					}
+					NOT = {
+						has_country_flag = ZEX_MGY_Sineighi_protected_flag
+					}
+				}
+				AND = {
+					check_variable = {
+						ZEX_MGY_VAR_Maneisrata_Alignment < 100
+					}
+					NOT = {
+						has_country_flag = ZEX_MGY_Maneisrata_protected_flag
+					}
+				}
+				AND = {
+					check_variable = {
+						ZEX_MGY_VAR_Delta_Alignment < 100
+					}
+					NOT = {
+						has_country_flag = ZEX_MGY_Delta_protected_flag
+					}
+				}
+				AND = {
+					check_variable = {
+						ZEX_MGY_VAR_Somnambula_Alignment < 100
+					}
+					NOT = {
+						has_country_flag = ZEX_MGY_Somnambula_protected_flag
+					}
+				}
+				AND = {
+					check_variable = {
+						ZEX_MGY_VAR_Eastdesert_Alignment < 100
+					}
+					NOT = {
+						has_country_flag = ZEX_MGY_Desert_protected_flag
+					}
+				}
+				AND = {
+					check_variable = {
+						ZEX_MGY_VAR_Manephis_Alignment < 100
+					}
+					NOT = {
+						has_country_flag = ZEX_MGY_Manephis_protected_flag
+					}
+				}
+				AND = {
+					check_variable = {
+						ZEX_MGY_VAR_UpperMaregypt_Alignment < 100
+					}
+					NOT = {
+						has_country_flag = ZEX_MGY_UpperMaregypt_arrests_flag
+					}
+				}
+				AND = {
+					check_variable = {
+						ZEX_MGY_VAR_Zush_Alignment < 100
+					}
+					NOT = {
+						has_country_flag = ZEX_MGY_Zush_protected_flag
+					}
+				}
+				AND = {
+					check_variable = {
+						ZEX_MGY_VAR_Kaneigh_Alignment < 100
+					}
+					NOT = {
+						has_country_flag = ZEX_MGY_Kaneigh_protected_flag
+					}
+				}
 			}
 		}
+		#Randomly pick provinces
 		random_list = {
 			10 = {
 				modifier = {
 					factor = 0
 					OR = {
-						has_country_flag = zex_mgy_increased_delta_unrest
-						has_country_flag = ZEX_MGY_Delta_protected_flag
 						check_variable = {
-							ZEX_MGY_VAR_Delta_Alignment > 99
+							var = ZEX_MGY_VAR_Sineighi_Alignment
+							value = 100
+							compare = greater_than_or_equals
 						}
-					}
-				}
-				add_to_variable = {
-					ZEX_MGY_VAR_Delta_Alignment = ZEX_MGY_UNREST_EFFECTS_IMPACT
-				}
-				clamp_variable = {
-					var = ZEX_MGY_VAR_Delta_Alignment
-					max = 100
-				}
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					OR = {
-						has_country_flag = zex_mgy_increased_sineigh_unrest
 						has_country_flag = ZEX_MGY_Sineighi_protected_flag
-						check_variable = {
-							ZEX_MGY_VAR_Sineighi_Alignment > 99
-						}
 					}
 				}
 				add_to_variable = {
-					ZEX_MGY_VAR_Sineighi_Alignment = ZEX_MGY_UNREST_EFFECTS_IMPACT
+					var = ZEX_MGY_VAR_Sineighi_Alignment
+					value = ZEX_MGY_UNREST_INCREASE_AT_END_TURN
 				}
 				clamp_variable = {
 					var = ZEX_MGY_VAR_Sineighi_Alignment
@@ -638,15 +530,17 @@ ZEX_MGY_Increase_Unrest = {
 				modifier = {
 					factor = 0
 					OR = {
-						has_country_flag = ZEX_MGY_Maneisrata_protected_flag
-						has_country_flag = zex_mgy_increased_maneisrata_unrest
 						check_variable = {
-							ZEX_MGY_VAR_Maneisrata_Alignment > 99
+							var = ZEX_MGY_VAR_Maneisrata_Alignment
+							value = 100
+							compare = greater_than_or_equals
 						}
+						has_country_flag = ZEX_MGY_Maneisrata_protected_flag
 					}
 				}
 				add_to_variable = {
-					ZEX_MGY_VAR_Maneisrata_Alignment = ZEX_MGY_UNREST_EFFECTS_IMPACT
+					var = ZEX_MGY_VAR_Maneisrata_Alignment
+					value = ZEX_MGY_UNREST_INCREASE_AT_END_TURN
 				}
 				clamp_variable = {
 					var = ZEX_MGY_VAR_Maneisrata_Alignment
@@ -657,34 +551,17 @@ ZEX_MGY_Increase_Unrest = {
 				modifier = {
 					factor = 0
 					OR = {
-						has_country_flag = ZEX_MGY_Manephis_protected_flag
-						has_country_flag = zex_mgy_increased_manephis_unrest
 						check_variable = {
-							ZEX_MGY_VAR_Manephis_Alignment > 99
+							var = ZEX_MGY_VAR_Eastdesert_Alignment
+							value = 100
+							compare = greater_than_or_equals
 						}
-					}
-				}
-				add_to_variable = {
-					ZEX_MGY_VAR_Manephis_Alignment = ZEX_MGY_UNREST_EFFECTS_IMPACT
-				}
-				clamp_variable = {
-					var = ZEX_MGY_VAR_Manephis_Alignment
-					max = 100
-				}
-			}
-			10 = {
-				modifier = {
-					factor = 0
-					OR = {
-						has_country_flag = zex_mgy_increased_desert_unrest
 						has_country_flag = ZEX_MGY_Desert_protected_flag
-						check_variable = {
-							ZEX_MGY_VAR_Eastdesert_Alignment > 99
-						}
 					}
 				}
 				add_to_variable = {
-					ZEX_MGY_VAR_Eastdesert_Alignment = ZEX_MGY_UNREST_EFFECTS_IMPACT
+					var = ZEX_MGY_VAR_Eastdesert_Alignment
+					value = ZEX_MGY_UNREST_INCREASE_AT_END_TURN
 				}
 				clamp_variable = {
 					var = ZEX_MGY_VAR_Eastdesert_Alignment
@@ -695,15 +572,17 @@ ZEX_MGY_Increase_Unrest = {
 				modifier = {
 					factor = 0
 					OR = {
-						has_country_flag = ZEX_MGY_Somnambula_protected_flag
-						has_country_flag = zex_mgy_increased_somnambula_unrest
 						check_variable = {
-							ZEX_MGY_VAR_Somnambula_Alignment > 99
+							var = ZEX_MGY_VAR_Somnambula_Alignment
+							value = 100
+							compare = greater_than_or_equals
 						}
+						has_country_flag = ZEX_MGY_Somnambula_protected_flag
 					}
 				}
 				add_to_variable = {
-					ZEX_MGY_VAR_Somnambula_Alignment = ZEX_MGY_UNREST_EFFECTS_IMPACT
+					var = ZEX_MGY_VAR_Somnambula_Alignment
+					value = ZEX_MGY_UNREST_INCREASE_AT_END_TURN
 				}
 				clamp_variable = {
 					var = ZEX_MGY_VAR_Somnambula_Alignment
@@ -714,15 +593,59 @@ ZEX_MGY_Increase_Unrest = {
 				modifier = {
 					factor = 0
 					OR = {
-						has_country_flag = ZEX_MGY_UpperMaregypt_protected_flag
-						has_country_flag = zex_mgy_increased_uppermaregypt_unrest
 						check_variable = {
-							ZEX_MGY_VAR_UpperMaregypt_Alignment > 99
+							var = ZEX_MGY_VAR_Delta_Alignment
+							value = 100
+							compare = greater_than_or_equals
 						}
+						has_country_flag = ZEX_MGY_Delta_protected_flag
 					}
 				}
 				add_to_variable = {
-					ZEX_MGY_VAR_UpperMaregypt_Alignment = ZEX_MGY_UNREST_EFFECTS_IMPACT
+					var = ZEX_MGY_VAR_Delta_Alignment
+					value = ZEX_MGY_UNREST_INCREASE_AT_END_TURN
+				}
+				clamp_variable = {
+					var = ZEX_MGY_VAR_Delta_Alignment
+					max = 100
+				}
+			}
+			10 = {
+				modifier = {
+					factor = 0
+					OR = {
+						check_variable = {
+							var = ZEX_MGY_VAR_Manephis_Alignment
+							value = 100
+							compare = greater_than_or_equals
+						}
+						has_country_flag = ZEX_MGY_Maneisrata_protected_flag
+					}
+				}
+				add_to_variable = {
+					var = ZEX_MGY_VAR_Manephis_Alignment
+					value = ZEX_MGY_UNREST_INCREASE_AT_END_TURN
+				}
+				clamp_variable = {
+					var = ZEX_MGY_VAR_Manephis_Alignment
+					max = 100
+				}
+			}
+			10 = {
+				modifier = {
+					factor = 0
+					OR = {
+						check_variable = {
+							var = ZEX_MGY_VAR_UpperMaregypt_Alignment
+							value = 100
+							compare = greater_than_or_equals
+						}
+						has_country_flag = ZEX_MGY_UpperMaregypt_protected_flag
+					}
+				}
+				add_to_variable = {
+					var = ZEX_MGY_VAR_UpperMaregypt_Alignment
+					value = ZEX_MGY_UNREST_INCREASE_AT_END_TURN
 				}
 				clamp_variable = {
 					var = ZEX_MGY_VAR_UpperMaregypt_Alignment
@@ -733,18 +656,20 @@ ZEX_MGY_Increase_Unrest = {
 				modifier = {
 					factor = 0
 					OR = {
-						has_country_flag = ZEX_MGY_Zush_protected_flag
-						has_country_flag = zex_mgy_increased_zush_unrest
 						check_variable = {
-							ZEX_MGY_VAR_Zush_Alignment > 99
+							var = ZEX_MGY_VAR_Kaneigh_Alignment
+							value = 100
+							compare = greater_than_or_equals
 						}
+						has_country_flag = ZEX_MGY_Kaneigh_protected_flag
 					}
 				}
 				add_to_variable = {
-					ZEX_MGY_VAR_Zush_Alignment = ZEX_MGY_UNREST_EFFECTS_IMPACT
+					var = ZEX_MGY_VAR_Kaneigh_Alignment
+					value = ZEX_MGY_UNREST_INCREASE_AT_END_TURN
 				}
 				clamp_variable = {
-					var = ZEX_MGY_VAR_Zush_Alignment
+					var = ZEX_MGY_VAR_Kaneigh_Alignment
 					max = 100
 				}
 			}
@@ -752,174 +677,31 @@ ZEX_MGY_Increase_Unrest = {
 				modifier = {
 					factor = 0
 					OR = {
-						has_country_flag = ZEX_MGY_Kaneigh_protected_flag
-						has_country_flag = zex_mgy_increased_kaneigh_unrest
 						check_variable = {
-							ZEX_MGY_VAR_Kaneigh_Alignment > 99
+							var = ZEX_MGY_VAR_Zush_Alignment
+							value = 100
+							compare = greater_than_or_equals
 						}
+						has_country_flag = ZEX_MGY_Zush_protected_flag
 					}
 				}
 				add_to_variable = {
-					ZEX_MGY_VAR_Kaneigh_Alignment = ZEX_MGY_UNREST_EFFECTS_IMPACT
+					var = ZEX_MGY_VAR_Zush_Alignment
+					value = ZEX_MGY_UNREST_INCREASE_AT_END_TURN
 				}
 				clamp_variable = {
-					var = ZEX_MGY_VAR_Kaneigh_Alignment
+					var = ZEX_MGY_VAR_Zush_Alignment
 					max = 100
 				}
 			}
 		}
-	}
-	clr_country_flag = zex_mgy_increased_kaneigh_unrest
-	clr_country_flag = zex_mgy_increased_delta_unrest
-	clr_country_flag = zex_mgy_increased_desert_unrest
-	clr_country_flag = zex_mgy_increased_somnambula_unrest
-	clr_country_flag = zex_mgy_increased_maneisrata_unrest
-	clr_country_flag = zex_mgy_increased_manephis_unrest
-	clr_country_flag = zex_mgy_increased_uppermaregypt_unrest
-	clr_country_flag = zex_mgy_increased_sineigh_unrest
-	clr_country_flag = zex_mgy_increased_zush_unrest
-	ZEX_MGY_GET_AVERAGE_UNREST = yes
-	ZEX_MGY_UPDATE_LOCAL_UNREST_IMPACT = yes
-}
-
-ZEX_MGY_DECREASE_UNREST = {
-	random_list = {
-		10 = {
-			modifier = {
-				factor = 0
-				check_variable = {
-					ZEX_MGY_VAR_Delta_Alignment < 2
-				}
-			}
-			subtract_from_variable = {
-				ZEX_MGY_VAR_Delta_Alignment = 2
-			}
-			clamp_variable = {
-				var = ZEX_MGY_VAR_Delta_Alignment
-				min = 0
-			}
-		}
-		10 = {
-			modifier = {
-				factor = 0
-				check_variable = {
-					ZEX_MGY_VAR_Sineighi_Alignment < 2
-				}
-			}
-			subtract_from_variable = {
-				ZEX_MGY_VAR_Sineighi_Alignment = 2
-			}
-			clamp_variable = {
-				var = ZEX_MGY_VAR_Sineighi_Alignment
-				min = 0
-			}
-		}
-		10 = {
-			modifier = {
-				factor = 0
-				check_variable = {
-					ZEX_MGY_VAR_Maneisrata_Alignment < 2
-				}
-			}
-			subtract_from_variable = {
-				ZEX_MGY_VAR_Maneisrata_Alignment = 2
-			}
-			clamp_variable = {
-				var = ZEX_MGY_VAR_Maneisrata_Alignment
-				min = 0
-			}
-		}
-		10 = {
-			modifier = {
-				factor = 0
-				check_variable = {
-					ZEX_MGY_VAR_Manephis_Alignment < 2
-				}
-			}
-			subtract_from_variable = {
-				ZEX_MGY_VAR_Manephis_Alignment = 2
-			}
-			clamp_variable = {
-				var = ZEX_MGY_VAR_Manephis_Alignment
-				min = 0
-			}
-		}
-		10 = {
-			modifier = {
-				factor = 0
-				check_variable = {
-					ZEX_MGY_VAR_Eastdesert_Alignment < 2
-				}
-			}
-			subtract_from_variable = {
-				ZEX_MGY_VAR_Eastdesert_Alignment = 2
-			}
-			clamp_variable = {
-				var = ZEX_MGY_VAR_Eastdesert_Alignment
-				min = 0
-			}
-		}
-		10 = {
-			modifier = {
-				factor = 0
-				check_variable = {
-					ZEX_MGY_VAR_Somnambula_Alignment < 2
-				}
-			}
-			subtract_from_variable = {
-				ZEX_MGY_VAR_Somnambula_Alignment = 2
-			}
-			clamp_variable = {
-				var = ZEX_MGY_VAR_Somnambula_Alignment
-				min = 0
-			}
-		}
-		10 = {
-			modifier = {
-				factor = 0
-				check_variable = {
-					ZEX_MGY_VAR_UpperMaregypt_Alignment < 2
-				}
-			}
-			subtract_from_variable = {
-				ZEX_MGY_VAR_UpperMaregypt_Alignment = 2
-			}
-			clamp_variable = {
-				var = ZEX_MGY_VAR_UpperMaregypt_Alignment
-				min = 0
-			}
-		}
-		10 = {
-			modifier = {
-				factor = 0
-				check_variable = {
-					ZEX_MGY_VAR_Zush_Alignment < 2
-				}
-			}
-			subtract_from_variable = {
-				ZEX_MGY_VAR_Zush_Alignment = 2
-			}
-			clamp_variable = {
-				var = ZEX_MGY_VAR_Zush_Alignment
-				min = 0
-			}
-		}
-		10 = {
-			modifier = {
-				factor = 0
-				check_variable = {
-					ZEX_MGY_VAR_Kaneigh_Alignment < 2
-				}
-			}
-			subtract_from_variable = {
-				ZEX_MGY_VAR_Kaneigh_Alignment = 2
-			}
-			clamp_variable = {
-				var = ZEX_MGY_VAR_Kaneigh_Alignment
-				min = 0
-			}
+		#Increment counter by one
+		add_to_variable = {
+			var = zey_mgy_province_unrest_check
+			value = 1
 		}
 	}
+	#Update the values: average AND local unrest imapcs, as those are negatives
 	ZEX_MGY_GET_AVERAGE_UNREST = yes
 	ZEX_MGY_UPDATE_LOCAL_UNREST_IMPACT = yes
 }
@@ -1031,5 +813,271 @@ ZEX_MGY_unrest_update_days_left = {
 	divide_variable = {
 		var = ZEX_MGY_UNREST_DAYS_CURRENT
 		value = ZEX_MGY_UNREST_EFFECTS_INTERVALLS
+	}
+}
+
+# Button effects
+ZEX_MGY_Political_Unrest_Propaganda_Button = {
+	#Update the actions taken value
+	add_to_variable = {
+		var = ZEX_MGY_Actions_Taken
+		value = 1
+	}
+	#Add the corresponding flag
+	if = {
+		limit = {
+			has_country_flag = zex_mgy_unrest_selected_sineighi
+		}
+		set_country_flag = ZEX_MGY_Sineighi_propaganda_flag
+	}
+	else_if = {
+		limit = {
+			has_country_flag = zex_mgy_unrest_selected_maneisrata
+		}
+		set_country_flag = ZEX_MGY_Maneisrata_propaganda_flag
+	}
+	else_if = {
+		limit = {
+			has_country_flag = zex_mgy_unrest_selected_delta
+		}
+		set_country_flag = ZEX_MGY_Delta_propaganda_flag
+	}
+	else_if = {
+		limit = {
+			has_country_flag = zex_mgy_unrest_selected_somnambula
+		}
+		set_country_flag = ZEX_MGY_Somnambula_propaganda_flag
+	}
+	else_if = {
+		limit = {
+			has_country_flag = zex_mgy_unrest_selected_easterndesert
+		}
+		set_country_flag = ZEX_MGY_Desert_propaganda_flag
+	}
+	else_if = {
+		limit = {
+			has_country_flag = zex_mgy_unrest_selected_manephis
+		}
+		set_country_flag = ZEX_MGY_Manephis_propaganda_flag
+	}
+	else_if = {
+		limit = {
+			has_country_flag = zex_mgy_unrest_selected_uppermaregypt
+		}
+		set_country_flag = ZEX_MGY_UpperMaregypt_propaganda_flag
+	}
+	else_if = {
+		limit = {
+			has_country_flag = zex_mgy_unrest_selected_zush
+		}
+		set_country_flag = ZEX_MGY_Zush_propaganda_flag
+	}
+	else_if = {
+		limit = {
+			has_country_flag = zex_mgy_unrest_selected_kaneigh
+		}
+		set_country_flag = ZEX_MGY_Kaneigh_propaganda_flag
+	}
+	add_to_variable = {
+		var = ZEX_MGY_UNREST_LEGITIMACY_REGAIN
+		value = 2
+	}
+}
+
+ZEX_MGY_Political_Unrest_Arrest_Button = {
+	#Update the actions taken value
+	add_to_variable = {
+		var = ZEX_MGY_Actions_Taken
+		value = 1
+	}
+	#Add the corresponding flag
+	if = {
+		limit = {
+			has_country_flag = zex_mgy_unrest_selected_sineighi
+		}
+		set_country_flag = ZEX_MGY_Sineighi_arrests_flag
+		subtract_from_variable = {
+			var = ZEX_MGY_VAR_Sineighi_Alignment
+			value = 2
+		}
+		clamp_variable = {
+			var = ZEX_MGY_VAR_Sineighi_Alignment
+			min = 0
+		}
+	}
+	else_if = {
+		limit = {
+			has_country_flag = zex_mgy_unrest_selected_maneisrata
+		}
+		set_country_flag = ZEX_MGY_Maneisrata_arrests_flag
+		subtract_from_variable = {
+			var = ZEX_MGY_VAR_Maneisrata_Alignment
+			value = 2
+		}
+		clamp_variable = {
+			var = ZEX_MGY_VAR_Maneisrata_Alignment
+			min = 0
+		}
+	}
+	else_if = {
+		limit = {
+			has_country_flag = zex_mgy_unrest_selected_delta
+		}
+		set_country_flag = ZEX_MGY_Delta_arrests_flag
+		subtract_from_variable = {
+			var = ZEX_MGY_VAR_Delta_Alignment
+			value = 2
+		}
+		clamp_variable = {
+			var = ZEX_MGY_VAR_Delta_Alignment
+			min = 0
+		}
+	}
+	else_if = {
+		limit = {
+			has_country_flag = zex_mgy_unrest_selected_somnambula
+		}
+		set_country_flag = ZEX_MGY_Somnambula_arrests_flag
+		subtract_from_variable = {
+			var = ZEX_MGY_VAR_Somnambula_Alignment
+			value = 2
+		}
+		clamp_variable = {
+			var = ZEX_MGY_VAR_Somnambula_Alignment
+			min = 0
+		}
+	}
+	else_if = {
+		limit = {
+			has_country_flag = zex_mgy_unrest_selected_easterndesert
+		}
+		set_country_flag = ZEX_MGY_Desert_arrests_flag
+		subtract_from_variable = {
+			var = ZEX_MGY_VAR_Eastdesert_Alignment
+			value = 2
+		}
+		clamp_variable = {
+			var = ZEX_MGY_VAR_Eastdesert_Alignment
+			min = 0
+		}
+	}
+	else_if = {
+		limit = {
+			has_country_flag = zex_mgy_unrest_selected_manephis
+		}
+		set_country_flag = ZEX_MGY_Manephis_arrests_flag
+		subtract_from_variable = {
+			var = ZEX_MGY_VAR_Manephis_Alignment
+			value = 2
+		}
+		clamp_variable = {
+			var = ZEX_MGY_VAR_Manephis_Alignment
+			min = 0
+		}
+	}
+	else_if = {
+		limit = {
+			has_country_flag = zex_mgy_unrest_selected_uppermaregypt
+		}
+		set_country_flag = ZEX_MGY_UpperMaregypt_arrests_flag
+		subtract_from_variable = {
+			var = ZEX_MGY_VAR_UpperMaregypt_Alignment
+			value = 2
+		}
+		clamp_variable = {
+			var = ZEX_MGY_VAR_UpperMaregypt_Alignment
+			min = 0
+		}
+	}
+	else_if = {
+		limit = {
+			has_country_flag = zex_mgy_unrest_selected_zush
+		}
+		set_country_flag = ZEX_MGY_Zush_arrests_flag
+		subtract_from_variable = {
+			var = ZEX_MGY_VAR_Zush_Alignment
+			value = 2
+		}
+		clamp_variable = {
+			var = ZEX_MGY_VAR_Zush_Alignment
+			min = 0
+		}
+	}
+	else_if = {
+		limit = {
+			has_country_flag = zex_mgy_unrest_selected_kaneigh
+		}
+		set_country_flag = ZEX_MGY_Kaneigh_arrests_flag
+		subtract_from_variable = {
+			var = ZEX_MGY_VAR_Kaneigh_Alignment
+			value = 2
+		}
+		clamp_variable = {
+			var = ZEX_MGY_VAR_Kaneigh_Alignment
+			min = 0
+		}
+	}
+}
+
+ZEX_MGY_Political_Unrest_Police_Button = {
+	#Update the actions taken value
+	add_to_variable = {
+		var = ZEX_MGY_Actions_Taken
+		value = 1
+	}
+	#Add the corresponding flag
+	if = {
+		limit = {
+			has_country_flag = zex_mgy_unrest_selected_sineighi
+		}
+		set_country_flag = ZEX_MGY_Sineighi_protected_flag
+	}
+	else_if = {
+		limit = {
+			has_country_flag = zex_mgy_unrest_selected_maneisrata
+		}
+		set_country_flag = ZEX_MGY_Maneisrata_protected_flag
+	}
+	else_if = {
+		limit = {
+			has_country_flag = zex_mgy_unrest_selected_delta
+		}
+		set_country_flag = ZEX_MGY_Delta_protected_flag
+	}
+	else_if = {
+		limit = {
+			has_country_flag = zex_mgy_unrest_selected_somnambula
+		}
+		set_country_flag = ZEX_MGY_Somnambula_protected_flag
+	}
+	else_if = {
+		limit = {
+			has_country_flag = zex_mgy_unrest_selected_easterndesert
+		}
+		set_country_flag = ZEX_MGY_Desert_protected_flag
+	}
+	else_if = {
+		limit = {
+			has_country_flag = zex_mgy_unrest_selected_manephis
+		}
+		set_country_flag = ZEX_MGY_Manephis_protected_flag
+	}
+	else_if = {
+		limit = {
+			has_country_flag = zex_mgy_unrest_selected_uppermaregypt
+		}
+		set_country_flag = ZEX_MGY_UpperMaregypt_protected_flag
+	}
+	else_if = {
+		limit = {
+			has_country_flag = zex_mgy_unrest_selected_zush
+		}
+		set_country_flag = ZEX_MGY_Zush_protected_flag
+	}
+	else_if = {
+		limit = {
+			has_country_flag = zex_mgy_unrest_selected_kaneigh
+		}
+		set_country_flag = ZEX_MGY_Kaneigh_protected_flag
 	}
 }
