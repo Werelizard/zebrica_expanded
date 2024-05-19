@@ -213,6 +213,8 @@ if = {
 # ZEBRICA EXPANDED #
 ####################
 
+ZEX_MGY_Royal_Diet_Start_Diet = yes
+
 # Add advisors / characters
 recruit_character = ZEX_MGY_Somnambula
 set_country_flag = ZEX_MGY_Somnambula_Exiled
@@ -235,8 +237,6 @@ recruit_character = ZEX_MGY_Tutneighfer
 
 #Puppet AOL
 
-ZEX_MGY_Royal_Diet_Start_Diet = yes
-
 set_autonomy = {
 	target = ALO
 	autonomy_state = autonomy_zex_mgy_viceroyalty
@@ -245,10 +245,19 @@ set_autonomy = {
 create_faction = ZEX_MGY_MANEPHIS_ACCORDS
 add_to_faction = ALO
 
-#Initiate republican agitators
-ZEX_activate_republican_agitation = yes
+# Add resistance mechanic
+ZEX_MGY_Add_Unrest_mechanic = yes
+set_variable = {
+	zex_mgy_seperatism_impact_value_half = -0.1
+}
+set_variable = {
+	zex_mgy_seperatism_impact_value_twentieth = 0.05
+}
 
-#Enable the breadbasket mechanics
+#Initiate republican agitators
+ZEX_activate_political_unrest = yes
+
+#Enable the debt mechanics
 ZEX_MGY_DEBTS_ENABLED_TOOLTIP = yes
 
 #Enable Viziers
@@ -306,6 +315,7 @@ add_ideas = {
 	ZEX_Unfinished_Constitution
 	ZEX_MGY_Equestrian_Debts
 	ZEX_MGY_REPUBLICAN_AGITATION_IDEA
+	ZEX_MGY_Fractured_Country
 	##Viziers
 	ZEX_MGY_Shaa_Doof_idea
 }

@@ -7,6 +7,7 @@
  ZEX_INCREASE_VIZIER_INFLUENCE_desc:0 ""
  ZEX_DECREASE_VIZIER_INFLUENCE:0 "Decrease the Vizier's influence"
  ZEX_DECREASE_VIZIER_INFLUENCE_desc:0 ""
+ ZEX_MGY_TEST_SERPATISM_UPDATE:0 "Current impact is: [?zex_mgy_seperatism_impact_value_twentieth] / [?zex_mgy_seperatism_impact_value_twentieth]"
 
  ZEX_DEBUG_Randomly_Change_Sineighi_Alignment_tt:0 "§YDebug§!: randomise Singeighi alignment ([?Root.ZEX_MGY_VAR_Sineighi_Alignment])"
 

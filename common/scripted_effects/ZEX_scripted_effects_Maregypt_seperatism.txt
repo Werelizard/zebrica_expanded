@@ -1,0 +1,115 @@
+ZEX_MGY_Get_Seperatism_Impact = {
+	set_variable = {
+		zex_mgy_seperatism_impact_value = 0
+	}
+	set_variable = {
+		zex_mgy_separatist_states = 0
+	}
+	set_variable = {
+		zex_mgy_seperatism_impact_value_half = 0
+	}
+	set_variable = {
+		zex_mgy_seperatism_impact_value_twentieth = 0
+	}
+	if = {
+		limit = {
+			owns_state = 738
+		}
+		738 = {
+			ZEX_MGY_Get_Province_Resistance = yes
+		}
+		add_to_variable = {
+			var = zex_mgy_separatist_states
+				value = 1
+		}
+	}
+	if = {
+		limit = {
+			owns_state = 740
+		}
+		740 = {
+			ZEX_MGY_Get_Province_Resistance = yes
+		}
+		add_to_variable = {
+			var = zex_mgy_separatist_states
+				value = 1
+		}
+	}
+	if = {
+		limit = {
+			owns_state = 763
+		}
+		763 = {
+			ZEX_MGY_Get_Province_Resistance = yes
+		}
+		add_to_variable = {
+			var = zex_mgy_separatist_states
+				value = 1
+		}
+	}
+	if = {
+		limit = {
+			owns_state = 766
+		}
+		766 = {
+			ZEX_MGY_Get_Province_Resistance = yes
+		}
+		add_to_variable = {
+			var = zex_mgy_separatist_states
+				value = 1
+		}
+	}
+	if = {
+		limit = {
+			owns_state = 770
+		}
+		770 = {
+			ZEX_MGY_Get_Province_Resistance = yes
+		}
+		add_to_variable = {
+			var = zex_mgy_separatist_states
+				value = 1
+		}
+	}
+	if = {
+		limit = {
+			check_variable = {
+				var = zex_mgy_separatist_states
+				value = 1
+				compare = greater_than_or_equals
+			}
+		}
+		divide_variable = {
+			var = zex_mgy_seperatism_impact_value
+			value = zex_mgy_separatist_states
+		}
+		set_variable = {
+			var = zex_mgy_seperatism_impact_value_half
+			value = zex_mgy_seperatism_impact_value
+		}
+		divide_variable = {
+			var = zex_mgy_seperatism_impact_value_half
+			value = -200
+		}
+		set_variable = {
+			var = zex_mgy_seperatism_impact_value_twentieth
+			value = zex_mgy_seperatism_impact_value
+		}
+		divide_variable = {
+			var = zex_mgy_seperatism_impact_value_twentieth
+			value = 400
+		}
+	}
+}
+
+ZEX_MGY_Get_Province_Resistance = {
+	add_to_variable = {
+		MGY.zex_mgy_seperatism_impact_value = resistance
+	}
+}
+
+ZEX_MGY_Add_Unrest_mechanic = {
+	add_dynamic_modifier = {
+		modifier = ZEX_MGY_Fractured_Country_dynmod
+	}
+}

@@ -2,7 +2,7 @@
 # MAREGYPT REPUBLICAN AGITATION RELATED EFFECTS #
 #################################################
 # start / end
-ZEX_activate_republican_agitation = {
+ZEX_activate_political_unrest = {
 	custom_effect_tooltip = ZEX_Activate_Agitation_tt	#Only for decision contexts
 	hidden_effect = {
 		# Control variables
@@ -210,7 +210,7 @@ ZEX_MGY_enable_state_unrest = {
 			modifier = ZEX_MGY_republican_agitation_delta_dynmod
 		}
 	}
-	744 = {
+	734 = {
 		add_dynamic_modifier = {
 			modifier = ZEX_MGY_republican_agitation_delta_dynmod
 		}

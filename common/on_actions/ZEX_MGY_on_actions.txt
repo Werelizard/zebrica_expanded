@@ -1,34 +1,69 @@
 on_actions = {
 	on_startup = {
-		MGY = {
-			add_opinion_modifier = {
-				target = THU
-				modifier = distrustful_relations
+		effect = {
+			738 = {
+				start_resistance = MGY
+				set_resistance = 30
+				set_compliance = 5
 			}
-			add_opinion_modifier = {
-				target = GYZ
-				modifier = distrustful_relations
+			740 = {
+				start_resistance = MGY
+				set_resistance = 25
+				set_compliance = 5
 			}
-			add_opinion_modifier = {
-				target = STM
-				modifier = distrustful_relations
+			763 = {
+				start_resistance = MGY
+				set_resistance = 15
+				set_compliance = 5
 			}
-			add_opinion_modifier = {
-				target = SLC
-				modifier = distrustful_relations
+			766 = {
+				start_resistance = MGY
+				set_resistance = 15
+				set_compliance = 10
 			}
-			add_opinion_modifier = {
-				target = BLT
-				modifier = distrustful_relations
+			770 = {
+				start_resistance = MGY
+				set_resistance = 15
+				set_compliance = 10
 			}
-			add_opinion_modifier = {
-				target = CZR
-				modifier = distrustful_relations
-			}
+			MGY = {
+				add_opinion_modifier = {
+					target = THU
+					modifier = distrustful_relations
+				}
+				add_opinion_modifier = {
+					target = GYZ
+					modifier = distrustful_relations
+				}
+				add_opinion_modifier = {
+					target = STM
+					modifier = distrustful_relations
+				}
+				add_opinion_modifier = {
+					target = SLC
+					modifier = distrustful_relations
+				}
+				add_opinion_modifier = {
+					target = BLT
+					modifier = distrustful_relations
+				}
+				add_opinion_modifier = {
+					target = CZR
+					modifier = distrustful_relations
+				}
+				ZEX_MGY_Get_Seperatism_Impact = yes
+			}			
 		}
 	}
 	on_daily_MGY = {
 		effect = {
+			# Effect for daily calculations for the seperatism
+			if = {
+				limit = {
+					has_idea = ZEX_MGY_Fractured_Country
+				}
+				ZEX_MGY_Get_Seperatism_Impact = yes
+			}
 			# Effect for daily calculations for the unrest system
 			ZEX_MGY_Daily_Unrest_Update = yes
 		}
