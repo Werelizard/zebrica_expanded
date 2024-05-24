@@ -158,16 +158,3 @@ ZEX_MGY_Equestrian_Debts_dynmod = {
     industrial_capacity_factory = ZEX_MGY_equestrian_debts_factory_output_effect
     industrial_capacity_dockyard = ZEX_MGY_equestrian_debts_dockyard_output_effect
 }
-
-#
-# Seperatism
-#
-
-ZEX_MGY_Fractured_Country_dynmod = {
-    enable = {
-        has_idea = ZEX_MGY_Fractured_Country
-    }
-    #zex_mgy_seperatism_impact_value
-    communism_drift = zex_mgy_seperatism_impact_value_twentieth
-    war_support_factor = zex_mgy_seperatism_impact_value_half
-}

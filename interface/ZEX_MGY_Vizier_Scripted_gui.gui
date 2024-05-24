@@ -1,6 +1,6 @@
 guiTypes = {
 	containerWindowType = {
-		name = "ZEX_MGY_Vizier_Viw_ui_window"
+		name = "ZEX_MGY_Vizier_View_ui_window"
 		position = { x = 10 y = 44 }
 		size = { width = 170 height = 260 }
 		orientation = upper_left
@@ -47,6 +47,45 @@ guiTypes = {
 			spriteType = "GFX_ZEX_MGY_Vizier_Button"
 			pdx_tooltip = "ZEX_MGY_Vizier_Button_tt"
 			pdx_tooltip_delayed = "ZEX_MGY_Vizier_Button_extra_tt"
+		}
+	}
+
+	containerWindowType = {
+		name = "ZEX_MGY_Vizier_Balance_Ui"
+        position = { x = 0 y = 0 }
+		size = { width = 490 height = 200 }
+		background = {
+			size = { width = 490 height = 200 }
+			name = "zex_mgy_unrest_background"
+			quadTextureSprite = "GFX_tiled_window_thin_border2"
+		}
+
+		# Progress bar for the balance of power between the King and the Vizier
+		containerWindowType = {
+			name = "ZEX_MGY_Bar_Negative"
+			position = { x = 30 y = 20 }
+			iconType = {
+				name = "ZEX_MGY_Vizier_Bar_Negative"
+				spriteType = "GFX_ZEX_MGY_Vizier_Bar_Negative"
+				position = { x = 0 y = 0 }
+			}
+		}
+
+		containerWindowType = {
+			name = "ZEX_MGY_Bar_Positive"
+			position = { x = 245 y = 20 }
+			iconType = {
+				name = "ZEX_MGY_Vizier_Bar_Positive"
+				spriteType = "GFX_ZEX_MGY_Vizier_Bar"
+				position = { x = 0 y = 0 }
+			}
+		}
+
+		# Slider to "cap off" the bar
+		iconType = {
+			name = "ZEX_MGY_Vizier_Bar_Slider"
+			spriteType = "GFX_ZEX_MGY_Vizier_Button"
+			position = { x = 0 y = 24 }
 		}
 	}
 }

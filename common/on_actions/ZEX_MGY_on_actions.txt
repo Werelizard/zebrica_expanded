@@ -51,21 +51,16 @@ on_actions = {
 					target = CZR
 					modifier = distrustful_relations
 				}
-				ZEX_MGY_Get_Seperatism_Impact = yes
 			}			
 		}
 	}
 	on_daily_MGY = {
 		effect = {
-			# Effect for daily calculations for the seperatism
-			if = {
-				limit = {
-					has_idea = ZEX_MGY_Fractured_Country
-				}
-				ZEX_MGY_Get_Seperatism_Impact = yes
-			}
 			# Effect for daily calculations for the unrest system
 			ZEX_MGY_Daily_Unrest_Update = yes
+			
+			#Debug
+			ZEX_MGY_Daily_Debug_effect = yes
 		}
 	}
 }

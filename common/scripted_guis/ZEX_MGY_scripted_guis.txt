@@ -212,9 +212,9 @@ scripted_gui = {
 		ai_weights = {
 		}
 	}
-	ZEX_MGY_Vizier_Viw_ui = {
+	ZEX_MGY_Vizier_View_ui = {
 		context_type = player_context
-		window_name = "ZEX_MGY_Vizier_Viw_ui_window"
+		window_name = "ZEX_MGY_Vizier_View_ui_window"
 		parent_window_token = politics_tab
 		ai_check = {
 			always = no
@@ -313,6 +313,27 @@ scripted_gui = {
 			}
 			parliament_member_icon = {
 				frame = v
+			}
+		}
+	}
+	ZEX_MGY_Vizier_Balance_UI = {
+		context_type = decision_category
+		window_name = "ZEX_MGY_Vizier_Balance_Ui"
+
+		visible = {
+			zxe_is_maregypt_or_cosmetic_maregypt = yes
+			has_country_flag = zex_mgy_vizier_enabled_flag
+		}
+
+		properties = {
+			ZEX_MGY_Vizier_Bar_Positive = {
+				frame = MGY.ZEX_MGY_vizier_King_Balance_King_Side
+			}
+			ZEX_MGY_Vizier_Bar_Negative = {
+				frame = MGY.ZEX_MGY_vizier_King_Balance_Vizier_Side
+			}
+			ZEX_MGY_Vizier_Bar_Slider = {
+				x = ZEX_MGY_vizier_king_balance_slider_pos
 			}
 		}
 	}

@@ -91,20 +91,4 @@ ZEX_DEBUG_CATEGORY = {
 			ZEX_deactivate_republican_agitation = yes
 		}
 	}
-	ZEX_MGY_TEST_SERPATISM_UPDATE = {
-		allowed = {
-			always = yes
-		}
-		visible = {
-			zxe_is_maregypt_or_cosmetic_maregypt = yes
-			has_idea = ZEX_MGY_REPUBLICAN_AGITATION_IDEA
-		}
-		available = {
-			
-		}
-		complete_effect = {
-			custom_effect_tooltip = zex_mgy_serparitism_value_tt
-			ZEX_MGY_Get_Seperatism_Impact = yes
-		}
-	}
 }

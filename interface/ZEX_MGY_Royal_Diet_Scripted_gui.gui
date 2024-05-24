@@ -25,7 +25,7 @@ guiTypes = {
 		iconType = {
 			name = "ZEX_MGY_royal_diet_Help"
 			position = { x = 430 y = 10 }
-			spriteType = "ZEX_MGY_Help_Tooltip"
+			spriteType = "ZEX_Help_Tooltip"
 			pdx_tooltip = ZEX_MGY_royal_diet_Help_tt
 		}
 

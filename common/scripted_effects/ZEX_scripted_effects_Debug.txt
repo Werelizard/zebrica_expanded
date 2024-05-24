@@ -1,0 +1,3 @@
+ZEX_MGY_Daily_Debug_effect = {
+	
+}

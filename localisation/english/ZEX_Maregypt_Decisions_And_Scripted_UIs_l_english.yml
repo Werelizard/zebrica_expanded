@@ -5,7 +5,7 @@
  ZEX_Deactivate_Agitation:0 "Disable the §YRepublican Agitation§!"
  ZEX_INCREASE_VIZIER_INFLUENCE:0 "Increase the Vizier's influence"
  ZEX_INCREASE_VIZIER_INFLUENCE_desc:0 ""
- ZEX_DECREASE_VIZIER_INFLUENCE:0 "Decrease the Vizier's influence"
+ ZEX_DECREASE_VIZIER_INFLUENCE:0 "Increase the King's influence"
  ZEX_DECREASE_VIZIER_INFLUENCE_desc:0 ""
  ZEX_MGY_TEST_SERPATISM_UPDATE:0 "Current impact is: [?zex_mgy_seperatism_impact_value_twentieth] / [?zex_mgy_seperatism_impact_value_twentieth]"
 

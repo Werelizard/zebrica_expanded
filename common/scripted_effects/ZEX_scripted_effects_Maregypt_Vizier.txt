@@ -126,7 +126,12 @@ ZEX_MGY_UPDATE_VIZIER_KING_VARIABLE = {
 		var = ZEX_MGY_VIZIER_INFLUENCE_NEGATIVE_15
 		value = 1000
 	}
-	#absolute display
+	#Derived variables
+	ZEX_MGY_UPDATE_VIZIER_KING_VARIABLE_DERIV = yes
+}
+
+# Caclulate derived variables
+ZEX_MGY_UPDATE_VIZIER_KING_VARIABLE_DERIV = {
 	set_variable = {
 		ZEX_MGY_vizier_King_Balance_DISPLAY = ZEX_MGY_vizier_King_Balance
 	}
@@ -139,6 +144,42 @@ ZEX_MGY_UPDATE_VIZIER_KING_VARIABLE = {
 		multiply_variable = {
 			ZEX_MGY_vizier_King_Balance_DISPLAY = -1
 		}
+	}
+	if = {
+		limit = {
+			check_variable = {
+				ZEX_MGY_vizier_King_Balance < 0
+			}
+		}
+		set_variable = {
+			ZEX_MGY_vizier_King_Balance_King_Side = 0
+		}
+		set_variable = {
+			ZEX_MGY_vizier_King_Balance_Vizier_Side = ZEX_MGY_vizier_King_Balance_DISPLAY
+		}
+	}
+	else = {
+		set_variable = {
+			ZEX_MGY_vizier_King_Balance_Vizier_Side = 0
+		}
+		set_variable = {
+			ZEX_MGY_vizier_King_Balance_King_Side = ZEX_MGY_vizier_King_Balance_DISPLAY
+		}
+	}
+	# Determine the x axis of the "slider"
+	set_variable = { 
+			ZEX_MGY_vizier_king_balance_slider_pos = 232.5
+	}
+	set_variable = {
+		ZEX_MGY_vizier_king_balance_slider_pos_increment = 2.15
+	}
+	multiply_variable = {
+		var = ZEX_MGY_vizier_king_balance_slider_pos_increment
+		value = ZEX_MGY_vizier_King_Balance
+	}
+	add_to_variable = {
+		var = ZEX_MGY_vizier_king_balance_slider_pos
+		value = ZEX_MGY_vizier_king_balance_slider_pos_increment
 	}
 }
 

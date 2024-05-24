@@ -1,0 +1,49 @@
+spriteTypes = {
+    #Viziers - Portraits
+	spriteType = {
+		name = "GFX_ZEX_MGY_Shaa_Doof"
+		textureFile = "gfx/leaders/ZEX_MGY_Shaa_Doof_Vizier.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ZEX_MGY_No_Vizier"
+		textureFile = "gfx/leaders/ZEX_MGY_No_Vizier.dds"
+	}
+	#Vizier - Frame
+	spriteType = {
+		name = "GFX_ZEX_MGY_Vizier_Frame_Overlay"
+		textureFile = "gfx/interface/MGY/zex_mgy_vizier_frame.dds"
+	}
+	spriteType = {
+		name = "GFX_ZEX_MGY_Vizier_Button"
+		textureFile = "gfx/interface/MGY/ZEX_GFX_Vizier_button.dds"
+	}
+    #Vizier Balance Bars
+    ## Two are needed here. One for the "positive" and one for the "negative"
+    spriteType = {
+		name = "GFX_ZEX_MGY_Vizier_Bar"
+		texturefile = "gfx/interface/MGY/MGY_Vizier_Bar.tga"
+	}
+	progressbartype = {
+		name = "GFX_ZEX_MGY_Vizier_Bar"
+		color = { 0.0 0.5 0.0 }
+		colortwo = { 1.0 0.0 0.0 }
+		texturefile1 = "gfx/interface/MGY/MGY_Vizier_Bar.tga"
+		texturefile2 = "gfx/interface/MGY/MGY_Vizier_Bar_bg.tga"
+		size = { x = 215 y = 33 }
+		effectFile = "gfx/FX/progress_startend.lua"
+	}
+	spriteType = {
+		name = "GFX_ZEX_MGY_Vizier_Bar_Negative"
+		texturefile = "gfx/interface/MGY/MGY_Vizier_Bar.tga"
+	}
+	progressbartype = {
+		name = "GFX_ZEX_MGY_Vizier_Bar_Negative"
+		color = { 0.0 0.5 0.0 }
+		colortwo = { 1.0 0.0 0.0 }
+		texturefile1 = "gfx/interface/MGY/MGY_Vizier_Bar_Negative.tga"
+		texturefile2 = "gfx/interface/MGY/MGY_Vizier_Bar_bg.tga"
+		size = { x = 215 y = 33 }
+		effectFile = "gfx/FX/progress_reverse.lua"
+	}
+}

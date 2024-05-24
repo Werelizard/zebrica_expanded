@@ -1,6 +1,6 @@
 spriteTypes = {
 	spriteType = {
-		name = "ZEX_MGY_Help_Tooltip"
-		textureFile = "gfx/interface/ZEX_MGY_Help_Tooltip.dds"
+		name = "ZEX_Help_Tooltip"
+		textureFile = "gfx/interface/ZEX_Help_Tooltip.dds"
 	}
 }

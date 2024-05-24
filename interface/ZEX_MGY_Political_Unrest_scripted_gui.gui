@@ -169,7 +169,7 @@ guiTypes = {
 			iconType = {
 				name = "ZEX_MGY_Rebellion_Help"
 				position = { x = 430 y = 20 }
-				spriteType = "ZEX_MGY_Help_Tooltip"
+				spriteType = "ZEX_Help_Tooltip"
 				pdx_tooltip = ZEX_MGY_Rebellion_Help_tt
 			}
 			
