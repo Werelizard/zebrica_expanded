@@ -776,8 +776,6 @@ ZEX_MGY_Daily_Unrest_Update = {
 			var = ZEX_MGY_DAY_REMAINING_IN_TURN
 			value = 1
 		}
-		#For the timer Display
-		ZEX_MGY_unrest_update_days_left = yes
 		#On End Turn only		
 		if = {
 			limit = {

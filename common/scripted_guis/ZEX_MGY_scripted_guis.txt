@@ -169,9 +169,6 @@ scripted_gui = {
 			ZEX_MGY_republican_agitation_state_icon = {
 				image = "[ZEX_MGY_GetFocusedState]"
 			}
-			ZEX_MGY_Turn_Timer = {
-				image = "[ZEX_MGY_Get_Unrest_Timer_Progression]"
-			}
 			ZEX_MGY_republican_agitation_propaganda_button_icon = {
 				image = "[ZEX_MGY_GetIsUnrestPropagandaButtonActive]"
 			}
@@ -186,6 +183,34 @@ scripted_gui = {
 			}
 			ZEX_MGY_republican_agitation_reintegrate_state_button = {
 				image = "[ZEX_MGY_GetIsUnrestButtonReintegrateActive]"
+			}
+			#State status icon
+			ZEX_MGY_sineighi_marker = {
+				image = "[ZEX_MGY_GET_STATUS_SINEIGHI]"
+			}
+			ZEX_MGY_maneisrata_marker = {
+				image = "[ZEX_MGY_GET_STATUS_MANEISRATA]"
+			}
+			ZEX_MGY_kaneigh_marker = {
+				image = "[ZEX_MGY_GET_STATUS_KANEIGH]"
+			}
+			ZEX_MGY_delta_marker = {
+				image = "[ZEX_MGY_GET_STATUS_DELTA]"
+			}
+			ZEX_MGY_manephis_marker = {
+				image = "[ZEX_MGY_GET_STATUS_MANEPHIS]"
+			}
+			ZEX_MGY_somnambula_marker = {
+				image = "[ZEX_MGY_GET_STATUS_SOMNAMBULA]"
+			}
+			ZEX_MGY_desert_marker = {
+				image = "[ZEX_MGY_GET_STATUS_EASTDESERT]"
+			}
+			ZEX_MGY_uppermaregypt_marker = {
+				image = "[ZEX_MGY_GET_STATUS_UPPERMAREGYPT]"
+			}
+			ZEX_MGY_zush_marker = {
+				image = "[ZEX_MGY_GET_STATUS_ZUSH]"
 			}
 		}
 		visible = {

@@ -360,7 +360,230 @@ defined_text = {
 #
 #
 
+defined_text = {
+	name = ZEX_MGY_GET_STATUS_SINEIGHI
+	text = {
+		trigger = {
+			has_country_flag = ZEX_MGY_Sineighi_arrests_flag
+		}
+		localization_key = "ZEX_MGY_ARRESTS_MARKER"
+	}
+	text = {
+		trigger = {
+			has_country_flag = ZEX_MGY_Sineighi_propaganda_flag
+		}
+		localization_key = "ZEX_MGY_PROPAGANDA_MARKER"
+	}
+	text = {
+		trigger = {
+			has_country_flag = ZEX_MGY_Sineighi_protected_flag
+		}
+		localization_key = "ZEX_MGY_POLICE_MARKER"
+	}
+	text = {
+		localization_key = ZEX_MGY_Button_Hidden
+	}
+}
 
+defined_text = {
+	name = ZEX_MGY_GET_STATUS_MANEISRATA
+	text = {
+		trigger = {
+			has_country_flag = ZEX_MGY_Maneisrata_arrests_flag
+		}
+		localization_key = "ZEX_MGY_ARRESTS_MARKER"
+	}
+	text = {
+		trigger = {
+			has_country_flag = ZEX_MGY_Maneisrata_propaganda_flag
+		}
+		localization_key = "ZEX_MGY_PROPAGANDA_MARKER"
+	}
+	text = {
+		trigger = {
+			has_country_flag = ZEX_MGY_Maneisrata_protected_flag
+		}
+		localization_key = "ZEX_MGY_POLICE_MARKER"
+	}
+	text = {
+		localization_key = ZEX_MGY_Button_Hidden
+	}
+}
+
+defined_text = {
+	name = ZEX_MGY_GET_STATUS_DELTA
+	text = {
+		trigger = {
+			has_country_flag = ZEX_MGY_Delta_arrests_flag
+		}
+		localization_key = "ZEX_MGY_ARRESTS_MARKER"
+	}
+	text = {
+		trigger = {
+			has_country_flag = ZEX_MGY_Delta_propaganda_flag
+		}
+		localization_key = "ZEX_MGY_PROPAGANDA_MARKER"
+	}
+	text = {
+		trigger = {
+			has_country_flag = ZEX_MGY_Delta_protected_flag
+		}
+		localization_key = "ZEX_MGY_POLICE_MARKER"
+	}
+	text = {
+		localization_key = ZEX_MGY_Button_Hidden
+	}
+}
+
+defined_text = {
+	name = ZEX_MGY_GET_STATUS_SOMNAMBULA
+	text = {
+		trigger = {
+			has_country_flag = ZEX_MGY_Somnambula_arrests_flag
+		}
+		localization_key = "ZEX_MGY_ARRESTS_MARKER"
+	}
+	text = {
+		trigger = {
+			has_country_flag = ZEX_MGY_Somnambula_propaganda_flag
+		}
+		localization_key = "ZEX_MGY_PROPAGANDA_MARKER"
+	}
+	text = {
+		trigger = {
+			has_country_flag = ZEX_MGY_Sineighi_protected_flag
+		}
+		localization_key = "ZEX_MGY_POLICE_MARKER"
+	}
+	text = {
+		localization_key = ZEX_MGY_Button_Hidden
+	}
+}
+
+defined_text = {
+	name = ZEX_MGY_GET_STATUS_EASTDESERT
+	text = {
+		trigger = {
+			has_country_flag = ZEX_MGY_Desert_arrests_flag
+		}
+		localization_key = "ZEX_MGY_ARRESTS_MARKER"
+	}
+	text = {
+		trigger = {
+			has_country_flag = ZEX_MGY_Delta_propaganda_flag
+		}
+		localization_key = "ZEX_MGY_PROPAGANDA_MARKER"
+	}
+	text = {
+		trigger = {
+			has_country_flag = ZEX_MGY_Delta_protected_flag
+		}
+		localization_key = "ZEX_MGY_POLICE_MARKER"
+	}
+	text = {
+		localization_key = ZEX_MGY_Button_Hidden
+	}
+}
+
+defined_text = {
+	name = ZEX_MGY_GET_STATUS_MANEPHIS
+	text = {
+		trigger = {
+			has_country_flag = ZEX_MGY_Manephis_arrests_flag
+		}
+		localization_key = "ZEX_MGY_ARRESTS_MARKER"
+	}
+	text = {
+		trigger = {
+			has_country_flag = ZEX_MGY_Manephis_propaganda_flag
+		}
+		localization_key = "ZEX_MGY_PROPAGANDA_MARKER"
+	}
+	text = {
+		trigger = {
+			has_country_flag = ZEX_MGY_Manephis_protected_flag
+		}
+		localization_key = "ZEX_MGY_POLICE_MARKER"
+	}
+	text = {
+		localization_key = ZEX_MGY_Button_Hidden
+	}
+}
+
+defined_text = {
+	name = ZEX_MGY_GET_STATUS_UPPERMAREGYPT
+	text = {
+		trigger = {
+			has_country_flag = ZEX_MGY_UpperMaregypt_arrests_flag
+		}
+		localization_key = "ZEX_MGY_ARRESTS_MARKER"
+	}
+	text = {
+		trigger = {
+			has_country_flag = ZEX_MGY_UpperMaregypt_propaganda_flag
+		}
+		localization_key = "ZEX_MGY_PROPAGANDA_MARKER"
+	}
+	text = {
+		trigger = {
+			has_country_flag = ZEX_MGY_UpperMaregypt_protected_flag
+		}
+		localization_key = "ZEX_MGY_POLICE_MARKER"
+	}
+	text = {
+		localization_key = ZEX_MGY_Button_Hidden
+	}
+}
+
+defined_text = {
+	name = ZEX_MGY_GET_STATUS_ZUSH
+	text = {
+		trigger = {
+			has_country_flag = ZEX_MGY_Zush_arrests_flag
+		}
+		localization_key = "ZEX_MGY_ARRESTS_MARKER"
+	}
+	text = {
+		trigger = {
+			has_country_flag = ZEX_MGY_Zush_propaganda_flag
+		}
+		localization_key = "ZEX_MGY_PROPAGANDA_MARKER"
+	}
+	text = {
+		trigger = {
+			has_country_flag = ZEX_MGY_Zush_protected_flag
+		}
+		localization_key = "ZEX_MGY_POLICE_MARKER"
+	}
+	text = {
+		localization_key = ZEX_MGY_Button_Hidden
+	}
+}
+
+defined_text = {
+	name = ZEX_MGY_GET_STATUS_KANEIGH
+	text = {
+		trigger = {
+			has_country_flag = ZEX_MGY_Kaneigh_arrests_flag
+		}
+		localization_key = "ZEX_MGY_ARRESTS_MARKER"
+	}
+	text = {
+		trigger = {
+			has_country_flag = ZEX_MGY_Kaneigh_propaganda_flag
+		}
+		localization_key = "ZEX_MGY_PROPAGANDA_MARKER"
+	}
+	text = {
+		trigger = {
+			has_country_flag = ZEX_MGY_Kaneigh_protected_flag
+		}
+		localization_key = "ZEX_MGY_POLICE_MARKER"
+	}
+	text = {
+		localization_key = ZEX_MGY_Button_Hidden
+	}
+}
 
 #
 #
@@ -427,44 +650,6 @@ defined_text = {
 	}
 	text = {
 		localization_key = ZEX_MGY_empty_cartouche_icon
-	}
-}
-
-# For the timer's background
-defined_text = {
-	name = ZEX_MGY_Get_Unrest_Timer_Progression
-	text = {
-		trigger = {
-			check_variable = { ZEX_MGY_UNREST_DAYS_CURRENT < 0.2 }
-		}
-		localization_key = ZEX_MGY_Turn_Timer_6
-	}
-	text = {
-		trigger = {
-			check_variable = { ZEX_MGY_UNREST_DAYS_CURRENT < 0.4 }
-		}
-		localization_key = ZEX_MGY_Turn_Timer_5
-	}
-	text = {
-		trigger = {
-			check_variable = { ZEX_MGY_UNREST_DAYS_CURRENT < 0.6 }
-		}
-		localization_key = ZEX_MGY_Turn_Timer_4
-	}
-	text = {
-		trigger = {
-			check_variable = { ZEX_MGY_UNREST_DAYS_CURRENT < 0.7 }
-		}
-		localization_key = ZEX_MGY_Turn_Timer_3
-	}
-	text = {
-		trigger = {
-			check_variable = { ZEX_MGY_UNREST_DAYS_CURRENT < 0.9 }
-		}
-		localization_key = ZEX_MGY_Turn_Timer_2
-	}
-	text = {
-		localization_key = ZEX_MGY_Turn_Timer_1
 	}
 }
 

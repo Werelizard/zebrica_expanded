@@ -266,9 +266,9 @@
  ZEX_MGY_LOWER_KING_INFLUENCE_40_TT:0 "Pushes the Balance of Power £BoP_left_texticon §Y40§! towards the Vizier's side, §4decreasing§! the §YKing's§! influence."
  ZEX_MGY_LOWER_KING_INFLUENCE_20_TT:0 "Pushes the Balance of Power £BoP_left_texticon §Y20§! towards the Vizier's side, §4decreasing§! the §YKing's§! influence."
  ZEX_MGY_LOWER_KING_INFLUENCE_10_TT:0 "Pushes the Balance of Power £BoP_left_texticon §Y10§! towards the Vizier's side, §4decreasing§! the §YKing's§! influence."
- ZEX_MGY_INCREASE_KING_INFLUENCE_40_TT:0 "Pushes the Balance of Power £BoP_right_texticon §Y40§! towards the King's side, §Yincreasing§! the §YKing's§! influence."
- ZEX_MGY_INCREASE_KING_INFLUENCE_20_TT:0 "Pushes the Balance of Power £BoP_right_texticon §Y20§! towards the King's side, §Yincreasing§! the §YKing's§! influence."
- ZEX_MGY_INCREASE_KING_INFLUENCE_10_TT:0 "Pushes the Balance of Power £BoP_right_texticon §Y10§! towards the King's side, §Yincreasing§! the §YKing's§! influence."
+ ZEX_MGY_INCREASE_KING_INFLUENCE_40_TT:0 "Pushes the Balance of Power £BoP_right_texticon §Y40§! towards the King's side, §Oincreasing§! the §YKing's§! influence."
+ ZEX_MGY_INCREASE_KING_INFLUENCE_20_TT:0 "Pushes the Balance of Power £BoP_right_texticon §Y20§! towards the King's side, §Oincreasing§! the §YKing's§! influence."
+ ZEX_MGY_INCREASE_KING_INFLUENCE_10_TT:0 "Pushes the Balance of Power £BoP_right_texticon §Y10§! towards the King's side, §Oincreasing§! the §YKing's§! influence."
 
  # Vizier / King balance UI
  
@@ -289,12 +289,11 @@
  ZEX_MGY_IS_NOT_AFFECTING_THE_BALANCE:0 "§LThere is currently no change in the Balance of Power§!"
 
  #Decrees
- ZEX_MGY_VIZIER_IN_POWER_tt:0 "The §YBalance of Power§! is §Y20§! in the §YVizier's§! favour."
- ZEX_MGY_KING_IN_POWER_tt:0 "The §YBalance of Power§! is §Y20§! in the §YKing's§! favour."
- ZEX_MGY_VIZIER_NO_TOTAL_VIZIER_CONTROL_tt:0 "The §YBalance of Power§! is less than §Y80§! in the §YVizier's§! favour."
- ZEX_MGY_VIZIER_NO_TOTAL_MONARCH_CONTROL_tt:0 "The §YBalance of Power§! is less than §Y80§! in the §YKing's§! favour."
- ZEX_MGY_VIZIER_BALANCE_OF_POWER_AT_LEAST_15:0 "The §YBalance of Power§! is at least §Y15§! in favour of either side."
-
+ ZEX_MGY_VIZIER_IN_POWER_tt:0 "The §YBalance of Power§! is at least £BoP_left_texticon  §Y20§! in the §YVizier's§! favour."
+ ZEX_MGY_KING_IN_POWER_tt:0 "The §YBalance of Power§! is at least £BoP_right_texticon  §Y20§! in the §YKing's§! favour."
+ ZEX_MGY_VIZIER_NO_TOTAL_VIZIER_CONTROL_tt:0 "The §YBalance of Power§! is less than £BoP_left_texticon  §Y80§! in the §YVizier's§! favour."
+ ZEX_MGY_VIZIER_NO_TOTAL_MONARCH_CONTROL_tt:0 "The §YBalance of Power§! is less than £BoP_right_texticon  §Y80§! in the §YKing's§! favour."
+ ZEX_MGY_VIZIER_AT_LEAST_10_ON_EITHER_SIDE_tt:0 "The  §YBalance of Power§! is currently either £BoP_left_texticon  §Y10§! in the §YVizier§!'s favour or £BoP_right_texticon  §Y10§! in the §YKing's§! favour"
  ZEX_MGY_AT_LEAST_20_pp_tt:0 "Has at least £pol_power §Y20§!"
 
  ZEX_MGY_DECREE_BALANCE_EVERYTHING:0 "Promote Governmental Unity"
@@ -318,5 +317,8 @@
  ZEX_MGY_20_King_Influence_tt:0 "£pol_power  20  £BoP_left_texticon  20"
  ZEX_MGY_10_King_Influence_tt_blocked:0 "£BoP_left_texticon  10"
  ZEX_MGY_20_King_Influence_tt_blocked:0 "£pol_power  20  £BoP_left_texticon  20"
+ ZEX_MGY_25_PP_tt:0 "£pol_power  25"
+ ZEX_MGY_25_PP_tt_blocked:0 "£pol_power  25"
 
- ZEX_EDICT_20_PP:0 "It costs £pol_power §t20§! to take this decision"
+ ZEX_EDICT_20_PP:0 "It costs £pol_power §Y20§! to take this decision"
+ ZEX_EDICT_25_PP:0 "It costs £pol_power §Y25§! to take this decision"
