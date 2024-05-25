@@ -29,11 +29,17 @@ zxe_mgy_equestria_exists = {
 }
 
 #################################
-# Vizier                        #
+# Vizier  / Monarch             #
 #################################
 zex_mgy_no_vizier_check = {
 	NOT = {
 		has_idea = ZEX_MGY_Shaa_Doof_idea
+	}
+}
+
+zex_mgy_no_king_or_queen = {
+	NOT = {
+		zex_mgy_khefer_in_power = yes
 	}
 }
 

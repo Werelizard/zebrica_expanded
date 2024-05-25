@@ -63,4 +63,17 @@ on_actions = {
 			ZEX_MGY_Daily_Debug_effect = yes
 		}
 	}
+	on_weekly_MGY = {
+		effect = {
+			if = {
+				limit = {
+					OR = {
+						has_country_flag = zex_mgy_vizier_bp_increase_vizier_influence
+						has_country_flag = zex_mgy_vizier_bp_increase_king_influence
+					}	
+				}
+				ZEX_MGY_UPDATE_TIPPING_SCALES_WEEKLY_CHANGE = yes
+			}
+		}
+	}
 }

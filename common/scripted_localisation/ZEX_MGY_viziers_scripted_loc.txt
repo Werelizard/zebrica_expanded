@@ -147,3 +147,76 @@ defined_text = {
 		localization_key = ZEX_MGY_GET_VIZIER_KING_BALANCE_VALUE_KING
 	}
 }
+
+#Get the leader portraits / vizier portraits for the balance system
+
+defined_text = {
+	name = ZEX_MGY_POWER_BALANCE_GET_CURRENT_VIZIER_PORTRAIT
+	text = {
+		trigger = {
+			has_idea = ZEX_MGY_Shaa_Doof_idea
+		}
+		localization_key = "GFX_ZEX_MGY_Balance_of_Power_ShaaDoof_Portrait"
+	}
+	text = {
+		localization_key = "GFX_ZEX_MGY_Balance_of_Power_NoVizier_Portrait"
+	}
+}
+
+defined_text = {
+	name = ZEX_MGY_POWER_BALANCE_GET_CURRENT_KING_PORTRAIT
+	text = {
+		trigger = {
+			zex_mgy_khefer_in_power = yes
+		}
+		localization_key = "GFX_ZEX_MGY_Balance_of_Power_Khefer_Portrait"
+	}
+	text = { # Add a fallback for other kigs
+		localization_key = "GFX_ZEX_MGY_Balance_of_Power_Khefer_Portrait"
+	}
+}
+
+defined_text = {
+	name = ZEX_MGY_POWER_BALANCE_VIZIER_ACTIVE
+	text = {
+		trigger = {
+			zex_mgy_no_vizier_check = yes
+		}
+		localization_key = ZEX_MGY_Tooltip_No_Check
+	}
+	text = {
+		localization_key = ZEX_MGY_Tooltip_Yes_Check
+	}
+}
+
+defined_text = {
+	name = ZEX_MGY_POWER_BALANCE_MONARCH_ACTIVE
+	text = {
+		trigger = {
+			zex_mgy_no_king_or_queen = yes
+		}
+		localization_key = ZEX_MGY_Tooltip_No_Check
+	}
+	text = {
+		localization_key = ZEX_MGY_Tooltip_Yes_Check
+	}
+}
+
+defined_text = {
+	name = ZEX_MGY_POWER_BALANCE_CURRENT_COST
+	text = {
+		trigger = {
+			has_country_flag = zex_mgy_vizier_bp_increase_vizier_influence
+		}
+		localization_key = ZEX_MGY_IS_AFFECTING_THE_BALANCE_NEG
+	}
+	text = {
+		trigger = {
+			has_country_flag = zex_mgy_vizier_bp_increase_king_influence
+		}
+		localization_key = ZEX_MGY_IS_AFFECTING_THE_BALANCE_POS
+	}
+	text = {
+		localization_key = ZEX_MGY_IS_NOT_AFFECTING_THE_BALANCE
+	}
+}

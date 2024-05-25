@@ -1,0 +1,265 @@
+ZEX_MAREGYPT_VIZIER_POWER = {
+	ZEX_MGY_DECREE_BALANCE_EVERYTHING = {
+		icon = ZEX_GFX_MGY_Decree
+		allowed = {
+			always = yes
+		}
+		visible = {
+			zxe_is_maregypt_or_cosmetic_maregypt = yes
+		}
+		cost = 25
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ZEX_MGY_VIZIER_NO_TOTAL_MONARCH_CONTROL_tt
+				check_variable = {
+					ZEX_MGY_vizier_King_Balance < 80
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = ZEX_MGY_VIZIER_NO_TOTAL_VIZIER_CONTROL_tt
+				check_variable = {
+					ZEX_MGY_vizier_King_Balance > -80
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = ZEX_MGY_VIZIER_BALANCE_OF_POWER_AT_LEAST_15
+				OR = {
+					check_variable = {
+						ZEX_MGY_vizier_King_Balance > 15
+					}
+					check_variable = {
+						ZEX_MGY_vizier_King_Balance < -15
+					}
+				}
+			}
+		}
+		modifier = {
+			political_power_factor = -0.25
+			stability_weekly = 0.01
+		}
+		days_remove = 21
+		remove_effect = {
+			custom_effect_tooltip = ZEX_MGY_DECREE_BALANCE_EVERYTHING_tt
+			if = {
+				limit = {
+					check_variable = {
+						ZEX_MGY_vizier_King_Balance < 0
+					}	
+				}
+				hidden_effect = {
+					ZEX_MGY_INCREASE_KING_INFLUENCE_10 = yes
+					clamp_variable = {
+						var = ZEX_MGY_vizier_King_Balance
+						min = -100
+						max = 0
+					}
+				}
+			}
+			else = {
+				hidden_effect = {
+					ZEX_MGY_LOWER_KING_INFLUENCE_10 = yes
+					clamp_variable = {
+						var = ZEX_MGY_vizier_King_Balance
+						min = 0
+						max = 100
+					}
+				}
+			}
+		}
+	}
+	#Vizier in Power
+	ZEX_MGY_DECREE_EXPAND_BUREAUCRACY = {
+		icon = ZEX_GFX_MGY_Decree
+		allowed = {
+			always = yes
+		}
+		visible = {
+			zxe_is_maregypt_or_cosmetic_maregypt = yes
+		}
+		custom_cost_trigger = {
+			check_variable = {
+				ZEX_MGY_vizier_King_Balance < -19
+			}
+		}
+		custom_cost_text = ZEX_MGY_20_Vizier_Influence_tt
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ZEX_MGY_VIZIER_IN_POWER_tt
+				check_variable = {
+					ZEX_MGY_vizier_King_Balance < 0
+				}
+				has_political_power > 19
+			}
+		}
+		complete_effect = {
+			ZEX_MGY_INCREASE_KING_INFLUENCE_20 = yes
+			custom_effect_tooltip = ZEX_EMPTY_LINE
+			custom_effect_tooltip = ZEX_EDICT_20_PP
+			hidden_effect = {
+				add_political_power = -20
+			}
+		}
+	}
+	ZEX_MGY_DECREE_SEEK_INDUSTRIALIST_SUPPORT = {
+		icon = ZEX_GFX_MGY_Decree
+		allowed = {
+			always = yes
+		}
+		visible = {
+			zxe_is_maregypt_or_cosmetic_maregypt = yes
+		}
+		custom_cost_trigger = {
+			check_variable = {
+				ZEX_MGY_vizier_King_Balance < -19
+			}
+		}
+		custom_cost_text = ZEX_MGY_20_Vizier_Influence_tt
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ZEX_MGY_VIZIER_IN_POWER_tt
+				check_variable = {
+					ZEX_MGY_vizier_King_Balance < 0
+				}
+				has_political_power > 19
+			}
+		}
+		complete_effect = {
+			ZEX_MGY_INCREASE_KING_INFLUENCE_20 = yes
+			custom_effect_tooltip = ZEX_EMPTY_LINE
+			custom_effect_tooltip = ZEX_EDICT_20_PP
+			hidden_effect = {
+				add_political_power = -20
+			}
+		}
+	}
+	ZEX_MGY_DECREE_INCREASE_SALARIES = {
+		icon = ZEX_GFX_MGY_Decree
+		allowed = {
+			always = yes
+		}
+		visible = {
+			zxe_is_maregypt_or_cosmetic_maregypt = yes
+		}
+		custom_cost_trigger = {
+			check_variable = {
+				ZEX_MGY_vizier_King_Balance < -19
+			}
+		}
+		custom_cost_text = ZEX_MGY_20_Vizier_Influence_tt
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ZEX_MGY_VIZIER_IN_POWER_tt
+				check_variable = {
+					ZEX_MGY_vizier_King_Balance < 0
+				}
+				has_political_power > 19
+			}
+		}
+		complete_effect = {
+			ZEX_MGY_INCREASE_KING_INFLUENCE_20 = yes
+			custom_effect_tooltip = ZEX_EMPTY_LINE
+			custom_effect_tooltip = ZEX_EDICT_20_PP
+			hidden_effect = {
+				add_political_power = -20
+			}
+		}
+	}
+	#Monarch in Power
+	
+	ZEX_MGY_DECREE_HOLD_SPEECH = {
+		icon = ZEX_GFX_MGY_Decree
+		allowed = {
+			always = yes
+		}
+		visible = {
+			zxe_is_maregypt_or_cosmetic_maregypt = yes
+		}
+		custom_cost_trigger = {
+			check_variable = {
+				ZEX_MGY_vizier_King_Balance > 19
+			}
+		}
+		custom_cost_text = ZEX_MGY_20_King_Influence_tt
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ZEX_MGY_KING_IN_POWER_tt
+				check_variable = {
+					ZEX_MGY_vizier_King_Balance > 19
+				}
+				has_political_power > 19
+			}
+		}
+		complete_effect = {
+			ZEX_MGY_LOWER_KING_INFLUENCE_20 = yes
+			custom_effect_tooltip = ZEX_EMPTY_LINE
+			custom_effect_tooltip = ZEX_EDICT_20_PP
+			hidden_effect = {
+				add_political_power = -20
+			}
+		}
+	}
+	ZEX_MGY_DECREE_REFORM_GOVERNMENT = {
+		icon = ZEX_GFX_MGY_Decree
+		allowed = {
+			always = yes
+		}
+		visible = {
+			zxe_is_maregypt_or_cosmetic_maregypt = yes
+		}
+		custom_cost_trigger = {
+			check_variable = {
+				ZEX_MGY_vizier_King_Balance > 19
+			}
+		}
+		custom_cost_text = ZEX_MGY_20_King_Influence_tt
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ZEX_MGY_KING_IN_POWER_tt
+				check_variable = {
+					ZEX_MGY_vizier_King_Balance > 19
+				}
+				has_political_power > 19
+			}
+		}
+		complete_effect = {
+			ZEX_MGY_LOWER_KING_INFLUENCE_20 = yes
+			custom_effect_tooltip = ZEX_EMPTY_LINE
+			custom_effect_tooltip = ZEX_EDICT_20_PP
+			hidden_effect = {
+				add_political_power = -20
+			}
+		}
+	}
+	ZEX_MGY_DECREE_RALLY_MEDJAY = {
+		icon = ZEX_GFX_MGY_Decree
+		allowed = {
+			always = yes
+		}
+		visible = {
+			zxe_is_maregypt_or_cosmetic_maregypt = yes
+		}
+		custom_cost_trigger = {
+			check_variable = {
+				ZEX_MGY_vizier_King_Balance > 19
+			}
+		}
+		custom_cost_text = ZEX_MGY_20_King_Influence_tt
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ZEX_MGY_KING_IN_POWER_tt
+				check_variable = {
+					ZEX_MGY_vizier_King_Balance > 19
+				}
+				has_political_power > 19
+			}
+		}
+		complete_effect = {
+			ZEX_MGY_LOWER_KING_INFLUENCE_20 = yes
+			custom_effect_tooltip = ZEX_EMPTY_LINE
+			custom_effect_tooltip = ZEX_EDICT_20_PP
+			hidden_effect = {
+				add_political_power = -20
+			}
+		}
+	}
+}

@@ -64,4 +64,9 @@ spriteTypes = {
 		texturefile = "gfx/texticons/ZEX_MGY_royal_diet_texticons.dds"
 		legacy_lazy_load = no
 	}
+	spriteType = {
+		name = "GFX_ZEX_maregypt_edicts"
+		texturefile = "gfx/texticons/ZEX_MGY_edicts.dds"
+		legacy_lazy_load = no
+	}
 }

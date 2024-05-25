@@ -22,6 +22,7 @@ ZEX_MAREGYPT_VIZIER_POWER = {
 		has_country_flag = zex_mgy_vizier_enabled_flag
 	}
 	priority = 999
+	icon = ZEX_GFX_vizierking_bop_cat
 	visible_when_empty = yes
 }
 

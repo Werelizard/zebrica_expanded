@@ -78,47 +78,38 @@ scripted_gui = {
 			ZEX_MGY_sineighi_icon_click = {
 				ZEX_MGY_unrest_gui_clear_state_selection_flags = yes
 				set_country_flag = zex_mgy_unrest_selected_sineighi
-				scoped_sound_effect = click_expand
 			}
 			ZEX_MGY_maneisrata_icon_click = {
 				ZEX_MGY_unrest_gui_clear_state_selection_flags = yes
 				set_country_flag = zex_mgy_unrest_selected_maneisrata
-				scoped_sound_effect = click_expand
 			}
 			ZEX_MGY_kaneigh_icon_click = {
 				ZEX_MGY_unrest_gui_clear_state_selection_flags = yes
 				set_country_flag = zex_mgy_unrest_selected_kaneigh
-				scoped_sound_effect = click_expand
 			}
 			ZEX_MGY_delta_icon_click = {
 				ZEX_MGY_unrest_gui_clear_state_selection_flags = yes
 				set_country_flag = zex_mgy_unrest_selected_delta
-				scoped_sound_effect = click_expand
 			}
 			ZEX_MGY_manephis_icon_click = {
 				ZEX_MGY_unrest_gui_clear_state_selection_flags = yes
 				set_country_flag = zex_mgy_unrest_selected_manephis
-				scoped_sound_effect = click_expand
 			}
 			ZEX_MGY_somnambula_icon_click = {
 				ZEX_MGY_unrest_gui_clear_state_selection_flags = yes
 				set_country_flag = zex_mgy_unrest_selected_somnambula
-				scoped_sound_effect = click_expand
 			}
 			ZEX_MGY_eastdesert_icon_click = {
 				ZEX_MGY_unrest_gui_clear_state_selection_flags = yes
 				set_country_flag = zex_mgy_unrest_selected_easterndesert
-				scoped_sound_effect = click_expand
 			}
 			ZEX_MGY_zush_icon_click = {
 				ZEX_MGY_unrest_gui_clear_state_selection_flags = yes
 				set_country_flag = zex_mgy_unrest_selected_zush
-				scoped_sound_effect = click_expand
 			}
 			ZEX_MGY_uppermaregypt_icon_click = {
 				ZEX_MGY_unrest_gui_clear_state_selection_flags = yes
 				set_country_flag = zex_mgy_unrest_selected_uppermaregypt
-				scoped_sound_effect = click_expand
 			}
 			# Buttons effects
 			ZEX_MGY_republican_agitation_propaganda_button_icon_click = {
@@ -127,7 +118,6 @@ scripted_gui = {
 					value = ZEX_MGY_UNREST_POLITICALPOWER_COUNTER_COST
 				}
 				ZEX_MGY_Political_Unrest_Propaganda_Button = yes
-				scoped_sound_effect = menu_close_window
 			}
 			ZEX_MGY_republican_agitation_arrest_button_icon_click = {
 				subtract_from_variable = {
@@ -135,7 +125,6 @@ scripted_gui = {
 					value = ZEX_MGY_UNREST_LEGITIMACY_COUNTER_COST
 				}
 				ZEX_MGY_Political_Unrest_Arrest_Button = yes
-				scoped_sound_effect = menu_close_window
 			}
 			ZEX_MGY_republican_agitation_police_button_icon_click = {
 				subtract_from_variable = {
@@ -143,7 +132,6 @@ scripted_gui = {
 					value = ZEX_MGY_UNREST_POLITICALPOWER_COUNTER_COST
 				}
 				ZEX_MGY_Political_Unrest_Police_Button = yes
-				scoped_sound_effect = menu_close_window
 			}
 			ZEX_MGY_republican_agitation_reintegrate_state_button_click = {
 				ZEX_MGY_Political_Unrest_Pacify_Button = yes
@@ -334,6 +322,49 @@ scripted_gui = {
 			}
 			ZEX_MGY_Vizier_Bar_Slider = {
 				x = ZEX_MGY_vizier_king_balance_slider_pos
+			}
+			ZEX_MGY_Vizier_Portrait_Vizier = {
+				image = "[ZEX_MGY_POWER_BALANCE_GET_CURRENT_VIZIER_PORTRAIT]"
+			}
+			ZEX_MGY_Vizier_Portrait_King = {
+				image = "[ZEX_MGY_POWER_BALANCE_GET_CURRENT_KING_PORTRAIT]"
+			}
+		}
+
+		triggers = {
+			ZEX_MGY_Vizier_Button_left_click_enabled = {
+				NOT = {
+					has_country_flag = zex_mgy_vizier_bp_increase_vizier_influence
+				}
+				NOT = {
+					zex_mgy_no_vizier_check = yes
+				}
+			}
+			ZEX_MGY_Vizier_Button_right_click_enabled = {
+				NOT = {
+					has_country_flag = zex_mgy_vizier_bp_increase_king_influence
+				}
+				NOT = {
+					zex_mgy_no_king_or_queen = yes
+				}
+			}
+			ZEX_MGY_Vizier_Button_middle_click_enabled = {
+				OR = {
+					has_country_flag = zex_mgy_vizier_bp_increase_vizier_influence
+					has_country_flag = zex_mgy_vizier_bp_increase_king_influence
+				}
+			}
+		}
+
+		effects = {
+			ZEX_MGY_Vizier_Button_left_click = {
+				ZEX_MGY_TIPPING_THE_SCALES_Vizier = yes
+			}
+			ZEX_MGY_Vizier_Button_right_click = {
+				ZEX_MGY_TIPPING_THE_SCALES_MONARCH = yes
+			}
+			ZEX_MGY_Vizier_Button_middle_click = {
+				ZEX_MGY_TIPPING_THE_SCALES_RESET = yes
 			}
 		}
 	}

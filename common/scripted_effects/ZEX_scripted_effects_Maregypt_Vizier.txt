@@ -168,7 +168,7 @@ ZEX_MGY_UPDATE_VIZIER_KING_VARIABLE_DERIV = {
 	}
 	# Determine the x axis of the "slider"
 	set_variable = { 
-			ZEX_MGY_vizier_king_balance_slider_pos = 232.5
+		ZEX_MGY_vizier_king_balance_slider_pos = 231
 	}
 	set_variable = {
 		ZEX_MGY_vizier_king_balance_slider_pos_increment = 2.15
@@ -243,4 +243,43 @@ ZEX_MGY_INCREASE_KING_INFLUENCE_10 = {
 		ZEX_MGY_UPDATE_VIZIER_KING_VARIABLE = yes
 	}
 	custom_effect_tooltip = ZEX_MGY_INCREASE_KING_INFLUENCE_10_TT
+}
+
+# Reset the tipping the scales mechanic
+ZEX_MGY_TIPPING_THE_SCALES_RESET = {
+	set_variable = {
+		ZEX_MGY_TIPPING_SCALES = 0
+	}
+	clr_country_flag = zex_mgy_vizier_bp_increase_vizier_influence
+	clr_country_flag = zex_mgy_vizier_bp_increase_king_influence
+}
+
+# Enable tipping the scales - positive
+ZEX_MGY_TIPPING_THE_SCALES_MONARCH = {
+	set_country_flag = zex_mgy_vizier_bp_increase_king_influence
+	set_variable = {
+		ZEX_MGY_TIPPING_SCALES = 5
+	}
+}
+
+# Enable tipping the scales - negative
+ZEX_MGY_TIPPING_THE_SCALES_Vizier = {
+	set_country_flag = zex_mgy_vizier_bp_increase_vizier_influence
+	set_variable = {
+		ZEX_MGY_TIPPING_SCALES = -5
+	}
+}
+
+#The only weekly effect: update the cost, xchange the variable, update the parameters once more
+ZEX_MGY_UPDATE_TIPPING_SCALES_WEEKLY_CHANGE = {
+	add_to_variable = {
+		var = ZEX_MGY_vizier_King_Balance
+		value = ZEX_MGY_TIPPING_SCALES
+	}
+	clamp_variable = {
+		var = ZEX_MGY_vizier_King_Balance
+		min = -100
+		max = 100
+	}
+	ZEX_MGY_UPDATE_VIZIER_KING_VARIABLE = yes
 }

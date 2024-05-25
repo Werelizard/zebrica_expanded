@@ -138,12 +138,24 @@ ZEX_MGY_vizier_balance_dynmod = {
         has_country_flag = zex_mgy_vizier_enabled_flag
     }
     war_support_factor = ZEX_MGY_VIZIER_INFLUENCE_15
-    justify_war_goal_time = ZEX_MGY_VIZIER_INFLUENCE_NEGATIVE_15
+    mobilization_speed = ZEX_MGY_VIZIER_INFLUENCE_15
     political_advisor_cost_factor = ZEX_MGY_VIZIER_INFLUENCE_20
     economy_cost_factor = ZEX_MGY_VIZIER_INFLUENCE_20
     trade_laws_cost_factor = ZEX_MGY_VIZIER_INFLUENCE_20
     mobilization_laws_cost_factor = ZEX_MGY_VIZIER_INFLUENCE_20
 }
+
+ZEX_MGY_vizier_balance_daily_cost_dynmod = {
+    enable = {
+        has_country_flag = zex_mgy_vizier_enabled_flag
+        OR = {
+            has_country_flag = zex_mgy_vizier_bp_increase_vizier_influence
+            has_country_flag = zex_mgy_vizier_bp_increase_king_influence
+        }
+    }
+    political_power_gain = -0.5
+}
+
 
 #
 # Debts

@@ -63,4 +63,12 @@ spriteTypes = {
 		name = "ZEX_GFX_agri_cat"
 		textureFile = "gfx/interface/decisions/ZEX_GFX_MGY_AGRICULTURE_CAT.dds"
 	}
+	spriteType = {
+		name = "ZEX_GFX_vizierking_bop_cat"
+		textureFile = "gfx/interface/decisions/ZEX_MGY_VizierKing_bop_CAT.dds"
+	}
+	spriteType = {
+		name = "ZEX_GFX_MGY_Decree"
+		textureFile = "gfx/interface/decisions/ZEX_GFX_MGY_Decree.dds"
+	}
 }

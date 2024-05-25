@@ -23,7 +23,7 @@ guiTypes = {
 			#Province Unrest
 			
 			#Sineighi 
-			iconType = {
+			buttonType = {
 				name = "ZEX_MGY_sineighi_icon"
 				position = { x = 138 y = 60 }
 				spriteType = "ZEX_MGY_NOUNREST_SINEIGHI"
@@ -31,7 +31,7 @@ guiTypes = {
 			}
 			
 			#Maneisrata
-			iconType = {
+			buttonType = {
 				name = "ZEX_MGY_maneisrata_icon"
 				position = { x = 153 y = 126 }
 				spriteType = "ZEX_MGY_NOUNREST_MANEISRATA"
@@ -39,7 +39,7 @@ guiTypes = {
 			}
 
 			#Kaneigh
-			iconType = {
+			buttonType = {
 				name = "ZEX_MGY_kaneigh_icon"
 				position = { x = 130 y = 207 }
 				spriteType = "ZEX_MGY_NOUNREST_KANEIGH"
@@ -47,7 +47,7 @@ guiTypes = {
 			}
 
 			#Delta
-			iconType = {
+			buttonType = {
 				name = "ZEX_MGY_delta_icon"
 				position = { x = 193 y = 83 }
 				spriteType = "ZEX_MGY_NOUNREST_DELTA"
@@ -55,7 +55,7 @@ guiTypes = {
 			}
 
 			#Manephis
-			iconType = {
+			buttonType = {
 				name = "ZEX_MGY_manephis_icon"
 				position = { x = 223 y = 120 }
 				spriteType = "ZEX_MGY_NOUNREST_MANEPHIS"
@@ -63,7 +63,7 @@ guiTypes = {
 			}
 
 			#Somnambula
-			iconType = {
+			buttonType = {
 				name = "ZEX_MGY_somnambula_icon"
 				position = { x = 252 y = 101 }
 				spriteType = "ZEX_MGY_NOUNREST_SOMNAMBULA"
@@ -71,7 +71,7 @@ guiTypes = {
 			}
 
 			#East desert
-			iconType = {
+			buttonType = {
 				name = "ZEX_MGY_eastdesert_icon"
 				position = { x = 259 y = 93 }
 				spriteType = "ZEX_MGY_NOUNREST_DESERT"
@@ -79,7 +79,7 @@ guiTypes = {
 			}
 
 			#Upper Maregypt
-			iconType = {
+			buttonType = {
 				name = "ZEX_MGY_uppermaregypt_icon"
 				position = { x = 214 y = 200 }
 				spriteType = "ZEX_MGY_NOUNREST_UPPERMAREGYPT"
@@ -87,7 +87,7 @@ guiTypes = {
 			}
 
 			#Zush
-			iconType = {
+			buttonType = {
 				name = "ZEX_MGY_zush_icon"
 				position = { x = 145 y = 280 }
 				spriteType = "ZEX_MGY_NOUNREST_ZUSH"
@@ -241,21 +241,21 @@ guiTypes = {
 				size = { width = 56 height = 156  }
 				spriteType = "GFX_tiled_window_thin_border2"
 			}
-			iconType = {
+			buttonType = {
 				name = "ZEX_MGY_republican_agitation_propaganda_button_icon"
 				position = { x = 423 y = 19 }
 				spriteType = "ZEX_MGY_Unrest_Button_Police"
 				pdx_tooltip = ZEX_MGY_BUTTON_PROPAGANDA_TOOLTIP
 				pdx_disabled_tooltip = ZEX_MGY_BUTTON_PROPAGANDA_TOOLTIP
 			}
-			iconType = {
+			buttonType = {
 				name = "ZEX_MGY_republican_agitation_arrest_button_icon"
 				position = { x = 423 y = 70 }
 				spriteType = "ZEX_MGY_Unrest_Button_Police"
 				pdx_tooltip = ZEX_MGY_BUTTON_ARRESTS_TOOLTIP
 				pdx_disabled_tooltip = ZEX_MGY_BUTTON_ARRESTS_TOOLTIP
 			}
-			iconType = {
+			buttonType = {
 				name = "ZEX_MGY_republican_agitation_police_button_icon"
 				position = { x = 423 y = 121 }
 				spriteType = "ZEX_MGY_Unrest_Button_Police"

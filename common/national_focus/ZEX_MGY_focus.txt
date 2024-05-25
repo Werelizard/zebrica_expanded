@@ -50,7 +50,7 @@ focus_tree = {
 	
 		#Triggers
 		available = {
-			zex_mgy_khefer_in_power = yes
+			zex_mgy_khefer_in_power = yes 
 		}
 
 		#Effects

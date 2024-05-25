@@ -245,6 +245,11 @@ set_autonomy = {
 create_faction = ZEX_MGY_MANEPHIS_ACCORDS
 add_to_faction = ALO
 
+#Add the dynmod for politcal pwoer cost
+add_dynamic_modifier = {
+	modifier = ZEX_MGY_vizier_balance_daily_cost_dynmod
+}
+
 #Initiate republican agitators
 ZEX_activate_political_unrest = yes
 

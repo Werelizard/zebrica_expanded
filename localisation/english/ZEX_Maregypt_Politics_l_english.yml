@@ -69,7 +69,7 @@
  ZEX_MGY_VIZIER_OFFICE_desc:0 "§LThis is a §gdynamic§! modifier. It will update to reflect the current £ZEX_vizier_bop  §Ybalance of power§!§L between the King and the Vizier. Currently the balance of power rests at [ZEX_MGY_GET_VIZIER_KING_BALANCE_VALUE].§T\n--------------\n§!The Kingdom of Maregypt's administration is defined by the precarious balance existing between King and Vizier. This great game is both an exercise in political mastery and a testament to the country's antiquated institutions. The effects it will bestow will depend on where the bulk of the governmental power effectively lies."
 
  ZEX_MGY_VIZIER_BALANCE_01_WAR_SUPPORT_TT:0 "War Support: [ZEX_MGY_VIZIER_15_SIGN][?ROOT.ZEX_MGY_VIZIER_INFLUENCE_15|2%]§!"
- ZEX_MGY_VIZIER_BALANCE_02_JUSTIFIY_WAR_GOAL_TT:0 "Justify War Goal Time: [ZEX_MGY_VIZIER_15_SIGN][?ROOT.ZEX_MGY_VIZIER_INFLUENCE_NEGATIVE_15|2%]§!"
+ ZEX_MGY_VIZIER_BALANCE_02_JUSTIFIY_WAR_GOAL_TT:0 "Mobilization Speed: [ZEX_MGY_VIZIER_15_SIGN][?ROOT.ZEX_MGY_VIZIER_INFLUENCE_15|2%]§!"
  ZEX_MGY_VIZIER_BALANCE_03_ADVISOR_COST_TT:0 "Political Advisor Cost: [ZEX_MGY_VIZIER_20_SIGN][?ROOT.ZEX_MGY_VIZIER_INFLUENCE_20|0%]§!"
  ZEX_MGY_VIZIER_BALANCE_04_ECO_COST_TT:0 "Economy Laws Cost: [ZEX_MGY_VIZIER_20_SIGN][?ROOT.ZEX_MGY_VIZIER_INFLUENCE_20|0%]§!"
  ZEX_MGY_VIZIER_BALANCE_05_TRADE_COST_TT:0 "Trade Laws Cost: [ZEX_MGY_VIZIER_20_SIGN][?ROOT.ZEX_MGY_VIZIER_INFLUENCE_20|0%]§!"
@@ -78,4 +78,4 @@
  ZEX_MGY_VIZIER_BALANCE_SIGN_POS:0 "§G"
  ZEX_MGY_VIZIER_BALANCE_SIGN_NEG:0 "§t"
  ZEX_MGY_GET_VIZIER_KING_BALANCE_VALUE_VIZIER:0 "£BoP_left_texticon  §Y[?ROOT.ZEX_MGY_vizier_King_Balance_DISPLAY]§! towards total Vizier control"
- ZEX_MGY_GET_VIZIER_KING_BALANCE_VALUE_KING:0 "£BoP_right_texticon  §Y[?ROOT.ZEX_MGY_vizier_King_Balance_DISPLAY]§! towards total Monarch control"
+ ZEX_MGY_GET_VIZIER_KING_BALANCE_VALUE_KING:0 "£BoP_right_texticon  §Y[?ROOT.ZEX_MGY_vizier_King_Balance_DISPLAY]§! towards total Royal control"

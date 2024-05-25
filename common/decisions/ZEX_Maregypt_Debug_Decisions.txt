@@ -91,4 +91,27 @@ ZEX_DEBUG_CATEGORY = {
 			ZEX_deactivate_republican_agitation = yes
 		}
 	}
+	ZEX_MGY_TOGGLE_CIVIL_WAR_FLAG = {
+		allowed = {
+			always = yes
+		}
+		visible = {
+			zxe_is_maregypt_or_cosmetic_maregypt = yes
+		}
+		available = {
+			
+		}
+		complete_effect = {
+			if = {
+				limit = {
+					has_country_flag = ZEX_MGY_Civil_War_Triggered
+				}
+				clr_country_flag = ZEX_MGY_Civil_War_Triggered
+			}
+			else = {
+				set_country_flag = ZEX_MGY_Civil_War_Triggered
+			}
+			mark_focus_tree_layout_dirty = yes
+		}
+	}
 }

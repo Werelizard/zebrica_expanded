@@ -46,4 +46,44 @@ spriteTypes = {
 		size = { x = 215 y = 33 }
 		effectFile = "gfx/FX/progress_reverse.lua"
 	}
+	spriteType = {
+		name = "GFX_ZEX_MGY_Vizier_Bar_Frame"
+		textureFile = "gfx/interface/MGY/MGY_Vizier_Bar_frame.tga"
+	}
+	spriteType = {
+		name = "GFX_ZEX_MGY_Vizier_Bar_Label"
+		textureFile = "gfx/interface/MGY/MGY_Vizier_Bar_Label.tga"
+	}
+	# Balance buttons
+	spriteType = {
+		name = "GFX_ZEX_MGY_Vizier_Gui_Right_Button"
+		textureFile = "gfx/interface/MGY/ZEX_MGY_Inluence_Monarchy.tga"
+	}
+	spriteType = {
+		name = "GFX_ZEX_MGY_Vizier_Gui_Left_Button"
+		textureFile = "gfx/interface/MGY/ZEX_MGY_Inluence_Vizier.tga"
+	}
+	spriteType = {
+		name = "GFX_ZEX_MGY_Vizier_Gui_Middle_Button"
+		textureFile = "gfx/interface/MGY/ZEX_MGY_Inluence_None.tga"
+	}
+	#Leader frame
+	spriteType = {
+		name = "GFX_ZEX_MGY_Balance_of_Power_Leader_Frame"
+		textureFile = "gfx/interface/MGY/ZEX_MGY_Balance_of_Power_Portrait.dds"
+	}
+
+	#Special Portraits, for each possible leader
+	spriteType = {
+		name = "GFX_ZEX_MGY_Balance_of_Power_Khefer_Portrait"
+		textureFile = "gfx/interface/MGY/ZEX_MGY_Balance_of_Power_Khefer.dds"
+	}
+	spriteType = {
+		name = "GFX_ZEX_MGY_Balance_of_Power_NoVizier_Portrait"
+		textureFile = "gfx/interface/MGY/ZEX_MGY_Balance_of_Power_NoVizier.dds"
+	}
+	spriteType = {
+		name = "GFX_ZEX_MGY_Balance_of_Power_ShaaDoof_Portrait"
+		textureFile = "gfx/interface/MGY/ZEX_MGY_Balance_of_Power_ShaaDoof.dds"
+	}
 }
