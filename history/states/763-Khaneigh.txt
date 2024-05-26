@@ -1,7 +1,7 @@
 state={
 	id=763
 	name="STATE_763"
-	state_category = wasteland
+	state_category = pastoral 
 	history={
 		owner = MGY
 		add_claim_by = MGY

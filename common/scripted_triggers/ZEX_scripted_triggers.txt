@@ -455,3 +455,103 @@ zex_mgy_unrest_state_not_pacified = {
 		}
 	}
 }
+
+zex_mgy_is_state_pacified = {
+	OR = {
+		AND = {
+			has_country_flag = zex_mgy_unrest_selected_sineighi
+			has_country_flag = zex_mgy_unrest_sineighi_pacified
+		}
+		AND = {
+			has_country_flag = zex_mgy_unrest_selected_delta
+			has_country_flag = zex_mgy_unrest_delta_pacified
+		}
+		AND = {
+			has_country_flag = zex_mgy_unrest_selected_kaneigh
+			has_country_flag = zex_mgy_unrest_kaneigh_pacified
+		}
+		AND = {
+			has_country_flag = zex_mgy_unrest_selected_maneisrata
+			has_country_flag = zex_mgy_unrest_maneisrata_pacified
+		}
+		AND = {
+			has_country_flag = zex_mgy_unrest_selected_manephis
+			has_country_flag = zex_mgy_unrest_manephis_pacified
+		}
+		AND = {
+			has_country_flag = zex_mgy_unrest_selected_somnambula
+			has_country_flag = zex_mgy_unrest_somnambula_pacified
+		}
+		AND = {
+			has_country_flag = zex_mgy_unrest_selected_easterndesert
+			has_country_flag = zex_mgy_unrest_easterndesert_pacified
+		}
+		AND = {
+			has_country_flag = zex_mgy_unrest_selected_uppermaregypt
+			has_country_flag = zex_mgy_unrest_uppermaregypt_pacified
+		}
+		AND = {
+			has_country_flag = zex_mgy_unrest_selected_zush
+			has_country_flag = zex_mgy_unrest_zush_pacified
+		}
+	}
+}
+
+zex_mgy_is_state_rebellious = {
+	OR = {
+		AND = {
+			has_country_flag = zex_mgy_unrest_selected_sineighi
+			check_variable = {
+				ZEX_MGY_VAR_Sineighi_Alignment > ZEX_MGY_LEGITIMACY
+			}
+		}
+		AND = {
+			has_country_flag = zex_mgy_unrest_selected_delta
+			check_variable = {
+				ZEX_MGY_VAR_Delta_Alignment > ZEX_MGY_LEGITIMACY
+			}
+		}
+		AND = {
+			has_country_flag = zex_mgy_unrest_selected_kaneigh
+			check_variable = {
+				ZEX_MGY_VAR_Kaneigh_Alignment > ZEX_MGY_LEGITIMACY
+			}
+		}
+		AND = {
+			has_country_flag = zex_mgy_unrest_selected_maneisrata
+			check_variable = {
+				ZEX_MGY_VAR_Maneisrata_Alignment > ZEX_MGY_LEGITIMACY
+			}
+		}
+		AND = {
+			has_country_flag = zex_mgy_unrest_selected_manephis
+			check_variable = {
+				ZEX_MGY_VAR_Manephis_Alignment > ZEX_MGY_LEGITIMACY
+			}
+		}
+		AND = {
+			has_country_flag = zex_mgy_unrest_selected_somnambula
+			check_variable = {
+				ZEX_MGY_VAR_Somnambula_Alignment > ZEX_MGY_LEGITIMACY
+			}
+		}
+		AND = {
+			has_country_flag = zex_mgy_unrest_selected_easterndesert
+			check_variable = {
+				ZEX_MGY_VAR_Eastdesert_Alignment > ZEX_MGY_LEGITIMACY
+			}
+		}
+		AND = {
+			has_country_flag = zex_mgy_unrest_selected_uppermaregypt
+			check_variable = {
+				ZEX_MGY_VAR_UpperMaregypt_Alignment > ZEX_MGY_LEGITIMACY
+			}
+		}
+		AND = {
+			has_country_flag = zex_mgy_unrest_selected_zush
+			check_variable = {
+				ZEX_MGY_VAR_Zush_Alignment > ZEX_MGY_LEGITIMACY
+			}
+		}
+	}
+}

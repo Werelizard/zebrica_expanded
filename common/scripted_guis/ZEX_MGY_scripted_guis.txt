@@ -78,38 +78,47 @@ scripted_gui = {
 			ZEX_MGY_sineighi_icon_click = {
 				ZEX_MGY_unrest_gui_clear_state_selection_flags = yes
 				set_country_flag = zex_mgy_unrest_selected_sineighi
+				# goto_state = 738
 			}
 			ZEX_MGY_maneisrata_icon_click = {
 				ZEX_MGY_unrest_gui_clear_state_selection_flags = yes
 				set_country_flag = zex_mgy_unrest_selected_maneisrata
+				# goto_state = 740
 			}
 			ZEX_MGY_kaneigh_icon_click = {
 				ZEX_MGY_unrest_gui_clear_state_selection_flags = yes
 				set_country_flag = zex_mgy_unrest_selected_kaneigh
+				# goto_state = 763
 			}
 			ZEX_MGY_delta_icon_click = {
 				ZEX_MGY_unrest_gui_clear_state_selection_flags = yes
 				set_country_flag = zex_mgy_unrest_selected_delta
+				# goto_state = 734
 			}
 			ZEX_MGY_manephis_icon_click = {
 				ZEX_MGY_unrest_gui_clear_state_selection_flags = yes
 				set_country_flag = zex_mgy_unrest_selected_manephis
+				# goto_state = 735
 			}
 			ZEX_MGY_somnambula_icon_click = {
 				ZEX_MGY_unrest_gui_clear_state_selection_flags = yes
 				set_country_flag = zex_mgy_unrest_selected_somnambula
+				# goto_state = 733
 			}
 			ZEX_MGY_eastdesert_icon_click = {
 				ZEX_MGY_unrest_gui_clear_state_selection_flags = yes
 				set_country_flag = zex_mgy_unrest_selected_easterndesert
+				# goto_state = 733
 			}
 			ZEX_MGY_zush_icon_click = {
 				ZEX_MGY_unrest_gui_clear_state_selection_flags = yes
 				set_country_flag = zex_mgy_unrest_selected_zush
+				# goto_state = 766
 			}
 			ZEX_MGY_uppermaregypt_icon_click = {
 				ZEX_MGY_unrest_gui_clear_state_selection_flags = yes
 				set_country_flag = zex_mgy_unrest_selected_uppermaregypt
+				# goto_state = 758
 			}
 			# Buttons effects
 			ZEX_MGY_republican_agitation_propaganda_button_icon_click = {

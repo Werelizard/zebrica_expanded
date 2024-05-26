@@ -204,6 +204,11 @@ spriteTypes = {
 		texturefile = "gfx/interface/MGY/republicanAgitation/ZEX_MGY_Unrest_Police_small.dds"
 		transparencecheck = yes
 	}
+	spriteType = {
+		name = "ZEX_MGY_OPEN_REVOLT"
+		texturefile = "gfx/interface/MGY/republicanAgitation/ZEX_MGY_Unrest_Open_Revolt.dds"
+		transparencecheck = yes
+	}
 
 	# UI elements
 
@@ -223,11 +228,6 @@ spriteTypes = {
 		transparencecheck = yes
 	}
 	spriteType = {
-		name = "ZEX_MGY_Cartouche_Kaneigh"
-		texturefile = "gfx/interface/MGY/Cartouches/ZEX_MGY_cartouche_kaneigh.dds"
-		transparencecheck = yes
-	}
-	spriteType = {
 		name = "ZEX_MGY_Turn_Timer"
 		texturefile = "gfx/interface/MGY/ZEX_MGY_royal_unrest_counter.dds"
 		transparencecheck = yes
@@ -237,36 +237,19 @@ spriteTypes = {
 		texturefile = "gfx/interface/MGY/ZEX_MGY_reintegrate_state_button.dds"
 		transparencecheck = yes
 	}
-
-	#Timer backgrounds
 	spriteType = {
-		name = "ZEX_MGY_Turn_Timer_1"
-		texturefile = "gfx/interface/MGY/republicanAgitation/Timer/ZEX_MGY_royal_unrest_timer_1.dds"
+		name = "ZEX_MGY_state_rebellious"
+		texturefile = "gfx/interface/MGY/ZEX_MGY_state_temp_rebellious.dds"
 		transparencecheck = yes
 	}
 	spriteType = {
-		name = "ZEX_MGY_Turn_Timer_2"
-		texturefile = "gfx/interface/MGY/republicanAgitation/Timer/ZEX_MGY_royal_unrest_timer_2.dds"
+		name = "ZEX_MGY_state_agitated"
+		texturefile = "gfx/interface/MGY/ZEX_MGY_state_temp_agitated.dds"
 		transparencecheck = yes
 	}
 	spriteType = {
-		name = "ZEX_MGY_Turn_Timer_3"
-		texturefile = "gfx/interface/MGY/republicanAgitation/Timer/ZEX_MGY_royal_unrest_timer_3.dds"
-		transparencecheck = yes
-	}
-	spriteType = {
-		name = "ZEX_MGY_Turn_Timer_4"
-		texturefile = "gfx/interface/MGY/republicanAgitation/Timer/ZEX_MGY_royal_unrest_timer_4.dds"
-		transparencecheck = yes
-	}
-	spriteType = {
-		name = "ZEX_MGY_Turn_Timer_5"
-		texturefile = "gfx/interface/MGY/republicanAgitation/Timer/ZEX_MGY_royal_unrest_timer_5.dds"
-		transparencecheck = yes
-	}
-	spriteType = {
-		name = "ZEX_MGY_Turn_Timer_6"
-		texturefile = "gfx/interface/MGY/republicanAgitation/Timer/ZEX_MGY_royal_unrest_timer_6.dds"
+		name = "ZEX_MGY_state_pacified"
+		texturefile = "gfx/interface/MGY/ZEX_MGY_state_temp_pacified.dds"
 		transparencecheck = yes
 	}
 

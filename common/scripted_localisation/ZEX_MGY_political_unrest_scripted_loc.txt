@@ -362,6 +362,14 @@ defined_text = {
 
 defined_text = {
 	name = ZEX_MGY_GET_STATUS_SINEIGHI
+	# text = {
+	# 	trigger = {
+	# 		check_variable = {
+	# 			ZEX_MGY_VAR_Sineighi_Alignment > ZEX_MGY_LEGITIMACY
+	# 		}
+	# 	}
+	# 	localization_key = "ZEX_MGY_OPEN_REVOLT"
+	# }
 	text = {
 		trigger = {
 			has_country_flag = ZEX_MGY_Sineighi_arrests_flag
@@ -385,33 +393,49 @@ defined_text = {
 	}
 }
 
-defined_text = {
-	name = ZEX_MGY_GET_STATUS_MANEISRATA
-	text = {
-		trigger = {
-			has_country_flag = ZEX_MGY_Maneisrata_arrests_flag
+	defined_text = {
+		name = ZEX_MGY_GET_STATUS_MANEISRATA
+		# text = {
+		# 	trigger = {
+		# 		check_variable = {
+		# 			ZEX_MGY_VAR_Maneisrata_Alignment > ZEX_MGY_LEGITIMACY
+		# 		}
+		# 	}
+		# 	localization_key = "ZEX_MGY_OPEN_REVOLT"
+		# }
+		text = {
+			trigger = {
+				has_country_flag = ZEX_MGY_Maneisrata_arrests_flag
+			}
+			localization_key = "ZEX_MGY_ARRESTS_MARKER"
 		}
-		localization_key = "ZEX_MGY_ARRESTS_MARKER"
-	}
-	text = {
-		trigger = {
-			has_country_flag = ZEX_MGY_Maneisrata_propaganda_flag
+		text = {
+			trigger = {
+				has_country_flag = ZEX_MGY_Maneisrata_propaganda_flag
+			}
+			localization_key = "ZEX_MGY_PROPAGANDA_MARKER"
 		}
-		localization_key = "ZEX_MGY_PROPAGANDA_MARKER"
-	}
-	text = {
-		trigger = {
-			has_country_flag = ZEX_MGY_Maneisrata_protected_flag
+		text = {
+			trigger = {
+				has_country_flag = ZEX_MGY_Maneisrata_protected_flag
+			}
+			localization_key = "ZEX_MGY_POLICE_MARKER"
 		}
-		localization_key = "ZEX_MGY_POLICE_MARKER"
+		text = {
+			localization_key = ZEX_MGY_Button_Hidden
+		}
 	}
-	text = {
-		localization_key = ZEX_MGY_Button_Hidden
-	}
-}
 
 defined_text = {
 	name = ZEX_MGY_GET_STATUS_DELTA
+	# text = {
+	# 	trigger = {
+	# 		check_variable = {
+	# 			ZEX_MGY_VAR_Delta_Alignment > ZEX_MGY_LEGITIMACY
+	# 		}
+	# 	}
+	# 	localization_key = "ZEX_MGY_OPEN_REVOLT"
+	# }
 	text = {
 		trigger = {
 			has_country_flag = ZEX_MGY_Delta_arrests_flag
@@ -437,6 +461,14 @@ defined_text = {
 
 defined_text = {
 	name = ZEX_MGY_GET_STATUS_SOMNAMBULA
+	# text = {
+	# 	trigger = {
+	# 		check_variable = {
+	# 			ZEX_MGY_VAR_Somnambula_Alignment > ZEX_MGY_LEGITIMACY
+	# 		}
+	# 	}
+	# 	localization_key = "ZEX_MGY_OPEN_REVOLT"
+	# }
 	text = {
 		trigger = {
 			has_country_flag = ZEX_MGY_Somnambula_arrests_flag
@@ -462,6 +494,14 @@ defined_text = {
 
 defined_text = {
 	name = ZEX_MGY_GET_STATUS_EASTDESERT
+	# text = {
+	# 	trigger = {
+	# 		check_variable = {
+	# 			ZEX_MGY_VAR_Eastdesert_Alignment > ZEX_MGY_LEGITIMACY
+	# 		}
+	# 	}
+	# 	localization_key = "ZEX_MGY_OPEN_REVOLT"
+	# }
 	text = {
 		trigger = {
 			has_country_flag = ZEX_MGY_Desert_arrests_flag
@@ -487,6 +527,14 @@ defined_text = {
 
 defined_text = {
 	name = ZEX_MGY_GET_STATUS_MANEPHIS
+	# text = {
+	# 	trigger = {
+	# 		check_variable = {
+	# 			ZEX_MGY_VAR_Manephis_Alignment > ZEX_MGY_LEGITIMACY
+	# 		}
+	# 	}
+	# 	localization_key = "ZEX_MGY_OPEN_REVOLT"
+	# }
 	text = {
 		trigger = {
 			has_country_flag = ZEX_MGY_Manephis_arrests_flag
@@ -512,6 +560,14 @@ defined_text = {
 
 defined_text = {
 	name = ZEX_MGY_GET_STATUS_UPPERMAREGYPT
+	# text = {
+	# 	trigger = {
+	# 		check_variable = {
+	# 			ZEX_MGY_VAR_UpperMaregypt_Alignment > ZEX_MGY_LEGITIMACY
+	# 		}
+	# 	}
+	# 	localization_key = "ZEX_MGY_OPEN_REVOLT"
+	# }
 	text = {
 		trigger = {
 			has_country_flag = ZEX_MGY_UpperMaregypt_arrests_flag
@@ -537,6 +593,14 @@ defined_text = {
 
 defined_text = {
 	name = ZEX_MGY_GET_STATUS_ZUSH
+	# text = {
+	# 	trigger = {
+	# 		check_variable = {
+	# 			ZEX_MGY_VAR_Zush_Alignment > ZEX_MGY_LEGITIMACY
+	# 		}
+	# 	}
+	# 	localization_key = "ZEX_MGY_OPEN_REVOLT"
+	# }
 	text = {
 		trigger = {
 			has_country_flag = ZEX_MGY_Zush_arrests_flag
@@ -562,6 +626,14 @@ defined_text = {
 
 defined_text = {
 	name = ZEX_MGY_GET_STATUS_KANEIGH
+	# text = {
+	# 	trigger = {
+	# 		check_variable = {
+	# 			ZEX_MGY_VAR_Kaneigh_Alignment > ZEX_MGY_LEGITIMACY
+	# 		}
+	# 	}
+	# 	localization_key = "ZEX_MGY_OPEN_REVOLT"
+	# }
 	text = {
 		trigger = {
 			has_country_flag = ZEX_MGY_Kaneigh_arrests_flag
@@ -623,6 +695,54 @@ defined_text = {
 		localization_key = ZEX_MGY_republican_agitation_state_kaneigh_title
 	}
 	text = {
+		trigger = {
+			has_country_flag = zex_mgy_unrest_selected_sineighi
+		}
+		localization_key = ZEX_MGY_republican_agitation_state_sineighi_title
+	}
+	text = {
+		trigger = {
+			has_country_flag = zex_mgy_unrest_selected_maneisrata
+		}
+		localization_key = ZEX_MGY_republican_agitation_state_maneisrata_title
+	}
+	text = {
+		trigger = {
+			has_country_flag = zex_mgy_unrest_selected_delta
+		}
+		localization_key = ZEX_MGY_republican_agitation_state_delta_title
+	}
+	text = {
+		trigger = {
+			has_country_flag = zex_mgy_unrest_selected_somnambula
+		}
+		localization_key = ZEX_MGY_republican_agitation_state_somnambula_title
+	}
+	text = {
+		trigger = {
+			has_country_flag = zex_mgy_unrest_selected_easterndesert
+		}
+		localization_key = ZEX_MGY_republican_agitation_state_easterndesert_title
+	}
+	text = {
+		trigger = {
+			has_country_flag = zex_mgy_unrest_selected_zush
+		}
+		localization_key = ZEX_MGY_republican_agitation_state_zush_title
+	}
+	text = {
+		trigger = {
+			has_country_flag = zex_mgy_unrest_selected_manephis
+		}
+		localization_key = ZEX_MGY_republican_agitation_state_manephis_title
+	}
+	text = {
+		trigger = {
+			has_country_flag = zex_mgy_unrest_selected_uppermaregypt
+		}
+		localization_key = ZEX_MGY_republican_agitation_state_uppermaregypt_title
+	}
+	text = {
 		localization_key = ZEX_MGY_NO_LOCALISATION
 	}
 }
@@ -636,6 +756,54 @@ defined_text = {
 		localization_key = ZEX_MGY_republican_agitation_kaneigh_text
 	}
 	text = {
+		trigger = {
+			has_country_flag = zex_mgy_unrest_selected_sineighi
+		}
+		localization_key = ZEX_MGY_republican_agitation_state_sineighi_text
+	}
+	text = {
+		trigger = {
+			has_country_flag = zex_mgy_unrest_selected_maneisrata
+		}
+		localization_key = ZEX_MGY_republican_agitation_state_maneisrata_text
+	}
+	text = {
+		trigger = {
+			has_country_flag = zex_mgy_unrest_selected_delta
+		}
+		localization_key = ZEX_MGY_republican_agitation_state_delta_text
+	}
+	text = {
+		trigger = {
+			has_country_flag = zex_mgy_unrest_selected_somnambula
+		}
+		localization_key = ZEX_MGY_republican_agitation_state_somnambula_text
+	}
+	text = {
+		trigger = {
+			has_country_flag = zex_mgy_unrest_selected_easterndesert
+		}
+		localization_key = ZEX_MGY_republican_agitation_state_easterndesert_text
+	}
+	text = {
+		trigger = {
+			has_country_flag = zex_mgy_unrest_selected_zush
+		}
+		localization_key = ZEX_MGY_republican_agitation_state_zush_text
+	}
+	text = {
+		trigger = {
+			has_country_flag = zex_mgy_unrest_selected_manephis
+		}
+		localization_key = ZEX_MGY_republican_agitation_state_manephis_text
+	}
+	text = {
+		trigger = {
+			has_country_flag = zex_mgy_unrest_selected_uppermaregypt
+		}
+		localization_key = ZEX_MGY_republican_agitation_state_uppermaregypt_text
+	}
+	text = {
 		localization_key = ZEX_MGY_NO_LOCALISATION
 	}
 }
@@ -644,12 +812,69 @@ defined_text = {
 	name = ZEX_MGY_GetFocusedState
 	text = {
 		trigger = {
-			has_country_flag = zex_mgy_unrest_selected_kaneigh
+			zex_mgy_is_state_pacified = yes
 		}
-		localization_key = ZEX_MGY_kaneigh_cartouche_icon
+		localization_key = "ZEX_MGY_state_pacified"
 	}
 	text = {
-		localization_key = ZEX_MGY_empty_cartouche_icon
+		trigger = {
+			zex_mgy_is_state_rebellious = yes
+		}
+		localization_key = "ZEX_MGY_state_rebellious"
+	}
+	text = {
+		trigger = {
+			OR = {
+				has_country_flag = zex_mgy_unrest_selected_sineighi
+				has_country_flag = zex_mgy_unrest_selected_delta
+				has_country_flag = zex_mgy_unrest_selected_kaneigh
+				has_country_flag = zex_mgy_unrest_selected_maneisrata
+				has_country_flag = zex_mgy_unrest_selected_manephis
+				has_country_flag = zex_mgy_unrest_selected_somnambula
+				has_country_flag = zex_mgy_unrest_selected_easterndesert
+				has_country_flag = zex_mgy_unrest_selected_uppermaregypt
+				has_country_flag = zex_mgy_unrest_selected_zush
+			}
+		}
+		localization_key = "ZEX_MGY_state_agitated"
+	}
+	text = {
+		localization_key = "ZEX_MGY_Empty_Cartouche"
+	}
+}
+
+defined_text = {
+	name = ZEX_MGY_GetFocusedState_text
+	text = {
+		trigger = {
+			zex_mgy_is_state_pacified = yes
+		}
+		localization_key = "ZEX_MGY_state_pacified_text"
+	}
+	text = {
+		trigger = {
+			zex_mgy_is_state_rebellious = yes
+		}
+		localization_key = "ZEX_MGY_state_rebellious_text"
+	}
+	text = {
+		trigger = {
+			OR = {
+				has_country_flag = zex_mgy_unrest_selected_sineighi
+				has_country_flag = zex_mgy_unrest_selected_delta
+				has_country_flag = zex_mgy_unrest_selected_kaneigh
+				has_country_flag = zex_mgy_unrest_selected_maneisrata
+				has_country_flag = zex_mgy_unrest_selected_manephis
+				has_country_flag = zex_mgy_unrest_selected_somnambula
+				has_country_flag = zex_mgy_unrest_selected_easterndesert
+				has_country_flag = zex_mgy_unrest_selected_uppermaregypt
+				has_country_flag = zex_mgy_unrest_selected_zush
+			}
+		}
+		localization_key = "ZEX_MGY_state_agitated_text"
+	}
+	text = {
+		localization_key = ZEX_MGY_NO_LOCALISATION
 	}
 }
 
@@ -1109,5 +1334,328 @@ defined_text = {
 	}
 	text = {
 		localization_key = ZEX_MGY_Tooltip_No_Check
+	}
+}
+
+# Live loc to display how many provinces are currently rebellious
+defined_text = {
+	name = ZEX_MGY_GET_NUM_REBELLIOUS_STATES
+	text = {
+		trigger = {
+			count_triggers = {
+				amount = 9
+				check_variable = {
+					ZEX_MGY_VAR_Sineighi_Alignment > ZEX_MGY_LEGITIMACY
+				}
+				check_variable = {
+					ZEX_MGY_VAR_Delta_Alignment > ZEX_MGY_LEGITIMACY
+				}
+				check_variable = {
+					ZEX_MGY_VAR_Kaneigh_Alignment > ZEX_MGY_LEGITIMACY
+				}
+				check_variable = {
+					ZEX_MGY_VAR_Maneisrata_Alignment > ZEX_MGY_LEGITIMACY
+				}
+				check_variable = {
+					ZEX_MGY_VAR_Manephis_Alignment > ZEX_MGY_LEGITIMACY
+				}
+				check_variable = {
+					ZEX_MGY_VAR_Somnambula_Alignment > ZEX_MGY_LEGITIMACY
+				}
+				check_variable = {
+					ZEX_MGY_VAR_Eastdesert_Alignment > ZEX_MGY_LEGITIMACY
+				}
+				check_variable = {
+					ZEX_MGY_VAR_UpperMaregypt_Alignment > ZEX_MGY_LEGITIMACY
+				}
+				check_variable = {
+					ZEX_MGY_VAR_Zush_Alignment > ZEX_MGY_LEGITIMACY
+				}	
+			}
+		}
+		localization_key = "9"
+	}
+	text = {
+		trigger = {
+			count_triggers = {
+				amount = 8
+				check_variable = {
+					ZEX_MGY_VAR_Sineighi_Alignment > ZEX_MGY_LEGITIMACY
+				}
+				check_variable = {
+					ZEX_MGY_VAR_Delta_Alignment > ZEX_MGY_LEGITIMACY
+				}
+				check_variable = {
+					ZEX_MGY_VAR_Kaneigh_Alignment > ZEX_MGY_LEGITIMACY
+				}
+				check_variable = {
+					ZEX_MGY_VAR_Maneisrata_Alignment > ZEX_MGY_LEGITIMACY
+				}
+				check_variable = {
+					ZEX_MGY_VAR_Manephis_Alignment > ZEX_MGY_LEGITIMACY
+				}
+				check_variable = {
+					ZEX_MGY_VAR_Somnambula_Alignment > ZEX_MGY_LEGITIMACY
+				}
+				check_variable = {
+					ZEX_MGY_VAR_Eastdesert_Alignment > ZEX_MGY_LEGITIMACY
+				}
+				check_variable = {
+					ZEX_MGY_VAR_UpperMaregypt_Alignment > ZEX_MGY_LEGITIMACY
+				}
+				check_variable = {
+					ZEX_MGY_VAR_Zush_Alignment > ZEX_MGY_LEGITIMACY
+				}	
+			}
+		}
+		localization_key = "8"
+	}
+	text = {
+		trigger = {
+			count_triggers = {
+				amount = 7
+				check_variable = {
+					ZEX_MGY_VAR_Sineighi_Alignment > ZEX_MGY_LEGITIMACY
+				}
+				check_variable = {
+					ZEX_MGY_VAR_Delta_Alignment > ZEX_MGY_LEGITIMACY
+				}
+				check_variable = {
+					ZEX_MGY_VAR_Kaneigh_Alignment > ZEX_MGY_LEGITIMACY
+				}
+				check_variable = {
+					ZEX_MGY_VAR_Maneisrata_Alignment > ZEX_MGY_LEGITIMACY
+				}
+				check_variable = {
+					ZEX_MGY_VAR_Manephis_Alignment > ZEX_MGY_LEGITIMACY
+				}
+				check_variable = {
+					ZEX_MGY_VAR_Somnambula_Alignment > ZEX_MGY_LEGITIMACY
+				}
+				check_variable = {
+					ZEX_MGY_VAR_Eastdesert_Alignment > ZEX_MGY_LEGITIMACY
+				}
+				check_variable = {
+					ZEX_MGY_VAR_UpperMaregypt_Alignment > ZEX_MGY_LEGITIMACY
+				}
+				check_variable = {
+					ZEX_MGY_VAR_Zush_Alignment > ZEX_MGY_LEGITIMACY
+				}	
+			}
+		}
+		localization_key = "7"
+	}
+	text = {
+		trigger = {
+			count_triggers = {
+				amount = 6
+				check_variable = {
+					ZEX_MGY_VAR_Sineighi_Alignment > ZEX_MGY_LEGITIMACY
+				}
+				check_variable = {
+					ZEX_MGY_VAR_Delta_Alignment > ZEX_MGY_LEGITIMACY
+				}
+				check_variable = {
+					ZEX_MGY_VAR_Kaneigh_Alignment > ZEX_MGY_LEGITIMACY
+				}
+				check_variable = {
+					ZEX_MGY_VAR_Maneisrata_Alignment > ZEX_MGY_LEGITIMACY
+				}
+				check_variable = {
+					ZEX_MGY_VAR_Manephis_Alignment > ZEX_MGY_LEGITIMACY
+				}
+				check_variable = {
+					ZEX_MGY_VAR_Somnambula_Alignment > ZEX_MGY_LEGITIMACY
+				}
+				check_variable = {
+					ZEX_MGY_VAR_Eastdesert_Alignment > ZEX_MGY_LEGITIMACY
+				}
+				check_variable = {
+					ZEX_MGY_VAR_UpperMaregypt_Alignment > ZEX_MGY_LEGITIMACY
+				}
+				check_variable = {
+					ZEX_MGY_VAR_Zush_Alignment > ZEX_MGY_LEGITIMACY
+				}	
+			}
+		}
+		localization_key = "6"
+	}
+	text = {
+		trigger = {
+			count_triggers = {
+				amount = 5
+				check_variable = {
+					ZEX_MGY_VAR_Sineighi_Alignment > ZEX_MGY_LEGITIMACY
+				}
+				check_variable = {
+					ZEX_MGY_VAR_Delta_Alignment > ZEX_MGY_LEGITIMACY
+				}
+				check_variable = {
+					ZEX_MGY_VAR_Kaneigh_Alignment > ZEX_MGY_LEGITIMACY
+				}
+				check_variable = {
+					ZEX_MGY_VAR_Maneisrata_Alignment > ZEX_MGY_LEGITIMACY
+				}
+				check_variable = {
+					ZEX_MGY_VAR_Manephis_Alignment > ZEX_MGY_LEGITIMACY
+				}
+				check_variable = {
+					ZEX_MGY_VAR_Somnambula_Alignment > ZEX_MGY_LEGITIMACY
+				}
+				check_variable = {
+					ZEX_MGY_VAR_Eastdesert_Alignment > ZEX_MGY_LEGITIMACY
+				}
+				check_variable = {
+					ZEX_MGY_VAR_UpperMaregypt_Alignment > ZEX_MGY_LEGITIMACY
+				}
+				check_variable = {
+					ZEX_MGY_VAR_Zush_Alignment > ZEX_MGY_LEGITIMACY
+				}	
+			}
+		}
+		localization_key = "5"
+	}
+	text = {
+		trigger = {
+			count_triggers = {
+				amount = 4
+				check_variable = {
+					ZEX_MGY_VAR_Sineighi_Alignment > ZEX_MGY_LEGITIMACY
+				}
+				check_variable = {
+					ZEX_MGY_VAR_Delta_Alignment > ZEX_MGY_LEGITIMACY
+				}
+				check_variable = {
+					ZEX_MGY_VAR_Kaneigh_Alignment > ZEX_MGY_LEGITIMACY
+				}
+				check_variable = {
+					ZEX_MGY_VAR_Maneisrata_Alignment > ZEX_MGY_LEGITIMACY
+				}
+				check_variable = {
+					ZEX_MGY_VAR_Manephis_Alignment > ZEX_MGY_LEGITIMACY
+				}
+				check_variable = {
+					ZEX_MGY_VAR_Somnambula_Alignment > ZEX_MGY_LEGITIMACY
+				}
+				check_variable = {
+					ZEX_MGY_VAR_Eastdesert_Alignment > ZEX_MGY_LEGITIMACY
+				}
+				check_variable = {
+					ZEX_MGY_VAR_UpperMaregypt_Alignment > ZEX_MGY_LEGITIMACY
+				}
+				check_variable = {
+					ZEX_MGY_VAR_Zush_Alignment > ZEX_MGY_LEGITIMACY
+				}	
+			}
+		}
+		localization_key = "4"
+	}
+	text = {
+		trigger = {
+			count_triggers = {
+				amount = 3
+				check_variable = {
+					ZEX_MGY_VAR_Sineighi_Alignment > ZEX_MGY_LEGITIMACY
+				}
+				check_variable = {
+					ZEX_MGY_VAR_Delta_Alignment > ZEX_MGY_LEGITIMACY
+				}
+				check_variable = {
+					ZEX_MGY_VAR_Kaneigh_Alignment > ZEX_MGY_LEGITIMACY
+				}
+				check_variable = {
+					ZEX_MGY_VAR_Maneisrata_Alignment > ZEX_MGY_LEGITIMACY
+				}
+				check_variable = {
+					ZEX_MGY_VAR_Manephis_Alignment > ZEX_MGY_LEGITIMACY
+				}
+				check_variable = {
+					ZEX_MGY_VAR_Somnambula_Alignment > ZEX_MGY_LEGITIMACY
+				}
+				check_variable = {
+					ZEX_MGY_VAR_Eastdesert_Alignment > ZEX_MGY_LEGITIMACY
+				}
+				check_variable = {
+					ZEX_MGY_VAR_UpperMaregypt_Alignment > ZEX_MGY_LEGITIMACY
+				}
+				check_variable = {
+					ZEX_MGY_VAR_Zush_Alignment > ZEX_MGY_LEGITIMACY
+				}	
+			}
+		}
+		localization_key = "3"
+	}
+	text = {
+		trigger = {
+			count_triggers = {
+				amount = 2
+				check_variable = {
+					ZEX_MGY_VAR_Sineighi_Alignment > ZEX_MGY_LEGITIMACY
+				}
+				check_variable = {
+					ZEX_MGY_VAR_Delta_Alignment > ZEX_MGY_LEGITIMACY
+				}
+				check_variable = {
+					ZEX_MGY_VAR_Kaneigh_Alignment > ZEX_MGY_LEGITIMACY
+				}
+				check_variable = {
+					ZEX_MGY_VAR_Maneisrata_Alignment > ZEX_MGY_LEGITIMACY
+				}
+				check_variable = {
+					ZEX_MGY_VAR_Manephis_Alignment > ZEX_MGY_LEGITIMACY
+				}
+				check_variable = {
+					ZEX_MGY_VAR_Somnambula_Alignment > ZEX_MGY_LEGITIMACY
+				}
+				check_variable = {
+					ZEX_MGY_VAR_Eastdesert_Alignment > ZEX_MGY_LEGITIMACY
+				}
+				check_variable = {
+					ZEX_MGY_VAR_UpperMaregypt_Alignment > ZEX_MGY_LEGITIMACY
+				}
+				check_variable = {
+					ZEX_MGY_VAR_Zush_Alignment > ZEX_MGY_LEGITIMACY
+				}	
+			}
+		}
+		localization_key = "2"
+	}
+	text = {
+		trigger = {
+			count_triggers = {
+				amount = 1
+				check_variable = {
+					ZEX_MGY_VAR_Sineighi_Alignment > ZEX_MGY_LEGITIMACY
+				}
+				check_variable = {
+					ZEX_MGY_VAR_Delta_Alignment > ZEX_MGY_LEGITIMACY
+				}
+				check_variable = {
+					ZEX_MGY_VAR_Kaneigh_Alignment > ZEX_MGY_LEGITIMACY
+				}
+				check_variable = {
+					ZEX_MGY_VAR_Maneisrata_Alignment > ZEX_MGY_LEGITIMACY
+				}
+				check_variable = {
+					ZEX_MGY_VAR_Manephis_Alignment > ZEX_MGY_LEGITIMACY
+				}
+				check_variable = {
+					ZEX_MGY_VAR_Somnambula_Alignment > ZEX_MGY_LEGITIMACY
+				}
+				check_variable = {
+					ZEX_MGY_VAR_Eastdesert_Alignment > ZEX_MGY_LEGITIMACY
+				}
+				check_variable = {
+					ZEX_MGY_VAR_UpperMaregypt_Alignment > ZEX_MGY_LEGITIMACY
+				}
+				check_variable = {
+					ZEX_MGY_VAR_Zush_Alignment > ZEX_MGY_LEGITIMACY
+				}	
+			}
+		}
+		localization_key = "1"
+	}
+	text = {
+		localization_key = "0"
 	}
 }

@@ -55,14 +55,14 @@
 
  #Republican agitation GUI
 
- ZEX_MGY_Rebellion_Help_tt:0 "The £ZEX_civilwartrigger  §Oprovincial unrest§! mechanic represents the inner turmoil currently ravaging our nation.\n\nAt a country-wide level the mechanic comprises of two variables: the §Yaverage unrest§! and §Ylegitimacy§!. The first affects both our §Ypolitical power gain§! and our §Ystability§!, whilst the second has no effect. It is of extreme importance that the §Yaverage unrest§! does not exceed our §Ylegitimacy§!. Shall the unrest grow out of control, it will trigger a §tcivil war§!. Going to §Ywar§! will also initiate a revolt. At the state level, the different provinces' §Ylocal unrest§! will affect local §8compliance growth§!, §8construction speed§! and §8recruitable population§!.\n\nEvery 'turn' (or every §Y[?ROOT.ZEX_MGY_UNREST_EFFECTS_INTERVALLS]§! days) a certain ammount of provinces will see their unrest increase. It is thus paramount to not only keep track of the increasing unrest throughout the different provinces, but also to be proactive by choosing to intervene in key states and completing certain focuses in time."
+ ZEX_MGY_Rebellion_Help_tt:0 "The £ZEX_civilwartrigger  §Oprovincial unrest§! mechanic represents the inner turmoil currently ravaging our nation.\n\nAt a country-wide level the mechanic comprises of two variables: the §Yaverage unrest§! and §Ylegitimacy§!. The first affects both our §Ypolitical power gain§! and our §Ystability§!, whilst the second has no effect. It is of extreme importance that the §Yaverage unrest§! does not exceed our §Ylegitimacy§!. Shall the unrest grow out of control, with §Y5§! or more provinces breaking out in §topen rebellion§!, it will trigger a §tcivil war§!. Going to §Ywar§! will also initiate a revolt. At the state level, the different provinces' §Ylocal unrest§! will affect local §8compliance growth§!, §8construction speed§! and §8recruitable population§!.\n\nEvery 'turn' (or every §Y[?ROOT.ZEX_MGY_UNREST_EFFECTS_INTERVALLS]§! days) a certain ammount of provinces will see their unrest increase. It is thus paramount to not only keep track of the increasing unrest throughout the different provinces, but also to be proactive by choosing to intervene in key states and completing certain focuses in time."
 
  ZEX_MGY_internal_unrest_title_text:0 "Provincial Unrest"
  ZEX_MGY_AVERAGE_UNREST_BOX_VAL:0 "§Y[?ROOT.ZEX_MGY_AVERAGE_UNREST|1]§!"
  ZEX_MGY_LEGITIMACY_BOX_VAL:0 "§Y[?ROOT.ZEX_MGY_LEGITIMACY|2]§!"
 
- ZEX_MGY_AVERAGE_UNREST_EFFECT_TOOLTIP:0 "Current Effects:\n\nStability: §t[?ROOT.ZEX_MGY_AVERAGE_UNREST_NEGATIVE|%2]§!\nPolitical Power Gain: §t[?ROOT.ZEX_MGY_AVERAGE_POLITICAL_IMPACT_UNREST|%2]§!"
- ZEX_MGY_REBELLION_LEGITIMACY_EFFECT_TOOLTIP:0 "Daily Legitimacy Gain: [?ROOT.ZEX_MGY_LEGITIMACY_INCREASE_DAILY|=+]"
+ ZEX_MGY_AVERAGE_UNREST_EFFECT_TOOLTIP:0 "§YAverage Political Unrest:§!\n\nCurrent Effects:\n\nStability: §t[?ROOT.ZEX_MGY_AVERAGE_UNREST_NEGATIVE|%2]§!\nPolitical Power Gain: §t[?ROOT.ZEX_MGY_AVERAGE_POLITICAL_IMPACT_UNREST|%2]§!"
+ ZEX_MGY_REBELLION_LEGITIMACY_EFFECT_TOOLTIP:0 "§YLegitimacy:§!\n\nDaily Legitimacy Gain: [?ROOT.ZEX_MGY_LEGITIMACY_INCREASE_DAILY|=+]"
 
  ZEX_MGY_AVERAGE_UNREST_TOOLTIP:0 "Our current £local_unrest  §Yaverage unrest§! represents the mean of all of our provinces' local unrest. At the national level, it will directly affect our country's £stability_texticon  §Ystability§! and £pol_power  §Ypolitical power§! gain."
  ZEX_MGY_REBELLION_LEGITIMACY_TOOLTIP:0 "Our current £ZEX_legitimacy  §Ylegitimacy§! represents how well our current monarchs holds up in the eyes of our citizens. Unlike the £local_unrest  §Yaverage unrest§! value, it has no effect on our country."
@@ -100,7 +100,7 @@
 
  ZEX_MGY_BUTTON_PROPAGANDA_TOOLTIP:0 "§YPromote Royalist Propaganda§!\n\n§YPrerequisites:§!\n[ZEX_MGY_GET_ALREADY_TOOK_TWO_ACTIONS]  Not: has already taken §Y[?ZEX_MGY_MAX_Actions_Taken]§! actions this round\n[ZEX_MGY_GET_ALREADY_TOOK_ACTION_ON_STATE]  Not: has already intervened in [ZEX_MGY_GET_FOCUSED_STATE_NAME] this round\n\n§YEffects:§!\n§LRegain §!§G2§!§L £ZEX_legitimacy   legitimacy at the end of this round§!\n\nIt costs £pol_power  §t[?ZEX_MGY_UNREST_POLITICALPOWER_COUNTER_COST]§! to take this action"
  ZEX_MGY_BUTTON_ARRESTS_TOOLTIP:0 "§YArrest Agitators§!\n\n§YPrerequisites:§!\n[ZEX_MGY_GET_ALREADY_TOOK_TWO_ACTIONS]  Not: has already taken §Y[?ZEX_MGY_MAX_Actions_Taken]§! actions this round\n[ZEX_MGY_GET_ALREADY_TOOK_ACTION_ON_STATE]  Not: has already intervened in [ZEX_MGY_GET_FOCUSED_STATE_NAME] this round\n\n§YEffects:§!\n§LDecreases £local_unrest local unrest in §![ZEX_MGY_GET_FOCUSED_STATE_NAME]§L by §!§G[?ZEX_MGY_UNREST_EFFECTS_IMPACT]§!\n\nIt costs £ZEX_legitimacy  §t[?ZEX_MGY_UNREST_LEGITIMACY_COUNTER_COST]§! to take this action"
- ZEX_MGY_BUTTON_POLICE_TOOLTIP:0 "§YDeploy the Medjay§!\n\n§YPrerequisites:§!\n[ZEX_MGY_GET_IF_STATE_PACIFIED]  The province is not already pacified\n[ZEX_MGY_GET_ALREADY_TOOK_TWO_ACTIONS]  Not: has already taken §Y[?ZEX_MGY_MAX_Actions_Taken]§! actions this round\n[ZEX_MGY_GET_ALREADY_TOOK_ACTION_ON_STATE]  Not: has already intervened in [ZEX_MGY_GET_FOCUSED_STATE_NAME] this round\n\n§YEffects:§!\n§LUnrest will not increase in §![ZEX_MGY_GET_FOCUSED_STATE_NAME]§L this round§!\n\nIt costs £pol_power  §t[?ZEX_MGY_UNREST_POLITICALPOWER_COUNTER_COST]§! to take this action"
+ ZEX_MGY_BUTTON_POLICE_TOOLTIP:0 "§YDeploy the Medjay§!\n\n§YPrerequisites:§!\n[ZEX_MGY_GET_IF_STATE_PACIFIED]  NOT: The province is already pacified\n[ZEX_MGY_GET_ALREADY_TOOK_TWO_ACTIONS]  Not: has already taken §Y[?ZEX_MGY_MAX_Actions_Taken]§! actions this round\n[ZEX_MGY_GET_ALREADY_TOOK_ACTION_ON_STATE]  Not: has already intervened in [ZEX_MGY_GET_FOCUSED_STATE_NAME] this round\n\n§YEffects:§!\n§LUnrest will not increase in §![ZEX_MGY_GET_FOCUSED_STATE_NAME]§L this round§!\n\nIt costs £pol_power  §t[?ZEX_MGY_UNREST_POLITICALPOWER_COUNTER_COST]§! to take this action"
  ZEX_MGY_republican_agitation_reintegrate_state_button_empty:0 ""
  ZEX_MGY_republican_agitation_reintegrate_state_button_completed:0 "§GPacified§!"
  ZEX_MGY_republican_agitation_reintegrate_state_button:0 "Pacify [ZEX_MGY_GET_FOCUSED_STATE_NAME]"
@@ -182,14 +182,15 @@
  ZEX_MGY_Turn_Timer_Label:0 "Days Left"
  ZEX_MGY_Turn_Timer_Days:0 "[?ZEX_MGY_DAY_REMAINING_IN_TURN]"
 
- ZEX_MGY_Turn_Timer_Days_TOOLTIP:0 "Every §Y[?ZEX_MGY_UNREST_EFFECTS_INTERVALLS]§! days, the round will §tend§! and up to §Y[?ZEX_MGY_max_provinces_targeted]§! provinces will see their £local_unrest §Ylocal unrest§! rise by §t[?ZEX_MGY_UNREST_INCREASE_AT_END_TURN]§!."
+ ZEX_MGY_Turn_Timer_Days_TOOLTIP:0 "§YCurrent turn:§!\n\nThere are currently §Y[?ZEX_MGY_DAY_REMAINING_IN_TURN]§! days left in the round. At the moment, there are §Y[ZEX_MGY_GET_NUM_REBELLIOUS_STATES]§! openly rebellious states."
+ ZEX_MGY_Turn_Timer_Days_SLOW_TOOLTIP:0 "Every §Y[?ZEX_MGY_UNREST_EFFECTS_INTERVALLS]§! days, the round will §Yend§! and up to §Y[?ZEX_MGY_max_provinces_targeted]§! provinces will see their £local_unrest §Ylocal unrest§! rise by §Y[?ZEX_MGY_UNREST_INCREASE_AT_END_TURN]§!. Shall at least §Y5§! provinces break out in oipen rebellion, we will enter a §tcivil war§!."
 
- ZEX_MGY_Turn_Timer_1:0 "ZEX_MGY_Turn_Timer_1"
- ZEX_MGY_Turn_Timer_2:0 "ZEX_MGY_Turn_Timer_2"
- ZEX_MGY_Turn_Timer_3:0 "ZEX_MGY_Turn_Timer_3"
- ZEX_MGY_Turn_Timer_4:0 "ZEX_MGY_Turn_Timer_4"
- ZEX_MGY_Turn_Timer_5:0 "ZEX_MGY_Turn_Timer_5"
- ZEX_MGY_Turn_Timer_6:0 "ZEX_MGY_Turn_Timer_6"
+ ZEX_MGY_republican_agitation_state_icon_tooltip:0 "[ZEX_MGY_GetFocusedState_text]"
+ ZEX_MGY_republican_agitation_state_icon_tooltip_delayed:0 "States whose £local_unrest  §Ylocal unrest§! is higher than the £ZEX_legitimacy  §Ylegitimacy§! are considered in open rebellion. Proactive measures will need to be taken to avoid this, as if §Y5§! provinces break out in open rebellion, a §tcivil war§! will fire!"
+
+ ZEX_MGY_state_pacified_text:0 "§Y[ZEX_MGY_GET_FOCUSED_STATE_NAME]§! is §GPacified§!"
+ ZEX_MGY_state_agitated_text:0 "§Y[ZEX_MGY_GET_FOCUSED_STATE_NAME]§! is experiencing §YUnrest§!"
+ ZEX_MGY_state_rebellious_text:0 "§Y[ZEX_MGY_GET_FOCUSED_STATE_NAME]§! is in §tOpen Rebellion§!"
 
  ZEX_MGY_Button_Hidden:0 "ZEX_MGY_Unrest_Button_Empty"
  ZEX_MGY_Political_Unrest_Propaganda_Button:0 "ZEX_MGY_Unrest_Button_Propaganda"
@@ -198,8 +199,6 @@
  ZEX_MGY_Political_Button_Background:0 "ZEX_MGY_Unrest_Button_Background"
 
  ZEX_MGY_NO_LOCALISATION:0 ""
- ZEX_MGY_empty_cartouche_icon:0 "ZEX_MGY_Empty_Cartouche"
- ZEX_MGY_kaneigh_cartouche_icon:0 "ZEX_MGY_Cartouche_Kaneigh"
  
  ZEX_MGY_republican_agitation_state_UNSELECTED:0 "[ZEX_MGY_GetIsNoStateSelected]"
  ZEX_MGY_state_empty:0 "Click a Province to Bring it Into Focus"
@@ -207,14 +206,31 @@
  ZEX_MGY_republican_agitation_state_text:0 "[ZEX_MGY_GetFocusedLore]"
 
  ZEX_MGY_republican_agitation_state_kaneigh_title:0 "Kaneigh"
+ ZEX_MGY_republican_agitation_state_sineighi_title:0 "Sineighi"
+ ZEX_MGY_republican_agitation_state_maneisrata_title:0 "Maneisrata"
+ ZEX_MGY_republican_agitation_state_delta_title:0 "The Delta"
+ ZEX_MGY_republican_agitation_state_somnambula_title:0 "Somnambula"
+ ZEX_MGY_republican_agitation_state_easterndesert_title:0 "The Eastern Desert"
+ ZEX_MGY_republican_agitation_state_zush_title:0 "Zush"
+ ZEX_MGY_republican_agitation_state_manephis_title:0 "Manephis"
+ ZEX_MGY_republican_agitation_state_uppermaregypt_title:0 "Upper Maregypt"
+
  ZEX_MGY_republican_agitation_kaneigh_text:0 "§YKaneigh§! is a sparsely populated, pastoral province nestled between the §YSouthwestern Desert§!, §YAnseruk§!, §YAbyssinia§! and §YKlugetown§!. §tSeperatists§! currently run amok through it - though any rebellion remains as of now quelled."
+ ZEX_MGY_republican_agitation_state_sineighi_text:0 ""
+ ZEX_MGY_republican_agitation_state_maneisrata_text:0 ""
+ ZEX_MGY_republican_agitation_state_delta_text:0 ""
+ ZEX_MGY_republican_agitation_state_somnambula_text:0 ""
+ ZEX_MGY_republican_agitation_state_easterndesert_text:0 ""
+ ZEX_MGY_republican_agitation_state_zush_text:0 ""
+ ZEX_MGY_republican_agitation_state_manephis_text:0 ""
+ ZEX_MGY_republican_agitation_state_uppermaregypt_text:0 ""
 
  #Republican agitation decisions
  ZEX_Activate_Agitation_tt:0 "Enables the §YRepublican Agitation§! mechanic."
  ZEX_Deactivate_Agitation_tt:0 "Disables the §YRepublican Agitation§! mechanic."
 
  ZEX_MAREGYPT_REPUBLICAN_AGITATION_CATEGORY:0 "Political Unrest"
- ZEX_MAREGYPT_REPUBLICAN_AGITATION_CATEGORY_desc:0 "Our country is currently experiencing profound unrest. §YPro-republican militias§!, §Yreactionaries§!, bandits and even our §Yown undisciplined soldiers§! have taken up arms against our kingdom - leading to windespread chaos and §Rpolitical violence§!. Some even say that Harmony has failed the Neighle and its people...has friendship really been withered away and beaten by the implacable sun?\n\nWe cannot let the unrest consume us, lest our country burst into flames. Should the £local_unrest §Yaverage unrest§! exceed our £ZEX_legitimacy  §Ylegitimacy§! we will be plunged into a §tcivil war§!."
+ ZEX_MAREGYPT_REPUBLICAN_AGITATION_CATEGORY_desc:0 "Our country is currently experiencing profound unrest. §YPro-republican militias§!, §Yreactionaries§!, bandits and even our §Yown undisciplined soldiers§! have taken up arms against our kingdom - leading to windespread chaos and §Rpolitical violence§!. Some even say that Harmony has failed the Neighle and its people...has friendship really been withered away and beaten by the implacable sun?\n\nWe cannot let the unrest consume us, lest our country burst into flames. Should the £local_unrest §Ylocal unrest§! of our provinces exceed our £ZEX_legitimacy  §Ylegitimacy§! we risk being plunged into a §tcivil war§!."
 
  #Protected Variant of the Provinces for mini game
  ZEX_MGY_NOUNREST_SINEIGHI_Protected:0 "ZEX_MGY_NOUNREST_SINEIGHI_Protected"

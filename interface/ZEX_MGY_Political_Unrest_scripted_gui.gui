@@ -183,6 +183,7 @@ guiTypes = {
 				maxHeight = 32
 				maxwidth = 78
 				pdx_tooltip = ZEX_MGY_Turn_Timer_Days_TOOLTIP
+				pdx_tooltip_delayed = ZEX_MGY_Turn_Timer_Days_SLOW_TOOLTIP
 			}
 
 			instantTextBoxType = {
@@ -194,6 +195,7 @@ guiTypes = {
 				maxHeight = 32
 				maxwidth = 43
 				pdx_tooltip = ZEX_MGY_Turn_Timer_Days_TOOLTIP
+				pdx_tooltip_delayed = ZEX_MGY_Turn_Timer_Days_SLOW_TOOLTIP
 			}
 
 			#Unrest and Legitimacvy
@@ -285,6 +287,8 @@ guiTypes = {
 				name = "ZEX_MGY_republican_agitation_state_icon"
 				position = { x = 10 y = 10 }
 				spriteType = "ZEX_MGY_Empty_Cartouche"
+				pdx_tooltip = "ZEX_MGY_republican_agitation_state_icon_tooltip"
+				pdx_tooltip_delayed = "ZEX_MGY_republican_agitation_state_icon_tooltip_delayed"
 			}
 
 			instantTextBoxType = {
