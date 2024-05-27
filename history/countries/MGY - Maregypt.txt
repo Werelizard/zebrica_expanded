@@ -97,7 +97,7 @@ add_ideas = {
 }
 
 set_convoys = 70
-set_stability = 0.8
+set_stability = 0.7
 set_war_support = 0.25
 if = {
 	limit = {
@@ -263,7 +263,7 @@ ZEX_MGY_Enable_Vizier_SETUP = yes
 create_country_leader = {
 	name = ZEX_MGY_king_khefer
 	picture = GFX_leader_ZEX_Khefer
-	ideology = conservatism
+	ideology = harmonic_pharaonism
 		expire = "1111.1.1.1"
 		id = -1
 		traits = {
@@ -278,7 +278,7 @@ set_country_leader_description = {
 create_country_leader = {
 	name = ZEX_MGY_king_khefer
 	picture = GFX_leader_ZEX_Khefer
-	ideology = despotism
+	ideology = traditional_pharaonism
 		expire = "1111.1.1.1"
 		id = -1
 		traits = {
@@ -290,6 +290,19 @@ set_country_leader_description = {
 	ideology = neutrality
 	desc = ZEX_MGY_KHEFER_DESC
 }
+
+create_country_leader = {
+	name = ZEX_MGY_far_hook
+	picture = GFX_leader_ZEX_MGY_FarHook
+	ideology = stratocracy
+}
+
+create_country_leader = {
+	name = ZEX_MGY_council_communism
+	picture = GFX_leader_ZEX_MGY_Communism_Council
+	ideology = primitive_communism 
+}
+
 set_popularities = {
 	democratic = 67
 	fascism = 3

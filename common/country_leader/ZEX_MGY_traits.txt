@@ -22,7 +22,7 @@ leader_traits = {
 	}
 
 	ZEX_MGY_Architet = { #Imanetep
-		cic_construction_boost_factor = 0.15
+		production_speed_industrial_complex_factor = 0.15
 		production_speed_infrastructure_factor = 0.1
 	}
 

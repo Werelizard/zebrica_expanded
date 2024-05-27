@@ -9,9 +9,9 @@ ZEX_activate_political_unrest = {
 		set_variable = {
 			ZEX_MGY_LOWER_UNREST_GLOBAL_COST = 15
 		}
-		set_variable = {
-			ZEX_MGY_LEGITIMACY = 55
-		}
+		# set_variable = {
+		# 	ZEX_MGY_LEGITIMACY = 55
+		# }
 		set_variable = {
 			ZEX_MGY_UNREST_EFFECTS_INTERVALLS = 21
 		}
@@ -39,9 +39,9 @@ ZEX_activate_political_unrest = {
 		set_variable = {
 			ZEX_MGY_UNREST_LEGITIMACY_REGAIN = 0
 		}
-		set_variable = {
-			ZEX_MGY_LEGITIMACY_INCREASE_DAILY = 0.125
-		}
+		# set_variable = {
+		# 	ZEX_MGY_LEGITIMACY_INCREASE_DAILY = 0.125
+		# }
 		set_variable = {
 			ZEX_MGY_UNREST_INCREASE_AT_END_TURN = 6
 		}
@@ -80,40 +80,40 @@ ZEX_deactivate_republican_agitation = {
 # Flow Control
 ZEX_MGY_SET_BASE_ALIGNMENTS = {
 	set_variable = {
-		var = ZEX_MGY_VAR_Sineighi_Alignment
+		var = ZEX_MGY_VAR_Sineighi_Unrest
 		value = 52
 	}
 	set_variable = {
-		var = ZEX_MGY_VAR_Kaneigh_Alignment
+		var = ZEX_MGY_VAR_Kaneigh_Unrest
 		value = 42
 	}
 	set_variable = {
-		var = ZEX_MGY_VAR_Maneisrata_Alignment
-		value = 30
+		var = ZEX_MGY_VAR_Maneisrata_Unrest
+		value = 35
 	}
 	set_variable = {
-		var = ZEX_MGY_VAR_UpperMaregypt_Alignment
+		var = ZEX_MGY_VAR_UpperMaregypt_Unrest
 		value = 10
 	}
 	set_variable = {
-		var = ZEX_MGY_VAR_Delta_Alignment
+		var = ZEX_MGY_VAR_Delta_Unrest
 		value = 3
 	}
 	set_variable = {
-		var = ZEX_MGY_VAR_Manephis_Alignment
+		var = ZEX_MGY_VAR_Manephis_Unrest
 		value = 11
 	}
 	set_variable = {
-		var = ZEX_MGY_VAR_Somnambula_Alignment
+		var = ZEX_MGY_VAR_Somnambula_Unrest
 		value = 1
 	}
 	set_variable = {
-		var = ZEX_MGY_VAR_Eastdesert_Alignment
+		var = ZEX_MGY_VAR_Eastdesert_Unrest
 		value = 2
 	}
 	set_variable = {
-		var = ZEX_MGY_VAR_Zush_Alignment
-		value = 12
+		var = ZEX_MGY_VAR_Zush_Unrest
+		value = 21
 	}
 	ZEX_MGY_GET_AVERAGE_UNREST = yes
 	ZEX_MGY_UPDATE_LOCAL_UNREST_IMPACT = yes
@@ -122,71 +122,71 @@ ZEX_MGY_SET_BASE_ALIGNMENTS = {
 ZEX_MGY_CALCULATE_PERCENTILE_VALUES = {
 	# NEcessary to compare against other values such as stability
 	set_variable = {
-		var = ZEX_MGY_VAR_Sineighi_Alignment_percentile
-		value = ZEX_MGY_VAR_Sineighi_Alignment
+		var = ZEX_MGY_VAR_Sineighi_Unrest_percentile
+		value = ZEX_MGY_VAR_Sineighi_Unrest
 	}
 	set_variable = {
-		var = ZEX_MGY_VAR_Kaneigh_Alignment_percentile
-		value = ZEX_MGY_VAR_Kaneigh_Alignment
+		var = ZEX_MGY_VAR_Kaneigh_Unrest_percentile
+		value = ZEX_MGY_VAR_Kaneigh_Unrest
 	}
 	set_variable = {
-		var = ZEX_MGY_VAR_Maneisrata_Alignment_percentile
-		value = ZEX_MGY_VAR_Maneisrata_Alignment
+		var = ZEX_MGY_VAR_Maneisrata_Unrest_percentile
+		value = ZEX_MGY_VAR_Maneisrata_Unrest
 	}
 	set_variable = {
-		var = ZEX_MGY_VAR_UpperMaregypt_Alignment_percentile
-		value = ZEX_MGY_VAR_UpperMaregypt_Alignment
+		var = ZEX_MGY_VAR_UpperMaregypt_Unrest_percentile
+		value = ZEX_MGY_VAR_UpperMaregypt_Unrest
 	}
 	set_variable = {
-		var = ZEX_MGY_VAR_Delta_Alignment_percentile
-		value = ZEX_MGY_VAR_Delta_Alignment
+		var = ZEX_MGY_VAR_Delta_Unrest_percentile
+		value = ZEX_MGY_VAR_Delta_Unrest
 	}
 	set_variable = {
-		var = ZEX_MGY_VAR_Manephis_Alignment_percentile
-		value = ZEX_MGY_VAR_Manephis_Alignment
+		var = ZEX_MGY_VAR_Manephis_Unrest_percentile
+		value = ZEX_MGY_VAR_Manephis_Unrest
 	}
 	set_variable = {
-		var = ZEX_MGY_VAR_Somnambula_Alignment_percentile
-		value = ZEX_MGY_VAR_Somnambula_Alignment
+		var = ZEX_MGY_VAR_Somnambula_Unrest_percentile
+		value = ZEX_MGY_VAR_Somnambula_Unrest
 	}
 	set_variable = {
-		var = ZEX_MGY_VAR_Eastdesert_Alignment_percentile
-		value = ZEX_MGY_VAR_Eastdesert_Alignment
+		var = ZEX_MGY_VAR_Eastdesert_Unrest_percentile
+		value = ZEX_MGY_VAR_Eastdesert_Unrest
 	}
 	divide_variable = {
-		var = ZEX_MGY_VAR_Sineighi_Alignment_percentile
+		var = ZEX_MGY_VAR_Sineighi_Unrest_percentile
 		value = 100
 	}
 	divide_variable = {
-		var = ZEX_MGY_VAR_Kaneigh_Alignment_percentile
+		var = ZEX_MGY_VAR_Kaneigh_Unrest_percentile
 		value = 100
 	}
 	divide_variable = {
-		var = ZEX_MGY_VAR_Maneisrata_Alignment_percentile
+		var = ZEX_MGY_VAR_Maneisrata_Unrest_percentile
 		value = 100
 	}
 	divide_variable = {
-		var = ZEX_MGY_VAR_UpperMaregypt_Alignment_percentile
+		var = ZEX_MGY_VAR_UpperMaregypt_Unrest_percentile
 		value = 100
 	}
 	divide_variable = {
-		var = ZEX_MGY_VAR_Delta_Alignment_percentile
+		var = ZEX_MGY_VAR_Delta_Unrest_percentile
 		value = 100
 	}
 	divide_variable = {
-		var = ZEX_MGY_VAR_Manephis_Alignment_percentile
+		var = ZEX_MGY_VAR_Manephis_Unrest_percentile
 		value = 100
 	}
 	divide_variable = {
-		var = ZEX_MGY_VAR_Somnambula_Alignment_percentile
+		var = ZEX_MGY_VAR_Somnambula_Unrest_percentile
 		value = 100
 	}
 	divide_variable = {
-		var = ZEX_MGY_VAR_Eastdesert_Alignment_percentile
+		var = ZEX_MGY_VAR_Eastdesert_Unrest_percentile
 		value = 100
 	}
 	divide_variable = {
-		var = ZEX_MGY_VAR_Zush_Alignment_percentile
+		var = ZEX_MGY_VAR_Zush_Unrest_percentile
 		value = 100
 	}
 }
@@ -291,39 +291,39 @@ ZEX_MGY_GET_AVERAGE_UNREST = {
 	}
 	add_to_variable = {
 		var = ZEX_MGY_AVERAGE_UNREST
-		value = ZEX_MGY_VAR_Sineighi_Alignment
+		value = ZEX_MGY_VAR_Sineighi_Unrest
 	}
 	add_to_variable = {
 		var = ZEX_MGY_AVERAGE_UNREST
-		value = ZEX_MGY_VAR_Kaneigh_Alignment
+		value = ZEX_MGY_VAR_Kaneigh_Unrest
 	}
 	add_to_variable = {
 		var = ZEX_MGY_AVERAGE_UNREST
-		value = ZEX_MGY_VAR_Maneisrata_Alignment
+		value = ZEX_MGY_VAR_Maneisrata_Unrest
 	}
 	add_to_variable = {
 		var = ZEX_MGY_AVERAGE_UNREST
-		value = ZEX_MGY_VAR_UpperMaregypt_Alignment
+		value = ZEX_MGY_VAR_UpperMaregypt_Unrest
 	}
 	add_to_variable = {
 		var = ZEX_MGY_AVERAGE_UNREST
-		value = ZEX_MGY_VAR_Delta_Alignment
+		value = ZEX_MGY_VAR_Delta_Unrest
 	}
 	add_to_variable = {
 		var = ZEX_MGY_AVERAGE_UNREST
-		value = ZEX_MGY_VAR_Manephis_Alignment
+		value = ZEX_MGY_VAR_Manephis_Unrest
 	}
 	add_to_variable = {
 		var = ZEX_MGY_AVERAGE_UNREST
-		value = ZEX_MGY_VAR_Somnambula_Alignment
+		value = ZEX_MGY_VAR_Somnambula_Unrest
 	}
 	add_to_variable = {
 		var = ZEX_MGY_AVERAGE_UNREST
-		value = ZEX_MGY_VAR_Eastdesert_Alignment
+		value = ZEX_MGY_VAR_Eastdesert_Unrest
 	}
 	add_to_variable = {
 		var = ZEX_MGY_AVERAGE_UNREST
-		value = ZEX_MGY_VAR_Zush_Alignment
+		value = ZEX_MGY_VAR_Zush_Unrest
 	}
 	divide_variable = {
 		var = ZEX_MGY_AVERAGE_UNREST
@@ -334,75 +334,75 @@ ZEX_MGY_GET_AVERAGE_UNREST = {
 
 ZEX_MGY_UPDATE_LOCAL_UNREST_IMPACT = {
 	set_variable = {
-		var = ZEX_MGY_VAR_Sineighi_Alignment_negative
-		value = ZEX_MGY_VAR_Sineighi_Alignment
+		var = ZEX_MGY_VAR_Sineighi_Unrest_negative
+		value = ZEX_MGY_VAR_Sineighi_Unrest
 	}
 	multiply_variable = {
-		var = ZEX_MGY_VAR_Sineighi_Alignment_negative
+		var = ZEX_MGY_VAR_Sineighi_Unrest_negative
 		value = -0.005
 	}
 	set_variable = {
-		var = ZEX_MGY_VAR_Kaneigh_Alignment_negative
-		value = ZEX_MGY_VAR_Kaneigh_Alignment
+		var = ZEX_MGY_VAR_Kaneigh_Unrest_negative
+		value = ZEX_MGY_VAR_Kaneigh_Unrest
 	}
 	multiply_variable = {
-		var = ZEX_MGY_VAR_Kaneigh_Alignment_negative
+		var = ZEX_MGY_VAR_Kaneigh_Unrest_negative
 		value = -0.005
 	}
 	set_variable = {
-		var = ZEX_MGY_VAR_Maneisrata_Alignment_negative
-		value = ZEX_MGY_VAR_Maneisrata_Alignment
+		var = ZEX_MGY_VAR_Maneisrata_Unrest_negative
+		value = ZEX_MGY_VAR_Maneisrata_Unrest
 	}
 	multiply_variable = {
-		var = ZEX_MGY_VAR_Maneisrata_Alignment_negative
+		var = ZEX_MGY_VAR_Maneisrata_Unrest_negative
 		value = -0.005
 	}
 	set_variable = {
-		var = ZEX_MGY_VAR_UpperMaregypt_Alignment_negative
-		value = ZEX_MGY_VAR_UpperMaregypt_Alignment
+		var = ZEX_MGY_VAR_UpperMaregypt_Unrest_negative
+		value = ZEX_MGY_VAR_UpperMaregypt_Unrest
 	}
 	multiply_variable = {
-		var = ZEX_MGY_VAR_UpperMaregypt_Alignment_negative
+		var = ZEX_MGY_VAR_UpperMaregypt_Unrest_negative
 		value = -0.005
 	}
 	set_variable = {
-		var = ZEX_MGY_VAR_Delta_Alignment_negative
-		value = ZEX_MGY_VAR_Delta_Alignment
+		var = ZEX_MGY_VAR_Delta_Unrest_negative
+		value = ZEX_MGY_VAR_Delta_Unrest
 	}
 	multiply_variable = {
-		var = ZEX_MGY_VAR_Delta_Alignment_negative
+		var = ZEX_MGY_VAR_Delta_Unrest_negative
 		value = -0.005
 	}
 	set_variable = {
-		var = ZEX_MGY_VAR_Manephis_Alignment_negative
-		value = ZEX_MGY_VAR_Manephis_Alignment
+		var = ZEX_MGY_VAR_Manephis_Unrest_negative
+		value = ZEX_MGY_VAR_Manephis_Unrest
 	}
 	multiply_variable = {
-		var = ZEX_MGY_VAR_Manephis_Alignment_negative
+		var = ZEX_MGY_VAR_Manephis_Unrest_negative
 		value = -0.005
 	}
 	set_variable = {
-		var = ZEX_MGY_VAR_Somnambula_Alignment_negative
-		value = ZEX_MGY_VAR_Somnambula_Alignment
+		var = ZEX_MGY_VAR_Somnambula_Unrest_negative
+		value = ZEX_MGY_VAR_Somnambula_Unrest
 	}
 	multiply_variable = {
-		var = ZEX_MGY_VAR_Somnambula_Alignment_negative
+		var = ZEX_MGY_VAR_Somnambula_Unrest_negative
 		value = -0.005
 	}
 	set_variable = {
-		var = ZEX_MGY_VAR_Eastdesert_Alignment_negative
-		value = ZEX_MGY_VAR_Eastdesert_Alignment
+		var = ZEX_MGY_VAR_Eastdesert_Unrest_negative
+		value = ZEX_MGY_VAR_Eastdesert_Unrest
 	}
 	multiply_variable = {
-		var = ZEX_MGY_VAR_Eastdesert_Alignment_negative
+		var = ZEX_MGY_VAR_Eastdesert_Unrest_negative
 		value = -0.005
 	}
 	set_variable = {
-		var = ZEX_MGY_VAR_Zush_Alignment_negative
-		value = ZEX_MGY_VAR_Zush_Alignment
+		var = ZEX_MGY_VAR_Zush_Unrest_negative
+		value = ZEX_MGY_VAR_Zush_Unrest
 	}
 	multiply_variable = {
-		var = ZEX_MGY_VAR_Zush_Alignment_negative
+		var = ZEX_MGY_VAR_Zush_Unrest_negative
 		value = -0.005
 	}
 }
@@ -442,7 +442,7 @@ ZEX_MGY_Increase_Unrest = {
 			OR = {
 				AND = {
 					check_variable = {
-						ZEX_MGY_VAR_Sineighi_Alignment < 100
+						ZEX_MGY_VAR_Sineighi_Unrest < 100
 					}
 					NOT = {
 						has_country_flag = ZEX_MGY_Sineighi_protected_flag
@@ -453,7 +453,7 @@ ZEX_MGY_Increase_Unrest = {
 				}
 				AND = {
 					check_variable = {
-						ZEX_MGY_VAR_Maneisrata_Alignment < 100
+						ZEX_MGY_VAR_Maneisrata_Unrest < 100
 					}
 					NOT = {
 						has_country_flag = ZEX_MGY_Maneisrata_protected_flag
@@ -464,7 +464,7 @@ ZEX_MGY_Increase_Unrest = {
 				}
 				AND = {
 					check_variable = {
-						ZEX_MGY_VAR_Delta_Alignment < 100
+						ZEX_MGY_VAR_Delta_Unrest < 100
 					}
 					NOT = {
 						has_country_flag = ZEX_MGY_Delta_protected_flag
@@ -475,7 +475,7 @@ ZEX_MGY_Increase_Unrest = {
 				}
 				AND = {
 					check_variable = {
-						ZEX_MGY_VAR_Somnambula_Alignment < 100
+						ZEX_MGY_VAR_Somnambula_Unrest < 100
 					}
 					NOT = {
 						has_country_flag = ZEX_MGY_Somnambula_protected_flag
@@ -486,7 +486,7 @@ ZEX_MGY_Increase_Unrest = {
 				}
 				AND = {
 					check_variable = {
-						ZEX_MGY_VAR_Eastdesert_Alignment < 100
+						ZEX_MGY_VAR_Eastdesert_Unrest < 100
 					}
 					NOT = {
 						has_country_flag = ZEX_MGY_Desert_protected_flag
@@ -497,7 +497,7 @@ ZEX_MGY_Increase_Unrest = {
 				}
 				AND = {
 					check_variable = {
-						ZEX_MGY_VAR_Manephis_Alignment < 100
+						ZEX_MGY_VAR_Manephis_Unrest < 100
 					}
 					NOT = {
 						has_country_flag = ZEX_MGY_Manephis_protected_flag
@@ -508,7 +508,7 @@ ZEX_MGY_Increase_Unrest = {
 				}
 				AND = {
 					check_variable = {
-						ZEX_MGY_VAR_UpperMaregypt_Alignment < 100
+						ZEX_MGY_VAR_UpperMaregypt_Unrest < 100
 					}
 					NOT = {
 						has_country_flag = ZEX_MGY_UpperMaregypt_arrests_flag
@@ -519,7 +519,7 @@ ZEX_MGY_Increase_Unrest = {
 				}
 				AND = {
 					check_variable = {
-						ZEX_MGY_VAR_Zush_Alignment < 100
+						ZEX_MGY_VAR_Zush_Unrest < 100
 					}
 					NOT = {
 						has_country_flag = ZEX_MGY_Zush_protected_flag
@@ -530,7 +530,7 @@ ZEX_MGY_Increase_Unrest = {
 				}
 				AND = {
 					check_variable = {
-						ZEX_MGY_VAR_Kaneigh_Alignment < 100
+						ZEX_MGY_VAR_Kaneigh_Unrest < 100
 					}
 					NOT = {
 						has_country_flag = ZEX_MGY_Kaneigh_protected_flag
@@ -548,7 +548,7 @@ ZEX_MGY_Increase_Unrest = {
 					factor = 0
 					OR = {
 						check_variable = {
-							var = ZEX_MGY_VAR_Sineighi_Alignment
+							var = ZEX_MGY_VAR_Sineighi_Unrest
 							value = 100
 							compare = greater_than_or_equals
 						}
@@ -557,11 +557,11 @@ ZEX_MGY_Increase_Unrest = {
 					}
 				}
 				add_to_variable = {
-					var = ZEX_MGY_VAR_Sineighi_Alignment
+					var = ZEX_MGY_VAR_Sineighi_Unrest
 					value = ZEX_MGY_UNREST_INCREASE_AT_END_TURN
 				}
 				clamp_variable = {
-					var = ZEX_MGY_VAR_Sineighi_Alignment
+					var = ZEX_MGY_VAR_Sineighi_Unrest
 					max = 100
 				}
 			}
@@ -570,7 +570,7 @@ ZEX_MGY_Increase_Unrest = {
 					factor = 0
 					OR = {
 						check_variable = {
-							var = ZEX_MGY_VAR_Maneisrata_Alignment
+							var = ZEX_MGY_VAR_Maneisrata_Unrest
 							value = 100
 							compare = greater_than_or_equals
 						}
@@ -579,11 +579,11 @@ ZEX_MGY_Increase_Unrest = {
 					}
 				}
 				add_to_variable = {
-					var = ZEX_MGY_VAR_Maneisrata_Alignment
+					var = ZEX_MGY_VAR_Maneisrata_Unrest
 					value = ZEX_MGY_UNREST_INCREASE_AT_END_TURN
 				}
 				clamp_variable = {
-					var = ZEX_MGY_VAR_Maneisrata_Alignment
+					var = ZEX_MGY_VAR_Maneisrata_Unrest
 					max = 100
 				}
 			}
@@ -592,7 +592,7 @@ ZEX_MGY_Increase_Unrest = {
 					factor = 0
 					OR = {
 						check_variable = {
-							var = ZEX_MGY_VAR_Eastdesert_Alignment
+							var = ZEX_MGY_VAR_Eastdesert_Unrest
 							value = 100
 							compare = greater_than_or_equals
 						}
@@ -601,11 +601,11 @@ ZEX_MGY_Increase_Unrest = {
 					}
 				}
 				add_to_variable = {
-					var = ZEX_MGY_VAR_Eastdesert_Alignment
+					var = ZEX_MGY_VAR_Eastdesert_Unrest
 					value = ZEX_MGY_UNREST_INCREASE_AT_END_TURN
 				}
 				clamp_variable = {
-					var = ZEX_MGY_VAR_Eastdesert_Alignment
+					var = ZEX_MGY_VAR_Eastdesert_Unrest
 					max = 100
 				}
 			}
@@ -614,7 +614,7 @@ ZEX_MGY_Increase_Unrest = {
 					factor = 0
 					OR = {
 						check_variable = {
-							var = ZEX_MGY_VAR_Somnambula_Alignment
+							var = ZEX_MGY_VAR_Somnambula_Unrest
 							value = 100
 							compare = greater_than_or_equals
 						}
@@ -623,11 +623,11 @@ ZEX_MGY_Increase_Unrest = {
 					}
 				}
 				add_to_variable = {
-					var = ZEX_MGY_VAR_Somnambula_Alignment
+					var = ZEX_MGY_VAR_Somnambula_Unrest
 					value = ZEX_MGY_UNREST_INCREASE_AT_END_TURN
 				}
 				clamp_variable = {
-					var = ZEX_MGY_VAR_Somnambula_Alignment
+					var = ZEX_MGY_VAR_Somnambula_Unrest
 					max = 100
 				}
 			}
@@ -636,7 +636,7 @@ ZEX_MGY_Increase_Unrest = {
 					factor = 0
 					OR = {
 						check_variable = {
-							var = ZEX_MGY_VAR_Delta_Alignment
+							var = ZEX_MGY_VAR_Delta_Unrest
 							value = 100
 							compare = greater_than_or_equals
 						}
@@ -645,11 +645,11 @@ ZEX_MGY_Increase_Unrest = {
 					}
 				}
 				add_to_variable = {
-					var = ZEX_MGY_VAR_Delta_Alignment
+					var = ZEX_MGY_VAR_Delta_Unrest
 					value = ZEX_MGY_UNREST_INCREASE_AT_END_TURN
 				}
 				clamp_variable = {
-					var = ZEX_MGY_VAR_Delta_Alignment
+					var = ZEX_MGY_VAR_Delta_Unrest
 					max = 100
 				}
 			}
@@ -658,7 +658,7 @@ ZEX_MGY_Increase_Unrest = {
 					factor = 0
 					OR = {
 						check_variable = {
-							var = ZEX_MGY_VAR_Manephis_Alignment
+							var = ZEX_MGY_VAR_Manephis_Unrest
 							value = 100
 							compare = greater_than_or_equals
 						}
@@ -667,11 +667,11 @@ ZEX_MGY_Increase_Unrest = {
 					}
 				}
 				add_to_variable = {
-					var = ZEX_MGY_VAR_Manephis_Alignment
+					var = ZEX_MGY_VAR_Manephis_Unrest
 					value = ZEX_MGY_UNREST_INCREASE_AT_END_TURN
 				}
 				clamp_variable = {
-					var = ZEX_MGY_VAR_Manephis_Alignment
+					var = ZEX_MGY_VAR_Manephis_Unrest
 					max = 100
 				}
 			}
@@ -680,7 +680,7 @@ ZEX_MGY_Increase_Unrest = {
 					factor = 0
 					OR = {
 						check_variable = {
-							var = ZEX_MGY_VAR_UpperMaregypt_Alignment
+							var = ZEX_MGY_VAR_UpperMaregypt_Unrest
 							value = 100
 							compare = greater_than_or_equals
 						}
@@ -689,11 +689,11 @@ ZEX_MGY_Increase_Unrest = {
 					}
 				}
 				add_to_variable = {
-					var = ZEX_MGY_VAR_UpperMaregypt_Alignment
+					var = ZEX_MGY_VAR_UpperMaregypt_Unrest
 					value = ZEX_MGY_UNREST_INCREASE_AT_END_TURN
 				}
 				clamp_variable = {
-					var = ZEX_MGY_VAR_UpperMaregypt_Alignment
+					var = ZEX_MGY_VAR_UpperMaregypt_Unrest
 					max = 100
 				}
 			}
@@ -702,7 +702,7 @@ ZEX_MGY_Increase_Unrest = {
 					factor = 0
 					OR = {
 						check_variable = {
-							var = ZEX_MGY_VAR_Kaneigh_Alignment
+							var = ZEX_MGY_VAR_Kaneigh_Unrest
 							value = 100
 							compare = greater_than_or_equals
 						}
@@ -711,11 +711,11 @@ ZEX_MGY_Increase_Unrest = {
 					}
 				}
 				add_to_variable = {
-					var = ZEX_MGY_VAR_Kaneigh_Alignment
+					var = ZEX_MGY_VAR_Kaneigh_Unrest
 					value = ZEX_MGY_UNREST_INCREASE_AT_END_TURN
 				}
 				clamp_variable = {
-					var = ZEX_MGY_VAR_Kaneigh_Alignment
+					var = ZEX_MGY_VAR_Kaneigh_Unrest
 					max = 100
 				}
 			}
@@ -724,7 +724,7 @@ ZEX_MGY_Increase_Unrest = {
 					factor = 0
 					OR = {
 						check_variable = {
-							var = ZEX_MGY_VAR_Zush_Alignment
+							var = ZEX_MGY_VAR_Zush_Unrest
 							value = 100
 							compare = greater_than_or_equals
 						}
@@ -733,11 +733,11 @@ ZEX_MGY_Increase_Unrest = {
 					}
 				}
 				add_to_variable = {
-					var = ZEX_MGY_VAR_Zush_Alignment
+					var = ZEX_MGY_VAR_Zush_Unrest
 					value = ZEX_MGY_UNREST_INCREASE_AT_END_TURN
 				}
 				clamp_variable = {
-					var = ZEX_MGY_VAR_Zush_Alignment
+					var = ZEX_MGY_VAR_Zush_Unrest
 					max = 100
 				}
 			}
@@ -760,15 +760,15 @@ ZEX_MGY_Daily_Unrest_Update = {
 			has_idea = ZEX_MGY_REPUBLICAN_AGITATION_IDEA
 		}
 		# Update the legitimacy variable every day
-		add_to_variable = {
-			var = ZEX_MGY_LEGITIMACY
-			value = ZEX_MGY_LEGITIMACY_INCREASE_DAILY
-		}
-		clamp_variable = {
-			var = ZEX_MGY_LEGITIMACY
-			min = 0
-			max = 100
-		}
+		# add_to_variable = {
+		# 	var = ZEX_MGY_LEGITIMACY
+		# 	value = ZEX_MGY_LEGITIMACY_INCREASE_DAILY
+		# }
+		# clamp_variable = {
+		# 	var = ZEX_MGY_LEGITIMACY
+		# 	min = 0
+		# 	max = 100
+		# }
 		#Get the percentile (For comaprators)
 		ZEX_MGY_CALCULATE_PERCENTILE_VALUES = yes
 		#Update how many days are left
@@ -808,7 +808,7 @@ ZEX_MGY_unrest_gui_clear_state_selection_flags = {
 ZEX_MGY_unrest_end_turn_effect = {
 	add_to_variable = {
 		#Update the legitimacy with any new regains, if necessary
-		var = ZEX_MGY_LEGITIMACY
+		# var = ZEX_MGY_LEGITIMACY
 		value = ZEX_MGY_UNREST_LEGITIMACY_REGAIN
 	}
 	# Increase unrest in states
@@ -868,7 +868,17 @@ ZEX_MGY_Political_Unrest_Propaganda_Button = {
 		var = ZEX_MGY_Actions_Taken
 		value = 1
 	}
-	#Add the corresponding flag
+	#Increase stability, popualrity
+	add_stability = 0.02
+	add_popularity = {
+		ideology = democratic
+		popularity = 0.015
+	}
+	add_popularity = {
+		ideology = neutrality
+		popularity = 0.015
+	}
+	#Add the corresponding flags
 	if = {
 		limit = {
 			has_country_flag = zex_mgy_unrest_selected_sineighi
@@ -923,10 +933,6 @@ ZEX_MGY_Political_Unrest_Propaganda_Button = {
 		}
 		set_country_flag = ZEX_MGY_Kaneigh_propaganda_flag
 	}
-	add_to_variable = {
-		var = ZEX_MGY_UNREST_LEGITIMACY_REGAIN
-		value = 2
-	}
 }
 
 ZEX_MGY_Political_Unrest_Arrest_Button = {
@@ -935,6 +941,11 @@ ZEX_MGY_Political_Unrest_Arrest_Button = {
 		var = ZEX_MGY_Actions_Taken
 		value = 1
 	}
+	# Change the party pop
+	add_popularity = {
+		popularity = -0.03
+		ideology = ROOT
+	}
 	#Add the corresponding flag
 	if = {
 		limit = {
@@ -942,11 +953,11 @@ ZEX_MGY_Political_Unrest_Arrest_Button = {
 		}
 		set_country_flag = ZEX_MGY_Sineighi_arrests_flag
 		subtract_from_variable = {
-			var = ZEX_MGY_VAR_Sineighi_Alignment
+			var = ZEX_MGY_VAR_Sineighi_Unrest
 			value = 2
 		}
 		clamp_variable = {
-			var = ZEX_MGY_VAR_Sineighi_Alignment
+			var = ZEX_MGY_VAR_Sineighi_Unrest
 			min = 0
 		}
 	}
@@ -956,11 +967,11 @@ ZEX_MGY_Political_Unrest_Arrest_Button = {
 		}
 		set_country_flag = ZEX_MGY_Maneisrata_arrests_flag
 		subtract_from_variable = {
-			var = ZEX_MGY_VAR_Maneisrata_Alignment
+			var = ZEX_MGY_VAR_Maneisrata_Unrest
 			value = 2
 		}
 		clamp_variable = {
-			var = ZEX_MGY_VAR_Maneisrata_Alignment
+			var = ZEX_MGY_VAR_Maneisrata_Unrest
 			min = 0
 		}
 	}
@@ -970,11 +981,11 @@ ZEX_MGY_Political_Unrest_Arrest_Button = {
 		}
 		set_country_flag = ZEX_MGY_Delta_arrests_flag
 		subtract_from_variable = {
-			var = ZEX_MGY_VAR_Delta_Alignment
+			var = ZEX_MGY_VAR_Delta_Unrest
 			value = 2
 		}
 		clamp_variable = {
-			var = ZEX_MGY_VAR_Delta_Alignment
+			var = ZEX_MGY_VAR_Delta_Unrest
 			min = 0
 		}
 	}
@@ -984,11 +995,11 @@ ZEX_MGY_Political_Unrest_Arrest_Button = {
 		}
 		set_country_flag = ZEX_MGY_Somnambula_arrests_flag
 		subtract_from_variable = {
-			var = ZEX_MGY_VAR_Somnambula_Alignment
+			var = ZEX_MGY_VAR_Somnambula_Unrest
 			value = 2
 		}
 		clamp_variable = {
-			var = ZEX_MGY_VAR_Somnambula_Alignment
+			var = ZEX_MGY_VAR_Somnambula_Unrest
 			min = 0
 		}
 	}
@@ -998,11 +1009,11 @@ ZEX_MGY_Political_Unrest_Arrest_Button = {
 		}
 		set_country_flag = ZEX_MGY_Desert_arrests_flag
 		subtract_from_variable = {
-			var = ZEX_MGY_VAR_Eastdesert_Alignment
+			var = ZEX_MGY_VAR_Eastdesert_Unrest
 			value = 2
 		}
 		clamp_variable = {
-			var = ZEX_MGY_VAR_Eastdesert_Alignment
+			var = ZEX_MGY_VAR_Eastdesert_Unrest
 			min = 0
 		}
 	}
@@ -1012,11 +1023,11 @@ ZEX_MGY_Political_Unrest_Arrest_Button = {
 		}
 		set_country_flag = ZEX_MGY_Manephis_arrests_flag
 		subtract_from_variable = {
-			var = ZEX_MGY_VAR_Manephis_Alignment
+			var = ZEX_MGY_VAR_Manephis_Unrest
 			value = 2
 		}
 		clamp_variable = {
-			var = ZEX_MGY_VAR_Manephis_Alignment
+			var = ZEX_MGY_VAR_Manephis_Unrest
 			min = 0
 		}
 	}
@@ -1026,11 +1037,11 @@ ZEX_MGY_Political_Unrest_Arrest_Button = {
 		}
 		set_country_flag = ZEX_MGY_UpperMaregypt_arrests_flag
 		subtract_from_variable = {
-			var = ZEX_MGY_VAR_UpperMaregypt_Alignment
+			var = ZEX_MGY_VAR_UpperMaregypt_Unrest
 			value = 2
 		}
 		clamp_variable = {
-			var = ZEX_MGY_VAR_UpperMaregypt_Alignment
+			var = ZEX_MGY_VAR_UpperMaregypt_Unrest
 			min = 0
 		}
 	}
@@ -1040,11 +1051,11 @@ ZEX_MGY_Political_Unrest_Arrest_Button = {
 		}
 		set_country_flag = ZEX_MGY_Zush_arrests_flag
 		subtract_from_variable = {
-			var = ZEX_MGY_VAR_Zush_Alignment
+			var = ZEX_MGY_VAR_Zush_Unrest
 			value = 2
 		}
 		clamp_variable = {
-			var = ZEX_MGY_VAR_Zush_Alignment
+			var = ZEX_MGY_VAR_Zush_Unrest
 			min = 0
 		}
 	}
@@ -1054,11 +1065,11 @@ ZEX_MGY_Political_Unrest_Arrest_Button = {
 		}
 		set_country_flag = ZEX_MGY_Kaneigh_arrests_flag
 		subtract_from_variable = {
-			var = ZEX_MGY_VAR_Kaneigh_Alignment
+			var = ZEX_MGY_VAR_Kaneigh_Unrest
 			value = 2
 		}
 		clamp_variable = {
-			var = ZEX_MGY_VAR_Kaneigh_Alignment
+			var = ZEX_MGY_VAR_Kaneigh_Unrest
 			min = 0
 		}
 	}

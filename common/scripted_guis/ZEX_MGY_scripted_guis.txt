@@ -48,8 +48,8 @@ scripted_gui = {
 				AND = {
 					zex_mgy_can_use_state_action = yes
 					check_variable = {
-						var = ZEX_MGY_LEGITIMACY
-						value = ZEX_MGY_UNREST_LEGITIMACY_COUNTER_COST
+						var = political_power
+						value = ZEX_MGY_UNREST_POLITICALPOWER_COUNTER_COST
 						compare = greater_than_or_equals
 					}
 				}

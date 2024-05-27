@@ -69,4 +69,14 @@ spriteTypes = {
 		texturefile = "gfx/texticons/ZEX_MGY_edicts.dds"
 		legacy_lazy_load = no
 	}
+	spriteType = {
+		name = "GFX_ZEX_diet_seat"
+		texturefile = "gfx/texticons/ZEX_MGY_royal_diet_total_seats.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_ZEX_diet_loyalty"
+		texturefile = "gfx/texticons/ZEX_MGY_royal_diet_loyalty.dds"
+		legacy_lazy_load = no
+	}
 }

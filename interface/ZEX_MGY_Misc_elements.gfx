@@ -3,4 +3,12 @@ spriteTypes = {
 		name = "ZEX_Help_Tooltip"
 		textureFile = "gfx/interface/ZEX_Help_Tooltip.dds"
 	}
+	spriteType = {
+		name = "GFX_ideology_traditional_pharaonism"
+		textureFile = "gfx/interface/ideology/GFX_ZEX_traditional_pharamonism_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_harmonic_pharaonism"
+		textureFile = "gfx/interface/ideology/GFX_ZEX_harmonic_pharamonism_icon.dds"
+	}
 }

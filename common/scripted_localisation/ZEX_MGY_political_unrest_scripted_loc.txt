@@ -9,7 +9,10 @@ defined_text = {
 	text = {
 		trigger = {
 			check_variable = {
-				ZEX_MGY_VAR_Sineighi_Alignment > 75
+				ZEX_MGY_VAR_Sineighi_Unrest_percentile > party_popularity@ruling_party
+			}
+			NOT = {
+				has_country_flag = zex_mgy_unrest_sineighi_pacified
 			}
 		}
 		localization_key = ZEX_MGY_HIGHUNREST_SINEIGHI
@@ -17,10 +20,7 @@ defined_text = {
 	text = {
 		trigger = {
 			check_variable = {
-				ZEX_MGY_VAR_Sineighi_Alignment > 50
-			}
-			check_variable = {
-				ZEX_MGY_VAR_Sineighi_Alignment <75
+				ZEX_MGY_VAR_Sineighi_Unrest > 66
 			}
 		}
 		localization_key = ZEX_MGY_MIDUNREST_SINEIGHI
@@ -28,10 +28,7 @@ defined_text = {
 	text = {
 		trigger = {
 			check_variable = {
-				ZEX_MGY_VAR_Sineighi_Alignment > 25
-			}
-			check_variable = {
-				ZEX_MGY_VAR_Sineighi_Alignment < 50
+				ZEX_MGY_VAR_Sineighi_Unrest > 33
 			}
 		}
 		localization_key = ZEX_MGY_LOWUNREST_SINEIGHI
@@ -48,7 +45,10 @@ defined_text = {
 	text = {
 		trigger = {
 			check_variable = {
-				ZEX_MGY_VAR_Maneisrata_Alignment >75
+				ZEX_MGY_VAR_Maneisrata_Unrest_percentile > party_popularity@ruling_party
+			}
+			NOT = {
+				has_country_flag = zex_mgy_unrest_maneisrata_pacified
 			}
 		}
 		localization_key = ZEX_MGY_HIGHUNREST_MANEISRATA
@@ -56,10 +56,7 @@ defined_text = {
 	text = {
 		trigger = {
 			check_variable = {
-				ZEX_MGY_VAR_Maneisrata_Alignment > 50
-			}
-			check_variable = {
-				ZEX_MGY_VAR_Maneisrata_Alignment <75
+				ZEX_MGY_VAR_Maneisrata_Unrest > 66
 			}
 		}
 		localization_key = ZEX_MGY_MIDUNREST_MANEISRATA
@@ -67,10 +64,7 @@ defined_text = {
 	text = {
 		trigger = {
 			check_variable = {
-				ZEX_MGY_VAR_Maneisrata_Alignment > 25
-			}
-			check_variable = {
-				ZEX_MGY_VAR_Maneisrata_Alignment < 50
+				ZEX_MGY_VAR_Maneisrata_Unrest > 33
 			}
 		}
 		localization_key = ZEX_MGY_LOWUNREST_MANEISRATA
@@ -88,7 +82,10 @@ defined_text = {
 	text = {
 		trigger = {
 			check_variable = {
-				ZEX_MGY_VAR_Kaneigh_Alignment >75
+				ZEX_MGY_VAR_Kaneigh_Unrest_percentile > party_popularity@ruling_party
+			}
+			NOT = {
+				has_country_flag = zex_mgy_unrest_kaneigh_pacified
 			}
 		}
 		localization_key = ZEX_MGY_HIGHUNREST_KANEIGH
@@ -96,10 +93,7 @@ defined_text = {
 	text = {
 		trigger = {
 			check_variable = {
-				ZEX_MGY_VAR_Kaneigh_Alignment > 50
-			}
-			check_variable = {
-				ZEX_MGY_VAR_Kaneigh_Alignment <75
+				ZEX_MGY_VAR_Kaneigh_Unrest > 66
 			}
 		}
 		localization_key = ZEX_MGY_MIDUNREST_KANEIGH
@@ -107,10 +101,7 @@ defined_text = {
 	text = {
 		trigger = {
 			check_variable = {
-				ZEX_MGY_VAR_Kaneigh_Alignment > 25
-			}
-			check_variable = {
-				ZEX_MGY_VAR_Kaneigh_Alignment < 50
+				ZEX_MGY_VAR_Kaneigh_Unrest > 33
 			}
 		}
 		localization_key = ZEX_MGY_LOWUNREST_KANEIGH
@@ -127,7 +118,10 @@ defined_text = {
 	text = {
 		trigger = {
 			check_variable = {
-				ZEX_MGY_VAR_Delta_Alignment >75
+				ZEX_MGY_VAR_Delta_Unrest_percentile > party_popularity@ruling_party
+			}
+			NOT = {
+				has_country_flag = zex_mgy_unrest_delta_pacified
 			}
 		}
 		localization_key = ZEX_MGY_HIGHUNREST_DELTA
@@ -135,10 +129,7 @@ defined_text = {
 	text = {
 		trigger = {
 			check_variable = {
-				ZEX_MGY_VAR_Delta_Alignment > 50
-			}
-			check_variable = {
-				ZEX_MGY_VAR_Delta_Alignment <75
+				ZEX_MGY_VAR_Delta_Unrest > 66
 			}
 		}
 		localization_key = ZEX_MGY_MIDUNREST_DELTA
@@ -146,10 +137,7 @@ defined_text = {
 	text = {
 		trigger = {
 			check_variable = {
-				ZEX_MGY_VAR_Delta_Alignment > 25
-			}
-			check_variable = {
-				ZEX_MGY_VAR_Delta_Alignment < 50
+				ZEX_MGY_VAR_Delta_Unrest > 33
 			}
 		}
 		localization_key = ZEX_MGY_LOWUNREST_DELTA
@@ -166,7 +154,10 @@ defined_text = {
 	text = {
 		trigger = {
 			check_variable = {
-				ZEX_MGY_VAR_Manephis_Alignment >75
+				ZEX_MGY_VAR_Manephis_Unrest_percentile > party_popularity@ruling_party
+			}
+			NOT = {
+				has_country_flag = zex_mgy_unrest_manephis_pacified
 			}
 		}
 		localization_key = ZEX_MGY_HIGHUNREST_MANEPHIS
@@ -174,10 +165,7 @@ defined_text = {
 	text = {
 		trigger = {
 			check_variable = {
-				ZEX_MGY_VAR_Manephis_Alignment > 50
-			}
-			check_variable = {
-				ZEX_MGY_VAR_Manephis_Alignment <75
+				ZEX_MGY_VAR_Manephis_Unrest > 66
 			}
 		}
 		localization_key = ZEX_MGY_MIDUNREST_MANEPHIS
@@ -185,10 +173,7 @@ defined_text = {
 	text = {
 		trigger = {
 			check_variable = {
-				ZEX_MGY_VAR_Manephis_Alignment > 25
-			}
-			check_variable = {
-				ZEX_MGY_VAR_Manephis_Alignment < 50
+				ZEX_MGY_VAR_Manephis_Unrest > 33
 			}
 		}
 		localization_key = ZEX_MGY_LOWUNREST_MANEPHIS
@@ -205,7 +190,10 @@ defined_text = {
 	text = {
 		trigger = {
 			check_variable = {
-				ZEX_MGY_VAR_Somnambula_Alignment >75
+				ZEX_MGY_VAR_Somnambula_Unrest_percentile > party_popularity@ruling_party
+			}
+			NOT = {
+				has_country_flag = zex_mgy_unrest_somnambula_pacified
 			}
 		}
 		localization_key = ZEX_MGY_HIGHUNREST_SOMNAMBULA
@@ -213,10 +201,7 @@ defined_text = {
 	text = {
 		trigger = {
 			check_variable = {
-				ZEX_MGY_VAR_Somnambula_Alignment > 50
-			}
-			check_variable = {
-				ZEX_MGY_VAR_Somnambula_Alignment <75
+				ZEX_MGY_VAR_Somnambula_Unrest > 66
 			}
 		}
 		localization_key = ZEX_MGY_MIDUNREST_SOMNAMBULA
@@ -224,10 +209,7 @@ defined_text = {
 	text = {
 		trigger = {
 			check_variable = {
-				ZEX_MGY_VAR_Somnambula_Alignment > 25
-			}
-			check_variable = {
-				ZEX_MGY_VAR_Somnambula_Alignment < 50
+				ZEX_MGY_VAR_Somnambula_Unrest > 33
 			}
 		}
 		localization_key = ZEX_MGY_LOWUNREST_SOMNAMBULA
@@ -244,7 +226,10 @@ defined_text = {
 	text = {
 		trigger = {
 			check_variable = {
-				ZEX_MGY_VAR_Eastdesert_Alignment >75
+				ZEX_MGY_VAR_Eastdesert_Unrest_percentile > party_popularity@ruling_party
+			}
+			NOT = {
+				has_country_flag = zex_mgy_unrest_easterndesert_pacified
 			}
 		}
 		localization_key = ZEX_MGY_HIGHUNREST_DESERT
@@ -252,10 +237,7 @@ defined_text = {
 	text = {
 		trigger = {
 			check_variable = {
-				ZEX_MGY_VAR_Eastdesert_Alignment > 50
-			}
-			check_variable = {
-				ZEX_MGY_VAR_Eastdesert_Alignment <75
+				ZEX_MGY_VAR_Eastdesert_Unrest > 66
 			}
 		}
 		localization_key = ZEX_MGY_MIDUNREST_DESERT
@@ -263,10 +245,7 @@ defined_text = {
 	text = {
 		trigger = {
 			check_variable = {
-				ZEX_MGY_VAR_Eastdesert_Alignment > 25
-			}
-			check_variable = {
-				ZEX_MGY_VAR_Eastdesert_Alignment < 50
+				ZEX_MGY_VAR_Eastdesert_Unrest > 33
 			}
 		}
 		localization_key = ZEX_MGY_LOWUNREST_DESERT
@@ -283,7 +262,10 @@ defined_text = {
 	text = {
 		trigger = {
 			check_variable = {
-				ZEX_MGY_VAR_Zush_Alignment >75
+				ZEX_MGY_VAR_Zush_Unrest_percentile > party_popularity@ruling_party
+			}
+			NOT = {
+				has_country_flag = zex_mgy_unrest_zush_pacified
 			}
 		}
 		localization_key = ZEX_MGY_HIGHUNREST_ZUSH
@@ -291,10 +273,7 @@ defined_text = {
 	text = {
 		trigger = {
 			check_variable = {
-				ZEX_MGY_VAR_Zush_Alignment > 50
-			}
-			check_variable = {
-				ZEX_MGY_VAR_Zush_Alignment <75
+				ZEX_MGY_VAR_Zush_Unrest > 66
 			}
 		}
 		localization_key = ZEX_MGY_MIDUNREST_ZUSH
@@ -302,10 +281,7 @@ defined_text = {
 	text = {
 		trigger = {
 			check_variable = {
-				ZEX_MGY_VAR_Zush_Alignment > 25
-			}
-			check_variable = {
-				ZEX_MGY_VAR_Zush_Alignment < 50
+				ZEX_MGY_VAR_Zush_Unrest > 33
 			}
 		}
 		localization_key = ZEX_MGY_LOWUNREST_ZUSH
@@ -322,7 +298,10 @@ defined_text = {
 	text = {
 		trigger = {
 			check_variable = {
-				ZEX_MGY_VAR_UpperMaregypt_Alignment >75
+				ZEX_MGY_VAR_UpperMaregypt_Unrest_percentile > party_popularity@ruling_party
+			}
+			NOT = {
+				has_country_flag = zex_mgy_unrest_uppermaregypt_pacified
 			}
 		}
 		localization_key = ZEX_MGY_HIGHUNREST_UPPERMAREGYPT
@@ -330,10 +309,7 @@ defined_text = {
 	text = {
 		trigger = {
 			check_variable = {
-				ZEX_MGY_VAR_UpperMaregypt_Alignment > 50
-			}
-			check_variable = {
-				ZEX_MGY_VAR_UpperMaregypt_Alignment <75
+				ZEX_MGY_VAR_UpperMaregypt_Unrest > 66
 			}
 		}
 		localization_key = ZEX_MGY_MIDUNREST_UPPERMAREGYPT
@@ -341,10 +317,7 @@ defined_text = {
 	text = {
 		trigger = {
 			check_variable = {
-				ZEX_MGY_VAR_UpperMaregypt_Alignment > 25
-			}
-			check_variable = {
-				ZEX_MGY_VAR_UpperMaregypt_Alignment < 50
+				ZEX_MGY_VAR_UpperMaregypt_Unrest > 33
 			}
 		}
 		localization_key = ZEX_MGY_LOWUNREST_UPPERMAREGYPT
@@ -365,7 +338,7 @@ defined_text = {
 	# text = {
 	# 	trigger = {
 	# 		check_variable = {
-	# 			ZEX_MGY_VAR_Sineighi_Alignment > ZEX_MGY_LEGITIMACY
+	# 			ZEX_MGY_VAR_Sineighi_Unrest > ZEX_MGY_LEGITIMACY
 	# 		}
 	# 	}
 	# 	localization_key = "ZEX_MGY_OPEN_REVOLT"
@@ -398,7 +371,7 @@ defined_text = {
 		# text = {
 		# 	trigger = {
 		# 		check_variable = {
-		# 			ZEX_MGY_VAR_Maneisrata_Alignment > ZEX_MGY_LEGITIMACY
+		# 			ZEX_MGY_VAR_Maneisrata_Unrest > ZEX_MGY_LEGITIMACY
 		# 		}
 		# 	}
 		# 	localization_key = "ZEX_MGY_OPEN_REVOLT"
@@ -431,7 +404,7 @@ defined_text = {
 	# text = {
 	# 	trigger = {
 	# 		check_variable = {
-	# 			ZEX_MGY_VAR_Delta_Alignment > ZEX_MGY_LEGITIMACY
+	# 			ZEX_MGY_VAR_Delta_Unrest > ZEX_MGY_LEGITIMACY
 	# 		}
 	# 	}
 	# 	localization_key = "ZEX_MGY_OPEN_REVOLT"
@@ -464,7 +437,7 @@ defined_text = {
 	# text = {
 	# 	trigger = {
 	# 		check_variable = {
-	# 			ZEX_MGY_VAR_Somnambula_Alignment > ZEX_MGY_LEGITIMACY
+	# 			ZEX_MGY_VAR_Somnambula_Unrest > ZEX_MGY_LEGITIMACY
 	# 		}
 	# 	}
 	# 	localization_key = "ZEX_MGY_OPEN_REVOLT"
@@ -497,7 +470,7 @@ defined_text = {
 	# text = {
 	# 	trigger = {
 	# 		check_variable = {
-	# 			ZEX_MGY_VAR_Eastdesert_Alignment > ZEX_MGY_LEGITIMACY
+	# 			ZEX_MGY_VAR_Eastdesert_Unrest > ZEX_MGY_LEGITIMACY
 	# 		}
 	# 	}
 	# 	localization_key = "ZEX_MGY_OPEN_REVOLT"
@@ -530,7 +503,7 @@ defined_text = {
 	# text = {
 	# 	trigger = {
 	# 		check_variable = {
-	# 			ZEX_MGY_VAR_Manephis_Alignment > ZEX_MGY_LEGITIMACY
+	# 			ZEX_MGY_VAR_Manephis_Unrest > ZEX_MGY_LEGITIMACY
 	# 		}
 	# 	}
 	# 	localization_key = "ZEX_MGY_OPEN_REVOLT"
@@ -563,7 +536,7 @@ defined_text = {
 	# text = {
 	# 	trigger = {
 	# 		check_variable = {
-	# 			ZEX_MGY_VAR_UpperMaregypt_Alignment > ZEX_MGY_LEGITIMACY
+	# 			ZEX_MGY_VAR_UpperMaregypt_Unrest > ZEX_MGY_LEGITIMACY
 	# 		}
 	# 	}
 	# 	localization_key = "ZEX_MGY_OPEN_REVOLT"
@@ -596,7 +569,7 @@ defined_text = {
 	# text = {
 	# 	trigger = {
 	# 		check_variable = {
-	# 			ZEX_MGY_VAR_Zush_Alignment > ZEX_MGY_LEGITIMACY
+	# 			ZEX_MGY_VAR_Zush_Unrest > ZEX_MGY_LEGITIMACY
 	# 		}
 	# 	}
 	# 	localization_key = "ZEX_MGY_OPEN_REVOLT"
@@ -629,7 +602,7 @@ defined_text = {
 	# text = {
 	# 	trigger = {
 	# 		check_variable = {
-	# 			ZEX_MGY_VAR_Kaneigh_Alignment > ZEX_MGY_LEGITIMACY
+	# 			ZEX_MGY_VAR_Kaneigh_Unrest > ZEX_MGY_LEGITIMACY
 	# 		}
 	# 	}
 	# 	localization_key = "ZEX_MGY_OPEN_REVOLT"
@@ -1264,14 +1237,18 @@ defined_text = {
 	}
 }
 
+
 defined_text = {
 	name = ZEX_MGY_GET_HAS_ENOUGH_LEGITIMACY_FOR_BUTTON_CHECK
 	text = {
 		trigger = {
-			check_variable = {
-				var = ZEX_MGY_LEGITIMACY
-				value = ZEX_MGY_UNREST_LEGITIMACY_COUNTER_COST
-				compare = greater_than_or_equals
+			OR = {
+				check_variable = {
+					party_popularity@ruling_party = 0.1
+				}
+				check_variable = {
+					party_popularity@ruling_party > 0.1
+				}
 			}
 		}
 		localization_key = ZEX_MGY_Tooltip_Yes_Check
@@ -1345,31 +1322,31 @@ defined_text = {
 			count_triggers = {
 				amount = 9
 				check_variable = {
-					ZEX_MGY_VAR_Sineighi_Alignment > ZEX_MGY_LEGITIMACY
+					ZEX_MGY_VAR_Sineighi_Unrest_percentile > party_popularity@ruling_party
 				}
 				check_variable = {
-					ZEX_MGY_VAR_Delta_Alignment > ZEX_MGY_LEGITIMACY
+					ZEX_MGY_VAR_Delta_Unrest_percentile > party_popularity@ruling_party
 				}
 				check_variable = {
-					ZEX_MGY_VAR_Kaneigh_Alignment > ZEX_MGY_LEGITIMACY
+					ZEX_MGY_VAR_Kaneigh_Unrest_percentile > party_popularity@ruling_party
 				}
 				check_variable = {
-					ZEX_MGY_VAR_Maneisrata_Alignment > ZEX_MGY_LEGITIMACY
+					ZEX_MGY_VAR_Maneisrata_Unrest_percentile > party_popularity@ruling_party
 				}
 				check_variable = {
-					ZEX_MGY_VAR_Manephis_Alignment > ZEX_MGY_LEGITIMACY
+					ZEX_MGY_VAR_Manephis_Unrest_percentile > party_popularity@ruling_party
 				}
 				check_variable = {
-					ZEX_MGY_VAR_Somnambula_Alignment > ZEX_MGY_LEGITIMACY
+					ZEX_MGY_VAR_Somnambula_Unrest_percentile > party_popularity@ruling_party
 				}
 				check_variable = {
-					ZEX_MGY_VAR_Eastdesert_Alignment > ZEX_MGY_LEGITIMACY
+					ZEX_MGY_VAR_Eastdesert_Unrest_percentile > party_popularity@ruling_party
 				}
 				check_variable = {
-					ZEX_MGY_VAR_UpperMaregypt_Alignment > ZEX_MGY_LEGITIMACY
+					ZEX_MGY_VAR_UpperMaregypt_Unrest_percentile > party_popularity@ruling_party
 				}
 				check_variable = {
-					ZEX_MGY_VAR_Zush_Alignment > ZEX_MGY_LEGITIMACY
+					ZEX_MGY_VAR_Zush_Unrest_percentile > party_popularity@ruling_party
 				}	
 			}
 		}
@@ -1380,31 +1357,31 @@ defined_text = {
 			count_triggers = {
 				amount = 8
 				check_variable = {
-					ZEX_MGY_VAR_Sineighi_Alignment > ZEX_MGY_LEGITIMACY
+					ZEX_MGY_VAR_Sineighi_Unrest_percentile > party_popularity@ruling_party
 				}
 				check_variable = {
-					ZEX_MGY_VAR_Delta_Alignment > ZEX_MGY_LEGITIMACY
+					ZEX_MGY_VAR_Delta_Unrest_percentile > party_popularity@ruling_party
 				}
 				check_variable = {
-					ZEX_MGY_VAR_Kaneigh_Alignment > ZEX_MGY_LEGITIMACY
+					ZEX_MGY_VAR_Kaneigh_Unrest_percentile > party_popularity@ruling_party
 				}
 				check_variable = {
-					ZEX_MGY_VAR_Maneisrata_Alignment > ZEX_MGY_LEGITIMACY
+					ZEX_MGY_VAR_Maneisrata_Unrest_percentile > party_popularity@ruling_party
 				}
 				check_variable = {
-					ZEX_MGY_VAR_Manephis_Alignment > ZEX_MGY_LEGITIMACY
+					ZEX_MGY_VAR_Manephis_Unrest_percentile > party_popularity@ruling_party
 				}
 				check_variable = {
-					ZEX_MGY_VAR_Somnambula_Alignment > ZEX_MGY_LEGITIMACY
+					ZEX_MGY_VAR_Somnambula_Unrest_percentile > party_popularity@ruling_party
 				}
 				check_variable = {
-					ZEX_MGY_VAR_Eastdesert_Alignment > ZEX_MGY_LEGITIMACY
+					ZEX_MGY_VAR_Eastdesert_Unrest_percentile > party_popularity@ruling_party
 				}
 				check_variable = {
-					ZEX_MGY_VAR_UpperMaregypt_Alignment > ZEX_MGY_LEGITIMACY
+					ZEX_MGY_VAR_UpperMaregypt_Unrest_percentile > party_popularity@ruling_party
 				}
 				check_variable = {
-					ZEX_MGY_VAR_Zush_Alignment > ZEX_MGY_LEGITIMACY
+					ZEX_MGY_VAR_Zush_Unrest_percentile > party_popularity@ruling_party
 				}	
 			}
 		}
@@ -1415,31 +1392,31 @@ defined_text = {
 			count_triggers = {
 				amount = 7
 				check_variable = {
-					ZEX_MGY_VAR_Sineighi_Alignment > ZEX_MGY_LEGITIMACY
+					ZEX_MGY_VAR_Sineighi_Unrest_percentile > party_popularity@ruling_party
 				}
 				check_variable = {
-					ZEX_MGY_VAR_Delta_Alignment > ZEX_MGY_LEGITIMACY
+					ZEX_MGY_VAR_Delta_Unrest_percentile > party_popularity@ruling_party
 				}
 				check_variable = {
-					ZEX_MGY_VAR_Kaneigh_Alignment > ZEX_MGY_LEGITIMACY
+					ZEX_MGY_VAR_Kaneigh_Unrest_percentile > party_popularity@ruling_party
 				}
 				check_variable = {
-					ZEX_MGY_VAR_Maneisrata_Alignment > ZEX_MGY_LEGITIMACY
+					ZEX_MGY_VAR_Maneisrata_Unrest_percentile > party_popularity@ruling_party
 				}
 				check_variable = {
-					ZEX_MGY_VAR_Manephis_Alignment > ZEX_MGY_LEGITIMACY
+					ZEX_MGY_VAR_Manephis_Unrest_percentile > party_popularity@ruling_party
 				}
 				check_variable = {
-					ZEX_MGY_VAR_Somnambula_Alignment > ZEX_MGY_LEGITIMACY
+					ZEX_MGY_VAR_Somnambula_Unrest_percentile > party_popularity@ruling_party
 				}
 				check_variable = {
-					ZEX_MGY_VAR_Eastdesert_Alignment > ZEX_MGY_LEGITIMACY
+					ZEX_MGY_VAR_Eastdesert_Unrest_percentile > party_popularity@ruling_party
 				}
 				check_variable = {
-					ZEX_MGY_VAR_UpperMaregypt_Alignment > ZEX_MGY_LEGITIMACY
+					ZEX_MGY_VAR_UpperMaregypt_Unrest_percentile > party_popularity@ruling_party
 				}
 				check_variable = {
-					ZEX_MGY_VAR_Zush_Alignment > ZEX_MGY_LEGITIMACY
+					ZEX_MGY_VAR_Zush_Unrest_percentile > party_popularity@ruling_party
 				}	
 			}
 		}
@@ -1450,31 +1427,31 @@ defined_text = {
 			count_triggers = {
 				amount = 6
 				check_variable = {
-					ZEX_MGY_VAR_Sineighi_Alignment > ZEX_MGY_LEGITIMACY
+					ZEX_MGY_VAR_Sineighi_Unrest_percentile > party_popularity@ruling_party
 				}
 				check_variable = {
-					ZEX_MGY_VAR_Delta_Alignment > ZEX_MGY_LEGITIMACY
+					ZEX_MGY_VAR_Delta_Unrest_percentile > party_popularity@ruling_party
 				}
 				check_variable = {
-					ZEX_MGY_VAR_Kaneigh_Alignment > ZEX_MGY_LEGITIMACY
+					ZEX_MGY_VAR_Kaneigh_Unrest_percentile > party_popularity@ruling_party
 				}
 				check_variable = {
-					ZEX_MGY_VAR_Maneisrata_Alignment > ZEX_MGY_LEGITIMACY
+					ZEX_MGY_VAR_Maneisrata_Unrest_percentile > party_popularity@ruling_party
 				}
 				check_variable = {
-					ZEX_MGY_VAR_Manephis_Alignment > ZEX_MGY_LEGITIMACY
+					ZEX_MGY_VAR_Manephis_Unrest_percentile > party_popularity@ruling_party
 				}
 				check_variable = {
-					ZEX_MGY_VAR_Somnambula_Alignment > ZEX_MGY_LEGITIMACY
+					ZEX_MGY_VAR_Somnambula_Unrest_percentile > party_popularity@ruling_party
 				}
 				check_variable = {
-					ZEX_MGY_VAR_Eastdesert_Alignment > ZEX_MGY_LEGITIMACY
+					ZEX_MGY_VAR_Eastdesert_Unrest_percentile > party_popularity@ruling_party
 				}
 				check_variable = {
-					ZEX_MGY_VAR_UpperMaregypt_Alignment > ZEX_MGY_LEGITIMACY
+					ZEX_MGY_VAR_UpperMaregypt_Unrest_percentile > party_popularity@ruling_party
 				}
 				check_variable = {
-					ZEX_MGY_VAR_Zush_Alignment > ZEX_MGY_LEGITIMACY
+					ZEX_MGY_VAR_Zush_Unrest_percentile > party_popularity@ruling_party
 				}	
 			}
 		}
@@ -1485,31 +1462,31 @@ defined_text = {
 			count_triggers = {
 				amount = 5
 				check_variable = {
-					ZEX_MGY_VAR_Sineighi_Alignment > ZEX_MGY_LEGITIMACY
+					ZEX_MGY_VAR_Sineighi_Unrest_percentile > party_popularity@ruling_party
 				}
 				check_variable = {
-					ZEX_MGY_VAR_Delta_Alignment > ZEX_MGY_LEGITIMACY
+					ZEX_MGY_VAR_Delta_Unrest_percentile > party_popularity@ruling_party
 				}
 				check_variable = {
-					ZEX_MGY_VAR_Kaneigh_Alignment > ZEX_MGY_LEGITIMACY
+					ZEX_MGY_VAR_Kaneigh_Unrest_percentile > party_popularity@ruling_party
 				}
 				check_variable = {
-					ZEX_MGY_VAR_Maneisrata_Alignment > ZEX_MGY_LEGITIMACY
+					ZEX_MGY_VAR_Maneisrata_Unrest_percentile > party_popularity@ruling_party
 				}
 				check_variable = {
-					ZEX_MGY_VAR_Manephis_Alignment > ZEX_MGY_LEGITIMACY
+					ZEX_MGY_VAR_Manephis_Unrest_percentile > party_popularity@ruling_party
 				}
 				check_variable = {
-					ZEX_MGY_VAR_Somnambula_Alignment > ZEX_MGY_LEGITIMACY
+					ZEX_MGY_VAR_Somnambula_Unrest_percentile > party_popularity@ruling_party
 				}
 				check_variable = {
-					ZEX_MGY_VAR_Eastdesert_Alignment > ZEX_MGY_LEGITIMACY
+					ZEX_MGY_VAR_Eastdesert_Unrest_percentile > party_popularity@ruling_party
 				}
 				check_variable = {
-					ZEX_MGY_VAR_UpperMaregypt_Alignment > ZEX_MGY_LEGITIMACY
+					ZEX_MGY_VAR_UpperMaregypt_Unrest_percentile > party_popularity@ruling_party
 				}
 				check_variable = {
-					ZEX_MGY_VAR_Zush_Alignment > ZEX_MGY_LEGITIMACY
+					ZEX_MGY_VAR_Zush_Unrest_percentile > party_popularity@ruling_party
 				}	
 			}
 		}
@@ -1520,31 +1497,31 @@ defined_text = {
 			count_triggers = {
 				amount = 4
 				check_variable = {
-					ZEX_MGY_VAR_Sineighi_Alignment > ZEX_MGY_LEGITIMACY
+					ZEX_MGY_VAR_Sineighi_Unrest_percentile > party_popularity@ruling_party
 				}
 				check_variable = {
-					ZEX_MGY_VAR_Delta_Alignment > ZEX_MGY_LEGITIMACY
+					ZEX_MGY_VAR_Delta_Unrest_percentile > party_popularity@ruling_party
 				}
 				check_variable = {
-					ZEX_MGY_VAR_Kaneigh_Alignment > ZEX_MGY_LEGITIMACY
+					ZEX_MGY_VAR_Kaneigh_Unrest_percentile > party_popularity@ruling_party
 				}
 				check_variable = {
-					ZEX_MGY_VAR_Maneisrata_Alignment > ZEX_MGY_LEGITIMACY
+					ZEX_MGY_VAR_Maneisrata_Unrest_percentile > party_popularity@ruling_party
 				}
 				check_variable = {
-					ZEX_MGY_VAR_Manephis_Alignment > ZEX_MGY_LEGITIMACY
+					ZEX_MGY_VAR_Manephis_Unrest_percentile > party_popularity@ruling_party
 				}
 				check_variable = {
-					ZEX_MGY_VAR_Somnambula_Alignment > ZEX_MGY_LEGITIMACY
+					ZEX_MGY_VAR_Somnambula_Unrest_percentile > party_popularity@ruling_party
 				}
 				check_variable = {
-					ZEX_MGY_VAR_Eastdesert_Alignment > ZEX_MGY_LEGITIMACY
+					ZEX_MGY_VAR_Eastdesert_Unrest_percentile > party_popularity@ruling_party
 				}
 				check_variable = {
-					ZEX_MGY_VAR_UpperMaregypt_Alignment > ZEX_MGY_LEGITIMACY
+					ZEX_MGY_VAR_UpperMaregypt_Unrest_percentile > party_popularity@ruling_party
 				}
 				check_variable = {
-					ZEX_MGY_VAR_Zush_Alignment > ZEX_MGY_LEGITIMACY
+					ZEX_MGY_VAR_Zush_Unrest_percentile > party_popularity@ruling_party
 				}	
 			}
 		}
@@ -1555,31 +1532,31 @@ defined_text = {
 			count_triggers = {
 				amount = 3
 				check_variable = {
-					ZEX_MGY_VAR_Sineighi_Alignment > ZEX_MGY_LEGITIMACY
+					ZEX_MGY_VAR_Sineighi_Unrest_percentile > party_popularity@ruling_party
 				}
 				check_variable = {
-					ZEX_MGY_VAR_Delta_Alignment > ZEX_MGY_LEGITIMACY
+					ZEX_MGY_VAR_Delta_Unrest_percentile > party_popularity@ruling_party
 				}
 				check_variable = {
-					ZEX_MGY_VAR_Kaneigh_Alignment > ZEX_MGY_LEGITIMACY
+					ZEX_MGY_VAR_Kaneigh_Unrest_percentile > party_popularity@ruling_party
 				}
 				check_variable = {
-					ZEX_MGY_VAR_Maneisrata_Alignment > ZEX_MGY_LEGITIMACY
+					ZEX_MGY_VAR_Maneisrata_Unrest_percentile > party_popularity@ruling_party
 				}
 				check_variable = {
-					ZEX_MGY_VAR_Manephis_Alignment > ZEX_MGY_LEGITIMACY
+					ZEX_MGY_VAR_Manephis_Unrest_percentile > party_popularity@ruling_party
 				}
 				check_variable = {
-					ZEX_MGY_VAR_Somnambula_Alignment > ZEX_MGY_LEGITIMACY
+					ZEX_MGY_VAR_Somnambula_Unrest_percentile > party_popularity@ruling_party
 				}
 				check_variable = {
-					ZEX_MGY_VAR_Eastdesert_Alignment > ZEX_MGY_LEGITIMACY
+					ZEX_MGY_VAR_Eastdesert_Unrest_percentile > party_popularity@ruling_party
 				}
 				check_variable = {
-					ZEX_MGY_VAR_UpperMaregypt_Alignment > ZEX_MGY_LEGITIMACY
+					ZEX_MGY_VAR_UpperMaregypt_Unrest_percentile > party_popularity@ruling_party
 				}
 				check_variable = {
-					ZEX_MGY_VAR_Zush_Alignment > ZEX_MGY_LEGITIMACY
+					ZEX_MGY_VAR_Zush_Unrest_percentile > party_popularity@ruling_party
 				}	
 			}
 		}
@@ -1590,31 +1567,31 @@ defined_text = {
 			count_triggers = {
 				amount = 2
 				check_variable = {
-					ZEX_MGY_VAR_Sineighi_Alignment > ZEX_MGY_LEGITIMACY
+					ZEX_MGY_VAR_Sineighi_Unrest_percentile > party_popularity@ruling_party
 				}
 				check_variable = {
-					ZEX_MGY_VAR_Delta_Alignment > ZEX_MGY_LEGITIMACY
+					ZEX_MGY_VAR_Delta_Unrest_percentile > party_popularity@ruling_party
 				}
 				check_variable = {
-					ZEX_MGY_VAR_Kaneigh_Alignment > ZEX_MGY_LEGITIMACY
+					ZEX_MGY_VAR_Kaneigh_Unrest_percentile > party_popularity@ruling_party
 				}
 				check_variable = {
-					ZEX_MGY_VAR_Maneisrata_Alignment > ZEX_MGY_LEGITIMACY
+					ZEX_MGY_VAR_Maneisrata_Unrest_percentile > party_popularity@ruling_party
 				}
 				check_variable = {
-					ZEX_MGY_VAR_Manephis_Alignment > ZEX_MGY_LEGITIMACY
+					ZEX_MGY_VAR_Manephis_Unrest_percentile > party_popularity@ruling_party
 				}
 				check_variable = {
-					ZEX_MGY_VAR_Somnambula_Alignment > ZEX_MGY_LEGITIMACY
+					ZEX_MGY_VAR_Somnambula_Unrest_percentile > party_popularity@ruling_party
 				}
 				check_variable = {
-					ZEX_MGY_VAR_Eastdesert_Alignment > ZEX_MGY_LEGITIMACY
+					ZEX_MGY_VAR_Eastdesert_Unrest_percentile > party_popularity@ruling_party
 				}
 				check_variable = {
-					ZEX_MGY_VAR_UpperMaregypt_Alignment > ZEX_MGY_LEGITIMACY
+					ZEX_MGY_VAR_UpperMaregypt_Unrest_percentile > party_popularity@ruling_party
 				}
 				check_variable = {
-					ZEX_MGY_VAR_Zush_Alignment > ZEX_MGY_LEGITIMACY
+					ZEX_MGY_VAR_Zush_Unrest_percentile > party_popularity@ruling_party
 				}	
 			}
 		}
@@ -1625,31 +1602,31 @@ defined_text = {
 			count_triggers = {
 				amount = 1
 				check_variable = {
-					ZEX_MGY_VAR_Sineighi_Alignment > ZEX_MGY_LEGITIMACY
+					ZEX_MGY_VAR_Sineighi_Unrest_percentile > party_popularity@ruling_party
 				}
 				check_variable = {
-					ZEX_MGY_VAR_Delta_Alignment > ZEX_MGY_LEGITIMACY
+					ZEX_MGY_VAR_Delta_Unrest_percentile > party_popularity@ruling_party
 				}
 				check_variable = {
-					ZEX_MGY_VAR_Kaneigh_Alignment > ZEX_MGY_LEGITIMACY
+					ZEX_MGY_VAR_Kaneigh_Unrest_percentile > party_popularity@ruling_party
 				}
 				check_variable = {
-					ZEX_MGY_VAR_Maneisrata_Alignment > ZEX_MGY_LEGITIMACY
+					ZEX_MGY_VAR_Maneisrata_Unrest_percentile > party_popularity@ruling_party
 				}
 				check_variable = {
-					ZEX_MGY_VAR_Manephis_Alignment > ZEX_MGY_LEGITIMACY
+					ZEX_MGY_VAR_Manephis_Unrest_percentile > party_popularity@ruling_party
 				}
 				check_variable = {
-					ZEX_MGY_VAR_Somnambula_Alignment > ZEX_MGY_LEGITIMACY
+					ZEX_MGY_VAR_Somnambula_Unrest_percentile > party_popularity@ruling_party
 				}
 				check_variable = {
-					ZEX_MGY_VAR_Eastdesert_Alignment > ZEX_MGY_LEGITIMACY
+					ZEX_MGY_VAR_Eastdesert_Unrest_percentile > party_popularity@ruling_party
 				}
 				check_variable = {
-					ZEX_MGY_VAR_UpperMaregypt_Alignment > ZEX_MGY_LEGITIMACY
+					ZEX_MGY_VAR_UpperMaregypt_Unrest_percentile > party_popularity@ruling_party
 				}
 				check_variable = {
-					ZEX_MGY_VAR_Zush_Alignment > ZEX_MGY_LEGITIMACY
+					ZEX_MGY_VAR_Zush_Unrest_percentile > party_popularity@ruling_party
 				}	
 			}
 		}

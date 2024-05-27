@@ -8,6 +8,9 @@ ZEX_MGY_Enable_Vizier = {
 	set_variable = {
 		ZEX_MGY_vizier_King_Balance = 0
 	}
+	set_variable = {
+		ZEX_MGY_edict_cost = 40
+	}
 	ZEX_MGY_UPDATE_VIZIER_KING_VARIABLE = yes
 	set_country_flag = zex_mgy_vizier_enabled_flag
 	if = {
@@ -50,6 +53,9 @@ ZEX_MGY_Enable_Vizier_SETUP = {
 	}
 	set_variable = {
 		ZEX_MGY_vizier_King_Balance = -60
+	}
+	set_variable = {
+		ZEX_MGY_edict_cost = 40
 	}
 	ZEX_MGY_UPDATE_VIZIER_KING_VARIABLE = yes
 	set_country_flag = zex_mgy_vizier_enabled_flag

@@ -1,5 +1,5 @@
 ﻿l_english:
- ZEX_EMPTY_LINE:0 "\n "
+ ZEX_EMPTY_LINE:0 " \n"
  
  ZEX_DEBUG_CATEGORY:0 "§YZebrica Expanded§!: Debug Decisions"
  ZEX_DEBUG_CATEGORY_desc:0 "Debug decisions for testing and setting up various mod-related features"
@@ -11,33 +11,33 @@
  ZEX_DECREASE_VIZIER_INFLUENCE_desc:0 ""
  ZEX_MGY_TEST_SERPATISM_UPDATE:0 "Current impact is: [?zex_mgy_seperatism_impact_value_twentieth] / [?zex_mgy_seperatism_impact_value_twentieth]"
 
- ZEX_DEBUG_Randomly_Change_Sineighi_Alignment_tt:0 "§YDebug§!: randomise Singeighi alignment ([?Root.ZEX_MGY_VAR_Sineighi_Alignment])"
+ ZEX_DEBUG_Randomly_Change_Sineighi_Alignment_tt:0 "§YDebug§!: randomise Singeighi alignment ([?Root.ZEX_MGY_VAR_Sineighi_Unrest])"
 
  #Maregyptian Diet GUI
  ZEX_MAREGYPT_ROYAL_DIET_CATEGORY:0 "The Maregyptian Diet"
 
- ZEX_MGY_royal_diet_Help_tt:0 "The £ZEX_royaldiet  §ORoyal Diet§! mechanic represents the ongoing political maneouvering surrounding our constitution's rewrite and ratification.\n\nThree §Yfactions§! are currently vying for control of the available §Y200 seats§!: the £monarchist_faction  §0Harmonists§!, the £loyalist_faction  §2Loyalists§! and the £republican_faction  §LZebricans§!. At any point in time, each faction will control a certain amount of §Yseats§! within the diet, and each faction will have an §Yattitude§! towards our §YVizier§!. Attitude ranges from §Y0§!-§Y100§!, with a faction being considered §Gloyal§! if its attitude is greater than §Y70§!, neutral if greater than §Y30§! and otherwise §tdisloyal§!.\n\nFactions will contribute a certain amount of seats to the §Ycurrent issue§! depending on their attitude: loyal factions will contribute §Yall§! their seats, neutral factions §Yroughly half§! and disloyal factions will contribute §Yzero§! seats. Independent seats will always support us so long as they are loyal. In order the make any progress, we will need to strive and maintain at least §Y101§! seats in our good graces so that we may succesfully reform our government.\n\nFaction loyalty and seats are affected by §Ydecisions§!, §Yfocuses§! and §Yevents§!.\n\n§tNote: it is imperative that at least one faction reaches a majority, or else we may not be able to ratify the constitution's final draft!§!"
+ ZEX_MGY_royal_diet_Help_tt:0 "The £ZEX_royaldiet  §ORoyal Diet§! mechanic represents the ongoing political maneouvering surrounding our constitution's rewrite and ratification.\n\nThe diet consists of £ZEX_diet_seat  §Y200§! total seats, split between four factions: the £republican_faction  §YZebricans§!, the £monarchist_faction  §YHarmonists§!, the £loyalist_faction  §YMaredjay§! and §Yindependents§!. Furthermore, only some of each factions' representatives will be supportive at a given moment.\n\nIn order to make any progress, we will need at least §Y101§! §7supportive§! seats to ratify new constitutional ammendments. To deal with this, we have several tools at our disposal: some §Lfocuses§!, §Ldecisions§! and §Levents§! will allow us to gain more support. Additionally, factions may occasionally put an §Lagenda§! forward which if completed will secure us the backing of some of its senators."
 
  ZEX_MGY_royal_diet_total_title_text:0 "The Royal Diet"
  ZEX_MGY_royal_diet_main_icon_tt:0 "[ZEX_MGY_Get_diet_Faction_Name]"
  ZEX_MGY_royal_diet_total_support_current_text:0 "Current Royal Diet Support: "
  ZEX_MGY_royal_diet_total_support_current_value_text:0 "§Y[?ZEX_MGY_Royal_Diet_Total_Support]§!"
 
- ZEX_MGY_Zebrican_Faction_Loyalty_Display_text:0 "[ZEX_MGY_Get_Zebrican_Loyalty]"
+ ZEX_MGY_Zebrican_Faction_Loyalty_Display_text:0 "§Y[?ZEX_MGY_Royal_Diet_Zebrican_Loyalty]§!"
  ZEX_MGY_Zebrican_Faction_Seats_Display_text:0 "§Y[?ZEX_MGY_royal_diet_seat_array^0]§!"
- ZEX_MGY_Harmonist_Faction_Loyalty_Display_text:0 "[ZEX_MGY_Get_Harmonist_Loyalty]"
+ ZEX_MGY_Harmonist_Faction_Loyalty_Display_text:0 "§Y[?ZEX_MGY_Royal_Diet_Harmonist_Loyalty]§!"
  ZEX_MGY_Harmonist_Faction_Seats_Display_text:0 "§Y[?ZEX_MGY_royal_diet_seat_array^1]§!"
- ZEX_MGY_Loyalists_Faction_Loyalty_Display_text:0 "[ZEX_MGY_Get_Loyalists_Loyalty]"
+ ZEX_MGY_Loyalists_Faction_Loyalty_Display_text:0 "§Y[?ZEX_MGY_Royal_Diet_Loyalists_Loyalty]§!"
  ZEX_MGY_Loyalists_Faction_Seats_Display_text:0 "§Y[?ZEX_MGY_royal_diet_seat_array^2]§!"
- ZEX_MGY_Independent_Faction_Loyalty_Display_text:0 "[ZEX_MGY_Get_Independent_Loyalty]"
+ ZEX_MGY_Independent_Faction_Loyalty_Display_text:0 "§Y[?ZEX_MGY_Royal_Diet_Independent_Loyalty]§!"
  ZEX_MGY_Independent_Faction_Seats_Display_text:0 "§Y[?ZEX_MGY_royal_diet_seat_array^3]§!"
 
- ZEX_MGY_Faction_Values_tt:0 "Every faction is characterised by a number of §Yseats§! and a §Yloyalty§!. A faction's seats will vote according to their loyalty, and the higher the loyalty, the greater the number of seats of that faction will be support the diet's efforts in our political endeavours."
+ ZEX_MGY_Faction_Values_tt:0 "Every faction is characterised by a number of £ZEX_diet_seat  §Yseats§!, a fraction of which only will £ZEX_diet_loyalty  §Ysupport§! the current agenda. A faction's loyalty waxes and wanes, but it is best to keep in mind that shall a faction lose the support of some representatives the new representatives will not necessarily be loyal!"
 
- ZEX_MGY_Zebrican_Faction_values_tt:0 "Currently, the §LZebrican§! representatives are considered [ZEX_MGY_Get_Zebrican_Loyalty] ([?ZEX_MGY_Royal_Diet_Zebrican_Loyalty]) towards the Vizier. They currently control §Y[?ZEX_MGY_royal_diet_seat_array^0]§! seats in the diet."
- ZEX_MGY_Harmonist_Faction_values_tt:0 "Currently, the §0Harmonist§! representatives are considered [ZEX_MGY_Get_Harmonist_Loyalty] ([?ZEX_MGY_Royal_Diet_Harmonist_Loyalty]) towards the Vizier. They currently control §Y[?ZEX_MGY_royal_diet_seat_array^1]§! seats in the diet."
- ZEX_MGY_Loyalists_Faction_values_tt:0 "Currently, the §2Loyalist§! representatives are considered [ZEX_MGY_Get_Loyalists_Loyalty] ([?ZEX_MGY_Royal_Diet_Loyalists_Loyalty]) towards the Vizier. They currently control §Y[?ZEX_MGY_royal_diet_seat_array^1]§! seats in the diet."
- ZEX_MGY_Independent_Faction_values_tt:0 "Currently, §gindependent§! representatives are considered [ZEX_MGY_Get_Independent_Loyalty] ([?ZEX_MGY_Royal_Diet_Independent_Loyalty]) towards the Vizier. They control §Y[?ZEX_MGY_royal_diet_seat_array^3]§! seats in the diet."
+ ZEX_MGY_Zebrican_Faction_values_tt:0 "Currently, §Y[?ZEX_MGY_Royal_Diet_Zebrican_Loyalty]§! §LZebrican§! representatives support us, out of §Y[?ZEX_MGY_royal_diet_seat_array^0]§! seats controlled by their faction in the diet."
+ ZEX_MGY_Harmonist_Faction_values_tt:0 "Currently, §Y[?ZEX_MGY_Royal_Diet_Harmonist_Loyalty]§! §0Harmonist§! representatives support us, out of §Y[?ZEX_MGY_royal_diet_seat_array^1]§! seats controlled by their faction in the diet."
+ ZEX_MGY_Loyalists_Faction_values_tt:0 "Currently, §Y[?ZEX_MGY_Royal_Diet_Loyalists_Loyalty]§! §2Maredjay§! representatives support us, out of §Y[?ZEX_MGY_royal_diet_seat_array^2]§! seats controlled by their faction in the diet."
+ ZEX_MGY_Independent_Faction_values_tt:0 "Currently, §Y[?ZEX_MGY_Royal_Diet_Independent_Loyalty]§! §gindependents§! representatives support us, out of §Y[?ZEX_MGY_royal_diet_seat_array^3]§! seats controlled by their faction in the diet."
 
  ZEX_MGY_Diet_Loyal_Faction:0 "§GLoyal§!"
  ZEX_MGY_Diet_Neutral_Faction:0 "Neutral"
@@ -48,24 +48,24 @@
  zex_royal_diet_party_3_text:0 "This seat is aligned with the §2Loyalist§! faction"
  zex_royal_diet_party_4_text:0 "This seat is considered to be §gindependent§!"
 
- zex_mgy_royal_diet_faction_lore_zebricans:0 "The §LZebricans§! represent the more reform-minded faction of the §YMaregyptian Harmony Association§!. Whilst still nominally part of the broader pro-Harmony coalition, Zebricans are fundamentally anti-monarchist, modernists, pan-nationalists and above all socially progressive. This is not to say that the movement is republican, as it is not; a definitively heterogenous movement, §YZebricanism§! comprises members that range from moderate §Ysocial democrats§! to §Yagrarian populists§!, united against what they perceive as a corrupt, broken system."
- zex_mgy_royal_diet_faction_lore_harmonists:0 "The §0Harmonist§! faction represents the centrist, moderate conservative and other classical harmonists. Once the dominant faction of the §YMaregyptian Harmony Association§!, it now finds itself split between §Yconsitutionalists§! and §Ymonarchists§!. Its members frequently clash - be it by words or with hooves, something that has undoubtedly led to the gradual decline of the Maregyptian Harmonic movement."
- zex_mgy_royal_diet_faction_lore_loyalists:0 "Also known as §Ythe King's Party§!, the §2Loyalists§! are reactionary in all but name. Viewing §YHarmony§! as a withering belief, they seek to revitalise Maregypt by reinforcing the King's position within the state, though the Loyalists have yet to agree as to whether this means embracing §Ytraditionalism§! or §Yreshaping Maregyptian Harmony§! altogether."
+ zex_mgy_royal_diet_faction_lore_zebricans:0 "The §YZebricans§! represent the more reform-minded faction of the Semayt Heyter-ta en Haret. Whilst still nominally part of the broader pro-Harmony coalition, Zebricans are radical progressive, modernists and above all pan-nationalists. This is not to say that the movement is republican, as that would be a mis-characterisation; a definitively heterogenous movement, Zebricanism comprises members that range from moderate social democrats to agrarian populists, united against what they perceive as a corrupt, broken system."
+ zex_mgy_royal_diet_faction_lore_harmonists:0 "The §YHarmonist§! faction - spearheaded at its inception by Shaa Doof - represents the centrist, moderate conservative and other classical harmonists. Once the dominant faction of theMaregyptian Harmony movement, it now finds itself split between pro-consitutionalists, monarchists and even radical absolutists. Its members frequently clash - be it by words or with hooves, something that has undoubtedly led to the gradual decline of the Harmonic cause in the Neighle valley."
+ zex_mgy_royal_diet_faction_lore_loyalists:0 "Also known as the Loyalists, the §YMaredjay§! are reactionary in all but name. Not a political party as much as a loose association of military veterans, former members of the Semayt Nesut-Bity and even wealth aristocrats, the Loyalist cause is very much one rooted in spite for Harmony rather than being united by one set of core beliefs."
  zex_mgy_royal_diet_faction_lore_independents:0 "The §gindependent§! representatives are not aligned with any of the three factions currently participating in the diet."
 
  #Republican agitation GUI
 
- ZEX_MGY_Rebellion_Help_tt:0 "The £ZEX_civilwartrigger  §Oprovincial unrest§! mechanic represents the inner turmoil currently ravaging our nation.\n\nAt a country-wide level the mechanic comprises of two variables: the §Yaverage unrest§! and §Ylegitimacy§!. The first affects both our §Ypolitical power gain§! and our §Ystability§!, whilst the second has no effect. It is of extreme importance that the §Yaverage unrest§! does not exceed our §Ylegitimacy§!. Shall the unrest grow out of control, with §Y5§! or more provinces breaking out in §topen rebellion§!, it will trigger a §tcivil war§!. Going to §Ywar§! will also initiate a revolt. At the state level, the different provinces' §Ylocal unrest§! will affect local §8compliance growth§!, §8construction speed§! and §8recruitable population§!.\n\nEvery 'turn' (or every §Y[?ROOT.ZEX_MGY_UNREST_EFFECTS_INTERVALLS]§! days) a certain ammount of provinces will see their unrest increase. It is thus paramount to not only keep track of the increasing unrest throughout the different provinces, but also to be proactive by choosing to intervene in key states and completing certain focuses in time."
+ ZEX_MGY_Rebellion_Help_tt:0 "The £ZEX_civilwartrigger  §Oprovincial unrest§! mechanic represents the inner turmoil currently ravaging our nation.\n\nAt a country-wide level the mechanic comprises of two variables: the §Yaverage unrest§! and the §Yruling party's popularity§!. The first affects both our §Ypolitical power gain§! and our §Ystability§!, whilst the second has no additional effect. It is of extreme importance that the §Ylocal unrest§! of our provinces does not exceed our §Yruling party popularity§!. At the state level, the different provinces' §Ylocal unrest§! will affect local §8compliance growth§!, §8construction speed§! and §8recruitable population§!.\n\nProvinces will break out into §Ropen rebellion§! if their unrest exceeds the §Yruling party popularity§!. If §Y5§! or more provinces break into §Ropen rebellion§!, or if we enter an §Rarmed conflict§! with another nation, our country will be plunged into a §tcivil war§!! In order for this unrest to end, we will need the §7pacify each state§!.\n\nEvery 'turn' (or every §Y[?ROOT.ZEX_MGY_UNREST_EFFECTS_INTERVALLS]§! days) a certain ammount of provinces will see their unrest increase. It is thus paramount to not only keep track of the increasing unrest throughout the different provinces, but also to be proactive by choosing to intervene in key states and completing certain focuses in time."
 
  ZEX_MGY_internal_unrest_title_text:0 "Provincial Unrest"
  ZEX_MGY_AVERAGE_UNREST_BOX_VAL:0 "§Y[?ROOT.ZEX_MGY_AVERAGE_UNREST|1]§!"
- ZEX_MGY_LEGITIMACY_BOX_VAL:0 "§Y[?ROOT.ZEX_MGY_LEGITIMACY|2]§!"
+ ZEX_MGY_LEGITIMACY_BOX_VAL:0 "§Y[?ROOT.GetPartySupport|2]§!"
 
  ZEX_MGY_AVERAGE_UNREST_EFFECT_TOOLTIP:0 "§YAverage Political Unrest:§!\n\nCurrent Effects:\n\nStability: §t[?ROOT.ZEX_MGY_AVERAGE_UNREST_NEGATIVE|%2]§!\nPolitical Power Gain: §t[?ROOT.ZEX_MGY_AVERAGE_POLITICAL_IMPACT_UNREST|%2]§!"
- ZEX_MGY_REBELLION_LEGITIMACY_EFFECT_TOOLTIP:0 "§YLegitimacy:§!\n\nDaily Legitimacy Gain: [?ROOT.ZEX_MGY_LEGITIMACY_INCREASE_DAILY|=+]"
+ ZEX_MGY_REBELLION_LEGITIMACY_EFFECT_TOOLTIP:0 "§YRuling Party Popularity:§!\n\nRepresents the current ruling party's popularity"
 
  ZEX_MGY_AVERAGE_UNREST_TOOLTIP:0 "Our current £local_unrest  §Yaverage unrest§! represents the mean of all of our provinces' local unrest. At the national level, it will directly affect our country's £stability_texticon  §Ystability§! and £pol_power  §Ypolitical power§! gain."
- ZEX_MGY_REBELLION_LEGITIMACY_TOOLTIP:0 "Our current £ZEX_legitimacy  §Ylegitimacy§! represents how well our current monarchs holds up in the eyes of our citizens. Unlike the £local_unrest  §Yaverage unrest§! value, it has no effect on our country."
+ ZEX_MGY_REBELLION_LEGITIMACY_TOOLTIP:0 "Our current £ZEX_legitimacy  §Yruling party popularity§! represents how well our current government holds up in the eyes of our citizens."
 
  zex_mgy_less_than_actions_threshold_tt:0 "Not: has already taken §Y[?ZEX_MGY_MAX_Actions_Taken]§! actions this turn"
  zex_mgy_no_action_in_kaneig_tt:0 "Not: has already intervened in §YKaneigh§!"
@@ -88,19 +88,19 @@
   zex_mgy_uppermaregypt:0 "§YUpper Maregypt§!"
   zex_mgy_zush:0 "§YZush§!"
 
-  zex_mgy_sineighi_unrest:0 "[?ZEX_MGY_VAR_Sineighi_Alignment|2]"
-  zex_mgy_delta_unrest:0 "[?ZEX_MGY_VAR_Delta_Alignment|2]"
-  zex_mgy_kaneigh_unrest:0 "[?ZEX_MGY_VAR_Kaneigh_Alignment|2]"
-  zex_mgy_maneisrata_unrest:0 "[?ZEX_MGY_VAR_Maneisrata_Alignment|2]"
-  zex_mgy_manephis_unrest:0 "[?ZEX_MGY_VAR_Manephis_Alignment|2]"
-  zex_mgy_somnambula_unrest:0 "[?ZEX_MGY_VAR_Somnambula_Alignment|2]"
-  zex_mgy_easterndesert_unrest:0 "[?ZEX_MGY_VAR_Eastdesert_Alignment|2]"
-  zex_mgy_uppermaregypt_unrest:0 "[?ZEX_MGY_VAR_UpperMaregypt_Alignment|2]"
-  zex_mgy_zush_unrest:0 "[?ZEX_MGY_VAR_Zush_Alignment|2]"
+  zex_mgy_sineighi_unrest:0 "[?ZEX_MGY_VAR_Sineighi_Unrest|2]"
+  zex_mgy_delta_unrest:0 "[?ZEX_MGY_VAR_Delta_Unrest|2]"
+  zex_mgy_kaneigh_unrest:0 "[?ZEX_MGY_VAR_Kaneigh_Unrest|2]"
+  zex_mgy_maneisrata_unrest:0 "[?ZEX_MGY_VAR_Maneisrata_Unrest|2]"
+  zex_mgy_manephis_unrest:0 "[?ZEX_MGY_VAR_Manephis_Unrest|2]"
+  zex_mgy_somnambula_unrest:0 "[?ZEX_MGY_VAR_Somnambula_Unrest|2]"
+  zex_mgy_easterndesert_unrest:0 "[?ZEX_MGY_VAR_Eastdesert_Unrest|2]"
+  zex_mgy_uppermaregypt_unrest:0 "[?ZEX_MGY_VAR_UpperMaregypt_Unrest|2]"
+  zex_mgy_zush_unrest:0 "[?ZEX_MGY_VAR_Zush_Unrest|2]"
 
- ZEX_MGY_BUTTON_PROPAGANDA_TOOLTIP:0 "§YPromote Royalist Propaganda§!\n\n§YPrerequisites:§!\n[ZEX_MGY_GET_ALREADY_TOOK_TWO_ACTIONS]  Not: has already taken §Y[?ZEX_MGY_MAX_Actions_Taken]§! actions this round\n[ZEX_MGY_GET_ALREADY_TOOK_ACTION_ON_STATE]  Not: has already intervened in [ZEX_MGY_GET_FOCUSED_STATE_NAME] this round\n\n§YEffects:§!\n§LRegain §!§G2§!§L £ZEX_legitimacy   legitimacy at the end of this round§!\n\nIt costs £pol_power  §t[?ZEX_MGY_UNREST_POLITICALPOWER_COUNTER_COST]§! to take this action"
- ZEX_MGY_BUTTON_ARRESTS_TOOLTIP:0 "§YArrest Agitators§!\n\n§YPrerequisites:§!\n[ZEX_MGY_GET_ALREADY_TOOK_TWO_ACTIONS]  Not: has already taken §Y[?ZEX_MGY_MAX_Actions_Taken]§! actions this round\n[ZEX_MGY_GET_ALREADY_TOOK_ACTION_ON_STATE]  Not: has already intervened in [ZEX_MGY_GET_FOCUSED_STATE_NAME] this round\n\n§YEffects:§!\n§LDecreases £local_unrest local unrest in §![ZEX_MGY_GET_FOCUSED_STATE_NAME]§L by §!§G[?ZEX_MGY_UNREST_EFFECTS_IMPACT]§!\n\nIt costs £ZEX_legitimacy  §t[?ZEX_MGY_UNREST_LEGITIMACY_COUNTER_COST]§! to take this action"
- ZEX_MGY_BUTTON_POLICE_TOOLTIP:0 "§YDeploy the Medjay§!\n\n§YPrerequisites:§!\n[ZEX_MGY_GET_IF_STATE_PACIFIED]  NOT: The province is already pacified\n[ZEX_MGY_GET_ALREADY_TOOK_TWO_ACTIONS]  Not: has already taken §Y[?ZEX_MGY_MAX_Actions_Taken]§! actions this round\n[ZEX_MGY_GET_ALREADY_TOOK_ACTION_ON_STATE]  Not: has already intervened in [ZEX_MGY_GET_FOCUSED_STATE_NAME] this round\n\n§YEffects:§!\n§LUnrest will not increase in §![ZEX_MGY_GET_FOCUSED_STATE_NAME]§L this round§!\n\nIt costs £pol_power  §t[?ZEX_MGY_UNREST_POLITICALPOWER_COUNTER_COST]§! to take this action"
+ ZEX_MGY_BUTTON_PROPAGANDA_TOOLTIP:0 "§YPromote Royalist Propaganda§!\n\n§YPrerequisites:§!\n[ZEX_MGY_GET_ALREADY_TOOK_TWO_ACTIONS]  Not: has already taken §Y[?ZEX_MGY_MAX_Actions_Taken]§! actions this round\n[ZEX_MGY_GET_ALREADY_TOOK_ACTION_ON_STATE]  Not: has already intervened in [ZEX_MGY_GET_FOCUSED_STATE_NAME] this round\n\n§YEffects:§!\nGain Base Stability: §G+2.0%§!\nChange in Popularity of Harmony: §G+1.50%§!\nChange in Popularity of Neutrality: §G+1.50%§!\n\nIt costs £pol_power  §t[?ZEX_MGY_UNREST_POLITICALPOWER_COUNTER_COST]§! to take this action"
+ ZEX_MGY_BUTTON_ARRESTS_TOOLTIP:0 "§YArrest Agitators§!\n\n§YPrerequisites:§!\n[ZEX_MGY_GET_ALREADY_TOOK_TWO_ACTIONS]  Not: has already taken §Y[?ZEX_MGY_MAX_Actions_Taken]§! actions this round\n[ZEX_MGY_GET_ALREADY_TOOK_ACTION_ON_STATE]  Not: has already intervened in [ZEX_MGY_GET_FOCUSED_STATE_NAME] this round\n[ZEX_MGY_GET_HAS_ENOUGH_LEGITIMACY_FOR_BUTTON_CHECK]  Not: The §Yruling party§! has less than §Y10%§! popularity\n\n§YEffects:§!\nDecreases £local_unrest local unrest in [ZEX_MGY_GET_FOCUSED_STATE_NAME] by §G[?ZEX_MGY_UNREST_EFFECTS_IMPACT]§!\nChange in Ruling Party Popularity: §t-3.00%§!\n\nIt costs £pol_power  §t[?ZEX_MGY_UNREST_POLITICALPOWER_COUNTER_COST]§! to take this action"
+ ZEX_MGY_BUTTON_POLICE_TOOLTIP:0 "§YDeploy the Maredjay§!\n\n§YPrerequisites:§!\n[ZEX_MGY_GET_IF_STATE_PACIFIED]  Not: The province is already pacified\n[ZEX_MGY_GET_ALREADY_TOOK_TWO_ACTIONS]  Not: has already taken §Y[?ZEX_MGY_MAX_Actions_Taken]§! actions this round\n[ZEX_MGY_GET_ALREADY_TOOK_ACTION_ON_STATE]  Not: has already intervened in [ZEX_MGY_GET_FOCUSED_STATE_NAME] this round\n\n§YEffects:§!\nUnrest will not increase in [ZEX_MGY_GET_FOCUSED_STATE_NAME] this round\n\nIt costs £pol_power  §t[?ZEX_MGY_UNREST_POLITICALPOWER_COUNTER_COST]§! to take this action"
  ZEX_MGY_republican_agitation_reintegrate_state_button_empty:0 ""
  ZEX_MGY_republican_agitation_reintegrate_state_button_completed:0 "§GPacified§!"
  ZEX_MGY_republican_agitation_reintegrate_state_button:0 "Pacify [ZEX_MGY_GET_FOCUSED_STATE_NAME]"
@@ -119,55 +119,55 @@
  ZEX_MGY_LOWUNREST_SINEIGHI:0 "ZEX_MGY_LOWUNREST_SINEIGHI"
  ZEX_MGY_MIDUNREST_SINEIGHI:0 "ZEX_MGY_MIDUNREST_SINEIGHI"
  ZEX_MGY_HIGHUNREST_SINEIGHI:0 "ZEX_MGY_HIGHUNREST_SINEIGHI"
- ZEX_MGY_sineighi_icon_tt:0 "The current local unrest in §YSineighi§! is £local_unrest §Y[?ROOT.ZEX_MGY_VAR_Sineighi_Alignment]§!, giving us the following effects:\n\nCompliance Growth Speed: [?ZEX_MGY_VAR_Sineighi_Alignment_negative|+%]\nRecruitable Population Factor: [?ZEX_MGY_VAR_Sineighi_Alignment_negative|+%]\nLocal Construction Speed: [?ZEX_MGY_VAR_Sineighi_Alignment_negative|+%]"
+ ZEX_MGY_sineighi_icon_tt:0 "The current local unrest in §YSineighi§! is £local_unrest §Y[?ROOT.ZEX_MGY_VAR_Sineighi_Unrest]§!, applying the following effects state-wide:\n\nCompliance Growth Speed: [?ZEX_MGY_VAR_Sineighi_Unrest_negative|+%]\nRecruitable Population Factor: [?ZEX_MGY_VAR_Sineighi_Unrest_negative|+%]\nLocal Construction Speed: [?ZEX_MGY_VAR_Sineighi_Unrest_negative|+%]"
 
  ZEX_MGY_NOUNREST_MANEISRATA:0 "ZEX_MGY_NOUNREST_MANEISRATA"
  ZEX_MGY_LOWUNREST_MANEISRATA:0 "ZEX_MGY_LOWUNREST_MANEISRATA"
  ZEX_MGY_MIDUNREST_MANEISRATA:0 "ZEX_MGY_MIDUNREST_MANEISRATA"
  ZEX_MGY_HIGHUNREST_MANEISRATA:0 "ZEX_MGY_HIGHUNREST_MANEISRATA"
- ZEX_MGY_Maneisrata_icon_tt:0 "The current local unrest in §YManeisrata§! is £local_unrest §Y[?ROOT.ZEX_MGY_VAR_MANEISRATA_Alignment]§!, giving us the following effects:\n\nCompliance Growth Speed: [?ZEX_MGY_VAR_Maneisrata_Alignment_negative|+%]\nRecruitable Population Factor: [?ZEX_MGY_VAR_Maneisrata_Alignment_negative|+%]\nLocal Construction Speed: [?ZEX_MGY_VAR_Maneisrata_Alignment_negative|+%]"
+ ZEX_MGY_Maneisrata_icon_tt:0 "The current local unrest in §YManeisrata§! is £local_unrest §Y[?ROOT.ZEX_MGY_VAR_Maneisrata_Unrest]§!, applying the following effects to the state:\n\nCompliance Growth Speed: [?ZEX_MGY_VAR_Maneisrata_Unrest_negative|+%]\nRecruitable Population Factor: [?ZEX_MGY_VAR_Maneisrata_Unrest_negative|+%]\nLocal Construction Speed: [?ZEX_MGY_VAR_Maneisrata_Unrest_negative|+%]"
 
  ZEX_MGY_NOUNREST_KANEIGH:0 "ZEX_MGY_NOUNREST_KANEIGH"
  ZEX_MGY_LOWUNREST_KANEIGH:0 "ZEX_MGY_LOWUNREST_KANEIGH"
  ZEX_MGY_MIDUNREST_KANEIGH:0 "ZEX_MGY_MIDUNREST_KANEIGH"
  ZEX_MGY_HIGHUNREST_KANEIGH:0 "ZEX_MGY_HIGHUNREST_KANEIGH"
- ZEX_MGY_Kaneigh_icon_tt:0 "The current local unrest in §YKaneigh§! is £local_unrest §Y[?ROOT.ZEX_MGY_VAR_KANEIGH_Alignment]§!, giving us the following effects:\n\nCompliance Growth Speed: [?ZEX_MGY_VAR_Kaneigh_Alignment_negative|+%]\nRecruitable Population Factor: [?ZEX_MGY_VAR_Kaneigh_Alignment_negative|+%]\nLocal Construction Speed: [?ZEX_MGY_VAR_Kaneigh_Alignment_negative|+%]"
+ ZEX_MGY_Kaneigh_icon_tt:0 "The current local unrest in §YKaneigh§! is £local_unrest §Y[?ROOT.ZEX_MGY_VAR_Kaneigh_Unrest]§!, applying the following effects to the state:\n\nCompliance Growth Speed: [?ZEX_MGY_VAR_Kaneigh_Unrest_negative|+%]\nRecruitable Population Factor: [?ZEX_MGY_VAR_Kaneigh_Unrest_negative|+%]\nLocal Construction Speed: [?ZEX_MGY_VAR_Kaneigh_Unrest_negative|+%]"
  
  ZEX_MGY_NOUNREST_DELTA:0 "ZEX_MGY_NOUNREST_DELTA"
  ZEX_MGY_LOWUNREST_DELTA:0 "ZEX_MGY_LOWUNREST_DELTA"
  ZEX_MGY_MIDUNREST_DELTA:0 "ZEX_MGY_MIDUNREST_DELTA"
  ZEX_MGY_HIGHUNREST_DELTA:0 "ZEX_MGY_HIGHUNREST_DELTA"
- ZEX_MGY_Delta_icon_tt:0 "The current local unrest in the §YDelta§! is £local_unrest §Y[?ROOT.ZEX_MGY_VAR_DELTA_Alignment]§!, giving us the following effects:\n\nCompliance Growth Speed: [?ZEX_MGY_VAR_Delta_Alignment_negative|+%]\nRecruitable Population Factor: [?ZEX_MGY_VAR_Delta_Alignment_negative|+%]\nLocal Construction Speed: [?ZEX_MGY_VAR_Delta_Alignment_negative|+%]"
+ ZEX_MGY_Delta_icon_tt:0 "The current local unrest in the §YDelta§! is £local_unrest §Y[?ROOT.ZEX_MGY_VAR_Delta_Unrest]§!, applying the following effects to the state:\n\nCompliance Growth Speed: [?ZEX_MGY_VAR_Delta_Unrest_negative|+%]\nRecruitable Population Factor: [?ZEX_MGY_VAR_Delta_Unrest_negative|+%]\nLocal Construction Speed: [?ZEX_MGY_VAR_Delta_Unrest_negative|+%]"
 
  ZEX_MGY_NOUNREST_MANEPHIS:0 "ZEX_MGY_NOUNREST_MANEPHIS"
  ZEX_MGY_LOWUNREST_MANEPHIS:0 "ZEX_MGY_LOWUNREST_MANEPHIS"
  ZEX_MGY_MIDUNREST_MANEPHIS:0 "ZEX_MGY_MIDUNREST_MANEPHIS"
  ZEX_MGY_HIGHUNREST_MANEPHIS:0 "ZEX_MGY_HIGHUNREST_MANEPHIS"
- ZEX_MGY_Manephis_icon_tt:0 "The current local unrest in §YManephis§! is £local_unrest §Y[?ROOT.ZEX_MGY_VAR_Manephis_Alignment]§!, giving us the following effects:\n\nCompliance Growth Speed: [?ZEX_MGY_VAR_Manephis_Alignment_negative|+%]\nRecruitable Population Factor: [?ZEX_MGY_VAR_Manephis_Alignment_negative|+%]\nLocal Construction Speed: [?ZEX_MGY_VAR_Manephis_Alignment_negative|+%]"
+ ZEX_MGY_Manephis_icon_tt:0 "The current local unrest in §YManephis§! is £local_unrest §Y[?ROOT.ZEX_MGY_VAR_Manephis_Unrest]§!, applying the following effects to the state:\n\nCompliance Growth Speed: [?ZEX_MGY_VAR_Manephis_Unrest_negative|+%]\nRecruitable Population Factor: [?ZEX_MGY_VAR_Manephis_Unrest_negative|+%]\nLocal Construction Speed: [?ZEX_MGY_VAR_Manephis_Unrest_negative|+%]"
 
  ZEX_MGY_NOUNREST_SOMNAMBULA:0 "ZEX_MGY_NOUNREST_SOMNAMBULA"
  ZEX_MGY_LOWUNREST_SOMNAMBULA:0 "ZEX_MGY_LOWUNREST_SOMNAMBULA"
  ZEX_MGY_MIDUNREST_SOMNAMBULA:0 "ZEX_MGY_MIDUNREST_SOMNAMBULA"
  ZEX_MGY_HIGHUNREST_SOMNAMBULA:0 "ZEX_MGY_HIGHUNREST_SOMNAMBULA"
- ZEX_MGY_Somnambula_icon_tt:0 "The current local unrest in §YSomnambula§! is £local_unrest §Y[?ROOT.ZEX_MGY_VAR_Somnambula_Alignment]§!, giving us the following effects:\n\nCompliance Growth Speed: [?ZEX_MGY_VAR_Somnambula_Alignment_negative|+%]\nRecruitable Population Factor: [?ZEX_MGY_VAR_Somnambula_Alignment_negative|+%]\nLocal Construction Speed: [?ZEX_MGY_VAR_Somnambula_Alignment_negative|+%]"
+ ZEX_MGY_Somnambula_icon_tt:0 "The current local unrest in §YSomnambula§! is £local_unrest §Y[?ROOT.ZEX_MGY_VAR_Somnambula_Unrest]§!, applying the following effects to the state:\n\nCompliance Growth Speed: [?ZEX_MGY_VAR_Somnambula_Unrest_negative|+%]\nRecruitable Population Factor: [?ZEX_MGY_VAR_Somnambula_Unrest_negative|+%]\nLocal Construction Speed: [?ZEX_MGY_VAR_Somnambula_Unrest_negative|+%]"
 
  ZEX_MGY_NOUNREST_DESERT:0 "ZEX_MGY_NOUNREST_DESERT"
  ZEX_MGY_LOWUNREST_DESERT:0 "ZEX_MGY_LOWUNREST_DESERT"
  ZEX_MGY_MIDUNREST_DESERT:0 "ZEX_MGY_MIDUNREST_DESERT"
  ZEX_MGY_HIGHUNREST_DESERT:0 "ZEX_MGY_HIGHUNREST_DESERT"
- ZEX_MGY_Eastdesert_icon_tt:0 "The current local unrest in the §YEastern Desert§! is £local_unrest §Y[?ROOT.ZEX_MGY_VAR_Eastdesert_Alignment]§!, giving us the following effects:\n\nCompliance Growth Speed: [?ZEX_MGY_VAR_Eastdesert_Alignment_negative|+%]\nRecruitable Population Factor: [?ZEX_MGY_VAR_Eastdesert_Alignment_negative|+%]\nLocal Construction Speed: [?ZEX_MGY_VAR_Eastdesert_Alignment_negative|+%]"
+ ZEX_MGY_Eastdesert_icon_tt:0 "The current local unrest in the §YEastern Desert§! is £local_unrest §Y[?ROOT.ZEX_MGY_VAR_Eastdesert_Unrest]§!, applying the following effects to the state:\n\nCompliance Growth Speed: [?ZEX_MGY_VAR_Eastdesert_Unrest_negative|+%]\nRecruitable Population Factor: [?ZEX_MGY_VAR_Eastdesert_Unrest_negative|+%]\nLocal Construction Speed: [?ZEX_MGY_VAR_Eastdesert_Unrest_negative|+%]"
 
  ZEX_MGY_NOUNREST_ZUSH:0 "ZEX_MGY_NOUNREST_ZUSH"
  ZEX_MGY_LOWUNREST_ZUSH:0 "ZEX_MGY_LOWUNREST_ZUSH"
  ZEX_MGY_MIDUNREST_ZUSH:0 "ZEX_MGY_MIDUNREST_ZUSH"
  ZEX_MGY_HIGHUNREST_ZUSH:0 "ZEX_MGY_HIGHUNREST_ZUSH"
- ZEX_MGY_Zush_icon_tt:0 "The current local unrest in §YZush§! is £local_unrest §Y[?ROOT.ZEX_MGY_VAR_Zush_Alignment]§!, giving us the following effects:\n\nCompliance Growth Speed: [?ZEX_MGY_VAR_Zush_Alignment_negative|+%]\nRecruitable Population Factor: [?ZEX_MGY_VAR_Zush_Alignment_negative|+%]\nLocal Construction Speed: [?ZEX_MGY_VAR_Zush_Alignment_negative|+%]"
+ ZEX_MGY_Zush_icon_tt:0 "The current local unrest in §YZush§! is £local_unrest §Y[?ROOT.ZEX_MGY_VAR_Zush_Unrest]§!, applying the following effects to the state:\n\nCompliance Growth Speed: [?ZEX_MGY_VAR_Zush_Unrest_negative|+%]\nRecruitable Population Factor: [?ZEX_MGY_VAR_Zush_Unrest_negative|+%]\nLocal Construction Speed: [?ZEX_MGY_VAR_Zush_Unrest_negative|+%]"
 
  ZEX_MGY_NOUNREST_UPPERMAREGYPT:0 "ZEX_MGY_NOUNREST_UPPERMAREGYPT"
  ZEX_MGY_LOWUNREST_UPPERMAREGYPT:0 "ZEX_MGY_LOWUNREST_UPPERMAREGYPT"
  ZEX_MGY_MIDUNREST_UPPERMAREGYPT:0 "ZEX_MGY_MIDUNREST_UPPERMAREGYPT"
  ZEX_MGY_HIGHUNREST_UPPERMAREGYPT:0 "ZEX_MGY_HIGHUNREST_UPPERMAREGYPT"
- ZEX_MGY_UpperMaregypt_icon_tt:0 "The current local unrest in §YUpper Maregypt§! is £local_unrest §Y[?ROOT.ZEX_MGY_VAR_UpperMaregypt_Alignment]§!, giving us the following effects:\n\nCompliance Growth Speed: [?ZEX_MGY_VAR_UpperMaregypt_Alignment_negative|+%]\nRecruitable Population Factor: [?ZEX_MGY_VAR_UpperMaregypt_Alignment_negative|+%]\nLocal Construction Speed: [?ZEX_MGY_VAR_UpperMaregypt_Alignment_negative|+%]"
+ ZEX_MGY_UpperMaregypt_icon_tt:0 "The current local unrest in §YUpper Maregypt§! is £local_unrest §Y[?ROOT.ZEX_MGY_VAR_UpperMaregypt_Unrest]§!, applying the following effects to the state:\n\nCompliance Growth Speed: [?ZEX_MGY_VAR_UpperMaregypt_Unrest_negative|+%]\nRecruitable Population Factor: [?ZEX_MGY_VAR_UpperMaregypt_Unrest_negative|+%]\nLocal Construction Speed: [?ZEX_MGY_VAR_UpperMaregypt_Unrest_negative|+%]"
 
  ZEX_MGY_republican_agitation_zush_dynmod:0 "Local Unrest"
  ZEX_MGY_republican_agitation_eastdesert_dynmod:0 "Local Unrest"
@@ -230,7 +230,7 @@
  ZEX_Deactivate_Agitation_tt:0 "Disables the §YRepublican Agitation§! mechanic."
 
  ZEX_MAREGYPT_REPUBLICAN_AGITATION_CATEGORY:0 "Political Unrest"
- ZEX_MAREGYPT_REPUBLICAN_AGITATION_CATEGORY_desc:0 "Our country is currently experiencing profound unrest. §YPro-republican militias§!, §Yreactionaries§!, bandits and even our §Yown undisciplined soldiers§! have taken up arms against our kingdom - leading to windespread chaos and §Rpolitical violence§!. Some even say that Harmony has failed the Neighle and its people...has friendship really been withered away and beaten by the implacable sun?\n\nWe cannot let the unrest consume us, lest our country burst into flames. Should the £local_unrest §Ylocal unrest§! of our provinces exceed our £ZEX_legitimacy  §Ylegitimacy§! we risk being plunged into a §tcivil war§!."
+ ZEX_MAREGYPT_REPUBLICAN_AGITATION_CATEGORY_desc:0 "Our country is currently experiencing profound unrest. §YPro-republican militias§!, §Yreactionaries§!, bandits and even our §Yown undisciplined soldiers§! have taken up arms against our kingdom - leading to windespread chaos and §Rpolitical violence§!. Some even say that Harmony has failed the Neighle and its people...has friendship really been withered away and beaten by the implacable sun?\n\nWe cannot let the unrest consume us, lest our country burst into flames. Should the £local_unrest §Ylocal unrest§! of our provinces exceed the £ZEX_legitimacy  §Yruling party's popularity§! we risk being plunged into a §tcivil war§!!"
 
  #Protected Variant of the Provinces for mini game
  ZEX_MGY_NOUNREST_SINEIGHI_Protected:0 "ZEX_MGY_NOUNREST_SINEIGHI_Protected"
@@ -312,29 +312,31 @@
  ZEX_MGY_VIZIER_AT_LEAST_10_ON_EITHER_SIDE_tt:0 "The  §YBalance of Power§! is currently either £BoP_left_texticon  §Y10§! in the §YVizier§!'s favour or £BoP_right_texticon  §Y10§! in the §YKing's§! favour"
  ZEX_MGY_AT_LEAST_20_pp_tt:0 "Has at least £pol_power §Y20§!"
 
- ZEX_MGY_DECREE_BALANCE_EVERYTHING:0 "Promote Governmental Unity"
- ZEX_MGY_DECREE_EXPAND_BUREAUCRACY:0 "Expand the Bureaucracy"
- ZEX_MGY_DECREE_SEEK_INDUSTRIALIST_SUPPORT:0 "Re-Adjust the State's Budget"
- ZEX_MGY_DECREE_INCREASE_SALARIES:0 "Increase Adminstrative Funding"
- ZEX_MGY_DECREE_HOLD_SPEECH:0 "Hold a Speech"
- ZEX_MGY_DECREE_REFORM_GOVERNMENT:0 "Appoint New Ministers"
- ZEX_MGY_DECREE_RALLY_MEDJAY:0 "Rally the Medjay"
+ ZEX_MGY_DECREE_BALANCE_EVERYTHING:0 "Make a Show of Unity"
+ ZEX_MGY_DECREE_EXPAND_BUREAUCRACY:0 "Implement the M'nyw"
+ ZEX_MGY_DECREE_SEEK_INDUSTRIALIST_SUPPORT:0 "Issue New Treasury Bonds"
+ ZEX_MGY_DECREE_INCREASE_SALARIES:0 "Crack Down on Corruption"
+ ZEX_MGY_DECREE_HOLD_SPEECH:0 "Review the Military"
+ ZEX_MGY_DECREE_REFORM_GOVERNMENT:0 "Welcome Petitioners"
+ ZEX_MGY_DECREE_RALLY_Maredjay:0 "Promote Maredjay Officers"
 
  ZEX_MGY_DECREE_BALANCE_EVERYTHING_tt:0 "Shifts the balance of power §Y10§! back towards the center."
 
  ZEX_MGY_Vizier_Balance_Ui_Help_tt:0 "The £ZEX_vizier_bop  §OBalance of Power§! mechanic models the polarisation of the administration between the §YKing§! and the §YVizier§!.\n\nThe balance scales from §Y0§! to §Y100§! on each side, granting scaling bonuses depending on which - of the King and the Vizier - is in power. When in the §YVizier§!'s favour, the balance will grant adiscount to §Lrecruiting Advisors§!, changing §LEconomy Laws§!, §LTrade Laws§! and §LConscription Laws§!, whilst decreasing §Lwar support§! and the time required to §Lmobilize§!. While on the §YKing's§! favour, the modifiers are reversed.\n\nThe balance can be influenced by £ZEX_maregypt_edicts  §8edicts§! or by allocating some £pol_power  §8political power§! to gradually shift it towards one side or the other."
 
  ZEX_MGY_10_Vizier_Influence_tt:0 "£BoP_right_texticon  10"
- ZEX_MGY_20_Vizier_Influence_tt:0 "£pol_power  20 £BoP_right_texticon  20"
+ ZEX_MGY_20_Vizier_Influence_tt:0 "£pol_power  [?ZEX_MGY_edict_cost] £BoP_left_texticon  20"
  ZEX_MGY_10_Vizier_Influence_tt_blocked:0 "£BoP_right_texticon  10"
- ZEX_MGY_20_Vizier_Influence_tt_blocked:0 "£pol_power  20  £BoP_right_texticon  20"
+ ZEX_MGY_20_Vizier_Influence_tt_blocked:0 "£pol_power  [?ZEX_MGY_edict_cost]  £BoP_left_texticon  20"
 
  ZEX_MGY_10_King_Influence_tt:0 "£BoP_left_texticon  10"
- ZEX_MGY_20_King_Influence_tt:0 "£pol_power  20  £BoP_left_texticon  20"
+ ZEX_MGY_20_King_Influence_tt:0 "£pol_power  [?ZEX_MGY_edict_cost]  £BoP_right_texticon  20"
  ZEX_MGY_10_King_Influence_tt_blocked:0 "£BoP_left_texticon  10"
- ZEX_MGY_20_King_Influence_tt_blocked:0 "£pol_power  20  £BoP_left_texticon  20"
+ ZEX_MGY_20_King_Influence_tt_blocked:0 "£pol_power  [?ZEX_MGY_edict_cost] £BoP_right_texticon  20"
  ZEX_MGY_25_PP_tt:0 "£pol_power  25"
  ZEX_MGY_25_PP_tt_blocked:0 "£pol_power  25"
 
- ZEX_EDICT_20_PP:0 "It costs £pol_power §Y20§! to take this decision"
+ ZEX_EDICT_20_PP:0 "It costs £pol_power §Y[?ZEX_MGY_edict_cost]§! to take this decision"
  ZEX_EDICT_25_PP:0 "It costs £pol_power §Y25§! to take this decision"
+ ZEX_EDICT_NO_OTHER_EDICTS:0 "Not: Another £ZEX_maregypt_edicts  §YEdict§! is currently active"
+ ZEX_MGY_EDICT_HAS_A_KING_tt:0 "Has a King"

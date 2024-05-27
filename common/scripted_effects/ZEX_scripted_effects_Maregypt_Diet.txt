@@ -17,19 +17,19 @@ ZEX_MGY_Royal_Diet_end_Diet = {
 	ZEX_royal_diet_clear_gui_arrays = yes
 }
 
-# Set loyalties and calculate the total seats
+# Set the initial amount of loyal seats
 ZEX_MGY_Define_Initial_Loyalty = {
 	set_variable = {
-		ZEX_MGY_Royal_Diet_Zebrican_Loyalty = 20
+		ZEX_MGY_Royal_Diet_Zebrican_Loyalty = 5
 	}
 	set_variable = {
-		ZEX_MGY_Royal_Diet_Harmonist_Loyalty = 75
+		ZEX_MGY_Royal_Diet_Harmonist_Loyalty = 35
 	}
 	set_variable = {
-		ZEX_MGY_Royal_Diet_Loyalists_Loyalty = 40
+		ZEX_MGY_Royal_Diet_Loyalists_Loyalty = 25
 	}
 	set_variable = {
-		ZEX_MGY_Royal_Diet_Independent_Loyalty = 35
+		ZEX_MGY_Royal_Diet_Independent_Loyalty = 5
 	}
 }
 
@@ -37,96 +37,17 @@ ZEX_MGY_Calculate_Total_Support = { #This is to reupdate the diet's support
 	set_variable = {
 		ZEX_MGY_Royal_Diet_Total_Support = 0
 	}
-	if = {
-		limit = {
-			check_variable = {
-				ZEX_MGY_Royal_Diet_Zebrican_Loyalty > 70
-			}
-		}
-		add_to_variable = {
-			ZEX_MGY_Royal_Diet_Total_Support = ZEX_MGY_royal_diet_seat_array^0
-		}
+	add_to_variable = {
+		ZEX_MGY_Royal_Diet_Total_Support = ZEX_MGY_Royal_Diet_Zebrican_Loyalty
 	}
-	else_if = {
-		limit = {
-			check_variable = {
-				ZEX_MGY_Royal_Diet_Zebrican_Loyalty > 30
-			}
-		}
-			set_variable = {
-				ZEX_MGY_Seats_Support_Temp = ZEX_MGY_royal_diet_seat_array^0
-			}
-			multiply_variable = {
-				ZEX_MGY_Seats_Support_Temp = 0.5
-			}
-			round_variable = ZEX_MGY_Seats_Support_Temp
-			add_to_variable = {
-			ZEX_MGY_Royal_Diet_Total_Support = ZEX_MGY_Seats_Support_Temp
-		}
+	add_to_variable = {
+		ZEX_MGY_Royal_Diet_Total_Support = ZEX_MGY_Royal_Diet_Harmonist_Loyalty
 	}
-	if = {
-		limit = {
-			check_variable = {
-				ZEX_MGY_Royal_Diet_Harmonist_Loyalty > 70
-			}
-		}
-		add_to_variable = {
-			ZEX_MGY_Royal_Diet_Total_Support = ZEX_MGY_royal_diet_seat_array^1
-		}
+	add_to_variable = {
+		ZEX_MGY_Royal_Diet_Total_Support = ZEX_MGY_Royal_Diet_Loyalists_Loyalty
 	}
-	else_if = {
-		limit = {
-			check_variable = {
-				ZEX_MGY_Royal_Diet_Harmonist_Loyalty > 30
-			}
-		}
-			set_variable = {
-				ZEX_MGY_Seats_Support_Temp = ZEX_MGY_royal_diet_seat_array^1
-			}
-			multiply_variable = {
-				ZEX_MGY_Seats_Support_Temp = 0.5
-			}
-			round_variable = ZEX_MGY_Seats_Support_Temp
-			add_to_variable = {
-			ZEX_MGY_Royal_Diet_Total_Support = ZEX_MGY_Seats_Support_Temp
-		}
-	}
-	if = {
-		limit = {
-			check_variable = {
-				ZEX_MGY_Royal_Diet_Loyalists_Loyalty > 70
-			}
-		}
-		add_to_variable = {
-			ZEX_MGY_Royal_Diet_Total_Support = ZEX_MGY_royal_diet_seat_array^2
-		}
-	}
-	else_if = {
-		limit = {
-			check_variable = {
-				ZEX_MGY_Royal_Diet_Loyalists_Loyalty > 30
-			}
-		}
-			set_variable = {
-				ZEX_MGY_Seats_Support_Temp = ZEX_MGY_royal_diet_seat_array^2
-			}
-			multiply_variable = {
-				ZEX_MGY_Seats_Support_Temp = 0.5
-			}
-			round_variable = ZEX_MGY_Seats_Support_Temp
-			add_to_variable = {
-			ZEX_MGY_Royal_Diet_Total_Support = ZEX_MGY_Seats_Support_Temp
-		}
-	}
-	if = {
-		limit = {
-			check_variable = {
-				ZEX_MGY_Royal_Diet_Independent_Loyalty > 70
-			}
-		}
-		add_to_variable = {
-			ZEX_MGY_Royal_Diet_Total_Support = ZEX_MGY_royal_diet_seat_array^3
-		}
+	add_to_variable = {
+		ZEX_MGY_Royal_Diet_Total_Support = ZEX_MGY_Royal_Diet_Independent_Loyalty
 	}
 }
 

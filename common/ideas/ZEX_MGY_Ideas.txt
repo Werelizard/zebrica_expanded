@@ -26,7 +26,8 @@ ideas = {
 			modifier = {
 				stability_factor = -0.10
 				war_support_factor = -0.10
-				democratic_drift = -0.1
+				democratic_drift = -0.03
+				neutrality_drift = -0.03
 				custom_modifier_tooltip =  ZEX_Unfinished_Constitution_No_Ministers_or_Laws_tt
 			}
 		}
@@ -76,7 +77,7 @@ ideas = {
 			picture = GFX_idea_unknown
 			modifier = {
 				stability_factor = 0.05
-				democratic_drift = 0.1
+				democratic_drift = 0.03
 				political_power_gain = 0.1
 				custom_modifier_tooltip = ZEX_MGY_goal_harmony_society_idea_effects_tt
 			}

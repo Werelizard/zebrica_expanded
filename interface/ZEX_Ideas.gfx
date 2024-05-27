@@ -41,4 +41,8 @@ spriteTypes = {
 		name = "GFX_leader_ZEX_MGY_FarHook"
 		textureFile = "gfx/leaders/FarHook.tga"
 	}
+	spriteType = {
+		name = "GFX_leader_ZEX_MGY_Communism_Council"
+		textureFile = "gfx/leaders/ZEX_MGY_Agrarian_Council.tga"
+	}
 }

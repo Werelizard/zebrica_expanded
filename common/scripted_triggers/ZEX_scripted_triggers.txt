@@ -327,7 +327,7 @@ zex_mgy_stability_higher_than_unrest = {
 		}
 		check_variable = {
 			var = MGY.stability
-			value = ZEX_MGY_VAR_Sineighi_Alignment_percentile
+			value = ZEX_MGY_VAR_Sineighi_Unrest_percentile
 			compare = greater_than_or_equals
 		}
 	}
@@ -337,7 +337,7 @@ zex_mgy_stability_higher_than_unrest = {
 		}
 		check_variable = {
 			var = MGY.stability
-			value = ZEX_MGY_VAR_Maneisrata_Alignment_percentile
+			value = ZEX_MGY_VAR_Maneisrata_Unrest_percentile
 			compare = greater_than_or_equals
 		}
 	}
@@ -347,7 +347,7 @@ zex_mgy_stability_higher_than_unrest = {
 		}
 		check_variable = {
 			var = MGY.stability
-			value = ZEX_MGY_VAR_Delta_Alignment_percentile
+			value = ZEX_MGY_VAR_Delta_Unrest_percentile
 			compare = greater_than_or_equals
 		}
 	}
@@ -357,7 +357,7 @@ zex_mgy_stability_higher_than_unrest = {
 		}
 		check_variable = {
 			var = MGY.stability
-			value = ZEX_MGY_VAR_Somnambula_Alignment_percentile
+			value = ZEX_MGY_VAR_Somnambula_Unrest_percentile
 			compare = greater_than_or_equals
 		}
 	}
@@ -367,7 +367,7 @@ zex_mgy_stability_higher_than_unrest = {
 		}
 		check_variable = {
 			var = MGY.stability
-			value = ZEX_MGY_VAR_Eastdesert_Alignment_percentile
+			value = ZEX_MGY_VAR_Eastdesert_Unrest_percentile
 			compare = greater_than_or_equals
 		}
 	}
@@ -377,7 +377,7 @@ zex_mgy_stability_higher_than_unrest = {
 		}
 		check_variable = {
 			var = MGY.stability
-			value = ZEX_MGY_VAR_Manephis_Alignment_percentile
+			value = ZEX_MGY_VAR_Manephis_Unrest_percentile
 			compare = greater_than_or_equals
 		}
 	}
@@ -387,7 +387,7 @@ zex_mgy_stability_higher_than_unrest = {
 		}
 		check_variable = {
 			var = MGY.stability
-			value = ZEX_MGY_VAR_UpperMaregypt_Alignment_percentile
+			value = ZEX_MGY_VAR_UpperMaregypt_Unrest_percentile
 			compare = greater_than_or_equals
 		}
 	}
@@ -397,7 +397,7 @@ zex_mgy_stability_higher_than_unrest = {
 		}
 		check_variable = {
 			var = MGY.stability
-			value = ZEX_MGY_VAR_Zush_Alignment_percentile
+			value = ZEX_MGY_VAR_Zush_Unrest_percentile
 			compare = greater_than_or_equals
 		}
 	}
@@ -407,7 +407,7 @@ zex_mgy_stability_higher_than_unrest = {
 		}
 		check_variable = {
 			var = MGY.stability
-			value = ZEX_MGY_VAR_Kaneigh_Alignment_percentile
+			value = ZEX_MGY_VAR_Kaneigh_Unrest_percentile
 			compare = greater_than_or_equals
 		}
 	}
@@ -502,55 +502,55 @@ zex_mgy_is_state_rebellious = {
 		AND = {
 			has_country_flag = zex_mgy_unrest_selected_sineighi
 			check_variable = {
-				ZEX_MGY_VAR_Sineighi_Alignment > ZEX_MGY_LEGITIMACY
+				ZEX_MGY_VAR_Sineighi_Unrest_percentile > party_popularity@ruling_party
 			}
 		}
 		AND = {
 			has_country_flag = zex_mgy_unrest_selected_delta
 			check_variable = {
-				ZEX_MGY_VAR_Delta_Alignment > ZEX_MGY_LEGITIMACY
+				ZEX_MGY_VAR_Delta_Unrest_percentile > party_popularity@ruling_party
 			}
 		}
 		AND = {
 			has_country_flag = zex_mgy_unrest_selected_kaneigh
 			check_variable = {
-				ZEX_MGY_VAR_Kaneigh_Alignment > ZEX_MGY_LEGITIMACY
+				ZEX_MGY_VAR_Kaneigh_Unrest_percentile > party_popularity@ruling_party
 			}
 		}
 		AND = {
 			has_country_flag = zex_mgy_unrest_selected_maneisrata
 			check_variable = {
-				ZEX_MGY_VAR_Maneisrata_Alignment > ZEX_MGY_LEGITIMACY
+				ZEX_MGY_VAR_Maneisrata_Unrest_percentile > party_popularity@ruling_party
 			}
 		}
 		AND = {
 			has_country_flag = zex_mgy_unrest_selected_manephis
 			check_variable = {
-				ZEX_MGY_VAR_Manephis_Alignment > ZEX_MGY_LEGITIMACY
+				ZEX_MGY_VAR_Manephis_Unrest_percentile > party_popularity@ruling_party
 			}
 		}
 		AND = {
 			has_country_flag = zex_mgy_unrest_selected_somnambula
 			check_variable = {
-				ZEX_MGY_VAR_Somnambula_Alignment > ZEX_MGY_LEGITIMACY
+				ZEX_MGY_VAR_Somnambula_Unrest_percentile > party_popularity@ruling_party
 			}
 		}
 		AND = {
 			has_country_flag = zex_mgy_unrest_selected_easterndesert
 			check_variable = {
-				ZEX_MGY_VAR_Eastdesert_Alignment > ZEX_MGY_LEGITIMACY
+				ZEX_MGY_VAR_Eastdesert_Unrest_percentile > party_popularity@ruling_party
 			}
 		}
 		AND = {
 			has_country_flag = zex_mgy_unrest_selected_uppermaregypt
 			check_variable = {
-				ZEX_MGY_VAR_UpperMaregypt_Alignment > ZEX_MGY_LEGITIMACY
+				ZEX_MGY_VAR_UpperMaregypt_Unrest_percentile > party_popularity@ruling_party
 			}
 		}
 		AND = {
 			has_country_flag = zex_mgy_unrest_selected_zush
 			check_variable = {
-				ZEX_MGY_VAR_Zush_Alignment > ZEX_MGY_LEGITIMACY
+				ZEX_MGY_VAR_Zush_Unrest_percentile > party_popularity@ruling_party
 			}
 		}
 	}

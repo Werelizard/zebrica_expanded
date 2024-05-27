@@ -1,0 +1,10 @@
+SpriteTypes = {
+	spriteType = {
+		name = "GFX_div_templ_1001_small"
+		textureFile = "gfx/interface/counters/divisions_small/custom_template_scarab.dds"
+	}
+	spriteType = {
+		name = "GFX_div_templ_1001_large"
+		textureFile = "gfx/interface/counters/divisions_large/custom_template_scarab.dds"
+	}
+}

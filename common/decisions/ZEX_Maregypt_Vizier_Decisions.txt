@@ -1,6 +1,6 @@
 ZEX_MAREGYPT_VIZIER_POWER = {
 	ZEX_MGY_DECREE_BALANCE_EVERYTHING = {
-		icon = ZEX_GFX_MGY_Decree
+		icon = ZEX_GFX_increase_legitimacy
 		allowed = {
 			always = yes
 		}
@@ -16,18 +16,6 @@ ZEX_MAREGYPT_VIZIER_POWER = {
 		custom_cost_text = ZEX_MGY_25_PP_tt
 		available = {
 			custom_trigger_tooltip = {
-				tooltip = ZEX_MGY_VIZIER_NO_TOTAL_MONARCH_CONTROL_tt
-				check_variable = {
-					ZEX_MGY_vizier_King_Balance < 80
-				}
-			}
-			custom_trigger_tooltip = {
-				tooltip = ZEX_MGY_VIZIER_NO_TOTAL_VIZIER_CONTROL_tt
-				check_variable = {
-					ZEX_MGY_vizier_King_Balance > -80
-				}
-			}
-			custom_trigger_tooltip = {
 				tooltip = ZEX_MGY_VIZIER_AT_LEAST_10_ON_EITHER_SIDE_tt
 				OR = {
 					check_variable = {
@@ -37,6 +25,8 @@ ZEX_MAREGYPT_VIZIER_POWER = {
 						ZEX_MGY_vizier_King_Balance > 9
 					}
 				}
+			}
+			hidden_trigger = {
 				OR = {
 					has_political_power > 25
 					has_political_power = 25
@@ -48,7 +38,10 @@ ZEX_MAREGYPT_VIZIER_POWER = {
 		}
 		days_remove = 21
 		remove_effect = {
-			add_stability = 0.025
+			add_popularity = {
+				ideology = ROOT
+				popularity = 0.02
+			}
 			custom_effect_tooltip = ZEX_MGY_DECREE_BALANCE_EVERYTHING_tt
 			custom_effect_tooltip = ZEX_EDICT_25_PP
 			if = {
@@ -102,23 +95,49 @@ ZEX_MAREGYPT_VIZIER_POWER = {
 		}
 		custom_cost_text = ZEX_MGY_20_Vizier_Influence_tt
 		available = {
+			zex_mgy_has_a_vizier = yes
 			custom_trigger_tooltip = {
 				tooltip = ZEX_MGY_VIZIER_IN_POWER_tt
-				check_variable = {
-					ZEX_MGY_vizier_King_Balance < 0
-				}
 				OR = {
-					has_political_power > 20
-					has_political_power = 20
+					check_variable = {
+						ZEX_MGY_vizier_King_Balance = -20
+					}
+					check_variable = {
+						ZEX_MGY_vizier_King_Balance < -20
+					}
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = ZEX_EDICT_NO_OTHER_EDICTS
+				NOT = {
+					has_country_flag = ZEX_MGY_EDICT_ACTIVE_FLAG
+				}
+			}
+			hidden_trigger = {
+				OR = {
+					has_political_power > MGY.ZEX_MGY_edict_cost
+					has_political_power = MGY.ZEX_MGY_edict_cost
 				}
 			}
 		}
+		days_remove = 60
+		modifier = {
+			production_speed_industrial_complex_factor = 0.15
+			production_speed_infrastructure_factor = 0.15
+			production_speed_dockyard_factor = 0.1
+			#custom_modifier_tooltip = ZEX_EMPTY_LINE
+			#custom_modifier_tooltip = ZEX_EDICT_20_PP
+		}
 		complete_effect = {
 			ZEX_MGY_INCREASE_KING_INFLUENCE_20 = yes
-			custom_effect_tooltip = ZEX_EDICT_20_PP
+			custom_effect_tooltip = ZEX_EMPTY_LINE
 			hidden_effect = {
 				add_political_power = -20
+				set_country_flag = ZEX_MGY_EDICT_ACTIVE_FLAG
 			}
+		}
+		remove_effect = {
+			clr_country_flag = ZEX_MGY_EDICT_ACTIVE_FLAG
 		}
 	}
 	ZEX_MGY_DECREE_SEEK_INDUSTRIALIST_SUPPORT = {
@@ -141,23 +160,47 @@ ZEX_MAREGYPT_VIZIER_POWER = {
 		}
 		custom_cost_text = ZEX_MGY_20_Vizier_Influence_tt
 		available = {
+			zex_mgy_has_a_vizier = yes
 			custom_trigger_tooltip = {
 				tooltip = ZEX_MGY_VIZIER_IN_POWER_tt
-				check_variable = {
-					ZEX_MGY_vizier_King_Balance < 0
-				}
 				OR = {
-					has_political_power > 20
-					has_political_power = 20
+					check_variable = {
+						ZEX_MGY_vizier_King_Balance = -20
+					}
+					check_variable = {
+						ZEX_MGY_vizier_King_Balance < -20
+					}
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = ZEX_EDICT_NO_OTHER_EDICTS
+				NOT = {
+					has_country_flag = ZEX_MGY_EDICT_ACTIVE_FLAG
+				}
+			}
+			hidden_trigger = {
+				OR = {
+					has_political_power > MGY.ZEX_MGY_edict_cost
+					has_political_power = MGY.ZEX_MGY_edict_cost
 				}
 			}
 		}
+		days_remove = 60
+		modifier = {
+			consumer_goods_factor = -0.15
+			#custom_modifier_tooltip = ZEX_EMPTY_LINE
+			#custom_modifier_tooltip = ZEX_EDICT_20_PP
+		}
 		complete_effect = {
 			ZEX_MGY_INCREASE_KING_INFLUENCE_20 = yes
-			custom_effect_tooltip = ZEX_EDICT_20_PP
+			custom_effect_tooltip = ZEX_EMPTY_LINE
 			hidden_effect = {
 				add_political_power = -20
+				set_country_flag = ZEX_MGY_EDICT_ACTIVE_FLAG
 			}
+		}
+		remove_effect = {
+			clr_country_flag = ZEX_MGY_EDICT_ACTIVE_FLAG
 		}
 	}
 	ZEX_MGY_DECREE_INCREASE_SALARIES = {
@@ -180,23 +223,48 @@ ZEX_MAREGYPT_VIZIER_POWER = {
 		}
 		custom_cost_text = ZEX_MGY_20_Vizier_Influence_tt
 		available = {
+			zex_mgy_has_a_vizier = yes
 			custom_trigger_tooltip = {
 				tooltip = ZEX_MGY_VIZIER_IN_POWER_tt
-				check_variable = {
-					ZEX_MGY_vizier_King_Balance < 0
-				}
 				OR = {
-					has_political_power > 20
-					has_political_power = 20
+					check_variable = {
+						ZEX_MGY_vizier_King_Balance = -20
+					}
+					check_variable = {
+						ZEX_MGY_vizier_King_Balance < -20
+					}
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = ZEX_EDICT_NO_OTHER_EDICTS
+				NOT = {
+					has_country_flag = ZEX_MGY_EDICT_ACTIVE_FLAG
+				}
+			}
+			hidden_trigger = {
+				OR = {
+					has_political_power > MGY.ZEX_MGY_edict_cost
+					has_political_power = MGY.ZEX_MGY_edict_cost
 				}
 			}
 		}
+		days_remove = 60
+		modifier = {
+			political_power_cost = -0.25
+			political_power_factor = 0.2
+			#custom_modifier_tooltip = ZEX_EMPTY_LINE
+			#custom_modifier_tooltip = ZEX_EDICT_20_PP
+		}
 		complete_effect = {
 			ZEX_MGY_INCREASE_KING_INFLUENCE_20 = yes
-			custom_effect_tooltip = ZEX_EDICT_20_PP
+			custom_effect_tooltip = ZEX_EMPTY_LINE
 			hidden_effect = {
 				add_political_power = -20
+				set_country_flag = ZEX_MGY_EDICT_ACTIVE_FLAG
 			}
+		}
+		remove_effect = {
+			clr_country_flag = ZEX_MGY_EDICT_ACTIVE_FLAG
 		}
 	}
 	#Monarch in Power
@@ -217,22 +285,55 @@ ZEX_MAREGYPT_VIZIER_POWER = {
 		custom_cost_text = ZEX_MGY_20_King_Influence_tt
 		available = {
 			custom_trigger_tooltip = {
-				tooltip = ZEX_MGY_KING_IN_POWER_tt
-				check_variable = {
-					ZEX_MGY_vizier_King_Balance > 19
+				tooltip = ZEX_MGY_EDICT_HAS_A_KING_tt
+				NOT = {
+					zex_mgy_no_king_or_queen = yes
 				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = ZEX_MGY_KING_IN_POWER_tt
 				OR = {
-					has_political_power > 20
-					has_political_power = 20
+					check_variable = {
+						ZEX_MGY_vizier_King_Balance > 20
+					}
+					check_variable = {
+						ZEX_MGY_vizier_King_Balance = 20
+					}
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = ZEX_EDICT_NO_OTHER_EDICTS
+				NOT = {
+					has_country_flag = ZEX_MGY_EDICT_ACTIVE_FLAG
+				}
+			}
+			hidden_trigger = {
+				OR = {
+					has_political_power > MGY.ZEX_MGY_edict_cost
+					has_political_power = MGY.ZEX_MGY_edict_cost
 				}
 			}
 		}
+		days_remove = 60
+		modifier = {
+			experience_gain_army_factor = -0.2
+			experience_gain_navy_factor = -0.2
+			experience_gain_air_factor = -0.2
+			command_power_gain_mult = 0.25
+			war_support_weekly = 0.005
+			#custom_modifier_tooltip = ZEX_EMPTY_LINE
+			#custom_modifier_tooltip = ZEX_EDICT_20_PP
+		}
 		complete_effect = {
 			ZEX_MGY_LOWER_KING_INFLUENCE_20 = yes
-			custom_effect_tooltip = ZEX_EDICT_20_PP
+			custom_effect_tooltip = ZEX_EMPTY_LINE
 			hidden_effect = {
 				add_political_power = -20
+				set_country_flag = ZEX_MGY_EDICT_ACTIVE_FLAG
 			}
+		}
+		remove_effect = {
+			clr_country_flag = ZEX_MGY_EDICT_ACTIVE_FLAG
 		}
 	}
 	ZEX_MGY_DECREE_REFORM_GOVERNMENT = {
@@ -251,25 +352,56 @@ ZEX_MAREGYPT_VIZIER_POWER = {
 		custom_cost_text = ZEX_MGY_20_King_Influence_tt
 		available = {
 			custom_trigger_tooltip = {
-				tooltip = ZEX_MGY_KING_IN_POWER_tt
-				check_variable = {
-					ZEX_MGY_vizier_King_Balance > 19
-				}
-				OR = {
-					has_political_power > 20
-					has_political_power = 20
+				tooltip = ZEX_MGY_EDICT_HAS_A_KING_tt
+				NOT = {
+					zex_mgy_no_king_or_queen = yes
 				}
 			}
+			custom_trigger_tooltip = {
+				tooltip = ZEX_MGY_KING_IN_POWER_tt
+				OR = {
+					check_variable = {
+						ZEX_MGY_vizier_King_Balance > 20
+					}
+					check_variable = {
+						ZEX_MGY_vizier_King_Balance = 20
+					}
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = ZEX_EDICT_NO_OTHER_EDICTS
+				NOT = {
+					has_country_flag = ZEX_MGY_EDICT_ACTIVE_FLAG
+				}
+			}
+			hidden_trigger = {
+				OR = {
+					has_political_power > MGY.ZEX_MGY_edict_cost
+					has_political_power = MGY.ZEX_MGY_edict_cost
+				}
+			}
+		}
+		days_remove = 60
+		modifier = {
+			neutrality_drift = 0.05
+			democratic_drift = 0.05
+			stability_factor = 0.15
+			#custom_modifier_tooltip = ZEX_EMPTY_LINE
+			#custom_modifier_tooltip = ZEX_EDICT_20_PP
 		}
 		complete_effect = {
 			ZEX_MGY_LOWER_KING_INFLUENCE_20 = yes
-			custom_effect_tooltip = ZEX_EDICT_20_PP
+			custom_effect_tooltip = ZEX_EMPTY_LINE
 			hidden_effect = {
 				add_political_power = -20
+				set_country_flag = ZEX_MGY_EDICT_ACTIVE_FLAG
 			}
 		}
+		remove_effect = {
+			clr_country_flag = ZEX_MGY_EDICT_ACTIVE_FLAG
+		}
 	}
-	ZEX_MGY_DECREE_RALLY_MEDJAY = {
+	ZEX_MGY_DECREE_RALLY_Maredjay = {
 		icon = ZEX_GFX_MGY_Decree
 		allowed = {
 			always = yes
@@ -285,22 +417,53 @@ ZEX_MAREGYPT_VIZIER_POWER = {
 		custom_cost_text = ZEX_MGY_20_King_Influence_tt
 		available = {
 			custom_trigger_tooltip = {
-				tooltip = ZEX_MGY_KING_IN_POWER_tt
-				check_variable = {
-					ZEX_MGY_vizier_King_Balance > 19
+				tooltip = ZEX_MGY_EDICT_HAS_A_KING_tt
+				NOT = {
+					zex_mgy_no_king_or_queen = yes
 				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = ZEX_MGY_KING_IN_POWER_tt
 				OR = {
-					has_political_power > 20
-					has_political_power = 20
+					check_variable = {
+						ZEX_MGY_vizier_King_Balance > 20
+					}
+					check_variable = {
+						ZEX_MGY_vizier_King_Balance = 20
+					}
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = ZEX_EDICT_NO_OTHER_EDICTS
+				NOT = {
+					has_country_flag = ZEX_MGY_EDICT_ACTIVE_FLAG
+				}
+			}
+			hidden_trigger = {
+				OR = {
+					has_political_power > MGY.ZEX_MGY_edict_cost
+					has_political_power = MGY.ZEX_MGY_edict_cost
 				}
 			}
 		}
+		days_remove = 60
+		modifier = {
+			special_forces_training_time_factor = -0.1
+			army_defence_factor = 0.05
+			special_forces_attack_factor = 0.2
+			#custom_modifier_tooltip = ZEX_EMPTY_LINE
+			#custom_modifier_tooltip = ZEX_EDICT_20_PP
+		}
 		complete_effect = {
 			ZEX_MGY_LOWER_KING_INFLUENCE_20 = yes
-			custom_effect_tooltip = ZEX_EDICT_20_PP
+			custom_effect_tooltip = ZEX_EMPTY_LINE
 			hidden_effect = {
 				add_political_power = -20
+				set_country_flag = ZEX_MGY_EDICT_ACTIVE_FLAG
 			}
+		}
+		remove_effect = {
+			clr_country_flag = ZEX_MGY_EDICT_ACTIVE_FLAG
 		}
 	}
 }
