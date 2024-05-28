@@ -1,0 +1,58 @@
+ZEX_MAREGYPT_ROYAL_DIET_CATEGORY = {
+	ZEX_DIET_TEST_INCREASE_HARMONY = {
+		visible = {
+			is_debug = yes
+		}
+		complete_effect = {
+			set_temp_variable = {
+				temp_member = 2
+			}
+			set_temp_variable = {
+				ZEX_MGY_royal_diet_temp_seats = 5
+			}
+			ZEX_MGY_Diet_modify_parliament_seat = yes
+		}
+	}
+	ZEX_DIET_TEST_DECREASE_HARMONY = {
+		visible = {
+			is_debug = yes
+		}
+		complete_effect = {
+			set_temp_variable = {
+				temp_member = 2
+			}
+			set_temp_variable = {
+				ZEX_MGY_royal_diet_temp_seats = -5
+			}
+			ZEX_MGY_Diet_modify_parliament_seat = yes
+		}
+	}
+	ZEX_DIET_TEST_INCREASE_ZEBRICAN = {
+		visible = {
+			is_debug = yes
+		}
+		complete_effect = {
+			set_temp_variable = {
+				temp_member = 1
+			}
+			set_temp_variable = {
+				ZEX_MGY_royal_diet_temp_seats = 5
+			}
+			ZEX_MGY_Diet_modify_parliament_seat = yes
+		}
+	}
+	ZEX_DIET_TEST_DECREASE_ZEBRICAN = {
+		visible = {
+			is_debug = yes
+		}
+		complete_effect = {
+			set_temp_variable = {
+				temp_member = 1
+			}
+			set_temp_variable = {
+				ZEX_MGY_royal_diet_temp_seats = -5
+			}
+			ZEX_MGY_Diet_modify_parliament_seat = yes
+		}
+	}
+}

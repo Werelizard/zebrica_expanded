@@ -43,7 +43,6 @@ ZEX_MAREGYPT_VIZIER_POWER = {
 				popularity = 0.02
 			}
 			custom_effect_tooltip = ZEX_MGY_DECREE_BALANCE_EVERYTHING_tt
-			custom_effect_tooltip = ZEX_EDICT_25_PP
 			if = {
 				limit = {
 					check_variable = {

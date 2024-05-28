@@ -15,6 +15,7 @@
 
  #Maregyptian Diet GUI
  ZEX_MAREGYPT_ROYAL_DIET_CATEGORY:0 "The Maregyptian Diet"
+ ZEX_MAREGYPT_ROYAL_DIET_CATEGORY_desc:0 "Whilst nominally a single party, the ruling §YSemayt Heyter-ta en Haret§! of §YShaa Doof§! is more of a broad coalition - a big tent regrouping pro-harmony elements but also reformists, veterans of the Storm, aristocrats and friendship proponents. While not everypony agrees with the King's policy, they have, in practice, been more than willing to toe the line.\n\nBut now, cracks have begun to appear. The radical §YZebricans§! - under the leadership for §YHeqet Bazin§!, have formed their own clique. Meanwhile, §YAhmesi Senesfer§! - a Maredjay career officer, has gathered her own allies, an assemblage of reactionary aristocrats and military veterans.\n\nAnd somehow, this will have to do: for if we are to survive, the §YRoyal Diet§! must come together."
 
  ZEX_MGY_royal_diet_Help_tt:0 "The £ZEX_royaldiet  §ORoyal Diet§! mechanic represents the ongoing political maneouvering surrounding our constitution's rewrite and ratification.\n\nThe diet consists of £ZEX_diet_seat  §Y200§! total seats, split between four factions: the £republican_faction  §YZebricans§!, the £monarchist_faction  §YHarmonists§!, the £loyalist_faction  §YMaredjay§! and §Yindependents§!. Furthermore, only some of each factions' representatives will be supportive at a given moment.\n\nIn order to make any progress, we will need at least §Y101§! §7supportive§! seats to ratify new constitutional ammendments. To deal with this, we have several tools at our disposal: some §Lfocuses§!, §Ldecisions§! and §Levents§! will allow us to gain more support. Additionally, factions may occasionally put an §Lagenda§! forward which if completed will secure us the backing of some of its senators."
 
@@ -34,10 +35,10 @@
 
  ZEX_MGY_Faction_Values_tt:0 "Every faction is characterised by a number of £ZEX_diet_seat  §Yseats§!, a fraction of which only will £ZEX_diet_loyalty  §Ysupport§! the current agenda. A faction's loyalty waxes and wanes, but it is best to keep in mind that shall a faction lose the support of some representatives the new representatives will not necessarily be loyal!"
 
- ZEX_MGY_Zebrican_Faction_values_tt:0 "Currently, §Y[?ZEX_MGY_Royal_Diet_Zebrican_Loyalty]§! §LZebrican§! representatives support us, out of §Y[?ZEX_MGY_royal_diet_seat_array^0]§! seats controlled by their faction in the diet."
- ZEX_MGY_Harmonist_Faction_values_tt:0 "Currently, §Y[?ZEX_MGY_Royal_Diet_Harmonist_Loyalty]§! §0Harmonist§! representatives support us, out of §Y[?ZEX_MGY_royal_diet_seat_array^1]§! seats controlled by their faction in the diet."
- ZEX_MGY_Loyalists_Faction_values_tt:0 "Currently, §Y[?ZEX_MGY_Royal_Diet_Loyalists_Loyalty]§! §2Maredjay§! representatives support us, out of §Y[?ZEX_MGY_royal_diet_seat_array^2]§! seats controlled by their faction in the diet."
- ZEX_MGY_Independent_Faction_values_tt:0 "Currently, §Y[?ZEX_MGY_Royal_Diet_Independent_Loyalty]§! §gindependents§! representatives support us, out of §Y[?ZEX_MGY_royal_diet_seat_array^3]§! seats controlled by their faction in the diet."
+ ZEX_MGY_Zebrican_Faction_values_tt:0 "Currently, §Y[?ZEX_MGY_Royal_Diet_Zebrican_Loyalty]§! §YZebrican§! representatives support us, out of §Y[?ZEX_MGY_royal_diet_seat_array^0]§! seats controlled by their faction in the diet."
+ ZEX_MGY_Harmonist_Faction_values_tt:0 "Currently, §Y[?ZEX_MGY_Royal_Diet_Harmonist_Loyalty]§! §YHarmonist§! representatives support us, out of §Y[?ZEX_MGY_royal_diet_seat_array^1]§! seats controlled by their faction in the diet."
+ ZEX_MGY_Loyalists_Faction_values_tt:0 "Currently, §Y[?ZEX_MGY_Royal_Diet_Loyalists_Loyalty]§! §YMaredjay§! representatives support us, out of §Y[?ZEX_MGY_royal_diet_seat_array^2]§! seats controlled by their faction in the diet."
+ ZEX_MGY_Independent_Faction_values_tt:0 "Currently, §Y[?ZEX_MGY_Royal_Diet_Independent_Loyalty]§! §Yindependents§! representatives support us, out of §Y[?ZEX_MGY_royal_diet_seat_array^3]§! seats controlled by their faction in the diet."
 
  ZEX_MGY_Diet_Loyal_Faction:0 "§GLoyal§!"
  ZEX_MGY_Diet_Neutral_Faction:0 "Neutral"
@@ -216,14 +217,14 @@
  ZEX_MGY_republican_agitation_state_uppermaregypt_title:0 "Upper Maregypt"
 
  ZEX_MGY_republican_agitation_kaneigh_text:0 "§YKaneigh§! is a sparsely populated, pastoral province nestled between the §YSouthwestern Desert§!, §YAnseruk§!, §YAbyssinia§! and §YKlugetown§!. §tSeperatists§! currently run amok through it - though any rebellion remains as of now quelled."
- ZEX_MGY_republican_agitation_state_sineighi_text:0 ""
- ZEX_MGY_republican_agitation_state_maneisrata_text:0 ""
- ZEX_MGY_republican_agitation_state_delta_text:0 ""
- ZEX_MGY_republican_agitation_state_somnambula_text:0 ""
- ZEX_MGY_republican_agitation_state_easterndesert_text:0 ""
- ZEX_MGY_republican_agitation_state_zush_text:0 ""
- ZEX_MGY_republican_agitation_state_manephis_text:0 ""
- ZEX_MGY_republican_agitation_state_uppermaregypt_text:0 ""
+ ZEX_MGY_republican_agitation_state_sineighi_text:0 "§YSineighi§!, also known as Bawuyti, was once the golden cradle of Maregypt. Now its rocky, barren landscape is home only to a few pastoral communities - many of whom are §tseperatists§!, whom we suspect to be backed by the neighbouring §YAbyssinia§!."
+ ZEX_MGY_republican_agitation_state_maneisrata_text:0 "§YManeisrata§! - is nestled between the §YWestern Desert§! to its south and §YAbyssinia§! to its west. Banditry has run rampant throughout the area over the last few years, a problem only magnified by the recent §tseperatist§! incursions."
+ ZEX_MGY_republican_agitation_state_delta_text:0 "The §YDelta§!, once the murky beating heart of §Ylower Maregypt§! has seen many positive developments in the recent years; the urbanisation of §YR'ataphet§! and the construction of the §YTrotanis canal§! have turned this state into a far hore hospitable region."
+ ZEX_MGY_republican_agitation_state_somnambula_text:0 "The portuary city of §YSomnambula§! was built but two-hundred years ago. Named after the eponymous legendary figure, it grew to prominence after the royal family relocated here. The new §Yroyal palace§! and its §Ysumptuous gardens§! are wonders to behold."
+ ZEX_MGY_republican_agitation_state_easterndesert_text:0 "It's just sand, what more do you want me to say?"
+ ZEX_MGY_republican_agitation_state_zush_text:0 "§YZush§! has been nothing but trouble for us. Once the birthplace of the famous §YZushite§! dynasty, the mineral-rich state has now succumbed to the political chaos. §YCorruption§!, §Ypolitical violence§! and even §tviolent seperatist§! groups are a common site these days."
+ ZEX_MGY_republican_agitation_state_manephis_text:0 "The province of §YManephis§! encompasses the northern half of the traditional §Yupper Maregyptian nomes§! as well as all of §Ymiddle Maregypt§!. The former seat of the §YMaregyptian Empire§! is now but a bustling, industrialising but most of all neglected region."
+ ZEX_MGY_republican_agitation_state_uppermaregypt_text:0 "Ta-Shema - §YUpper Maregypt§! - is the birthplace of Maregyptian culture. It was in this region that our first §YPharaohs§! rose, and found §YHarmony§!. Unsurprisingly, it is also in this region that one would find the most fiercely supports of our king."
 
  #Republican agitation decisions
  ZEX_Activate_Agitation_tt:0 "Enables the §YRepublican Agitation§! mechanic."
