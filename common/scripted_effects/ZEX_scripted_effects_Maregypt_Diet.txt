@@ -1,9 +1,7 @@
 #################################################
 # MAREGYPT REPUBLICAN AGITATION RELATED EFFECTS #
 #################################################
-
 # Start / Control
-
 ZEX_MGY_Royal_Diet_Start_Diet = {
 	set_country_flag = zex_mgy_royal_diet_ongoing
 	ZEX_royal_diet_clear_gui_arrays = yes
@@ -20,20 +18,21 @@ ZEX_MGY_Royal_Diet_end_Diet = {
 # Set the initial amount of loyal seats
 ZEX_MGY_Define_Initial_Loyalty = {
 	set_variable = {
-		ZEX_MGY_Royal_Diet_Zebrican_Loyalty = 5
+		ZEX_MGY_Royal_Diet_Zebrican_Loyalty = 3
 	}
 	set_variable = {
-		ZEX_MGY_Royal_Diet_Harmonist_Loyalty = 35
+		ZEX_MGY_Royal_Diet_Harmonist_Loyalty = 45
 	}
 	set_variable = {
-		ZEX_MGY_Royal_Diet_Loyalists_Loyalty = 25
+		ZEX_MGY_Royal_Diet_Loyalists_Loyalty = 12
 	}
 	set_variable = {
 		ZEX_MGY_Royal_Diet_Independent_Loyalty = 5
 	}
 }
 
-ZEX_MGY_Calculate_Total_Support = { #This is to reupdate the diet's support
+ZEX_MGY_Calculate_Total_Support = {
+	#This is to reupdate the diet's support
 	set_variable = {
 		ZEX_MGY_Royal_Diet_Total_Support = 0
 	}
@@ -51,141 +50,1401 @@ ZEX_MGY_Calculate_Total_Support = { #This is to reupdate the diet's support
 	}
 }
 
+ZEX_MGY_Clamp_Support_Values = {
+	#Curbs overflow to avoid "invisible" supportive seats
+	clamp_variable = {
+		var = ZEX_MGY_Royal_Diet_Zebrican_Loyalty
+		min = 0
+		max = ZEX_MGY_royal_diet_seat_array^0
+	}
+	clamp_variable = {
+		var = ZEX_MGY_Royal_Diet_Harmonist_Loyalty
+		min = 0
+		max = ZEX_MGY_royal_diet_seat_array^1
+	}
+	clamp_variable = {
+		var = ZEX_MGY_Royal_Diet_Loyalists_Loyalty
+		min = 0
+		max = ZEX_MGY_royal_diet_seat_array^2
+	}
+	clamp_variable = {
+		var = ZEX_MGY_Royal_Diet_Independent_Loyalty
+		min = 0
+		max = ZEX_MGY_royal_diet_seat_array^3
+	}
+}
+
+#
+# Effects to add / seats from each faction - 5, 10, 15, 20
+# 
+zex_mgy_add_zebrican_seats_5 = {
+	custom_effect_tooltip = zex_mgy_add_zebrican_seats_5_tt
+	hidden_effect = {
+		#Sanity check to avoid negative numbers / overflow
+		if = {
+			limit = {
+				check_variable = {
+					ZEX_MGY_royal_diet_seat_array^0 > 195
+				}
+			}
+			set_temp_variable = {
+				var = ZEX_MGY_royal_diet_temp_seats
+				value = 200
+			}
+			subtract_from_temp_variable = {
+				var = ZEX_MGY_royal_diet_temp_seats
+				value = ZEX_MGY_royal_diet_seat_array^0
+			}
+		}
+		else = {
+			set_temp_variable = {
+				ZEX_MGY_royal_diet_temp_seats = 5
+			}
+		}
+		# Actually add the seats
+		set_temp_variable = {
+			temp_member = 1
+		}
+		ZEX_MGY_Diet_modify_parliament_seat = yes
+		ZEX_MGY_Clamp_Support_Values = yes
+		ZEX_MGY_Clamp_Support_Values = yes
+	}
+}
+
+zex_mgy_add_zebrican_seats_10 = {
+	custom_effect_tooltip = zex_mgy_add_zebrican_seats_10_tt
+	hidden_effect = {
+		#Sanity check to avoid negative numbers / overflow
+		if = {
+			limit = {
+				check_variable = {
+					ZEX_MGY_royal_diet_seat_array^0 > 190
+				}
+			}
+			set_temp_variable = {
+				var = ZEX_MGY_royal_diet_temp_seats
+				value = 200
+			}
+			subtract_from_temp_variable = {
+				var = ZEX_MGY_royal_diet_temp_seats
+				value = ZEX_MGY_royal_diet_seat_array^0
+			}
+		}
+		else = {
+			set_temp_variable = {
+				ZEX_MGY_royal_diet_temp_seats = 10
+			}
+		}
+		# Actually add the seats
+		set_temp_variable = {
+			temp_member = 1
+		}
+		ZEX_MGY_Diet_modify_parliament_seat = yes
+		ZEX_MGY_Clamp_Support_Values = yes
+		ZEX_MGY_Clamp_Support_Values = yes
+	}
+}
+
+zex_mgy_add_zebrican_seats_15 = {
+	custom_effect_tooltip = zex_mgy_add_zebrican_seats_15_tt
+	hidden_effect = {
+		#Sanity check to avoid negative numbers / overflow
+		if = {
+			limit = {
+				check_variable = {
+					ZEX_MGY_royal_diet_seat_array^0 > 185
+				}
+			}
+			set_temp_variable = {
+				var = ZEX_MGY_royal_diet_temp_seats
+				value = 200
+			}
+			subtract_from_temp_variable = {
+				var = ZEX_MGY_royal_diet_temp_seats
+				value = ZEX_MGY_royal_diet_seat_array^0
+			}
+		}
+		else = {
+			set_temp_variable = {
+				ZEX_MGY_royal_diet_temp_seats = 15
+			}
+		}
+		# Actually add the seats
+		set_temp_variable = {
+			temp_member = 1
+		}
+		ZEX_MGY_Diet_modify_parliament_seat = yes
+		ZEX_MGY_Clamp_Support_Values = yes
+		ZEX_MGY_Clamp_Support_Values = yes
+	}
+}
+
+zex_mgy_add_zebrican_seats_20 = {
+	custom_effect_tooltip = zex_mgy_add_zebrican_seats_20_tt
+	hidden_effect = {
+		#Sanity check to avoid negative numbers / overflow
+		if = {
+			limit = {
+				check_variable = {
+					ZEX_MGY_royal_diet_seat_array^0 > 180
+				}
+			}
+			set_temp_variable = {
+				var = ZEX_MGY_royal_diet_temp_seats
+				value = 200
+			}
+			subtract_from_temp_variable = {
+				var = ZEX_MGY_royal_diet_temp_seats
+				value = ZEX_MGY_royal_diet_seat_array^0
+			}
+		}
+		else = {
+			set_temp_variable = {
+				ZEX_MGY_royal_diet_temp_seats = 20
+			}
+		}
+		# Actually add the seats
+		set_temp_variable = {
+			temp_member = 1
+		}
+		ZEX_MGY_Diet_modify_parliament_seat = yes
+		ZEX_MGY_Clamp_Support_Values = yes
+		ZEX_MGY_Clamp_Support_Values = yes
+	}
+}
+
+zex_mgy_rem_zebrican_seats_5 = {
+	custom_effect_tooltip = zex_mgy_rem_zebrican_seats_5_tt
+	hidden_effect = {
+		#Sanity check to avoid negative numbers / overflow
+		if = {
+			limit = {
+				check_variable = {
+					ZEX_MGY_royal_diet_seat_array^0 < 5
+				}
+			}
+			set_temp_variable = {
+				var = ZEX_MGY_royal_diet_temp_seats
+				value = ZEX_MGY_royal_diet_seat_array^0
+			}
+			multiply_temp_variable = {
+				var = ZEX_MGY_royal_diet_temp_seats
+				value = -1
+			}
+		}
+		else = {
+			set_temp_variable = {
+				ZEX_MGY_royal_diet_temp_seats = -5
+			}
+		}
+		# Actually add the seats
+		set_temp_variable = {
+			temp_member = 1
+		}
+		ZEX_MGY_Diet_modify_parliament_seat = yes
+		ZEX_MGY_Clamp_Support_Values = yes
+		ZEX_MGY_Clamp_Support_Values = yes
+	}
+}
+
+zex_mgy_rem_zebrican_seats_10 = {
+	custom_effect_tooltip = zex_mgy_rem_zebrican_seats_10_tt
+	hidden_effect = {
+		#Sanity check to avoid negative numbers / overflow
+		if = {
+			limit = {
+				check_variable = {
+					ZEX_MGY_royal_diet_seat_array^0 < 10
+				}
+			}
+			set_temp_variable = {
+				var = ZEX_MGY_royal_diet_temp_seats
+				value = ZEX_MGY_royal_diet_seat_array^0
+			}
+			multiply_temp_variable = {
+				var = ZEX_MGY_royal_diet_temp_seats
+				value = -1
+			}
+		}
+		else = {
+			set_temp_variable = {
+				ZEX_MGY_royal_diet_temp_seats = -10
+			}
+		}
+		# Actually add the seats
+		set_temp_variable = {
+			temp_member = 1
+		}
+		ZEX_MGY_Diet_modify_parliament_seat = yes
+		ZEX_MGY_Clamp_Support_Values = yes
+		ZEX_MGY_Clamp_Support_Values = yes
+	}
+}
+
+zex_mgy_rem_zebrican_seats_15 = {
+	custom_effect_tooltip = zex_mgy_rem_zebrican_seats_15_tt
+	hidden_effect = {
+		#Sanity check to avoid negative numbers / overflow
+		if = {
+			limit = {
+				check_variable = {
+					ZEX_MGY_royal_diet_seat_array^0 < 15
+				}
+			}
+			set_temp_variable = {
+				var = ZEX_MGY_royal_diet_temp_seats
+				value = ZEX_MGY_royal_diet_seat_array^0
+			}
+			multiply_temp_variable = {
+				var = ZEX_MGY_royal_diet_temp_seats
+				value = -1
+			}
+		}
+		else = {
+			set_temp_variable = {
+				ZEX_MGY_royal_diet_temp_seats = -15
+			}
+		}
+		# Actually add the seats
+		set_temp_variable = {
+			temp_member = 1
+		}
+		ZEX_MGY_Diet_modify_parliament_seat = yes
+		ZEX_MGY_Clamp_Support_Values = yes
+		ZEX_MGY_Clamp_Support_Values = yes
+	}
+}
+
+zex_mgy_rem_zebrican_seats_20 = {
+	custom_effect_tooltip = zex_rem_add_zebrican_seats_20_tt
+	hidden_effect = {
+		#Sanity check to avoid negative numbers / overflow
+		if = {
+			limit = {
+				check_variable = {
+					ZEX_MGY_royal_diet_seat_array^0 < 20
+				}
+			}
+			set_temp_variable = {
+				var = ZEX_MGY_royal_diet_temp_seats
+				value = ZEX_MGY_royal_diet_seat_array^0
+			}
+			multiply_temp_variable = {
+				var = ZEX_MGY_royal_diet_temp_seats
+				value = -1
+			}
+		}
+		else = {
+			set_temp_variable = {
+				ZEX_MGY_royal_diet_temp_seats = -20
+			}
+		}
+		# Actually add the seats
+		set_temp_variable = {
+			temp_member = 1
+		}
+		ZEX_MGY_Diet_modify_parliament_seat = yes
+		ZEX_MGY_Clamp_Support_Values = yes
+		ZEX_MGY_Clamp_Support_Values = yes
+	}
+}
+
+zex_mgy_add_harmonist_seats_5 = {
+	custom_effect_tooltip = zex_mgy_add_harmonist_seats_5_tt
+	hidden_effect = {
+		#Sanity check to avoid negative numbers / overflow
+		if = {
+			limit = {
+				check_variable = {
+					ZEX_MGY_royal_diet_seat_array^1 > 195
+				}
+			}
+			set_temp_variable = {
+				var = ZEX_MGY_royal_diet_temp_seats
+				value = 200
+			}
+			subtract_from_temp_variable = {
+				var = ZEX_MGY_royal_diet_temp_seats
+				value = ZEX_MGY_royal_diet_seat_array^1
+			}
+		}
+		else = {
+			set_temp_variable = {
+				ZEX_MGY_royal_diet_temp_seats = 5
+			}
+		}
+		# Actually add the seats
+		set_temp_variable = {
+			temp_member = 2
+		}
+		ZEX_MGY_Diet_modify_parliament_seat = yes
+		ZEX_MGY_Clamp_Support_Values = yes
+		ZEX_MGY_Clamp_Support_Values = yes
+	}
+}
+
+zex_mgy_add_harmonist_seats_10 = {
+	custom_effect_tooltip = zex_mgy_add_harmonist_seats_10_tt
+	hidden_effect = {
+		#Sanity check to avoid negative numbers / overflow
+		if = {
+			limit = {
+				check_variable = {
+					ZEX_MGY_royal_diet_seat_array^1 > 190
+				}
+			}
+			set_temp_variable = {
+				var = ZEX_MGY_royal_diet_temp_seats
+				value = 200
+			}
+			subtract_from_temp_variable = {
+				var = ZEX_MGY_royal_diet_temp_seats
+				value = ZEX_MGY_royal_diet_seat_array^1
+			}
+		}
+		else = {
+			set_temp_variable = {
+				ZEX_MGY_royal_diet_temp_seats = 10
+			}
+		}
+		# Actually add the seats
+		set_temp_variable = {
+			temp_member = 2
+		}
+		ZEX_MGY_Diet_modify_parliament_seat = yes
+		ZEX_MGY_Clamp_Support_Values = yes
+		ZEX_MGY_Clamp_Support_Values = yes
+	}
+}
+
+zex_mgy_add_harmonist_seats_15 = {
+	custom_effect_tooltip = zex_mgy_add_harmonist_seats_15_tt
+	hidden_effect = {
+		#Sanity check to avoid negative numbers / overflow
+		if = {
+			limit = {
+				check_variable = {
+					ZEX_MGY_royal_diet_seat_array^1 > 185
+				}
+			}
+			set_temp_variable = {
+				var = ZEX_MGY_royal_diet_temp_seats
+				value = 200
+			}
+			subtract_from_temp_variable = {
+				var = ZEX_MGY_royal_diet_temp_seats
+				value = ZEX_MGY_royal_diet_seat_array^1
+			}
+		}
+		else = {
+			set_temp_variable = {
+				ZEX_MGY_royal_diet_temp_seats = 15
+			}
+		}
+		# Actually add the seats
+		set_temp_variable = {
+			temp_member = 2
+		}
+		ZEX_MGY_Diet_modify_parliament_seat = yes
+		ZEX_MGY_Clamp_Support_Values = yes
+		ZEX_MGY_Clamp_Support_Values = yes
+	}
+}
+
+zex_mgy_add_harmonist_seats_20 = {
+	custom_effect_tooltip = zex_mgy_add_harmonist_seats_20_tt
+	hidden_effect = {
+		#Sanity check to avoid negative numbers / overflow
+		if = {
+			limit = {
+				check_variable = {
+					ZEX_MGY_royal_diet_seat_array^1 > 180
+				}
+			}
+			set_temp_variable = {
+				var = ZEX_MGY_royal_diet_temp_seats
+				value = 200
+			}
+			subtract_from_temp_variable = {
+				var = ZEX_MGY_royal_diet_temp_seats
+				value = ZEX_MGY_royal_diet_seat_array^1
+			}
+		}
+		else = {
+			set_temp_variable = {
+				ZEX_MGY_royal_diet_temp_seats = 20
+			}
+		}
+		# Actually add the seats
+		set_temp_variable = {
+			temp_member = 2
+		}
+		ZEX_MGY_Diet_modify_parliament_seat = yes
+		ZEX_MGY_Clamp_Support_Values = yes
+		ZEX_MGY_Clamp_Support_Values = yes
+	}
+}
+
+zex_mgy_rem_harmonist_seats_5 = {
+	custom_effect_tooltip = zex_mgy_rem_harmonist_seats_5_tt
+	hidden_effect = {
+		#Sanity check to avoid negative numbers / overflow
+		if = {
+			limit = {
+				check_variable = {
+					ZEX_MGY_royal_diet_seat_array^1 < 5
+				}
+			}
+			set_temp_variable = {
+				var = ZEX_MGY_royal_diet_temp_seats
+				value = ZEX_MGY_royal_diet_seat_array^1
+			}
+			multiply_temp_variable = {
+				var = ZEX_MGY_royal_diet_temp_seats
+				value = -1
+			}
+		}
+		else = {
+			set_temp_variable = {
+				ZEX_MGY_royal_diet_temp_seats = -5
+			}
+		}
+		# Actually add the seats
+		set_temp_variable = {
+			temp_member = 2
+		}
+		ZEX_MGY_Diet_modify_parliament_seat = yes
+		ZEX_MGY_Clamp_Support_Values = yes
+		ZEX_MGY_Clamp_Support_Values = yes
+	}
+}
+
+zex_mgy_rem_harmonist_seats_10 = {
+	custom_effect_tooltip = zex_mgy_rem_harmonist_seats_10_tt
+	hidden_effect = {
+		#Sanity check to avoid negative numbers / overflow
+		if = {
+			limit = {
+				check_variable = {
+					ZEX_MGY_royal_diet_seat_array^1 < 10
+				}
+			}
+			set_temp_variable = {
+				var = ZEX_MGY_royal_diet_temp_seats
+				value = ZZEX_MGY_royal_diet_seat_array^1
+			}
+			multiply_temp_variable = {
+				var = ZEX_MGY_royal_diet_temp_seats
+				value = -1
+			}
+		}
+		else = {
+			set_temp_variable = {
+				ZEX_MGY_royal_diet_temp_seats = -10
+			}
+		}
+		# Actually add the seats
+		set_temp_variable = {
+			temp_member = 2
+		}
+		ZEX_MGY_Diet_modify_parliament_seat = yes
+		ZEX_MGY_Clamp_Support_Values = yes
+		ZEX_MGY_Clamp_Support_Values = yes
+	}
+}
+
+zex_mgy_rem_harmonist_seats_15 = {
+	custom_effect_tooltip = zex_mgy_rem_harmonist_seats_15_tt
+	hidden_effect = {
+		#Sanity check to avoid negative numbers / overflow
+		if = {
+			limit = {
+				check_variable = {
+					ZEX_MGY_royal_diet_seat_array^1 < 15
+				}
+			}
+			set_temp_variable = {
+				var = ZEX_MGY_royal_diet_temp_seats
+				value = ZEX_MGY_royal_diet_seat_array^1
+			}
+			multiply_temp_variable = {
+				var = ZEX_MGY_royal_diet_temp_seats
+				value = -1
+			}
+		}
+		else = {
+			set_temp_variable = {
+				ZEX_MGY_royal_diet_temp_seats = -15
+			}
+		}
+		# Actually add the seats
+		set_temp_variable = {
+			temp_member = 2
+		}
+		ZEX_MGY_Diet_modify_parliament_seat = yes
+		ZEX_MGY_Clamp_Support_Values = yes
+		ZEX_MGY_Clamp_Support_Values = yes
+	}
+}
+
+zex_mgy_rem_harmonist_seats_20 = {
+	custom_effect_tooltip = zex_rem_add_harmonist_seats_20_tt
+	hidden_effect = {
+		#Sanity check to avoid negative numbers / overflow
+		if = {
+			limit = {
+				check_variable = {
+					ZEX_MGY_royal_diet_seat_array^1 < 20
+				}
+			}
+			set_temp_variable = {
+				var = ZEX_MGY_royal_diet_temp_seats
+				value = ZEX_MGY_royal_diet_seat_array^1
+			}
+			multiply_temp_variable = {
+				var = ZEX_MGY_royal_diet_temp_seats
+				value = -1
+			}
+		}
+		else = {
+			set_temp_variable = {
+				ZEX_MGY_royal_diet_temp_seats = -20
+			}
+		}
+		# Actually add the seats
+		set_temp_variable = {
+			temp_member = 2
+		}
+		ZEX_MGY_Diet_modify_parliament_seat = yes
+		ZEX_MGY_Clamp_Support_Values = yes
+		ZEX_MGY_Clamp_Support_Values = yes
+	}
+}
+
+zex_mgy_add_loyalist_seats_5 = {
+	custom_effect_tooltip = zex_mgy_add_loyalist_seats_5_tt
+	hidden_effect = {
+		#Sanity check to avoid negative numbers / overflow
+		if = {
+			limit = {
+				check_variable = {
+					ZEX_MGY_royal_diet_seat_array^2 > 195
+				}
+			}
+			set_temp_variable = {
+				var = ZEX_MGY_royal_diet_temp_seats
+				value = 200
+			}
+			subtract_from_temp_variable = {
+				var = ZEX_MGY_royal_diet_temp_seats
+				value = ZEX_MGY_royal_diet_seat_array^2
+			}
+		}
+		else = {
+			set_temp_variable = {
+				ZEX_MGY_royal_diet_temp_seats = 5
+			}
+		}
+		# Actually add the seats
+		set_temp_variable = {
+			temp_member = 3
+		}
+		ZEX_MGY_Diet_modify_parliament_seat = yes
+		ZEX_MGY_Clamp_Support_Values = yes
+		ZEX_MGY_Clamp_Support_Values = yes
+	}
+}
+
+zex_mgy_add_loyalist_seats_10 = {
+	custom_effect_tooltip = zex_mgy_add_loyalist_seats_10_tt
+	hidden_effect = {
+		#Sanity check to avoid negative numbers / overflow
+		if = {
+			limit = {
+				check_variable = {
+					ZEX_MGY_royal_diet_seat_array^2 > 190
+				}
+			}
+			set_temp_variable = {
+				var = ZEX_MGY_royal_diet_temp_seats
+				value = 200
+			}
+			subtract_from_temp_variable = {
+				var = ZEX_MGY_royal_diet_temp_seats
+				value = ZEX_MGY_royal_diet_seat_array^2
+			}
+		}
+		else = {
+			set_temp_variable = {
+				ZEX_MGY_royal_diet_temp_seats = 10
+			}
+		}
+		# Actually add the seats
+		set_temp_variable = {
+			temp_member = 3
+		}
+		ZEX_MGY_Diet_modify_parliament_seat = yes
+		ZEX_MGY_Clamp_Support_Values = yes
+		ZEX_MGY_Clamp_Support_Values = yes
+	}
+}
+
+zex_mgy_add_loyalist_seats_15 = {
+	custom_effect_tooltip = zex_mgy_add_loyalist_seats_15_tt
+	hidden_effect = {
+		#Sanity check to avoid negative numbers / overflow
+		if = {
+			limit = {
+				check_variable = {
+					ZEX_MGY_royal_diet_seat_array^2 > 185
+				}
+			}
+			set_temp_variable = {
+				var = ZEX_MGY_royal_diet_temp_seats
+				value = 200
+			}
+			subtract_from_temp_variable = {
+				var = ZEX_MGY_royal_diet_temp_seats
+				value = ZEX_MGY_royal_diet_seat_array^2
+			}
+		}
+		else = {
+			set_temp_variable = {
+				ZEX_MGY_royal_diet_temp_seats = 15
+			}
+		}
+		# Actually add the seats
+		set_temp_variable = {
+			temp_member = 3
+		}
+		ZEX_MGY_Diet_modify_parliament_seat = yes
+		ZEX_MGY_Clamp_Support_Values = yes
+		ZEX_MGY_Clamp_Support_Values = yes
+	}
+}
+
+zex_mgy_add_loyalist_seats_20 = {
+	custom_effect_tooltip = zex_mgy_add_loyalist_seats_20_tt
+	hidden_effect = {
+		#Sanity check to avoid negative numbers / overflow
+		if = {
+			limit = {
+				check_variable = {
+					ZEX_MGY_royal_diet_seat_array^2 > 180
+				}
+			}
+			set_temp_variable = {
+				var = ZEX_MGY_royal_diet_temp_seats
+				value = 200
+			}
+			subtract_from_temp_variable = {
+				var = ZEX_MGY_royal_diet_temp_seats
+				value = ZEX_MGY_royal_diet_seat_array^2
+			}
+		}
+		else = {
+			set_temp_variable = {
+				ZEX_MGY_royal_diet_temp_seats = 20
+			}
+		}
+		# Actually add the seats
+		set_temp_variable = {
+			temp_member = 3
+		}
+		ZEX_MGY_Diet_modify_parliament_seat = yes
+		ZEX_MGY_Clamp_Support_Values = yes
+		ZEX_MGY_Clamp_Support_Values = yes
+	}
+}
+
+zex_mgy_rem_loyalist_seats_5 = {
+	custom_effect_tooltip = zex_mgy_rem_loyalist_seats_5_tt
+	hidden_effect = {
+		#Sanity check to avoid negative numbers / overflow
+		if = {
+			limit = {
+				check_variable = {
+					ZEX_MGY_royal_diet_seat_array^2 < 5
+				}
+			}
+			set_temp_variable = {
+				var = ZEX_MGY_royal_diet_temp_seats
+				value = ZEX_MGY_royal_diet_seat_array^2
+			}
+			multiply_temp_variable = {
+				var = ZEX_MGY_royal_diet_temp_seats
+				value = -1
+			}
+		}
+		else = {
+			set_temp_variable = {
+				ZEX_MGY_royal_diet_temp_seats = -5
+			}
+		}
+		# Actually add the seats
+		set_temp_variable = {
+			temp_member = 3
+		}
+		ZEX_MGY_Diet_modify_parliament_seat = yes
+		ZEX_MGY_Clamp_Support_Values = yes
+		ZEX_MGY_Clamp_Support_Values = yes
+	}
+}
+
+zex_mgy_rem_loyalist_seats_10 = {
+	custom_effect_tooltip = zex_mgy_rem_loyalist_seats_10_tt
+	hidden_effect = {
+		#Sanity check to avoid negative numbers / overflow
+		if = {
+			limit = {
+				check_variable = {
+					ZEX_MGY_royal_diet_seat_array^2 < 10
+				}
+			}
+			set_temp_variable = {
+				var = ZEX_MGY_royal_diet_temp_seats
+				value = ZEX_MGY_royal_diet_seat_array^2
+			}
+			multiply_temp_variable = {
+				var = ZEX_MGY_royal_diet_temp_seats
+				value = -1
+			}
+		}
+		else = {
+			set_temp_variable = {
+				ZEX_MGY_royal_diet_temp_seats = -10
+			}
+		}
+		# Actually add the seats
+		set_temp_variable = {
+			temp_member = 3
+		}
+		ZEX_MGY_Diet_modify_parliament_seat = yes
+		ZEX_MGY_Clamp_Support_Values = yes
+		ZEX_MGY_Clamp_Support_Values = yes
+	}
+}
+
+zex_mgy_rem_loyalist_seats_15 = {
+	custom_effect_tooltip = zex_mgy_rem_loyalist_seats_15_tt
+	hidden_effect = {
+		#Sanity check to avoid negative numbers / overflow
+		if = {
+			limit = {
+				check_variable = {
+					ZEX_MGY_royal_diet_seat_array^2 < 15
+				}
+			}
+			set_temp_variable = {
+				var = ZEX_MGY_royal_diet_temp_seats
+				value = ZEX_MGY_royal_diet_seat_array^2
+			}
+			multiply_temp_variable = {
+				var = ZEX_MGY_royal_diet_temp_seats
+				value = -1
+			}
+		}
+		else = {
+			set_temp_variable = {
+				ZEX_MGY_royal_diet_temp_seats = -15
+			}
+		}
+		# Actually add the seats
+		set_temp_variable = {
+			temp_member = 3
+		}
+		ZEX_MGY_Diet_modify_parliament_seat = yes
+		ZEX_MGY_Clamp_Support_Values = yes
+		ZEX_MGY_Clamp_Support_Values = yes
+	}
+}
+
+zex_mgy_rem_loyalist_seats_20 = {
+	custom_effect_tooltip = zex_rem_add_loyalist_seats_20_tt
+	hidden_effect = {
+		#Sanity check to avoid negative numbers / overflow
+		if = {
+			limit = {
+				check_variable = {
+					ZEX_MGY_royal_diet_seat_array^2 < 20
+				}
+			}
+			set_temp_variable = {
+				var = ZEX_MGY_royal_diet_temp_seats
+				value = ZEX_MGY_royal_diet_seat_array^2
+			}
+			multiply_temp_variable = {
+				var = ZEX_MGY_royal_diet_temp_seats
+				value = -1
+			}
+		}
+		else = {
+			set_temp_variable = {
+				ZEX_MGY_royal_diet_temp_seats = -20
+			}
+		}
+		# Actually add the seats
+		set_temp_variable = {
+			temp_member = 3
+		}
+		ZEX_MGY_Diet_modify_parliament_seat = yes
+		ZEX_MGY_Clamp_Support_Values = yes
+		ZEX_MGY_Clamp_Support_Values = yes
+	}
+}
+
+zex_mgy_add_independent_seats_5 = {
+	custom_effect_tooltip = zex_mgy_add_independent_seats_5_tt
+	hidden_effect = {
+		#Sanity check to avoid negative numbers / overflow
+		if = {
+			limit = {
+				check_variable = {
+					ZEX_MGY_royal_diet_seat_array^3 > 195
+				}
+			}
+			set_temp_variable = {
+				var = ZEX_MGY_royal_diet_temp_seats
+				value = 200
+			}
+			subtract_from_temp_variable = {
+				var = ZEX_MGY_royal_diet_temp_seats
+				value = ZEX_MGY_royal_diet_seat_array^3
+			}
+		}
+		else = {
+			set_temp_variable = {
+				ZEX_MGY_royal_diet_temp_seats = 5
+			}
+		}
+		# Actually add the seats
+		set_temp_variable = {
+			temp_member = 4
+		}
+		ZEX_MGY_Diet_modify_parliament_seat = yes
+		ZEX_MGY_Clamp_Support_Values = yes
+		ZEX_MGY_Clamp_Support_Values = yes
+	}
+}
+
+zex_mgy_add_independent_seats_10 = {
+	custom_effect_tooltip = zex_mgy_add_independent_seats_10_tt
+	hidden_effect = {
+		#Sanity check to avoid negative numbers / overflow
+		if = {
+			limit = {
+				check_variable = {
+					ZEX_MGY_royal_diet_seat_array^3 > 190
+				}
+			}
+			set_temp_variable = {
+				var = ZEX_MGY_royal_diet_temp_seats
+				value = 200
+			}
+			subtract_from_temp_variable = {
+				var = ZEX_MGY_royal_diet_temp_seats
+				value = ZEX_MGY_royal_diet_seat_array^3
+			}
+		}
+		else = {
+			set_temp_variable = {
+				ZEX_MGY_royal_diet_temp_seats = 10
+			}
+		}
+		# Actually add the seats
+		set_temp_variable = {
+			temp_member = 4
+		}
+		ZEX_MGY_Diet_modify_parliament_seat = yes
+		ZEX_MGY_Clamp_Support_Values = yes
+		ZEX_MGY_Clamp_Support_Values = yes
+	}
+}
+
+zex_mgy_add_independent_seats_15 = {
+	custom_effect_tooltip = zex_mgy_add_independent_seats_15_tt
+	hidden_effect = {
+		#Sanity check to avoid negative numbers / overflow
+		if = {
+			limit = {
+				check_variable = {
+					ZEX_MGY_royal_diet_seat_array^3 > 185
+				}
+			}
+			set_temp_variable = {
+				var = ZEX_MGY_royal_diet_temp_seats
+				value = 200
+			}
+			subtract_from_temp_variable = {
+				var = ZEX_MGY_royal_diet_temp_seats
+				value = ZEX_MGY_royal_diet_seat_array^3
+			}
+		}
+		else = {
+			set_temp_variable = {
+				ZEX_MGY_royal_diet_temp_seats = 15
+			}
+		}
+		# Actually add the seats
+		set_temp_variable = {
+			temp_member = 4
+		}
+		ZEX_MGY_Diet_modify_parliament_seat = yes
+		ZEX_MGY_Clamp_Support_Values = yes
+		ZEX_MGY_Clamp_Support_Values = yes
+	}
+}
+
+zex_mgy_add_independent_seats_20 = {
+	custom_effect_tooltip = zex_mgy_add_independent_seats_20_tt
+	hidden_effect = {
+		#Sanity check to avoid negative numbers / overflow
+		if = {
+			limit = {
+				check_variable = {
+					ZEX_MGY_royal_diet_seat_array^3 > 180
+				}
+			}
+			set_temp_variable = {
+				var = ZEX_MGY_royal_diet_temp_seats
+				value = 200
+			}
+			subtract_from_temp_variable = {
+				var = ZEX_MGY_royal_diet_temp_seats
+				value = ZEX_MGY_royal_diet_seat_array^3
+			}
+		}
+		else = {
+			set_temp_variable = {
+				ZEX_MGY_royal_diet_temp_seats = 20
+			}
+		}
+		# Actually add the seats
+		set_temp_variable = {
+			temp_member = 4
+		}
+		ZEX_MGY_Diet_modify_parliament_seat = yes
+		ZEX_MGY_Clamp_Support_Values = yes
+		ZEX_MGY_Clamp_Support_Values = yes
+	}
+}
+
+# Add / Remove loyalty (+5/-5)
+
+zex_mgy_add_zebrican_loyalty_5 = {
+	custom_effect_tooltip = zex_mgy_add_zebrican_loyalty_5_tt
+	hidden_effect = {
+		add_to_variable = {
+			ZEX_MGY_Royal_Diet_Zebrican_Loyalty = 5
+		}
+		clamp_variable = {
+			var = ZEX_MGY_Royal_Diet_Zebrican_Loyalty
+			max = ZEX_MGY_royal_diet_seat_array^0
+		}
+	}
+}
+
+zex_mgy_add_zebrican_loyalty_10 = {
+	custom_effect_tooltip = zex_mgy_add_zebrican_loyalty_10_tt
+	hidden_effect = {
+		add_to_variable = {
+			ZEX_MGY_Royal_Diet_Zebrican_Loyalty = 10
+		}
+		clamp_variable = {
+			var = ZEX_MGY_Royal_Diet_Zebrican_Loyalty
+			max = ZEX_MGY_royal_diet_seat_array^0
+		}
+	}
+}
+
+zex_mgy_rem_zebrican_loyalty_5 = {
+	custom_effect_tooltip = zex_mgy_rem_zebrican_loyalty_5_tt
+	hidden_effect = {
+		add_to_variable = {
+			ZEX_MGY_Royal_Diet_Zebrican_Loyalty = -5
+		}
+		clamp_variable = {
+			var = ZEX_MGY_Royal_Diet_Zebrican_Loyalty
+			min = 0
+		}
+	}
+}
+
+zex_mgy_rem_zebrican_loyalty_10 = {
+	custom_effect_tooltip = zex_mgy_rem_zebrican_loyalty_10_tt
+	hidden_effect = {
+		add_to_variable = {
+			ZEX_MGY_Royal_Diet_Zebrican_Loyalty = -10
+		}
+		clamp_variable = {
+			var = ZEX_MGY_Royal_Diet_Zebrican_Loyalty
+			min = 0
+		}
+	}
+}
+
+#
+
+zex_mgy_add_harmonist_loyalty_5 = {
+	custom_effect_tooltip = zex_mgy_add_harmonist_loyalty_5_tt
+	hidden_effect = {
+		add_to_variable = {
+			ZEX_MGY_Royal_Diet_Harmonist_Loyalty = 5
+		}
+		clamp_variable = {
+			var = ZEX_MGY_Royal_Diet_Harmonist_Loyalty
+			max = ZEX_MGY_royal_diet_seat_array^1
+		}
+	}
+}
+
+zex_mgy_add_harmonist_loyalty_10 = {
+	custom_effect_tooltip = zex_mgy_add_harmonist_loyalty_10_tt
+	hidden_effect = {
+		add_to_variable = {
+			ZEX_MGY_Royal_Diet_Harmonist_Loyalty = 10
+		}
+		clamp_variable = {
+			var = ZEX_MGY_Royal_Diet_Harmonist_Loyalty
+			max = ZEX_MGY_royal_diet_seat_array^1
+		}
+	}
+}
+
+zex_mgy_rem_harmonist_loyalty_5 = {
+	custom_effect_tooltip = zex_mgy_rem_harmonist_loyalty_5_tt
+	hidden_effect = {
+		add_to_variable = {
+			ZEX_MGY_Royal_Diet_Harmonist_Loyalty = -5
+		}
+		clamp_variable = {
+			var = ZEX_MGY_Royal_Diet_Harmonist_Loyalty
+			min = 0
+		}
+	}
+}
+
+zex_mgy_rem_harmonist_loyalty_10 = {
+	custom_effect_tooltip = zex_mgy_rem_harmonist_loyalty_10_tt
+	hidden_effect = {
+		add_to_variable = {
+			ZEX_MGY_Royal_Diet_Harmonist_Loyalty = -10
+		}
+		clamp_variable = {
+			var = ZEX_MGY_Royal_Diet_Harmonist_Loyalty
+			min = 0
+		}
+	}
+}
+
+#
+
+zex_mgy_add_loyalist_loyalty_5 = {
+	custom_effect_tooltip = zex_mgy_add_loyalist_loyalty_5_tt
+	hidden_effect = {
+		add_to_variable = {
+			ZEX_MGY_Royal_Diet_Loyalists_Loyalty = 5
+		}
+		clamp_variable = {
+			var = ZEX_MGY_Royal_Diet_Loyalists_Loyalty
+			max = ZEX_MGY_royal_diet_seat_array^2
+		}
+	}
+}
+
+zex_mgy_add_loyalist_loyalty_10 = {
+	custom_effect_tooltip = zex_mgy_add_loyalist_loyalty_10_tt
+	hidden_effect = {
+		add_to_variable = {
+			ZEX_MGY_Royal_Diet_Loyalists_Loyalty = 10
+		}
+		clamp_variable = {
+			var = ZEX_MGY_Royal_Diet_Loyalists_Loyalty
+			max = ZEX_MGY_royal_diet_seat_array^2
+		}
+	}
+}
+
+zex_mgy_rem_loyalist_loyalty_5 = {
+	custom_effect_tooltip = zex_mgy_rem_loyalist_loyalty_5_tt
+	hidden_effect = {
+		add_to_variable = {
+			ZEX_MGY_Royal_Diet_Loyalists_Loyalty = -5
+		}
+		clamp_variable = {
+			var = ZEX_MGY_Royal_Diet_Loyalists_Loyalty
+			min = 0
+		}
+	}
+}
+
+zex_mgy_rem_loyalist_loyalty_10 = {
+	custom_effect_tooltip = zex_mgy_rem_loyalist_loyalty_10_tt
+	hidden_effect = {
+		add_to_variable = {
+			ZEX_MGY_Royal_Diet_Loyalists_Loyalty = -10
+		}
+		clamp_variable = {
+			var = ZEX_MGY_Royal_Diet_Loyalists_Loyalty
+			min = 0
+		}
+	}
+}
+
+#
+
+zex_mgy_add_independent_loyalty_5 = {
+	custom_effect_tooltip = zex_mgy_add_independent_loyalty_5_tt
+	hidden_effect = {
+		add_to_variable = {
+			ZEX_MGY_Royal_Diet_Independent_Loyalty = 5
+		}
+		clamp_variable = {
+			var = ZEX_MGY_Royal_Diet_Independent_Loyalty
+			max = ZEX_MGY_royal_diet_seat_array^3
+		}
+	}
+}
+
+zex_mgy_add_independent_loyalty_10 = {
+	custom_effect_tooltip = zex_mgy_add_independent_loyalty_10_tt
+	hidden_effect = {
+		add_to_variable = {
+			ZEX_MGY_Royal_Diet_Independent_Loyalty = 10
+		}
+		clamp_variable = {
+			var = ZEX_MGY_Royal_Diet_Independent_Loyalty
+			max = ZEX_MGY_royal_diet_seat_array^3
+		}
+	}
+}
+
+zex_mgy_rem_independent_loyalty_5 = {
+	custom_effect_tooltip = zex_mgy_rem_independent_loyalty_5_tt
+	hidden_effect = {
+		add_to_variable = {
+			ZEX_MGY_Royal_Diet_Independent_Loyalty = -5
+		}
+		clamp_variable = {
+			var = ZEX_MGY_Royal_Diet_Independent_Loyalty
+			min = 0
+		}
+	}
+}
+
+zex_mgy_rem_independent_loyalty_10 = {
+	custom_effect_tooltip = zex_mgy_rem_independent_loyalty_10_tt
+	hidden_effect = {
+		add_to_variable = {
+			ZEX_MGY_Royal_Diet_Independent_Loyalty = -10
+		}
+		clamp_variable = {
+			var = ZEX_MGY_Royal_Diet_Independent_Loyalty
+			min = 0
+		}
+	}
+}
+
 #
 # This was taken directly from HS1san's template: https://steamcommunity.com/sharedfiles/filedetails/?id=2310966974, and adapted for the sub-mod's needs
 # 
-
 ZEX_MGY_Royal_Diet_Initialise_UI = {
-	add_to_array = { ZEX_MGY_royal_diet_seat_array = 30 } # Zebricans
-	add_to_array = { ZEX_MGY_royal_diet_seat_array = 50 } # Harmonists
-	add_to_array = { ZEX_MGY_royal_diet_seat_array = 45 } # Loyalists
-	add_to_array = { ZEX_MGY_royal_diet_seat_array = 75 } # Independents
-
-	add_to_array = { parliament_member_array = 1 } # Zebricans
-	add_to_array = { parliament_member_array = 2 } # Harmonists
-	add_to_array = { parliament_member_array = 3 } # Loyalists
-	add_to_array = { parliament_member_array = 4 } # Independents
-
+	add_to_array = {
+		ZEX_MGY_royal_diet_seat_array = 15
+	}	# Zebricans
+	add_to_array = {
+		ZEX_MGY_royal_diet_seat_array = 145
+	}	# Harmonists
+	add_to_array = {
+		ZEX_MGY_royal_diet_seat_array = 30
+	}	# Loyalists
+	add_to_array = {
+		ZEX_MGY_royal_diet_seat_array = 10
+	}	# Independents
+	add_to_array = {
+		parliament_member_array = 1
+	}	# Zebricans
+	add_to_array = {
+		parliament_member_array = 2
+	}	# Harmonists
+	add_to_array = {
+		parliament_member_array = 3
+	}	# Loyalists
+	add_to_array = {
+		parliament_member_array = 4
+	}	# Independents
 	ZEX_MGY_Diet_Get_Seats_Positions = yes
-
 	ZEX_MGY_Diet_Reload_GUI = yes
 }
-
 
 ZEX_MGY_Diet_Reload_GUI = {
 	clear_array = parliament_main_array
 	for_each_loop = {
 		array = ZEX_MGY_royal_diet_seat_array
-
-		add_to_array = { temp_seat = ZEX_MGY_royal_diet_seat_array^i }
+		add_to_array = {
+			temp_seat = ZEX_MGY_royal_diet_seat_array^i
+		}
 	}
-
-	set_temp_variable = { temp_index_1 = 0 }
-	set_temp_variable = { temp_index_2 = 1 }
-
-	set_temp_variable = { temp_size = temp_seat^num }
-	subtract_from_temp_variable = { temp_size = 1 }
-
+	set_temp_variable = {
+		temp_index_1 = 0
+	}
+	set_temp_variable = {
+		temp_index_2 = 1
+	}
+	set_temp_variable = {
+		temp_size = temp_seat^num
+	}
+	subtract_from_temp_variable = {
+		temp_size = 1
+	}
 	while_loop_effect = {
 		limit = {
-			check_variable = { temp_index_1 < temp_size }
+			check_variable = {
+				temp_index_1 < temp_size
+			}
 		}
-		
-		add_to_variable = { temp_seat^temp_index_2 = temp_seat^temp_index_1 }
-		add_to_temp_variable = { temp_index_1 = 1 }
-		add_to_temp_variable = { temp_index_2 = 1 }
+		add_to_variable = {
+			temp_seat^temp_index_2 = temp_seat^temp_index_1
+		}
+		add_to_temp_variable = {
+			temp_index_1 = 1
+		}
+		add_to_temp_variable = {
+			temp_index_2 = 1
+		}
 	}
-
 	for_loop_effect = {
 		start = 0
 		end = temp_seat^num
-
-		resize_array = { array = parliament_main_array value = parliament_member_array^v size = temp_seat^v }
+		resize_array = {
+			array = parliament_main_array
+			value = parliament_member_array^v
+			size = temp_seat^v
+		}
 	}
-
 	clear_array = temp_seat
 }
 
 ZEX_MGY_Diet_modify_parliament_seat = {
-	subtract_from_temp_variable = { temp_member = 1 }
-	set_temp_variable = { temp = ZEX_MGY_royal_diet_seat_array^temp_member }
-	add_to_temp_variable = { temp = ZEX_MGY_royal_diet_temp_seats }
-
+	subtract_from_temp_variable = {
+		temp_member = 1
+	}
+	set_temp_variable = {
+		temp = ZEX_MGY_royal_diet_seat_array^temp_member
+	}
+	add_to_temp_variable = {
+		temp = ZEX_MGY_royal_diet_temp_seats
+	}
 	if = {
 		limit = {
-			check_variable = { temp > parliament_main_array^num }
+			check_variable = {
+				temp > parliament_main_array^num
+			}
 		}
-		subtract_from_temp_variable = { temp = parliament_main_array^num }
-		subtract_from_temp_variable = { ZEX_MGY_royal_diet_temp_seats = temp }
+		subtract_from_temp_variable = {
+			temp = parliament_main_array^num
+		}
+		subtract_from_temp_variable = {
+			ZEX_MGY_royal_diet_temp_seats = temp
+		}
 	}
 	else_if = {
 		limit = {
-			check_variable = { temp < 0 }
+			check_variable = {
+				temp < 0
+			}
 		}
-		multiply_temp_variable = { temp = -1 }
-		subtract_from_temp_variable = { ZEX_MGY_royal_diet_temp_seats = temp }
+		multiply_temp_variable = {
+			temp = -1
+		}
+		subtract_from_temp_variable = {
+			ZEX_MGY_royal_diet_temp_seats = temp
+		}
 	}
-
 	for_loop_effect = {
 		start = 0
 		end = ZEX_MGY_royal_diet_seat_array^num
-
-		add_to_temp_array = { temp_array = v }
+		add_to_temp_array = {
+			temp_array = v
+		}
 	}
-
-	remove_from_temp_array = { array = temp_array value = temp_member }
-
-	add_to_variable = { ZEX_MGY_royal_diet_seat_array^temp_member = ZEX_MGY_royal_diet_temp_seats }
-
+	remove_from_temp_array = {
+		array = temp_array
+		value = temp_member
+	}
+	add_to_variable = {
+		ZEX_MGY_royal_diet_seat_array^temp_member = ZEX_MGY_royal_diet_temp_seats
+	}
 	if = {
 		limit = {
-			check_variable = { ZEX_MGY_royal_diet_temp_seats > 0 }
+			check_variable = {
+				ZEX_MGY_royal_diet_temp_seats > 0
+			}
 		}
 		while_loop_effect = {
 			limit = {
-				check_variable = { ZEX_MGY_royal_diet_temp_seats > 0 }
+				check_variable = {
+					ZEX_MGY_royal_diet_temp_seats > 0
+				}
 			}
 			for_loop_effect = {
 				start = 0
 				end = temp_array^num
-
 				if = {
 					limit = {
-						check_variable = { ZEX_MGY_royal_diet_seat_array^temp_array^v > 0 } # party must have more than 0 seats to be subtracted
-						check_variable = { ZEX_MGY_royal_diet_temp_seats > 0 } # seats to be added is bigger than 0 currently
+						check_variable = {
+							ZEX_MGY_royal_diet_seat_array^temp_array^v > 0
+						}						# party must have more than 0 seats to be subtracted
+						check_variable = {
+							ZEX_MGY_royal_diet_temp_seats > 0
+						}						# seats to be added is bigger than 0 currently
 					}
-					subtract_from_variable = { ZEX_MGY_royal_diet_seat_array^temp_array^v = 1 } # subtract from party 1 seat
-					subtract_from_temp_variable = { ZEX_MGY_royal_diet_temp_seats = 1 } # subtract from seats to be added
+					subtract_from_variable = {
+						ZEX_MGY_royal_diet_seat_array^temp_array^v = 1
+					}					# subtract from party 1 seat
+					subtract_from_temp_variable = {
+						ZEX_MGY_royal_diet_temp_seats = 1
+					}					# subtract from seats to be added
 				}
 			}
 		}
 	}
 	else_if = {
 		limit = {
-			check_variable = { ZEX_MGY_royal_diet_temp_seats < 0 }
+			check_variable = {
+				ZEX_MGY_royal_diet_temp_seats < 0
+			}
 		}
 		while_loop_effect = {
 			limit = {
-				check_variable = { ZEX_MGY_royal_diet_temp_seats < 0 }
+				check_variable = {
+					ZEX_MGY_royal_diet_temp_seats < 0
+				}
 			}
 			for_loop_effect = {
 				start = 0
 				end = temp_array^num
-
 				if = {
 					limit = {
-						check_variable = { ZEX_MGY_royal_diet_seat_array^temp_array^v < parliament_main_array^num } # party must have less than max seats to be added
-						check_variable = { ZEX_MGY_royal_diet_temp_seats < 0 } # seats to be subtracted is less than 0 currently
+						check_variable = {
+							ZEX_MGY_royal_diet_seat_array^temp_array^v < parliament_main_array^num
+						}						# party must have less than max seats to be added
+						check_variable = {
+							ZEX_MGY_royal_diet_temp_seats < 0
+						}						# seats to be subtracted is less than 0 currently
 					}
-					add_to_variable = { ZEX_MGY_royal_diet_seat_array^temp_array^v = 1 } # add to party 1 seat
-					add_to_temp_variable = { ZEX_MGY_royal_diet_temp_seats = 1 } # add to seats to be subtracted
+					add_to_variable = {
+						ZEX_MGY_royal_diet_seat_array^temp_array^v = 1
+					}					# add to party 1 seat
+					add_to_temp_variable = {
+						ZEX_MGY_royal_diet_temp_seats = 1
+					}					# add to seats to be subtracted
 				}
 			}
 		}
 	}
 	ZEX_MGY_Diet_Reload_GUI = yes
 }
-
 
 ZEX_royal_diet_clear_gui_arrays = {
 	clear_array = parliament_main_array
@@ -196,404 +1455,1204 @@ ZEX_royal_diet_clear_gui_arrays = {
 }
 
 ZEX_MGY_Diet_Get_Seats_Positions = {
-	add_to_array = { parliament_x_array = 0 }
-	add_to_array = { parliament_y_array = 164 }
-	add_to_array = { parliament_x_array = 14 }
-	add_to_array = { parliament_y_array = 164 }
-	add_to_array = { parliament_x_array = 28 }
-	add_to_array = { parliament_y_array = 164 }
-	add_to_array = { parliament_x_array = 42 }
-	add_to_array = { parliament_y_array = 164 }
-	add_to_array = { parliament_x_array = 56 }
-	add_to_array = { parliament_y_array = 164 }
-	add_to_array = { parliament_x_array = 71 }
-	add_to_array = { parliament_y_array = 164 }
-	add_to_array = { parliament_x_array = 85 }
-	add_to_array = { parliament_y_array = 164 }
-	add_to_array = { parliament_x_array = 99 }
-	add_to_array = { parliament_y_array = 164 }
-	add_to_array = { parliament_x_array = 2 }
-	add_to_array = { parliament_y_array = 149 }
-	add_to_array = { parliament_x_array = 16 }
-	add_to_array = { parliament_y_array = 149 }
-	add_to_array = { parliament_x_array = 30 }
-	add_to_array = { parliament_y_array = 149 }
-	add_to_array = { parliament_x_array = 44 }
-	add_to_array = { parliament_y_array = 149 }
-	add_to_array = { parliament_x_array = 59 }
-	add_to_array = { parliament_y_array = 150 }
-	add_to_array = { parliament_x_array = 5 }
-	add_to_array = { parliament_y_array = 134 }
-	add_to_array = { parliament_x_array = 73 }
-	add_to_array = { parliament_y_array = 150 }
-	add_to_array = { parliament_x_array = 19 }
-	add_to_array = { parliament_y_array = 134 }
-	add_to_array = { parliament_x_array = 87 }
-	add_to_array = { parliament_y_array = 151 }
-	add_to_array = { parliament_x_array = 34 }
-	add_to_array = { parliament_y_array = 135 }
-	add_to_array = { parliament_x_array = 48 }
-	add_to_array = { parliament_y_array = 135 }
-	add_to_array = { parliament_x_array = 102 }
-	add_to_array = { parliament_y_array = 151 }
-	add_to_array = { parliament_x_array = 9 }
-	add_to_array = { parliament_y_array = 119 }
-	add_to_array = { parliament_x_array = 63 }
-	add_to_array = { parliament_y_array = 136 }
-	add_to_array = { parliament_x_array = 24 }
-	add_to_array = { parliament_y_array = 119 }
-	add_to_array = { parliament_x_array = 39 }
-	add_to_array = { parliament_y_array = 120 }
-	add_to_array = { parliament_x_array = 78 }
-	add_to_array = { parliament_y_array = 136 }
-	add_to_array = { parliament_x_array = 15 }
-	add_to_array = { parliament_y_array = 104 }
-	add_to_array = { parliament_x_array = 54 }
-	add_to_array = { parliament_y_array = 120 }
-	add_to_array = { parliament_x_array = 92 }
-	add_to_array = { parliament_y_array = 138 }
-	add_to_array = { parliament_x_array = 30 }
-	add_to_array = { parliament_y_array = 104 }
-	add_to_array = { parliament_x_array = 68 }
-	add_to_array = { parliament_y_array = 123 }
-	add_to_array = { parliament_x_array = 45 }
-	add_to_array = { parliament_y_array = 107 }
-	add_to_array = { parliament_x_array = 22 }
-	add_to_array = { parliament_y_array = 91 }
-	add_to_array = { parliament_x_array = 108 }
-	add_to_array = { parliament_y_array = 139 }
-	add_to_array = { parliament_x_array = 84 }
-	add_to_array = { parliament_y_array = 123 }
-	add_to_array = { parliament_x_array = 61 }
-	add_to_array = { parliament_y_array = 107 }
-	add_to_array = { parliament_x_array = 38 }
-	add_to_array = { parliament_y_array = 91 }
-	add_to_array = { parliament_x_array = 99 }
-	add_to_array = { parliament_y_array = 126 }
-	add_to_array = { parliament_x_array = 76 }
-	add_to_array = { parliament_y_array = 110 }
-	add_to_array = { parliament_x_array = 53 }
-	add_to_array = { parliament_y_array = 94 }
-	add_to_array = { parliament_x_array = 30 }
-	add_to_array = { parliament_y_array = 77 }
-	add_to_array = { parliament_x_array = 47 }
-	add_to_array = { parliament_y_array = 78 }
-	add_to_array = { parliament_x_array = 70 }
-	add_to_array = { parliament_y_array = 95 }
-	add_to_array = { parliament_x_array = 93 }
-	add_to_array = { parliament_y_array = 111 }
-	add_to_array = { parliament_x_array = 40 }
-	add_to_array = { parliament_y_array = 65 }
-	add_to_array = { parliament_x_array = 115 }
-	add_to_array = { parliament_y_array = 128 }
-	add_to_array = { parliament_x_array = 62 }
-	add_to_array = { parliament_y_array = 82 }
-	add_to_array = { parliament_x_array = 85 }
-	add_to_array = { parliament_y_array = 99 }
-	add_to_array = { parliament_x_array = 108 }
-	add_to_array = { parliament_y_array = 115 }
-	add_to_array = { parliament_x_array = 57 }
-	add_to_array = { parliament_y_array = 66 }
-	add_to_array = { parliament_x_array = 50 }
-	add_to_array = { parliament_y_array = 54 }
-	add_to_array = { parliament_x_array = 80 }
-	add_to_array = { parliament_y_array = 83 }
-	add_to_array = { parliament_x_array = 73 }
-	add_to_array = { parliament_y_array = 71 }
-	add_to_array = { parliament_x_array = 103 }
-	add_to_array = { parliament_y_array = 101 }
-	add_to_array = { parliament_x_array = 95 }
-	add_to_array = { parliament_y_array = 88 }
-	add_to_array = { parliament_x_array = 69 }
-	add_to_array = { parliament_y_array = 56 }
-	add_to_array = { parliament_x_array = 62 }
-	add_to_array = { parliament_y_array = 43 }
-	add_to_array = { parliament_x_array = 125 }
-	add_to_array = { parliament_y_array = 119 }
-	add_to_array = { parliament_x_array = 91 }
-	add_to_array = { parliament_y_array = 74 }
-	add_to_array = { parliament_x_array = 118 }
-	add_to_array = { parliament_y_array = 106 }
-	add_to_array = { parliament_x_array = 84 }
-	add_to_array = { parliament_y_array = 61 }
-	add_to_array = { parliament_x_array = 81 }
-	add_to_array = { parliament_y_array = 46 }
-	add_to_array = { parliament_x_array = 74 }
-	add_to_array = { parliament_y_array = 34 }
-	add_to_array = { parliament_x_array = 114 }
-	add_to_array = { parliament_y_array = 92 }
-	add_to_array = { parliament_x_array = 107 }
-	add_to_array = { parliament_y_array = 80 }
-	add_to_array = { parliament_x_array = 104 }
-	add_to_array = { parliament_y_array = 65 }
-	add_to_array = { parliament_x_array = 97 }
-	add_to_array = { parliament_y_array = 53 }
-	add_to_array = { parliament_x_array = 87 }
-	add_to_array = { parliament_y_array = 26 }
-	add_to_array = { parliament_x_array = 94 }
-	add_to_array = { parliament_y_array = 38 }
-	add_to_array = { parliament_x_array = 129 }
-	add_to_array = { parliament_y_array = 99 }
-	add_to_array = { parliament_x_array = 137 }
-	add_to_array = { parliament_y_array = 111 }
-	add_to_array = { parliament_x_array = 120 }
-	add_to_array = { parliament_y_array = 72 }
-	add_to_array = { parliament_x_array = 127 }
-	add_to_array = { parliament_y_array = 85 }
-	add_to_array = { parliament_x_array = 110 }
-	add_to_array = { parliament_y_array = 46 }
-	add_to_array = { parliament_x_array = 117 }
-	add_to_array = { parliament_y_array = 58 }
-	add_to_array = { parliament_x_array = 101 }
-	add_to_array = { parliament_y_array = 19 }
-	add_to_array = { parliament_x_array = 108 }
-	add_to_array = { parliament_y_array = 31 }
-	add_to_array = { parliament_x_array = 142 }
-	add_to_array = { parliament_y_array = 94 }
-	add_to_array = { parliament_x_array = 133 }
-	add_to_array = { parliament_y_array = 67 }
-	add_to_array = { parliament_x_array = 124 }
-	add_to_array = { parliament_y_array = 40 }
-	add_to_array = { parliament_x_array = 116 }
-	add_to_array = { parliament_y_array = 14 }
-	add_to_array = { parliament_x_array = 123 }
-	add_to_array = { parliament_y_array = 26 }
-	add_to_array = { parliament_x_array = 132 }
-	add_to_array = { parliament_y_array = 53 }
-	add_to_array = { parliament_x_array = 140 }
-	add_to_array = { parliament_y_array = 79 }
-	add_to_array = { parliament_x_array = 149 }
-	add_to_array = { parliament_y_array = 106 }
-	add_to_array = { parliament_x_array = 131 }
-	add_to_array = { parliament_y_array = 9 }
-	add_to_array = { parliament_x_array = 139 }
-	add_to_array = { parliament_y_array = 36 }
-	add_to_array = { parliament_x_array = 138 }
-	add_to_array = { parliament_y_array = 22 }
-	add_to_array = { parliament_x_array = 147 }
-	add_to_array = { parliament_y_array = 63 }
-	add_to_array = { parliament_x_array = 146 }
-	add_to_array = { parliament_y_array = 49 }
-	add_to_array = { parliament_x_array = 155 }
-	add_to_array = { parliament_y_array = 90 }
-	add_to_array = { parliament_x_array = 155 }
-	add_to_array = { parliament_y_array = 76 }
-	add_to_array = { parliament_x_array = 146 }
-	add_to_array = { parliament_y_array = 6 }
-	add_to_array = { parliament_x_array = 154 }
-	add_to_array = { parliament_y_array = 34 }
-	add_to_array = { parliament_x_array = 154 }
-	add_to_array = { parliament_y_array = 20 }
-	add_to_array = { parliament_x_array = 162 }
-	add_to_array = { parliament_y_array = 104 }
-	add_to_array = { parliament_x_array = 162 }
-	add_to_array = { parliament_y_array = 61 }
-	add_to_array = { parliament_x_array = 161 }
-	add_to_array = { parliament_y_array = 47 }
-	add_to_array = { parliament_x_array = 161 }
-	add_to_array = { parliament_y_array = 5 }
-	add_to_array = { parliament_x_array = 169 }
-	add_to_array = { parliament_y_array = 89 }
-	add_to_array = { parliament_x_array = 169 }
-	add_to_array = { parliament_y_array = 75 }
-	add_to_array = { parliament_x_array = 169 }
-	add_to_array = { parliament_y_array = 33 }
-	add_to_array = { parliament_x_array = 169 }
-	add_to_array = { parliament_y_array = 19 }
-	add_to_array = { parliament_x_array = 177 }
-	add_to_array = { parliament_y_array = 5 }
-	add_to_array = { parliament_x_array = 177 }
-	add_to_array = { parliament_y_array = 47 }
-	add_to_array = { parliament_x_array = 176 }
-	add_to_array = { parliament_y_array = 61 }
-	add_to_array = { parliament_x_array = 176 }
-	add_to_array = { parliament_y_array = 104 }
-	add_to_array = { parliament_x_array = 185 }
-	add_to_array = { parliament_y_array = 20 }
-	add_to_array = { parliament_x_array = 184 }
-	add_to_array = { parliament_y_array = 34 }
-	add_to_array = { parliament_x_array = 192 }
-	add_to_array = { parliament_y_array = 6 }
-	add_to_array = { parliament_x_array = 184 }
-	add_to_array = { parliament_y_array = 76 }
-	add_to_array = { parliament_x_array = 183 }
-	add_to_array = { parliament_y_array = 90 }
-	add_to_array = { parliament_x_array = 192 }
-	add_to_array = { parliament_y_array = 49 }
-	add_to_array = { parliament_x_array = 191 }
-	add_to_array = { parliament_y_array = 63 }
-	add_to_array = { parliament_x_array = 200 }
-	add_to_array = { parliament_y_array = 22 }
-	add_to_array = { parliament_x_array = 199 }
-	add_to_array = { parliament_y_array = 36 }
-	add_to_array = { parliament_x_array = 208 }
-	add_to_array = { parliament_y_array = 9 }
-	add_to_array = { parliament_x_array = 189 }
-	add_to_array = { parliament_y_array = 106 }
-	add_to_array = { parliament_x_array = 198 }
-	add_to_array = { parliament_y_array = 79 }
-	add_to_array = { parliament_x_array = 206 }
-	add_to_array = { parliament_y_array = 53 }
-	add_to_array = { parliament_x_array = 215 }
-	add_to_array = { parliament_y_array = 26 }
-	add_to_array = { parliament_x_array = 222 }
-	add_to_array = { parliament_y_array = 14 }
-	add_to_array = { parliament_x_array = 214 }
-	add_to_array = { parliament_y_array = 40 }
-	add_to_array = { parliament_x_array = 205 }
-	add_to_array = { parliament_y_array = 67 }
-	add_to_array = { parliament_x_array = 196 }
-	add_to_array = { parliament_y_array = 94 }
-	add_to_array = { parliament_x_array = 230 }
-	add_to_array = { parliament_y_array = 31 }
-	add_to_array = { parliament_x_array = 237 }
-	add_to_array = { parliament_y_array = 19 }
-	add_to_array = { parliament_x_array = 221 }
-	add_to_array = { parliament_y_array = 58 }
-	add_to_array = { parliament_x_array = 228 }
-	add_to_array = { parliament_y_array = 46 }
-	add_to_array = { parliament_x_array = 211 }
-	add_to_array = { parliament_y_array = 85 }
-	add_to_array = { parliament_x_array = 218 }
-	add_to_array = { parliament_y_array = 72 }
-	add_to_array = { parliament_x_array = 202 }
-	add_to_array = { parliament_y_array = 111 }
-	add_to_array = { parliament_x_array = 209 }
-	add_to_array = { parliament_y_array = 99 }
-	add_to_array = { parliament_x_array = 244 }
-	add_to_array = { parliament_y_array = 38 }
-	add_to_array = { parliament_x_array = 251 }
-	add_to_array = { parliament_y_array = 26 }
-	add_to_array = { parliament_x_array = 241 }
-	add_to_array = { parliament_y_array = 53 }
-	add_to_array = { parliament_x_array = 234 }
-	add_to_array = { parliament_y_array = 65 }
-	add_to_array = { parliament_x_array = 231 }
-	add_to_array = { parliament_y_array = 80 }
-	add_to_array = { parliament_x_array = 224 }
-	add_to_array = { parliament_y_array = 92 }
-	add_to_array = { parliament_x_array = 264 }
-	add_to_array = { parliament_y_array = 34 }
-	add_to_array = { parliament_x_array = 257 }
-	add_to_array = { parliament_y_array = 46 }
-	add_to_array = { parliament_x_array = 254 }
-	add_to_array = { parliament_y_array = 61 }
-	add_to_array = { parliament_x_array = 220 }
-	add_to_array = { parliament_y_array = 106 }
-	add_to_array = { parliament_x_array = 247 }
-	add_to_array = { parliament_y_array = 74 }
-	add_to_array = { parliament_x_array = 213 }
-	add_to_array = { parliament_y_array = 119 }
-	add_to_array = { parliament_x_array = 277 }
-	add_to_array = { parliament_y_array = 43 }
-	add_to_array = { parliament_x_array = 269 }
-	add_to_array = { parliament_y_array = 56 }
-	add_to_array = { parliament_x_array = 243 }
-	add_to_array = { parliament_y_array = 88 }
-	add_to_array = { parliament_x_array = 236 }
-	add_to_array = { parliament_y_array = 101 }
-	add_to_array = { parliament_x_array = 265 }
-	add_to_array = { parliament_y_array = 71 }
-	add_to_array = { parliament_x_array = 258 }
-	add_to_array = { parliament_y_array = 83 }
-	add_to_array = { parliament_x_array = 288 }
-	add_to_array = { parliament_y_array = 54 }
-	add_to_array = { parliament_x_array = 281 }
-	add_to_array = { parliament_y_array = 66 }
-	add_to_array = { parliament_x_array = 230 }
-	add_to_array = { parliament_y_array = 115 }
-	add_to_array = { parliament_x_array = 253 }
-	add_to_array = { parliament_y_array = 99 }
-	add_to_array = { parliament_x_array = 276 }
-	add_to_array = { parliament_y_array = 82 }
-	add_to_array = { parliament_x_array = 223 }
-	add_to_array = { parliament_y_array = 128 }
-	add_to_array = { parliament_x_array = 299 }
-	add_to_array = { parliament_y_array = 65 }
-	add_to_array = { parliament_x_array = 246 }
-	add_to_array = { parliament_y_array = 111 }
-	add_to_array = { parliament_x_array = 268 }
-	add_to_array = { parliament_y_array = 95 }
-	add_to_array = { parliament_x_array = 291 }
-	add_to_array = { parliament_y_array = 78 }
-	add_to_array = { parliament_x_array = 308 }
-	add_to_array = { parliament_y_array = 77 }
-	add_to_array = { parliament_x_array = 285 }
-	add_to_array = { parliament_y_array = 94 }
-	add_to_array = { parliament_x_array = 262 }
-	add_to_array = { parliament_y_array = 110 }
-	add_to_array = { parliament_x_array = 239 }
-	add_to_array = { parliament_y_array = 126 }
-	add_to_array = { parliament_x_array = 300 }
-	add_to_array = { parliament_y_array = 91 }
-	add_to_array = { parliament_x_array = 277 }
-	add_to_array = { parliament_y_array = 107 }
-	add_to_array = { parliament_x_array = 254 }
-	add_to_array = { parliament_y_array = 123 }
-	add_to_array = { parliament_x_array = 231 }
-	add_to_array = { parliament_y_array = 139 }
-	add_to_array = { parliament_x_array = 316 }
-	add_to_array = { parliament_y_array = 91 }
-	add_to_array = { parliament_x_array = 293 }
-	add_to_array = { parliament_y_array = 107 }
-	add_to_array = { parliament_x_array = 270 }
-	add_to_array = { parliament_y_array = 123 }
-	add_to_array = { parliament_x_array = 308 }
-	add_to_array = { parliament_y_array = 104 }
-	add_to_array = { parliament_x_array = 246 }
-	add_to_array = { parliament_y_array = 138 }
-	add_to_array = { parliament_x_array = 284 }
-	add_to_array = { parliament_y_array = 120 }
-	add_to_array = { parliament_x_array = 323 }
-	add_to_array = { parliament_y_array = 104 }
-	add_to_array = { parliament_x_array = 261 }
-	add_to_array = { parliament_y_array = 136 }
-	add_to_array = { parliament_x_array = 300 }
-	add_to_array = { parliament_y_array = 120 }
-	add_to_array = { parliament_x_array = 314 }
-	add_to_array = { parliament_y_array = 119 }
-	add_to_array = { parliament_x_array = 275 }
-	add_to_array = { parliament_y_array = 136 }
-	add_to_array = { parliament_x_array = 329 }
-	add_to_array = { parliament_y_array = 119 }
-	add_to_array = { parliament_x_array = 236 }
-	add_to_array = { parliament_y_array = 151 }
-	add_to_array = { parliament_x_array = 290 }
-	add_to_array = { parliament_y_array = 135 }
-	add_to_array = { parliament_x_array = 305 }
-	add_to_array = { parliament_y_array = 135 }
-	add_to_array = { parliament_x_array = 251 }
-	add_to_array = { parliament_y_array = 151 }
-	add_to_array = { parliament_x_array = 319 }
-	add_to_array = { parliament_y_array = 134 }
-	add_to_array = { parliament_x_array = 265 }
-	add_to_array = { parliament_y_array = 150 }
-	add_to_array = { parliament_x_array = 334 }
-	add_to_array = { parliament_y_array = 134 }
-	add_to_array = { parliament_x_array = 280 }
-	add_to_array = { parliament_y_array = 150 }
-	add_to_array = { parliament_x_array = 294 }
-	add_to_array = { parliament_y_array = 149 }
-	add_to_array = { parliament_x_array = 308 }
-	add_to_array = { parliament_y_array = 149 }
-	add_to_array = { parliament_x_array = 322 }
-	add_to_array = { parliament_y_array = 149 }
-	add_to_array = { parliament_x_array = 337 }
-	add_to_array = { parliament_y_array = 149 }
-	add_to_array = { parliament_x_array = 239 }
-	add_to_array = { parliament_y_array = 164 }
-	add_to_array = { parliament_x_array = 253 }
-	add_to_array = { parliament_y_array = 164 }
-	add_to_array = { parliament_x_array = 268 }
-	add_to_array = { parliament_y_array = 164 }
-	add_to_array = { parliament_x_array = 282 }
-	add_to_array = { parliament_y_array = 164 }
-	add_to_array = { parliament_x_array = 296 }
-	add_to_array = { parliament_y_array = 164 }
-	add_to_array = { parliament_x_array = 310 }
-	add_to_array = { parliament_y_array = 164 }
-	add_to_array = { parliament_x_array = 324 }
-	add_to_array = { parliament_y_array = 164 }
-	add_to_array = { parliament_x_array = 338 }
-	add_to_array = { parliament_y_array = 164 }
+	add_to_array = {
+		parliament_x_array = 0
+	}
+	add_to_array = {
+		parliament_y_array = 164
+	}
+	add_to_array = {
+		parliament_x_array = 14
+	}
+	add_to_array = {
+		parliament_y_array = 164
+	}
+	add_to_array = {
+		parliament_x_array = 28
+	}
+	add_to_array = {
+		parliament_y_array = 164
+	}
+	add_to_array = {
+		parliament_x_array = 42
+	}
+	add_to_array = {
+		parliament_y_array = 164
+	}
+	add_to_array = {
+		parliament_x_array = 56
+	}
+	add_to_array = {
+		parliament_y_array = 164
+	}
+	add_to_array = {
+		parliament_x_array = 71
+	}
+	add_to_array = {
+		parliament_y_array = 164
+	}
+	add_to_array = {
+		parliament_x_array = 85
+	}
+	add_to_array = {
+		parliament_y_array = 164
+	}
+	add_to_array = {
+		parliament_x_array = 99
+	}
+	add_to_array = {
+		parliament_y_array = 164
+	}
+	add_to_array = {
+		parliament_x_array = 2
+	}
+	add_to_array = {
+		parliament_y_array = 149
+	}
+	add_to_array = {
+		parliament_x_array = 16
+	}
+	add_to_array = {
+		parliament_y_array = 149
+	}
+	add_to_array = {
+		parliament_x_array = 30
+	}
+	add_to_array = {
+		parliament_y_array = 149
+	}
+	add_to_array = {
+		parliament_x_array = 44
+	}
+	add_to_array = {
+		parliament_y_array = 149
+	}
+	add_to_array = {
+		parliament_x_array = 59
+	}
+	add_to_array = {
+		parliament_y_array = 150
+	}
+	add_to_array = {
+		parliament_x_array = 5
+	}
+	add_to_array = {
+		parliament_y_array = 134
+	}
+	add_to_array = {
+		parliament_x_array = 73
+	}
+	add_to_array = {
+		parliament_y_array = 150
+	}
+	add_to_array = {
+		parliament_x_array = 19
+	}
+	add_to_array = {
+		parliament_y_array = 134
+	}
+	add_to_array = {
+		parliament_x_array = 87
+	}
+	add_to_array = {
+		parliament_y_array = 151
+	}
+	add_to_array = {
+		parliament_x_array = 34
+	}
+	add_to_array = {
+		parliament_y_array = 135
+	}
+	add_to_array = {
+		parliament_x_array = 48
+	}
+	add_to_array = {
+		parliament_y_array = 135
+	}
+	add_to_array = {
+		parliament_x_array = 102
+	}
+	add_to_array = {
+		parliament_y_array = 151
+	}
+	add_to_array = {
+		parliament_x_array = 9
+	}
+	add_to_array = {
+		parliament_y_array = 119
+	}
+	add_to_array = {
+		parliament_x_array = 63
+	}
+	add_to_array = {
+		parliament_y_array = 136
+	}
+	add_to_array = {
+		parliament_x_array = 24
+	}
+	add_to_array = {
+		parliament_y_array = 119
+	}
+	add_to_array = {
+		parliament_x_array = 39
+	}
+	add_to_array = {
+		parliament_y_array = 120
+	}
+	add_to_array = {
+		parliament_x_array = 78
+	}
+	add_to_array = {
+		parliament_y_array = 136
+	}
+	add_to_array = {
+		parliament_x_array = 15
+	}
+	add_to_array = {
+		parliament_y_array = 104
+	}
+	add_to_array = {
+		parliament_x_array = 54
+	}
+	add_to_array = {
+		parliament_y_array = 120
+	}
+	add_to_array = {
+		parliament_x_array = 92
+	}
+	add_to_array = {
+		parliament_y_array = 138
+	}
+	add_to_array = {
+		parliament_x_array = 30
+	}
+	add_to_array = {
+		parliament_y_array = 104
+	}
+	add_to_array = {
+		parliament_x_array = 68
+	}
+	add_to_array = {
+		parliament_y_array = 123
+	}
+	add_to_array = {
+		parliament_x_array = 45
+	}
+	add_to_array = {
+		parliament_y_array = 107
+	}
+	add_to_array = {
+		parliament_x_array = 22
+	}
+	add_to_array = {
+		parliament_y_array = 91
+	}
+	add_to_array = {
+		parliament_x_array = 108
+	}
+	add_to_array = {
+		parliament_y_array = 139
+	}
+	add_to_array = {
+		parliament_x_array = 84
+	}
+	add_to_array = {
+		parliament_y_array = 123
+	}
+	add_to_array = {
+		parliament_x_array = 61
+	}
+	add_to_array = {
+		parliament_y_array = 107
+	}
+	add_to_array = {
+		parliament_x_array = 38
+	}
+	add_to_array = {
+		parliament_y_array = 91
+	}
+	add_to_array = {
+		parliament_x_array = 99
+	}
+	add_to_array = {
+		parliament_y_array = 126
+	}
+	add_to_array = {
+		parliament_x_array = 76
+	}
+	add_to_array = {
+		parliament_y_array = 110
+	}
+	add_to_array = {
+		parliament_x_array = 53
+	}
+	add_to_array = {
+		parliament_y_array = 94
+	}
+	add_to_array = {
+		parliament_x_array = 30
+	}
+	add_to_array = {
+		parliament_y_array = 77
+	}
+	add_to_array = {
+		parliament_x_array = 47
+	}
+	add_to_array = {
+		parliament_y_array = 78
+	}
+	add_to_array = {
+		parliament_x_array = 70
+	}
+	add_to_array = {
+		parliament_y_array = 95
+	}
+	add_to_array = {
+		parliament_x_array = 93
+	}
+	add_to_array = {
+		parliament_y_array = 111
+	}
+	add_to_array = {
+		parliament_x_array = 40
+	}
+	add_to_array = {
+		parliament_y_array = 65
+	}
+	add_to_array = {
+		parliament_x_array = 115
+	}
+	add_to_array = {
+		parliament_y_array = 128
+	}
+	add_to_array = {
+		parliament_x_array = 62
+	}
+	add_to_array = {
+		parliament_y_array = 82
+	}
+	add_to_array = {
+		parliament_x_array = 85
+	}
+	add_to_array = {
+		parliament_y_array = 99
+	}
+	add_to_array = {
+		parliament_x_array = 108
+	}
+	add_to_array = {
+		parliament_y_array = 115
+	}
+	add_to_array = {
+		parliament_x_array = 57
+	}
+	add_to_array = {
+		parliament_y_array = 66
+	}
+	add_to_array = {
+		parliament_x_array = 50
+	}
+	add_to_array = {
+		parliament_y_array = 54
+	}
+	add_to_array = {
+		parliament_x_array = 80
+	}
+	add_to_array = {
+		parliament_y_array = 83
+	}
+	add_to_array = {
+		parliament_x_array = 73
+	}
+	add_to_array = {
+		parliament_y_array = 71
+	}
+	add_to_array = {
+		parliament_x_array = 103
+	}
+	add_to_array = {
+		parliament_y_array = 101
+	}
+	add_to_array = {
+		parliament_x_array = 95
+	}
+	add_to_array = {
+		parliament_y_array = 88
+	}
+	add_to_array = {
+		parliament_x_array = 69
+	}
+	add_to_array = {
+		parliament_y_array = 56
+	}
+	add_to_array = {
+		parliament_x_array = 62
+	}
+	add_to_array = {
+		parliament_y_array = 43
+	}
+	add_to_array = {
+		parliament_x_array = 125
+	}
+	add_to_array = {
+		parliament_y_array = 119
+	}
+	add_to_array = {
+		parliament_x_array = 91
+	}
+	add_to_array = {
+		parliament_y_array = 74
+	}
+	add_to_array = {
+		parliament_x_array = 118
+	}
+	add_to_array = {
+		parliament_y_array = 106
+	}
+	add_to_array = {
+		parliament_x_array = 84
+	}
+	add_to_array = {
+		parliament_y_array = 61
+	}
+	add_to_array = {
+		parliament_x_array = 81
+	}
+	add_to_array = {
+		parliament_y_array = 46
+	}
+	add_to_array = {
+		parliament_x_array = 74
+	}
+	add_to_array = {
+		parliament_y_array = 34
+	}
+	add_to_array = {
+		parliament_x_array = 114
+	}
+	add_to_array = {
+		parliament_y_array = 92
+	}
+	add_to_array = {
+		parliament_x_array = 107
+	}
+	add_to_array = {
+		parliament_y_array = 80
+	}
+	add_to_array = {
+		parliament_x_array = 104
+	}
+	add_to_array = {
+		parliament_y_array = 65
+	}
+	add_to_array = {
+		parliament_x_array = 97
+	}
+	add_to_array = {
+		parliament_y_array = 53
+	}
+	add_to_array = {
+		parliament_x_array = 87
+	}
+	add_to_array = {
+		parliament_y_array = 26
+	}
+	add_to_array = {
+		parliament_x_array = 94
+	}
+	add_to_array = {
+		parliament_y_array = 38
+	}
+	add_to_array = {
+		parliament_x_array = 129
+	}
+	add_to_array = {
+		parliament_y_array = 99
+	}
+	add_to_array = {
+		parliament_x_array = 137
+	}
+	add_to_array = {
+		parliament_y_array = 111
+	}
+	add_to_array = {
+		parliament_x_array = 120
+	}
+	add_to_array = {
+		parliament_y_array = 72
+	}
+	add_to_array = {
+		parliament_x_array = 127
+	}
+	add_to_array = {
+		parliament_y_array = 85
+	}
+	add_to_array = {
+		parliament_x_array = 110
+	}
+	add_to_array = {
+		parliament_y_array = 46
+	}
+	add_to_array = {
+		parliament_x_array = 117
+	}
+	add_to_array = {
+		parliament_y_array = 58
+	}
+	add_to_array = {
+		parliament_x_array = 101
+	}
+	add_to_array = {
+		parliament_y_array = 19
+	}
+	add_to_array = {
+		parliament_x_array = 108
+	}
+	add_to_array = {
+		parliament_y_array = 31
+	}
+	add_to_array = {
+		parliament_x_array = 142
+	}
+	add_to_array = {
+		parliament_y_array = 94
+	}
+	add_to_array = {
+		parliament_x_array = 133
+	}
+	add_to_array = {
+		parliament_y_array = 67
+	}
+	add_to_array = {
+		parliament_x_array = 124
+	}
+	add_to_array = {
+		parliament_y_array = 40
+	}
+	add_to_array = {
+		parliament_x_array = 116
+	}
+	add_to_array = {
+		parliament_y_array = 14
+	}
+	add_to_array = {
+		parliament_x_array = 123
+	}
+	add_to_array = {
+		parliament_y_array = 26
+	}
+	add_to_array = {
+		parliament_x_array = 132
+	}
+	add_to_array = {
+		parliament_y_array = 53
+	}
+	add_to_array = {
+		parliament_x_array = 140
+	}
+	add_to_array = {
+		parliament_y_array = 79
+	}
+	add_to_array = {
+		parliament_x_array = 149
+	}
+	add_to_array = {
+		parliament_y_array = 106
+	}
+	add_to_array = {
+		parliament_x_array = 131
+	}
+	add_to_array = {
+		parliament_y_array = 9
+	}
+	add_to_array = {
+		parliament_x_array = 139
+	}
+	add_to_array = {
+		parliament_y_array = 36
+	}
+	add_to_array = {
+		parliament_x_array = 138
+	}
+	add_to_array = {
+		parliament_y_array = 22
+	}
+	add_to_array = {
+		parliament_x_array = 147
+	}
+	add_to_array = {
+		parliament_y_array = 63
+	}
+	add_to_array = {
+		parliament_x_array = 146
+	}
+	add_to_array = {
+		parliament_y_array = 49
+	}
+	add_to_array = {
+		parliament_x_array = 155
+	}
+	add_to_array = {
+		parliament_y_array = 90
+	}
+	add_to_array = {
+		parliament_x_array = 155
+	}
+	add_to_array = {
+		parliament_y_array = 76
+	}
+	add_to_array = {
+		parliament_x_array = 146
+	}
+	add_to_array = {
+		parliament_y_array = 6
+	}
+	add_to_array = {
+		parliament_x_array = 154
+	}
+	add_to_array = {
+		parliament_y_array = 34
+	}
+	add_to_array = {
+		parliament_x_array = 154
+	}
+	add_to_array = {
+		parliament_y_array = 20
+	}
+	add_to_array = {
+		parliament_x_array = 162
+	}
+	add_to_array = {
+		parliament_y_array = 104
+	}
+	add_to_array = {
+		parliament_x_array = 162
+	}
+	add_to_array = {
+		parliament_y_array = 61
+	}
+	add_to_array = {
+		parliament_x_array = 161
+	}
+	add_to_array = {
+		parliament_y_array = 47
+	}
+	add_to_array = {
+		parliament_x_array = 161
+	}
+	add_to_array = {
+		parliament_y_array = 5
+	}
+	add_to_array = {
+		parliament_x_array = 169
+	}
+	add_to_array = {
+		parliament_y_array = 89
+	}
+	add_to_array = {
+		parliament_x_array = 169
+	}
+	add_to_array = {
+		parliament_y_array = 75
+	}
+	add_to_array = {
+		parliament_x_array = 169
+	}
+	add_to_array = {
+		parliament_y_array = 33
+	}
+	add_to_array = {
+		parliament_x_array = 169
+	}
+	add_to_array = {
+		parliament_y_array = 19
+	}
+	add_to_array = {
+		parliament_x_array = 177
+	}
+	add_to_array = {
+		parliament_y_array = 5
+	}
+	add_to_array = {
+		parliament_x_array = 177
+	}
+	add_to_array = {
+		parliament_y_array = 47
+	}
+	add_to_array = {
+		parliament_x_array = 176
+	}
+	add_to_array = {
+		parliament_y_array = 61
+	}
+	add_to_array = {
+		parliament_x_array = 176
+	}
+	add_to_array = {
+		parliament_y_array = 104
+	}
+	add_to_array = {
+		parliament_x_array = 185
+	}
+	add_to_array = {
+		parliament_y_array = 20
+	}
+	add_to_array = {
+		parliament_x_array = 184
+	}
+	add_to_array = {
+		parliament_y_array = 34
+	}
+	add_to_array = {
+		parliament_x_array = 192
+	}
+	add_to_array = {
+		parliament_y_array = 6
+	}
+	add_to_array = {
+		parliament_x_array = 184
+	}
+	add_to_array = {
+		parliament_y_array = 76
+	}
+	add_to_array = {
+		parliament_x_array = 183
+	}
+	add_to_array = {
+		parliament_y_array = 90
+	}
+	add_to_array = {
+		parliament_x_array = 192
+	}
+	add_to_array = {
+		parliament_y_array = 49
+	}
+	add_to_array = {
+		parliament_x_array = 191
+	}
+	add_to_array = {
+		parliament_y_array = 63
+	}
+	add_to_array = {
+		parliament_x_array = 200
+	}
+	add_to_array = {
+		parliament_y_array = 22
+	}
+	add_to_array = {
+		parliament_x_array = 199
+	}
+	add_to_array = {
+		parliament_y_array = 36
+	}
+	add_to_array = {
+		parliament_x_array = 208
+	}
+	add_to_array = {
+		parliament_y_array = 9
+	}
+	add_to_array = {
+		parliament_x_array = 189
+	}
+	add_to_array = {
+		parliament_y_array = 106
+	}
+	add_to_array = {
+		parliament_x_array = 198
+	}
+	add_to_array = {
+		parliament_y_array = 79
+	}
+	add_to_array = {
+		parliament_x_array = 206
+	}
+	add_to_array = {
+		parliament_y_array = 53
+	}
+	add_to_array = {
+		parliament_x_array = 215
+	}
+	add_to_array = {
+		parliament_y_array = 26
+	}
+	add_to_array = {
+		parliament_x_array = 222
+	}
+	add_to_array = {
+		parliament_y_array = 14
+	}
+	add_to_array = {
+		parliament_x_array = 214
+	}
+	add_to_array = {
+		parliament_y_array = 40
+	}
+	add_to_array = {
+		parliament_x_array = 205
+	}
+	add_to_array = {
+		parliament_y_array = 67
+	}
+	add_to_array = {
+		parliament_x_array = 196
+	}
+	add_to_array = {
+		parliament_y_array = 94
+	}
+	add_to_array = {
+		parliament_x_array = 230
+	}
+	add_to_array = {
+		parliament_y_array = 31
+	}
+	add_to_array = {
+		parliament_x_array = 237
+	}
+	add_to_array = {
+		parliament_y_array = 19
+	}
+	add_to_array = {
+		parliament_x_array = 221
+	}
+	add_to_array = {
+		parliament_y_array = 58
+	}
+	add_to_array = {
+		parliament_x_array = 228
+	}
+	add_to_array = {
+		parliament_y_array = 46
+	}
+	add_to_array = {
+		parliament_x_array = 211
+	}
+	add_to_array = {
+		parliament_y_array = 85
+	}
+	add_to_array = {
+		parliament_x_array = 218
+	}
+	add_to_array = {
+		parliament_y_array = 72
+	}
+	add_to_array = {
+		parliament_x_array = 202
+	}
+	add_to_array = {
+		parliament_y_array = 111
+	}
+	add_to_array = {
+		parliament_x_array = 209
+	}
+	add_to_array = {
+		parliament_y_array = 99
+	}
+	add_to_array = {
+		parliament_x_array = 244
+	}
+	add_to_array = {
+		parliament_y_array = 38
+	}
+	add_to_array = {
+		parliament_x_array = 251
+	}
+	add_to_array = {
+		parliament_y_array = 26
+	}
+	add_to_array = {
+		parliament_x_array = 241
+	}
+	add_to_array = {
+		parliament_y_array = 53
+	}
+	add_to_array = {
+		parliament_x_array = 234
+	}
+	add_to_array = {
+		parliament_y_array = 65
+	}
+	add_to_array = {
+		parliament_x_array = 231
+	}
+	add_to_array = {
+		parliament_y_array = 80
+	}
+	add_to_array = {
+		parliament_x_array = 224
+	}
+	add_to_array = {
+		parliament_y_array = 92
+	}
+	add_to_array = {
+		parliament_x_array = 264
+	}
+	add_to_array = {
+		parliament_y_array = 34
+	}
+	add_to_array = {
+		parliament_x_array = 257
+	}
+	add_to_array = {
+		parliament_y_array = 46
+	}
+	add_to_array = {
+		parliament_x_array = 254
+	}
+	add_to_array = {
+		parliament_y_array = 61
+	}
+	add_to_array = {
+		parliament_x_array = 220
+	}
+	add_to_array = {
+		parliament_y_array = 106
+	}
+	add_to_array = {
+		parliament_x_array = 247
+	}
+	add_to_array = {
+		parliament_y_array = 74
+	}
+	add_to_array = {
+		parliament_x_array = 213
+	}
+	add_to_array = {
+		parliament_y_array = 119
+	}
+	add_to_array = {
+		parliament_x_array = 277
+	}
+	add_to_array = {
+		parliament_y_array = 43
+	}
+	add_to_array = {
+		parliament_x_array = 269
+	}
+	add_to_array = {
+		parliament_y_array = 56
+	}
+	add_to_array = {
+		parliament_x_array = 243
+	}
+	add_to_array = {
+		parliament_y_array = 88
+	}
+	add_to_array = {
+		parliament_x_array = 236
+	}
+	add_to_array = {
+		parliament_y_array = 101
+	}
+	add_to_array = {
+		parliament_x_array = 265
+	}
+	add_to_array = {
+		parliament_y_array = 71
+	}
+	add_to_array = {
+		parliament_x_array = 258
+	}
+	add_to_array = {
+		parliament_y_array = 83
+	}
+	add_to_array = {
+		parliament_x_array = 288
+	}
+	add_to_array = {
+		parliament_y_array = 54
+	}
+	add_to_array = {
+		parliament_x_array = 281
+	}
+	add_to_array = {
+		parliament_y_array = 66
+	}
+	add_to_array = {
+		parliament_x_array = 230
+	}
+	add_to_array = {
+		parliament_y_array = 115
+	}
+	add_to_array = {
+		parliament_x_array = 253
+	}
+	add_to_array = {
+		parliament_y_array = 99
+	}
+	add_to_array = {
+		parliament_x_array = 276
+	}
+	add_to_array = {
+		parliament_y_array = 82
+	}
+	add_to_array = {
+		parliament_x_array = 223
+	}
+	add_to_array = {
+		parliament_y_array = 128
+	}
+	add_to_array = {
+		parliament_x_array = 299
+	}
+	add_to_array = {
+		parliament_y_array = 65
+	}
+	add_to_array = {
+		parliament_x_array = 246
+	}
+	add_to_array = {
+		parliament_y_array = 111
+	}
+	add_to_array = {
+		parliament_x_array = 268
+	}
+	add_to_array = {
+		parliament_y_array = 95
+	}
+	add_to_array = {
+		parliament_x_array = 291
+	}
+	add_to_array = {
+		parliament_y_array = 78
+	}
+	add_to_array = {
+		parliament_x_array = 308
+	}
+	add_to_array = {
+		parliament_y_array = 77
+	}
+	add_to_array = {
+		parliament_x_array = 285
+	}
+	add_to_array = {
+		parliament_y_array = 94
+	}
+	add_to_array = {
+		parliament_x_array = 262
+	}
+	add_to_array = {
+		parliament_y_array = 110
+	}
+	add_to_array = {
+		parliament_x_array = 239
+	}
+	add_to_array = {
+		parliament_y_array = 126
+	}
+	add_to_array = {
+		parliament_x_array = 300
+	}
+	add_to_array = {
+		parliament_y_array = 91
+	}
+	add_to_array = {
+		parliament_x_array = 277
+	}
+	add_to_array = {
+		parliament_y_array = 107
+	}
+	add_to_array = {
+		parliament_x_array = 254
+	}
+	add_to_array = {
+		parliament_y_array = 123
+	}
+	add_to_array = {
+		parliament_x_array = 231
+	}
+	add_to_array = {
+		parliament_y_array = 139
+	}
+	add_to_array = {
+		parliament_x_array = 316
+	}
+	add_to_array = {
+		parliament_y_array = 91
+	}
+	add_to_array = {
+		parliament_x_array = 293
+	}
+	add_to_array = {
+		parliament_y_array = 107
+	}
+	add_to_array = {
+		parliament_x_array = 270
+	}
+	add_to_array = {
+		parliament_y_array = 123
+	}
+	add_to_array = {
+		parliament_x_array = 308
+	}
+	add_to_array = {
+		parliament_y_array = 104
+	}
+	add_to_array = {
+		parliament_x_array = 246
+	}
+	add_to_array = {
+		parliament_y_array = 138
+	}
+	add_to_array = {
+		parliament_x_array = 284
+	}
+	add_to_array = {
+		parliament_y_array = 120
+	}
+	add_to_array = {
+		parliament_x_array = 323
+	}
+	add_to_array = {
+		parliament_y_array = 104
+	}
+	add_to_array = {
+		parliament_x_array = 261
+	}
+	add_to_array = {
+		parliament_y_array = 136
+	}
+	add_to_array = {
+		parliament_x_array = 300
+	}
+	add_to_array = {
+		parliament_y_array = 120
+	}
+	add_to_array = {
+		parliament_x_array = 314
+	}
+	add_to_array = {
+		parliament_y_array = 119
+	}
+	add_to_array = {
+		parliament_x_array = 275
+	}
+	add_to_array = {
+		parliament_y_array = 136
+	}
+	add_to_array = {
+		parliament_x_array = 329
+	}
+	add_to_array = {
+		parliament_y_array = 119
+	}
+	add_to_array = {
+		parliament_x_array = 236
+	}
+	add_to_array = {
+		parliament_y_array = 151
+	}
+	add_to_array = {
+		parliament_x_array = 290
+	}
+	add_to_array = {
+		parliament_y_array = 135
+	}
+	add_to_array = {
+		parliament_x_array = 305
+	}
+	add_to_array = {
+		parliament_y_array = 135
+	}
+	add_to_array = {
+		parliament_x_array = 251
+	}
+	add_to_array = {
+		parliament_y_array = 151
+	}
+	add_to_array = {
+		parliament_x_array = 319
+	}
+	add_to_array = {
+		parliament_y_array = 134
+	}
+	add_to_array = {
+		parliament_x_array = 265
+	}
+	add_to_array = {
+		parliament_y_array = 150
+	}
+	add_to_array = {
+		parliament_x_array = 334
+	}
+	add_to_array = {
+		parliament_y_array = 134
+	}
+	add_to_array = {
+		parliament_x_array = 280
+	}
+	add_to_array = {
+		parliament_y_array = 150
+	}
+	add_to_array = {
+		parliament_x_array = 294
+	}
+	add_to_array = {
+		parliament_y_array = 149
+	}
+	add_to_array = {
+		parliament_x_array = 308
+	}
+	add_to_array = {
+		parliament_y_array = 149
+	}
+	add_to_array = {
+		parliament_x_array = 322
+	}
+	add_to_array = {
+		parliament_y_array = 149
+	}
+	add_to_array = {
+		parliament_x_array = 337
+	}
+	add_to_array = {
+		parliament_y_array = 149
+	}
+	add_to_array = {
+		parliament_x_array = 239
+	}
+	add_to_array = {
+		parliament_y_array = 164
+	}
+	add_to_array = {
+		parliament_x_array = 253
+	}
+	add_to_array = {
+		parliament_y_array = 164
+	}
+	add_to_array = {
+		parliament_x_array = 268
+	}
+	add_to_array = {
+		parliament_y_array = 164
+	}
+	add_to_array = {
+		parliament_x_array = 282
+	}
+	add_to_array = {
+		parliament_y_array = 164
+	}
+	add_to_array = {
+		parliament_x_array = 296
+	}
+	add_to_array = {
+		parliament_y_array = 164
+	}
+	add_to_array = {
+		parliament_x_array = 310
+	}
+	add_to_array = {
+		parliament_y_array = 164
+	}
+	add_to_array = {
+		parliament_x_array = 324
+	}
+	add_to_array = {
+		parliament_y_array = 164
+	}
+	add_to_array = {
+		parliament_x_array = 338
+	}
+	add_to_array = {
+		parliament_y_array = 164
+	}
 }

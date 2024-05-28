@@ -1,16 +1,11 @@
 ZEX_MAREGYPT_ROYAL_DIET_CATEGORY = {
+	# Debug Decisions
 	ZEX_DIET_TEST_INCREASE_HARMONY = {
 		visible = {
 			is_debug = yes
 		}
 		complete_effect = {
-			set_temp_variable = {
-				temp_member = 2
-			}
-			set_temp_variable = {
-				ZEX_MGY_royal_diet_temp_seats = 5
-			}
-			ZEX_MGY_Diet_modify_parliament_seat = yes
+			zex_mgy_add_harmonist_seats_5 = yes
 		}
 	}
 	ZEX_DIET_TEST_DECREASE_HARMONY = {
@@ -18,13 +13,7 @@ ZEX_MAREGYPT_ROYAL_DIET_CATEGORY = {
 			is_debug = yes
 		}
 		complete_effect = {
-			set_temp_variable = {
-				temp_member = 2
-			}
-			set_temp_variable = {
-				ZEX_MGY_royal_diet_temp_seats = -5
-			}
-			ZEX_MGY_Diet_modify_parliament_seat = yes
+			zex_mgy_rem_harmonist_seats_10 = yes
 		}
 	}
 	ZEX_DIET_TEST_INCREASE_ZEBRICAN = {
@@ -32,13 +21,7 @@ ZEX_MAREGYPT_ROYAL_DIET_CATEGORY = {
 			is_debug = yes
 		}
 		complete_effect = {
-			set_temp_variable = {
-				temp_member = 1
-			}
-			set_temp_variable = {
-				ZEX_MGY_royal_diet_temp_seats = 5
-			}
-			ZEX_MGY_Diet_modify_parliament_seat = yes
+			zex_mgy_add_zebrican_seats_20 = yes
 		}
 	}
 	ZEX_DIET_TEST_DECREASE_ZEBRICAN = {
@@ -46,13 +29,7 @@ ZEX_MAREGYPT_ROYAL_DIET_CATEGORY = {
 			is_debug = yes
 		}
 		complete_effect = {
-			set_temp_variable = {
-				temp_member = 1
-			}
-			set_temp_variable = {
-				ZEX_MGY_royal_diet_temp_seats = -5
-			}
-			ZEX_MGY_Diet_modify_parliament_seat = yes
+			zex_mgy_rem_zebrican_seats_5 = yes
 		}
 	}
 }
