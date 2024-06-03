@@ -11,4 +11,14 @@ spriteTypes = {
 		name = "GFX_ideology_harmonic_pharaonism"
 		textureFile = "gfx/interface/ideology/GFX_ZEX_harmonic_pharamonism_icon.dds"
 	}
+
+	#Filters 
+	spriteType = {
+		name = "GFX_FOCUS_FILTER_ZEX_UNREST"
+		texturefile = "gfx/interface/focusview/filter/zex_filter_unrest.dds"
+	}
+	spriteType = {
+		name = "GFX_FOCUS_FILTER_SHAADOOF"
+		texturefile = "gfx/interface/focusview/filter/zex_filter_shaadoof.dds"
+	}
 }

@@ -5,6 +5,13 @@
 
 
  #
+ # Filters 
+ #
+
+ FOCUS_FILTER_ZEX_UNREST:0 "Political Unrest"
+ FOCUS_FILTER_SHAADOOF:0 "Shaa Doof"
+
+ #
  # Stability
  #
 
@@ -12,9 +19,27 @@
  ZEX_MGY_focus_kingspeech_desc:0 ""
  ZEX_MGY_focus_lotussociety:0 "Endorse the Lotus Society"
  ZEX_MGY_focus_lotussociety_desc:0 ""
- ZEX_MGY_focus_investigategendarmeries:0 "Investigate the Gendarmeries"
+ ZEX_MGY_focus_investigategendarmeries:0 "No on is Above the Law"
  ZEX_MGY_focus_investigategendarmeries_desc:0 ""
- ZEX_MGY_focus_reigninloweregypt:0 "Reign in Lower Maregypt"
+ ZEX_MGY_focus_reigninloweregypt:0 "Focus on the Breadbasket"
  ZEX_MGY_focus_reigninloweregypt_desc:0 ""
  ZEX_MGY_focus_reigninupperegypt:0 "Reign in Upper Maregypt"
  ZEX_MGY_focus_reigninupperegypt_desc:0 ""
+ ZEX_MGY_focus_manephisaffair:0 "The Manephis Affair"
+ ZEX_MGY_focus_manephisaffair_desc:0 ""
+ ZEX_MGY_focus_nationalservice:0 "Create the Wedjat-Kha"
+ ZEX_MGY_focus_nationalservice_desc:0 ""
+ ZEX_MGY_focus_investigatemilitary:0 "Investigate the Military"
+ ZEX_MGY_focus_investigatemilitary_desc:0 ""
+ ZEX_MGY_focus_harmonytribunals:0 "The National Salvation Tribunals"
+ ZEX_MGY_focus_harmonytribunals_desc:0 ""
+ ZEX_MGY_focus_reformlotussociety:0 "Reform the Lotus Society"
+ ZEX_MGY_focus_reformlotussociety_desc:0 ""
+ ZEX_MGY_focus_disbandlotussociety:0 "Disband the Lotus Society"
+ ZEX_MGY_focus_disbandlotussociety_desc:0 ""
+ ZEX_MGY_focus_antisupremacypropaganda:0 "In the Name of Harmony"
+ ZEX_MGY_focus_antisupremacypropaganda_desc:0 ""
+ ZEX_MGY_focus_harmonystrongpony:0 "Harmony's Strongpony"
+ ZEX_MGY_focus_harmonystrongpony_desc:0 ""
+ ZEX_MGY_focus_operationgoldenbeetle:0 "Operation Golden Beetle"
+ ZEX_MGY_focus_operationgoldenbeetle_desc:0 ""

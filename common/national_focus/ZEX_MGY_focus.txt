@@ -49,8 +49,12 @@ focus_tree = {
 		id = ZEX_MGY_focus_lotussociety
 		icon = GFX_ZEX_Goal_Lotus_Society
 		cost = 10
-		x = -5
+		x = -4
 		y = 1
+
+		search_filters = {
+			FOCUS_FILTER_ZEX_UNREST
+		}
 
 		relative_position_id = ZEX_MGY_focus_kingspeech
 
@@ -66,8 +70,12 @@ focus_tree = {
 		id = ZEX_MGY_focus_investigategendarmeries
 		icon = GFX_ZEX_Goal_investigategendarmeries
 		cost = 10
-		x = -8
+		x = -7
 		y = 2
+
+		search_filters = {
+			FOCUS_FILTER_ZEX_UNREST
+		}
 
 		relative_position_id = ZEX_MGY_focus_kingspeech
 
@@ -83,8 +91,12 @@ focus_tree = {
 		id = ZEX_MGY_focus_reigninloweregypt
 		icon = GFX_ZEX_Goal_reigninloweregypt
 		cost = 10
-		x = -6
+		x = -5
 		y = 2
+
+		search_filters = {
+			FOCUS_FILTER_ZEX_UNREST
+		}
 
 		relative_position_id = ZEX_MGY_focus_kingspeech
 
@@ -100,8 +112,12 @@ focus_tree = {
 		id = ZEX_MGY_focus_reigninupperegypt
 		icon = GFX_ZEX_Goal_reigninupperegypt
 		cost = 10
-		x = -4
+		x = -3
 		y = 2
+
+		search_filters = {
+			FOCUS_FILTER_ZEX_UNREST
+		}
 
 		relative_position_id = ZEX_MGY_focus_kingspeech
 
@@ -117,8 +133,12 @@ focus_tree = {
 		id = ZEX_MGY_focus_manephisaffair
 		icon = GFX_ZEX_MGY_focus_manephisaffair
 		cost = 10
-		x = -8
+		x = -7
 		y = 3
+
+		search_filters = {
+			FOCUS_FILTER_ZEX_UNREST
+		}
 
 		relative_position_id = ZEX_MGY_focus_kingspeech
 
@@ -134,8 +154,12 @@ focus_tree = {
 		id = ZEX_MGY_focus_nationalservice
 		icon = GFX_ZEX_MGY_focus_nationalservice
 		cost = 10
-		x = -2
+		x = -1
 		y = 2
+
+		search_filters = {
+			FOCUS_FILTER_ZEX_UNREST
+		}
 
 		relative_position_id = ZEX_MGY_focus_kingspeech
 
@@ -151,8 +175,12 @@ focus_tree = {
 		id = ZEX_MGY_focus_investigatemilitary
 		icon = GFX_ZEX_MGY_focus_investigatemilitary
 		cost = 10
-		x = -2
+		x = -1
 		y = 3
+
+		search_filters = {
+			FOCUS_FILTER_ZEX_UNREST
+		}
 
 		relative_position_id = ZEX_MGY_focus_kingspeech
 
@@ -168,8 +196,12 @@ focus_tree = {
 		id = ZEX_MGY_focus_harmonytribunals
 		icon = GFX_ZEX_MGY_focus_harmonytribunals
 		cost = 10
-		x = -5
+		x = -4
 		y = 4
+
+		search_filters = {
+			FOCUS_FILTER_ZEX_UNREST
+		}
 
 		relative_position_id = ZEX_MGY_focus_kingspeech
 
@@ -178,8 +210,10 @@ focus_tree = {
 			focus = ZEX_MGY_focus_manephisaffair
 		}
 		prerequisite = {
-			focus = ZEX_MGY_focus_reigninloweregypt
 			focus = ZEX_MGY_focus_reigninupperegypt
+		}
+		prerequisite = {
+			focus = ZEX_MGY_focus_reigninloweregypt
 		}
 		completion_reward = {
 
@@ -190,8 +224,12 @@ focus_tree = {
 		id = ZEX_MGY_focus_reformlotussociety
 		icon = GFX_ZEX_MGY_focus_reformlotussociety
 		cost = 10
-		x = -7
+		x = -6
 		y = 5
+
+		search_filters = {
+			FOCUS_FILTER_ZEX_UNREST
+		}
 
 		relative_position_id = ZEX_MGY_focus_kingspeech
 
@@ -210,8 +248,12 @@ focus_tree = {
 		id = ZEX_MGY_focus_disbandlotussociety
 		icon = GFX_ZEX_MGY_focus_disbandlotussociety
 		cost = 10
-		x = -3
+		x = -2
 		y = 5
+
+		search_filters = {
+			FOCUS_FILTER_ZEX_UNREST
+		}
 
 		relative_position_id = ZEX_MGY_focus_kingspeech
 
@@ -230,8 +272,12 @@ focus_tree = {
 		id = ZEX_MGY_focus_antisupremacypropaganda
 		icon = GFX_ZEX_MGY_focus_antisupremacypropaganda
 		cost = 10
-		x = -5
+		x = -4
 		y = 6
+
+		search_filters = {
+			FOCUS_FILTER_ZEX_UNREST
+		}
 
 		relative_position_id = ZEX_MGY_focus_kingspeech
 
@@ -245,32 +291,20 @@ focus_tree = {
 	}
 
 	focus = {
-		id = ZEX_MGY_focus_harmonystrongpony
-		icon = GFX_ZEX_MGY_focus_harmonystrongpony
+		id = ZEX_MGY_focus_operationgoldenbeetle
+		icon = GFX_ZEX_MGY_focus_operationgoldenbeetle
 		cost = 10
-		x = 6
-		y = 1
+		x = 0
+		y = 4
+
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
 
 		relative_position_id = ZEX_MGY_focus_kingspeech
 
 		prerequisite = {
-			focus = ZEX_MGY_focus_kingspeech
-		}
-		completion_reward = {
-
-		}
-	}
-
-	focus = {
-		id = ZEX_MGY_focus_emergencypowers
-		icon = GFX_ZEX_MGY_focus_emergencypowers
-		cost = 10
-		x = 2
-		y = 2
-
-		relative_position_id = ZEX_MGY_focus_kingspeech
-
-		prerequisite = {
+			focus = ZEX_MGY_focus_nationalservice
 			focus = ZEX_MGY_focus_harmonystrongpony
 		}
 		completion_reward = {
@@ -278,18 +312,32 @@ focus_tree = {
 		}
 	}
 
+	#############################################################################
+			###                                    ###                       ###
+			##                                     ##                      ## ##
+	#####    ##       ####     ####                 ##    ####     ####      #
+	##        #####       ##       ##             #####   ##  ##   ##  ##   ####
+	#####    ##  ##   #####    #####            ##  ##   ##  ##   ##  ##    ##
+		##   ##  ##  ##  ##   ##  ##            ##  ##   ##  ##   ##  ##    ##
+	######   ###  ##   #####    #####             ######   ####     ####    ####
+	#############################################################################
+
 	focus = {
-		id = ZEX_MGY_focus_operationgoldenbeetle
-		icon = GFX_ZEX_MGY_focus_operationgoldenbeetle
+		id = ZEX_MGY_focus_harmonystrongpony
+		icon = GFX_ZEX_MGY_focus_harmonystrongpony
 		cost = 10
-		x = 0
-		y = 4
+		x = 4
+		y = 1
+
+		search_filters = {
+			FOCUS_FILTER_SHAADOOF
+			FOCUS_FILTER_POLITICAL
+		}
 
 		relative_position_id = ZEX_MGY_focus_kingspeech
 
 		prerequisite = {
-			focus = ZEX_MGY_focus_nationalservice
-			focus = ZEX_MGY_focus_emergencypowers
+			focus = ZEX_MGY_focus_kingspeech
 		}
 		completion_reward = {
 
