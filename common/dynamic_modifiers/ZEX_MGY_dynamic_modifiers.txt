@@ -170,3 +170,15 @@ ZEX_MGY_Equestrian_Debts_dynmod = {
     industrial_capacity_factory = ZEX_MGY_equestrian_debts_factory_output_effect
     industrial_capacity_dockyard = ZEX_MGY_equestrian_debts_dockyard_output_effect
 }
+
+
+#
+# DEBUG
+#
+
+ZEX_MGY_DEBUG_DNYMOD = {
+    enable = {
+        zxe_is_maregypt_or_cosmetic_maregypt = yes
+    }
+    political_power_gain = 0.1
+}
