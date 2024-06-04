@@ -329,4 +329,149 @@ spriteTypes = {
 		}
 		legacy_lazy_load = no
 	}
+
+	# Consolidate powers 
+	spriteType = {
+		name = "GFX_ZEX_MGY_focus_dicatorialpowers"
+		textureFile = "gfx/interface/goals/MGY/KHF/zex_goal_mgy_dicatorialpowers.tga"
+	}
+	spriteType = {
+		name = "GFX_ZEX_MGY_focus_dicatorialpowers_shine"
+		textureFile = "gfx/interface/goals/MGY/KHF/zex_goal_mgy_dicatorialpowers.tga"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/MGY/KHF/zex_goal_mgy_dicatorialpowers.tga"			
+			animationtexturefile = "gfx/interface/goals/MGY/KHF/overlay_100_88.dds"
+			animationrotation = -90.0		
+			animationlooping = yes			
+			animationtime = 0.75			
+			animationdelay = 5		
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	# Stack the Deck
+	spriteType = {
+		name = "GFX_ZEX_MGY_focus_stackthedeck"
+		textureFile = "gfx/interface/goals/MGY/KHF/zex_goal_mgy_stackthedeck.tga"
+	}
+	spriteType = {
+		name = "GFX_ZEX_MGY_focus_stackthedeck_shine"
+		textureFile = "gfx/interface/goals/MGY/KHF/zex_goal_mgy_stackthedeck.tga"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/MGY/KHF/zex_goal_mgy_stackthedeck.tga"			
+			animationtexturefile = "gfx/interface/goals/MGY/KHF/overlay_100_88.dds"
+			animationrotation = -90.0		
+			animationlooping = yes			
+			animationtime = 0.75			
+			animationdelay = 5		
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	# Vizier and Radio
+	spriteType = {
+		name = "GFX_ZEX_MGY_focus_vizierandradio"
+		textureFile = "gfx/interface/goals/MGY/KHF/zex_goal_mgy_vizierandradio.tga"
+	}
+	spriteType = {
+		name = "GFX_ZEX_MGY_focus_vizierandradio_shine"
+		textureFile = "gfx/interface/goals/MGY/KHF/zex_goal_mgy_vizierandradio.tga"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/MGY/KHF/zex_goal_mgy_vizierandradio.tga"			
+			animationtexturefile = "gfx/interface/goals/MGY/KHF/overlay_100_88.dds"
+			animationrotation = -90.0		
+			animationlooping = yes			
+			animationtime = 0.75			
+			animationdelay = 5		
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	# Deal with Princess 
+	spriteType = {
+		name = "GFX_ZEX_MGY_focus_dealwithprincess"
+		textureFile = "gfx/interface/goals/MGY/KHF/zex_goal_mgy_dealwithprincess.tga"
+	}
+	spriteType = {
+		name = "GFX_ZEX_MGY_focus_dealwithprincess_shine"
+		textureFile = "gfx/interface/goals/MGY/KHF/zex_goal_mgy_dealwithprincess.tga"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/MGY/KHF/zex_goal_mgy_dealwithprincess.tga"			
+			animationtexturefile = "gfx/interface/goals/MGY/KHF/overlay_100_88.dds"
+			animationrotation = -90.0		
+			animationlooping = yes			
+			animationtime = 0.75			
+			animationdelay = 5		
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	# Harmony's Stronghold - 
+	spriteType = {
+		name = "GFX_ZEX_MGY_focus_harmonystronghold"
+		textureFile = "gfx/interface/goals/MGY/KHF/zex_goal_mgy_harmonystronghold.tga"
+	}
+	spriteType = {
+		name = "GFX_ZEX_MGY_focus_harmonystronghold_shine"
+		textureFile = "gfx/interface/goals/MGY/KHF/zex_goal_mgy_harmonystronghold.tga"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/MGY/KHF/zex_goal_mgy_harmonystronghold.tga"			
+			animationtexturefile = "gfx/interface/goals/MGY/KHF/overlay_100_88.dds"
+			animationrotation = -90.0		
+			animationlooping = yes			
+			animationtime = 0.75			
+			animationdelay = 5		
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	# Limited Elections 
+	spriteType = {
+		name = "GFX_ZEX_MGY_focus_banpoliticalparties"
+		textureFile = "gfx/interface/goals/MGY/KHF/zex_goal_mgy_banpoliticalparties.tga"
+	}
+	spriteType = {
+		name = "GFX_ZEX_MGY_focus_banpoliticalparties_shine"
+		textureFile = "gfx/interface/goals/MGY/KHF/zex_goal_mgy_banpoliticalparties.tga"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/MGY/KHF/zex_goal_mgy_banpoliticalparties.tga"			
+			animationtexturefile = "gfx/interface/goals/MGY/KHF/overlay_100_88.dds"
+			animationrotation = -90.0		
+			animationlooping = yes			
+			animationtime = 0.75			
+			animationdelay = 5		
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
 }
