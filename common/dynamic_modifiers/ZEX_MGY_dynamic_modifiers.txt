@@ -7,7 +7,7 @@ ZEX_MGY_republican_agitation_impact_dynmod = {
 		has_idea = ZEX_MGY_REPUBLICAN_AGITATION_IDEA
 	}
     stability_factor = ZEX_MGY_AVERAGE_UNREST_NEGATIVE
-    political_power_factor = ZEX_MGY_AVERAGE_POLITICAL_IMPACT_UNREST
+    war_support_factor = ZEX_MGY_AVERAGE_POLITICAL_IMPACT_UNREST
 }
 
 # Unrest - by province

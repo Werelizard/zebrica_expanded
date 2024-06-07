@@ -20,22 +20,18 @@ ideas = {
 		}
 		ZEX_Unfinished_Constitution = {
 			picture = ZEX_Unfinished_Constitution
-			rule = {
-				can_not_declare_war = yes
-			}
 			modifier = {
 				stability_factor = -0.10
-				war_support_factor = -0.10
+				political_power_cost = 0.5
 				democratic_drift = -0.03
 				neutrality_drift = -0.03
-				custom_modifier_tooltip =  ZEX_Unfinished_Constitution_No_Ministers_or_Laws_tt
 			}
 		}
 		ZEX_MGY_REPUBLICAN_AGITATION_IDEA = {
 			picture = ZEX_MGY_REPUBLICAN_AGITATION_IDEA
 			modifier = {
 				custom_modifier_tooltip = ZEX_MGY_STAB_IMPACT_tt
-				custom_modifier_tooltip = ZEX_MGY_POL_IMPACT_tt
+				custom_modifier_tooltip = ZEX_MGY_WSP_IMPACT_tt
 				custom_modifier_tooltip = ZEX_MGY_PoliticalUnrest_DynamicModifier_Update_tt
 			}
 		}
