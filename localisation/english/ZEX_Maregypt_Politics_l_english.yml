@@ -60,7 +60,7 @@
  ZEX_MGY_goal_harmony_society_idea_effects_tt:0 "Weekly Legitimacy Gain: §G+[?ROOT.ZEX_MGY_LEGITIMACY_INCREASE|2]§!"
  ZEX_MGY_STAB_IMPACT_tt:0 "Stability: §t[?ROOT.ZEX_MGY_AVERAGE_UNREST_NEGATIVE|%2]§!"
  ZEX_MGY_WSP_IMPACT_tt:0 "War Support: §t[?ROOT.ZEX_MGY_AVERAGE_UNREST_NEGATIVE|%2]§!"
- ZEX_MGY_PoliticalUnrest_DynamicModifier_Update_tt:0 "\nWill trigger a £ZEX_civilwartrigger §tcivil war§! if an armed conflict with another nation erupts!"
+ ZEX_MGY_PoliticalUnrest_DynamicModifier_Update_tt:0 "\nIf an armed conflict with another nation erupts while our country is in such a state, there will be §tdramatic consequences§!!"
  ZEX_Unfinished_Constitution_No_Ministers_or_Laws_tt:0 "£trigger_no Can not assign political advisors"
 
  ZEX_MGY_VIZIER_OFFICE:0 "King-Vizier Balance - [ZEX_MGY_GET_VIZIER_KING_BALANCE]"

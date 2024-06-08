@@ -1,0 +1,59 @@
+scripted_gui = {
+	ZEX_MGY_royal_diet_ui = {
+		context_type = decision_category
+		window_name = "ZEX_MGY_royal_diet_gui_container"
+		dynamic_lists = {
+			parliament_main_grid = {
+				array = parliament_main_array
+				index = parliament_main_index
+				change_scope = no
+				entry_container = parliament_main_entry
+			}
+			ZEX_MGY_royal_diet_main_grid = {
+				array = parliament_main_array
+				index = parliament_main_index
+				change_scope = no
+				entry_container = ZEX_MGY_royal_diet_main_entry
+			}
+			ZEX_MGY_royal_diet_member_grid = {
+				array = parliament_member_array
+				index = parliament_member_index
+				change_scope = no
+				entry_container = parliament_member_entry
+			}
+		}
+		effects = {
+			parliament_modify_button_control_click = {
+				set_temp_variable = {
+					temp_member = v
+				}
+				set_temp_variable = {
+					ZEX_MGY_royal_diet_temp_seats = 5
+				}
+				ZEX_MGY_Diet_modify_parliament_seat = yes
+			}
+			parliament_modify_button_shift_click = {
+				set_temp_variable = {
+					temp_member = v
+				}
+				set_temp_variable = {
+					ZEX_MGY_royal_diet_temp_seats = -5
+				}
+				ZEX_MGY_Diet_modify_parliament_seat = yes
+			}
+		}
+		properties = {
+			parliament_main_icon = {
+				frame = v
+			}
+			ZEX_MGY_royal_diet_main_icon = {
+				frame = v
+				x = parliament_x_array^parliament_main_index
+				y = parliament_y_array^parliament_main_index
+			}
+			parliament_member_icon = {
+				frame = v
+			}
+		}
+	}
+}

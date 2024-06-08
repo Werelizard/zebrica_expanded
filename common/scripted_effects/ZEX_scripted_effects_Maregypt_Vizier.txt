@@ -21,18 +21,18 @@ ZEX_MGY_Enable_Vizier = {
 		}
 		add_ideas = ZEX_MGY_VIZIER_OFFICE
 	}
-	if = {
-		limit = {
-			NOT = {
-				has_dynamic_modifier = {
-					modifier = ZEX_MGY_no_vizier_impact_dynmod
-				}
-			}
-		}
-		add_dynamic_modifier = {
-			modifier = ZEX_MGY_no_vizier_impact_dynmod
-		}
-	}
+	# if = {
+	# 	limit = {
+	# 		NOT = {
+	# 			has_dynamic_modifier = {
+	# 				modifier = ZEX_MGY_no_vizier_impact_dynmod
+	# 			}
+	# 		}
+	# 	}
+	# 	add_dynamic_modifier = {
+	# 		modifier = ZEX_MGY_no_vizier_impact_dynmod
+	# 	}
+	# }
 	if = {
 		limit = {
 			NOT = {
@@ -67,18 +67,18 @@ ZEX_MGY_Enable_Vizier_SETUP = {
 		}
 		add_ideas = ZEX_MGY_VIZIER_OFFICE
 	}
-	if = {
-		limit = {
-			NOT = {
-				has_dynamic_modifier = {
-					modifier = ZEX_MGY_no_vizier_impact_dynmod
-				}
-			}
-		}
-		add_dynamic_modifier = {
-			modifier = ZEX_MGY_no_vizier_impact_dynmod
-		}
-	}
+	# if = {
+	# 	limit = {
+	# 		NOT = {
+	# 			has_dynamic_modifier = {
+	# 				modifier = ZEX_MGY_no_vizier_impact_dynmod
+	# 			}
+	# 		}
+	# 	}
+	# 	add_dynamic_modifier = {
+	# 		modifier = ZEX_MGY_no_vizier_impact_dynmod
+	# 	}
+	# }
 	if = {
 		limit = {
 			NOT = {

@@ -27,7 +27,7 @@ ZEX_MAREGYPT_VIZIER_POWER = {
 }
 
 ZEX_MAREGYPT_REPUBLICAN_AGITATION_CATEGORY = {
-	scripted_gui = ZEX_MGY_republican_agitation_ui
+	scripted_gui = ZEX_MGY_political_unrest_ui
 	allowed = {
 		always = yes
 	}

@@ -43,7 +43,7 @@ guiTypes = {
 
 		buttonType = {
 			name = "ZEX_MGY_Vizier_Button"
-			position = { x = 135 y = 226}
+			position = { x = 130 y = 221}
 			spriteType = "GFX_ZEX_MGY_Vizier_Button"
 			pdx_tooltip = "ZEX_MGY_Vizier_Button_tt"
 			pdx_tooltip_delayed = "ZEX_MGY_Vizier_Button_extra_tt"

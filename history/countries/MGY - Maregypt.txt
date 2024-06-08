@@ -217,23 +217,25 @@ ZEX_MGY_Royal_Diet_Start_Diet = yes
 
 # Add advisors / characters
 recruit_character = ZEX_MGY_Somnambula
-set_country_flag = ZEX_MGY_Somnambula_Exiled
 recruit_character = ZEX_MGY_king_khefer
 recruit_character = ZEX_MGY_far_hook
-recruit_character = ZEX_MGY_Imanetep
-recruit_character = ZEX_MGY_Mannea
-recruit_character = ZEX_MGY_Neighkt
-recruit_character = ZEX_MGY_Horsemheb
-recruit_character = ZEX_MGY_Djehoofy
-recruit_character = ZEX_MGY_Amaneope
-recruit_character = ZEX_MGY_Merryre
-recruit_character = ZEX_MGY_HaysyRa
-recruit_character = ZEX_MGY_Nebamane
-recruit_character = ZEX_MGY_Thawhinny
-recruit_character = ZEX_MGY_Ramuleses
-recruit_character = ZEX_MGY_Bay
-recruit_character = ZEX_MGY_Ahmhoofes
-recruit_character = ZEX_MGY_Tutneighfer
+recruit_character = ZEX_MGY_Shaa_Doof
+
+add_advisor_role = {
+    character = ZEX_MGY_Shaa_Doof
+    activate = yes
+    advisor = {
+        slot = political_advisor
+        cost = 150
+        idea_token = ZEX_MGY_Vizier
+        traits = {
+            ZEX_Old_Vizier
+			ZEX_MGY_PopularFigurehead
+        }
+		can_be_fired = no
+		desc = ZEX_MGY_Shaa_Doof_Desc
+    }
+}
 
 #Puppet AOL
 
@@ -325,5 +327,5 @@ add_ideas = {
 	ZEX_MGY_Equestrian_Debts
 	ZEX_MGY_REPUBLICAN_AGITATION_IDEA
 	##Viziers
-	ZEX_MGY_Shaa_Doof_idea
+	# ZEX_MGY_Shaa_Doof_idea
 }

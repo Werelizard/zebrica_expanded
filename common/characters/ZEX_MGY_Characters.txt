@@ -42,18 +42,18 @@ characters = {
 			slot = political_advisor
 			idea_token = ZEX_MGY_Harmony_Ambassador
 			allowed = {
-				original_tag = MGY
+				zxe_is_maregypt_or_cosmetic_maregypt = yes
 			}
 			traits = {
 				ZEX_MGY_Peacekeeper
 			}
 			available = {
-				custom_trigger_tooltip = {
-					tooltip = ZEX_MGY_cannot_select_advisor_now_tt
-					NOT = {
-						has_idea = ZEX_Unfinished_Constitution
-					}
-				}
+				# custom_trigger_tooltip = {
+				# 	tooltip = ZEX_MGY_cannot_select_advisor_now_tt
+				# 	NOT = {
+				# 		has_idea = ZEX_Unfinished_Constitution
+				# 	}
+				# }
 				custom_trigger_tooltip = {
 					tooltip = ZEX_MGY_somnambula_has_not_been_removed_tt
 					NOT = {
@@ -94,13 +94,16 @@ characters = {
 			traits = {
 				ZEX_MGY_Nationalist_Agitator
 			}
+			allowed = {
+				zxe_is_maregypt_or_cosmetic_maregypt = yes
+			}
 			available = {
-				custom_trigger_tooltip = {
-					tooltip = ZEX_MGY_cannot_select_advisor_now_tt
-					NOT = {
-						has_idea = ZEX_Unfinished_Constitution
-					}
-				}
+				# custom_trigger_tooltip = {
+				# 	tooltip = ZEX_MGY_cannot_select_advisor_now_tt
+				# 	NOT = {
+				# 		has_idea = ZEX_Unfinished_Constitution
+				# 	}
+				# }
 				custom_trigger_tooltip = {
 					tooltip = ZEX_MGY_FarHook_Killed
 					NOT = {
@@ -142,315 +145,340 @@ characters = {
 	# ZEBRICA EXPANDED - NEW CHARACTERS #
 	# 
 
-	ZEX_MGY_Imanetep = {
-		name = ZEX_MGY_Imanetep
-		advisor = {
-			slot = political_advisor
-			idea_token = ZEX_MGY_Imanetep
-			traits = {
-				ZEX_MGY_Architet
-			}
-			available = {
-				custom_trigger_tooltip = {
-					tooltip = ZEX_MGY_cannot_select_advisor_now_tt
-					NOT = {
-						has_idea = ZEX_Unfinished_Constitution
-					}
-				}
+	ZEX_MGY_Shaa_Doof = {
+		name = ZEX_MGY_Shaa_Doof
+		portraits = {
+			civilian = {
+				small = GFX_leader_ZEX_MGY_ShaaDoof_Small
+				large = GFX_leader_ZEX_MGY_ShaaDoof
 			}
 		}
-		gender = female
+		advisor = {
+			slot = political_advisor
+			idea_token = ZEX_MGY_Vizier
+			allowed = {
+				zxe_is_maregypt_or_cosmetic_maregypt = yes
+			}
+			traits = {
+				ZEX_Old_Vizier
+				ZEX_MGY_PopularFigurehead
+			}
+			available = {
+				
+			}
+			desc = ZEX_MGY_Shaa_Doof_Desc
+		}
 	}
 
-	ZEX_MGY_Mannea = {
-		name = ZEX_MGY_Mannea
-		advisor = {
-			slot = political_advisor
-			idea_token = ZEX_MGY_Mannea
-			traits = {
-				ZEX_MGY_Farmer_Lobbyist
-			}
-			available = {
-				custom_trigger_tooltip = {
-					tooltip = ZEX_MGY_cannot_select_advisor_now_tt
-					NOT = {
-						has_idea = ZEX_Unfinished_Constitution
-					}
-				}
-				NOT = {
-					has_government = communism
-				}
-			}
-		}
-		gender = female
-	}
+	# ZEX_MGY_Imanetep = {
+	# 	name = ZEX_MGY_Imanetep
+	# 	advisor = {
+	# 		slot = political_advisor
+	# 		idea_token = ZEX_MGY_Imanetep
+	# 		traits = {
+	# 			ZEX_MGY_Architet
+	# 		}
+	# 		available = {
+	# 			custom_trigger_tooltip = {
+	# 				tooltip = ZEX_MGY_cannot_select_advisor_now_tt
+	# 				NOT = {
+	# 					has_idea = ZEX_Unfinished_Constitution
+	# 				}
+	# 			}
+	# 		}
+	# 	}
+	# 	gender = female
+	# }
 
-	ZEX_MGY_Neighkt = {
-		name = ZEX_MGY_Neighkt
-		advisor = {
-			slot = political_advisor
-			idea_token = ZEX_MGY_Neighkt
-			traits = {
-				ZEX_MGY_Administrator
-			}
-			available = {
-				custom_trigger_tooltip = {
-					tooltip = ZEX_MGY_cannot_select_advisor_now_tt
-					NOT = {
-						has_idea = ZEX_Unfinished_Constitution
-					}
-				}
-				NOT = {
-					has_government = fascism
-				}
-				NOT = {
-					has_government = communism
-				}
-			}
-		}
-		gender = male
-	}
+	# ZEX_MGY_Mannea = {
+	# 	name = ZEX_MGY_Mannea
+	# 	advisor = {
+	# 		slot = political_advisor
+	# 		idea_token = ZEX_MGY_Mannea
+	# 		traits = {
+	# 			ZEX_MGY_Farmer_Lobbyist
+	# 		}
+	# 		available = {
+	# 			custom_trigger_tooltip = {
+	# 				tooltip = ZEX_MGY_cannot_select_advisor_now_tt
+	# 				NOT = {
+	# 					has_idea = ZEX_Unfinished_Constitution
+	# 				}
+	# 			}
+	# 			NOT = {
+	# 				has_government = communism
+	# 			}
+	# 		}
+	# 	}
+	# 	gender = female
+	# }
+
+	# ZEX_MGY_Neighkt = {
+	# 	name = ZEX_MGY_Neighkt
+	# 	advisor = {
+	# 		slot = political_advisor
+	# 		idea_token = ZEX_MGY_Neighkt
+	# 		traits = {
+	# 			ZEX_MGY_Administrator
+	# 		}
+	# 		available = {
+	# 			custom_trigger_tooltip = {
+	# 				tooltip = ZEX_MGY_cannot_select_advisor_now_tt
+	# 				NOT = {
+	# 					has_idea = ZEX_Unfinished_Constitution
+	# 				}
+	# 			}
+	# 			NOT = {
+	# 				has_government = fascism
+	# 			}
+	# 			NOT = {
+	# 				has_government = communism
+	# 			}
+	# 		}
+	# 	}
+	# 	gender = male
+	# }
 	
-	ZEX_MGY_Horsemheb = {
-		name = ZEX_MGY_Horsemheb
-		advisor = {
-			slot = political_advisor
-			idea_token = ZEX_MGY_Horsemheb
-			traits = {
-				ZEX_MGY_Head_Of_Military_Staff
-			}
-			available = {
-				custom_trigger_tooltip = {
-					tooltip = ZEX_MGY_cannot_select_advisor_now_tt
-					NOT = {
-						has_idea = ZEX_Unfinished_Constitution
-					}
-				}
-				NOT = {
-					has_government = communism
-				}
-			}
-		}
-		gender = male
-	}
+	# ZEX_MGY_Horsemheb = {
+	# 	name = ZEX_MGY_Horsemheb
+	# 	advisor = {
+	# 		slot = political_advisor
+	# 		idea_token = ZEX_MGY_Horsemheb
+	# 		traits = {
+	# 			ZEX_MGY_Head_Of_Military_Staff
+	# 		}
+	# 		available = {
+	# 			custom_trigger_tooltip = {
+	# 				tooltip = ZEX_MGY_cannot_select_advisor_now_tt
+	# 				NOT = {
+	# 					has_idea = ZEX_Unfinished_Constitution
+	# 				}
+	# 			}
+	# 			NOT = {
+	# 				has_government = communism
+	# 			}
+	# 		}
+	# 	}
+	# 	gender = male
+	# }
 
-	ZEX_MGY_Djehoofy = {
-		name = ZEX_MGY_Djehoofy
-		advisor = {
-			slot = political_advisor
-			idea_token = ZEX_MGY_Djehoofy
-			traits = {
-				ZEX_MGY_National_Security_Proponent
-			}
-			available = {
-				custom_trigger_tooltip = {
-					tooltip = ZEX_MGY_cannot_select_advisor_now_tt
-					NOT = {
-						has_idea = ZEX_Unfinished_Constitution
-					}
-				}
-				NOT = {
-					has_government = communism
-				}
-			}
-		}
-		gender = male
-	}
+	# ZEX_MGY_Djehoofy = {
+	# 	name = ZEX_MGY_Djehoofy
+	# 	advisor = {
+	# 		slot = political_advisor
+	# 		idea_token = ZEX_MGY_Djehoofy
+	# 		traits = {
+	# 			ZEX_MGY_National_Security_Proponent
+	# 		}
+	# 		available = {
+	# 			custom_trigger_tooltip = {
+	# 				tooltip = ZEX_MGY_cannot_select_advisor_now_tt
+	# 				NOT = {
+	# 					has_idea = ZEX_Unfinished_Constitution
+	# 				}
+	# 			}
+	# 			NOT = {
+	# 				has_government = communism
+	# 			}
+	# 		}
+	# 	}
+	# 	gender = male
+	# }
 
-	ZEX_MGY_Amaneope= {
-		name = ZEX_MGY_Amaneope
-		advisor = {
-			slot = political_advisor
-			idea_token = ZEX_MGY_Amaneope
-			traits = {
-				ZEX_MGY_Popular_Author
-			}
-			available = {
-				custom_trigger_tooltip = {
-					tooltip = ZEX_MGY_cannot_select_advisor_now_tt
-					NOT = {
-						has_idea = ZEX_Unfinished_Constitution
-					}
-				}
-				NOT = {
-					has_government = communism
-				}
-			}
-		}
-		gender = female
-	}
+	# ZEX_MGY_Amaneope= {
+	# 	name = ZEX_MGY_Amaneope
+	# 	advisor = {
+	# 		slot = political_advisor
+	# 		idea_token = ZEX_MGY_Amaneope
+	# 		traits = {
+	# 			ZEX_MGY_Popular_Author
+	# 		}
+	# 		available = {
+	# 			custom_trigger_tooltip = {
+	# 				tooltip = ZEX_MGY_cannot_select_advisor_now_tt
+	# 				NOT = {
+	# 					has_idea = ZEX_Unfinished_Constitution
+	# 				}
+	# 			}
+	# 			NOT = {
+	# 				has_government = communism
+	# 			}
+	# 		}
+	# 	}
+	# 	gender = female
+	# }
 
-	ZEX_MGY_Merryre = {
-		name = ZEX_MGY_Merryre
-		advisor = {
-			slot = political_advisor
-			idea_token = ZEX_MGY_Merryre
-			traits = {
-				ZEX_MGY_Railroad_Mogul
-			}
-			available = {
-				custom_trigger_tooltip = {
-					tooltip = ZEX_MGY_cannot_select_advisor_now_tt
-					NOT = {
-						has_idea = ZEX_Unfinished_Constitution
-					}
-				}
-			}
-		}
-		gender = female
-	}
+	# ZEX_MGY_Merryre = {
+	# 	name = ZEX_MGY_Merryre
+	# 	advisor = {
+	# 		slot = political_advisor
+	# 		idea_token = ZEX_MGY_Merryre
+	# 		traits = {
+	# 			ZEX_MGY_Railroad_Mogul
+	# 		}
+	# 		available = {
+	# 			custom_trigger_tooltip = {
+	# 				tooltip = ZEX_MGY_cannot_select_advisor_now_tt
+	# 				NOT = {
+	# 					has_idea = ZEX_Unfinished_Constitution
+	# 				}
+	# 			}
+	# 		}
+	# 	}
+	# 	gender = female
+	# }
 
-	ZEX_MGY_HaysyRa = {
-		name = ZEX_MGY_HaysyRa
-		advisor = {
-			slot = political_advisor
-			idea_token = ZEX_MGY_HaysyRa
-			traits = {
-				ZEX_MGY_Radio_Propagandist
-			}
-			available = {
-				custom_trigger_tooltip = {
-					tooltip = ZEX_MGY_cannot_select_advisor_now_tt
-					NOT = {
-						has_idea = ZEX_Unfinished_Constitution
-					}
-				}
-			}
-		}
-		gender = male
-	}
+	# ZEX_MGY_HaysyRa = {
+	# 	name = ZEX_MGY_HaysyRa
+	# 	advisor = {
+	# 		slot = political_advisor
+	# 		idea_token = ZEX_MGY_HaysyRa
+	# 		traits = {
+	# 			ZEX_MGY_Radio_Propagandist
+	# 		}
+	# 		available = {
+	# 			custom_trigger_tooltip = {
+	# 				tooltip = ZEX_MGY_cannot_select_advisor_now_tt
+	# 				NOT = {
+	# 					has_idea = ZEX_Unfinished_Constitution
+	# 				}
+	# 			}
+	# 		}
+	# 	}
+	# 	gender = male
+	# }
 
-	ZEX_MGY_Nebamane = {
-		name = ZEX_MGY_Nebamane
-		advisor = {
-			slot = political_advisor
-			idea_token = ZEX_MGY_Nebamane
-			traits = {
-				ZEX_MGY_Compassionate_Gentlepony
-			}
-			available = {
-				custom_trigger_tooltip = {
-					tooltip = ZEX_MGY_cannot_select_advisor_now_tt
-					NOT = {
-						has_idea = ZEX_Unfinished_Constitution
-					}
-				}
-				NOT = {
-					has_government = fascism
-				}
-			}
-		}
-		gender = female
-	}
+	# ZEX_MGY_Nebamane = {
+	# 	name = ZEX_MGY_Nebamane
+	# 	advisor = {
+	# 		slot = political_advisor
+	# 		idea_token = ZEX_MGY_Nebamane
+	# 		traits = {
+	# 			ZEX_MGY_Compassionate_Gentlepony
+	# 		}
+	# 		available = {
+	# 			custom_trigger_tooltip = {
+	# 				tooltip = ZEX_MGY_cannot_select_advisor_now_tt
+	# 				NOT = {
+	# 					has_idea = ZEX_Unfinished_Constitution
+	# 				}
+	# 			}
+	# 			NOT = {
+	# 				has_government = fascism
+	# 			}
+	# 		}
+	# 	}
+	# 	gender = female
+	# }
 
 	
-	ZEX_MGY_Thawhinny = {
-		name = ZEX_MGY_Thawhinny
-		advisor = {
-			slot = political_advisor
-			idea_token = ZEX_MGY_Thawhinny
-			traits = {
-				ZEX_MGY_Trade_Union_Leader
-			}
-			available = {
-				custom_trigger_tooltip = {
-					tooltip = ZEX_MGY_cannot_select_advisor_now_tt
-					NOT = {
-						has_idea = ZEX_Unfinished_Constitution
-					}
-				}
-				NOT = {
-					has_government = neutrality
-				}
-				NOT = {
-					has_government = fascism
-				}
-			}
-		}
-		gender = male
-	}
+	# ZEX_MGY_Thawhinny = {
+	# 	name = ZEX_MGY_Thawhinny
+	# 	advisor = {
+	# 		slot = political_advisor
+	# 		idea_token = ZEX_MGY_Thawhinny
+	# 		traits = {
+	# 			ZEX_MGY_Trade_Union_Leader
+	# 		}
+	# 		available = {
+	# 			custom_trigger_tooltip = {
+	# 				tooltip = ZEX_MGY_cannot_select_advisor_now_tt
+	# 				NOT = {
+	# 					has_idea = ZEX_Unfinished_Constitution
+	# 				}
+	# 			}
+	# 			NOT = {
+	# 				has_government = neutrality
+	# 			}
+	# 			NOT = {
+	# 				has_government = fascism
+	# 			}
+	# 		}
+	# 	}
+	# 	gender = male
+	# }
 
-	ZEX_MGY_Ramuleses = {
-		name = ZEX_MGY_Ramuleses
-		advisor = {
-			slot = political_advisor
-			idea_token = ZEX_MGY_Ramuleses
-			traits = {
-				ZEX_MGY_Education_Reformer
-			}
-			available = {
-				custom_trigger_tooltip = {
-					tooltip = ZEX_MGY_cannot_select_advisor_now_tt
-					NOT = {
-						has_idea = ZEX_Unfinished_Constitution
-					}
-				}
-			}
-		}
-		gender = male
-	}
+	# ZEX_MGY_Ramuleses = {
+	# 	name = ZEX_MGY_Ramuleses
+	# 	advisor = {
+	# 		slot = political_advisor
+	# 		idea_token = ZEX_MGY_Ramuleses
+	# 		traits = {
+	# 			ZEX_MGY_Education_Reformer
+	# 		}
+	# 		available = {
+	# 			custom_trigger_tooltip = {
+	# 				tooltip = ZEX_MGY_cannot_select_advisor_now_tt
+	# 				NOT = {
+	# 					has_idea = ZEX_Unfinished_Constitution
+	# 				}
+	# 			}
+	# 		}
+	# 	}
+	# 	gender = male
+	# }
 
-	ZEX_MGY_Bay = {
-		name = ZEX_MGY_Bay
-		advisor = {
-			slot = political_advisor
-			idea_token = ZEX_MGY_Bay
-			traits = {
-				ZEX_MGY_Harmony_Lawyer
-			}
-			available = {
-				custom_trigger_tooltip = {
-					tooltip = ZEX_MGY_cannot_select_advisor_now_tt
-					NOT = {
-						has_idea = ZEX_Unfinished_Constitution
-					}
-				}
-				OR = {
-					has_government = democratic
-					has_government = neutrality
-				}
-			}
-		}
-		gender = male
-	}
+	# ZEX_MGY_Bay = {
+	# 	name = ZEX_MGY_Bay
+	# 	advisor = {
+	# 		slot = political_advisor
+	# 		idea_token = ZEX_MGY_Bay
+	# 		traits = {
+	# 			ZEX_MGY_Harmony_Lawyer
+	# 		}
+	# 		available = {
+	# 			custom_trigger_tooltip = {
+	# 				tooltip = ZEX_MGY_cannot_select_advisor_now_tt
+	# 				NOT = {
+	# 					has_idea = ZEX_Unfinished_Constitution
+	# 				}
+	# 			}
+	# 			OR = {
+	# 				has_government = democratic
+	# 				has_government = neutrality
+	# 			}
+	# 		}
+	# 	}
+	# 	gender = male
+	# }
 
-	ZEX_MGY_Ahmhoofes = {
-		name = ZEX_MGY_Ahmhoofes
-		advisor = {
-			slot = political_advisor
-			idea_token = ZEX_MGY_Ahmhoofes
-			traits = {
-				ZEX_MGY_Military_Organiser
-			}
-			available = {
-				custom_trigger_tooltip = {
-					tooltip = ZEX_MGY_cannot_select_advisor_now_tt
-					NOT = {
-						has_idea = ZEX_Unfinished_Constitution
-					}
-				}
-			}
-		}
-		gender = male
-	}
+	# ZEX_MGY_Ahmhoofes = {
+	# 	name = ZEX_MGY_Ahmhoofes
+	# 	advisor = {
+	# 		slot = political_advisor
+	# 		idea_token = ZEX_MGY_Ahmhoofes
+	# 		traits = {
+	# 			ZEX_MGY_Military_Organiser
+	# 		}
+	# 		available = {
+	# 			custom_trigger_tooltip = {
+	# 				tooltip = ZEX_MGY_cannot_select_advisor_now_tt
+	# 				NOT = {
+	# 					has_idea = ZEX_Unfinished_Constitution
+	# 				}
+	# 			}
+	# 		}
+	# 	}
+	# 	gender = male
+	# }
 
-	ZEX_MGY_Tutneighfer = {
-		name = ZEX_MGY_Tutneighfer
-		advisor = {
-			slot = political_advisor
-			idea_token = ZEX_MGY_Tutneighfer
-			traits = {
-				ZEX_MGY_War_Industrialist
-			}
-			available = {
-				custom_trigger_tooltip = {
-					tooltip = ZEX_MGY_cannot_select_advisor_now_tt
-					NOT = {
-						has_idea = ZEX_Unfinished_Constitution
-					}
-				}
-			}
-		}
-		gender = female
-	}
+	# ZEX_MGY_Tutneighfer = {
+	# 	name = ZEX_MGY_Tutneighfer
+	# 	advisor = {
+	# 		slot = political_advisor
+	# 		idea_token = ZEX_MGY_Tutneighfer
+	# 		traits = {
+	# 			ZEX_MGY_War_Industrialist
+	# 		}
+	# 		available = {
+	# 			custom_trigger_tooltip = {
+	# 				tooltip = ZEX_MGY_cannot_select_advisor_now_tt
+	# 				NOT = {
+	# 					has_idea = ZEX_Unfinished_Constitution
+	# 				}
+	# 			}
+	# 		}
+	# 	}
+	# 	gender = female
+	# }
 }

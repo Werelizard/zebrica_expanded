@@ -1279,7 +1279,10 @@ defined_text = {
 	name = ZEX_MGY_GET_REINTEGRATE_STATE_FOCUS_COMPLETED
 	text = {
 		trigger = {
-			has_completed_focus = ZEX_Goal_Pacify_the_Realm
+			OR = {
+				has_completed_focus = ZEX_MGY_focus_manephisaffair
+				has_completed_focus = ZEX_MGY_focus_investigatemilitary
+			}
 		}
 		localization_key = ZEX_MGY_Tooltip_Yes_Check
 	}

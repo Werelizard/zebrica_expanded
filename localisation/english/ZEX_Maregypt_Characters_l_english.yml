@@ -17,6 +17,7 @@
  ZEX_MGY_Ahmhoofes:0 "Ahmhoofes"
  ZEX_MGY_Tutneighfer:0 "Tutneighfer"
  ZEX_MGY_Bay:0 "Bay"
+ ZEX_MGY_Shaa_Doof:0 "Shaa Doof"
 
  ZEX_MGY_council_communism:0 "Revolutionary Council"
  
@@ -26,14 +27,17 @@
 
  #Bibliography
  ZEX_MGY_KHEFER_DESC:0 "§YBorn§!: February 11th, 984\n\n§YBiography§!: a Pony of principle, Mardjed Nebe Khefer was born the third son to the late King Snefru. His older brother and sister were lost to the Storm King's rampage alongside with his mother, leaving him the heavy duty of guiding Maregypt throughout these difficult times. A close friend to Sha Doof, King Khefer came to power with hope in his heart, but found himself shackled by the country's spiralling poverty, increasing radicalism and a political crisis on the horizon. He quickly began vast and ambitious projects to modernise society but these were met with limited successes, with the only tangible results being more ammo landing in the republicans' hands. His characteristic naiveity - while charming to some - has led him to becoming ever so reliant on his ailing Vizier and members of the conservative ARM movement. King Khefer is, if anything, the proof that good ambitions alone too often amount to naught."
- ZEX_MGY_Somnambula_Desc:0 "While she has not taken an active role in the political scene, Somnambula remains a beacon for Harmonist policies throughout the country - increasingly acting as a rallying point for Harmony supporters as the King's popularity falters and wanes."
+ ZEX_MGY_Somnambula_Desc:0 "§YBorn§!: Before Lunar Banishment\n\n§YBiography§!: While she has not taken an active role in the modern political scene, Somnambula remains a beacon for Harmonist policies throughout the country - increasingly acting as a rallying point for Harmony supporters as the King's popularity falters and wanes. As the pillar of Hope, her relentless optimism is an endless source of comfort to many, and whilst she may have once taken a harsher stance against the evils of the world, she has shifted to a stance of combative pacifism and strength through multitudes."
+ ZEX_MGY_Shaa_Doof_Desc:0 "§YBorn§!: August 7th, 923\n\n§YBiography§!: few ponies can atteset as to having had an life as eventful as Shaa Doof. Born Nefersu Shara Doof, Shaa Doof served as a police officer, as a journalist, as a secreterary, as an ambassador and as a politician. Careful by nature and pragmatic by necessity, he has been instrumental in keeping the kingdom together, from the Storm King's onslaught to the great famine of 996. Though now in his latter years he remains nonethless a beacon of stability, a guiding light for all, king included, even as increasingly louder voices call out for his resignation in the face of an ever pressing need for change and reform."
 
  #Advisor Slots
  ZEX_MGY_Harmony_Ambassador:0 "Ambassador of Harmony"
+ ZEX_MGY_Vizier:0 "Vizier"
  
  #Advisors - names / traits
  ZEX_MGY_Shaa_Doof:0 "Shaa Doof"
  ZEX_Old_Vizier:0 "Old Vizier"
+ ZEX_MGY_PopularFigurehead:0 "Popular Figurehead"
  ZEX_MGY_Peacekeeper:0 "Stalwart Pacifist"
  ZEX_MGY_Nationalist_Agitator:0 "Nationalist Agitator"
  ZEX_MGY_Architet:0 "Great Architect"

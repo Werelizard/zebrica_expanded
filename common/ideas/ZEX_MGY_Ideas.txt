@@ -21,10 +21,10 @@ ideas = {
 		ZEX_Unfinished_Constitution = {
 			picture = ZEX_Unfinished_Constitution
 			modifier = {
-				stability_factor = -0.10
-				political_power_cost = 0.5
-				democratic_drift = -0.03
-				neutrality_drift = -0.03
+				stability_factor = -0.1
+				political_power_cost = 0.25
+				democratic_drift = -0.02
+				neutrality_drift = -0.02
 			}
 		}
 		ZEX_MGY_REPUBLICAN_AGITATION_IDEA = {

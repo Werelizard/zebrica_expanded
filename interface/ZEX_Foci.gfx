@@ -166,7 +166,7 @@ spriteTypes = {
 		}
 		legacy_lazy_load = no
 	}
-	#Investigate the Military 
+	#A Military Conspiracy? 
 	spriteType = {
 		name = "GFX_ZEX_MGY_focus_investigatemilitary"
 		textureFile = "gfx/interface/goals/MGY/KHF/zex_goal_mgy_investigatemilitary.tga"
@@ -246,29 +246,6 @@ spriteTypes = {
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/MGY/KHF/zex_goal_mgy_disbandlotussociety.tga"			
-			animationtexturefile = "gfx/interface/goals/MGY/KHF/overlay_100_88.dds"
-			animationrotation = -90.0		
-			animationlooping = yes			
-			animationtime = 0.75			
-			animationdelay = 5		
-			animationblendmode = "add"       
-			animationtype = "scrolling"      
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 } 
-		}
-		legacy_lazy_load = no
-	}
-	#In Harmony's Name
-	spriteType = {
-		name = "GFX_ZEX_MGY_focus_antisupremacypropaganda"
-		textureFile = "gfx/interface/goals/MGY/KHF/zex_goal_mgy_antisupremacypropaganda.tga"
-	}
-	spriteType = {
-		name = "GFX_ZEX_MGY_focus_antisupremacypropaganda_shine"
-		textureFile = "gfx/interface/goals/MGY/KHF/zex_goal_mgy_antisupremacypropaganda.tga"
-		effectFile = "gfx/FX/buttonstate.lua"
-		animation = {
-			animationmaskfile = "gfx/interface/goals/MGY/KHF/zex_goal_mgy_antisupremacypropaganda.tga"			
 			animationtexturefile = "gfx/interface/goals/MGY/KHF/overlay_100_88.dds"
 			animationrotation = -90.0		
 			animationlooping = yes			
@@ -426,17 +403,17 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 
-	# Harmony's Stronghold - 
+	#Legitimise Lotus 
 	spriteType = {
-		name = "GFX_ZEX_MGY_focus_harmonystronghold"
-		textureFile = "gfx/interface/goals/MGY/KHF/zex_goal_mgy_harmonystronghold.tga"
+		name = "GFX_ZEX_MGY_focus_legitimiselotussociety"
+		textureFile = "gfx/interface/goals/MGY/KHF/zex_goal_mgy_legitimiselotussociety.tga"
 	}
 	spriteType = {
-		name = "GFX_ZEX_MGY_focus_harmonystronghold_shine"
-		textureFile = "gfx/interface/goals/MGY/KHF/zex_goal_mgy_harmonystronghold.tga"
+		name = "GFX_ZEX_MGY_focus_legitimiselotussociety_shine"
+		textureFile = "gfx/interface/goals/MGY/KHF/zex_goal_mgy_legitimiselotussociety.tga"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/MGY/KHF/zex_goal_mgy_harmonystronghold.tga"			
+			animationmaskfile = "gfx/interface/goals/MGY/KHF/zex_goal_mgy_legitimiselotussociety.tga"			
 			animationtexturefile = "gfx/interface/goals/MGY/KHF/overlay_100_88.dds"
 			animationrotation = -90.0		
 			animationlooping = yes			
@@ -450,17 +427,17 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 
-	# Limited Elections 
+	#Ban Trade Unions 
 	spriteType = {
-		name = "GFX_ZEX_MGY_focus_banpoliticalparties"
-		textureFile = "gfx/interface/goals/MGY/KHF/zex_goal_mgy_banpoliticalparties.tga"
+		name = "GFX_ZEX_MGY_focus_bantradeunions"
+		textureFile = "gfx/interface/goals/MGY/KHF/zex_goal_mgy_bantradeunions.tga"
 	}
 	spriteType = {
-		name = "GFX_ZEX_MGY_focus_banpoliticalparties_shine"
-		textureFile = "gfx/interface/goals/MGY/KHF/zex_goal_mgy_banpoliticalparties.tga"
+		name = "GFX_ZEX_MGY_focus_bantradeunions_shine"
+		textureFile = "gfx/interface/goals/MGY/KHF/zex_goal_mgy_bantradeunions.tga"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/MGY/KHF/zex_goal_mgy_banpoliticalparties.tga"			
+			animationmaskfile = "gfx/interface/goals/MGY/KHF/zex_goal_mgy_bantradeunions.tga"			
 			animationtexturefile = "gfx/interface/goals/MGY/KHF/overlay_100_88.dds"
 			animationrotation = -90.0		
 			animationlooping = yes			
@@ -474,4 +451,27 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 
+	#Primacy of Aristocracy 
+	spriteType = {
+		name = "GFX_ZEX_MGY_focus_nepoticadministration"
+		textureFile = "gfx/interface/goals/MGY/KHF/zex_goal_mgy_nepoticadministration.tga"
+	}
+	spriteType = {
+		name = "GFX_ZEX_MGY_focus_nepoticadministration_shine"
+		textureFile = "gfx/interface/goals/MGY/KHF/zex_goal_mgy_nepoticadministration.tga"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/MGY/KHF/zex_goal_mgy_nepoticadministration.tga"			
+			animationtexturefile = "gfx/interface/goals/MGY/KHF/overlay_100_88.dds"
+			animationrotation = -90.0		
+			animationlooping = yes			
+			animationtime = 0.75			
+			animationdelay = 5		
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
 }

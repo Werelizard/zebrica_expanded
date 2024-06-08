@@ -154,7 +154,7 @@ defined_text = {
 	name = ZEX_MGY_POWER_BALANCE_GET_CURRENT_VIZIER_PORTRAIT
 	text = {
 		trigger = {
-			has_idea = ZEX_MGY_Shaa_Doof_idea
+			zex_mgy_shaa_doof_is_vizier = yes
 		}
 		localization_key = "GFX_ZEX_MGY_Balance_of_Power_ShaaDoof_Portrait"
 	}

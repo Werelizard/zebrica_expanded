@@ -1,7 +1,7 @@
 scripted_gui = {
-	ZEX_MGY_republican_agitation_ui = {
+	ZEX_MGY_political_unrest_ui = {
 		context_type = decision_category
-		window_name = "ZEX_MGY_republican_agitation_ui_window"
+		window_name = "ZEX_MGY_political_unrest_ui_window"
 		visible = {
 			has_idea = ZEX_MGY_REPUBLICAN_AGITATION_IDEA
 		}
@@ -67,7 +67,10 @@ scripted_gui = {
 			}
 			ZEX_MGY_republican_agitation_reintegrate_state_button_click_enabled = {
 				AND = {
-					has_completed_focus = ZEX_Goal_in_Harmonys_name
+					OR = {
+						has_completed_focus = ZEX_MGY_focus_manephisaffair
+						has_completed_focus = ZEX_MGY_focus_investigatemilitary
+					}
 					zex_mgy_stability_higher_than_unrest = yes
 					zex_mgy_unrest_state_not_pacified = yes
 					has_political_power = 20
@@ -232,174 +235,6 @@ scripted_gui = {
 		ai_check = {
 		}
 		ai_weights = {
-		}
-	}
-	ZEX_MGY_Vizier_View_ui = {
-		context_type = player_context
-		window_name = "ZEX_MGY_Vizier_View_ui_window"
-		parent_window_token = politics_tab
-		ai_check = {
-			always = no
-		}
-		visible = {
-			AND = {
-				zxe_is_maregypt_or_cosmetic_maregypt = yes				#By button - is this active now?
-				has_country_flag = zex_mgy_vizier_enabled_flag				#General contex - can this country hav the viier?
-			}
-		}
-		triggers = {
-			ZEX_MGY_Vizier_Frame_visible = {
-				has_country_flag = zex_mgy_vizier_highlight_flag
-			}
-			ZEX_MGY_Vizier_Button_visible = {
-				has_country_flag = zex_mgy_vizier_enabled_flag
-			}
-			ZEX_MGY_Vizier_name_visible = {
-				has_country_flag = zex_mgy_vizier_highlight_flag
-			}
-			#Per Viziers
-			ZEX_MGY_Shaa_Doof_visible = {
-				has_idea = ZEX_MGY_Shaa_Doof_idea
-				has_country_flag = zex_mgy_vizier_highlight_flag
-			}
-			ZEX_MGY_No_Vizier_visible = {
-				zex_mgy_no_vizier_check = yes
-				has_country_flag = zex_mgy_vizier_highlight_flag
-			}
-		}
-		effects = {
-			ZEX_MGY_Vizier_Button_click = {
-				if = {
-					limit = {
-						has_country_flag = zex_mgy_vizier_highlight_flag
-					}
-					clr_country_flag = zex_mgy_vizier_highlight_flag
-				}
-				else = {
-					set_country_flag = zex_mgy_vizier_highlight_flag
-				}
-			}
-		}
-	}
-	ZEX_MGY_royal_diet_ui = {
-		context_type = decision_category
-		window_name = "ZEX_MGY_royal_diet_gui_container"
-		dynamic_lists = {
-			parliament_main_grid = {
-				array = parliament_main_array
-				index = parliament_main_index
-				change_scope = no
-				entry_container = parliament_main_entry
-			}
-			ZEX_MGY_royal_diet_main_grid = {
-				array = parliament_main_array
-				index = parliament_main_index
-				change_scope = no
-				entry_container = ZEX_MGY_royal_diet_main_entry
-			}
-			ZEX_MGY_royal_diet_member_grid = {
-				array = parliament_member_array
-				index = parliament_member_index
-				change_scope = no
-				entry_container = parliament_member_entry
-			}
-		}
-		effects = {
-			parliament_modify_button_control_click = {
-				set_temp_variable = {
-					temp_member = v
-				}
-				set_temp_variable = {
-					ZEX_MGY_royal_diet_temp_seats = 5
-				}
-				ZEX_MGY_Diet_modify_parliament_seat = yes
-			}
-			parliament_modify_button_shift_click = {
-				set_temp_variable = {
-					temp_member = v
-				}
-				set_temp_variable = {
-					ZEX_MGY_royal_diet_temp_seats = -5
-				}
-				ZEX_MGY_Diet_modify_parliament_seat = yes
-			}
-		}
-		properties = {
-			parliament_main_icon = {
-				frame = v
-			}
-			ZEX_MGY_royal_diet_main_icon = {
-				frame = v
-				x = parliament_x_array^parliament_main_index
-				y = parliament_y_array^parliament_main_index
-			}
-			parliament_member_icon = {
-				frame = v
-			}
-		}
-	}
-	ZEX_MGY_Vizier_Balance_UI = {
-		context_type = decision_category
-		window_name = "ZEX_MGY_Vizier_Balance_Ui"
-
-		visible = {
-			zxe_is_maregypt_or_cosmetic_maregypt = yes
-			has_country_flag = zex_mgy_vizier_enabled_flag
-		}
-
-		properties = {
-			ZEX_MGY_Vizier_Bar_Positive = {
-				frame = MGY.ZEX_MGY_vizier_King_Balance_King_Side
-			}
-			ZEX_MGY_Vizier_Bar_Negative = {
-				frame = MGY.ZEX_MGY_vizier_King_Balance_Vizier_Side
-			}
-			ZEX_MGY_Vizier_Bar_Slider = {
-				x = ZEX_MGY_vizier_king_balance_slider_pos
-			}
-			ZEX_MGY_Vizier_Portrait_Vizier = {
-				image = "[ZEX_MGY_POWER_BALANCE_GET_CURRENT_VIZIER_PORTRAIT]"
-			}
-			ZEX_MGY_Vizier_Portrait_King = {
-				image = "[ZEX_MGY_POWER_BALANCE_GET_CURRENT_KING_PORTRAIT]"
-			}
-		}
-
-		triggers = {
-			ZEX_MGY_Vizier_Button_left_click_enabled = {
-				NOT = {
-					has_country_flag = zex_mgy_vizier_bp_increase_vizier_influence
-				}
-				NOT = {
-					zex_mgy_no_vizier_check = yes
-				}
-			}
-			ZEX_MGY_Vizier_Button_right_click_enabled = {
-				NOT = {
-					has_country_flag = zex_mgy_vizier_bp_increase_king_influence
-				}
-				NOT = {
-					zex_mgy_no_king_or_queen = yes
-				}
-			}
-			ZEX_MGY_Vizier_Button_middle_click_enabled = {
-				OR = {
-					has_country_flag = zex_mgy_vizier_bp_increase_vizier_influence
-					has_country_flag = zex_mgy_vizier_bp_increase_king_influence
-				}
-			}
-		}
-
-		effects = {
-			ZEX_MGY_Vizier_Button_left_click = {
-				ZEX_MGY_TIPPING_THE_SCALES_Vizier = yes
-			}
-			ZEX_MGY_Vizier_Button_right_click = {
-				ZEX_MGY_TIPPING_THE_SCALES_MONARCH = yes
-			}
-			ZEX_MGY_Vizier_Button_middle_click = {
-				ZEX_MGY_TIPPING_THE_SCALES_RESET = yes
-			}
 		}
 	}
 }

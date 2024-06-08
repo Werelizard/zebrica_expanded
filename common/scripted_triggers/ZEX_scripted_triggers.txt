@@ -33,13 +33,24 @@ zxe_mgy_equestria_exists = {
 #################################
 zex_mgy_no_vizier_check = {
 	NOT = {
-		has_idea = ZEX_MGY_Shaa_Doof_idea
+		ZEX_MGY_Shaa_Doof = {
+			has_advisor_role = political_advisor
+		}
 	}
 }
 
 zex_mgy_no_king_or_queen = {
 	NOT = {
 		zex_mgy_khefer_in_power = yes
+	}
+}
+
+zex_mgy_shaa_doof_is_vizier = {
+	custom_trigger_tooltip = {
+		tooltip = zex_mgy_shaa_doof_is_vizier_tt
+		ZEX_MGY_Shaa_Doof = {
+			has_advisor_role = political_advisor
+		}
 	}
 }
 
@@ -553,5 +564,15 @@ zex_mgy_is_state_rebellious = {
 				ZEX_MGY_VAR_Zush_Unrest_percentile > party_popularity@ruling_party
 			}
 		}
+	}
+}
+
+#################################
+# Welcome Screen Trigger        #
+#################################
+
+zex_is_not_a_modded_country = {
+	NOT = {
+		tag = MGY
 	}
 }

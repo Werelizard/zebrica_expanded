@@ -21,4 +21,10 @@ spriteTypes = {
 		name = "GFX_FOCUS_FILTER_SHAADOOF"
 		texturefile = "gfx/interface/focusview/filter/zex_filter_shaadoof.dds"
 	}
+
+	#Splash Screen
+	spriteType = {
+		name = "GFX_ZEX_SPLASHSCREEN"
+		texturefile = "gfx/interface/ZEX_Splash_Screen.tga"
+	}	
 }
