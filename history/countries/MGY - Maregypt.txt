@@ -213,7 +213,7 @@ if = {
 # ZEBRICA EXPANDED #
 ####################
 
-ZEX_MGY_Royal_Diet_Start_Diet = yes
+zex_mgy_open_welcome_screen = yes
 
 # Add advisors / characters
 recruit_character = ZEX_MGY_Somnambula

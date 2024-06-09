@@ -1,0 +1,42 @@
+# Open / Close
+
+zex_mgy_open_welcome_screen = {
+	set_variable = {
+		zex_mgy_welcome_screen_state = 1
+	}
+	set_variable = {
+		zex_mgy_welcome_screen_tab = 0
+	}
+}
+
+zex_mgy_close_welcome_screen = {
+	set_variable = {
+		zex_mgy_welcome_screen_state = 0
+	}
+}
+
+# Open the right tabs
+
+zex_mgy_open_log_tab = {
+	set_variable = {
+		zex_mgy_welcome_screen_tab = 0
+	}
+}
+
+zex_mgy_open_lore_tab = {
+	set_variable = {
+		zex_mgy_welcome_screen_tab = 1
+	}
+}
+
+zex_mgy_open_char_tab = {
+	set_variable = {
+		zex_mgy_welcome_screen_tab = 2
+	}
+}
+
+zex_mgy_open_thanks_tab = {
+	set_variable = {
+		zex_mgy_welcome_screen_tab = 3
+	}
+}

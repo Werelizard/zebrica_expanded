@@ -571,8 +571,8 @@ zex_mgy_is_state_rebellious = {
 # Welcome Screen Trigger        #
 #################################
 
-zex_is_not_a_modded_country = {
-	NOT = {
-		tag = MGY
+zex_is_a_submod_country = {
+	OR = {
+		original_tag = MGY
 	}
 }

@@ -1,6 +1,13 @@
 on_actions = {
 	on_startup = {
 		effect = {
+			# if = {
+			# 	limit = {
+			# 		zex_is_a_submod_country = yes
+			# 	}
+			# 	zex_mgy_open_welcome_screen = yes
+			# }
+			#Province startup changes
 			738 = {
 				start_resistance = MGY
 				set_resistance = 30
@@ -26,7 +33,9 @@ on_actions = {
 				set_resistance = 15
 				set_compliance = 10
 			}
+			#Maregypt specific
 			MGY = {
+				#modifiers
 				add_opinion_modifier = {
 					target = THU
 					modifier = distrustful_relations
@@ -50,6 +59,10 @@ on_actions = {
 				add_opinion_modifier = {
 					target = CZR
 					modifier = distrustful_relations
+				}
+				add_opinion_modifier = {
+					target = EQS
+					modifier = friendly
 				}
 			}			
 		}

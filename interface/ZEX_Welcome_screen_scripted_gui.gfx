@@ -1,0 +1,45 @@
+spriteTypes = {
+	#Splash Screen
+	spriteType = { 
+		name = "GFX_ZEX_Welcome_screen_bg"
+		texturefile = "gfx/interface/SplashScreen/ZEX_Splash_Screen.tga"
+	}	
+	spriteType = {
+		name = "GFX_ZEX_Welcome_screen_exit"
+		texturefile = "gfx/interface/SplashScreen/ZEX_cancel_button.dds"
+	}
+	spriteType = {
+		name = "GFX_ZEX_Welcome_screen_submenu"
+		texturefile = "gfx/interface/SplashScreen/ZEX_tab_select_button.dds"
+	}	
+	spriteType = {
+		name = "GFX_ZEX_Welcome_screen_bg_inner"
+		texturefile = "gfx/interface/SplashScreen/ZEX_Splash_Screen_Inner.tga"
+	}	
+	spriteType = {
+		name = "GFX_ZEX_Toggle_Welcome_Screen_Button"
+		texturefile = "gfx/interface/SplashScreen/ZEX_Toggle_Welcome_Screen_Button.dds"
+	}
+	
+	#Character - MGY
+	spriteType = {
+		name = "GFX_ZEX_Splash_Screen_HequitBazin"
+		texturefile = "gfx/interface/SplashScreen/characters/ZEX_MGY_HeqetBazin.tga"
+	}
+	spriteType = {
+		name = "GFX_ZEX_Splash_Screen_Somnambula"
+		texturefile = "gfx/interface/SplashScreen/characters/Somnambula.tga"
+	}
+	spriteType = {
+		name = "GFX_ZEX_Splash_Screen_Ahmesi"
+		texturefile = "gfx/interface/SplashScreen/characters/ZEX_MGY_AhmesiSenesfer.tga"
+	}
+	spriteType = {
+		name = "GFX_ZEX_Splash_Screen_Khefer"
+		texturefile = "gfx/interface/SplashScreen/characters/King_kefir.tga"
+	}
+	spriteType = {
+		name = "GFX_ZEX_Splash_Screen_ShaaDoof"
+		texturefile = "gfx/interface/SplashScreen/characters/ZEX_MGY_Shaa_Doof_Vizier.tga"
+	}
+}

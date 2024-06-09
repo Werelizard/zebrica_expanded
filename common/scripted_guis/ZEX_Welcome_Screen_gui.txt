@@ -1,0 +1,194 @@
+scripted_gui = {
+	ZEX_Welcome_Screen_Toggle = {
+		context_type = player_context
+		window_name = "ZEX_Welcome_Screen_Toggle"
+		parent_window_token = politics_tab
+
+		ai_check = {
+			always = no
+		}
+
+		visible = {
+			zex_is_a_submod_country = yes
+		}
+
+		triggers = {
+			ZEX_Welcome_Screen_Toggle_Button_click_enabled = {
+				check_variable = {
+					zex_mgy_welcome_screen_state = 0
+				}
+			}
+		}
+
+		effects = {
+			ZEX_Welcome_Screen_Toggle_Button_click = {
+				zex_mgy_open_welcome_screen = yes
+			}
+		}
+	}
+	ZEX_Welcome_Screen = {
+		context_type = player_context
+		window_name = "ZEX_Welcome_Screen"
+		parent_window_token = top_bar
+		dirty = zex_mgy_welcome_screen_tab
+
+		ai_check = {
+			always = no
+		}
+
+		visible = {
+			check_variable = {
+				zex_mgy_welcome_screen_state = 1
+			}
+		}
+
+		triggers = {
+			ZEX_Welcome_Screen_Main_Sub_click_enabled = {
+				NOT = {
+					check_variable = {
+						zex_mgy_welcome_screen_tab = 0
+					}
+				}
+			}
+			ZEX_Welcome_Screen_Lore_Sub_click_enabled = {
+				NOT = {
+					check_variable = {
+						zex_mgy_welcome_screen_tab = 1
+					}
+				}
+			}
+			ZEX_Welcome_Screen_Charac_Sub_click_enabled = {
+				NOT = {
+					check_variable = {
+						zex_mgy_welcome_screen_tab = 2
+					}
+				}
+			}
+			ZEX_Welcome_Screen_Thanks_Sub_click_enabled = {
+				NOT = {
+					check_variable = {
+						zex_mgy_welcome_screen_tab = 3
+					}
+				}
+			}
+		}
+
+		effects = {
+			ZEX_Welcome_Screen_Close_Button_click = {
+				zex_mgy_close_welcome_screen = yes
+			}
+			ZEX_Welcome_Screen_Main_Sub_click = {
+				set_variable = {
+					zex_mgy_welcome_screen_tab = 0
+				}
+			}
+			ZEX_Welcome_Screen_Lore_Sub_click = {
+				set_variable = {
+					zex_mgy_welcome_screen_tab = 1
+				}
+			}
+			ZEX_Welcome_Screen_Charac_Sub_click = {
+				set_variable = {
+					zex_mgy_welcome_screen_tab =2
+				}
+			}
+			ZEX_Welcome_Screen_Thanks_Sub_click = {
+				set_variable = {
+					zex_mgy_welcome_screen_tab = 3
+				}
+			}
+		}
+
+		properties = {
+			
+		}
+	}
+
+	ZEX_Welcome_Screen_MainLog = {
+		context_type = player_context
+		window_name = "ZEX_Welcome_Screen_MainLog"
+		parent_window_token = top_bar
+		dirty = zex_mgy_welcome_screen_tab
+
+		ai_check = {
+			always = no
+		}
+
+		visible = {
+			check_variable = {
+				zex_mgy_welcome_screen_state = 1
+			}
+			check_variable = {
+				zex_mgy_welcome_screen_tab = 0
+			}
+			zxe_is_maregypt_or_cosmetic_maregypt = yes
+		}
+	}
+
+	ZEX_Welcome_Screen_Credits = {
+		context_type = player_context
+		window_name = "ZEX_Welcome_Screen_Credits"
+		parent_window_token = top_bar
+		dirty = zex_mgy_welcome_screen_tab
+
+		ai_check = {
+			always = no
+		}
+
+		visible = {
+			check_variable = {
+				zex_mgy_welcome_screen_state = 1
+			}
+			check_variable = {
+				zex_mgy_welcome_screen_tab = 3
+			}
+			zxe_is_maregypt_or_cosmetic_maregypt = yes
+		}
+	}
+
+	############
+	# MAREGYPT #
+	############
+
+	ZEX_Welcome_Screen_Lore_Maregypt = {
+		context_type = player_context
+		window_name = "ZEX_Welcome_Screen_Lore_Maregypt"
+		parent_window_token = top_bar
+		dirty = zex_mgy_welcome_screen_tab
+
+		ai_check = {
+			always = no
+		}
+
+		visible = {
+			check_variable = {
+				zex_mgy_welcome_screen_state = 1
+			}
+			check_variable = {
+				zex_mgy_welcome_screen_tab = 1
+			}
+			zxe_is_maregypt_or_cosmetic_maregypt = yes
+		}
+	}
+
+	ZEX_Welcome_Screen_Characters_Maregypt = {
+		context_type = player_context
+		window_name = "ZEX_Welcome_Screen_Characters_Maregypt"
+		parent_window_token = top_bar
+		dirty = zex_mgy_welcome_screen_tab
+
+		ai_check = {
+			always = no
+		}
+
+		visible = {
+			check_variable = {
+				zex_mgy_welcome_screen_state = 1
+			}
+			check_variable = {
+				zex_mgy_welcome_screen_tab = 2
+			}
+			zxe_is_maregypt_or_cosmetic_maregypt = yes
+		}
+	}
+}

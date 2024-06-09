@@ -8,7 +8,9 @@ scripted_gui = {
 		visible = {
 			is_ai = no
 			#Zebrica expanded
-			zex_is_not_a_modded_country = yes
+			NOT = {
+				zex_is_a_submod_country = yes
+			}
 		}
 
 		effects = {
@@ -33,7 +35,9 @@ scripted_gui = {
 			is_ai = no
 			has_variable = eaw_help_tab_on
 			#Zebrica expanded
-			zex_is_not_a_modded_country = yes
+			NOT = {
+				zex_is_a_submod_country = yes
+			}
 		}
 
 		effects = {
@@ -58,7 +62,9 @@ scripted_gui = {
 				has_country_flag = KIS_FRV_flag
 			}
 			#Zebrica expanded
-			zex_is_not_a_modded_country = yes
+			NOT = {
+				zex_is_a_submod_country = yes
+			}
 		}
 
 		effects = {
@@ -80,7 +86,9 @@ scripted_gui = {
 			is_ai = no
 			has_variable = eaw_welcome_screen
 			#Zebrica expanded
-			zex_is_not_a_modded_country = yes
+			NOT = {
+				zex_is_a_submod_country = yes
+			}
 		}
 
 		triggers = {
@@ -166,7 +174,9 @@ scripted_gui = {
 			is_ai = no
 			check_variable = { eaw_welcome_screen = 1 }
 			#Zebrica expanded
-			zex_is_not_a_modded_country = yes
+			NOT = {
+				zex_is_a_submod_country = yes
+			}
 		}
 	}
 
@@ -180,7 +190,9 @@ scripted_gui = {
 			is_ai = no
 			check_variable = { eaw_welcome_screen = 2 }
 			#Zebrica expanded
-			zex_is_not_a_modded_country = yes
+			NOT = {
+				zex_is_a_submod_country = yes
+			}
 		}
 	}
 
@@ -194,7 +206,9 @@ scripted_gui = {
 			is_ai = no
 			check_variable = { eaw_welcome_screen = 3 }
 			#Zebrica expanded
-			zex_is_not_a_modded_country = yes
+			NOT = {
+				zex_is_a_submod_country = yes
+			}
 		}
 	}
 
@@ -208,7 +222,9 @@ scripted_gui = {
 			is_ai = no
 			check_variable = { eaw_welcome_screen = 4 }
 			#Zebrica expanded
-			zex_is_not_a_modded_country = yes
+			NOT = {
+				zex_is_a_submod_country = yes
+			}
 		}
 	}
 

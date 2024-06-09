@@ -8,8 +8,8 @@
  MGY_neutrality_party:0 "SNB"
  MGY_neutrality_party_long:0 "Semayt Nesut-Bity (King's Party)"
 
- MGY:0 "Kingdom of Maregypt"
- MGY_DEF:0 "the Kingdom of Maregypt"
+ MGY:0 "Maregypt"
+ MGY_DEF:0 "Maregyptian"
  MGY_ADJ:0 "Maregyptian"
  MGY_neutrality:0 "Kingdom of Maregypt"
  MGY_fascism:0 "Kingdom of Maresr"
