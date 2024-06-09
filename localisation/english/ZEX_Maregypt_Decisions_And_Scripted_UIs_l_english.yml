@@ -241,7 +241,7 @@
  ZEX_MGY_state_agitated_text:0 "§Y[ZEX_MGY_GET_FOCUSED_STATE_NAME]§! is experiencing §YUnrest§!"
  ZEX_MGY_state_rebellious_text:0 "§Y[ZEX_MGY_GET_FOCUSED_STATE_NAME]§! is in §tOpen Rebellion§!"
 
- ZEX_MGY_Button_Hidden:0 "ZEX_MGY_Unrest_Button_Empty"
+ ZEX_MGY_Button_Hidden:0 "ZEX_MGY_Empty_GFX"
  ZEX_MGY_Political_Unrest_Propaganda_Button:0 "ZEX_MGY_Unrest_Button_Propaganda"
  ZEX_MGY_Political_Unrest_Arrest_Button:0 "ZEX_MGY_Unrest_Button_Arrest"
  ZEX_MGY_Political_Unrest_Police_Button:0 "ZEX_MGY_Unrest_Button_Police"

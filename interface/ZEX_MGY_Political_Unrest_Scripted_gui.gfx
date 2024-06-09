@@ -255,8 +255,8 @@ spriteTypes = {
 
 	#Buttons
 	spriteType = {
-		name = "ZEX_MGY_Unrest_Button_Empty"
-		texturefile = "gfx/interface/MGY/ZEX_MGY_Unrest_Hidden_Button.dds"
+		name = "ZEX_MGY_Empty_GFX"
+		texturefile = "gfx/interface/MGY/ZEX_MGY_Empty.dds"
 		transparencecheck = yes
 	}
 	spriteType = {

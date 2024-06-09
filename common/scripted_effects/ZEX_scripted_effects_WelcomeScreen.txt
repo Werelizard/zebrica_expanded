@@ -1,5 +1,14 @@
 # Open / Close
 
+zex_mgy_open_splash_screen = {
+	set_variable = {
+		zex_mgy_welcome_screen_state = 1
+	}
+	set_variable = {
+		zex_mgy_welcome_screen_tab = -1
+	}
+}
+
 zex_mgy_open_welcome_screen = {
 	set_variable = {
 		zex_mgy_welcome_screen_state = 1

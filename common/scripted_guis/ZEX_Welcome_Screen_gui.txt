@@ -119,7 +119,7 @@ scripted_gui = {
 				zex_mgy_welcome_screen_state = 1
 			}
 			check_variable = {
-				zex_mgy_welcome_screen_tab = 0
+				zex_mgy_welcome_screen_tab = -1
 			}
 			zxe_is_maregypt_or_cosmetic_maregypt = yes
 		}
@@ -146,6 +146,36 @@ scripted_gui = {
 		}
 	}
 
+	ZEX_Welcome_Screen_Spoilers = {
+		context_type = player_context
+		window_name = "ZEX_Welcome_Screen_Spoilers"
+		parent_window_token = top_bar
+		dirty = zex_mgy_welcome_screen_tab
+
+		ai_check = {
+			always = no
+		}
+
+		visible = {
+			check_variable = {
+				zex_mgy_welcome_screen_state = 1
+			}
+			check_variable = {
+				zex_mgy_welcome_screen_tab = 1
+			}
+			zxe_is_maregypt_or_cosmetic_maregypt = yes
+			NOT = {
+				has_country_flag = zex_welcome_screen_reveal_spoilers_flag
+			}
+		}
+
+		effects = {
+			ZEX_Welcome_Screen_ShowPaths_click = {
+				set_country_flag = zex_welcome_screen_reveal_spoilers_flag
+			}
+		}
+	}
+
 	############
 	# MAREGYPT #
 	############
@@ -165,8 +195,30 @@ scripted_gui = {
 				zex_mgy_welcome_screen_state = 1
 			}
 			check_variable = {
+				zex_mgy_welcome_screen_tab = 0
+			}
+			zxe_is_maregypt_or_cosmetic_maregypt = yes
+		}
+	}
+
+	ZEX_Welcome_Screen_Spoilers_Maregypt = {
+		context_type = player_context
+		window_name = "ZEX_Welcome_Screen_Spoilers_Maregypt"
+		parent_window_token = top_bar
+		dirty = zex_mgy_welcome_screen_tab
+
+		ai_check = {
+			always = no
+		}
+
+		visible = {
+			check_variable = {
+				zex_mgy_welcome_screen_state = 1
+			}
+			check_variable = {
 				zex_mgy_welcome_screen_tab = 1
 			}
+			has_country_flag = zex_welcome_screen_reveal_spoilers_flag
 			zxe_is_maregypt_or_cosmetic_maregypt = yes
 		}
 	}

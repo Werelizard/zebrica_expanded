@@ -213,7 +213,7 @@ if = {
 # ZEBRICA EXPANDED #
 ####################
 
-zex_mgy_open_welcome_screen = yes
+zex_mgy_open_splash_screen = yes
 
 # Add advisors / characters
 recruit_character = ZEX_MGY_Somnambula

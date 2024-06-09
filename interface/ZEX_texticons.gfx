@@ -79,4 +79,9 @@ spriteTypes = {
 		texturefile = "gfx/texticons/ZEX_MGY_royal_diet_loyalty.dds"
 		legacy_lazy_load = no
 	}
+	spriteType = {
+		name = "GFX_ZEX_opencountryview"
+		textureFile = "gfx/texticons/ZEX_MGY_countryinfo_texticon.dds"
+		legacy_lazy_load = no
+	}
 }

@@ -92,7 +92,7 @@ guiTypes = {
 	}
 
 	#
-	# Changelog / Main
+	# Intro Splash Screen
 	#
 
 	containerWindowType = {
@@ -103,12 +103,12 @@ guiTypes = {
 
 		containerWindowType = {
 			name = "ZEX_Welcome_Screen_MainLog_Inner_Window"
-			position = { x = 17 y = 153 }
-			size = { width = 765 height = 246 }
+			position = { x = 12 y = 148 }
+			size = { width = 775 height = 256 }
 
 			background = {
-				size = { width = 765 height = 246 }
-				quadTextureSprite = "GFX_ZEX_Welcome_screen_bg_inner"
+				size = { width = 775 height = 256 }
+				quadTextureSprite = "GFX_tiled_paper_bg2"
 				alwaystransparent = no
 			}
 
@@ -124,7 +124,7 @@ guiTypes = {
 			# MainLog
 			instantTextBoxType = {
 				name = "ZEX_Welcome_Screen_MainLog_Text_Header"
-				position = { x = 0 y = 8 }
+				position = { x = 5 y = 8 }
 				maxHeight = 20
 				maxWidth = 750
 				text = ZEX_Welcome_Screen_MainLog_Text_Header
@@ -134,9 +134,9 @@ guiTypes = {
 
 			instantTextBoxType = {
 				name = "ZEX_Welcome_Screen_MainLog_Text"
-				position = { x = 0 y = 46 }
+				position = { x = 5 y = 46 }
 				maxHeight = 231
-				maxWidth = 742
+				maxWidth = 750
 				text = ZEX_Welcome_Screen_MainLog_Text
 				format = center
 				font = "hoi_16mbs"
@@ -144,11 +144,41 @@ guiTypes = {
 
 			instantTextBoxType = {
 				name = "ZEX_Welcome_Screen_CurrentVersion_Text"
-				position = { x = 0 y = 216 }
+				position = { x = 5 y = 216 }
 				maxHeight = 20
-				maxWidth = 742
+				maxWidth = 750
 				text = ZEX_Welcome_Screen_CurrentVersion_Text
 				format = right
+				font = "hoi_18mbs"
+			}
+		}
+	}
+
+	#
+	# Spoiler button
+	#
+
+	containerWindowType = { # Spoiler Screen
+		name = "ZEX_Welcome_Screen_Spoilers"
+		orientation = CENTER
+		position = { x = -400 y = -214 }	
+		size = { width = 800 height = 500 }
+
+		containerWindowType = {
+			name = "ZEX_Welcome_Screen_Spoilers_Inner_Window"
+			position = { x = 0 y = 0 }
+			size = { width = 775 height = 256 }
+			orientation = CENTER
+			
+			buttonType = {
+				name = "ZEX_Welcome_Screen_ShowPaths"
+				spriteType = "GFX_occupation_release_button"
+				position = {
+					x = -77
+					y = 0
+				}
+				text = ZEX_Welcome_Screen_ShowPaths
+				format = center
 				font = "hoi_18mbs"
 			}
 		}
@@ -202,6 +232,7 @@ guiTypes = {
 				maxWidth = 742
 				text = ZEX_Welcome_Screen_Credits_Text
 				font = "hoi_16mbs"
+				format = center
 			}
 		}
 	}
@@ -210,7 +241,7 @@ guiTypes = {
 	# Maregypt's Textual Elements
 	#
 
-	containerWindowType = {
+	containerWindowType = { # Maregypt's Lore
 		name = "ZEX_Welcome_Screen_Lore_Maregypt"
 		orientation = CENTER
 		position = { x = -400 y = -214 }	
@@ -234,51 +265,100 @@ guiTypes = {
 				right = 3
 			}
 			smooth_scrolling = yes
-			verticalScrollbar = "ZEX_right_vertical_slider"
+			verticalScrollbar = "right_vertical_slider"
 
-			# Info
 			instantTextBoxType = {
-				name = "ZEX_Welcome_Screen_Info_Maregypt_Text_Header"
+				name = "ZEX_Welcome_Screen_SickMare_Maregypt_Text_Header"
 				position = { x = 0 y = 8 }
 				maxHeight = 20
 				maxWidth = 750
-				text = ZEX_Welcome_Screen_Info_Maregypt_Text_Header
+				text = ZEX_Welcome_Screen_SickMare_Maregypt_Text_Header
 				format = center
 				font = "hoi_24header"
 			}	
 
 			instantTextBoxType = {
-				name = "ZEX_Welcome_Screen_Info_Maregypt_Text"
+				name = "ZEX_Welcome_Screen_SickMare_Maregypt_Text"
 				position = { x = 0 y = 36 }
-				maxHeight = 64
-				maxWidth = 742
-				text = ZEX_Welcome_Screen_Info_Maregypt_Text
+				maxWidth = 750
+				text = ZEX_Welcome_Screen_SickMare_Maregypt_Text
 				font = "hoi_16mbs"
 			}
 
-			# Lore
 			instantTextBoxType = {
-				name = "ZEX_Welcome_Screen_Lore_Maregypt_Text_Header"
-				position = { x = 0 y = 116 }
+				name = "ZEX_Welcome_Screen_LandOfTheSun_Maregypt_Text_Header"
+				position = { x = 0 y = 271 }
 				maxHeight = 20
 				maxWidth = 750
-				text = ZEX_Welcome_Screen_Lore_Maregypt_Text_Header
+				text = ZEX_Welcome_Screen_LandOfTheSun_Maregypt_Text_Header
 				format = center
 				font = "hoi_24header"
 			}	
 
 			instantTextBoxType = {
-				name = "ZEX_Welcome_Screen_Lore_Maregypt_Text"
-				position = { x = 0 y = 144 }
-				maxHeight = 592
+				name = "ZEX_Welcome_Screen_LandOfTheSun_Maregypt_Text"
+				position = { x = 0 y = 299 }
+				maxWidth = 750
+				text = ZEX_Welcome_Screen_LandOfTheSun_Maregypt_Text
+				font = "hoi_16mbs"
+			}
+
+			iconType = {
+				name = "ZEX_Welcome_Screen_Lore_Footer"
+				position = { x = 15 y = 675 }
+				spriteType = "ZEX_MGY_Empty_GFX"	
+			}
+		}
+	}
+
+	containerWindowType = { # Maregypt's Paths
+		name = "ZEX_Welcome_Screen_Spoilers_Maregypt"
+		orientation = CENTER
+		position = { x = -400 y = -214 }	
+		size = { width = 800 height = 500 }
+
+		containerWindowType = {
+			name = "ZEX_Welcome_Screen_Spoilers_Maregypt_Inner_Window"
+			position = { x = 17 y = 153 }
+			size = { width = 765 height = 246 }
+
+			background = {
+				size = { width = 765 height = 246 }
+				quadTextureSprite = "GFX_ZEX_Welcome_screen_bg_inner"
+				alwaystransparent = no
+			}
+
+			margin = {
+				top = 4
+				bottom = 4
+				left = 3
+				right = 3
+			}
+			smooth_scrolling = yes
+			verticalScrollbar = "right_vertical_slider"
+
+			instantTextBoxType = {
+				name = "ZEX_Welcome_Screen_Spoilers_Maregypt_Text_Header"
+				position = { x = 0 y = 8 }
+				maxHeight = 20
+				maxWidth = 750
+				text = ZEX_Welcome_Screen_Spoilers_Maregypt_Text_Header
+				format = center
+				font = "hoi_24header"
+			}
+
+			instantTextBoxType = {
+				name = "ZEX_Welcome_Screen_Spoilers_Maregypt_Text"
+				position = { x = 0 y = 36 }
+				maxHeight = 64
 				maxWidth = 742
-				text = ZEX_Welcome_Screen_Lore_Maregypt_Text
+				text = ZEX_Welcome_Screen_Spoilers_Maregypt_Text
 				font = "hoi_16mbs"
 			}
 		}
 	}
 
-	containerWindowType = {
+	containerWindowType = { # Maregypt's Characters
 		name = "ZEX_Welcome_Screen_Characters_Maregypt"
 		orientation = CENTER
 		position = { x = -400 y = -214 }	
