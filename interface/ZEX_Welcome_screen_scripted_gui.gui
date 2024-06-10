@@ -9,6 +9,7 @@ guiTypes = {
 			name = "ZEX_Welcome_Screen_Toggle_Button"
 			spriteType = "GFX_ZEX_Toggle_Welcome_Screen_Button"
 			pdx_tooltip = ZEX_Welcome_Screen_Open_Button_tt
+			oversound = ui_menu_over
 		}
 	}
 	#Common parts
@@ -48,6 +49,7 @@ guiTypes = {
 				spriteType = "GFX_ZEX_Welcome_screen_exit"
 				tooltip = ZEX_Welcome_Screen_Close_Button_tt
 				pdx_tooltip_delayed = ZEX_Welcome_Screen_Close_Button_tt_delayed
+				oversound = ui_menu_over
 			}
 	
 			# Buttons to select the various sub-menus
@@ -59,6 +61,7 @@ guiTypes = {
 				text = ZEX_Welcome_Screen_Main_Sub_Text
 				format = center
 				font = "hoi_18mbs"
+				oversound = ui_menu_over
 			}
 	
 			buttonType = {
@@ -68,6 +71,7 @@ guiTypes = {
 				text = ZEX_Welcome_Screen_Lore_Sub_Text
 				format = center
 				font = "hoi_18mbs"
+				oversound = ui_menu_over
 			}
 			
 			buttonType = {
@@ -77,6 +81,7 @@ guiTypes = {
 				text = ZEX_Welcome_Screen_Charac_Sub_Text
 				format = center
 				font = "hoi_18mbs"
+				oversound = ui_menu_over
 			}
 	
 			buttonType = {
@@ -86,6 +91,7 @@ guiTypes = {
 				text = ZEX_Welcome_Screen_Thanks_Sub_Text
 				format = center
 				font = "hoi_18mbs"
+				oversound = ui_menu_over
 			}
 
 		}
@@ -180,6 +186,7 @@ guiTypes = {
 				text = ZEX_Welcome_Screen_ShowPaths
 				format = center
 				font = "hoi_18mbs"
+				oversound = ui_menu_over
 			}
 		}
 	}

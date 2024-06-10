@@ -339,7 +339,7 @@ ZEX_MGY_UPDATE_LOCAL_UNREST_IMPACT = {
 	}
 	multiply_variable = {
 		var = ZEX_MGY_VAR_Sineighi_Unrest_negative
-		value = -0.005
+		value = -0.002
 	}
 	set_variable = {
 		var = ZEX_MGY_VAR_Kaneigh_Unrest_negative
@@ -347,7 +347,7 @@ ZEX_MGY_UPDATE_LOCAL_UNREST_IMPACT = {
 	}
 	multiply_variable = {
 		var = ZEX_MGY_VAR_Kaneigh_Unrest_negative
-		value = -0.005
+		value = -0.002
 	}
 	set_variable = {
 		var = ZEX_MGY_VAR_Maneisrata_Unrest_negative
@@ -355,7 +355,7 @@ ZEX_MGY_UPDATE_LOCAL_UNREST_IMPACT = {
 	}
 	multiply_variable = {
 		var = ZEX_MGY_VAR_Maneisrata_Unrest_negative
-		value = -0.005
+		value = -0.002
 	}
 	set_variable = {
 		var = ZEX_MGY_VAR_UpperMaregypt_Unrest_negative
@@ -363,7 +363,7 @@ ZEX_MGY_UPDATE_LOCAL_UNREST_IMPACT = {
 	}
 	multiply_variable = {
 		var = ZEX_MGY_VAR_UpperMaregypt_Unrest_negative
-		value = -0.005
+		value = -0.002
 	}
 	set_variable = {
 		var = ZEX_MGY_VAR_Delta_Unrest_negative
@@ -371,7 +371,7 @@ ZEX_MGY_UPDATE_LOCAL_UNREST_IMPACT = {
 	}
 	multiply_variable = {
 		var = ZEX_MGY_VAR_Delta_Unrest_negative
-		value = -0.005
+		value = -0.002
 	}
 	set_variable = {
 		var = ZEX_MGY_VAR_Manephis_Unrest_negative
@@ -379,7 +379,7 @@ ZEX_MGY_UPDATE_LOCAL_UNREST_IMPACT = {
 	}
 	multiply_variable = {
 		var = ZEX_MGY_VAR_Manephis_Unrest_negative
-		value = -0.005
+		value = -0.002
 	}
 	set_variable = {
 		var = ZEX_MGY_VAR_Somnambula_Unrest_negative
@@ -387,7 +387,7 @@ ZEX_MGY_UPDATE_LOCAL_UNREST_IMPACT = {
 	}
 	multiply_variable = {
 		var = ZEX_MGY_VAR_Somnambula_Unrest_negative
-		value = -0.005
+		value = -0.002
 	}
 	set_variable = {
 		var = ZEX_MGY_VAR_Eastdesert_Unrest_negative
@@ -395,7 +395,7 @@ ZEX_MGY_UPDATE_LOCAL_UNREST_IMPACT = {
 	}
 	multiply_variable = {
 		var = ZEX_MGY_VAR_Eastdesert_Unrest_negative
-		value = -0.005
+		value = -0.002
 	}
 	set_variable = {
 		var = ZEX_MGY_VAR_Zush_Unrest_negative
@@ -403,7 +403,7 @@ ZEX_MGY_UPDATE_LOCAL_UNREST_IMPACT = {
 	}
 	multiply_variable = {
 		var = ZEX_MGY_VAR_Zush_Unrest_negative
-		value = -0.005
+		value = -0.002
 	}
 }
 

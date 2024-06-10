@@ -324,6 +324,7 @@ guiTypes = {
 				spriteType = "ZEX_MGY_Unrest_Button_Police"
 				pdx_tooltip = ZEX_MGY_BUTTON_PROPAGANDA_TOOLTIP
 				pdx_disabled_tooltip = ZEX_MGY_BUTTON_PROPAGANDA_TOOLTIP
+				oversound = ui_menu_over
 			}
 			buttonType = {
 				name = "ZEX_MGY_republican_agitation_arrest_button_icon"
@@ -331,6 +332,7 @@ guiTypes = {
 				spriteType = "ZEX_MGY_Unrest_Button_Police"
 				pdx_tooltip = ZEX_MGY_BUTTON_ARRESTS_TOOLTIP
 				pdx_disabled_tooltip = ZEX_MGY_BUTTON_ARRESTS_TOOLTIP
+				oversound = ui_menu_over
 			}
 			buttonType = {
 				name = "ZEX_MGY_republican_agitation_police_button_icon"
@@ -338,6 +340,7 @@ guiTypes = {
 				spriteType = "ZEX_MGY_Unrest_Button_Police"
 				pdx_tooltip = ZEX_MGY_BUTTON_POLICE_TOOLTIP
 				pdx_disabled_tooltip = ZEX_MGY_BUTTON_POLICE_TOOLTIP
+				oversound = ui_menu_over
 			}
 
 			buttonType = {
@@ -351,6 +354,7 @@ guiTypes = {
 				orientation = LEFT
 				pdx_tooltip = ZEX_MGY_republican_agitation_reintegrate_state_button_click_enabled_tt
 				clicksound = assign_unit_frontline
+				oversound = ui_menu_over
 			}
 
 		}

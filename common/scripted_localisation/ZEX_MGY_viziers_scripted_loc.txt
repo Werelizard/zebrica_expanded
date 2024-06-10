@@ -37,80 +37,19 @@ defined_text = {
 	}
 }
 
-#Get whether the displayed value should be positive or negative
-defined_text = {
-	name = ZEX_MGY_VIZIER_15_SIGN
-	text = {
-		trigger = {
-			check_variable = {
-				ZEX_MGY_vizier_King_Balance < 0
-			}
-		}
-		localization_key = ZEX_MGY_VIZIER_BALANCE_SIGN_NEG
-	}
-	text = {
-		localization_key = ZEX_MGY_VIZIER_BALANCE_SIGN_POS
-	}
-}
-
-defined_text = {
-	name = ZEX_MGY_VIZIER_20_SIGN
-	text = {
-		trigger = {
-			check_variable = {
-				ZEX_MGY_vizier_King_Balance < 0
-			}
-		}
-		localization_key = ZEX_MGY_VIZIER_BALANCE_SIGN_POS
-	}
-	text = {
-		localization_key = ZEX_MGY_VIZIER_BALANCE_SIGN_NEG
-	}
-}
-
 # Displays the Vizier Value
 
 defined_text = {
 	name = ZEX_MGY_GET_VIZIER_KING_BALANCE
 	text = {
 		trigger = {
-			check_variable = {
-				ZEX_MGY_vizier_King_Balance < 10
-			}
-			check_variable = {
-				ZEX_MGY_vizier_King_Balance > -10
-			}
-		}
-		localization_key = ZEX_MGY_VIZIER_OFFICE_KING_BALANCED
-	}
-	text = {
-		trigger = {
-			check_variable = {
-				ZEX_MGY_vizier_King_Balance < -66
-			}
-		}
-		localization_key = ZEX_MGY_VIZIER_OFFICE_VIZIER_DOMINANT
-	}
-	text = {
-		trigger = {
-			check_variable = {
-				ZEX_MGY_vizier_King_Balance < -33
-			}
-		}
-		localization_key = ZEX_MGY_VIZIER_OFFICE_VIZIER_STRONG
-	}
-	text = {
-		trigger = {
-			check_variable = {
-				ZEX_MGY_vizier_King_Balance < -10
-			}
-		}
-		localization_key = ZEX_MGY_VIZIER_OFFICE_VIZIER_WEAK
-	}
-	text = {
-		trigger = {
-			check_variable = {
-				ZEX_MGY_vizier_King_Balance > 66
+			OR = {
+				check_variable = {
+					ZEX_MGY_vizier_King_Balance > 0
+				}
+				check_variable = {
+					ZEX_MGY_vizier_King_Balance = 0
+				}
 			}
 		}
 		localization_key = ZEX_MGY_VIZIER_OFFICE_KING_DOMINANT
@@ -118,18 +57,10 @@ defined_text = {
 	text = {
 		trigger = {
 			check_variable = {
-				ZEX_MGY_vizier_King_Balance > 33
+				ZEX_MGY_vizier_King_Balance < 0
 			}
 		}
-		localization_key = ZEX_MGY_VIZIER_OFFICE_KING_STRONG
-	}
-	text = {
-		trigger = {
-			check_variable = {
-				ZEX_MGY_vizier_King_Balance > 10
-			}
-		}
-		localization_key = ZEX_MGY_VIZIER_OFFICE_KING_WEAK
+		localization_key = ZEX_MGY_VIZIER_OFFICE_VIZIER_DOMINANT
 	}
 }
 

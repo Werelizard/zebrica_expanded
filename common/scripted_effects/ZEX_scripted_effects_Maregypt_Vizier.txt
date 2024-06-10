@@ -8,9 +8,6 @@ ZEX_MGY_Enable_Vizier = {
 	set_variable = {
 		ZEX_MGY_vizier_King_Balance = 0
 	}
-	set_variable = {
-		ZEX_MGY_edict_cost = 40
-	}
 	ZEX_MGY_UPDATE_VIZIER_KING_VARIABLE = yes
 	set_country_flag = zex_mgy_vizier_enabled_flag
 	if = {
@@ -52,10 +49,7 @@ ZEX_MGY_Enable_Vizier_SETUP = {
 		modifier = ZEX_MGY_vizier_balance_dynmod
 	}
 	set_variable = {
-		ZEX_MGY_vizier_King_Balance = -60
-	}
-	set_variable = {
-		ZEX_MGY_edict_cost = 40
+		ZEX_MGY_vizier_King_Balance = -80
 	}
 	ZEX_MGY_UPDATE_VIZIER_KING_VARIABLE = yes
 	set_country_flag = zex_mgy_vizier_enabled_flag
@@ -99,47 +93,15 @@ ZEX_MGY_UPDATE_VIZIER_KING_VARIABLE = {
 		min = -100
 		max = 100
 	}
+	#Absolute variable, royal edict cost, vizier edict cost
 	set_variable = {
-		ZEX_MGY_VIZIER_INFLUENCE_20 = ZEX_MGY_vizier_King_Balance
-	}
-	multiply_variable = {
-		var = ZEX_MGY_VIZIER_INFLUENCE_20
-		value = 2
-	}
-	divide_variable = {
-		var = ZEX_MGY_VIZIER_INFLUENCE_20
-		value = 1000
+		ZEX_MGY_vizier_King_Balance_absoluteVal = ZEX_MGY_vizier_King_Balance
 	}
 	set_variable = {
-		ZEX_MGY_VIZIER_INFLUENCE_15 = ZEX_MGY_vizier_King_Balance
-	}
-	multiply_variable = {
-		var = ZEX_MGY_VIZIER_INFLUENCE_15
-		value = 1.5
-	}
-	divide_variable = {
-		var = ZEX_MGY_VIZIER_INFLUENCE_15
-		value = 1000
+		ZEX_MGY_vizier_King_Balance_VizierEdictCost = 50
 	}
 	set_variable = {
-		ZEX_MGY_VIZIER_INFLUENCE_NEGATIVE_15 = ZEX_MGY_vizier_King_Balance
-	}
-	multiply_variable = {
-		var = ZEX_MGY_VIZIER_INFLUENCE_NEGATIVE_15
-		value = -2.5
-	}
-	divide_variable = {
-		var = ZEX_MGY_VIZIER_INFLUENCE_NEGATIVE_15
-		value = 1000
-	}
-	#Derived variables
-	ZEX_MGY_UPDATE_VIZIER_KING_VARIABLE_DERIV = yes
-}
-
-# Caclulate derived variables
-ZEX_MGY_UPDATE_VIZIER_KING_VARIABLE_DERIV = {
-	set_variable = {
-		ZEX_MGY_vizier_King_Balance_DISPLAY = ZEX_MGY_vizier_King_Balance
+		ZEX_MGY_vizier_King_Balance_KingEdictCost = 50
 	}
 	if = {
 		limit = {
@@ -148,20 +110,45 @@ ZEX_MGY_UPDATE_VIZIER_KING_VARIABLE_DERIV = {
 			}
 		}
 		multiply_variable = {
-			ZEX_MGY_vizier_King_Balance_DISPLAY = -1
-		}
-	}
-	if = {
-		limit = {
-			check_variable = {
-				ZEX_MGY_vizier_King_Balance < 0
-			}
+			ZEX_MGY_vizier_King_Balance_absoluteVal = -1
 		}
 		set_variable = {
 			ZEX_MGY_vizier_King_Balance_King_Side = 0
 		}
 		set_variable = {
-			ZEX_MGY_vizier_King_Balance_Vizier_Side = ZEX_MGY_vizier_King_Balance_DISPLAY
+			ZEX_MGY_vizier_King_Balance_Vizier_Side = ZEX_MGY_vizier_King_Balance_absoluteVal
+		}
+		#Get percentage values for adjusting edict cost
+		set_variable = {
+			ZEX_MGY_vizier_King_Balance_AdjustKingEdictCost = ZEX_MGY_vizier_King_Balance_absoluteVal
+		}
+		divide_variable = {
+			ZEX_MGY_vizier_King_Balance_AdjustKingEdictCost = 100 #Gives a percentage, ranging from 0 to 1
+		}
+		set_variable = {
+			ZEX_MGY_vizier_King_Balance_AdjustVizierEdictCost = ZEX_MGY_vizier_King_Balance_absoluteVal
+		}
+		divide_variable = {
+			ZEX_MGY_vizier_King_Balance_AdjustVizierEdictCost = -200 #Gives a negative percentage, ranging from 0 to -0.5
+		}
+		#increase King edicts costs, decrease the Vizier edict cost
+		set_temp_variable = { #Get the current value, multiply it by the percentage, chang ethe variable
+			zex_mgy_temp_balance_adjust = ZEX_MGY_vizier_King_Balance_KingEdictCost
+		}
+		multiply_temp_variable = {
+			zex_mgy_temp_balance_adjust = ZEX_MGY_vizier_King_Balance_AdjustKingEdictCost
+		}
+		add_to_variable = {
+			ZEX_MGY_vizier_King_Balance_KingEdictCost = zex_mgy_temp_balance_adjust
+		}
+		set_temp_variable = { #Get the current value, multiply it by the percentage, chang ethe variable
+			zex_mgy_temp_balance_adjust = ZEX_MGY_vizier_King_Balance_VizierEdictCost
+		}
+		multiply_temp_variable = {
+			zex_mgy_temp_balance_adjust = ZEX_MGY_vizier_King_Balance_AdjustVizierEdictCost
+		}
+		add_to_variable = {
+			ZEX_MGY_vizier_King_Balance_VizierEdictCost = zex_mgy_temp_balance_adjust
 		}
 	}
 	else = {
@@ -169,8 +156,47 @@ ZEX_MGY_UPDATE_VIZIER_KING_VARIABLE_DERIV = {
 			ZEX_MGY_vizier_King_Balance_Vizier_Side = 0
 		}
 		set_variable = {
-			ZEX_MGY_vizier_King_Balance_King_Side = ZEX_MGY_vizier_King_Balance_DISPLAY
+			ZEX_MGY_vizier_King_Balance_King_Side = ZEX_MGY_vizier_King_Balance_absoluteVal
 		}
+		#Get percentage values for adjusting edict cost
+		set_variable = {
+			ZEX_MGY_vizier_King_Balance_AdjustKingEdictCost = ZEX_MGY_vizier_King_Balance_absoluteVal
+		}
+		divide_variable = {
+			ZEX_MGY_vizier_King_Balance_AdjustKingEdictCost = -200 #Gives a negative percentage, ranging from 0 to -0.5
+		}
+		set_variable = {
+			ZEX_MGY_vizier_King_Balance_AdjustVizierEdictCost = ZEX_MGY_vizier_King_Balance_absoluteVal
+		}
+		divide_variable = {
+			ZEX_MGY_vizier_King_Balance_AdjustVizierEdictCost = 100 #Gives a percentage, ranging from 0 to 1
+		}
+		#increase King edicts costs, decrease the Vizier edict cost
+		set_temp_variable = { #Get the current value, multiply it by the percentage, chang ethe variable
+			zex_mgy_temp_balance_adjust = ZEX_MGY_vizier_King_Balance_KingEdictCost
+		}
+		multiply_temp_variable = {
+			zex_mgy_temp_balance_adjust = ZEX_MGY_vizier_King_Balance_AdjustKingEdictCost
+		}
+		add_to_variable = {
+			ZEX_MGY_vizier_King_Balance_KingEdictCost = zex_mgy_temp_balance_adjust
+		}
+		set_temp_variable = { #Get the current value, multiply it by the percentage, chang ethe variable
+			zex_mgy_temp_balance_adjust = ZEX_MGY_vizier_King_Balance_VizierEdictCost
+		}
+		multiply_temp_variable = {
+			zex_mgy_temp_balance_adjust = ZEX_MGY_vizier_King_Balance_AdjustVizierEdictCost
+		}
+		add_to_variable = {
+			ZEX_MGY_vizier_King_Balance_VizierEdictCost = zex_mgy_temp_balance_adjust
+		}
+	}
+	#Political power cost calculator
+	set_variable = {
+		ZEX_MGY_vizier_King_Balance_PoliticalFactorImpact = ZEX_MGY_vizier_King_Balance_absoluteVal
+	}
+	divide_variable = {
+		ZEX_MGY_vizier_King_Balance_PoliticalFactorImpact = -500
 	}
 	# Determine the x axis of the "slider"
 	set_variable = { 

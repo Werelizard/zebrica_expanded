@@ -343,7 +343,7 @@
  ZEX_MGY_Vizier_Balance_Ui_Title_Text:0 "The Shared Crown"
  ZEX_MGY_Vizier_Balance_Ui_Explanation_Text:0 "The Balance of Power between the Vizier and the King is in a constant back and forth, with a different set of actions and options available to us depending on which side is currently in power."
 
- ZEX_MGY_Vizier_Balance_Bar_tt:0 "Currently the §YBalance of Power§! rests at [ZEX_MGY_GET_VIZIER_KING_BALANCE_VALUE], giving the following effects:\n\nPolitical Advisor Cost: [ZEX_MGY_VIZIER_20_SIGN][?ROOT.ZEX_MGY_VIZIER_INFLUENCE_20|0%]§!\nEconomy Laws Cost: [ZEX_MGY_VIZIER_20_SIGN][?ROOT.ZEX_MGY_VIZIER_INFLUENCE_20|0%]§!\nTrade Laws Cost: [ZEX_MGY_VIZIER_20_SIGN][?ROOT.ZEX_MGY_VIZIER_INFLUENCE_20|0%]§!\nConscription Laws Cost: [ZEX_MGY_VIZIER_20_SIGN][?ROOT.ZEX_MGY_VIZIER_INFLUENCE_20|0%]§!\nWar Support: [ZEX_MGY_VIZIER_15_SIGN][?ROOT.ZEX_MGY_VIZIER_INFLUENCE_15|2%]§!\nMobilization Speed: [ZEX_MGY_VIZIER_15_SIGN][?ROOT.ZEX_MGY_VIZIER_INFLUENCE_15|2%]§!\n\n[ZEX_MGY_POWER_BALANCE_CURRENT_COST]."
+ ZEX_MGY_Vizier_Balance_Bar_tt:0 "Currently the §YBalance of Power§! rests at [ZEX_MGY_GET_VIZIER_KING_BALANCE_VALUE], giving the following effects:\n\nPolitical Power Gain: [?ROOT.ZEX_MGY_vizier_King_Balance_PoliticalFactorImpact|2%+]\nVizier Edict Cost Modifier: §Y[?ROOT.ZEX_MGY_vizier_King_Balance_AdjustVizierEdictCost|2%]§!\nRoyal Edict Cost Modifier: §Y[?ROOT.ZEX_MGY_vizier_King_Balance_AdjustKingEdictCost|2%]§!"
 
  ZEX_MGY_Vizier_Balance_Button_Left_tt:0 "§YTip the scales towards the Vizier§!\n\n§YPrerequisites:§!\n[ZEX_MGY_POWER_BALANCE_VIZIER_ACTIVE] Has a Vizier\n\n§YEffect:§!\nThe §YBalance of Power§! will begin to change at a rate of £BoP_left_texticon  §Y5§! every week towards the §YVizier§!.\n----------\n§tIt will cost The £pol_power §!§Y-0.5§!§t political power every day to sustain this.§!"
  ZEX_MGY_Vizier_Balance_Button_Right_tt:0 "§YTip the scales towards the King§!\n\n§YPrerequisites:§!\n[ZEX_MGY_POWER_BALANCE_MONARCH_ACTIVE] Has a King\n\n§YEffect:§!\nThe §YBalance of Power§! will begin to change at a rate of £BoP_right_texticon  §Y5§! every week towards the §Yking§!.\n----------\n§tIt will cost The £pol_power §!§Y-0.5§!§t political power every day to sustain this.§!"
@@ -354,38 +354,4 @@
  ZEX_MGY_IS_NOT_AFFECTING_THE_BALANCE:0 "§LThere is currently no change in the Balance of Power§!"
 
  #Decrees
- ZEX_MGY_VIZIER_IN_POWER_tt:0 "The §YBalance of Power§! is at least £BoP_left_texticon  §Y20§! in the §YVizier's§! favour."
- ZEX_MGY_KING_IN_POWER_tt:0 "The §YBalance of Power§! is at least £BoP_right_texticon  §Y20§! in the §YKing's§! favour."
- ZEX_MGY_VIZIER_NO_TOTAL_VIZIER_CONTROL_tt:0 "The §YBalance of Power§! is less than £BoP_left_texticon  §Y80§! in the §YVizier's§! favour."
- ZEX_MGY_VIZIER_NO_TOTAL_MONARCH_CONTROL_tt:0 "The §YBalance of Power§! is less than £BoP_right_texticon  §Y80§! in the §YKing's§! favour."
- ZEX_MGY_VIZIER_AT_LEAST_10_ON_EITHER_SIDE_tt:0 "The  §YBalance of Power§! is currently either £BoP_left_texticon  §Y10§! in the §YVizier§!'s favour or £BoP_right_texticon  §Y10§! in the §YKing's§! favour"
- ZEX_MGY_AT_LEAST_20_pp_tt:0 "Has at least £pol_power §Y20§!"
-
- ZEX_MGY_DECREE_BALANCE_EVERYTHING:0 "Make a Show of Unity"
- ZEX_MGY_DECREE_EXPAND_BUREAUCRACY:0 "Implement the M'nyw"
- ZEX_MGY_DECREE_SEEK_INDUSTRIALIST_SUPPORT:0 "Issue New Treasury Bonds"
- ZEX_MGY_DECREE_INCREASE_SALARIES:0 "Crack Down on Corruption"
- ZEX_MGY_DECREE_HOLD_SPEECH:0 "Review the Military"
- ZEX_MGY_DECREE_REFORM_GOVERNMENT:0 "Welcome Petitioners"
- ZEX_MGY_DECREE_RALLY_Maredjay:0 "Promote Maredjay Officers"
-
- ZEX_MGY_DECREE_BALANCE_EVERYTHING_tt:0 "Shifts the balance of power §Y10§! back towards the center."
-
- ZEX_MGY_Vizier_Balance_Ui_Help_tt:0 "The £ZEX_vizier_bop  §OBalance of Power§! mechanic models the polarisation of the administration between the §YKing§! and the §YVizier§!.\n\nThe balance scales from §Y0§! to §Y100§! on each side, granting scaling bonuses depending on which - of the King and the Vizier - is in power. When in the §YVizier§!'s favour, the balance will grant adiscount to §Lrecruiting Advisors§!, changing §LEconomy Laws§!, §LTrade Laws§! and §LConscription Laws§!, whilst decreasing §Lwar support§! and the time required to §Lmobilize§!. While on the §YKing's§! favour, the modifiers are reversed.\n\nThe balance can be influenced by £ZEX_maregypt_edicts  §8edicts§! or by allocating some £pol_power  §8political power§! to gradually shift it towards one side or the other."
-
- ZEX_MGY_10_Vizier_Influence_tt:0 "£BoP_right_texticon  10"
- ZEX_MGY_20_Vizier_Influence_tt:0 "£pol_power  [?ZEX_MGY_edict_cost] £BoP_left_texticon  20"
- ZEX_MGY_10_Vizier_Influence_tt_blocked:0 "£BoP_right_texticon  10"
- ZEX_MGY_20_Vizier_Influence_tt_blocked:0 "£pol_power  [?ZEX_MGY_edict_cost]  £BoP_left_texticon  20"
-
- ZEX_MGY_10_King_Influence_tt:0 "£BoP_left_texticon  10"
- ZEX_MGY_20_King_Influence_tt:0 "£pol_power  [?ZEX_MGY_edict_cost]  £BoP_right_texticon  20"
- ZEX_MGY_10_King_Influence_tt_blocked:0 "£BoP_left_texticon  10"
- ZEX_MGY_20_King_Influence_tt_blocked:0 "£pol_power  [?ZEX_MGY_edict_cost] £BoP_right_texticon  20"
- ZEX_MGY_25_PP_tt:0 "£pol_power  25"
- ZEX_MGY_25_PP_tt_blocked:0 "£pol_power  25"
-
- ZEX_EDICT_20_PP:0 "It costs £pol_power §Y[?ZEX_MGY_edict_cost]§! to take this decision"
- ZEX_EDICT_25_PP:0 "It costs £pol_power §Y25§! to take this decision"
- ZEX_EDICT_NO_OTHER_EDICTS:0 "Not: Another £ZEX_maregypt_edicts  §YEdict§! is currently active"
- ZEX_MGY_EDICT_HAS_A_KING_tt:0 "Has a King"
+ ZEX_MGY_Vizier_Balance_Ui_Help_tt:0 "The £ZEX_vizier_bop  §OBalance of Power§! mechanic models the polarisation of the administration between the §YKing§! and the §YVizier§!.\n\nThe balance scales from §Y-100§! to §Y100§!. The stronger the balance tilts - regardless of direction - the more our overall £pol_power  §tpolitical power gain§! will be impacted. However, strengthening one side will make the corresponding edicts cheaper to enact, whilst making the opposing side's much more expensive.\n\nThe balance can be influenced by £ZEX_maregypt_edicts  §8edicts§! or by allocating some £pol_power  §8political power§! to gradually shift it towards one side or the other."

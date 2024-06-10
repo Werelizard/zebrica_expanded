@@ -15,7 +15,7 @@ ideas = {
 			picture = ZEX_MGY_Breadbasket
 			modifier = {
 				consumer_goods_factor = -0.1
-				global_building_slots_factor = -0.1
+				political_power_gain = 0.1
 			}
 		}
 		ZEX_Unfinished_Constitution = {
@@ -38,83 +38,12 @@ ideas = {
 		ZEX_MGY_VIZIER_OFFICE = {
 			picture = ZEX_MGY_Vizier_Office
 			modifier = {
-				custom_modifier_tooltip = ZEX_MGY_VIZIER_BALANCE_01_WAR_SUPPORT_TT
-				custom_modifier_tooltip = ZEX_MGY_VIZIER_BALANCE_02_JUSTIFIY_WAR_GOAL_TT
-				custom_modifier_tooltip = ZEX_MGY_VIZIER_BALANCE_03_ADVISOR_COST_TT
-				custom_modifier_tooltip = ZEX_MGY_VIZIER_BALANCE_04_ECO_COST_TT
-				custom_modifier_tooltip = ZEX_MGY_VIZIER_BALANCE_05_TRADE_COST_TT
-				custom_modifier_tooltip = ZEX_MGY_VIZIER_BALANCE_06_MOB_COST_TT
+				custom_modifier_tooltip = ZEX_MGY_VIZIER_BALANCE_01_POLITICALPOWER_TT
+				custom_modifier_tooltip = ZEX_MGY_VIZIER_BALANCE_02_VIZEDICTCOST_TT
+				custom_modifier_tooltip = ZEX_MGY_VIZIER_BALANCE_03_KNGEDICTCOST_TT
 			}
 			allowed = {
 				has_country_flag = zex_mgy_vizier_enabled_flag
-			}
-		}
-	}
-
-	##FOCUS RELATED
-	country = {
-		ZEX_MGY_goal_harmony_society_idea = {
-			picture = GFX_idea_unknown
-			modifier = {
-				stability_factor = 0.05
-				custom_modifier_tooltip = ZEX_MGY_goal_harmony_society_idea_effects_tt
-			}
-		}
-		ZEX_MGY_goal_harmony_society_idea_genderarmerie_1 = {
-			picture = GFX_idea_unknown
-			modifier = {
-				stability_factor = 0.1
-				resistance_damage_to_garrison = -0.1
-				required_garrison_factor = -0.1
-				custom_modifier_tooltip = ZEX_MGY_goal_harmony_society_idea_effects_tt
-			}
-		}
-		ZEX_MGY_goal_harmony_society_idea_propaganda_1 = {
-			picture = GFX_idea_unknown
-			modifier = {
-				stability_factor = 0.05
-				democratic_drift = 0.03
-				political_power_gain = 0.1
-				custom_modifier_tooltip = ZEX_MGY_goal_harmony_society_idea_effects_tt
-			}
-		}
-		ZEX_MGY_goal_harmony_society_idea_genderarmerie_2 = {
-			picture = GFX_idea_unknown
-			modifier = {
-				stability_factor = 0.15
-				resistance_damage_to_garrison = -0.2
-				required_garrison_factor = -0.1
-				operative_slot = 1
-				custom_modifier_tooltip = ZEX_MGY_goal_harmony_society_idea_effects_tt
-			}
-		}
-		ZEX_MGY_goal_harmony_society_idea_propaganda_2 = {
-			picture = GFX_idea_unknown
-			modifier = {
-				stability_factor = 0.05
-				democratic_drift = 0.1
-				industrial_capacity_factory = 0.05
-				political_power_gain = 0.2
-				custom_modifier_tooltip = ZEX_MGY_goal_harmony_society_idea_effects_tt
-			}
-		}
-		ZEX_MGY_goal_harmony_society_idea_genderarmerie_3 = {
-			picture = GFX_idea_unknown
-			modifier = {
-				stability_factor = 0.15
-				resistance_damage_to_garrison = -0.2
-				required_garrison_factor = -0.1
-				root_out_resistance_effectiveness_factor = 0.2
-				operative_slot = 1
-			}
-		}
-		ZEX_MGY_goal_harmony_society_idea_propaganda_3 = {
-			picture = GFX_idea_unknown
-			modifier = {
-				stability_factor = 0.05
-				democratic_drift = 0.2
-				industrial_capacity_factory = 0.05
-				political_power_gain = 0.25
 			}
 		}
 	}

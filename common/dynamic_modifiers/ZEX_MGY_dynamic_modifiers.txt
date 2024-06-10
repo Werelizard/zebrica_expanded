@@ -133,16 +133,11 @@ ZEX_MGY_no_vizier_impact_dynmod  = {
     political_power_gain = -0.5
 }
 
-ZEX_MGY_vizier_balance_dynmod = {
+ZEX_MGY_vizier_balance_dynmod = { #When the king is in power
     enable = {
         has_country_flag = zex_mgy_vizier_enabled_flag
     }
-    war_support_factor = ZEX_MGY_VIZIER_INFLUENCE_15
-    mobilization_speed = ZEX_MGY_VIZIER_INFLUENCE_15
-    political_advisor_cost_factor = ZEX_MGY_VIZIER_INFLUENCE_20
-    economy_cost_factor = ZEX_MGY_VIZIER_INFLUENCE_20
-    trade_laws_cost_factor = ZEX_MGY_VIZIER_INFLUENCE_20
-    mobilization_laws_cost_factor = ZEX_MGY_VIZIER_INFLUENCE_20
+    political_power_factor = ZEX_MGY_vizier_King_Balance_PoliticalFactorImpact
 }
 
 ZEX_MGY_vizier_balance_daily_cost_dynmod = {
@@ -155,7 +150,6 @@ ZEX_MGY_vizier_balance_daily_cost_dynmod = {
     }
     political_power_gain = -0.5
 }
-
 
 #
 # Debts

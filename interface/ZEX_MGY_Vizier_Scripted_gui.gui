@@ -47,6 +47,7 @@ guiTypes = {
 			spriteType = "GFX_ZEX_MGY_Vizier_Button"
 			pdx_tooltip = "ZEX_MGY_Vizier_Button_tt"
 			pdx_tooltip_delayed = "ZEX_MGY_Vizier_Button_extra_tt"
+			oversound = ui_menu_over
 		}
 	}
 
@@ -134,18 +135,21 @@ guiTypes = {
 			spriteType = "GFX_ZEX_MGY_Vizier_Gui_Left_Button"
 			position = { x = 185 y = 228 }
 			pdx_tooltip = ZEX_MGY_Vizier_Balance_Button_Left_tt
+			oversound = ui_menu_over
 		}
 		buttonType = {
 			name =  "ZEX_MGY_Vizier_Button_right"
 			spriteType = "GFX_ZEX_MGY_Vizier_Gui_Right_Button"
 			position = { x = 275 y = 228 }
 			pdx_tooltip = ZEX_MGY_Vizier_Balance_Button_Right_tt
+			oversound = ui_menu_over
 		}
 		buttonType = {
 			name =  "ZEX_MGY_Vizier_Button_middle"
 			spriteType = "GFX_ZEX_MGY_Vizier_Gui_Middle_Button"
 			position = { x = 230 y = 228 }
 			pdx_tooltip = ZEX_MGY_Vizier_Balance_Button_Middle_tt
+			oversound = ui_menu_over
 		}
 
 		#Portraits
