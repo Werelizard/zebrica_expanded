@@ -166,6 +166,9 @@ focus_tree = {
 		prerequisite = {
 			focus = ZEX_MGY_focus_lotussociety
 		}
+		mutually_exclusive = {
+			focus = ZEX_MGY_focus_emergencypowers
+		}
 		completion_reward = {
 
 		}
@@ -301,7 +304,7 @@ focus_tree = {
 
 		prerequisite = {
 			focus = ZEX_MGY_focus_nationalservice
-			focus = ZEX_MGY_focus_harmonystrongpony
+			focus = ZEX_MGY_focus_emergencypowers
 		}
 		completion_reward = {
 
@@ -318,162 +321,7 @@ focus_tree = {
 	######   ###  ##   #####    #####             ######   ####     ####    ####
 	#############################################################################
 
-	focus = {
-		id = ZEX_MGY_focus_harmonystrongpony
-		icon = GFX_ZEX_MGY_focus_harmonystrongpony
-		cost = 10
-		x = 5
-		y = 1
-
-		search_filters = {
-			FOCUS_FILTER_SHAADOOF
-			FOCUS_FILTER_POLITICAL
-		}
-
-		relative_position_id = ZEX_MGY_focus_kingspeech
-
-		prerequisite = {
-			focus = ZEX_MGY_focus_kingspeech
-		}
-		completion_reward = {
-
-		}
-	}
-
-	focus = {
-		id = ZEX_MGY_focus_bantradeunions
-		icon = GFX_ZEX_MGY_focus_bantradeunions
-		cost = 10
-		x = -4
-		y = 1
-		search_filters = {
-			FOCUS_FILTER_SHAADOOF
-			FOCUS_FILTER_INDUSTRY
-		}
-
-		relative_position_id = ZEX_MGY_focus_harmonystrongpony
-
-		prerequisite = {
-			focus = ZEX_MGY_focus_harmonystrongpony
-		}
-		completion_reward = {
-
-		}
-	}
-
-	focus = {
-		id = ZEX_MGY_focus_stackthedeck
-		icon = GFX_ZEX_MGY_focus_stackthedeck
-		cost = 10
-		x = 0
-		y = 1
-		search_filters = {
-			FOCUS_FILTER_SHAADOOF
-			FOCUS_FILTER_POLITICAL
-		}
-
-		relative_position_id = ZEX_MGY_focus_harmonystrongpony
-
-		prerequisite = {
-			focus = ZEX_MGY_focus_harmonystrongpony
-		}
-		completion_reward = {
-
-		}
-	}
-
-	focus = {
-		id = ZEX_MGY_focus_vizierandradio
-		icon = GFX_ZEX_MGY_focus_vizierandradio
-		cost = 10
-		x = 0
-		y = 2
-		search_filters = {
-			FOCUS_FILTER_POLITICAL
-			FOCUS_FILTER_SHAADOOF
-		}
-
-		relative_position_id = ZEX_MGY_focus_harmonystrongpony
-
-		prerequisite = {
-			focus = ZEX_MGY_focus_stackthedeck
-		}
-		completion_reward = {
-
-		}
-	}
-
-	focus = {
-		id = ZEX_MGY_focus_dicatorialpowers
-		icon = GFX_ZEX_MGY_focus_dicatorialpowers
-		cost = 10
-		x = -2
-		y = 1
-		search_filters = {
-			FOCUS_FILTER_SHAADOOF
-			FOCUS_FILTER_ZEX_UNREST
-		}
-
-		relative_position_id = ZEX_MGY_focus_harmonystrongpony
-
-		prerequisite = {
-			focus = ZEX_MGY_focus_harmonystrongpony
-		}
-		completion_reward = {
-
-		}
-	}
-
-	focus = {
-		id = ZEX_MGY_focus_dealwithprincess
-		icon = GFX_ZEX_MGY_focus_dealwithprincess
-		cost = 10
-		x = -2
-		y = 3
-		search_filters = {
-			FOCUS_FILTER_SHAADOOF
-			FOCUS_FILTER_POLITICAL
-		}
-
-		relative_position_id = ZEX_MGY_focus_harmonystrongpony
-
-		prerequisite = {
-			focus = ZEX_MGY_focus_dicatorialpowers
-		}
-		prerequisite = {
-			focus = ZEX_MGY_focus_stackthedeck
-		}
-		completion_reward = {
-
-		}
-	}
-
-	focus = {
-		id = ZEX_MGY_focus_nepoticadministration
-		icon = GFX_ZEX_MGY_focus_nepoticadministration
-		cost = 10
-		x = 0
-		y = 4
-		search_filters = {
-			FOCUS_FILTER_SHAADOOF
-			FOCUS_FILTER_POLITICAL
-		}
-
-		relative_position_id = ZEX_MGY_focus_harmonystrongpony
-
-		prerequisite = {
-			focus = ZEX_MGY_focus_vizierandradio
-		}
-		prerequisite = {
-			focus = ZEX_MGY_focus_dealwithprincess
-		}
-		mutually_exclusive = {
-			focus = ZEX_MGY_focus_admnistrativeexcellency
-		}
-		completion_reward = {
-
-		}
-	}
+	
 
 	####################################################################################################################################################################################################
 				###              ##                ##                ##                         ##       ##                                                    ###
@@ -486,10 +334,10 @@ focus_tree = {
 	####################################################################################################################################################################################################
 
 	focus = {
-		id = ZEX_MGY_focus_newvizier
-		icon = GFX_ZEX_MGY_focus_newvizier
+		id = ZEX_MGY_focus_adminsitrativecentralisation
+		icon = GFX_ZEX_MGY_focus_adminsitrativecentralisation
 		cost = 10
-		x = 9
+		x = 5
 		y = 1
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -506,20 +354,22 @@ focus_tree = {
 	}
 
 	focus = {
-		id = ZEX_MGY_focus_adminreforms
-		icon = GFX_ZEX_MGY_focus_adminreforms
+		id = ZEX_MGY_focus_emergencypowers
+		icon = GFX_ZEX_MGY_focus_emergencypowers
 		cost = 10
-		x = -2
-		y = 1
+		x = 1
+		y = 2
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
 
-		relative_position_id = ZEX_MGY_focus_newvizier
+		relative_position_id = ZEX_MGY_focus_kingspeech
 
 		prerequisite = {
-			focus = ZEX_MGY_focus_newvizier
-			focus = ZEX_MGY_focus_harmonystrongpony
+			focus = ZEX_MGY_focus_kingspeech
+		}
+		mutually_exclusive = {
+			focus = ZEX_MGY_focus_nationalservice
 		}
 		completion_reward = {
 
@@ -527,51 +377,71 @@ focus_tree = {
 	}
 
 	focus = {
-		id = ZEX_MGY_focus_renovatetheoffice
-		icon = GFX_ZEX_MGY_focus_renovatetheoffice
+		id = ZEX_MGY_focus_chancelleryrenovation
+		icon = GFX_ZEX_MGY_focus_chancelleryrenovation
+		cost = 10
+		x = 2
+		y = 1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+
+		relative_position_id = ZEX_MGY_focus_adminsitrativecentralisation
+
+		prerequisite = {
+			focus = ZEX_MGY_focus_adminsitrativecentralisation
+		}
+		completion_reward = {
+
+		}
+	}	
+
+	focus = {
+		id = ZEX_MGY_focus_restorethetreasury
+		icon = GFX_ZEX_MGY_focus_restorethetreasury
 		cost = 10
 		x = 0
-		y = 2
-		search_filters = {
-			FOCUS_FILTER_POLITICAL
-		}
-
-		relative_position_id = ZEX_MGY_focus_newvizier
-
-		prerequisite = {
-			focus = ZEX_MGY_focus_newvizier
-		}
-		prerequisite = {
-			focus = ZEX_MGY_focus_adminreforms
-		}
-		completion_reward = {
-
-		}
-	}
-
-	focus = {
-		id = ZEX_MGY_focus_harmonytradeunions
-		icon = GFX_ZEX_MGY_focus_harmonytradeunions
-		cost = 10
-		x = 2
 		y = 1
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
 
-		relative_position_id = ZEX_MGY_focus_newvizier
+		relative_position_id = ZEX_MGY_focus_adminsitrativecentralisation
 
 		prerequisite = {
-			focus = ZEX_MGY_focus_newvizier
+			focus = ZEX_MGY_focus_adminsitrativecentralisation
 		}
 		completion_reward = {
 
 		}
-	}
+	}	
 
 	focus = {
-		id = ZEX_MGY_focus_tacklegreed
-		icon = GFX_ZEX_MGY_focus_tacklegreed
+		id = ZEX_MGY_focus_nationalsecuritylaw
+		icon = GFX_ZEX_MGY_focus_nationalsecuritylaw
+		cost = 10
+		x = -2
+		y = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+
+		relative_position_id = ZEX_MGY_focus_adminsitrativecentralisation
+
+		prerequisite = {
+			focus = ZEX_MGY_focus_adminsitrativecentralisation
+		}
+		prerequisite = {
+			focus = ZEX_MGY_focus_emergencypowers
+		}
+		completion_reward = {
+
+		}
+	}	
+
+	focus = {
+		id = ZEX_MGY_focus_adminreform
+		icon = GFX_ZEX_MGY_focus_adminreform
 		cost = 10
 		x = 2
 		y = 2
@@ -579,10 +449,13 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 
-		relative_position_id = ZEX_MGY_focus_newvizier
+		relative_position_id = ZEX_MGY_focus_adminsitrativecentralisation
 
 		prerequisite = {
-			focus = ZEX_MGY_focus_harmonytradeunions
+			focus = ZEX_MGY_focus_chancelleryrenovation
+		}
+		prerequisite = {
+			focus = ZEX_MGY_focus_restorethetreasury
 		}
 		completion_reward = {
 
@@ -590,8 +463,8 @@ focus_tree = {
 	}
 
 	focus = {
-		id = ZEX_MGY_focus_finishreforms
-		icon = GFX_ZEX_MGY_focus_finishreforms
+		id = ZEX_MGY_focus_newbonds
+		icon = GFX_ZEX_MGY_focus_newbonds
 		cost = 10
 		x = 0
 		y = 3
@@ -599,36 +472,13 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 
-		relative_position_id = ZEX_MGY_focus_newvizier
+		relative_position_id = ZEX_MGY_focus_adminsitrativecentralisation
 
 		prerequisite = {
-			focus = ZEX_MGY_focus_tacklegreed
+			focus = ZEX_MGY_focus_chancelleryrenovation
 		}
 		prerequisite = {
-			focus = ZEX_MGY_focus_renovatetheoffice
-		}
-		completion_reward = {
-
-		}
-	}
-
-	focus = {
-		id = ZEX_MGY_focus_admnistrativeexcellency
-		icon = GFX_ZEX_MGY_focus_admnistrativeexcellency
-		cost = 10
-		x = -2
-		y = 4
-		search_filters = {
-			FOCUS_FILTER_POLITICAL
-		}
-
-		relative_position_id = ZEX_MGY_focus_newvizier
-
-		prerequisite = {
-			focus = ZEX_MGY_focus_adminreforms
-		}
-		mutually_exclusive = {
-			focus = ZEX_MGY_focus_nepoticadministration
+			focus = ZEX_MGY_focus_restorethetreasury
 		}
 		completion_reward = {
 

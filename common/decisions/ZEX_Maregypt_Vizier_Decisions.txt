@@ -2,7 +2,19 @@ ZEX_MAREGYPT_VIZIER_POWER = {
 	ZEX_MAREGYPT_VIZIER_EDICT_1 = {
 		cost = ZEX_MGY_vizier_King_Balance_VizierEdictCost
 	}
+	ZEX_MAREGYPT_VIZIER_EDICT_2 = {
+		cost = ZEX_MGY_vizier_King_Balance_VizierEdictCost
+	}
+	ZEX_MAREGYPT_VIZIER_EDICT_3 = {
+		cost = ZEX_MGY_vizier_King_Balance_VizierEdictCost
+	}
 	ZEX_MAREGYPT_KING_EDICT_1 = {
+		cost = ZEX_MGY_vizier_King_Balance_KingEdictCost
+	}
+	ZEX_MAREGYPT_KING_EDICT_2 = {
+		cost = ZEX_MGY_vizier_King_Balance_KingEdictCost
+	}
+	ZEX_MAREGYPT_KING_EDICT_3 = {
 		cost = ZEX_MGY_vizier_King_Balance_KingEdictCost
 	}
 }

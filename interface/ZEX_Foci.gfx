@@ -259,6 +259,30 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 
+	#Legitimise Lotus 
+	spriteType = {
+		name = "GFX_ZEX_MGY_focus_legitimiselotussociety"
+		textureFile = "gfx/interface/goals/MGY/KHF/zex_goal_mgy_legitimiselotussociety.tga"
+	}
+	spriteType = {
+		name = "GFX_ZEX_MGY_focus_legitimiselotussociety_shine"
+		textureFile = "gfx/interface/goals/MGY/KHF/zex_goal_mgy_legitimiselotussociety.tga"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/MGY/KHF/zex_goal_mgy_legitimiselotussociety.tga"			
+			animationtexturefile = "gfx/interface/goals/MGY/KHF/overlay_100_88.dds"
+			animationrotation = -90.0		
+			animationlooping = yes			
+			animationtime = 0.75			
+			animationdelay = 5		
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	
 	#Operation Golden Beetle
 	spriteType = {
 		name = "GFX_ZEX_MGY_focus_operationgoldenbeetle"
@@ -283,17 +307,113 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 
-	#  Shaa Doof  #
+	#
+	# Admin Reforms / Centralisation
+	#
+
+	#Emergency powers
 	spriteType = {
-		name = "GFX_ZEX_MGY_focus_harmonystrongpony"
-		textureFile = "gfx/interface/goals/MGY/KHF/zex_goal_mgy_harmonystrongpony.tga"
+		name = "GFX_ZEX_MGY_focus_emergencypowers"
+		textureFile = "gfx/interface/goals/MGY/KHF/zex_goal_mgy_emergencypowers.tga"
 	}
 	spriteType = {
-		name = "GFX_ZEX_MGY_focus_harmonystrongpony_shine"
-		textureFile = "gfx/interface/goals/MGY/KHF/zex_goal_mgy_harmonystrongpony.tga"
+		name = "GFX_ZEX_MGY_focus_emergencypowers_shine"
+		textureFile = "gfx/interface/goals/MGY/KHF/zex_goal_mgy_emergencypowers.tga"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/MGY/KHF/zex_goal_mgy_harmonystrongpony.tga"			
+			animationmaskfile = "gfx/interface/goals/MGY/KHF/zex_goal_mgy_emergencypowers.tga"			
+			animationtexturefile = "gfx/interface/goals/MGY/KHF/overlay_100_88.dds"
+			animationrotation = -90.0		
+			animationlooping = yes			
+			animationtime = 0.75			
+			animationdelay = 5		
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	# National Security Law
+	spriteType = {
+		name = "GFX_ZEX_MGY_focus_nationalsecuritylaw"
+		textureFile = "gfx/interface/goals/MGY/KHF/zex_goal_mgy_nationalsecuritylaw.tga"
+	}
+	spriteType = {
+		name = "GFX_ZEX_MGY_focus_nationalsecuritylaw_shine"
+		textureFile = "gfx/interface/goals/MGY/KHF/zex_goal_mgy_nationalsecuritylaw.tga"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/MGY/KHF/zex_goal_mgy_nationalsecuritylaw.tga"			
+			animationtexturefile = "gfx/interface/goals/MGY/KHF/overlay_100_88.dds"
+			animationrotation = -90.0		
+			animationlooping = yes			
+			animationtime = 0.75			
+			animationdelay = 5		
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	# Refill Coffers
+	spriteType = {
+		name = "GFX_ZEX_MGY_focus_restorethetreasury"
+		textureFile = "gfx/interface/goals/MGY/KHF/zex_goal_mgy_restorethetreasury.tga"
+	}
+	spriteType = {
+		name = "GFX_ZEX_MGY_focus_restorethetreasury_shine"
+		textureFile = "gfx/interface/goals/MGY/KHF/zex_goal_mgy_restorethetreasury.tga"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/MGY/KHF/zex_goal_mgy_restorethetreasury.tga"			
+			animationtexturefile = "gfx/interface/goals/MGY/KHF/overlay_100_88.dds"
+			animationrotation = -90.0		
+			animationlooping = yes			
+			animationtime = 0.75			
+			animationdelay = 5		
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	# Reform Chancellry
+	spriteType = {
+		name = "GFX_ZEX_MGY_focus_chancelleryrenovation"
+		textureFile = "gfx/interface/goals/MGY/KHF/zex_goal_mgy_chancelleryrenovation.tga"
+	}
+	spriteType = {
+		name = "GFX_ZEX_MGY_focus_chancelleryrenovation_shine"
+		textureFile = "gfx/interface/goals/MGY/KHF/zex_goal_mgy_chancelleryrenovation.tga"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/MGY/KHF/zex_goal_mgy_chancelleryrenovation.tga"			
+			animationtexturefile = "gfx/interface/goals/MGY/KHF/overlay_100_88.dds"
+			animationrotation = -90.0		
+			animationlooping = yes			
+			animationtime = 0.75			
+			animationdelay = 5		
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	# National colelge 
+	spriteType = {
+		name = "GFX_ZEX_MGY_focus_adminreform"
+		textureFile = "gfx/interface/goals/MGY/KHF/zex_goal_mgy_adminreform.tga"
+	}
+	spriteType = {
+		name = "GFX_ZEX_MGY_focus_adminreform_shine"
+		textureFile = "gfx/interface/goals/MGY/KHF/zex_goal_mgy_adminreform.tga"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/MGY/KHF/zex_goal_mgy_adminreform.tga"			
 			animationtexturefile = "gfx/interface/goals/MGY/KHF/overlay_100_88.dds"
 			animationrotation = -90.0		
 			animationlooping = yes			
@@ -307,17 +427,17 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 
-	# Consolidate powers 
+	#Land Reform GFX_ZEX_MGY_focus_newbonds
 	spriteType = {
-		name = "GFX_ZEX_MGY_focus_dicatorialpowers"
-		textureFile = "gfx/interface/goals/MGY/KHF/zex_goal_mgy_dicatorialpowers.tga"
+		name = "GFX_ZEX_MGY_focus_newbonds"
+		textureFile = "gfx/interface/goals/MGY/KHF/zex_goal_mgy_newbonds.tga"
 	}
 	spriteType = {
-		name = "GFX_ZEX_MGY_focus_dicatorialpowers_shine"
-		textureFile = "gfx/interface/goals/MGY/KHF/zex_goal_mgy_dicatorialpowers.tga"
+		name = "GFX_ZEX_MGY_focus_newbonds_shine"
+		textureFile = "gfx/interface/goals/MGY/KHF/zex_goal_mgy_newbonds.tga"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/MGY/KHF/zex_goal_mgy_dicatorialpowers.tga"			
+			animationmaskfile = "gfx/interface/goals/MGY/KHF/zex_goal_mgy_newbonds.tga"			
 			animationtexturefile = "gfx/interface/goals/MGY/KHF/overlay_100_88.dds"
 			animationrotation = -90.0		
 			animationlooping = yes			
@@ -331,137 +451,17 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 
-	# Stack the Deck
+	#Begin centralisation 
 	spriteType = {
-		name = "GFX_ZEX_MGY_focus_stackthedeck"
-		textureFile = "gfx/interface/goals/MGY/KHF/zex_goal_mgy_stackthedeck.tga"
+		name = "GFX_ZEX_MGY_focus_adminsitrativecentralisation"
+		textureFile = "gfx/interface/goals/MGY/KHF/zex_goal_mgy_adminsitrativecentralisation.tga"
 	}
 	spriteType = {
-		name = "GFX_ZEX_MGY_focus_stackthedeck_shine"
-		textureFile = "gfx/interface/goals/MGY/KHF/zex_goal_mgy_stackthedeck.tga"
+		name = "GFX_ZEX_MGY_focus_adminsitrativecentralisation_shine"
+		textureFile = "gfx/interface/goals/MGY/KHF/zex_goal_mgy_adminsitrativecentralisation.tga"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/MGY/KHF/zex_goal_mgy_stackthedeck.tga"			
-			animationtexturefile = "gfx/interface/goals/MGY/KHF/overlay_100_88.dds"
-			animationrotation = -90.0		
-			animationlooping = yes			
-			animationtime = 0.75			
-			animationdelay = 5		
-			animationblendmode = "add"       
-			animationtype = "scrolling"      
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 } 
-		}
-		legacy_lazy_load = no
-	}
-
-	# Vizier and Radio
-	spriteType = {
-		name = "GFX_ZEX_MGY_focus_vizierandradio"
-		textureFile = "gfx/interface/goals/MGY/KHF/zex_goal_mgy_vizierandradio.tga"
-	}
-	spriteType = {
-		name = "GFX_ZEX_MGY_focus_vizierandradio_shine"
-		textureFile = "gfx/interface/goals/MGY/KHF/zex_goal_mgy_vizierandradio.tga"
-		effectFile = "gfx/FX/buttonstate.lua"
-		animation = {
-			animationmaskfile = "gfx/interface/goals/MGY/KHF/zex_goal_mgy_vizierandradio.tga"			
-			animationtexturefile = "gfx/interface/goals/MGY/KHF/overlay_100_88.dds"
-			animationrotation = -90.0		
-			animationlooping = yes			
-			animationtime = 0.75			
-			animationdelay = 5		
-			animationblendmode = "add"       
-			animationtype = "scrolling"      
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 } 
-		}
-		legacy_lazy_load = no
-	}
-
-	# Deal with Princess 
-	spriteType = {
-		name = "GFX_ZEX_MGY_focus_dealwithprincess"
-		textureFile = "gfx/interface/goals/MGY/KHF/zex_goal_mgy_dealwithprincess.tga"
-	}
-	spriteType = {
-		name = "GFX_ZEX_MGY_focus_dealwithprincess_shine"
-		textureFile = "gfx/interface/goals/MGY/KHF/zex_goal_mgy_dealwithprincess.tga"
-		effectFile = "gfx/FX/buttonstate.lua"
-		animation = {
-			animationmaskfile = "gfx/interface/goals/MGY/KHF/zex_goal_mgy_dealwithprincess.tga"			
-			animationtexturefile = "gfx/interface/goals/MGY/KHF/overlay_100_88.dds"
-			animationrotation = -90.0		
-			animationlooping = yes			
-			animationtime = 0.75			
-			animationdelay = 5		
-			animationblendmode = "add"       
-			animationtype = "scrolling"      
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 } 
-		}
-		legacy_lazy_load = no
-	}
-
-	#Legitimise Lotus 
-	spriteType = {
-		name = "GFX_ZEX_MGY_focus_legitimiselotussociety"
-		textureFile = "gfx/interface/goals/MGY/KHF/zex_goal_mgy_legitimiselotussociety.tga"
-	}
-	spriteType = {
-		name = "GFX_ZEX_MGY_focus_legitimiselotussociety_shine"
-		textureFile = "gfx/interface/goals/MGY/KHF/zex_goal_mgy_legitimiselotussociety.tga"
-		effectFile = "gfx/FX/buttonstate.lua"
-		animation = {
-			animationmaskfile = "gfx/interface/goals/MGY/KHF/zex_goal_mgy_legitimiselotussociety.tga"			
-			animationtexturefile = "gfx/interface/goals/MGY/KHF/overlay_100_88.dds"
-			animationrotation = -90.0		
-			animationlooping = yes			
-			animationtime = 0.75			
-			animationdelay = 5		
-			animationblendmode = "add"       
-			animationtype = "scrolling"      
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 } 
-		}
-		legacy_lazy_load = no
-	}
-
-	#Ban Trade Unions 
-	spriteType = {
-		name = "GFX_ZEX_MGY_focus_bantradeunions"
-		textureFile = "gfx/interface/goals/MGY/KHF/zex_goal_mgy_bantradeunions.tga"
-	}
-	spriteType = {
-		name = "GFX_ZEX_MGY_focus_bantradeunions_shine"
-		textureFile = "gfx/interface/goals/MGY/KHF/zex_goal_mgy_bantradeunions.tga"
-		effectFile = "gfx/FX/buttonstate.lua"
-		animation = {
-			animationmaskfile = "gfx/interface/goals/MGY/KHF/zex_goal_mgy_bantradeunions.tga"			
-			animationtexturefile = "gfx/interface/goals/MGY/KHF/overlay_100_88.dds"
-			animationrotation = -90.0		
-			animationlooping = yes			
-			animationtime = 0.75			
-			animationdelay = 5		
-			animationblendmode = "add"       
-			animationtype = "scrolling"      
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 } 
-		}
-		legacy_lazy_load = no
-	}
-
-	#Primacy of Aristocracy 
-	spriteType = {
-		name = "GFX_ZEX_MGY_focus_nepoticadministration"
-		textureFile = "gfx/interface/goals/MGY/KHF/zex_goal_mgy_nepoticadministration.tga"
-	}
-	spriteType = {
-		name = "GFX_ZEX_MGY_focus_nepoticadministration_shine"
-		textureFile = "gfx/interface/goals/MGY/KHF/zex_goal_mgy_nepoticadministration.tga"
-		effectFile = "gfx/FX/buttonstate.lua"
-		animation = {
-			animationmaskfile = "gfx/interface/goals/MGY/KHF/zex_goal_mgy_nepoticadministration.tga"			
+			animationmaskfile = "gfx/interface/goals/MGY/KHF/zex_goal_mgy_adminsitrativecentralisation.tga"			
 			animationtexturefile = "gfx/interface/goals/MGY/KHF/overlay_100_88.dds"
 			animationrotation = -90.0		
 			animationlooping = yes			
