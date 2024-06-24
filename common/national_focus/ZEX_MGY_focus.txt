@@ -41,7 +41,18 @@ focus_tree = {
 		x = 0
 		y = 0
 		completion_reward = {
+			custom_effect_tooltip = ZEX_MGY_focus_kingspeech_tt
+			custom_effect_tooltip = zex_mgy_event_emptyline_tt
+			add_political_power = 25
+		}
 
+		cancelable = no
+
+		select_effect = {
+			country_event = {
+				id = ZEX_MGY_foci.11
+				days = 1
+			}
 		}
 	}
 
@@ -541,7 +552,7 @@ focus_tree = {
 
 	focus = {
 		id = ZEX_MGY_focus_nationalsecurityact
-		icon = GFX_ZEX_MGY_focus_nationalsecurityact
+		icon = GFX_ZEX_MGY_focus_nationalsecuritylaw
 		cost = 10
 		x = -3
 		y = 2
@@ -642,6 +653,9 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = ZEX_MGY_focus_landreform
+		}
+		prerequisite = {
+			focus = ZEX_MGY_focus_railroad
 		}
 		completion_reward = {
 

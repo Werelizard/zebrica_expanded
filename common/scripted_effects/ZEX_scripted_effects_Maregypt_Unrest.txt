@@ -1200,3 +1200,54 @@ ZEX_MGY_Political_Unrest_Pacify_Button = {
 		value = 1
 	}
 }
+
+zex_mgy_update_unrest_check_manual = {
+	ZEX_MGY_CALCULATE_PERCENTILE_VALUES = yes
+	ZEX_MGY_GET_AVERAGE_UNREST = yes
+	ZEX_MGY_UPDATE_LOCAL_UNREST_IMPACT = yes
+	clamp_variable = {
+		var = ZEX_MGY_VAR_Somnambula_Unrest
+		max = 100
+		min = 0
+	}
+	clamp_variable = {
+		var = ZEX_MGY_VAR_Sineighi_Unrest
+		max = 100
+		min = 0
+	}
+	clamp_variable = {
+		var = ZEX_MGY_VAR_Maneisrata_Unrest
+		max = 100
+		min = 0
+	}
+	clamp_variable = {
+		var = ZEX_MGY_VAR_Delta_Unrest
+		max = 100
+		min = 0
+	}
+	clamp_variable = {
+		var = ZEX_MGY_VAR_Eastdesert_Unrest_negative
+		max = 100
+		min = 0
+	}
+	clamp_variable = {
+		var = ZEX_MGY_VAR_Manephis_Unrest
+		max = 100
+		min = 0
+	}
+	clamp_variable = {
+		var = ZEX_MGY_VAR_UpperMaregypt_Unrest
+		max = 100
+		min = 0
+	}
+	clamp_variable = {
+		var = ZEX_MGY_VAR_Zush_Unrest
+		max = 100
+		min = 0
+	}
+	clamp_variable = {
+		var = ZEX_MGY_VAR_Kaneigh_Unrest
+		max = 100
+		min = 0
+	}
+}

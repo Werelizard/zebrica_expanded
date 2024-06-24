@@ -1,0 +1,291 @@
+# Scripted Effects to Manually Increase the Unrest of Provinces (by 2)
+zex_mgy_increase_unrest_somnambula = {
+	custom_effect_tooltip = zex_mgy_increase_unrest_somnambula_tt
+	add_to_variable = {
+		ZEX_MGY_VAR_Somnambula_Unrest = 2
+	}
+	zex_mgy_update_unrest_check_manual = yes
+}
+
+zex_mgy_increase_unrest_delta = {
+	custom_effect_tooltip = zex_mgy_increase_unrest_delta_tt
+	add_to_variable = {
+		ZEX_MGY_VAR_Delta_Unrest = 2
+	}
+	zex_mgy_update_unrest_check_manual = yes
+}
+
+zex_mgy_increase_unrest_sineighi = {
+	custom_effect_tooltip = zex_mgy_increase_unrest_sineighi_tt
+	add_to_variable = {
+		ZEX_MGY_VAR_Sineighi_Unrest = 2
+	}
+	zex_mgy_update_unrest_check_manual = yes
+}
+
+zex_mgy_increase_unrest_maneisrata = {
+	custom_effect_tooltip = zex_mgy_increase_unrest_maneisrata_tt
+	add_to_variable = {
+		ZEX_MGY_VAR_Maneisrata_Unrest = 2
+	}
+	zex_mgy_update_unrest_check_manual = yes
+}
+
+zex_mgy_increase_unrest_manephis = {
+	custom_effect_tooltip = zex_mgy_increase_unrest_manephis_tt
+	add_to_variable = {
+		ZEX_MGY_VAR_Manephis_Unrest = 2
+	}
+	zex_mgy_update_unrest_check_manual = yes
+}
+
+zex_mgy_increase_unrest_desert = {
+	custom_effect_tooltip = zex_mgy_increase_unrest_desert_tt
+	add_to_variable = {
+		ZEX_MGY_VAR_Eastdesert_Unrest = 2
+	}
+	zex_mgy_update_unrest_check_manual = yes
+}
+
+zex_mgy_increase_unrest_upper_maregypt = {
+	custom_effect_tooltip = zex_mgy_increase_unrest_upper_maregypt_tt
+	add_to_variable = {
+		ZEX_MGY_VAR_UpperMaregypt_Unrest = 2
+	}
+	zex_mgy_update_unrest_check_manual = yes
+}
+
+zex_mgy_increase_unrest_zush = {
+	custom_effect_tooltip = zex_mgy_increase_unrest_zush_tt
+	add_to_variable = {
+		ZEX_MGY_VAR_Zush_Unrest = 2
+	}
+	zex_mgy_update_unrest_check_manual = yes
+}
+
+zex_mgy_increase_unrest_kaneigh = {
+	custom_effect_tooltip = zex_mgy_increase_unrest_kaneigh_tt
+	add_to_variable = {
+		ZEX_MGY_VAR_Kaneigh_Unrest = 2
+	}
+	zex_mgy_update_unrest_check_manual = yes
+}
+
+#Scripted effects to Manualy Decrease the Unrest of Provinces (by 2)
+zex_mgy_decrease_unrest_somnambula = {
+	custom_effect_tooltip = zex_mgy_decrease_unrest_somnambula_tt
+	add_to_variable = {
+		ZEX_MGY_VAR_Somnambula_Unrest = -2
+	}
+	zex_mgy_update_unrest_check_manual = yes
+}
+
+zex_mgy_decrease_unrest_delta = {
+	custom_effect_tooltip = zex_mgy_decrease_unrest_delta_tt
+	add_to_variable = {
+		ZEX_MGY_VAR_Delta_Unrest = -2
+	}
+	zex_mgy_update_unrest_check_manual = yes
+}
+
+zex_mgy_decrease_unrest_sineighi = {
+	custom_effect_tooltip = zex_mgy_decrease_unrest_sineighi_tt
+	add_to_variable = {
+		ZEX_MGY_VAR_Sineighi_Unrest = -2
+	}
+	zex_mgy_update_unrest_check_manual = yes
+}
+
+zex_mgy_decrease_unrest_maneisrata = {
+	custom_effect_tooltip = zex_mgy_decrease_unrest_maneisrata_tt
+	add_to_variable = {
+		ZEX_MGY_VAR_Maneisrata_Unrest = -2
+	}
+	zex_mgy_update_unrest_check_manual = yes
+}
+
+zex_mgy_decrease_unrest_manephis = {
+	custom_effect_tooltip = zex_mgy_decrease_unrest_manephis_tt
+	add_to_variable = {
+		ZEX_MGY_VAR_Manephis_Unrest = -2
+	}
+	zex_mgy_update_unrest_check_manual = yes
+}
+
+zex_mgy_decrease_unrest_desert = {
+	custom_effect_tooltip = zex_mgy_decrease_unrest_desert_tt
+	add_to_variable = {
+		ZEX_MGY_VAR_Eastdesert_Unrest = -2
+	}
+	zex_mgy_update_unrest_check_manual = yes
+}
+
+zex_mgy_decrease_unrest_upper_maregypt = {
+	custom_effect_tooltip = zex_mgy_decrease_unrest_upper_maregypt_tt
+	add_to_variable = {
+		ZEX_MGY_VAR_UpperMaregypt_Unrest = -2
+	}
+	zex_mgy_update_unrest_check_manual = yes
+}
+
+zex_mgy_decrease_unrest_zush = {
+	custom_effect_tooltip = zex_mgy_decrease_unrest_zush_tt
+	add_to_variable = {
+		ZEX_MGY_VAR_Zush_Unrest = -2
+	}
+	zex_mgy_update_unrest_check_manual = yes
+}
+
+zex_mgy_decrease_unrest_kaneigh = {
+	custom_effect_tooltip = zex_mgy_decrease_unrest_kaneigh_tt
+	add_to_variable = {
+		ZEX_MGY_VAR_Kaneigh_Unrest = 2
+	}
+	zex_mgy_update_unrest_check_manual = yes
+}
+
+# Scripted Effects to Manually Increase the Unrest of Provinces (by 5)
+zex_mgy_large_increase_unrest_somnambula = {
+	custom_effect_tooltip = zex_mgy_large_increase_unrest_somnambula_tt
+	add_to_variable = {
+		ZEX_MGY_VAR_Somnambula_Unrest = 5
+	}
+	zex_mgy_update_unrest_check_manual = yes
+}
+
+zex_mgy_large_increase_unrest_delta = {
+	custom_effect_tooltip = zex_mgy_large_increase_unrest_delta_tt
+	add_to_variable = {
+		ZEX_MGY_VAR_Delta_Unrest = 5
+	}
+	zex_mgy_update_unrest_check_manual = yes
+}
+
+zex_mgy_large_increase_unrest_sineighi = {
+	custom_effect_tooltip = zex_mgy_large_increase_unrest_sineighi_tt
+	add_to_variable = {
+		ZEX_MGY_VAR_Sineighi_Unrest = 5
+	}
+	zex_mgy_update_unrest_check_manual = yes
+}
+
+zex_mgy_large_increase_unrest_maneisrata = {
+	custom_effect_tooltip = zex_mgy_large_increase_unrest_maneisrata_tt
+	add_to_variable = {
+		ZEX_MGY_VAR_Maneisrata_Unrest = 5
+	}
+	zex_mgy_update_unrest_check_manual = yes
+}
+
+zex_mgy_large_increase_unrest_manephis = {
+	custom_effect_tooltip = zex_mgy_large_increase_unrest_manephis_tt
+	add_to_variable = {
+		ZEX_MGY_VAR_Manephis_Unrest = 5
+	}
+	zex_mgy_update_unrest_check_manual = yes
+}
+
+zex_mgy_large_increase_unrest_desert = {
+	custom_effect_tooltip = zex_mgy_large_increase_unrest_desert_tt
+	add_to_variable = {
+		ZEX_MGY_VAR_Eastdesert_Unrest = 5
+	}
+	zex_mgy_update_unrest_check_manual = yes
+}
+
+zex_mgy_large_increase_unrest_upper_maregypt = {
+	custom_effect_tooltip = zex_mgy_large_increase_unrest_upper_maregypt_tt
+	add_to_variable = {
+		ZEX_MGY_VAR_UpperMaregypt_Unrest = 5
+	}
+	zex_mgy_update_unrest_check_manual = yes
+}
+
+zex_mgy_large_increase_unrest_zush = {
+	custom_effect_tooltip = zex_mgy_large_increase_unrest_zush_tt
+	add_to_variable = {
+		ZEX_MGY_VAR_Zush_Unrest = 5
+	}
+	zex_mgy_update_unrest_check_manual = yes
+}
+
+zex_mgy_large_increase_unrest_kaneigh = {
+	custom_effect_tooltip = zex_mgy_large_increase_unrest_kaneigh_tt
+	add_to_variable = {
+		ZEX_MGY_VAR_Kaneigh_Unrest = 5
+	}
+	zex_mgy_update_unrest_check_manual = yes
+}
+
+#Scripted effects to Manualy Decrease the Unrest of Provinces (by 5)
+zex_mgy_large_decrease_unrest_somnambula = {
+	custom_effect_tooltip = zex_mgy_large_decrease_unrest_somnambula_tt
+	add_to_variable = {
+		ZEX_MGY_VAR_Somnambula_Unrest = -5
+	}
+	zex_mgy_update_unrest_check_manual = yes
+}
+
+zex_mgy_large_decrease_unrest_delta = {
+	custom_effect_tooltip = zex_mgy_large_decrease_unrest_delta_tt
+	add_to_variable = {
+		ZEX_MGY_VAR_Delta_Unrest = -5
+	}
+	zex_mgy_update_unrest_check_manual = yes
+}
+
+zex_mgy_large_decrease_unrest_sineighi = {
+	custom_effect_tooltip = zex_mgy_large_decrease_unrest_sineighi_tt
+	add_to_variable = {
+		ZEX_MGY_VAR_Sineighi_Unrest = -5
+	}
+	zex_mgy_update_unrest_check_manual = yes
+}
+
+zex_mgy_large_decrease_unrest_maneisrata = {
+	custom_effect_tooltip = zex_mgy_large_decrease_unrest_maneisrata_tt
+	add_to_variable = {
+		ZEX_MGY_VAR_Maneisrata_Unrest = -5
+	}
+	zex_mgy_update_unrest_check_manual = yes
+}
+
+zex_mgy_large_decrease_unrest_manephis = {
+	custom_effect_tooltip = zex_mgy_large_decrease_unrest_manephis_tt
+	add_to_variable = {
+		ZEX_MGY_VAR_Manephis_Unrest = -5
+	}
+	zex_mgy_update_unrest_check_manual = yes
+}
+
+zex_mgy_large_decrease_unrest_desert = {
+	custom_effect_tooltip = zex_mgy_large_decrease_unrest_desert_tt
+	add_to_variable = {
+		ZEX_MGY_VAR_Eastdesert_Unrest = -5
+	}
+	zex_mgy_update_unrest_check_manual = yes
+}
+
+zex_mgy_large_decrease_unrest_upper_maregypt = {
+	custom_effect_tooltip = zex_mgy_large_decrease_unrest_upper_maregypt_tt
+	add_to_variable = {
+		ZEX_MGY_VAR_UpperMaregypt_Unrest = -5
+	}
+	zex_mgy_update_unrest_check_manual = yes
+}
+
+zex_mgy_large_decrease_unrest_zush = {
+	custom_effect_tooltip = zex_mgy_large_decrease_unrest_zush_tt
+	add_to_variable = {
+		ZEX_MGY_VAR_Zush_Unrest = -5
+	}
+	zex_mgy_update_unrest_check_manual = yes
+}
+
+zex_mgy_large_decrease_unrest_kaneigh = {
+	custom_effect_tooltip = zex_mgy_large_decrease_unrest_kaneigh_tt
+	add_to_variable = {
+		ZEX_MGY_VAR_Kaneigh_Unrest = 5
+	}
+	zex_mgy_update_unrest_check_manual = yes
+}

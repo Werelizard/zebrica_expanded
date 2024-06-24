@@ -1,2 +1,85 @@
 ﻿l_english:
- ZEX_MGY_INTRO_DESC:0 "The §FKingdom of Maregypt§!, the jewel of the Neighle, harmony’s stronghold in §YZebrica§!, once basked in the glory of its empire, a realm which centuries ago stretched from Zongola to Coltoba, exacting tribute from all the would-be princelings and warlords that roamed the Zebharan sands.\n\nBut time is cruel, and Maregypt can now only languish in the shadow of the pyramids of past, greater kings. The country lays in practical ruins, an agricultural rump all but holding its ravaged economy from complete bankruptcy; the §CStorm King's§! rampage pummeled the Kingdom’s armies to nothing, robbing it of its last great monarch and princes, spreading misery and defeat wherever the Yetis marched. Had it not been for §0Equestria§! - there might very well not be a Maregypt to speak of.\n\nAnd somehow, things have only gotten worse: §YKing Khefer§!, while well-meaning, has yet to prove himself anything but a far cry from the monarch his fellow ponies need him to be. §1Somnambula§!, who once served as a beacon of stability, has left on a self-imposed exile. §8Shaa Doof§!, the ailing Vizier and war hero, appears to be all that stands between the current, precarious status quo and the government’s total collapse. This chaos has only served to embolden and further radicalise the §tsocialist§! and §Lrepublican§! political elements, something which has, in turn, caused an uptick in reactionary activity.\n\nMaregypt is broken. Maregypt, land of necropolises, birthplace of Zebrican civilisation, is dying. But here, in these sands, the wise pony knows that death is never a certainty."
+ #Empty line
+ zex_mgy_event_emptyline_tt:0 " \n"
+
+ #Event-related effects
+ zex_mgy_increase_unrest_somnambula_tt:0 "The £local_unrest §Ylocal unrest§! in §YSomnambula§! will slightly §tincrease§!."
+ zex_mgy_decrease_unrest_somnambula_tt:0 "The £local_unrest §Ylocal unrest§! in §YSomnambula§! will slightly §Gdecrease§!."
+ zex_mgy_large_increase_unrest_somnambula_tt:0 "The £local_unrest §Ylocal unrest§! in §YSomnambula§! will greatly §tincrease§!."
+ zex_mgy_large_decrease_unrest_somnambula_tt:0 "The £local_unrest §Ylocal unrest§! in §YSomnambula§! will greatly §Gdecrease§!."
+
+ zex_mgy_increase_unrest_delta_tt:0 "The £local_unrest §Ylocal unrest§! in §Ythe Delta§! will slightly §tincrease§!."
+ zex_mgy_decrease_unrest_delta_tt:0 "The £local_unrest §Ylocal unrest§! in §Ythe Delta§! will slightly §Gdecrease§!."
+ zex_mgy_large_increase_unrest_delta_tt:0 "The £local_unrest §Ylocal unrest§! in §Ythe Delta§! will greatly §tincrease§!."
+ zex_mgy_large_decrease_unrest_delta_tt:0 "The £local_unrest §Ylocal unrest§! in §Ythe Delta§! will greatly §Gdecrease§!."
+
+ zex_mgy_increase_unrest_sineighi_tt:0 "The £local_unrest §Ylocal unrest§! in §Ythe Sineighi§! will slightly §tincrease§!."
+ zex_mgy_decrease_unrest_sineighi_tt:0 "The £local_unrest §Ylocal unrest§! in §Ythe Sineighi§! will slightly §Gdecrease§!."
+ zex_mgy_large_increase_unrest_sineighi_tt:0 "The £local_unrest §Ylocal unrest§! in §Ythe Sineighi§! will greatly §tincrease§!."
+ zex_mgy_large_decrease_unrest_sineighi_tt:0 "The £local_unrest §Ylocal unrest§! in §Ythe Sineighi§! will greatly §Gdecrease§!."
+
+ zex_mgy_increase_unrest_maneisrata_tt:0 "The £local_unrest §Ylocal unrest§! in §YManeisrata§! will slightly §tincrease§!."
+ zex_mgy_decrease_unrest_maneisrata_tt:0 "The £local_unrest §Ylocal unrest§! in §YManeisrata§! will slightly §Gdecrease§!."
+ zex_mgy_large_increase_unrest_maneisrata_tt:0 "The £local_unrest §Ylocal unrest§! in §YManeisrata§! will greatly §tincrease§!."
+ zex_mgy_large_decrease_unrest_maneisrata_tt:0 "The £local_unrest §Ylocal unrest§! in §YManeisrata§! will greatly §Gdecrease§!."
+
+ zex_mgy_increase_unrest_manephis_tt:0 "The £local_unrest §Ylocal unrest§! in §YManephis§! will slightly §tincrease§!."
+ zex_mgy_decrease_unrest_manephis_tt:0 "The £local_unrest §Ylocal unrest§! in §YManephis§! will slightly §Gdecrease§!."
+ zex_mgy_large_increase_unrest_manephis_tt:0 "The £local_unrest §Ylocal unrest§! in §YManephis§! will greatly §tincrease§!."
+ zex_mgy_large_decrease_unrest_manephis_tt:0 "The £local_unrest §Ylocal unrest§! in §YManephis§! will greatly §Gdecrease§!."
+
+ zex_mgy_increase_unrest_upper_maregypt_tt:0 "The £local_unrest §Ylocal unrest§! in §YUpper Maregypt§! will slightly §tincrease§!."
+ zex_mgy_decrease_unrest_upper_maregypt_tt:0 "The £local_unrest §Ylocal unrest§! in §YUpper Maregypt§! will slightly §Gdecrease§!."
+ zex_mgy_large_increase_unrest_upper_maregypt_tt:0 "The £local_unrest §Ylocal unrest§! in §YUpper Maregypt§! will greatly §tincrease§!."
+ zex_mgy_large_decrease_unrest_upper_maregypt_tt:0 "The £local_unrest §Ylocal unrest§! in §YUpper Maregypt§! will greatly §Gdecrease§!."
+
+ zex_mgy_increase_unrest_desert_tt:0 "The £local_unrest §Ylocal unrest§! in the §YEastern Desert§! will slightly §tincrease§!."
+ zex_mgy_decrease_unrest_desert_tt:0 "The £local_unrest §Ylocal unrest§! in the §YEastern Desert§! will slightly §Gdecrease§!."
+ zex_mgy_large_increase_unrest_desert_tt:0 "The £local_unrest §Ylocal unrest§! in the §YEastern Desert§! will greatly §tincrease§!."
+ zex_mgy_large_decrease_unrest_desert_tt:0 "The £local_unrest §Ylocal unrest§! in the §YEastern Desert§! will greatly §Gdecrease§!."
+
+ zex_mgy_increase_unrest_zush_tt:0 "The £local_unrest §Ylocal unrest§! in §YZush§! will slightly §tincrease§!."
+ zex_mgy_decrease_unrest_zush_tt:0 "The £local_unrest §Ylocal unrest§! in §YZush§! will slightly §Gdecrease§!."
+ zex_mgy_large_increase_unrest_zush_tt:0 "The £local_unrest §Ylocal unrest§! in §YZush§! will greatly §tincrease§!."
+ zex_mgy_large_decrease_unrest_zush_tt:0 "The £local_unrest §Ylocal unrest§! in §YZush§! will greatly §Gdecrease§!."
+
+ zex_mgy_increase_unrest_kaneigh_tt:0 "The £local_unrest §Ylocal unrest§! in §YKaneigh§! will slightly §tincrease§!."
+ zex_mgy_decrease_unrest_kaneigh_tt:0 "The £local_unrest §Ylocal unrest§! in §YKaneigh§! will slightly §Gdecrease§!."
+ zex_mgy_large_increase_unrest_kaneigh_tt:0 "The £local_unrest §Ylocal unrest§! in §YKaneigh§! will greatly §tincrease§!."
+ zex_mgy_large_decrease_unrest_kaneigh_tt:0 "The £local_unrest §Ylocal unrest§! in §YKaneigh§! will greatly §Gdecrease§!."
+
+
+ # Events - the king's speech
+ ZEX_MGY_foci.11.title:0 "The King's Speech"
+ ZEX_MGY_foci.11.desc:0 "While it is true that the young Pharaoh had always found public speaking be particularly challenging, he was now finding himself incapable of even putting ink to the paper sitting before him. His hooves uselessly rested atop his desk - the gnawing urgency brought on by the looming deadline creeping throughout his arms and legs - while his eyes darted across his private office, from the poetry-filled shelf to the stack of reports, papers and other vital correspondance neatly stacked in a disorganised pile by the window. The weight of the matter was not lost on him. It never was, but that hardly ever seemed to matter. For the next hour he settled in a routine, aimlessly trotting from one side of the chamber to the other, his weary, nervous glance darting from his duty to the portait of his father adorning the wall.\n\nA knock came from the door.\n\nShaa Doof's voice called out to the King as the Vizier entered - alone. 'Is something the matter, your excellency?' the older pony asked, his voice as calm as the river.\n'It's nothing,' the King quickly replied, 'I am merely...looking for the right words. The right pacing.'\n'I see,' the Vizier quietly said, throwing a quick, worried look at the blank page sitting atop the desk, 'perhaps, his majesty would find it convenient for me to provide some inspiration?'\nKhefer froze, 'you would?'\n'But of course. Nothing would please me more.'\n\nThe speech which had poured out from Shaa Doof's pen was not the King's. They were not his words. But still, he had no choice but to politely thank his loyal Vizier, ascquiescing to the savy pony's further guidance, advice and tips on how to speak, when to pause, when to cry and when to be stern in his delivery. And while Khefer knew that Shaa Doof meant well, he was nonethless unable to shake off the feeling that such a lack of genuinity would not be lost on his detractors."
+ ZEX_MGY_foci.11.a:0 "Here's to hoping."
+
+ ZEX_MGY_foci.12.title:0 "A Counter-Speech"
+ ZEX_MGY_foci.12.desc:0 "In spite of Shaa Doof and his advisor's approving smiles and supportive words, the King felt his strength of evaporate as he left the booth. Retreating to his chambers, he could only lean over the balcony overlooking the city of Somnambula as he awaited the inevitable backlash. The first pushback would come within the palace itself, manifesting through the voice of Royal Protector Ahmesi, who in spite of her position and the expected decorum had yet managed to convey her disapproval - if not contempt - by means of a glare alone. Then, came the nightmares, a prison of guilt and shame of the Pharaoh's own making, tormenting him as he sought to escape the day's events.\n\nDawn came, and with it troubling news from the south. A speech, given through the same radio waves upon which the King had given his own half-hearted appeal to peace, had set alight the hearts of the common-folk. The as-of-yet unidentified speaker had minced no words and wasted no time in condeming the Pharaoh, damning the Vizier and urging the people of Maregypt to rise up and stand as one against a failed system. Already, there had been reports of violent scuffles between members of the state police and spontaneous rallied angered mobs. As Shaa Doof made his report to the King, the latter knew that no matter the rebellious speech's dubious veracity, the damage had already been done. In that moment - as he sank into his chair, avoiding his advisors' troubled eyes - he found himself silently praying that no more bloodhshed would come of this."
+ ZEX_MGY_foci.12.a:0 "Find these troublemakers!"
+
+ ZEX_MGY_foci.13.title:0 "Violence in the Streets"
+ ZEX_MGY_foci.13.desc:0 "'How many?' the King silently asked his ministers - even as his gaze remained affixed to the bloodied letter.\n'I-...we don't know. Your majesty-...' Imanetep replied.\nThe Pharaoh sighed. The air was heavy, uneasy, as it would be before a storm, 'an estimate, then?'\n'Twenty. Likely more. Who knows.'\n\nThe King lowered his head. Before him sat a detailed - albeit incomplete - report covering the morning's events. While the order of events had not been clearly established, the consequences had been clear. A group of agitators, protestors and petitioners had gathered before the palace - demanding that the King come before them and hear their terms. Whilst Khefer had been inclined to believe that the mob was peaceful, his own intutions had been overruled by circumstances. There came a shot, a shout and then: chaos. The Maredjay - his own and ever loyal guard - rushed to drive the protestors back and away from the palace's grounds. Driven by fear, anger - or both, the crowd had tried to retaliate, to little avail. And now, the streets below the King's very balcony red. A warning to all those that would dare to think themselves worthy of the King's attention.\n\n Already, Ahmesi and her Maredjay ready themselves to hunt down perceived perpetrators - no matter where they may hide. With a shaky, unsteady voice, the Pharaoh decided-..."
+ ZEX_MGY_foci.13.a:0 "...to let the Princess handle this."
+ ZEX_MGY_foci.13.b:0 "...that the Maredjay must be reigned in before things go too far!"
+
+ ZEX_MGY_foci.14.title:0 "A Bloody [GetMonth]"
+ ZEX_MGY_foci.14.desc:0 "Ever since the palatial massacre, tensions have run high and spirits have been crushingly low. What had once been a unified cabinet is now but a loose collection of bickering advisors. Even Shaa Doof's political acumen has proven all but useless in the face of the increasing crisis. At the old pony's request, the King has convened the whole of the palace's advisors - including members of the bureaucracy, Maredjay and other influential political elements - to determine the next course of action.\n\nThe resulting discussion has led to the emerging of two sides amongst those gathered. The first, spearheaded by the Vizier, Ahmesis and more conservative elements, support the notion of the King issuing a resolute yet compassionate speech - presenting himself as backed by the government's disparate factions, as an agent of consensus and stability. On the other side of the argument, the minority of participants - including a rather hesistant Pharaoh - support a more direct approach, whereas the King would call for dialogue and engage in direct negotiations with some of the more radical opponents to his rule, including potential indtigators. Those in support of such a move defend their position as a necessary overture to seek a stable compromise.\n\nOf course, in the end, the final choice - as always - rest in the King's hooves."
+ ZEX_MGY_foci.14.a:0 "Heed Shaa Doof's advice: we must present a united front!"
+ ZEX_MGY_foci.14.b:0 "No - the King must adress the nation!"
+
+ ZEX_MGY_foci.151.title:0 "Massive Protests Rock Major Cities"
+ ZEX_MGY_foci.151.desc:0 "Whilst initial reception to the government's united front was mixed, whatever hopes may have existed for a lasting détente with the radical opposition were quickly dashed. Capitalising on the Pharaoh's perceived unwillingness to admit fault - as well as the Vizier and the rest of the advisors' elitist and out-of-touch demeanour, agitators succeeded in whipping the public in a veritable frenzy, with numerous cities and villages cowering in fear of the angered mobs for days on end.\n\nIt is as if the Celestia herself does not want us to succeed."
+ ZEX_MGY_foci.151.a:0 "Can it get much worse?"
+
+ ZEX_MGY_foci.152.title:0 "Tensions Abet Momentarily"
+ ZEX_MGY_foci.152.desc:0 "Whilst initial reception to the government's united front was mixed, to our King's surprise his genuine efforts and honesty proved vital in calming the tempers of his people. While the wounds are still fresh and the future remains uncertain, Khefer has found himself able to hope that perhaps the future may not be forever dim.\n\nHaving promised to hold the Maredjay accountable for any excesses, the Pharaoh went as far as to issue a general amnesty for the protestors and riotors. Though such a decision is certainly rushed - and has certainly left a sour taste in Shaa Doof's mouth, it was undoubtedly the right one to make."
+ ZEX_MGY_foci.152.a:0 "Can we hope for peace?"
+
+ ZEX_MGY_foci.16.title:0 "Somnambula Returns!"
+ ZEX_MGY_foci.16.desc:0 "A famed heroine, proud Maregyptian mare and skileld diplomat, Somnambula has spent the last six years in self-imposed exile. Having travelled throughout all of Zebrica in a bid to help those in need following the Storm King's wrathful conquest, she has now come home, finding her arrival met with grand fanfare and popular jubilation. While he would never admit it, the King himself is succumbing to the rapturous enthusiasm - to his Vizier's disapproval.\n\nThe matter remains of how the government should approach her - if at all. His excellency has expressed great interest in working with such a legendary figure directly, an intent which she would no doubt reciprocate. Shaa Doof, on the other hand, is more of the opinion that the legendary figure should be left to serve as a rallying point for Harmonic supporters outside of the government, indirectly serving the Pharaoh's agenda, though of course in such a case the possibility for further collaboration should naturally remain open."
+ ZEX_MGY_foci.16.a:0 "She should immediately be made an advisor. Send her an invitation!"
+ ZEX_MGY_foci.16.b:0 "We welcome her return, but cannot afford to so brusquely change our cabinet!"
+ ZEX_MGY_foci.16.a.tt:0 "§YSomnambula§! will be appointed as a political advisor, giving the following effects:\n\nStability: §G+10.0%§!\nSame ideology monthly opinion: §G+25.0%§!\nImprove relations maintain cost: §G-35.0%§!\nJustify war goal time: §t+25.0%§!"
+ ZEX_MGY_foci.16.b.tt:0 "§YSomnambula§! will now be available as a political advisor!"
+ 

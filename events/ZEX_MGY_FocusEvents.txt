@@ -1,0 +1,239 @@
+add_namespace = ZEX_MGY_foci
+# The King's Speech
+country_event = {
+	id = ZEX_MGY_foci.11
+	title = ZEX_MGY_foci.11.title
+	desc = ZEX_MGY_foci.11.desc
+	is_triggered_only = yes
+	timeout_days = 7
+	picture = GFX_ZEX_event_speech
+	option = {
+		# "Well, it's the thought that counts"
+		name = ZEX_MGY_foci.11.a
+		add_political_power = 1
+		custom_effect_tooltip = zex_mgy_event_emptyline_tt
+		zex_mgy_decrease_unrest_somnambula = yes
+		hidden_effect = {
+			country_event = {
+				id = ZEX_MGY_foci.12
+				days = 3
+			}
+		}
+	}
+}
+
+# Communists Oppose the Speech
+country_event = {
+	id = ZEX_MGY_foci.12
+	title = ZEX_MGY_foci.12.title
+	desc = ZEX_MGY_foci.12.desc
+	is_triggered_only = yes
+	timeout_days = 7
+	option = {
+		# "Damn Them!"
+		name = ZEX_MGY_foci.12.a
+		add_political_power = -25
+		custom_effect_tooltip = zex_mgy_event_emptyline_tt
+		zex_mgy_increase_unrest_manephis = yes
+		hidden_effect = {
+			country_event = {
+				id = ZEX_MGY_foci.13
+				days = 10
+			}
+		}
+	}
+}
+
+# Members of the Maredjay attack demonstrators
+country_event = {
+	id = ZEX_MGY_foci.13
+	title = ZEX_MGY_foci.13.title
+	desc = ZEX_MGY_foci.13.desc
+	is_triggered_only = yes
+	timeout_days = 7
+	option = {
+		# "They have the right idea!"
+		name = ZEX_MGY_foci.13.a
+		add_stability = -0.07
+		add_popularity = {
+			ideology = communism
+			popularity = -0.05
+		}
+		custom_effect_tooltip = zex_mgy_event_emptyline_tt
+		zex_mgy_increase_unrest_manephis = yes
+		zex_mgy_increase_unrest_somnambula = yes
+		hidden_effect = {
+			country_event = {
+				id = ZEX_MGY_foci.14
+				days = 10
+			}
+		}
+	}
+	option = {
+		# "Condem the Agitators"
+		name = ZEX_MGY_foci.13.b
+		add_stability = -0.07
+		add_popularity = {
+			ideology = communism
+			popularity = 0.025
+		}
+		add_popularity = {
+			ideology = neutrality
+			popularity = -0.05
+		}
+		custom_effect_tooltip = zex_mgy_event_emptyline_tt
+		zex_mgy_decrease_unrest_manephis = yes
+		zex_mgy_increase_unrest_upper_maregypt = yes
+		hidden_effect = {
+			country_event = {
+				id = ZEX_MGY_foci.14
+				days = 10
+			}
+		}
+	}
+}
+
+# The King is distressed over the violence
+country_event = {
+	id = ZEX_MGY_foci.14
+	title = ZEX_MGY_foci.14.title
+	desc = ZEX_MGY_foci.14.desc
+	is_triggered_only = yes
+	timeout_days = 7
+	option = {
+		# "Follow the Vizier's Adivce - extoll support" 
+		name = ZEX_MGY_foci.14.a
+		add_stability = 0.02
+		add_political_power = 15
+		# This will annoy thesocialists
+		hidden_effect = {
+			country_event = {
+				id = ZEX_MGY_foci.151
+				days = 10
+			}
+		}
+	}
+	option = {
+		# "No, the violence must end!"
+		name = ZEX_MGY_foci.14.b
+		add_political_power = -10
+		# This will annoy the unaligned and damage the reputaiton of the king
+		hidden_effect = {
+			country_event = {
+				id = ZEX_MGY_foci.152
+				days = 10
+			}
+		}
+	}
+}
+
+# Socialists stage massive protests!
+country_event = {
+	id = ZEX_MGY_foci.151
+	title = ZEX_MGY_foci.151.title
+	desc = ZEX_MGY_foci.151.desc
+	is_triggered_only = yes
+	timeout_days = 7
+	option = {
+		# "Damnit" 
+		name = ZEX_MGY_foci.151.a
+		add_stability = -0.1
+		custom_effect_tooltip = zex_mgy_event_emptyline_tt
+		zex_mgy_increase_unrest_somnambula = yes
+		zex_mgy_increase_unrest_manephis = yes
+		zex_mgy_increase_unrest_delta = yes
+		hidden_effect = {
+			country_event = {
+				id = ZEX_MGY_foci.16
+				days = 14
+			}
+		}
+	}
+}
+
+# Tensions calm down
+country_event = {
+	id = ZEX_MGY_foci.152
+	title = ZEX_MGY_foci.152.title
+	desc = ZEX_MGY_foci.152.desc
+	is_triggered_only = yes
+	timeout_days = 7
+	option = {
+		# "Friendship is built on trust!" 
+		name = ZEX_MGY_foci.152.a
+		add_stability = 0.01
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.01
+		}
+		add_popularity = {
+			ideology = neutrality
+			popularity = -0.025
+		}
+		hidden_effect = {
+			country_event = {
+				id = ZEX_MGY_foci.16
+				days = 14
+			}
+		}
+	}
+}
+
+# Somnambula offers her support
+country_event = {
+	id = ZEX_MGY_foci.16
+	title = ZEX_MGY_foci.16.title
+	desc = ZEX_MGY_foci.16.desc
+	is_triggered_only = yes
+	timeout_days = 7
+	picture = GFX_ZEX_somnambula
+	option = {
+		# "We welcome such a legend!" 
+		name = ZEX_MGY_foci.16.a
+		add_political_power = -50
+		custom_effect_tooltip = ZEX_MGY_foci.16.a.tt
+		hidden_effect = {
+			clr_country_flag = ZEX_MGY_Somnambula_Exiled
+			add_advisor_role = {
+				character = ZEX_MGY_Somnambula
+				activate = yes
+				advisor = {
+					slot = political_advisor
+					cost = 125
+					idea_token = ZEX_MGY_Harmony_Ambassador
+					traits = {
+						ZEX_MGY_Peacekeeper
+					}
+					desc = ZEX_MGY_Somnambula_Desc
+					available = {
+						custom_trigger_tooltip = {
+							tooltip = ZEX_MGY_somnambula_has_not_been_removed_tt
+							NOT = {
+								has_country_flag = ZEX_MGY_Somnambula_Exiled
+							}
+						}
+						OR = {
+							has_government = democratic
+							has_government = neutrality
+						}
+						NOT = {
+							has_offensive_war = yes
+						}
+					}
+				}
+			}
+		}
+	}
+	option = {
+		# "She is welcome to stay." 
+		name = ZEX_MGY_foci.16.b
+		hidden_effect = {
+			clr_country_flag = ZEX_MGY_Somnambula_Exiled
+		}
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.02
+		}
+		custom_effect_tooltip = ZEX_MGY_foci.16.b.tt
+	}
+}

@@ -215,6 +215,8 @@ if = {
 
 zex_mgy_open_splash_screen = yes
 
+set_country_flag = ZEX_MGY_Somnambula_Exiled
+
 # Add advisors / characters
 recruit_character = ZEX_MGY_Somnambula
 recruit_character = ZEX_MGY_king_khefer

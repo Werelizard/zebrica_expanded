@@ -1,0 +1,10 @@
+SpriteTypes = {
+	spriteType = {
+		name = "GFX_ZEX_event_speech"
+		textureFile = "gfx/event_pictures/MGY/zex_mgy_kingspeech.tga"
+	}
+	spriteType = {
+		name = "GFX_ZEX_somnambula"
+		textureFile = "gfx/event_pictures/MGY/zex_mgy_somnambula.tga"
+	}
+}
