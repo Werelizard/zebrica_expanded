@@ -3,6 +3,12 @@
  # Tooltips
  #
 
+ ZEX_MGY_focus_kingspeech_tt:0 "At the urging of his advisors, King Khefer will address the nation in an effort to quell the rising unrest."
+ ZEX_MGY_focus_renovatesecretariat_tt:0 "Increases the duration of all £ZEX_maregypt_edicts  §Yedicts§! by §Y30 days§!."
+ ZEX_MGY_focus_railroad_tt:0 "Unlocks £decision_icon_small  §Ydecisions§! to re-integrate [ALO.GetNameDef] and assimilate its core states."
+ ZEX_MGY_NOT_HAS_UNREST_tt:0 "Not: our country is being rocked by £local_unrest §tpolitical unrest§!."
+ ZEX_MGY_HAS_UNREST_tt:0 "Our country is currently rocked by £local_unrest §tpolitical unrest§!."
+ ZEX_MGY_Fate_of_Lotussociety_tt:0 "Not: we've already determined the fate of the Lotus Society"
 
  #
  # Filters 
@@ -48,8 +54,6 @@
  ZEX_MGY_focus_reintegration:0 "Return of the Wayward Provinces"
  ZEX_MGY_focus_reintegration_desc:0 ""
 
- ZEX_MGY_focus_kingspeech_tt:0 "At the urging of his advisors, King Khefer will address the nation in an effort to quell the rising unrest."
-
  #
  # Adminsitrative Reforms
  #
@@ -78,3 +82,10 @@
  ZEX_MGY_focus_landreform_desc:0 ""
  ZEX_MGY_focus_finishadminreforms:0 "A Maregyptian Renaissance"
  ZEX_MGY_focus_finishadminreforms_desc:0 ""
+
+ #
+ # Ideas
+ #
+
+ ZEX_MGY_Administrative_centralisation:0 "Administrative Reforms"
+ ZEX_MGY_Administrative_centralisation_and_vizier:0 "Administrative Reforms"

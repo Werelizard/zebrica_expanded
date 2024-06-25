@@ -157,11 +157,13 @@ guiTypes = {
 			name = "ZEX_MGY_Vizier_Portrait_Vizier"
 			spriteType = "GFX_ZEX_MGY_Balance_of_Power_Leader_Frame"
 			position = { x = 30 y = 60 }
+			pdx_tooltip = ZEX_MGY_Vizier_Portrait_Vizier_tt
 		}
 		iconType = {
 			name = "ZEX_MGY_Vizier_Portrait_King"
 			spriteType = "GFX_ZEX_MGY_Balance_of_Power_Leader_Frame"
 			position = { x = 386 y = 60 }
+			pdx_tooltip = ZEX_MGY_Vizier_Portrait_King_tt
 		}
 
 		#Leader Frames
@@ -169,11 +171,13 @@ guiTypes = {
 			name = "ZEX_MGY_Vizier_Frame_Vizier"
 			spriteType = "GFX_ZEX_MGY_Balance_of_Power_Leader_Frame"
 			position = { x = 30 y = 60 }
+			pdx_tooltip = ZEX_MGY_Vizier_Portrait_Vizier_tt
 		}
 		iconType = {
 			name = "ZEX_MGY_Vizier_Frame_King"
 			spriteType = "GFX_ZEX_MGY_Balance_of_Power_Leader_Frame"
 			position = { x = 386 y = 60 }
+			pdx_tooltip = ZEX_MGY_Vizier_Portrait_King_tt
 		}
 	}
 }

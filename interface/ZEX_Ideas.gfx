@@ -53,4 +53,42 @@ spriteTypes = {
 		name = "GFX_leader_ZEX_MGY_ShaaDoof_Small"
 		textureFile = "gfx/interface/ideas/advisors/ZEX_MGY_shaadoof_small.dds"
 	}
+
+	#Designers
+	spriteType = {
+		name = "GFX_idea_ZEX_MGY_Somnambula_Dockyards"
+		textureFile = "gfx/interface/ideas/designers/zex_mgy_somnambula_dockyards_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ZEX_MGY_Djoser_Construction"
+		textureFile = "gfx/interface/ideas/designers/zex_mgy_djoser_construction_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ZEX_MGY_Manephis_Armements"
+		textureFile = "gfx/interface/ideas/designers/zex_mgy_manephis_armements_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ZEX_MGY_Equestrian_Mining_Commission"
+		textureFile = "gfx/interface/ideas/designers/zex_mgy_EMC_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ZEX_MGY_Bank_Maregypt"
+		textureFile = "gfx/interface/ideas/designers/zex_mgy_maregypt_bank_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ZEX_MGY_Manephis_Tractors"
+		textureFile = "gfx/interface/ideas/designers/ZEX_MGY_Manephis_Tractors_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ZEX_MGY_Maregypt_Oil"
+		textureFile = "gfx/interface/ideas/designers/ZEX_MGY_Maregypt_Oil_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ZEX_MGY_Maregypt_Air"
+		textureFile = "gfx/interface/ideas/designers/ZEX_MGY_Maregypt_Air_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ZEX_MGY_Maregypt_Broadcasting"
+		textureFile = "gfx/interface/ideas/designers/ZEX_MGY_Maregypt_Broadcasting.dds"
+	}
 }

@@ -14,7 +14,6 @@
  ZEX_Unfinished_Constitution:0 "Constitutional Crisis"
  ZEX_MGY_Equestrian_Debts:0 "Equestrian Debts Repayment"
  ZEX_MGY_REPUBLICAN_AGITATION_IDEA:0 "Political Unrest"
- ZEX_MGY_Fractured_Country:0 "A Fractured Country"
  ZEX_MGY_king_khefer_idea:0 "King Khefer"
 
  ZEX_MGY_equestrian_debts_empty:0 ""
@@ -50,3 +49,15 @@
 
  ZEX_MGY_GET_VIZIER_KING_BALANCE_VALUE_VIZIER:0 "£BoP_left_texticon  §Y[?ROOT.ZEX_MGY_vizier_King_Balance_absoluteVal]§! towards total Vizier control"
  ZEX_MGY_GET_VIZIER_KING_BALANCE_VALUE_KING:0 "£BoP_right_texticon  §Y[?ROOT.ZEX_MGY_vizier_King_Balance_absoluteVal]§! towards total Royal control"
+
+ #Industrial Concerns
+ ZEX_MGY_Somnambula_Dockyards:0 "Blue Neighle Dockyards"
+ ZEX_MGY_Djoser_Construction:0 "Djoser & Ramare"
+ ZEX_MGY_Manephis_Armements:0 "Manephis Armory"
+ ZEX_MGY_Equestrian_Mining_Commission:0 "Equestrian Mining Commission"
+ ZEX_MGY_Equestrian_Mining_Commission_allowed_tt:0 "The Equestrian Mining Commission was allowed to operate in Maregypt"
+ ZEX_MGY_Bank_Maregypt:0 "Bank of Maregypt"
+ ZEX_MGY_Manephis_Tractors:0 "Shaaty Industries"
+ ZEX_MGY_Maregypt_Oil:0 "The Kemy Company"
+ ZEX_MGY_Maregypt_Air:0 "Maregypt Air"
+ ZEX_MGY_Maregypt_Broadcasting:0 "Somnambula Broadcasting Corporation"

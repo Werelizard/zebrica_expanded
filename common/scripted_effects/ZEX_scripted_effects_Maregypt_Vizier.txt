@@ -196,7 +196,7 @@ ZEX_MGY_UPDATE_VIZIER_KING_VARIABLE = {
 		ZEX_MGY_vizier_King_Balance_PoliticalFactorImpact = ZEX_MGY_vizier_King_Balance_absoluteVal
 	}
 	divide_variable = {
-		ZEX_MGY_vizier_King_Balance_PoliticalFactorImpact = -500
+		ZEX_MGY_vizier_King_Balance_PoliticalFactorImpact = -800
 	}
 	# Determine the x axis of the "slider"
 	set_variable = { 

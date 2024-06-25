@@ -345,6 +345,9 @@
 
  ZEX_MGY_Vizier_Balance_Bar_tt:0 "Currently the §YBalance of Power§! rests at [ZEX_MGY_GET_VIZIER_KING_BALANCE_VALUE], giving the following effects:\n\nPolitical Power Gain: [?ROOT.ZEX_MGY_vizier_King_Balance_PoliticalFactorImpact|2%+]\nVizier Edict Cost Modifier: §Y[?ROOT.ZEX_MGY_vizier_King_Balance_AdjustVizierEdictCost|2%]§!\nRoyal Edict Cost Modifier: §Y[?ROOT.ZEX_MGY_vizier_King_Balance_AdjustKingEdictCost|2%]§!"
 
+ ZEX_MGY_Vizier_Portrait_Vizier_tt:0 "When the £ZEX_vizier_bop  §Ybalance of power§! rests at total Vizier control, will have the following effects:\nPolitical Power Gain: §t-12.50%§!\nVizier Edict Cost Modifier: §Y-50.00%§!\nRoyal Edict Cost Modifier: §Y100.00%§!"
+ ZEX_MGY_Vizier_Portrait_King_tt:0 "When the £ZEX_vizier_bop  §Ybalance of power§! rests at total Royal control, will have the following effects:\nPolitical Power Gain: §t-12.50%§!\nVizier Edict Cost Modifier: §Y100.00%§!\nRoyal Edict Cost Modifier: §Y-50.00%§!"
+
  ZEX_MGY_Vizier_Balance_Button_Left_tt:0 "§YTip the scales towards the Vizier§!\n\n§YPrerequisites:§!\n[ZEX_MGY_POWER_BALANCE_VIZIER_ACTIVE] Has a Vizier\n\n§YEffect:§!\nThe §YBalance of Power§! will begin to change at a rate of £BoP_left_texticon  §Y5§! every week towards the §YVizier§!.\n----------\n§tIt will cost The £pol_power §!§Y-0.5§!§t political power every day to sustain this.§!"
  ZEX_MGY_Vizier_Balance_Button_Right_tt:0 "§YTip the scales towards the King§!\n\n§YPrerequisites:§!\n[ZEX_MGY_POWER_BALANCE_MONARCH_ACTIVE] Has a King\n\n§YEffect:§!\nThe §YBalance of Power§! will begin to change at a rate of £BoP_right_texticon  §Y5§! every week towards the §Yking§!.\n----------\n§tIt will cost The £pol_power §!§Y-0.5§!§t political power every day to sustain this.§!"
  ZEX_MGY_Vizier_Balance_Button_Middle_tt:0 "§YCease tipping the scales§!\n\nStops all weekly change in the Balance of Power."

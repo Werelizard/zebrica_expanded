@@ -63,21 +63,234 @@ ideas = {
 		}
 	}
 
-	#Viziers
-	hidden_ideas = {
-		ZEX_MGY_Shaa_Doof_idea = {
+	# Focus ideas
+	country = {
+		ZEX_MGY_Administrative_centralisation = {
 			modifier = {
-				drift_defence_factor = 0.1
-				political_power_factor = -0.1
-				stability_factor = 0.15
+				political_power_gain = 0.2
+			}
+		}
+		ZEX_MGY_Administrative_centralisation_and_vizier = {
+			modifier = {
+				political_power_gain = 0.1
+				political_power_cost = -0.2
 			}
 		}
 	}
 
-	#Hidden timers
-	hidden_ideas = {
-		ZEX_MGY_Agriculture_cooldown = {
-			
+	# Industrial concerns
+	industrial_concern = {
+		#Alaways Available
+		ZEX_MGY_Somnambula_Dockyards = {
+			picture = ZEX_MGY_Somnambula_Dockyards
+			allowed = {
+				zxe_is_maregypt_or_cosmetic_maregypt = yes
+			}
+
+			available = {
+				controls_state = 733
+			}
+
+			visible = {
+			}
+
+			modifier = {
+				industrial_capacity_dockyard = 0.1
+			}
+			equipment_bonus = {
+				convoy = {
+					build_cost_ic = -0.1
+				}
+				ship_hull_light = {
+					build_cost_ic = -0.1
+				}
+				ship_hull_cruiser = {
+					build_cost_ic = -0.1
+				}
+			}
+		}
+		ZEX_MGY_Djoser_Construction = {
+			picture = ZEX_MGY_Djoser_Construction
+			allowed = {
+				zxe_is_maregypt_or_cosmetic_maregypt = yes
+			}
+
+			available = {
+				
+			}
+
+			visible = {
+			}
+
+			modifier = {
+				production_speed_infrastructure_factor = 0.1
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_dockyard_factor = 0.1
+			}
+		}
+		ZEX_MGY_Manephis_Armements = {
+			picture = ZEX_MGY_Manephis_Armements
+			allowed = {
+				zxe_is_maregypt_or_cosmetic_maregypt = yes
+			}
+
+			available = {
+				controls_state = 735
+			}
+
+			visible = {
+			}
+
+			modifier = {
+				production_speed_arms_factory_factor = 0.1
+			}
+			equipment_bonus = {
+				artillery_equipment = {
+					build_cost_ic = -0.1
+				}
+			}
+		}
+		ZEX_MGY_Maregypt_Broadcasting = {
+			picture = ZEX_MGY_Maregypt_Broadcasting
+			allowed = {
+				zxe_is_maregypt_or_cosmetic_maregypt = yes
+			}
+
+			available = {
+				
+			}
+
+			visible = {
+			}
+
+			modifier = {
+				
+			}
+			equipment_bonus = {
+				support_equipment = {
+					reliability = 0.1
+				}
+			}
+			research_bonus = {
+				electronics = 0.05
+			}
+		}
+		ZEX_MGY_Manephis_Tractors = {
+			picture = ZEX_MGY_Manephis_Tractors
+			allowed = {
+				zxe_is_maregypt_or_cosmetic_maregypt = yes
+			}
+
+			available = {
+				
+			}
+
+			visible = {
+			}
+
+			modifier = {
+				
+			}
+			equipment_bonus = {
+				motorized_equipment = {
+					build_cost_ic = -0.1
+				}
+			}
+			research_bonus = {
+				industry = 0.05
+			}
+		}
+		ZEX_MGY_Maregypt_Oil = {
+			picture = ZEX_MGY_Maregypt_Oil
+			allowed = {
+				zxe_is_maregypt_or_cosmetic_maregypt = yes
+			}
+
+			available = {
+				
+			}
+
+			visible = {
+			}
+
+			modifier = {
+				production_oil_factor = 0.25
+				fuel_gain_factor = 0.4
+				army_fuel_capacity_factor = 0.15
+			}
+		}
+		ZEX_MGY_Maregypt_Air = {
+			picture = ZEX_MGY_Maregypt_Air
+			allowed = {
+				zxe_is_maregypt_or_cosmetic_maregypt = yes
+			}
+
+			available = {
+				
+			}
+
+			visible = {
+			}
+
+			modifier = {
+				
+			}
+
+			research_bonus = {
+				light_air = 0.05
+			}
+
+			equipment_bonus = {
+				small_plane_airframe = {
+					build_cost_ic = -0.1
+				}
+				transport_plane_equipment = {
+					build_cost_ic = -0.1
+				}
+			}
+		}
+		#Available - conditional
+		ZEX_MGY_Equestrian_Mining_Commission = {
+			picture = ZEX_MGY_Equestrian_Mining_Commission
+			allowed = {
+				zxe_is_maregypt_or_cosmetic_maregypt = yes
+			}
+
+			available = {
+				OR = {
+					has_idea = ZEX_MGY_Equestrian_Debts
+					custom_trigger_tooltip = {
+						tooltip = ZEX_MGY_Equestrian_Mining_Commission_allowed_tt
+					}
+				}
+			}
+
+			visible = {
+			}
+
+			modifier = {
+				production_speed_infrastructure_factor = 0.1
+				local_resources_factor = 0.15
+				trade_opinion_factor = 0.5
+			}
+		}
+		ZEX_MGY_Bank_Maregypt = {
+			picture = ZEX_MGY_Bank_Maregypt
+			allowed = {
+				zxe_is_maregypt_or_cosmetic_maregypt = yes
+			}
+
+			available = {
+				has_completed_focus = ZEX_MGY_focus_restoretreasury
+			}
+
+			visible = {
+			}
+
+			modifier = {
+				political_power_factor = 0.1
+				consumer_goods_factor = -0.1
+			}
 		}
 	}
 }
