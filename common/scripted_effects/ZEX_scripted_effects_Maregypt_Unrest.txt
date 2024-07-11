@@ -52,10 +52,10 @@ ZEX_activate_political_unrest = {
 		if = {
 			limit = {
 				NOT = {
-					has_idea = ZEX_MGY_REPUBLICAN_AGITATION_IDEA
+					has_idea = ZEX_MGY_idea_political_unrest
 				}
 			}
-			add_ideas = ZEX_MGY_REPUBLICAN_AGITATION_IDEA
+			add_ideas = ZEX_MGY_idea_political_unrest
 		}
 		add_dynamic_modifier = {
 			modifier = ZEX_MGY_republican_agitation_impact_dynmod
@@ -757,7 +757,7 @@ ZEX_MGY_Increase_Unrest = {
 ZEX_MGY_Daily_Unrest_Update = {
 	if = {
 		limit = {
-			has_idea = ZEX_MGY_REPUBLICAN_AGITATION_IDEA
+			has_idea = ZEX_MGY_idea_political_unrest
 		}
 		# Update the legitimacy variable every day
 		# add_to_variable = {

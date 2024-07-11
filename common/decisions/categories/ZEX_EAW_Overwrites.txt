@@ -7,7 +7,9 @@ communism_on_the_rise = {
 		NOT = { tag = KIS }
 		NOT = { tag = KIC }
 		#Zebrica Expanded
-		NOT = { tag = MGY }
+		NOT = {
+			zex_is_a_submod_country = yes
+		}
 	}
 }
 
@@ -20,7 +22,9 @@ democratic_on_the_rise = {
 		NOT = { tag = KIS }
 		NOT = { tag = KIC }
 		#Zebrica Expanded
-		NOT = { tag = MGY }
+		NOT = {
+			zex_is_a_submod_country = yes
+		}
 	}
 }
 
@@ -33,6 +37,8 @@ fascism_on_the_rise = {
 		NOT = { tag = KIS }
 		NOT = { tag = KIC }
 		#Zebrica Expanded
-		NOT = { tag = MGY }
+		NOT = {
+			zex_is_a_submod_country = yes
+		}
 	}
 }

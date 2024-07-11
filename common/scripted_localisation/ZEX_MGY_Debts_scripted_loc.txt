@@ -7,13 +7,13 @@ defined_text = {
 	text = {
 		trigger = {
 			check_variable = {
-				ZEX_MGY_equestrian_debts_consumer_goods_effect > 0
+				ZEX_MGY_idea_Equestrian_Debts_consumer_goods_effect > 0
 			}
 		}
-		localization_key = ZEX_MGY_equestrian_debts_consumer_goods_effect_active_tt
+		localization_key = ZEX_MGY_idea_Equestrian_Debts_consumer_goods_effect_active_tt
 	}
 	text = {
-		localization_key = ZEX_MGY_equestrian_debts_empty
+		localization_key = ZEX_MGY_idea_Equestrian_Debts_empty
 	}
 }
 
@@ -22,13 +22,13 @@ defined_text = {
 	text = {
 		trigger = {
 			check_variable = {
-				ZEX_MGY_equestrian_debts_poltical_power_gain < 0
+				ZEX_MGY_idea_Equestrian_Debts_poltical_power_gain < 0
 			}
 		}
-		localization_key = ZEX_MGY_equestrian_debts_poltical_power_gain_active_tt
+		localization_key = ZEX_MGY_idea_Equestrian_Debts_poltical_power_gain_active_tt
 	}
 	text = {
-		localization_key = ZEX_MGY_equestrian_debts_empty
+		localization_key = ZEX_MGY_idea_Equestrian_Debts_empty
 	}
 }
 
@@ -37,13 +37,13 @@ defined_text = {
 	text = {
 		trigger = {
 			check_variable = {
-				ZEX_MGY_equestrian_debts_factory_output_effect < 0
+				ZEX_MGY_idea_Equestrian_Debts_factory_output_effect < 0
 			}
 		}
-		localization_key = ZEX_MGY_equestrian_debts_factory_output_effect_active_tt
+		localization_key = ZEX_MGY_idea_Equestrian_Debts_factory_output_effect_active_tt
 	}
 	text = {
-		localization_key = ZEX_MGY_equestrian_debts_empty
+		localization_key = ZEX_MGY_idea_Equestrian_Debts_empty
 	}
 }
 
@@ -52,12 +52,12 @@ defined_text = {
 	text = {
 		trigger = {
 			check_variable = {
-				ZEX_MGY_equestrian_debts_dockyard_output_effect < 0
+				ZEX_MGY_idea_Equestrian_Debts_dockyard_output_effect < 0
 			}
 		}
-		localization_key = ZEX_MGY_equestrian_debts_dockyard_output_effect_active_tt
+		localization_key = ZEX_MGY_idea_Equestrian_Debts_dockyard_output_effect_active_tt
 	}
 	text = {
-		localization_key = ZEX_MGY_equestrian_debts_empty
+		localization_key = ZEX_MGY_idea_Equestrian_Debts_empty
 	}
 }

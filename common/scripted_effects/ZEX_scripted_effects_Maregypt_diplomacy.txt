@@ -1,0 +1,44 @@
+#Alwani integration
+
+zex_setup_alwani_puppet_integration = { #For Maregypt
+	set_variable = {
+		zex_mgy_var_alwani_integration = 30
+	}
+	set_variable = {
+		zex_mgy_var_alwani_integration_cost = zex_mgy_var_alwani_integration
+	}
+	divide_variable = {
+		zex_mgy_var_alwani_integration_cost = 2
+	}
+}
+
+zex_increase_alwani_integration = {
+	random_list = {
+		30 = {
+			add_to_variable = {
+				zex_mgy_var_alwani_integration = 5
+			}
+		}
+		60 = {
+			add_to_variable = {
+				zex_mgy_var_alwani_integration = 10
+			}
+		}
+		10 = {
+			add_to_variable = {
+				zex_mgy_var_alwani_integration = 15
+			}
+		}
+	}
+	clamp_variable = {
+		var = zex_mgy_var_alwani_integration
+		min = 0
+		max = 100
+	}
+	set_variable = {
+		zex_mgy_var_alwani_integration_cost = zex_mgy_var_alwani_integration
+	}
+	divide_variable = {
+		zex_mgy_var_alwani_integration_cost = 2
+	}
+}

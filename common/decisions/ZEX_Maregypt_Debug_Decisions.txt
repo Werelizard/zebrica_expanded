@@ -66,7 +66,7 @@ ZEX_DEBUG_CATEGORY = {
 		visible = {
 			zxe_is_maregypt_or_cosmetic_maregypt = yes
 			NOT = {
-				has_idea = ZEX_MGY_REPUBLICAN_AGITATION_IDEA
+				has_idea = ZEX_MGY_idea_political_unrest
 			}
 		}
 		available = {
@@ -82,7 +82,7 @@ ZEX_DEBUG_CATEGORY = {
 		}
 		visible = {
 			zxe_is_maregypt_or_cosmetic_maregypt = yes
-			has_idea = ZEX_MGY_REPUBLICAN_AGITATION_IDEA
+			has_idea = ZEX_MGY_idea_political_unrest
 		}
 		available = {
 			

@@ -475,11 +475,11 @@ spriteTypes = {
 	}
 	# Fix the treasury 
 	spriteType = {
-		name = "GFX_ZEX_MGY_focus_restoretreasury"
+		name = "GFX_ZEX_MGY_focus_reformtaxlaws"
 		textureFile = "gfx/interface/goals/MGY/KHF/zex_goal_mgy_restoretreasury.tga"
 	}
 	spriteType = {
-		name = "GFX_ZEX_MGY_focus_restoretreasury_shine"
+		name = "GFX_ZEX_MGY_focus_reformtaxlaws_shine"
 		textureFile = "gfx/interface/goals/MGY/KHF/zex_goal_mgy_restoretreasury.tga"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -497,7 +497,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 
-	#Redraw POroivnces 
+	#Redraw PProvince Limits 
 	spriteType = {
 		name = "GFX_ZEX_MGY_focus_redrawprovinces"
 		textureFile = "gfx/interface/goals/MGY/KHF/zex_goal_mgy_redrawprovinces.tga"
@@ -547,15 +547,15 @@ spriteTypes = {
 
 	#North-South Rail 
 	spriteType = {
-		name = "GFX_ZEX_MGY_focus_railroad"
-		textureFile = "gfx/interface/goals/MGY/KHF/zex_goal_mgy_railroad.tga"
+		name = "GFX_ZEX_MGY_focus_completelandreform"
+		textureFile = "gfx/interface/goals/MGY/KHF/zex_goal_mgy_landreform.tga"
 	}
 	spriteType = {
-		name = "GFX_ZEX_MGY_focus_railroad_shine"
-		textureFile = "gfx/interface/goals/MGY/KHF/zex_goal_mgy_railroad.tga"
+		name = "GFX_ZEX_MGY_focus_completelandreform_shine"
+		textureFile = "gfx/interface/goals/MGY/KHF/zex_goal_mgy_landreform.tga"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/MGY/KHF/zex_goal_mgy_railroad.tga"			
+			animationmaskfile = "gfx/interface/goals/MGY/KHF/zex_goal_mgy_landreform.tga"			
 			animationtexturefile = "gfx/interface/goals/MGY/KHF/overlay_100_88.dds"
 			animationrotation = -90.0		
 			animationlooping = yes			
@@ -593,15 +593,15 @@ spriteTypes = {
 	}
 	#Overseer office 
 	spriteType = {
-		name = "GFX_ZEX_MGY_focus_nationalconstruction"
-		textureFile = "gfx/interface/goals/MGY/KHF/zex_goal_mgy_nationalconstruction.tga"
+		name = "GFX_ZEX_MGY_focus_nationalbank"
+		textureFile = "gfx/interface/goals/MGY/KHF/zex_goal_mgy_nationalbank.tga"
 	}
 	spriteType = {
-		name = "GFX_ZEX_MGY_focus_nationalconstruction_shine"
-		textureFile = "gfx/interface/goals/MGY/KHF/zex_goal_mgy_nationalconstruction.tga"
+		name = "GFX_ZEX_MGY_focus_nationalbank_shine"
+		textureFile = "gfx/interface/goals/MGY/KHF/zex_goal_mgy_nationalbank.tga"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/MGY/KHF/zex_goal_mgy_nationalconstruction.tga"			
+			animationmaskfile = "gfx/interface/goals/MGY/KHF/zex_goal_mgy_nationalbank.tga"			
 			animationtexturefile = "gfx/interface/goals/MGY/KHF/overlay_100_88.dds"
 			animationrotation = -90.0		
 			animationlooping = yes			
@@ -616,15 +616,107 @@ spriteTypes = {
 	}
 	# Finish land reform 	
 	spriteType = {
-		name = "GFX_ZEX_MGY_focus_landreform"
-		textureFile = "gfx/interface/goals/MGY/KHF/zex_goal_mgy_landreform.tga"
+		name = "GFX_ZEX_MGY_focus_developruralareas"
+		textureFile = "gfx/interface/goals/MGY/KHF/zex_goal_mgy_developruralareas.tga"
 	}
 	spriteType = {
-		name = "GFX_ZEX_MGY_focus_landreform_shine"
-		textureFile = "gfx/interface/goals/MGY/KHF/zex_goal_mgy_landreform.tga"
+		name = "GFX_ZEX_MGY_focus_developruralareas_shine"
+		textureFile = "gfx/interface/goals/MGY/KHF/zex_goal_mgy_developruralareas.tga"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/MGY/KHF/zex_goal_mgy_landreform.tga"			
+			animationmaskfile = "gfx/interface/goals/MGY/KHF/zex_goal_mgy_developruralareas.tga"			
+			animationtexturefile = "gfx/interface/goals/MGY/KHF/overlay_100_88.dds"
+			animationrotation = -90.0		
+			animationlooping = yes			
+			animationtime = 0.75			
+			animationdelay = 5		
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	#Centralise the Provinces 
+	spriteType = {
+		name = "GFX_ZEX_MGY_focus_centralisethecountry"
+		textureFile = "gfx/interface/goals/MGY/KHF/zex_goal_mgy_centralisethecountry.tga"
+	}
+	spriteType = {
+		name = "GFX_ZEX_MGY_focus_centralisethecountry_shine"
+		textureFile = "gfx/interface/goals/MGY/KHF/zex_goal_mgy_centralisethecountry.tga"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/MGY/KHF/zex_goal_mgy_centralisethecountry.tga"			
+			animationtexturefile = "gfx/interface/goals/MGY/KHF/overlay_100_88.dds"
+			animationrotation = -90.0		
+			animationlooping = yes			
+			animationtime = 0.75			
+			animationdelay = 5		
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	# Integrate Administrations 
+	spriteType = {
+		name = "GFX_ZEX_MGY_focus_integratenomarchs"
+		textureFile = "gfx/interface/goals/MGY/KHF/zex_goal_mgy_integratenomarchs.tga"
+	}
+	spriteType = {
+		name = "GFX_ZEX_MGY_focus_integratenomarchs_shine"
+		textureFile = "gfx/interface/goals/MGY/KHF/zex_goal_mgy_integratenomarchs.tga"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/MGY/KHF/zex_goal_mgy_integratenomarchs.tga"			
+			animationtexturefile = "gfx/interface/goals/MGY/KHF/overlay_100_88.dds"
+			animationrotation = -90.0		
+			animationlooping = yes			
+			animationtime = 0.75			
+			animationdelay = 5		
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	#Deentralise the Provinces 
+	spriteType = {
+		name = "GFX_ZEX_MGY_focus_increaseautonomy"
+		textureFile = "gfx/interface/goals/MGY/KHF/zex_goal_mgy_increaseautonomy.tga"
+	}
+	spriteType = {
+		name = "GFX_ZEX_MGY_focus_increaseautonomy_shine"
+		textureFile = "gfx/interface/goals/MGY/KHF/zex_goal_mgy_increaseautonomy.tga"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/MGY/KHF/zex_goal_mgy_increaseautonomy.tga"			
+			animationtexturefile = "gfx/interface/goals/MGY/KHF/overlay_100_88.dds"
+			animationrotation = -90.0		
+			animationlooping = yes			
+			animationtime = 0.75			
+			animationdelay = 5		
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	# War On Illiteracy
+	spriteType = {
+		name = "GFX_ZEX_MGY_focus_educationreform"
+		textureFile = "gfx/interface/goals/MGY/KHF/zex_goal_mgy_educationreform.tga"
+	}
+	spriteType = {
+		name = "GFX_ZEX_MGY_focus_educationreform_shine"
+		textureFile = "gfx/interface/goals/MGY/KHF/zex_goal_mgy_educationreform.tga"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/MGY/KHF/zex_goal_mgy_educationreform.tga"			
 			animationtexturefile = "gfx/interface/goals/MGY/KHF/overlay_100_88.dds"
 			animationrotation = -90.0		
 			animationlooping = yes			
@@ -639,11 +731,11 @@ spriteTypes = {
 	}
 	# Maregyptian Renaissance 
 	spriteType = {
-		name = "GFX_ZEX_MGY_focus_finishadminreforms"
+		name = "GFX_ZEX_MGY_focus_maregyptianrenaissance"
 		textureFile = "gfx/interface/goals/MGY/KHF/zex_goal_mgy_finishadminreforms.tga"
 	}
 	spriteType = {
-		name = "GFX_ZEX_MGY_focus_finishadminreforms_shine"
+		name = "GFX_ZEX_MGY_focus_maregyptianrenaissance_shine"
 		textureFile = "gfx/interface/goals/MGY/KHF/zex_goal_mgy_finishadminreforms.tga"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {

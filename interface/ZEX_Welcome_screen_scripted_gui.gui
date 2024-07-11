@@ -287,7 +287,7 @@ guiTypes = {
 			instantTextBoxType = {
 				name = "ZEX_Welcome_Screen_SickMare_Maregypt_Text"
 				position = { x = 0 y = 36 }
-				maxWidth = 750
+				maxWidth = 740
 				text = ZEX_Welcome_Screen_SickMare_Maregypt_Text
 				font = "hoi_16mbs"
 			}
@@ -305,14 +305,14 @@ guiTypes = {
 			instantTextBoxType = {
 				name = "ZEX_Welcome_Screen_LandOfTheSun_Maregypt_Text"
 				position = { x = 0 y = 299 }
-				maxWidth = 750
+				maxWidth = 740
 				text = ZEX_Welcome_Screen_LandOfTheSun_Maregypt_Text
 				font = "hoi_16mbs"
 			}
 
 			iconType = {
 				name = "ZEX_Welcome_Screen_Lore_Footer"
-				position = { x = 15 y = 675 }
+				position = { x = 15 y = 685 }
 				spriteType = "ZEX_MGY_Empty_GFX"	
 			}
 		}

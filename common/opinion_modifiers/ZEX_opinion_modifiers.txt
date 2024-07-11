@@ -1,0 +1,9 @@
+opinion_modifiers = {
+	zex_mgy_pressured_integration = {
+		value = -50
+		decay = 5
+	}
+	zex_mgy_friendship = {
+		value = 40	
+	}
+}

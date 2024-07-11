@@ -72,7 +72,7 @@ focus_tree = {
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = ZEX_MGY_HAS_UNREST_tt
-				has_idea = ZEX_MGY_REPUBLICAN_AGITATION_IDEA
+				has_idea = ZEX_MGY_idea_political_unrest
 			}
 		}
 
@@ -100,7 +100,7 @@ focus_tree = {
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = ZEX_MGY_HAS_UNREST_tt
-				has_idea = ZEX_MGY_REPUBLICAN_AGITATION_IDEA
+				has_idea = ZEX_MGY_idea_political_unrest
 			}
 		}
 
@@ -128,7 +128,7 @@ focus_tree = {
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = ZEX_MGY_HAS_UNREST_tt
-				has_idea = ZEX_MGY_REPUBLICAN_AGITATION_IDEA
+				has_idea = ZEX_MGY_idea_political_unrest
 			}
 		}
 
@@ -156,7 +156,7 @@ focus_tree = {
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = ZEX_MGY_HAS_UNREST_tt
-				has_idea = ZEX_MGY_REPUBLICAN_AGITATION_IDEA
+				has_idea = ZEX_MGY_idea_political_unrest
 			}
 		}
 
@@ -184,7 +184,7 @@ focus_tree = {
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = ZEX_MGY_HAS_UNREST_tt
-				has_idea = ZEX_MGY_REPUBLICAN_AGITATION_IDEA
+				has_idea = ZEX_MGY_idea_political_unrest
 			}
 		}
 
@@ -212,7 +212,7 @@ focus_tree = {
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = ZEX_MGY_HAS_UNREST_tt
-				has_idea = ZEX_MGY_REPUBLICAN_AGITATION_IDEA
+				has_idea = ZEX_MGY_idea_political_unrest
 			}
 		}
 
@@ -240,7 +240,7 @@ focus_tree = {
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = ZEX_MGY_HAS_UNREST_tt
-				has_idea = ZEX_MGY_REPUBLICAN_AGITATION_IDEA
+				has_idea = ZEX_MGY_idea_political_unrest
 			}
 		}
 
@@ -268,7 +268,7 @@ focus_tree = {
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = ZEX_MGY_HAS_UNREST_tt
-				has_idea = ZEX_MGY_REPUBLICAN_AGITATION_IDEA
+				has_idea = ZEX_MGY_idea_political_unrest
 			}
 		}
 
@@ -299,7 +299,7 @@ focus_tree = {
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = ZEX_MGY_HAS_UNREST_tt
-				has_idea = ZEX_MGY_REPUBLICAN_AGITATION_IDEA
+				has_idea = ZEX_MGY_idea_political_unrest
 			}
 		}
 
@@ -327,7 +327,7 @@ focus_tree = {
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = ZEX_MGY_HAS_UNREST_tt
-				has_idea = ZEX_MGY_REPUBLICAN_AGITATION_IDEA
+				has_idea = ZEX_MGY_idea_political_unrest
 			}
 		}
 
@@ -360,6 +360,12 @@ focus_tree = {
 		relative_position_id = ZEX_MGY_focus_kingspeech
 
 		available = {
+			custom_trigger_tooltip = {
+				tooltip = ZEX_MGY_NOT_HAS_UNREST_tt
+				NOT = {
+					has_idea = ZEX_MGY_idea_political_unrest
+				}
+			}
 			custom_trigger_tooltip = {
 				tooltip = ZEX_MGY_Fate_of_Lotussociety_tt
 				NOT = {
@@ -397,6 +403,12 @@ focus_tree = {
 
 		available = {
 			custom_trigger_tooltip = {
+				tooltip = ZEX_MGY_NOT_HAS_UNREST_tt
+				NOT = {
+					has_idea = ZEX_MGY_idea_political_unrest
+				}
+			}
+			custom_trigger_tooltip = {
 				tooltip = ZEX_MGY_Fate_of_Lotussociety_tt
 				NOT = {
 					has_completed_focus = ZEX_MGY_focus_reformlotussociety
@@ -432,6 +444,12 @@ focus_tree = {
 		relative_position_id = ZEX_MGY_focus_kingspeech
 
 		available = {
+			custom_trigger_tooltip = {
+				tooltip = ZEX_MGY_NOT_HAS_UNREST_tt
+				NOT = {
+					has_idea = ZEX_MGY_idea_political_unrest
+				}
+			}
 			custom_trigger_tooltip = {
 				tooltip = ZEX_MGY_Fate_of_Lotussociety_tt
 				NOT = {
@@ -472,7 +490,25 @@ focus_tree = {
 			focus = ZEX_MGY_focus_emergencypowers
 		}
 		completion_reward = {
-
+			if = {
+				limit = {
+					NOT = {
+						has_tech = tech_military_police
+					}
+				}
+				set_technology = {
+					tech_military_police = 1
+					popup = no
+				}
+			}
+			else = {
+				add_command_power = 20
+			}
+			unlock_decision_tooltip = ZEX_MGY_SPHERE_SINEIGHI_SEPERATISM
+			unlock_decision_tooltip = ZEX_MGY_SPHERE_MANEISRATA_SEPERATISM
+			unlock_decision_tooltip = ZEX_MGY_SPHERE_ZUSH_SEPERATISM
+			unlock_decision_tooltip = ZEX_MGY_SPHERE_NEIGHPATA_SEPERATISM
+			unlock_decision_tooltip = ZEX_MGY_SPHERE_KANEIGH_SEPERATISM
 		}
 	}
 
@@ -481,7 +517,7 @@ focus_tree = {
 		icon = GFX_ZEX_MGY_focus_reintegration
 		cost = 10
 		x = 0
-		y = 5
+		y = 6
 
 		search_filters = {
 			FOCUS_FILTER_STABILITY
@@ -560,7 +596,7 @@ focus_tree = {
 	focus = {
 		id = ZEX_MGY_focus_adminsitrativecentralisation
 		icon = GFX_ZEX_MGY_focus_adminsitrativecentralisation
-		cost = 4
+		cost = 8
 		x = 6
 		y = 1
 		search_filters = {
@@ -592,7 +628,7 @@ focus_tree = {
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = ZEX_MGY_HAS_UNREST_tt
-				has_idea = ZEX_MGY_REPUBLICAN_AGITATION_IDEA
+				has_idea = ZEX_MGY_idea_political_unrest
 			}
 		}
 
@@ -603,40 +639,21 @@ focus_tree = {
 			focus = ZEX_MGY_focus_nationalservice
 		}
 		completion_reward = {
-
-		}
-	}
-
-	focus = {
-		id = ZEX_MGY_focus_presscensorship
-		icon = GFX_ZEX_MGY_focus_presscensorship
-		cost = 10
-		x = -5
-		y = 2	
-		search_filters = {
-			FOCUS_FILTER_POLITICAL
-		}
-
-		relative_position_id = ZEX_MGY_focus_adminsitrativecentralisation
-
-		available = {
-			custom_trigger_tooltip = {
-				tooltip = ZEX_MGY_HAS_UNREST_tt
-				has_idea = ZEX_MGY_REPUBLICAN_AGITATION_IDEA
+			add_stability = 0.05
+			add_popularity = {
+				ideology = ROOT
+				popularity = 0.05
+			}
+			add_timed_idea = {
+				idea = ZEX_MGY_Complacent_Military
+				days = 730
 			}
 		}
-
-		prerequisite = {
-			focus = ZEX_MGY_focus_emergencypowers
-		}
-		completion_reward = {
-
-		}
 	}
 
 	focus = {
-		id = ZEX_MGY_focus_restoretreasury
-		icon = GFX_ZEX_MGY_focus_restoretreasury
+		id = ZEX_MGY_focus_reformtaxlaws
+		icon = GFX_ZEX_MGY_focus_reformtaxlaws
 		cost = 5
 		x = -2
 		y = 1
@@ -648,7 +665,7 @@ focus_tree = {
 
 		available = {
 			NOT = {
-				has_idea = ZEX_MGY_Equestrian_Debts
+				has_idea = ZEX_MGY_idea_Equestrian_Debts
 			}
 		}
 		prerequisite = {
@@ -679,9 +696,20 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = ZEX_MGY_focus_renovatesecretariat_tt
 			custom_effect_tooltip = zex_mgy_event_emptyline_tt
-			swap_ideas = {
-				remove_idea = ZEX_MGY_Administrative_centralisation
-				add_idea = ZEX_MGY_Administrative_centralisation_and_vizier
+			if = {
+				limit = {
+					has_idea = ZEX_MGY_Administrative_centralisation_and_overseer
+				}
+				swap_ideas = {
+					remove_idea = ZEX_MGY_Administrative_centralisation_and_overseer
+					add_idea = ZEX_MGY_Administrative_centralisation_and_overseer_vizier
+				}
+			}
+			else = {
+				swap_ideas = {
+					remove_idea = ZEX_MGY_Administrative_centralisation
+					add_idea = ZEX_MGY_Administrative_centralisation_and_vizier
+				}
 			}
 		}
 	}
@@ -715,59 +743,20 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			if = {
-				limit = { owns_state = 734 }
-				734 = {
-					add_extra_state_shared_building_slots = 2
+			every_owned_state = {
+				limit = {
+					OR = {
+						state = 737
+						state = 733						
+						state = 734
+						state = 734
+						state = 758
+						state = 759
+						state = 760
+						state = 761
+					}
 				}
-			}
-			if = {
-				limit = { owns_state = 737 }
-				737 = {
-					add_extra_state_shared_building_slots = 1
-				}
-			}
-			if = {
-				limit = { owns_state = 736 }
-				736 = {
-					add_extra_state_shared_building_slots = 1
-				}
-			}
-			if = {
-				limit = { owns_state = 735 }
-				735 = {
-					add_extra_state_shared_building_slots = 1
-				}
-			}
-			if = {
-				limit = { owns_state = 758 }
-				758 = {
-					add_extra_state_shared_building_slots = 1
-				}
-			}
-			if = {
-				limit = { owns_state = 759 }
-				759 = {
-					add_extra_state_shared_building_slots = 1
-				}
-			}
-			if = {
-				limit = { owns_state = 760 }
-				760 = {
-					add_extra_state_shared_building_slots = 1
-				}
-			}
-			if = {
-				limit = { owns_state = 761 }
-				761 = {
-					add_extra_state_shared_building_slots = 2
-				}
-			}
-			if = {
-				limit = { owns_state = 766 }
-				766 = {
-					add_extra_state_shared_building_slots = 2
-				}
+				add_extra_state_shared_building_slots = 1	
 			}
 		}
 	}
@@ -776,7 +765,7 @@ focus_tree = {
 		id = ZEX_MGY_focus_newbureaucracy
 		icon = GFX_ZEX_MGY_focus_newbureaucracy
 		cost = 6.5
-		x = 3
+		x = 4
 		y = 2
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -796,7 +785,7 @@ focus_tree = {
 		id = ZEX_MGY_focus_nationalsecurityact
 		icon = GFX_ZEX_MGY_focus_nationalsecuritylaw
 		cost = 10
-		x = -3
+		x = -4
 		y = 2
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -807,7 +796,7 @@ focus_tree = {
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = ZEX_MGY_HAS_UNREST_tt
-				has_idea = ZEX_MGY_REPUBLICAN_AGITATION_IDEA
+				has_idea = ZEX_MGY_idea_political_unrest
 			}
 		}
 
@@ -818,13 +807,19 @@ focus_tree = {
 			focus = ZEX_MGY_focus_emergencypowers
 		}
 		completion_reward = {
-
+			add_ideas = ZEX_MGY_State_Of_Emergency
+			unlock_decision_tooltip = ZEX_MGY_END_EMERGENCY
+			custom_effect_tooltip = zex_mgy_event_emptyline_tt
+			zex_mgy_decrease_unrest_sineighi = yes
+			zex_mgy_decrease_unrest_maneisrata = yes
+			zex_mgy_decrease_unrest_kaneigh = yes
+			zex_mgy_decrease_unrest_zush = yes
 		}
 	}
 
 	focus = {
-		id = ZEX_MGY_focus_railroad
-		icon = GFX_ZEX_MGY_focus_railroad
+		id = ZEX_MGY_focus_completelandreform
+		icon = GFX_ZEX_MGY_focus_completelandreform
 		cost = 6.5
 		x = 0
 		y = 2
@@ -845,26 +840,21 @@ focus_tree = {
 			}
 		}
 		prerequisite = {
-			focus = ZEX_MGY_focus_restoretreasury
+			focus = ZEX_MGY_focus_reformtaxlaws
 		}
 		prerequisite = {
 			focus = ZEX_MGY_focus_redrawprovinces
 		}
 		completion_reward = {
-			custom_effect_tooltip = ZEX_MGY_focus_railroad_tt
+			unlock_decision_tooltip = ZEX_MGY_SPHERE_INTEGRATE_ALWANI
 			custom_effect_tooltip = zex_mgy_event_emptyline_tt
 			902 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 2
-					instant_build = yes
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
 					level = 1
 					instant_build = yes
 				}
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
 					level = 1
@@ -882,8 +872,8 @@ focus_tree = {
 	}
 
 	focus = {
-		id = ZEX_MGY_focus_nationalconstruction
-		icon = GFX_ZEX_MGY_focus_nationalconstruction
+		id = ZEX_MGY_focus_nationalbank
+		icon = GFX_ZEX_MGY_focus_nationalbank
 		cost = 10
 		x = -2
 		y = 3
@@ -895,7 +885,7 @@ focus_tree = {
 			custom_trigger_tooltip = {
 				tooltip = ZEX_MGY_NOT_HAS_UNREST_tt
 				NOT = {
-					has_idea = ZEX_MGY_REPUBLICAN_AGITATION_IDEA
+					has_idea = ZEX_MGY_idea_political_unrest
 				}
 			}
 		}
@@ -903,16 +893,31 @@ focus_tree = {
 		relative_position_id = ZEX_MGY_focus_adminsitrativecentralisation
 
 		prerequisite = {
-			focus = ZEX_MGY_focus_restoretreasury
+			focus = ZEX_MGY_focus_reformtaxlaws
 		}
 		completion_reward = {
-
+			unlock_decision_category_tooltip = ZEX_MGY_OVERSEER_OFFICE
+			if = {
+				limit = {
+					has_idea = ZEX_MGY_Administrative_centralisation_and_vizier
+				}
+				swap_ideas = {
+					remove_idea = ZEX_MGY_Administrative_centralisation_and_vizier
+					add_idea = ZEX_MGY_Administrative_centralisation_and_overseer_vizier
+				}
+			}
+			else = {
+				swap_ideas = {
+					remove_idea = ZEX_MGY_Administrative_centralisation
+					add_idea = ZEX_MGY_Administrative_centralisation_and_overseer
+				}
+			}
 		}
 	}
 
 	focus = {
-		id = ZEX_MGY_focus_landreform
-		icon = GFX_ZEX_MGY_focus_landreform
+		id = ZEX_MGY_focus_developruralareas
+		icon = GFX_ZEX_MGY_focus_developruralareas
 		cost = 10
 		x = 2
 		y = 3
@@ -924,7 +929,7 @@ focus_tree = {
 			custom_trigger_tooltip = {
 				tooltip = ZEX_MGY_NOT_HAS_UNREST_tt
 				NOT = {
-					has_idea = ZEX_MGY_REPUBLICAN_AGITATION_IDEA
+					has_idea = ZEX_MGY_idea_political_unrest
 				}
 			}
 		}
@@ -935,45 +940,195 @@ focus_tree = {
 			focus = ZEX_MGY_focus_redrawprovinces
 		}
 		completion_reward = {
-
+			#ZEX_MGY_Land_reform_complete
+			every_owned_state = {
+				limit = {
+					OR = {
+						state = 737
+						state = 733						
+						state = 734
+						state = 734
+						state = 758
+						state = 759
+						state = 760
+						state = 761
+					}
+				}
+				add_dynamic_modifier = {
+					modifier = ZEX_MGY_Land_reform_complete
+				}
+			}
 		}
 	}
 
 	focus = {
-		id = ZEX_MGY_focus_finishadminreforms
-		icon = GFX_ZEX_MGY_focus_finishadminreforms
+		id = ZEX_MGY_focus_centralisethecountry
+		icon = GFX_ZEX_MGY_focus_centralisethecountry
 		cost = 10
-		x = 0
+		x = -2
 		y = 4
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
 
 		available = {
+			
+		}
+
+		relative_position_id = ZEX_MGY_focus_adminsitrativecentralisation
+
+		prerequisite = {
+			focus = ZEX_MGY_focus_nationalbank
+		}
+		completion_reward = {
+			
+		}
+		mutually_exclusive = {
+			focus = ZEX_MGY_focus_increaseautonomy
+		}
+	}
+
+	focus = {
+		id = ZEX_MGY_focus_integratenomarchs
+		icon = GFX_ZEX_MGY_focus_integratenomarchs
+		cost = 10
+		x = -4
+		y = 4
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+
+		available = {
+			
+		}
+
+		relative_position_id = ZEX_MGY_focus_adminsitrativecentralisation
+
+		prerequisite = {
+			focus = ZEX_MGY_focus_nationalbank
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = ZEX_MGY_focus_increaseautonomy
+		icon = GFX_ZEX_MGY_focus_increaseautonomy
+		cost = 10
+		x = 2
+		y = 4
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+
+		available = {
+			
+		}
+
+		relative_position_id = ZEX_MGY_focus_adminsitrativecentralisation
+
+		prerequisite = {
+			focus = ZEX_MGY_focus_developruralareas
+		}
+		completion_reward = {
+			
+		}
+		mutually_exclusive = {
+			focus = ZEX_MGY_focus_centralisethecountry
+		}
+	}
+
+	focus = {
+		id = ZEX_MGY_focus_educationreform
+		icon = GFX_ZEX_MGY_focus_educationreform
+		cost = 10
+		x = 4
+		y = 4
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+
+		available = {
+			
+		}
+
+		relative_position_id = ZEX_MGY_focus_adminsitrativecentralisation
+
+		prerequisite = {
+			focus = ZEX_MGY_focus_developruralareas
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = ZEX_MGY_focus_maregyptianrenaissance
+		icon = GFX_ZEX_MGY_focus_maregyptianrenaissance
+		cost = 10
+		x = 0
+		y = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+
+		available = {
+			has_completed_focus = ZEX_MGY_focus_renovatesecretariat
 			custom_trigger_tooltip = {
 				tooltip = ZEX_MGY_NOT_HAS_UNREST_tt
 				NOT = {
-					has_idea = ZEX_MGY_REPUBLICAN_AGITATION_IDEA
+					has_idea = ZEX_MGY_idea_political_unrest
 				}
 			}
 			NOT = {
-				has_idea = ZEX_Unfinished_Constitution
+				has_idea = ZEX_MGY_idea_the_fading_sun
 			}
 		}
 
 		relative_position_id = ZEX_MGY_focus_adminsitrativecentralisation
 
 		prerequisite = {
-			focus = ZEX_MGY_focus_nationalconstruction
+			focus = ZEX_MGY_focus_completelandreform
 		}
 		prerequisite = {
-			focus = ZEX_MGY_focus_landreform
-		}
-		prerequisite = {
-			focus = ZEX_MGY_focus_railroad
+			focus = ZEX_MGY_focus_increaseautonomy
+			focus = ZEX_MGY_focus_centralisethecountry
 		}
 		completion_reward = {
-
+			if = {
+				limit = {
+					has_idea = ZEX_MGY_Administrative_centralisation_and_overseer
+				}
+				swap_ideas = {
+					remove_idea = ZEX_MGY_Administrative_centralisation_and_overseer
+					add_idea = ZEX_MGY_Renaissance
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = ZEX_MGY_Administrative_centralisation_and_vizier
+				}
+				swap_ideas = {
+					remove_idea = ZEX_MGY_Administrative_centralisation_and_vizier
+					add_idea = ZEX_MGY_Renaissance
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = ZEX_MGY_Administrative_centralisation_and_overseer_vizier
+				}
+				swap_ideas = {
+					remove_idea = ZEX_MGY_Administrative_centralisation_and_overseer_vizier
+					add_idea = ZEX_MGY_Renaissance
+				}
+			}
+			else = {
+				swap_ideas = {
+					remove_idea = ZEX_MGY_Administrative_centralisation
+					add_idea = ZEX_MGY_Renaissance
+				}
+			}
 		}
 	}
 }

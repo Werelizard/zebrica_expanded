@@ -1,0 +1,144 @@
+ZEX_POLITICS_CAT = {
+	#
+	# MAREGYPTIAN DECISIONS 
+	#
+	ZEX_MGY_ATTACK_COMMUNISTS = {
+		icon = GFX_decision_anti_communist
+		cost = 25
+		days_remove = 21
+		visible = {
+			zxe_is_maregypt_or_cosmetic_maregypt = yes
+			NOT = {
+				has_government = communism
+			}
+		}
+		available = {
+			communism > 0.01
+		}
+		modifier = {
+			communism_drift = -0.01
+			political_power_factor = -0.15
+		}
+	}
+	ZEX_MGY_ATTACK_SUPREMACISTS = {
+		icon = GFX_decision_anti_fascist
+		cost = 25
+		days_remove = 21
+		visible = {
+			zxe_is_maregypt_or_cosmetic_maregypt = yes
+			NOT = {
+				has_government = fascism
+			}
+		}
+		available = {
+			fascism > 0.01
+		}
+		modifier = {
+			fascism_drift = -0.01
+			political_power_factor = -0.15
+		}
+	}
+	ZEX_MGY_ATTACK_HARMONISTS = {
+		icon = GFX_decision_anti_harmony
+		cost = 25
+		days_remove = 21
+		visible = {
+			zxe_is_maregypt_or_cosmetic_maregypt = yes
+			NOT = {
+				has_government = democratic
+			}
+		}
+		available = {
+			democratic > 0.01
+		}
+		modifier = {
+			democratic_drift = -0.01
+			political_power_factor = -0.15
+		}
+	}
+	ZEX_MGY_ATTACK_NEUTRAL = {
+		icon = GFX_decision_anti_neutral
+		cost = 25
+		days_remove = 21
+		visible = {
+			zxe_is_maregypt_or_cosmetic_maregypt = yes
+			NOT = {
+				has_government = neutrality
+			}
+		}
+		available = {
+			neutrality > 0.01
+		}
+		modifier = {
+			neutrality_drift = -0.01
+			political_power_factor = -0.15
+		}
+	}
+	ZEX_MGY_END_EMERGENCY = {
+		icon = GFX_decision_generic_police_action
+		visible = {
+			zxe_is_maregypt_or_cosmetic_maregypt = yes
+			has_idea = ZEX_MGY_State_Of_Emergency
+		}
+		available = {
+			has_idea = ZEX_MGY_State_Of_Emergency
+		}
+		complete_effect = {
+			remove_ideas = ZEX_MGY_State_Of_Emergency
+			add_political_power = -100
+		}
+	}
+	#Decisions relating to monarchy
+	ZEX_MGY_LEGITIMATE_TOUR = {
+		icon = ZEX_GFX_increase_legitimacy
+		cost = 25
+		days_remove = 28
+		fixed_random_seed = no
+		visible = {
+			zxe_is_maregypt_or_cosmetic_maregypt = yes
+			NOT = {
+				zex_mgy_no_king_or_queen = yes
+			}
+		}
+		available = {
+			
+		}
+		modifier = {
+			
+		}
+		complete_effect = { #Tour more succesful depending on how many people support the monarchy
+			hidden_effect = {
+				set_temp_variable = {
+					zex_mgy_var_rulingparty = party_popularity@ruling_party
+				}
+				multiply_temp_variable = {
+					zex_mgy_var_rulingparty = 100
+				}
+				multiply_temp_variable = {
+					zex_mgy_var_rulingparty = 0.8
+				}
+				set_temp_variable = {
+					zex_mgy_var_oppositionpop = 100
+				}
+				subtract_from_temp_variable = {
+					zex_mgy_var_oppositionpop = zex_mgy_var_rulingparty
+				}
+			}
+			random_list = {
+				zex_mgy_var_rulingparty = {
+					custom_effect_tooltip = zex_mgy_succesfullroyaltour_tt
+					add_political_power = 50
+					add_stability = 0.02
+					add_war_support = 0.02
+				}
+				zex_mgy_var_oppositionpop = {
+					custom_effect_tooltip = zex_mgy_failedroyaltour_tt
+					add_popularity = {
+						ideology = ROOT
+						popularity = -0.03
+					}
+				}
+			}
+		}
+	}
+}

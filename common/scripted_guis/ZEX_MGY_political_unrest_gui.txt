@@ -3,7 +3,7 @@ scripted_gui = {
 		context_type = decision_category
 		window_name = "ZEX_MGY_political_unrest_ui_window"
 		visible = {
-			has_idea = ZEX_MGY_REPUBLICAN_AGITATION_IDEA
+			has_idea = ZEX_MGY_idea_political_unrest
 		}
 		triggers = {
 			ZEX_MGY_sineighi_icon_click_enabled = {

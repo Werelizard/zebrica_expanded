@@ -13,10 +13,10 @@ ZEX_MGY_Enable_Vizier = {
 	if = {
 		limit = {
 			NOT = {
-				has_idea = ZEX_MGY_VIZIER_OFFICE
+				has_idea = ZEX_MGY_idea_vizier_king_balance
 			}
 		}
-		add_ideas = ZEX_MGY_VIZIER_OFFICE
+		add_ideas = ZEX_MGY_idea_vizier_king_balance
 	}
 	# if = {
 	# 	limit = {
@@ -56,10 +56,10 @@ ZEX_MGY_Enable_Vizier_SETUP = {
 	if = {
 		limit = {
 			NOT = {
-				has_idea = ZEX_MGY_VIZIER_OFFICE
+				has_idea = ZEX_MGY_idea_vizier_king_balance
 			}
 		}
-		add_ideas = ZEX_MGY_VIZIER_OFFICE
+		add_ideas = ZEX_MGY_idea_vizier_king_balance
 	}
 	# if = {
 	# 	limit = {

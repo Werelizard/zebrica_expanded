@@ -358,3 +358,35 @@
 
  #Decrees
  ZEX_MGY_Vizier_Balance_Ui_Help_tt:0 "The £ZEX_vizier_bop  §OBalance of Power§! mechanic models the polarisation of the administration between the §YKing§! and the §YVizier§!.\n\nThe balance scales from §Y-100§! to §Y100§!. The stronger the balance tilts - regardless of direction - the more our overall £pol_power  §tpolitical power gain§! will be impacted. However, strengthening one side will make the corresponding edicts cheaper to enact, whilst making the opposing side's much more expensive.\n\nThe balance can be influenced by £ZEX_maregypt_edicts  §8edicts§! or by allocating some £pol_power  §8political power§! to gradually shift it towards one side or the other."
+
+ #Political actions
+ ZEX_POLITICS_CAT:0 "[ROOT.GetAdjectiveCap] Political Decisions"
+ ZEX_MGY_ATTACK_COMMUNISTS:0 "Combat §YSocialist§! Influence"
+ ZEX_MGY_ATTACK_SUPREMACISTS:0 "Combat §YSupremacist§! Influence"
+ ZEX_MGY_ATTACK_HARMONISTS:0 "Combat §YHarmonist§! Influence"
+ ZEX_MGY_ATTACK_NEUTRAL:0 "Combat §YAuthoritarian§! Influence"
+ ZEX_MGY_EMERGENCY_BAN_OPPOSITION:0 "Crack Down on Radicals"
+ ZEX_MGY_MORE_POLICE:0 "Expand Policing Efforts"
+ ZEX_MGY_END_EMERGENCY:0 "End the State of Emergency"
+ ZEX_MGY_LEGITIMATE_TOUR:0 "Tour the Countryside"
+ ZEX_MGY_LEGITIMATE_TOUR_desc:0 "The more popular §Y[ROOT.GetRulingParty§! is, the more likely the royal tour will be well received."
+ zex_mgy_succesfullroyaltour_tt:0 "§GThe Royal Tour is Well Received§!:"
+ zex_mgy_failedroyaltour_tt:0 "§tThe Royal Tour is Poorly Received§!:"
+ 
+ ZEX_MGY_SPHERE_INFLUENCE:0 "The [ROOT.GetAdjectiveCap] Sphere"
+ zex_mgy_increase_alwani_integration_tt:0 "Increase the £autonomy_texticon  §Yintegration§! of [ALO.GetNameDef] by a random amount. Currently, integration progress is at §Y[?ROOT.zex_mgy_var_alwani_integration|0%%]§!.\n\nThe cost to take this decision will increase the higher the integration!\n"
+ zex_mgy_deploymaredjayrequireddivs_tt:0 "At least §Y2§! divisions are present in the state."
+ zex_mgy_can_integrate_alwani_tt:0 "Integration of [ALO.GetNameDef] is at least §Y100%§!. Currently, integration progress is at §Y[?ROOT.zex_mgy_var_alwani_integration|0%%]§!"
+ ZEX_MGY_SPHERE_PRESSURE_ALWANI:0 "Pressure [ALO.GetNameDef]"
+ ZEX_MGY_SPHERE_INVEST_ALWANI:0 "Support [ALO.GetAdjectiveCap] Industry"
+ ZEX_MGY_SPHERE_INTEGRATE_ALWANI:0 "Integrate Alwani"
+ ZEX_MGY_SPHERE_SINEIGHI_SEPERATISM:0 "Crush seperatism in [738.GetName]"
+ ZEX_MGY_SPHERE_MANEISRATA_SEPERATISM:0 "Crush seperatism in [740.GetName]"
+ ZEX_MGY_SPHERE_ZUSH_SEPERATISM:0 "Crush seperatism in [766.GetName]"
+ ZEX_MGY_SPHERE_KANEIGH_SEPERATISM:0 "Crush seperatism in [763.GetName]"
+ ZEX_MGY_SPHERE_NEIGHPATA_SEPERATISM:0 "Crush seperatism in [770.GetName]"
+ 
+ ZEX_MGY_OVERSEER_OFFICE:0 "Overseer of the Workers"
+ ZEX_MGY_INVEST_IN_STATE:0 "Urbanise [FROM.GetName]"
+ zex_num_of_available_civilian_factories_5_tt:0 "More available Civilian Factories than §Y5§!"
+ zex_mgy_alreadyupgradingstate_zex_tt:0 "Not: is already upgrading a state"

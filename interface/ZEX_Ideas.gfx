@@ -1,23 +1,27 @@
 spriteTypes = {
 	spriteType = {
-		name = "GFX_idea_ZEX_MGY_Breadbasket"
+		name = "GFX_idea_ZEX_MGY_idea_Breadbasket"
 		textureFile = "gfx/interface/ideas/ZEX_Breadbasket.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_ZEX_Unfinished_Constitution"
-		textureFile = "gfx/interface/ideas/ZEX_Unfinished_Constitution.dds"
+		name = "GFX_idea_ZEX_MGY_idea_the_fading_sun"
+		textureFile = "gfx/interface/ideas/ZEX_MGY_idea_the_fading_sun.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_ZEX_MGY_Equestrian_Debts"
-		textureFile = "gfx/interface/ideas/ZEX_MGY_Equestrian_Debts.dds"
+		name = "GFX_idea_ZEX_MGY_idea_Equestrian_Debts"
+		textureFile = "gfx/interface/ideas/ZEX_MGY_idea_Equestrian_Debts.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_ZEX_MGY_REPUBLICAN_AGITATION_IDEA"
-		textureFile = "gfx/interface/ideas/ZEX_MGY_REPUBLICAN_AGITATION_IDEA.dds"
+		name = "GFX_idea_ZEX_MGY_idea_political_unrest"
+		textureFile = "gfx/interface/ideas/ZEX_MGY_idea_political_unrest.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_ZEX_MGY_Vizier_Office"
+		name = "GFX_idea_ZEX_MGY_idea_vizier_king_balance"
 		textureFile = "gfx/interface/ideas/ZEX_MGY_Viziers.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ZEX_MGY_idea_maredjay_elite"
+		textureFile = "gfx/interface/ideas/ZEX_Maredjay.dds"
 	}
 
 	#Characters

@@ -4,7 +4,7 @@
 
 ZEX_MGY_republican_agitation_impact_dynmod = {
     enable = { 
-		has_idea = ZEX_MGY_REPUBLICAN_AGITATION_IDEA
+		has_idea = ZEX_MGY_idea_political_unrest
 	}
     stability_factor = ZEX_MGY_AVERAGE_UNREST_NEGATIVE
     war_support_factor = ZEX_MGY_AVERAGE_POLITICAL_IMPACT_UNREST
@@ -16,7 +16,7 @@ ZEX_MGY_republican_agitation_sineighi_dynmod = {
 	icon = GFX_ZEX_MGY_Local_Unrest
     enable = { 
 		owner = {
-            has_idea = ZEX_MGY_REPUBLICAN_AGITATION_IDEA
+            has_idea = ZEX_MGY_idea_political_unrest
         }
 	}
     compliance_growth = MGY.ZEX_MGY_VAR_Sineighi_Unrest_negative
@@ -28,7 +28,7 @@ ZEX_MGY_republican_agitation_kaneigh_dynmod = {
     icon = GFX_ZEX_MGY_Local_Unrest
     enable = { 
 		owner = {
-            has_idea = ZEX_MGY_REPUBLICAN_AGITATION_IDEA
+            has_idea = ZEX_MGY_idea_political_unrest
         }
 	}
     compliance_growth = MGY.ZEX_MGY_VAR_Kaneigh_Unrest_negative
@@ -40,7 +40,7 @@ ZEX_MGY_republican_agitation_maneisrata_dynmod = {
     icon = GFX_ZEX_MGY_Local_Unrest
     enable = { 
 		owner = {
-            has_idea = ZEX_MGY_REPUBLICAN_AGITATION_IDEA
+            has_idea = ZEX_MGY_idea_political_unrest
         }
 	}
     compliance_growth = MGY.ZEX_MGY_VAR_Maneisrata_Unrest_negative
@@ -52,7 +52,7 @@ ZEX_MGY_republican_agitation_uppermaregypt_dynmod = {
     icon = GFX_ZEX_MGY_Local_Unrest
     enable = { 
 		owner = {
-            has_idea = ZEX_MGY_REPUBLICAN_AGITATION_IDEA
+            has_idea = ZEX_MGY_idea_political_unrest
         }
 	}
     compliance_growth = MGY.ZEX_MGY_VAR_UpperMaregypt_Unrest_negative
@@ -64,7 +64,7 @@ ZEX_MGY_republican_agitation_delta_dynmod = {
     icon = GFX_ZEX_MGY_Local_Unrest
     enable = { 
 		owner = {
-            has_idea = ZEX_MGY_REPUBLICAN_AGITATION_IDEA
+            has_idea = ZEX_MGY_idea_political_unrest
         }
 	}
     compliance_growth = MGY.ZEX_MGY_VAR_Delta_Unrest_negative
@@ -76,7 +76,7 @@ ZEX_MGY_republican_agitation_manephis_dynmod = {
     icon = GFX_ZEX_MGY_Local_Unrest
     enable = { 
 		owner = {
-            has_idea = ZEX_MGY_REPUBLICAN_AGITATION_IDEA
+            has_idea = ZEX_MGY_idea_political_unrest
         }
 	}
     compliance_growth = MGY.ZEX_MGY_VAR_Manephis_Unrest_negative
@@ -88,7 +88,7 @@ ZEX_MGY_republican_agitation_somnambula_dynmod = {
     icon = GFX_ZEX_MGY_Local_Unrest
     enable = { 
 		owner = {
-            has_idea = ZEX_MGY_REPUBLICAN_AGITATION_IDEA
+            has_idea = ZEX_MGY_idea_political_unrest
         }
 	}
     compliance_growth = MGY.ZEX_MGY_VAR_Somnambula_Unrest_negative
@@ -100,7 +100,7 @@ ZEX_MGY_republican_agitation_eastdesert_dynmod = {
     icon = GFX_ZEX_MGY_Local_Unrest
     enable = { 
 		owner = {
-            has_idea = ZEX_MGY_REPUBLICAN_AGITATION_IDEA
+            has_idea = ZEX_MGY_idea_political_unrest
         }
 	}
     compliance_growth = MGY.ZEX_MGY_VAR_Eastdesert_Unrest_negative
@@ -112,7 +112,7 @@ ZEX_MGY_republican_agitation_zush_dynmod = {
     icon = GFX_ZEX_MGY_Local_Unrest
     enable = { 
 		owner = {
-            has_idea = ZEX_MGY_REPUBLICAN_AGITATION_IDEA
+            has_idea = ZEX_MGY_idea_political_unrest
         }
 	}
     compliance_growth = MGY.ZEX_MGY_VAR_Zush_Unrest_negative
@@ -155,16 +155,29 @@ ZEX_MGY_vizier_balance_daily_cost_dynmod = {
 # Debts
 #
 
-ZEX_MGY_Equestrian_Debts_dynmod = {
+ZEX_MGY_idea_Equestrian_Debts_dynmod = {
     enable = {
-        has_idea = ZEX_MGY_Equestrian_Debts
+        has_idea = ZEX_MGY_idea_Equestrian_Debts
     }
-    consumer_goods_factor = ZEX_MGY_equestrian_debts_consumer_goods_effect
-    political_power_gain = ZEX_MGY_equestrian_debts_poltical_power_gain
-    industrial_capacity_factory = ZEX_MGY_equestrian_debts_factory_output_effect
-    industrial_capacity_dockyard = ZEX_MGY_equestrian_debts_dockyard_output_effect
+    consumer_goods_factor = ZEX_MGY_idea_Equestrian_Debts_consumer_goods_effect
+    political_power_gain = ZEX_MGY_idea_Equestrian_Debts_poltical_power_gain
+    industrial_capacity_factory = ZEX_MGY_idea_Equestrian_Debts_factory_output_effect
+    industrial_capacity_dockyard = ZEX_MGY_idea_Equestrian_Debts_dockyard_output_effect
 }
 
+
+#
+# Land Reforms
+#
+
+ZEX_MGY_Land_reform_complete = {
+    enable = {
+        always = yes
+    }
+    local_manpower = 0.15
+    state_production_speed_buildings_factor = 0.15
+    local_supplies_for_controller = 0.25
+}
 
 #
 # DEBUG

@@ -33,7 +33,7 @@ ZEX_MAREGYPT_REPUBLICAN_AGITATION_CATEGORY = {
 	}
 	visible = {
 		zxe_is_maregypt_or_cosmetic_maregypt = yes
-		has_idea = ZEX_MGY_REPUBLICAN_AGITATION_IDEA
+		has_idea = ZEX_MGY_idea_political_unrest
 		NOT = {
 			has_country_flag = zex_mgy_did_scripted_civil_war
 		}
@@ -58,4 +58,29 @@ ZEX_MAREGYPT_ROYAL_DIET_CATEGORY = {
 	}
 	priority = 997
 	visible_when_empty = yes
+}
+
+ZEX_MGY_SPHERE_INFLUENCE = {
+	icon = generic_political_actions
+	allowed = {
+		always = yes
+	}
+	visible = {
+		zxe_is_maregypt_or_cosmetic_maregypt = yes
+	}
+	priority = 990
+	visible_when_empty = no
+}
+
+ZEX_MGY_OVERSEER_OFFICE = {
+	icon = GFX_decision_eng_trade_unions_support
+	allowed = {
+		always = yes
+	}
+	visible = {
+		zxe_is_maregypt_or_cosmetic_maregypt = yes
+		has_completed_focus = ZEX_MGY_focus_nationalbank
+	}
+	priority = 989
+	visible_when_empty = no
 }

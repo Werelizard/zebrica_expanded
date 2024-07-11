@@ -1,8 +1,11 @@
 ﻿l_english:
  ZEX_MGY_republican_agitation_impact_dynmod:0 "Political Unrest"
  ZEX_MGY_no_vizier_impact_dynmod:0 "No Vizier"
- ZEX_MGY_Equestrian_Debts_dynmod:0 "Equestrian Debts Repayment"
+ ZEX_MGY_idea_Equestrian_Debts_dynmod:0 "Equestrian Debts Repayment"
  ZEX_MGY_vizier_balance_dynmod:0 "King-Vizier Balance"
- ZEX_MGY_Breadbasket_of_Zebrica_dynmod:0 "Breadbasket of Zebrica"
+ ZEX_MGY_idea_Breadbasket_of_Zebrica_dynmod:0 "Breadbasket of Zebrica"
  ZEX_MGY_vizier_balance_daily_cost_dynmod:0 "Tipping the Scales of Power"
+ ZEX_MGY_Land_reform_complete:0 "Completed Land Reform"
  
+ zex_mgy_pressured_integration:0 "Pressured Us"
+ zex_mgy_friendship:0 "Welcomed our Help"

@@ -64,7 +64,7 @@ on_actions = {
 					target = EQS
 					modifier = friendly
 				}
-			}			
+			}	
 		}
 	}
 	on_daily_MGY = {

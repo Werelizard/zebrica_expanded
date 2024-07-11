@@ -10,7 +10,6 @@ set_technology = {
 	pre_gw_artillery = 1
 	infantry_weapons = 1
 	tech_recon = 1
-	tech_military_police = 1
 	tech_engineers = 1
 	gw_artillery = 1
 	tech_pegasi = 1
@@ -240,7 +239,7 @@ add_advisor_role = {
 }
 
 #Puppet AOL
-
+zex_setup_alwani_puppet_integration = yes
 set_autonomy = {
 	target = ALO
 	autonomy_state = autonomy_zex_mgy_viceroyalty
@@ -324,10 +323,11 @@ set_politics = {
 # Ideas
 
 add_ideas = {
-	ZEX_MGY_Breadbasket
-	ZEX_Unfinished_Constitution
-	ZEX_MGY_Equestrian_Debts
-	ZEX_MGY_REPUBLICAN_AGITATION_IDEA
+	ZEX_MGY_idea_Breadbasket
+	ZEX_MGY_idea_the_fading_sun
+	ZEX_MGY_idea_Equestrian_Debts
+	ZEX_MGY_idea_political_unrest
+	ZEX_MGY_idea_maredjay_elite
 	##Viziers
 	# ZEX_MGY_Shaa_Doof_idea
 }

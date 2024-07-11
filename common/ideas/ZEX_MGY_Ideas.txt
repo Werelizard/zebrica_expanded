@@ -1,42 +1,44 @@
 ideas = {
 	##BASE IDEAS
 	country = {
-		ZEX_MGY_Equestrian_Debts = {
-			picture = ZEX_MGY_Equestrian_Debts
+		ZEX_MGY_idea_Equestrian_Debts = {
+			picture = ZEX_MGY_idea_Equestrian_Debts
 			modifier = {
-				production_speed_buildings_factor = -0.1
-				custom_modifier_tooltip = ZEX_MGY_equestrian_debts_consumer_goods_effect_tt
-				custom_modifier_tooltip = ZEX_MGY_equestrian_debts_poltical_power_gain_tt
-				custom_modifier_tooltip = ZEX_MGY_equestrian_debts_factory_output_effect_tt
-				custom_modifier_tooltip = ZEX_MGY_equestrian_debts_dockyard_output_effect_tt
+				custom_modifier_tooltip = ZEX_MGY_idea_Equestrian_Debts_consumer_goods_effect_tt
+				custom_modifier_tooltip = ZEX_MGY_idea_Equestrian_Debts_poltical_power_gain_tt
+				custom_modifier_tooltip = ZEX_MGY_idea_Equestrian_Debts_factory_output_effect_tt
+				custom_modifier_tooltip = ZEX_MGY_idea_Equestrian_Debts_dockyard_output_effect_tt
 			}
 		}
-		ZEX_MGY_Breadbasket = {
-			picture = ZEX_MGY_Breadbasket
+		ZEX_MGY_idea_Breadbasket = {
+			picture = ZEX_MGY_idea_Breadbasket
 			modifier = {
-				consumer_goods_factor = -0.1
-				political_power_gain = 0.1
+				consumer_goods_factor = -0.05
+				recruitable_population_factor = -0.2
+			}
+			research_bonus = {
+				industry = -0.1
 			}
 		}
-		ZEX_Unfinished_Constitution = {
-			picture = ZEX_Unfinished_Constitution
+		ZEX_MGY_idea_the_fading_sun = {
+			picture = ZEX_MGY_idea_the_fading_sun
 			modifier = {
 				stability_factor = -0.1
-				political_power_cost = 0.25
-				democratic_drift = -0.02
-				neutrality_drift = -0.02
+				political_power_cost = 0.5
+				democratic_drift = -0.01
+				neutrality_drift = -0.01
 			}
 		}
-		ZEX_MGY_REPUBLICAN_AGITATION_IDEA = {
-			picture = ZEX_MGY_REPUBLICAN_AGITATION_IDEA
+		ZEX_MGY_idea_political_unrest = {
+			picture = ZEX_MGY_idea_political_unrest
 			modifier = {
 				custom_modifier_tooltip = ZEX_MGY_STAB_IMPACT_tt
 				custom_modifier_tooltip = ZEX_MGY_WSP_IMPACT_tt
 				custom_modifier_tooltip = ZEX_MGY_PoliticalUnrest_DynamicModifier_Update_tt
 			}
 		}
-		ZEX_MGY_VIZIER_OFFICE = {
-			picture = ZEX_MGY_Vizier_Office
+		ZEX_MGY_idea_vizier_king_balance = {
+			picture = ZEX_MGY_idea_vizier_king_balance
 			modifier = {
 				custom_modifier_tooltip = ZEX_MGY_VIZIER_BALANCE_01_POLITICALPOWER_TT
 				custom_modifier_tooltip = ZEX_MGY_VIZIER_BALANCE_02_VIZEDICTCOST_TT
@@ -44,6 +46,15 @@ ideas = {
 			}
 			allowed = {
 				has_country_flag = zex_mgy_vizier_enabled_flag
+			}
+		}
+		ZEX_MGY_idea_maredjay_elite = {
+			picture = ZEX_MGY_idea_maredjay_elite
+			modifier = {
+				modifier_army_sub_unit_pegasi_defence_factor = 0.15
+				modifier_army_sub_unit_pegasi_attack_factor = 0.05
+				planning_speed = -0.2
+				land_doctrine_cost_factor = 0.4
 			}
 		}
 	}
@@ -65,15 +76,62 @@ ideas = {
 
 	# Focus ideas
 	country = {
+		# Great Reforms
 		ZEX_MGY_Administrative_centralisation = {
 			modifier = {
 				political_power_gain = 0.2
+			}
+		}
+		ZEX_MGY_Administrative_centralisation_and_overseer = {
+			modifier = {
+				political_power_gain = 0.2
+				industrial_capacity_dockyard = 0.05
+				industrial_capacity_factory = 0.05
 			}
 		}
 		ZEX_MGY_Administrative_centralisation_and_vizier = {
 			modifier = {
 				political_power_gain = 0.1
 				political_power_cost = -0.2
+			}
+		}
+		ZEX_MGY_Administrative_centralisation_and_overseer_vizier = {
+			modifier = {
+				political_power_gain = 0.1
+				political_power_cost = -0.2
+				industrial_capacity_dockyard = 0.05
+				industrial_capacity_factory = 0.05
+			}
+		}
+		ZEX_MGY_Renaissance = {
+			modifier = {
+				political_power_factor = 0.15
+				political_power_cost = -0.2
+				industrial_capacity_dockyard = 0.05
+				industrial_capacity_factory = 0.05
+				research_speed_factor = 0.05
+				stability_factor = 0.05
+				war_support_factor = 0.05
+			}
+		}
+		#Military loyalty / emergency powers
+		ZEX_MGY_Complacent_Military = {
+			modifier = {
+				experience_gain_air_factor = -0.4
+				experience_gain_army_factor = -0.4
+				experience_gain_navy_factor = -0.4
+				army_org_regain = -0.1
+			}
+		}
+		ZEX_MGY_State_Of_Emergency = {
+			modifier = {
+				stability_factor = 0.2
+				resistance_growth = -0.1
+				compliance_growth = -0.1
+				war_support_factor = -0.25
+			}
+			allowed = {
+				has_idea = ZEX_MGY_idea_political_unrest
 			}
 		}
 	}
@@ -95,7 +153,7 @@ ideas = {
 			}
 
 			modifier = {
-				industrial_capacity_dockyard = 0.1
+				industrial_capacity_dockyard = 0.15
 			}
 			equipment_bonus = {
 				convoy = {
@@ -147,6 +205,11 @@ ideas = {
 			equipment_bonus = {
 				artillery_equipment = {
 					build_cost_ic = -0.1
+					reliability_factor = 0.1
+				}
+				infantry_equipment = {
+					build_cost_ic = -0.1
+					reliability = 0.1
 				}
 			}
 		}
@@ -172,7 +235,7 @@ ideas = {
 				}
 			}
 			research_bonus = {
-				electronics = 0.05
+				electronics = 0.15
 			}
 		}
 		ZEX_MGY_Manephis_Tractors = {
@@ -195,9 +258,15 @@ ideas = {
 				motorized_equipment = {
 					build_cost_ic = -0.1
 				}
+				mechanized = {
+					build_cost_ic = -0.1
+				}
+				support_equipment = {
+					build_cost_ic = -0.1
+				}
 			}
 			research_bonus = {
-				industry = 0.05
+				industry = 0.15
 			}
 		}
 		ZEX_MGY_Maregypt_Oil = {
@@ -215,8 +284,10 @@ ideas = {
 
 			modifier = {
 				production_oil_factor = 0.25
-				fuel_gain_factor = 0.4
-				army_fuel_capacity_factor = 0.15
+				fuel_gain_factor = 0.25
+			}
+			research_bonus = {
+				synth_resources = 0.15
 			}
 		}
 		ZEX_MGY_Maregypt_Air = {
@@ -237,11 +308,14 @@ ideas = {
 			}
 
 			research_bonus = {
-				light_air = 0.05
+				air_equipment = 0.1
 			}
 
 			equipment_bonus = {
 				small_plane_airframe = {
+					build_cost_ic = -0.1
+				}
+				medium_plane_airframe = {
 					build_cost_ic = -0.1
 				}
 				transport_plane_equipment = {
@@ -258,7 +332,7 @@ ideas = {
 
 			available = {
 				OR = {
-					has_idea = ZEX_MGY_Equestrian_Debts
+					has_idea = ZEX_MGY_idea_Equestrian_Debts
 					custom_trigger_tooltip = {
 						tooltip = ZEX_MGY_Equestrian_Mining_Commission_allowed_tt
 					}
@@ -269,9 +343,8 @@ ideas = {
 			}
 
 			modifier = {
-				production_speed_infrastructure_factor = 0.1
+				production_speed_infrastructure_factor = 0.15
 				local_resources_factor = 0.15
-				trade_opinion_factor = 0.5
 			}
 		}
 		ZEX_MGY_Bank_Maregypt = {
@@ -281,7 +354,7 @@ ideas = {
 			}
 
 			available = {
-				has_completed_focus = ZEX_MGY_focus_restoretreasury
+				has_completed_focus = ZEX_MGY_focus_reformtaxlaws
 			}
 
 			visible = {
@@ -289,7 +362,7 @@ ideas = {
 
 			modifier = {
 				political_power_factor = 0.1
-				consumer_goods_factor = -0.1
+				consumer_goods_factor = -0.15
 			}
 		}
 	}

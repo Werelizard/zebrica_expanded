@@ -1,0 +1,11 @@
+ZEX_POLITICS_CAT = {
+	icon = generic_political_actions
+	allowed = {
+		always = yes
+	}
+	visible = {
+		zex_is_a_submod_country = yes
+	}
+	priority = 996
+	visible_when_empty = no
+}

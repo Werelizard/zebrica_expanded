@@ -51,7 +51,7 @@ characters = {
 				# custom_trigger_tooltip = {
 				# 	tooltip = ZEX_MGY_cannot_select_advisor_now_tt
 				# 	NOT = {
-				# 		has_idea = ZEX_Unfinished_Constitution
+				# 		has_idea = ZEX_MGY_idea_the_fading_sun
 				# 	}
 				# }
 				custom_trigger_tooltip = {
@@ -101,7 +101,7 @@ characters = {
 				# custom_trigger_tooltip = {
 				# 	tooltip = ZEX_MGY_cannot_select_advisor_now_tt
 				# 	NOT = {
-				# 		has_idea = ZEX_Unfinished_Constitution
+				# 		has_idea = ZEX_MGY_idea_the_fading_sun
 				# 	}
 				# }
 				custom_trigger_tooltip = {
@@ -182,7 +182,7 @@ characters = {
 	# 			custom_trigger_tooltip = {
 	# 				tooltip = ZEX_MGY_cannot_select_advisor_now_tt
 	# 				NOT = {
-	# 					has_idea = ZEX_Unfinished_Constitution
+	# 					has_idea = ZEX_MGY_idea_the_fading_sun
 	# 				}
 	# 			}
 	# 		}
@@ -202,7 +202,7 @@ characters = {
 	# 			custom_trigger_tooltip = {
 	# 				tooltip = ZEX_MGY_cannot_select_advisor_now_tt
 	# 				NOT = {
-	# 					has_idea = ZEX_Unfinished_Constitution
+	# 					has_idea = ZEX_MGY_idea_the_fading_sun
 	# 				}
 	# 			}
 	# 			NOT = {
@@ -225,7 +225,7 @@ characters = {
 	# 			custom_trigger_tooltip = {
 	# 				tooltip = ZEX_MGY_cannot_select_advisor_now_tt
 	# 				NOT = {
-	# 					has_idea = ZEX_Unfinished_Constitution
+	# 					has_idea = ZEX_MGY_idea_the_fading_sun
 	# 				}
 	# 			}
 	# 			NOT = {
@@ -251,7 +251,7 @@ characters = {
 	# 			custom_trigger_tooltip = {
 	# 				tooltip = ZEX_MGY_cannot_select_advisor_now_tt
 	# 				NOT = {
-	# 					has_idea = ZEX_Unfinished_Constitution
+	# 					has_idea = ZEX_MGY_idea_the_fading_sun
 	# 				}
 	# 			}
 	# 			NOT = {
@@ -274,7 +274,7 @@ characters = {
 	# 			custom_trigger_tooltip = {
 	# 				tooltip = ZEX_MGY_cannot_select_advisor_now_tt
 	# 				NOT = {
-	# 					has_idea = ZEX_Unfinished_Constitution
+	# 					has_idea = ZEX_MGY_idea_the_fading_sun
 	# 				}
 	# 			}
 	# 			NOT = {
@@ -297,7 +297,7 @@ characters = {
 	# 			custom_trigger_tooltip = {
 	# 				tooltip = ZEX_MGY_cannot_select_advisor_now_tt
 	# 				NOT = {
-	# 					has_idea = ZEX_Unfinished_Constitution
+	# 					has_idea = ZEX_MGY_idea_the_fading_sun
 	# 				}
 	# 			}
 	# 			NOT = {
@@ -320,7 +320,7 @@ characters = {
 	# 			custom_trigger_tooltip = {
 	# 				tooltip = ZEX_MGY_cannot_select_advisor_now_tt
 	# 				NOT = {
-	# 					has_idea = ZEX_Unfinished_Constitution
+	# 					has_idea = ZEX_MGY_idea_the_fading_sun
 	# 				}
 	# 			}
 	# 		}
@@ -340,7 +340,7 @@ characters = {
 	# 			custom_trigger_tooltip = {
 	# 				tooltip = ZEX_MGY_cannot_select_advisor_now_tt
 	# 				NOT = {
-	# 					has_idea = ZEX_Unfinished_Constitution
+	# 					has_idea = ZEX_MGY_idea_the_fading_sun
 	# 				}
 	# 			}
 	# 		}
@@ -360,7 +360,7 @@ characters = {
 	# 			custom_trigger_tooltip = {
 	# 				tooltip = ZEX_MGY_cannot_select_advisor_now_tt
 	# 				NOT = {
-	# 					has_idea = ZEX_Unfinished_Constitution
+	# 					has_idea = ZEX_MGY_idea_the_fading_sun
 	# 				}
 	# 			}
 	# 			NOT = {
@@ -384,7 +384,7 @@ characters = {
 	# 			custom_trigger_tooltip = {
 	# 				tooltip = ZEX_MGY_cannot_select_advisor_now_tt
 	# 				NOT = {
-	# 					has_idea = ZEX_Unfinished_Constitution
+	# 					has_idea = ZEX_MGY_idea_the_fading_sun
 	# 				}
 	# 			}
 	# 			NOT = {
@@ -410,7 +410,7 @@ characters = {
 	# 			custom_trigger_tooltip = {
 	# 				tooltip = ZEX_MGY_cannot_select_advisor_now_tt
 	# 				NOT = {
-	# 					has_idea = ZEX_Unfinished_Constitution
+	# 					has_idea = ZEX_MGY_idea_the_fading_sun
 	# 				}
 	# 			}
 	# 		}
@@ -430,7 +430,7 @@ characters = {
 	# 			custom_trigger_tooltip = {
 	# 				tooltip = ZEX_MGY_cannot_select_advisor_now_tt
 	# 				NOT = {
-	# 					has_idea = ZEX_Unfinished_Constitution
+	# 					has_idea = ZEX_MGY_idea_the_fading_sun
 	# 				}
 	# 			}
 	# 			OR = {
@@ -454,7 +454,7 @@ characters = {
 	# 			custom_trigger_tooltip = {
 	# 				tooltip = ZEX_MGY_cannot_select_advisor_now_tt
 	# 				NOT = {
-	# 					has_idea = ZEX_Unfinished_Constitution
+	# 					has_idea = ZEX_MGY_idea_the_fading_sun
 	# 				}
 	# 			}
 	# 		}
@@ -474,7 +474,7 @@ characters = {
 	# 			custom_trigger_tooltip = {
 	# 				tooltip = ZEX_MGY_cannot_select_advisor_now_tt
 	# 				NOT = {
-	# 					has_idea = ZEX_Unfinished_Constitution
+	# 					has_idea = ZEX_MGY_idea_the_fading_sun
 	# 				}
 	# 			}
 	# 		}

@@ -76,7 +76,7 @@ zex_no_scripted_maregypt_civil_war = {
 zex_mgy_has_republican_unrest = {
 	custom_trigger_tooltip = {
 		tooltip = zex_has_republican_agitation_tt
-		has_idea = ZEX_MGY_REPUBLICAN_AGITATION_IDEA
+		has_idea = ZEX_MGY_idea_political_unrest
 	}
 }
 
@@ -84,7 +84,7 @@ zex_mgy_has_constitutional_crisis = {
 	custom_trigger_tooltip = {
 		tooltip = zex_mgy_has_constitutional_crisis_tt
 		OR = {
-			has_idea = ZEX_Unfinished_Constitution
+			has_idea = ZEX_MGY_idea_the_fading_sun
 		}
 	}
 }
@@ -574,5 +574,6 @@ zex_mgy_is_state_rebellious = {
 zex_is_a_submod_country = {
 	OR = {
 		original_tag = MGY
+		tag = MGY
 	}
 }
