@@ -61,26 +61,38 @@ ZEX_MAREGYPT_ROYAL_DIET_CATEGORY = {
 }
 
 ZEX_MGY_SPHERE_INFLUENCE = {
-	icon = generic_political_actions
+	icon = ZEX_MGY_Sphere_Cat
 	allowed = {
 		always = yes
 	}
 	visible = {
 		zxe_is_maregypt_or_cosmetic_maregypt = yes
 	}
-	priority = 990
+	priority = 900
 	visible_when_empty = no
 }
 
-ZEX_MGY_OVERSEER_OFFICE = {
-	icon = GFX_decision_eng_trade_unions_support
+ZEX_MGY_LAND_REFORM = {
+	icon = ZEX_MGY_LandReform_Icon
 	allowed = {
 		always = yes
 	}
 	visible = {
 		zxe_is_maregypt_or_cosmetic_maregypt = yes
-		has_completed_focus = ZEX_MGY_focus_nationalbank
 	}
-	priority = 989
-	visible_when_empty = no
+	priority = 991
+	visible_when_empty = yes
+	on_map_area = {
+		targets = { 734 735 736 737 759 758 760 761 766 }
+		name = ZEX_MGY_LAND_REFORM_STATES
+		zoom = 300
+		target_trigger = {
+			FROM = {
+				has_dynamic_modifier = {
+					modifier = ZEX_MGY_Land_Reform_Incomplete
+				}
+				is_owned_by = ROOT
+			}
+		}
+	}
 }

@@ -1,5 +1,5 @@
 ZEX_POLITICS_CAT = {
-	icon = generic_political_actions
+	icon = ZEX_Politics_Cat
 	allowed = {
 		always = yes
 	}

@@ -1,0 +1,21 @@
+# Effect for setting up the bad land reform  in core provinces
+zex_mgy_setup_landreform_modifiers = {
+    every_owned_state = {
+		limit = {
+			OR = {
+				state = 734				
+				state = 735
+				state = 736
+				state = 737
+				state = 759
+				state = 758
+				state = 760
+				state = 761
+				state = 766
+			}
+		}
+		add_dynamic_modifier = {
+			modifier = ZEX_MGY_Land_Reform_Incomplete
+		}
+	}
+}

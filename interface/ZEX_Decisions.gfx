@@ -1,39 +1,7 @@
 spriteTypes = {
 	spriteType = {
-		name = "ZEX_MGY_Royal_Diet_Harmony_Icon"
-		textureFile = "gfx/interface/decisions/ZEX_MGY_harmonist_faction.dds"
-	}
-	spriteType = {
-		name = "ZEX_MGY_Royal_Diet_Republican_Icon"
-		textureFile = "gfx/interface/decisions/ZEX_MGY_republican_faction.dds"
-	}
-	spriteType = {
-		name = "ZEX_MGY_Royal_Diet_Traditionalists_Icon"
-		textureFile = "gfx/interface/decisions/ZEX_MGY_reformists_faction.dds"
-	}
-	spriteType = {
-		name = "ZEX_MGY_Royal_Diet_Loyalists_Icon"
-		textureFile = "gfx/interface/decisions/ZEX_MGY_loyalists_faction.dds"
-	}
-	spriteType = {
-		name = "ZEX_MGY_Royal_Diet_NoFaction_Icon"
-		textureFile = "gfx/interface/decisions/ZEX_MGY_no_faction.dds"
-	}
-	spriteType = {
 		name = "ZEX_GFX_Royal_Diet"
 		textureFile = "gfx/interface/decisions/ZEX_GFX_MGY_DIET_CAT.dds"
-	}
-	spriteType = {
-		name = "ZEX_GFX_royal_diet_appeal_to_monarchism"
-		textureFile = "gfx/interface/decisions/ZEX_GFX_royal_diet_appeal_to_monarchism.dds"
-	}
-	spriteType = {
-		name = "ZEX_GFX_royal_diet_promote_harmony_policy"
-		textureFile = "gfx/interface/decisions/ZEX_GFX_royal_diet_promote_harmony_policy.dds"
-	}
-	spriteType = {
-		name = "ZEX_GFX_royal_support_reformism"
-		textureFile = "gfx/interface/decisions/ZEX_GFX_royal_support_reformism.dds"
 	}
 	spriteType = {
 		name = "ZEX_GFX_republican_agitation_CAT"
@@ -44,31 +12,27 @@ spriteTypes = {
 		textureFile = "gfx/interface/decisions/ZEX_GFY_MGY_Assure_Legitimacy.dds"
 	}
 	spriteType = {
-		name = "ZEX_GFX_Royal_Concessions"
-		textureFile = "gfx/interface/decisions/ZEX_GFY_MGY_Criticise_Crown.dds"
-	}
-	spriteType = {
-		name = "ZEX_GFX_grain_bag"
-		textureFile = "gfx/interface/decisions/ZEX_GFY_MGY_Agri_Sell_Goods.dds"
-	}
-	spriteType = {
-		name = "ZEX_GFX_tractor"
-		textureFile = "gfx/interface/decisions/ZEX_GFY_MGY_Agri_Modernise_Farms.dds"
-	}
-	spriteType = {
-		name = "ZEX_GFX_tools"
-		textureFile = "gfx/interface/decisions/ZEX_GFY_MGY_Agri_Encourage_Uraban_Migration.dds"
-	}
-	spriteType = {
-		name = "ZEX_GFX_agri_cat"
-		textureFile = "gfx/interface/decisions/ZEX_GFX_MGY_AGRICULTURE_CAT.dds"
-	}
-	spriteType = {
 		name = "ZEX_GFX_vizierking_bop_cat"
 		textureFile = "gfx/interface/decisions/ZEX_MGY_VizierKing_bop_CAT.dds"
 	}
 	spriteType = {
 		name = "ZEX_GFX_MGY_Decree"
 		textureFile = "gfx/interface/decisions/ZEX_GFX_MGY_Decree.dds"
+	}
+	spriteType = { 
+		name = "ZEX_Politics_Cat"
+		textureFile = "gfx/interface/decisions/ZEX_MGY_Politics_Cat.dds"
+	}
+	spriteType = { 
+		name = "ZEX_MGY_Sphere_Cat"
+		textureFile = "gfx/interface/decisions/ZEX_MGY_MGYSphere_Cat.dds"
+	}
+	spriteType = { 
+		name = "ZEX_MGY_LandReform_Icon"
+		textureFile = "gfx/interface/decisions/ZEX_MGY_LandReform_CAT.dds"
+	}
+	spriteType = { 
+		name = "ZEX_MGY_Urbanise_Decision"
+		textureFile = "gfx/interface/decisions/ZEX_MGY_Urbanism_CAT.dds"
 	}
 }

@@ -1,0 +1,518 @@
+ZEX_POLITICS_CAT = {
+	#
+	# MAREGYPTIAN DECISIONS 
+	#
+	
+}
+
+prospect_for_resources = {
+	ZEX_MGY_NORTH_DESERT_OIL = {
+		icon = oil
+		visible = {
+			732 = {
+				is_owned_by = ROOT
+			}
+			731 = {
+				is_owned_by = ROOT
+			}
+		}
+
+		available = {
+			has_tech = excavation2
+			num_of_civilian_factories_available_for_projects > 4
+		}
+
+		
+		cost = 40
+		days_remove = 50
+
+		modifier = {
+			civilian_factory_use = 5
+		}
+
+		remove_effect = {
+			732 = {
+				add_resource = {
+					type = oil
+					amount = 18
+				}
+			}
+			731 = {
+				add_resource = {
+					type = oil
+					amount = 12
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	ZEX_MGY_SOUTH_DESERT_OIL = {
+		icon = oil
+		visible = {
+			763 = {
+				is_owned_by = ROOT
+			}
+		}
+
+		available = {
+			has_tech = excavation1
+			num_of_civilian_factories_available_for_projects > 2
+		}
+
+		
+		cost = 25
+		days_remove = 50
+
+		modifier = {
+			civilian_factory_use = 3
+		}
+
+		remove_effect = {
+			763 = {
+				add_resource = {
+					type = oil
+					amount = 10
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	ZEX_MGY_SINEIGHI_MINING = {
+		icon = GFX_decision_aluminium
+		visible = {
+			738 = {
+				is_owned_by = ROOT
+			}
+		}
+
+		available = {
+			has_tech = excavation2
+			num_of_civilian_factories_available_for_projects > 4
+		}
+
+		
+		cost = 40
+		days_remove = 50
+
+		modifier = {
+			civilian_factory_use = 5
+		}
+
+		remove_effect = {
+			763 = {
+				add_resource = {
+					type = aluminium
+					amount = 16
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}
+
+economy_decisions = {
+	ZEX_MGY_River_Trade_With_FROM = {
+		icon = GFX_decision_gre_investment_decisions
+		allowed = {
+			zxe_is_maregypt_or_cosmetic_maregypt = yes
+		}
+
+		visible = {
+			FROM = {
+				OR = {
+					is_subject = no
+					is_subject_of = ROOT
+				}
+				NOT = {
+					is_embargoing = ROOT
+				}
+				NOT = {
+					is_embargoed_by = ROOT
+				}
+			}
+		}
+
+		available = {
+			has_equipment = {
+				convoy > 24
+			}
+			FROM = {
+				has_opinion = {
+					target = ROOT
+					value > 24
+				}
+				NOT = {
+					has_war_with = ROOT
+				}
+			}
+		}
+
+		custom_cost_trigger = {
+			has_political_power > 19
+			has_equipment = {
+				convoy > 24
+			}
+		}
+
+		custom_cost_text = decision_cost_25_convoy_20_pp
+
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = convoy
+				amount = -25
+			}
+			add_political_power = -20
+		}
+
+		remove_effect = {
+			add_offsite_building = {
+				type = industrial_complex
+				level = 1
+			}
+			hidden_effect = {
+				FROM = {
+					set_country_flag = zex_mgy_has_trade_connections_flag
+				}
+			}
+			add_opinion_modifier = {
+				target = FROM
+				modifier = ICE_trade_partner
+			}
+			FROM = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = ICE_trade_partner
+				}
+			}
+			custom_effect_tooltip = ZEX_unlock_More_trade_With_From_tt
+		}
+		
+		days_remove = 30
+
+		fire_only_once = yes
+
+		# state_target = yes
+		on_map_mode = map_and_decisions_view
+
+		target_trigger = {
+			FROM = {
+				capital_scope = {
+					is_on_continent = africa
+				}
+				NOT = {
+					tag = ROOT
+				}
+				any_owned_state = {
+					OR = {
+						state = 938 
+						state = 766
+						state = 761
+						state = 758
+						state = 759  
+						state = 735 
+						state = 736 
+						state = 734 
+						state = 737 
+						state = 767 
+						state = 902 
+						state = 903 
+						state = 937 
+						state = 938 
+						state = 935 
+						state = 936 
+						state = 904 
+						state = 901 
+						state = 968 
+						state = 939 
+						state = 940 
+						state = 948
+						state = 949 
+						state = 970 
+						state = 965 
+						state = 966 
+						state = 964 
+						state = 963
+					}
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	ZEX_MGY_Increase_Trade_With_From = {
+		icon = GFX_decision_generic_fundraising
+		allowed = {
+			zxe_is_maregypt_or_cosmetic_maregypt = yes
+		}
+
+		available = {
+			num_of_civilian_factories_available_for_projects > 2
+			FROM = {
+				has_opinion = {
+					target = ROOT
+					value > 49
+				}
+				NOT = {
+					has_war_with = ROOT
+				}
+			}
+		}
+
+		cost = 40
+
+		visible = {
+			FROM = {
+				OR = {
+					is_subject = no
+					is_subject_of = ROOT
+				}
+				has_country_flag = zex_mgy_has_trade_connections_flag
+				NOT = {
+					is_embargoing = ROOT
+				}
+				NOT = {
+					is_embargoed_by = ROOT
+				}
+			}
+		}
+
+		modifier = {
+			civilian_factory_use = 2
+		}
+
+		complete_effect = {
+			
+		}
+
+		remove_effect = {
+			add_offsite_building = {
+				type = industrial_complex
+				level = 1
+			}
+			add_opinion_modifier = {
+				target = FROM
+				modifier = TUR_reliable_trade_partner
+			}
+			FROM = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = TUR_reliable_trade_partner
+				}
+			}
+		}
+		
+		days_remove = 30
+
+		fire_only_once = yes
+
+		# state_target = yes
+		on_map_mode = map_and_decisions_view
+
+		target_trigger = {
+			FROM = {
+				capital_scope = {
+					is_on_continent = africa
+				}
+				NOT = {
+					tag = ROOT
+				}
+				any_owned_state = {
+					OR = {
+						state = 938 
+						state = 766
+						state = 761
+						state = 758
+						state = 759  
+						state = 735 
+						state = 736 
+						state = 734 
+						state = 737 
+						state = 767 
+						state = 902 
+						state = 903 
+						state = 937 
+						state = 938 
+						state = 935 
+						state = 936 
+						state = 904 
+						state = 901 
+						state = 968 
+						state = 939 
+						state = 940 
+						state = 948
+						state = 949 
+						state = 970 
+						state = 965 
+						state = 966 
+						state = 964 
+						state = 963
+					}
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	ZEX_Hire_Smugglers = {
+		icon = GFX_decision_hol_attract_foreign_investors
+		allowed = {
+			
+		}
+
+		available = {
+			KLG = {
+				has_idea = KLG_black_market
+			}
+			NOT = {
+				has_war_with = KLG
+			}
+		}
+
+		cost = 25
+
+		visible = {
+			is_neighbor_of = KLG
+			NOT = {
+				KLG = {
+					is_subject_of = ROOT
+				}
+			}
+		}
+
+		modifier = {
+			
+		}
+
+		complete_effect = {
+		}
+
+		remove_effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = zex_mgy_used_smugglers
+					}
+				}
+				add_cic = 200
+				add_stability = -0.02
+				hidden_effect = {
+					set_country_flag = zex_mgy_used_smugglers
+					set_variable = {
+						zex_mgy_smugglers_use_incp = 400
+					}
+					set_variable = {
+						zex_mgy_smugglers_use_stab = -0.035
+					}
+				}
+			}
+			else = {
+				add_cic = zex_mgy_smugglers_use_incp
+				add_stability = zex_mgy_smugglers_use_stab
+				hidden_effect = {
+					add_to_variable = {
+						zex_mgy_smugglers_use_incp = 200
+					}
+					add_to_variable = {
+						zex_mgy_smugglers_use_stab = -0.015
+					}
+					clamp_variable = {
+						var = zex_mgy_smugglers_use_incp
+						max = 1800 
+					}
+					clamp_variable = {
+						var = zex_mgy_smugglers_use_stab
+						min = -0.125
+					}
+				}
+			}
+		}
+		
+		days_remove = 30
+
+		# state_target = yes
+		on_map_mode = map_and_decisions_view
+
+		target_trigger = {
+			FROM = {
+				capital_scope = {
+					is_on_continent = africa
+				}
+				tag = KLG
+			}
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	ZEX_Blockade_Smugglers = {
+		icon = GFX_decision_generic_break_treaty
+		allowed = {
+			
+		}
+
+		available = {
+			KLG = {
+				has_idea = KLG_black_market
+			}
+			NOT = {
+				has_guaranteed = KLG
+			}
+		}
+
+		cost = 45
+
+		visible = {
+			is_neighbor_of = KLG
+			NOT = {
+				KLG = {
+					is_subject_of = ROOT
+				}
+			}
+			NOT = {
+				is_embargoing = KLG
+			}
+		}
+
+
+		complete_effect = {
+			add_stability = 0.1
+			send_embargo = KLG
+			KLG = {
+				send_embargo = ROOT
+			}
+		}
+	
+		# state_target = yes
+		on_map_mode = map_and_decisions_view
+
+		target_trigger = {
+			FROM = {
+				capital_scope = {
+					is_on_continent = africa
+				}
+				tag = KLG
+			}
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

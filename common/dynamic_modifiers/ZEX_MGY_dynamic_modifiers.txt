@@ -21,7 +21,6 @@ ZEX_MGY_republican_agitation_sineighi_dynmod = {
 	}
     compliance_growth = MGY.ZEX_MGY_VAR_Sineighi_Unrest_negative
     recruitable_population_factor = MGY.ZEX_MGY_VAR_Sineighi_Unrest_negative
-    state_production_speed_buildings_factor = MGY.ZEX_MGY_VAR_Sineighi_Unrest_negative
 }
 
 ZEX_MGY_republican_agitation_kaneigh_dynmod = {
@@ -33,7 +32,6 @@ ZEX_MGY_republican_agitation_kaneigh_dynmod = {
 	}
     compliance_growth = MGY.ZEX_MGY_VAR_Kaneigh_Unrest_negative
     recruitable_population_factor = MGY.ZEX_MGY_VAR_Kaneigh_Unrest_negative
-    state_production_speed_buildings_factor = MGY.ZEX_MGY_VAR_Kaneigh_Unrest_negative
 }
 
 ZEX_MGY_republican_agitation_maneisrata_dynmod = {
@@ -45,7 +43,6 @@ ZEX_MGY_republican_agitation_maneisrata_dynmod = {
 	}
     compliance_growth = MGY.ZEX_MGY_VAR_Maneisrata_Unrest_negative
     recruitable_population_factor = MGY.ZEX_MGY_VAR_Maneisrata_Unrest_negative
-    state_production_speed_buildings_factor = MGY.ZEX_MGY_VAR_Maneisrata_Unrest_negative
 }
 
 ZEX_MGY_republican_agitation_uppermaregypt_dynmod = {
@@ -57,7 +54,6 @@ ZEX_MGY_republican_agitation_uppermaregypt_dynmod = {
 	}
     compliance_growth = MGY.ZEX_MGY_VAR_UpperMaregypt_Unrest_negative
     recruitable_population_factor = MGY.ZEX_MGY_VAR_UpperMaregypt_Unrest_negative
-    state_production_speed_buildings_factor = MGY.ZEX_MGY_VAR_UpperMaregypt_Unrest_negative
 }
 
 ZEX_MGY_republican_agitation_delta_dynmod = {
@@ -69,7 +65,6 @@ ZEX_MGY_republican_agitation_delta_dynmod = {
 	}
     compliance_growth = MGY.ZEX_MGY_VAR_Delta_Unrest_negative
     recruitable_population_factor = MGY.ZEX_MGY_VAR_Delta_Unrest_negative
-    state_production_speed_buildings_factor = MGY.ZEX_MGY_VAR_Delta_Unrest_negative
 }
 
 ZEX_MGY_republican_agitation_manephis_dynmod = {
@@ -81,7 +76,6 @@ ZEX_MGY_republican_agitation_manephis_dynmod = {
 	}
     compliance_growth = MGY.ZEX_MGY_VAR_Manephis_Unrest_negative
     recruitable_population_factor = MGY.ZEX_MGY_VAR_Manephis_Unrest_negative
-    state_production_speed_buildings_factor = MGY.ZEX_MGY_VAR_Manephis_Unrest_negative
 }
 
 ZEX_MGY_republican_agitation_somnambula_dynmod = {
@@ -93,7 +87,6 @@ ZEX_MGY_republican_agitation_somnambula_dynmod = {
 	}
     compliance_growth = MGY.ZEX_MGY_VAR_Somnambula_Unrest_negative
     recruitable_population_factor = MGY.ZEX_MGY_VAR_Somnambula_Unrest_negative
-    state_production_speed_buildings_factor = MGY.ZEX_MGY_VAR_Somnambula_Unrest_negative
 }
 
 ZEX_MGY_republican_agitation_eastdesert_dynmod = {
@@ -105,7 +98,6 @@ ZEX_MGY_republican_agitation_eastdesert_dynmod = {
 	}
     compliance_growth = MGY.ZEX_MGY_VAR_Eastdesert_Unrest_negative
     recruitable_population_factor = MGY.ZEX_MGY_VAR_Eastdesert_Unrest_negative
-    state_production_speed_buildings_factor = MGY.ZEX_MGY_VAR_Eastdesert_Unrest_negative
 }
 
 ZEX_MGY_republican_agitation_zush_dynmod = {
@@ -117,7 +109,6 @@ ZEX_MGY_republican_agitation_zush_dynmod = {
 	}
     compliance_growth = MGY.ZEX_MGY_VAR_Zush_Unrest_negative
     recruitable_population_factor = MGY.ZEX_MGY_VAR_Zush_Unrest_negative
-    state_production_speed_buildings_factor = MGY.ZEX_MGY_VAR_Zush_Unrest_negative
 }
 
 #
@@ -170,13 +161,14 @@ ZEX_MGY_idea_Equestrian_Debts_dynmod = {
 # Land Reforms
 #
 
-ZEX_MGY_Land_reform_complete = {
+ZEX_MGY_Land_Reform_Incomplete = {
+    icon = ZEX_MODIFIER_Land_Reform_Unfinished
     enable = {
         always = yes
     }
-    local_manpower = 0.15
-    state_production_speed_buildings_factor = 0.15
-    local_supplies_for_controller = 0.25
+    state_production_speed_buildings_factor = -0.15
+    local_building_slots_factor = -0.1
+    custom_modifier_tooltip = ZEX_MODIFIER_Land_Reform_Flood_Risk
 }
 
 #

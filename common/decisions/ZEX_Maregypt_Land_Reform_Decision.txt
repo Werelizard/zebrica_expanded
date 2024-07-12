@@ -1,0 +1,159 @@
+ZEX_MGY_LAND_REFORM = {
+	ZEX_MGY_Complete_Land_Reform = {
+		icon = ZEX_MGY_LandReform_Icon
+
+		fire_only_once = yes
+
+		cost = 50
+
+		days_remove = 120
+		
+		available = {
+			has_completed_focus = ZEX_MGY_focus_completelandreform
+			custom_trigger_tooltip = {
+				tooltip = ZEX_MGY_Complete_Land_Reform_Factories_tt
+				num_of_factories > 29
+			}
+			custom_trigger_tooltip = {
+				tooltip = ZEX_MGY_Complete_Land_Reform_Criteria_tt
+				NOT = {
+					any_owned_state = {
+						has_dynamic_modifier = {
+							modifier = ZEX_MGY_Land_Reform_Incomplete
+						}
+						infrastructure < 5
+					}
+				}
+			}
+		}
+
+		remove_effect = {
+			custom_effect_tooltip = ZEX_MGY_Complete_Land_Reform_tt
+			add_political_power = 100
+			swap_ideas = {
+				remove_idea = ZEX_MGY_idea_Breadbasket
+				add_idea = ZEX_MGY_idea_Breadbasket_Fixed
+			}
+			every_owned_state = {
+				limit = {
+					has_dynamic_modifier = {
+						modifier = ZEX_MGY_Land_Reform_Incomplete
+					}
+				}
+				remove_dynamic_modifier = {
+					modifier = ZEX_MGY_Land_Reform_Incomplete
+				}
+			}
+			hidden_effect = {
+				set_country_flag = zex_mgy_land_reform_complete_flag
+			}
+		}
+	}
+	ZEX_MGY_IMPROVE_URBANISM = {
+		icon = ZEX_MGY_Urbanise_Decision
+		state_target = yes
+		on_map_mode = map_and_decisions_view
+
+		fire_only_once = yes
+
+		cost = 15
+
+		days_remove = 60
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = zex_mgy_two_civilian_factory_tt
+				num_of_civilian_factories_available_for_projects > 1
+			}
+		}
+
+		visible = {
+			has_completed_focus = ZEX_MGY_focus_developruralareas
+			FROM = {
+				is_core_of = ROOT
+			}
+		}
+
+		remove_effect = {
+			add_stability = 0.015
+			FROM = {
+				increase_state_category = yes
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+				}
+			}
+		}
+
+		modifier = {
+			civilian_factory_use = 2
+		}
+
+		target_trigger = {
+			FROM = { 
+				OR = {
+					state = 734				
+					state = 735
+					state = 736
+					state = 737
+					state = 759
+					state = 758
+					state = 760
+					state = 761
+					state = 766
+					state = 738
+					state = 740
+					state = 770
+					state = 740
+				}
+			}
+		}
+	}
+	ZEX_MGY_BUILD_DYKES = {
+		icon = GFX_decision_hol_drain_water_lines
+		state_target = yes
+		on_map_mode = map_and_decisions_view
+
+		fire_only_once = yes
+
+		cost = 15
+
+		days_remove = 60
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = zex_mgy_one_civilian_factory_tt
+				num_of_available_civilian_factories > 0
+			}
+		}
+
+		remove_effect = {
+			FROM = {
+				custom_effect_tooltip = ZEX_MGY_BUILD_DYKES_tt
+				custom_effect_tooltip = ZEX_EMPTY_LINE
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+				}
+				hidden_effect = {
+					set_state_flag = zex_mgy_protected_from_floods_flag
+				}
+			}
+		}
+
+		modifier = {
+			civilian_factory_use = 1
+		}
+
+		target_trigger = {
+			FROM = { 
+				owner = {
+					zxe_is_maregypt_or_cosmetic_maregypt = yes
+				}
+				has_dynamic_modifier = {
+					modifier = ZEX_MGY_Land_Reform_Incomplete
+				}
+			}
+		}
+	}
+}

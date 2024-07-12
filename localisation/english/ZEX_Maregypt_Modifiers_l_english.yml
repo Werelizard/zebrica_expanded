@@ -5,7 +5,8 @@
  ZEX_MGY_vizier_balance_dynmod:0 "King-Vizier Balance"
  ZEX_MGY_idea_Breadbasket_of_Zebrica_dynmod:0 "Breadbasket of Zebrica"
  ZEX_MGY_vizier_balance_daily_cost_dynmod:0 "Tipping the Scales of Power"
- ZEX_MGY_Land_reform_complete:0 "Completed Land Reform"
+ ZEX_MGY_Land_Reform_Incomplete:0 "Unfinished Land Reform" 
+ ZEX_MODIFIER_Land_Reform_Flood_Risk:0 "§RThis province is at risk of flooding!§!"
  
  zex_mgy_pressured_integration:0 "Pressured Us"
  zex_mgy_friendship:0 "Welcomed our Help"

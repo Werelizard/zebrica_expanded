@@ -15,7 +15,8 @@
  ZEX_MGY_idea_Equestrian_Debts:0 "Equestrian Debts Repayment"
  ZEX_MGY_idea_political_unrest:0 "Political Unrest"
  ZEX_MGY_idea_maredjay_elite:0 "Primacy of the Maredjay"
- ZEX_MGY_king_khefer_idea:0 "King Khefer""
+ ZEX_MGY_king_khefer_idea:0 "King Khefer"
+ ZEX_MGY_idea_Breadbasket_Fixed:0 "Breadbasket of Zebrica"
 
  ZEX_MGY_idea_Equestrian_Debts_empty:0 ""
  ZEX_MGY_idea_Equestrian_Debts_consumer_goods_effect_tt:0 "[ROOT.ZEX_MGY_Get_equestrian_debts_consumer_goods_effect_val]"
@@ -29,6 +30,8 @@
  ZEX_MGY_idea_Equestrian_Debts_dockyard_output_effect_active_tt:0 "Dockyard Output: §t[?ROOT.ZEX_MGY_idea_Equestrian_Debts_dockyard_output_effect|1%]§!"
 
  ZEX_MGY_idea_Breadbasket_desc:0 "Maregypt is a country which has - since its inception - been broadly defined by a quasi-reliance on its agriculture as both its main export and its main source of labour, with an overwhleming majority of the populace working the fields. In more broad terms this has led to a stagnation of its industrial sector in favour of a more rural urbanscape."
+ ZEX_MGY_idea_Breadbasket_Fixed_desc:0 "Maregypt is a country which has - since its inception - been broadly defined by a quasi-reliance on its agriculture as both its main export and its main source of labour, with an overwhleming majority of the populace working the fields. Recent efforts however have allowed the country to modernise - properly bringing its industry into the modern era."
+ ZEX_MGY_idea_Breadbasket_tt:0 "\n§gThe provinces of [734.GetName], [735.GetName], [736.GetName], [737.GetName], [759.GetName], [758.GetName], [760.GetName], [761.GetName] and [766.GetName] are poorly developped and due to an over-relaince on agriculture remain relatively poorly developed  - inflicting penalties on the §!§tmaximum number of factories§!§g and §!§tlocal construction speed§!§g.§!"
  ZEX_MGY_idea_the_fading_sun_desc:0 "Maregypt is no longer the realm it was. Once, it was the envy of all of Zebrica. Now it is but a ruin, a blend of urban sprawl, dirty roads, disaffected estates and abandoned mines sitting admist a field of millenia-old pyramids, temples and desert. A dying empire, it stands as one of the last fading bastions of Harmonic governance on the continent - with the ideals of old growing ever more umpopular as the days go by."
  ZEX_MGY_idea_Equestrian_Debts_desc:0 "In the wake of the Storm King's rise and fall, King Khefer negotiated an unpopular agreement with princess Celestia herself in order to salvage the country's economy. While this proved somewhat successfull in avoiding an immediate collapse of the Maregyptian economy, the payments for this assistance has now come due, driving the Maregyptian economy further towards bankruptcy."
  ZEX_MGY_idea_political_unrest_desc:0 "§LThis is a §gdynamic§! modifier. It will update to reflect the rising £local_unrest §Yunrest§!§L throughout the nation§!.§T\n--------------\n§!Our nation is currently experiencing widespread unrest, tethering on the edge of a civil war, with only the vague promises of reform keeping it at bay."

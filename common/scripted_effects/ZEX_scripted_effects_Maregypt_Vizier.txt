@@ -8,6 +8,9 @@ ZEX_MGY_Enable_Vizier = {
 	set_variable = {
 		ZEX_MGY_vizier_King_Balance = 0
 	}
+	set_variable = {
+		ZEX_MGY_VAR_EDICT_DURATION = 90
+	}
 	ZEX_MGY_UPDATE_VIZIER_KING_VARIABLE = yes
 	set_country_flag = zex_mgy_vizier_enabled_flag
 	if = {
@@ -50,6 +53,9 @@ ZEX_MGY_Enable_Vizier_SETUP = {
 	}
 	set_variable = {
 		ZEX_MGY_vizier_King_Balance = -80
+	}
+	set_variable = {
+		ZEX_MGY_VAR_EDICT_DURATION = 90
 	}
 	ZEX_MGY_UPDATE_VIZIER_KING_VARIABLE = yes
 	set_country_flag = zex_mgy_vizier_enabled_flag
@@ -98,10 +104,10 @@ ZEX_MGY_UPDATE_VIZIER_KING_VARIABLE = {
 		ZEX_MGY_vizier_King_Balance_absoluteVal = ZEX_MGY_vizier_King_Balance
 	}
 	set_variable = {
-		ZEX_MGY_vizier_King_Balance_VizierEdictCost = 50
+		ZEX_MGY_vizier_King_Balance_VizierEdictCost = 60
 	}
 	set_variable = {
-		ZEX_MGY_vizier_King_Balance_KingEdictCost = 50
+		ZEX_MGY_vizier_King_Balance_KingEdictCost = 60
 	}
 	if = {
 		limit = {

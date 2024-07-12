@@ -238,20 +238,13 @@ add_advisor_role = {
     }
 }
 
-#Puppet AOL
-zex_setup_alwani_puppet_integration = yes
-set_autonomy = {
-	target = ALO
-	autonomy_state = autonomy_zex_mgy_viceroyalty
-}
-
-create_faction = ZEX_MGY_MANEPHIS_ACCORDS
-add_to_faction = ALO
-
 #Add the dynmod for politcal pwoer cost
 add_dynamic_modifier = {
 	modifier = ZEX_MGY_vizier_balance_daily_cost_dynmod
 }
+
+#Intiiate Land reform
+zex_mgy_setup_landreform_modifiers = yes
 
 #Initiate republican agitators
 ZEX_activate_political_unrest = yes

@@ -639,15 +639,7 @@ focus_tree = {
 			focus = ZEX_MGY_focus_nationalservice
 		}
 		completion_reward = {
-			add_stability = 0.05
-			add_popularity = {
-				ideology = ROOT
-				popularity = 0.05
-			}
-			add_timed_idea = {
-				idea = ZEX_MGY_Complacent_Military
-				days = 730
-			}
+			
 		}
 	}
 
@@ -672,9 +664,7 @@ focus_tree = {
 			focus = ZEX_MGY_focus_adminsitrativecentralisation
 		}
 		completion_reward = {
-			add_stability = 0.1
-			custom_effect_tooltip = available_industrial_concern
-			show_ideas_tooltip = ZEX_MGY_Bank_Maregypt
+			
 		}
 	}
 
@@ -694,23 +684,7 @@ focus_tree = {
 			focus = ZEX_MGY_focus_adminsitrativecentralisation
 		}
 		completion_reward = {
-			custom_effect_tooltip = ZEX_MGY_focus_renovatesecretariat_tt
-			custom_effect_tooltip = zex_mgy_event_emptyline_tt
-			if = {
-				limit = {
-					has_idea = ZEX_MGY_Administrative_centralisation_and_overseer
-				}
-				swap_ideas = {
-					remove_idea = ZEX_MGY_Administrative_centralisation_and_overseer
-					add_idea = ZEX_MGY_Administrative_centralisation_and_overseer_vizier
-				}
-			}
-			else = {
-				swap_ideas = {
-					remove_idea = ZEX_MGY_Administrative_centralisation
-					add_idea = ZEX_MGY_Administrative_centralisation_and_vizier
-				}
-			}
+			
 		}
 	}
 
@@ -730,34 +704,10 @@ focus_tree = {
 			focus = ZEX_MGY_focus_adminsitrativecentralisation
 		}
 		available = {
-			OR = {
-				owns_state = 734
-				owns_state = 737
-				owns_state = 736
-				owns_state = 735
-				owns_state = 758
-				owns_state = 759
-				owns_state = 760
-				owns_state = 761
-				owns_state = 766
-			}
+			
 		}
 		completion_reward = {
-			every_owned_state = {
-				limit = {
-					OR = {
-						state = 737
-						state = 733						
-						state = 734
-						state = 734
-						state = 758
-						state = 759
-						state = 760
-						state = 761
-					}
-				}
-				add_extra_state_shared_building_slots = 1	
-			}
+			
 		}
 	}
 
@@ -777,7 +727,7 @@ focus_tree = {
 			focus = ZEX_MGY_focus_adminsitrativecentralisation
 		}
 		completion_reward = {
-			add_research_slot = 1
+			
 		}
 	}
 
@@ -807,13 +757,7 @@ focus_tree = {
 			focus = ZEX_MGY_focus_emergencypowers
 		}
 		completion_reward = {
-			add_ideas = ZEX_MGY_State_Of_Emergency
-			unlock_decision_tooltip = ZEX_MGY_END_EMERGENCY
-			custom_effect_tooltip = zex_mgy_event_emptyline_tt
-			zex_mgy_decrease_unrest_sineighi = yes
-			zex_mgy_decrease_unrest_maneisrata = yes
-			zex_mgy_decrease_unrest_kaneigh = yes
-			zex_mgy_decrease_unrest_zush = yes
+			
 		}
 	}
 
@@ -830,14 +774,7 @@ focus_tree = {
 		relative_position_id = ZEX_MGY_focus_adminsitrativecentralisation
 
 		available = {
-			902 = {
-				owns_or_subject_of = yes
-			}
-			can_build_railway = {
-				start_state = 733
-				target_state = 902
-				build_only_on_allied = yes
-			}
+		
 		}
 		prerequisite = {
 			focus = ZEX_MGY_focus_reformtaxlaws
@@ -846,28 +783,7 @@ focus_tree = {
 			focus = ZEX_MGY_focus_redrawprovinces
 		}
 		completion_reward = {
-			unlock_decision_tooltip = ZEX_MGY_SPHERE_INTEGRATE_ALWANI
-			custom_effect_tooltip = zex_mgy_event_emptyline_tt
-			902 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-			custom_effect_tooltip = zex_mgy_event_emptyline_tt
-			build_railway = {
-				start_state = 733
-				target_state = 902
-				build_only_on_allied = yes
-				level = 2
-			}
+		
 		}
 	}
 
@@ -882,12 +798,7 @@ focus_tree = {
 		}
 
 		available = {
-			custom_trigger_tooltip = {
-				tooltip = ZEX_MGY_NOT_HAS_UNREST_tt
-				NOT = {
-					has_idea = ZEX_MGY_idea_political_unrest
-				}
-			}
+			
 		}
 
 		relative_position_id = ZEX_MGY_focus_adminsitrativecentralisation
@@ -896,22 +807,7 @@ focus_tree = {
 			focus = ZEX_MGY_focus_reformtaxlaws
 		}
 		completion_reward = {
-			unlock_decision_category_tooltip = ZEX_MGY_OVERSEER_OFFICE
-			if = {
-				limit = {
-					has_idea = ZEX_MGY_Administrative_centralisation_and_vizier
-				}
-				swap_ideas = {
-					remove_idea = ZEX_MGY_Administrative_centralisation_and_vizier
-					add_idea = ZEX_MGY_Administrative_centralisation_and_overseer_vizier
-				}
-			}
-			else = {
-				swap_ideas = {
-					remove_idea = ZEX_MGY_Administrative_centralisation
-					add_idea = ZEX_MGY_Administrative_centralisation_and_overseer
-				}
-			}
+			
 		}
 	}
 
@@ -926,12 +822,7 @@ focus_tree = {
 		}
 
 		available = {
-			custom_trigger_tooltip = {
-				tooltip = ZEX_MGY_NOT_HAS_UNREST_tt
-				NOT = {
-					has_idea = ZEX_MGY_idea_political_unrest
-				}
-			}
+			
 		}
 
 		relative_position_id = ZEX_MGY_focus_adminsitrativecentralisation
@@ -940,24 +831,7 @@ focus_tree = {
 			focus = ZEX_MGY_focus_redrawprovinces
 		}
 		completion_reward = {
-			#ZEX_MGY_Land_reform_complete
-			every_owned_state = {
-				limit = {
-					OR = {
-						state = 737
-						state = 733						
-						state = 734
-						state = 734
-						state = 758
-						state = 759
-						state = 760
-						state = 761
-					}
-				}
-				add_dynamic_modifier = {
-					modifier = ZEX_MGY_Land_reform_complete
-				}
-			}
+			
 		}
 	}
 
@@ -1096,39 +970,7 @@ focus_tree = {
 			focus = ZEX_MGY_focus_centralisethecountry
 		}
 		completion_reward = {
-			if = {
-				limit = {
-					has_idea = ZEX_MGY_Administrative_centralisation_and_overseer
-				}
-				swap_ideas = {
-					remove_idea = ZEX_MGY_Administrative_centralisation_and_overseer
-					add_idea = ZEX_MGY_Renaissance
-				}
-			}
-			else_if = {
-				limit = {
-					has_idea = ZEX_MGY_Administrative_centralisation_and_vizier
-				}
-				swap_ideas = {
-					remove_idea = ZEX_MGY_Administrative_centralisation_and_vizier
-					add_idea = ZEX_MGY_Renaissance
-				}
-			}
-			else_if = {
-				limit = {
-					has_idea = ZEX_MGY_Administrative_centralisation_and_overseer_vizier
-				}
-				swap_ideas = {
-					remove_idea = ZEX_MGY_Administrative_centralisation_and_overseer_vizier
-					add_idea = ZEX_MGY_Renaissance
-				}
-			}
-			else = {
-				swap_ideas = {
-					remove_idea = ZEX_MGY_Administrative_centralisation
-					add_idea = ZEX_MGY_Renaissance
-				}
-			}
+			
 		}
 	}
 }
