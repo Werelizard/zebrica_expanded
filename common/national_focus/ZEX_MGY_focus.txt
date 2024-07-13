@@ -726,6 +726,9 @@ focus_tree = {
 		prerequisite = {
 			focus = ZEX_MGY_focus_adminsitrativecentralisation
 		}
+		prerequisite = {
+			focus = ZEX_MGY_focus_newuniversity
+		}
 		completion_reward = {
 			
 		}
@@ -971,6 +974,86 @@ focus_tree = {
 		}
 		completion_reward = {
 			
+		}
+	}
+
+	#######    ####    #####   ##   ##   #####   ##   ##  ###  ###
+ 	##   #   ##  ##  ### ###  ###  ##  ### ###  ### ###   ##  ##
+	##      ##       ##   ##  #### ##  ##   ##  #######    ####
+ 	####    ##       ##   ##  #######  ##   ##  ## # ##     ##
+	##      ##       ##   ##  ## ####  ##   ##  ##   ##     ##
+ 	##   #   ##  ##  ### ###  ##  ###  ### ###  ##   ##     ##
+	#######    ####    #####   ##   ##   #####   ### ###    ####
+
+	focus = { #Maregyptian Economic Comission
+		id = ZEX_MGY_focus_maregyptiancomissionindustry
+		icon = GFX_ZEX_MGY_focus_maregyptiancomissionindustry
+		cost = 10
+		x = 22
+		y = 0
+		search_filters = {
+			
+		}
+		available = {
+			
+		}
+
+		relative_position_id = ZEX_MGY_focus_kingspeech
+
+		prerequisite = {
+			
+		}
+
+		completion_reward = { 
+
+		}
+	}
+
+	focus = { # Expand Somnambula
+		id = ZEX_MGY_focus_renovatecapital
+		icon = GFX_ZEX_MGY_focus_renovatecapital
+		cost = 10
+		x = -8
+		y = 1
+		search_filters = {
+			
+		}
+		available = {
+			
+		}
+
+		relative_position_id = ZEX_MGY_focus_maregyptiancomissionindustry
+
+		prerequisite = {
+			focus = ZEX_MGY_focus_maregyptiancomissionindustry
+		}
+
+		completion_reward = { 
+
+		}
+	}
+
+	focus = { # New University
+		id = ZEX_MGY_focus_newuniversity
+		icon = GFX_ZEX_MGY_focus_newuniversity
+		cost = 10
+		x = -10
+		y = 2
+		search_filters = {
+			
+		}
+		available = {
+			
+		}
+
+		relative_position_id = ZEX_MGY_focus_maregyptiancomissionindustry
+
+		prerequisite = {
+			focus = ZEX_MGY_focus_renovatecapital
+		}
+
+		completion_reward = { 
+
 		}
 	}
 }

@@ -19,6 +19,6 @@ state={
 	resources={
 		oil = 4
 	}
-	manpower=231580
+	manpower=331580
 	buildings_max_level_factor=1.000
 }

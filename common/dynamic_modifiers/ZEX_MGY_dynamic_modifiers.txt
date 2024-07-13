@@ -166,7 +166,7 @@ ZEX_MGY_Land_Reform_Incomplete = {
     enable = {
         always = yes
     }
-    state_production_speed_buildings_factor = -0.15
+    state_production_speed_buildings_factor = -0.1
     local_building_slots_factor = -0.1
     custom_modifier_tooltip = ZEX_MODIFIER_Land_Reform_Flood_Risk
 }
