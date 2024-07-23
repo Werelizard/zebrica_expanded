@@ -1,24 +1,18 @@
 spriteTypes = {
 	#Splash Screen
-	spriteType = { 
-		name = "GFX_ZEX_Welcome_screen_bg"
-		texturefile = "gfx/interface/SplashScreen/ZEX_Splash_Screen.tga"
-	}	
-	spriteType = {
-		name = "GFX_ZEX_Welcome_screen_exit"
-		texturefile = "gfx/interface/SplashScreen/ZEX_cancel_button.dds"
-	}
-	spriteType = {
-		name = "GFX_ZEX_Welcome_screen_submenu"
-		texturefile = "gfx/interface/SplashScreen/ZEX_tab_select_button.dds"
-	}	
-	spriteType = {
-		name = "GFX_ZEX_Welcome_screen_bg_inner"
-		texturefile = "gfx/interface/SplashScreen/ZEX_Splash_Screen_Inner.tga"
-	}	
 	spriteType = {
 		name = "GFX_ZEX_Toggle_Welcome_Screen_Button"
 		texturefile = "gfx/interface/SplashScreen/ZEX_Toggle_Welcome_Screen_Button.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ZEX_SplashScreenTab_active"
+		texturefile = "gfx/interface/SplashScreen/splashscreen_tab_top_active.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ZEX_SplashScreenTab_inactive"
+		texturefile = "gfx/interface/SplashScreen/splashscreen_tab_top_inactive.dds"
 	}
 	
 	#Character - MGY

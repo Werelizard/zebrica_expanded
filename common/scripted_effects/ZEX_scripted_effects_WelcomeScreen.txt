@@ -1,51 +1,95 @@
-# Open / Close
-
-zex_mgy_open_splash_screen = {
+zex_open_splash_screen_start = {
+	#This opens the splash screen, WHILST displaying the change / patchnotes for the current version
 	set_variable = {
-		zex_mgy_welcome_screen_state = 1
+		zex_get_splashscreenstate_var = 1
 	}
+	set_country_flag = zex_splashscreen_show_patchnotes_flag
+}
+
+zex_open_splash_screen_ingame = {
+	#This opens the splash screen, but does NOT display the change / patchnotes for the current version
 	set_variable = {
-		zex_mgy_welcome_screen_tab = -1
+		zex_get_splashscreenstate_var = 1
 	}
 }
 
-zex_mgy_open_welcome_screen = {
+zex_close_splash_screen = {
+	#Closes the splashscreen and ensures that the patchnotes will never get in again
 	set_variable = {
-		zex_mgy_welcome_screen_state = 1
+		zex_get_splashscreenstate_var = 0
 	}
-	set_variable = {
-		zex_mgy_welcome_screen_tab = 0
-	}
-}
-
-zex_mgy_close_welcome_screen = {
-	set_variable = {
-		zex_mgy_welcome_screen_state = 0
+	if = {
+		limit = {
+			has_country_flag = zex_splashscreen_show_patchnotes_flag
+		}
+		clr_country_flag = zex_splashscreen_show_patchnotes_flag
 	}
 }
 
-# Open the right tabs
-
-zex_mgy_open_log_tab = {
+zex_splashscreen_show_tab_history = {
+	# Shows the history tab
 	set_variable = {
-		zex_mgy_welcome_screen_tab = 0
+		zex_get_splashscreen_history_tab_var = 1
+	}
+	#Closes other tabs
+	set_variable = {
+		zex_get_splashscreen_characters_tab_var = 0
+	}
+	set_variable = {
+		zex_get_splashscreen_paths_tab_var = 0
+	}
+	set_variable = {
+		zex_get_splashscreen_credits_tab_var = 0
 	}
 }
 
-zex_mgy_open_lore_tab = {
+zex_splashscreen_show_tab_character = {
+	# Shows the characters tab
 	set_variable = {
-		zex_mgy_welcome_screen_tab = 1
+		zex_get_splashscreen_characters_tab_var = 1
+	}
+	#Closes other tabs
+	set_variable = {
+		zex_get_splashscreen_history_tab_var = 0
+	}
+	set_variable = {
+		zex_get_splashscreen_paths_tab_var = 0
+	}
+	set_variable = {
+		zex_get_splashscreen_credits_tab_var = 0
 	}
 }
 
-zex_mgy_open_char_tab = {
+zex_splashscreen_show_tab_paths = {
+	# Shows the paths tab
 	set_variable = {
-		zex_mgy_welcome_screen_tab = 2
+		zex_get_splashscreen_paths_tab_var = 1
+	}
+	#Closes other tabs
+	set_variable = {
+		zex_get_splashscreen_characters_tab_var = 0
+	}
+	set_variable = {
+		zex_get_splashscreen_history_tab_var = 0
+	}
+	set_variable = {
+		zex_get_splashscreen_credits_tab_var = 0
 	}
 }
 
-zex_mgy_open_thanks_tab = {
+zex_splashscreen_show_tab_credits = {
+	# Shows the credits tab
 	set_variable = {
-		zex_mgy_welcome_screen_tab = 3
+		zex_get_splashscreen_credits_tab_var = 1
+	}
+	#Closes other tabs
+	set_variable = {
+		zex_get_splashscreen_characters_tab_var = 0
+	}
+	set_variable = {
+		zex_get_splashscreen_paths_tab_var = 0
+	}
+	set_variable = {
+		zex_get_splashscreen_history_tab_var = 0
 	}
 }

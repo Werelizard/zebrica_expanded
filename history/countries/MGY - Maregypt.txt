@@ -212,7 +212,7 @@ if = {
 # ZEBRICA EXPANDED #
 ####################
 
-zex_mgy_open_splash_screen = yes
+zex_open_splash_screen_start = yes
 
 set_country_flag = ZEX_MGY_Somnambula_Exiled
 
