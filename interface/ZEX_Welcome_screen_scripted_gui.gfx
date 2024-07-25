@@ -15,6 +15,37 @@ spriteTypes = {
 		texturefile = "gfx/interface/SplashScreen/splashscreen_tab_top_inactive.dds"
 	}
 	
+	spriteType = {
+		name = "GFX_ZEX_SplashScreenTab_changelog"
+		texturefile = "gfx/interface/SplashScreen/splashscreen_tab_side.dds"
+	}
+
+	spriteType = { 
+		name = "GFX_ZEX_SplashScreenTab_countryNameBG"
+		texturefile = "gfx/interface/SplashScreen/splashscreen_tex_top_bg.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_zex_splashscreeen_start_game"
+		texturefile = "gfx/interface/SplashScreen/zex_splashscreeen_start_game.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+#		effectFile = "gfx/FX/buttonstate.lua"		
+		animation = {
+			animationmaskfile = "gfx/interface/play_button_mask.dds"
+			animationtexturefile = "gfx/interface/unitcontrol/execute_btn_texture3.dds"
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = yes			# yes or no ;)
+			animationtime = 2.0				# in seconds
+			animationdelay = 0.2			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+#			animationframes = {1 2 3 }
+		}
+		legacy_lazy_load = no
+	}
+	
 	#Character - MGY
 	spriteType = {
 		name = "GFX_ZEX_Splash_Screen_HequitBazin"
@@ -35,5 +66,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_ZEX_Splash_Screen_ShaaDoof"
 		texturefile = "gfx/interface/SplashScreen/characters/ZEX_MGY_Shaa_Doof_Vizier.tga"
+	}
+
+	#Main Logo
+	spriteType = { 
+		name = "GFX_ZEX_SplashScreen_Logo"
+		texturefile = "gfx/interface/SplashScreen/ZEX_Splash_Screen_Logo.tga"
 	}
 }

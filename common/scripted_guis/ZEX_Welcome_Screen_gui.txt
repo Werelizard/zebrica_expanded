@@ -15,6 +15,7 @@ scripted_gui = {
 		}
 
 		triggers = {
+			##Controls the tabs behaviour
 			ZEX_Welcome_Screen_History_Button_click_enabled = {
 				NOT = {
 					check_variable = {
@@ -34,12 +35,134 @@ scripted_gui = {
 					zex_get_splashscreen_history_tab_var = 1
 				}
 			}
+
+			ZEX_Welcome_Screen_Character_Button_click_enabled = {
+				NOT = {
+					check_variable = {
+						zex_get_splashscreen_characters_tab_var = 1
+					}
+				}
+			}
+			ZEX_Welcome_Screen_Character_Button_visible = {
+				NOT = {
+					check_variable = {
+						zex_get_splashscreen_characters_tab_var = 1
+					}
+				}
+			}
+			ZEX_Welcome_Screen_Character_Tab_visible = {
+				check_variable = {
+					zex_get_splashscreen_characters_tab_var = 1
+				}
+			}
+
+			ZEX_Welcome_Screen_Paths_Button_click_enabled = {
+				NOT = {
+					check_variable = {
+						zex_get_splashscreen_paths_tab_var = 1
+					}
+				}
+			}
+			ZEX_Welcome_Screen_Paths_Button_visible = {
+				NOT = {
+					check_variable = {
+						zex_get_splashscreen_paths_tab_var = 1
+					}
+				}
+			}
+			ZEX_Welcome_Screen_Paths_Tab_visible = {
+				check_variable = {
+					zex_get_splashscreen_paths_tab_var = 1
+				}
+			}
+
+			ZEX_Welcome_Screen_Credits_Button_click_enabled = {
+				NOT = {
+					check_variable = {
+						zex_get_splashscreen_credits_tab_var = 1
+					}
+				}
+			}
+			ZEX_Welcome_Screen_Credits_Button_visible = {
+				NOT = {
+					check_variable = {
+						zex_get_splashscreen_credits_tab_var = 1
+					}
+				}
+			}
+			ZEX_Welcome_Screen_Credits_Tab_visible = {
+				check_variable = {
+					zex_get_splashscreen_credits_tab_var = 1
+				}
+			}
+
+			# Control for when maregypt-relevant elemetns are present
+			ZEX_Maregypt_History_Header_1_visible = {
+				check_variable = {
+					zex_get_splashscreen_history_tab_var = 1
+				}
+				zxe_is_maregypt_or_cosmetic_maregypt = yes
+			}
+			ZEX_Maregypt_History_Part_1_visible = {
+				check_variable = {
+					zex_get_splashscreen_history_tab_var = 1
+				}
+				zxe_is_maregypt_or_cosmetic_maregypt = yes
+			}
+			ZEX_Maregypt_History_Header_2_visible = {
+				check_variable = {
+					zex_get_splashscreen_history_tab_var = 1
+				}
+				zxe_is_maregypt_or_cosmetic_maregypt = yes
+			}
+			ZEX_Maregypt_History_Part_2_visible = {
+				check_variable = {
+					zex_get_splashscreen_history_tab_var = 1
+				}
+				zxe_is_maregypt_or_cosmetic_maregypt = yes
+			}
 		}
 
 		effects = {
 			ZEX_Welcome_Screen_History_Button_click = {
 				zex_splashscreen_show_tab_history = yes
 			}
+			ZEX_Welcome_Screen_Character_Button_click = {
+				zex_splashscreen_show_tab_character = yes
+			}
+			ZEX_Welcome_Screen_Paths_Button_click = {
+				zex_splashscreen_show_tab_paths = yes
+			}
+			ZEX_Welcome_Screen_Credits_Button_click = {
+				zex_splashscreen_show_tab_credits = yes
+			}
+			ZEX_Welcome_Screen_Close_Button_click = {
+				zex_close_splash_screen = yes
+			}
+		}
+	}
+	
+	#
+	# Scripted GUIs for maregypt - necessary (For SOME reason)
+	#
+	ZEX_Welcome_Screen_Textbox_Maregypt = {
+		window_name = "ZEX_Welcome_Screen_Textbox_Maregypt"
+		context_type = player_context
+		# parent_window_token = top_bar
+		parent_window_name = ZEX_Welcome_Screen_Main
+
+		ai_check = {
+			always = no
+		}
+
+		visible = {
+			check_variable = {
+				zex_get_splashscreenstate_var = 1
+			}
+			check_variable = {
+				zex_get_splashscreen_history_tab_var = 1
+			}
+			zxe_is_maregypt_or_cosmetic_maregypt = yes
 		}
 	}
 }

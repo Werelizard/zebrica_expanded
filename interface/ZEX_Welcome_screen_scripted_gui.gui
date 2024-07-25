@@ -1,46 +1,328 @@
+@zex_splash_screen_height = 570
+@zex_splash_screen_width = 631
+
+@zex_main_box_frame_var = 0 #This dicates the vertical psotion of the main box (i.e., the visible background and text) is visible - within Main
+@zex_main_box_text_var = 116 #Dictates the vertical position of the main text box - within Main
+@zex_changelog_height_var = 170 #Dictates the vertical position of the changelog button - within Main
+@zex_tab_height_var = 78 # Dictates the vertical height of the tabs container - within Main
+@zex_labels_height_var = 12 #Dictates the vertical height of the tabs text relative to the tabs container  - within Tabs
+@zex_exit_button_height_var = 516 #Dictates the vertical height of the tabs text - within Main
+
 guiTypes = {
 	containerWindowType = {
-		# This is the main container for the Spalsh Screen
+		## This is the main container for the Spalsh Screen
 		name = "ZEX_Welcome_Screen_Main"
-		position = { x = -390 y = -300 }
-		size = { width = 780 height = 600 }
+		position = { x = -303 y = -350 }
+		size = { width = @zex_splash_screen_width height = @zex_splash_screen_height }
 		orientation = CENTER
 
+		moveable = yes
+
 		background = {
-			name = "ZEX_Welcome_Screen_Main_bg"
+			name = "ZEX_Welcome_Screen_Main_Invisiblebg"
 			quadTextureSprite = "GFX_tiled_window_transparent"
 		}
 
 		containerWindowType = {
-			#Main textual body
-			name = "ZEX_Welcome_Screen_Textbox"
-			position = { x = 0 y = 116 }
-			size = { width = 780 height = 484 }
+			#Fake "background"
+			name = "ZEX_Welcome_Screen_Frame_Visible"
+			position = { x = 0 y = @zex_main_box_frame_var }
+			size = { width = 606 height = 530 }
+
+			background = {
+				name = "ZEX_Welcome_Screen_Frame_Visiblebg"
+				quadTextureSprite = "GFX_tiled_window_pol_goal"
+				alwaystransparent = yes
+			}
+
+			containerWindowType = {
+				#Container for the country name
+				name = "ZEX_Welcome_Screen_Country_Name"
+				position = { x = 20 y = 15 }
+				size = { width = 566 height = 58 }
+	
+				background = {
+					name = "ZEX_Welcome_Screen_Country_Name_bg"
+					quadTextureSprite = "GFX_ZEX_SplashScreenTab_countryNameBG"
+					alwaystransparent = yes
+				}
+
+				instantTextBoxType = {
+					name = "ZEX_Welcome_Screen_Country_Name_Text"
+					position = {
+						x = 0
+						y = 13
+					}
+					maxHeight = 58
+					maxWidth = 566
+					format = center
+					font = "hoi_30header"
+					
+					text = ZEX_Welcome_Screen_Country_Name_Text
+				}
+			}
+		}
+
+		containerWindowType = {
+			#Container for the buttons
+			name = "ZEX_Welcome_Screen_Buttons"
+			position = { x = 0 y = 0 }
+			size = { width = 631 height = 570 }
+
+			background = {
+				name = "ZEX_Welcome_Screen_Buttons_bg"
+				quadTextureSprite = "GFX_tiled_window_transparent"
+				alwaystransparent = yes
+			}	
+		
+			buttonType = {
+				#Button for the changelog tab - needs to be here to avoid ugly clipping. No, I'm not happy with this. All my homies hate this.
+				name = "ZEX_Welcome_Screen_ShowChangelog"
+				quadTextureSprite = "GFX_ZEX_SplashScreenTab_changelog"
+				position = {
+					x = 586
+					y = @zex_changelog_height_var
+				}
+				font = "hoi_24header"
+				buttonfont = "hoi_24header"
+				pdx_tooltip = ZEX_Welcome_Screen_ShowChangelog_tt
+			}
+
+			buttonType = {	
+				#Button to close the Splashscreen
+				name = "ZEX_Welcome_Screen_Close_Button"
+				quadTextureSprite = "GFX_zex_splashscreeen_start_game"
+				position = {
+					x = 183
+					y = @zex_exit_button_height_var
+				}
+				font = "hoi_24header"
+				buttonfont = "hoi_24header"
+				buttonText = "ZEX_CLOSE_SPLASH"
+				shortcut = "ESCAPE"
+			}
+		}
+
+		containerWindowType = {
+			##Main textual body
+			name = "ZEX_Welcome_Screen_Textbox"	
+			position = { x = 10 y = @zex_main_box_text_var }
+			size = { width = 586 height = 400 }
 
 			background = {
 				name = "ZEX_Welcome_Screen_Textbox_bg"
-				quadTextureSprite = "GFX_tiled_bg_1_scrollbar"
+				quadTextureSprite = "GFX_tiled_window_thin_border"
+				alwaystransparent = yes
+			}
+
+			verticalScrollbar = "career_profile_vertical_slider"
+			scroll_wheel_factor = 40
+			smooth_scrolling = yes
+			margin = { top = 4 bottom = 4 }
+			autohide_scrollbars = yes
+
+			containerWindowType = {
+				#Only Visible for Maregypt
+				name = "ZEX_Welcome_Screen_Textbox_Maregypt"
+	
+				position = { x = 40 y = 10 }
+				size = { width = 546 height = 1200 }
+	
+				background = {
+					name = "ZEX_Welcome_Screen_Textbox_Maregypt_bg"
+					quadTextureSprite = "GFX_tiled_window_transparent"
+					alwaystransparent = yes
+				}
+	
+				instantTextBoxType = {
+					name = "ZEX_Maregypt_History_Header_1"
+					position = {
+						x = 0
+						y = 0
+					}
+					maxHeight = 20
+					maxWidth = 506
+					format = center
+					font = "hoi_24header"
+					text = ZEX_Maregypt_History_Header_1
+				}
+	
+				instantTextBoxType = {
+					name = "ZEX_Maregypt_History_Part_1"
+					position = {
+						x = 0
+						y = 40
+					}
+					maxHeight = 420
+					maxWidth = 506
+					format = left
+					font = "hoi_16mbs"
+					text = ZEX_Maregypt_History_Part_1
+				}
+	
+				instantTextBoxType = {
+					name = "ZEX_Maregypt_History_Header_2"
+					position = {
+						x = 0
+						y = 382
+					}
+					maxHeight = 20
+					maxWidth = 506
+					format = center
+					font = "hoi_24header"
+					text = ZEX_Maregypt_History_Header_1
+				}
+	
+				instantTextBoxType = {
+					name = "ZEX_Maregypt_History_Part_2"
+					position = {
+						x = 0
+						y = 422
+					}
+					maxHeight = 400
+					maxWidth = 506
+					format = left
+					font = "hoi_16mbs"
+					text = ZEX_Maregypt_History_Part_1
+				}
 			}
 		}
 
-		#TAB BUTTONS
-
-		
-		#Tab to display the history text of the welcome screen
-		buttonType = {
-			name = "ZEX_Welcome_Screen_History_Button"
-			quadTextureSprite = "GFX_ZEX_SplashScreenTab_inactive"
-			position = {
-				x = 20
-				y = 40
+		containerWindowType = {
+			name = "ZEX_Welcome_Screen_Tabbox"
+			##Container for the tabs
+			position = { x = 0 y = @zex_tab_height_var }
+			size = {
+				width = 606
+				height = 65
 			}
-		}
-		iconType = {
-			name = "ZEX_Welcome_Screen_History_Tab"
-			quadTextureSprite = "GFX_ZEX_SplashScreenTab_active"
-			position = {
-				x = 20
-				y = 40
+
+			background = {
+				name = "ZEX_Welcome_Screen_Tabbox_bg"
+				quadTextureSprite = "GFX_tiled_window_transparent"
+			}			
+
+			## Tab to display the history text of the welcome screen
+			buttonType = {
+				name = "ZEX_Welcome_Screen_History_Button"
+				quadTextureSprite = "GFX_ZEX_SplashScreenTab_inactive"
+				position = {
+					x = 20
+					y = 0
+				}
+			}
+			iconType = {
+				name = "ZEX_Welcome_Screen_History_Tab"
+				quadTextureSprite = "GFX_ZEX_SplashScreenTab_active"
+				position = {
+					x = 20
+					y = 0
+				}
+			}
+			instantTextBoxType = {
+				name = "ZEX_Welcome_Screen_History_Label"
+				text = ZEX_HISTORY_LAB
+				position = {
+					x = 26
+					y = @zex_labels_height_var
+				}
+				maxHeight = 36
+				maxWidth = 130
+				format = center
+				font = "hoi_20bs"
+				
+			}
+
+			## Tab to display the character text of the welcome screen
+			buttonType = {
+				name = "ZEX_Welcome_Screen_Character_Button"
+				quadTextureSprite = "GFX_ZEX_SplashScreenTab_inactive"
+				position = {
+					x = 161
+					y = 0
+				}
+			}
+			iconType = {
+				name = "ZEX_Welcome_Screen_Character_Tab"
+				quadTextureSprite = "GFX_ZEX_SplashScreenTab_active"
+				position = {
+					x = 161
+					y = 0
+				}
+			}
+			instantTextBoxType = {
+				name = "ZEX_Welcome_Screen_Character_Label"
+				text = ZEX_CHARACTER_LAB
+				position = {
+					x = 167
+					y = @zex_labels_height_var
+				}
+				maxHeight = 36
+				maxWidth = 130
+				format = center
+				font = "hoi_20bs"
+				
+			}
+			## Tab to display the paths text of the welcome screen
+			buttonType = {
+				name = "ZEX_Welcome_Screen_Paths_Button"
+				quadTextureSprite = "GFX_ZEX_SplashScreenTab_inactive"
+				position = {
+					x = 301
+					y = 0
+				}
+			}
+			iconType = {
+				name = "ZEX_Welcome_Screen_Paths_Tab"
+				quadTextureSprite = "GFX_ZEX_SplashScreenTab_active"
+				position = {
+					x = 301
+					y = 0
+				}
+			}
+			instantTextBoxType = {
+				name = "ZEX_Welcome_Screen_Paths_Label"
+				text = ZEX_PATHS_LAB
+				position = {
+					x = 307
+					y = @zex_labels_height_var
+				}
+				maxHeight = 36
+				maxWidth = 130
+				format = center
+				font = "hoi_20bs"
+				
+			}
+
+			## Tab to display the credits text of the welcome screen
+			buttonType = {
+				name = "ZEX_Welcome_Screen_Credits_Button"
+				quadTextureSprite = "GFX_ZEX_SplashScreenTab_inactive"
+				position = {
+					x = 442
+					y = 0
+				}
+			}
+			iconType = {
+				name = "ZEX_Welcome_Screen_Credits_Tab"
+				quadTextureSprite = "GFX_ZEX_SplashScreenTab_active"
+				position = {
+					x = 442
+					y = 0
+				}
+			}
+			instantTextBoxType = {
+				name = "ZEX_Welcome_Screen_Credits_Label"
+				text = ZEX_CREDITS_LAB
+				position = {
+					x = 448
+					y = @zex_labels_height_var
+				}
+				maxHeight = 36
+				maxWidth = 130
+				format = center
+				font = "hoi_20bs"
+				
 			}
 		}
 	}

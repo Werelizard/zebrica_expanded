@@ -1,28 +1,15 @@
-zex_open_splash_screen_start = {
-	#This opens the splash screen, WHILST displaying the change / patchnotes for the current version
+zex_open_splash_screen = {
+	#This opens the splash screen
 	set_variable = {
 		zex_get_splashscreenstate_var = 1
 	}
-	set_country_flag = zex_splashscreen_show_patchnotes_flag
-}
-
-zex_open_splash_screen_ingame = {
-	#This opens the splash screen, but does NOT display the change / patchnotes for the current version
-	set_variable = {
-		zex_get_splashscreenstate_var = 1
-	}
+	zex_splashscreen_show_tab_history = yes
 }
 
 zex_close_splash_screen = {
 	#Closes the splashscreen and ensures that the patchnotes will never get in again
 	set_variable = {
 		zex_get_splashscreenstate_var = 0
-	}
-	if = {
-		limit = {
-			has_country_flag = zex_splashscreen_show_patchnotes_flag
-		}
-		clr_country_flag = zex_splashscreen_show_patchnotes_flag
 	}
 }
 
