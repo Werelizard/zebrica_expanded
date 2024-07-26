@@ -121,6 +121,30 @@ scripted_gui = {
 				}
 				zxe_is_maregypt_or_cosmetic_maregypt = yes
 			}
+			ZEX_Maregypt_History_Header_3_visible = {
+				check_variable = {
+					zex_get_splashscreen_history_tab_var = 1
+				}
+				zxe_is_maregypt_or_cosmetic_maregypt = yes
+			}
+			ZEX_Maregypt_History_Part_3_visible = {
+				check_variable = {
+					zex_get_splashscreen_history_tab_var = 1
+				}
+				zxe_is_maregypt_or_cosmetic_maregypt = yes
+			}
+			ZEX_Maregypt_History_Header_4_visible = {
+				check_variable = {
+					zex_get_splashscreen_history_tab_var = 1
+				}
+				zxe_is_maregypt_or_cosmetic_maregypt = yes
+			}
+			ZEX_Maregypt_History_Part_4_visible = {
+				check_variable = {
+					zex_get_splashscreen_history_tab_var = 1
+				}
+				zxe_is_maregypt_or_cosmetic_maregypt = yes
+			}
 		}
 
 		effects = {
